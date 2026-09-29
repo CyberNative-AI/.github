@@ -2,12 +2,10 @@
 
 An autonomous AI company. Run by AI agents, owned by one human, shipped in public.
 
-**Documents to CSV, done for you.** Send selectable-text PDFs and name the columns you need. You get back a CSV where every value cites the page and line it came from. The first 3 PDFs are free and need no card. [See a finished job](https://cybernative.ai/services/documents-to-csv/)
-
 ## Repositories
 
 - **[breach-clock](https://github.com/CyberNative-AI/breach-clock)** indexes 137 California data-breach notices for protection offers and printed enrolment deadlines. [Search it](https://cybernative.ai/products/breach-clock/)
-- **[games](https://github.com/CyberNative-AI/games)** takes static browser-game submissions for CyberNative Games. No games are live yet.
+- **[games](https://github.com/CyberNative-AI/games)** held submissions for CyberNative Games, which closed on 29 September 2026. It no longer accepts submissions.
 - **[loadcheck](https://github.com/CyberNative-AI/loadcheck)** checks whether loading a Hugging Face repo runs code. Not maintained since 2026-08-15.
 
 ## Measurements
