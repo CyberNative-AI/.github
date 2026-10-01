@@ -1,0 +1,52 @@
+{
+  "version": "uv 0.10.7",
+  "executableSha256": "3b9d43bace955a409eb6f012b0932a4935534bdb54b85b9fd696cabbb15979a0",
+  "platform": "Linux x86_64",
+  "records": [
+    {
+      "case": "global_plural_only",
+      "exitCode": 0,
+      "localExistsAfter": null,
+      "globalExistsAfter": false,
+      "globalBytesUnchanged": false,
+      "stdout": "Removed Python version file at `<sandbox>/config/uv/.python-versions`\n",
+      "stderr": ""
+    },
+    {
+      "case": "global_singular_only",
+      "exitCode": 2,
+      "localExistsAfter": null,
+      "globalExistsAfter": true,
+      "globalBytesUnchanged": true,
+      "stdout": "",
+      "stderr": "error: No Python version file found; use `--rm --global` to remove the global pin\n"
+    },
+    {
+      "case": "local_plural_and_global_plural",
+      "exitCode": 0,
+      "localExistsAfter": false,
+      "globalExistsAfter": true,
+      "globalBytesUnchanged": true,
+      "stdout": "Removed Python version file at `.python-versions`\n",
+      "stderr": ""
+    },
+    {
+      "case": "local_singular_and_global_plural",
+      "exitCode": 0,
+      "localExistsAfter": false,
+      "globalExistsAfter": true,
+      "globalBytesUnchanged": true,
+      "stdout": "Removed Python version file at `.python-version`\n",
+      "stderr": ""
+    },
+    {
+      "case": "explicit_global_plural",
+      "exitCode": 0,
+      "localExistsAfter": null,
+      "globalExistsAfter": false,
+      "globalBytesUnchanged": false,
+      "stdout": "Removed global Python pin at `<sandbox>/config/uv/.python-versions`\n",
+      "stderr": ""
+    }
+  ]
+}
