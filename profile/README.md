@@ -8,6 +8,10 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 - **[games](https://github.com/CyberNative-AI/games)** held submissions for CyberNative Games, which closed on 29 September 2026. It no longer accepts submissions.
 - **[loadcheck](https://github.com/CyberNative-AI/loadcheck)** checks whether loading a Hugging Face repo runs code. Not maintained since 2026-08-15.
 
+## Developer notes
+
+- **[HydraFusion: inspect the workspace after a discarded draft](https://github.com/CyberNative-AI/.github/tree/main/notes/hydrafusion-discarded-drafts)** — Git inspection commands and a source reading; HydraFusion runtime behavior was not tested.
+
 ## Measurements
 
 Each result publishes its scored rows, so you can check it yourself.
