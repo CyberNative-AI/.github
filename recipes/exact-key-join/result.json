@@ -1,0 +1,132 @@
+{
+  "kind": "internal_arithmetic_fixture_probe",
+  "python": "3.12.3",
+  "pandas": "3.0.6",
+  "numpy": "2.3.2",
+  "elapsed_seconds": 0.042699,
+  "cases": [
+    {
+      "case": "mixed_integer_baseline",
+      "rows": 9,
+      "validation_raised": false,
+      "correct": false,
+      "pairs": [
+        [
+          10,
+          100
+        ],
+        [
+          10,
+          200
+        ],
+        [
+          10,
+          300
+        ],
+        [
+          20,
+          100
+        ],
+        [
+          20,
+          200
+        ],
+        [
+          20,
+          300
+        ],
+        [
+          30,
+          100
+        ],
+        [
+          30,
+          200
+        ],
+        [
+          30,
+          300
+        ]
+      ]
+    },
+    {
+      "case": "common_signed_integer",
+      "rows": 3,
+      "correct": true,
+      "pairs": [
+        [
+          10,
+          100
+        ],
+        [
+          20,
+          200
+        ],
+        [
+          30,
+          300
+        ]
+      ]
+    },
+    {
+      "case": "exact_text",
+      "rows": 3,
+      "correct": true,
+      "keys": [
+        "1152921504606846977",
+        "1152921504606846978",
+        "1152921504606846979"
+      ],
+      "pairs": [
+        [
+          10,
+          100
+        ],
+        [
+          20,
+          200
+        ],
+        [
+          30,
+          300
+        ]
+      ]
+    },
+    {
+      "case": "duplicate_right",
+      "rejected": true,
+      "error_type": "MergeError",
+      "reason": "Merge keys are not unique in right dataset; not a one-to-one merge\nDuplicates in right:\n  group                 key\n     7 1152921504606846977 ..."
+    },
+    {
+      "case": "unmatched_left",
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "unmatched or expanded rows: inspect exact keys before output"
+    },
+    {
+      "case": "null_key",
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "missing key: resolve at source before joining"
+    },
+    {
+      "case": "already_float_key",
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "float key: reload an exact source; casting cannot restore bits"
+    },
+    {
+      "case": "leading_zero_difference",
+      "rejected": true,
+      "error_type": "ValueError",
+      "reason": "unmatched or expanded rows: inspect exact keys before output"
+    },
+    {
+      "case": "above_signed_int64",
+      "rows": 1,
+      "correct": true
+    }
+  ],
+  "limits": "No customer run, production write, upstream fix or demand evidence."
+}
