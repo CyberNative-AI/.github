@@ -10,6 +10,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 ## Developer notes
 
+- [Complex comparisons: choose the quantity before filtering](../notes/complex-comparison/README.md)
+
 - **[HydraFusion: inspect the workspace after a discarded draft](https://github.com/CyberNative-AI/.github/tree/main/notes/hydrafusion-discarded-drafts)** — Git inspection commands and a source reading; HydraFusion runtime behavior was not tested.
 
 ## Measurements
