@@ -35,12 +35,38 @@ keys. It also preserved an unsigned key above signed-int64 range.
 
 ## Run
 
-Use a separate local Python environment with the pinned requirements:
+Start with Git and Python 3.12 installed. In a terminal, get the files and run
+only this recipe in a separate local environment. These commands are for macOS
+and Linux:
 
 ```sh
-python -m pip install -r requirements.txt
-python probe.py
+git clone --depth 1 https://github.com/CyberNative-AI/.github.git exact-key-recipe
+cd exact-key-recipe/recipes/exact-key-join
+python3 -m venv .venv
+.venv/bin/python -m pip install -r requirements.txt
+.venv/bin/python probe.py
 ```
+
+If you already have the repository, start inside `recipes/exact-key-join` and
+skip the clone. On Windows, use `py -3.12` instead of `python3` and
+`.venv\Scripts\python.exe` instead of `.venv/bin/python`.
+
+The clone and dependency installation need network access. The probe itself
+runs offline with authored fixtures; no input file or customer data is needed.
+A completed run prints JSON with the Python, pandas and NumPy versions. The
+recorded `result.json` shows nine rows and `correct: false` for the deliberately
+failing `mixed_integer_baseline`, then three correct pairs for
+`common_signed_integer` and `exact_text`. The five rejection controls each show
+`rejected: true`. The failing baseline is the demonstration, not a failed setup.
+Compare your versions and result with `result.json`; a different baseline result
+can reflect a different library version and does not establish a defect.
+
+If `requirements.txt` is missing, check that the terminal is inside
+`recipes/exact-key-join`. If package installation fails, keep the error and
+check Python and network access; do not install into system Python. If the probe
+exits with an assertion or traceback, record your versions and the failing check
+before adapting the recipe. Do not remove validation or apply it to production
+data to make the demonstration pass.
 
 The program uses only in-memory fixtures and prints JSON. It performs no network
 calls and writes no files. `checked_join` is a sample-specific acceptance helper,
