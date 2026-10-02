@@ -23,6 +23,7 @@ Optional feedback to hello@cybernative.ai: which steps you completed, setup/repa
 
 ## Limits that matter
 
+- Supported disruptions are a late cue or a resource out of service; losing a room is not modeled.
 - JSON version1 only; at most12 cues,4 rooms,8 resources and a720-minute window. All times use whole minutes.
 - A cue occupies its room and each exclusive resource for its **entire duration**. Partial setup/teardown, travel, precedence and resource capacity greater than one are not modeled.
 - The browser examines at most5,000 candidate placements and returns up to3 feasible choices. It may miss feasible or better alternatives; similar one-minute shifts are possible. “None found within budget” does not prove impossibility.

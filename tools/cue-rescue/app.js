@@ -5,7 +5,7 @@
   const clone = value => JSON.parse(JSON.stringify(value));
   const emptyScenario = () => ({ delays: [], unavailable: [] });
   const engine = globalThis.CueRescue;
-  let plan, initialPlan, scenario = emptyScenario(), result = null, selected = null, accepted = null, editing = null, busy = false;
+  let plan, initialPlan, scenario = emptyScenario(), result = null, selected = null, accepted = null, editing = null, busy = false, openDetails = new Set();
   function node(tag, text, className) { const n = document.createElement(tag); if (text !== undefined) n.textContent = String(text); if (className) n.className = className; return n; }
   function say(text, success = false) { $('message').textContent = text; $('message').className = 'message' + (success ? ' success' : ''); $('message').hidden = false; }
   function errors(v) { return (v.errors || []).map(e => typeof e === 'string' ? e : e.message || JSON.stringify(e)).join('\n') || 'The plan could not be validated.'; }
@@ -18,7 +18,7 @@
     ] };
   }
   function checked(value) { const v = engine.validate(value); if (!v.ok) throw new Error(errors(v)); return value; }
-  function clearDerived() { result = null; selected = null; accepted = null; }
+  function clearDerived() { result = null; selected = null; accepted = null; openDetails = new Set(); }
   function decode(value) { const d=engine.readInput(value);if(!d.ok)throw new Error(errors(d));return d; }
   function load(value, notice) {
     const d=decode(value); plan=clone(d.plan);initialPlan=clone(value);scenario=clone(d.scenario);clearDerived();
@@ -43,6 +43,21 @@
   function selectedEvaluation() { if (selected !== null && result) {const d=optionInput(result.options[selected]);return evaluated(d.plan,d.scenario);} return evaluated(plan, scenario); }
   function resourceLabel(id) { return plan.resources.find(r => r.id === id)?.label || id; }
   function cueLabel(id) { const c = plan.cues.find(c => c.id === id); return c ? c.id + ' · ' + c.title : id; }
+  function listNames(names) { return names.length < 2 ? names.join('') : names.slice(0,-1).join(', ') + ' and ' + names[names.length-1]; }
+  // One sentence per changed cue, then the unchanged cues, in the words a coordinator would say aloud.
+  function plainChanges(diff, base) {
+    const title = id => base.cues.find(c => c.id === id)?.title || id, room = id => base.cues.find(c => c.id === id)?.room || '';
+    const moved = diff.filter(d => d.delay || d.shortened > 0), same = diff.filter(d => !d.delay && !(d.shortened > 0));
+    const lines = moved.map(d => ({ text: (d.delay ? 'Move ' + title(d.id) + ' (' + room(d.id) + ') from ' + d.before + '–' + (d.before + d.beforeDuration) + ' to ' + d.after + '–' + (d.after + d.duration) + ' min' : 'Keep ' + title(d.id) + ' (' + room(d.id) + ') at ' + d.after + ' min') + (d.shortened > 0 ? (d.delay ? ' and shorten it by ' : ', shortened by ') + d.shortened + ' min' : '') + '.', same: false }));
+    if (same.length) lines.push({ text: listNames(same.map(d => title(d.id))) + (same.length === 1 ? ' stays' : ' stay') + ' as planned.', same: true });
+    return lines;
+  }
+  function sampleOutage() {
+    const uses = plan.cues.filter(c => c.resources.length && !c.locked).sort((a,b) => a.plannedStart - b.plannedStart);
+    const c = uses.find(c => c.plannedStart > plan.horizon.start) || uses[0];
+    if (!c) return null;
+    return { resourceId: c.resources[0], start: c.plannedStart, end: Math.min(plan.horizon.end, c.plannedStart + Math.min(10, c.duration)) };
+  }
   function renderTimeline(schedule) {
     const base = accepted ? accepted.beforePlan : plan;
     const host = $('timeline'); host.replaceChildren();
@@ -70,7 +85,8 @@
     const names = ids.map(i=>typeof i==='string'?cueLabel(i):i.id||i.cueId||'Cue').join(' + ');
     const where = c.resourceId ? resourceLabel(c.resourceId) : c.room || c.roomId || '';
     const time = Number.isFinite(c.start) && Number.isFinite(c.end) ? ' · '+c.start+'–'+c.end+' min' : '';
-    return { title: c.message || (String(kind).replaceAll('_',' ') + (where?' · '+where:'')), detail: names + time || c.reason || 'This constraint is not satisfied in the current schedule.' };
+    const message = c.message && c.resourceId ? c.message.split('resource ' + c.resourceId).join(resourceLabel(c.resourceId)).split('Resource ' + c.resourceId + ':').join(resourceLabel(c.resourceId) + ':') : c.message;
+    return { title: message || (String(kind).replaceAll('_',' ') + (where?' · '+where:'')), detail: names + time || c.reason || 'This constraint is not satisfied in the current schedule.' };
   }
   function renderConflicts(evaluation) {
     const list = evaluation.conflicts || [], host=$('conflicts');host.replaceChildren();
@@ -97,12 +113,14 @@
     $('unavailableResource').replaceChildren(...plan.resources.map(r=>{const o=node('option',r.label);o.value=r.id;return o}));if(plan.resources.some(r=>r.id===oldRes))$('unavailableResource').value=oldRes;
     $('unavailableForm').querySelector('button').disabled=!plan.resources.length;
     $('clearScenario').disabled=!(scenario.delays.length||scenario.unavailable.length);
+    const outage=sampleOutage();$('sampleRescue').disabled=!outage;if(outage)$('sampleLabel').replaceChildren(document.createTextNode('Rehearse it: '+resourceLabel(outage.resourceId)+' out '),node('span',outage.start+'–'+outage.end+' min','nowrap'));else $('sampleLabel').textContent='Add a shared resource to a cue to rehearse a loss';
     $('quickDelay').disabled=!plan.cues.length; $('quickDelay').textContent='Try cue '+plan.cues[0].id+' 10 minutes late ↗';
   }
   function renderOptions() {
     $('choices').hidden=!result||!!accepted; $('accepted').hidden=!accepted; $('options').replaceChildren();
     if (!result) return;
-    const s=result.search||{};
+    const s=result.search||{}, problems=engine.evaluate(plan,scenario).conflicts||[];
+    $('problemLine').hidden=!problems.length;$('problemLine').textContent='The problem: '+problems.map(c=>c.type==='unavailable'&&c.resourceId&&Number.isFinite(c.start)?resourceLabel(c.resourceId)+' is out at '+c.start+'–'+c.end+' min, when '+listNames((c.cueIds||[]).map(id=>plan.cues.find(q=>q.id===id)?.title||id))+' needs it.':conflictText(c).title).join(' ');
     $('searchNote').textContent=(s.examined??'Unreported')+' candidate placements examined. '+(s.exhaustive?'Search exhausted the defined candidate space.':'Bounded search; other feasible choices may exist.')+' '+(s.stoppedBecause?'Stopped: '+s.stoppedBecause+'.':'')+' Cost = sum of priority × (minutes later + 3 × minutes shortened). No best-plan claim for a bounded search.';
     if(!result.options.length){$('options').append(node('p',result.noSolutionReason||'No feasible recovery was found within this search. The plan and disruptions are unchanged.','form-error'));}
     result.options.forEach((o,i)=>{
@@ -110,9 +128,11 @@
       if(view.evaluation.conflicts.length) throw new Error('The engine offered a recovery with conflicts. It cannot be accepted.');
       box.append(node('h4','Choice '+(i+1)+(selected===i?' · SELECTED':'')));
       const stats=node('div',undefined,'tradeoffs');for(const [number,label]of [[t.late,'total minutes later'],[t.shortened,'minutes shortened']]){const stat=node('div');stat.append(node('strong',number),node('span',label));stats.append(stat)}box.append(stats);
-      box.append(node('p',diff.map(d=>d.id+': '+d.before+' → '+d.after+' min'+(d.shortened?' · −'+d.shortened+' min duration':' · full duration')).join('; ')));
-      box.append(node('p','Cutoff '+plan.horizon.end+' min. '+value.cues.map(c=>c.id+' / '+c.room+': min '+c.minDuration+', not before '+c.notBefore+', deadline '+c.deadline+(c.locked?', locked':', unlocked')+'; '+(c.resources.map(resourceLabel).join(', ')||'no shared resource')).join(' · ')));
-      if(o.cost!==undefined)box.append(node('p','Engine change cost: '+(typeof o.cost==='number'?o.cost:JSON.stringify(o.cost))));
+      const plainList=node('ul',undefined,'plain-changes');plainChanges(diff,plan).forEach(l=>plainList.append(node('li',l.text,l.same?'same':'')));box.insertBefore(plainList,stats);
+      const toggle=node('button',openDetails.has(i)?'Hide constraints checked':'Show constraints checked','detail-toggle'),region=node('div',undefined,'detail-region');region.id='choice-detail-'+i;region.hidden=!openDetails.has(i);toggle.type='button';toggle.setAttribute('aria-expanded',String(openDetails.has(i)));toggle.setAttribute('aria-controls',region.id);toggle.addEventListener('click',()=>{const open=region.hidden;region.hidden=!open;open?openDetails.add(i):openDetails.delete(i);toggle.setAttribute('aria-expanded',String(open));toggle.textContent=open?'Hide constraints checked':'Show constraints checked'});box.append(toggle,region);
+      region.append(node('p',diff.map(d=>d.id+': '+d.before+' → '+d.after+' min'+(d.shortened?' · −'+d.shortened+' min duration':' · full duration')).join('; ')));
+      region.append(node('p','Cutoff '+plan.horizon.end+' min. '+value.cues.map(c=>c.id+' / '+c.room+': min '+c.minDuration+', not before '+c.notBefore+', deadline '+c.deadline+(c.locked?', locked':', unlocked')+'; '+(c.resources.map(resourceLabel).join(', ')||'no shared resource')).join(' · ')));
+      if(o.cost!==undefined)region.append(node('p','Engine change cost: '+(typeof o.cost==='number'?o.cost:JSON.stringify(o.cost))));
       const b=node('button',selected===i?'Selected · timeline above':'Preview this choice','quiet');b.setAttribute('aria-pressed',String(selected===i));b.addEventListener('click',()=>{selected=i;render();say('Choice '+(i+1)+' is a preview. Accept it to save the revised plan.',true)});box.append(b);$('options').append(box);
     });
     $('accept').disabled=selected===null||!result.options.length;
@@ -123,7 +143,7 @@
       const roomCount=new Set(plan.cues.map(c=>c.room)).size;
       document.querySelector('.intro .eyebrow').textContent=roomCount+' ROOM'+(roomCount===1?'':'S')+'. '+plan.resources.length+' SHARED RESOURCE'+(plan.resources.length===1?'':'S')+'.';
       const {evaluation,schedule}=selectedEvaluation();renderTimeline(schedule);renderConflicts(evaluation);renderLedger();renderScenario();renderOptions();
-      if(accepted){const t=totals(accepted.diff);$('acceptedDetail').textContent=t.late+' total cue-minutes later; '+t.shortened+' minutes shortened. '+plan.cues.length+' cues retained. Hard limits unchanged.';renderSheet()}
+      if(accepted){const t=totals(accepted.diff);$('acceptedDetail').textContent=plainChanges(accepted.diff,accepted.beforePlan).map(l=>l.text).join(' ')+' '+t.late+' total cue-minutes later; '+t.shortened+' minutes shortened. '+plan.cues.length+' cues retained. Hard limits unchanged.';renderSheet()}
     }catch(e){say('Unable to display this engine result: '+e.message);$('compute').disabled=true;$('accept').disabled=true;}
   }
   function scenarioChange(next) { scenario=next; clearDerived();render();$('message').hidden=true; }
@@ -133,12 +153,14 @@
   $('delayForm').addEventListener('submit',e=>{e.preventDefault();try{const minutes=int('delayMinutes');if(minutes<1||minutes>720)throw new Error('Use a delay from 1 to 720 minutes.');const cueId=$('delayCue').value;scenarioChange({...scenario,delays:[...scenario.delays.filter(d=>d.cueId!==cueId),{cueId,minutes}]})}catch(err){say(err.message)}});
   $('quickDelay').addEventListener('click',()=>{scenarioChange({...scenario,delays:[...scenario.delays.filter(d=>d.cueId!==plan.cues[0].id),{cueId:plan.cues[0].id,minutes:10}]})});
   $('unavailableForm').addEventListener('submit',e=>{e.preventDefault();try{const start=int('unavailableStart'),end=int('unavailableEnd');if(start<plan.horizon.start||end>plan.horizon.end||start>=end)throw new Error('Unavailability must be a positive interval inside the planning window.');scenarioChange({...scenario,unavailable:[...scenario.unavailable,{resourceId:$('unavailableResource').value,start,end}]})}catch(err){say(err.message)}});
+  $('sampleRescue').addEventListener('click',()=>{const outage=sampleOutage();if(!outage||busy)return;scenarioChange({delays:[],unavailable:[outage]});runSearch(true)});
   $('clearScenario').addEventListener('click',()=>scenarioChange(emptyScenario()));
-  $('compute').addEventListener('click',()=>{
+  function runSearch(previewFirst) {
     if(busy)return;busy=true;$('compute').disabled=true;$('compute').textContent='Searching up to 5,000 candidates…';$('message').hidden=true;
     // Give the searching status a paint before the bounded, synchronous v1 engine call.
-    requestAnimationFrame(()=>setTimeout(()=>{try{const r=engine.repair(clone(plan),clone(scenario),{maxCandidates:5000,maxOptions:3});result=r;selected=null;accepted=null;render();say(r.options.length?r.options.length+' feasible recovery choices. Preview one, then accept it.':r.noSolutionReason||'No feasible option was found within the bounded search.',!!r.options.length)}catch(e){say('Recovery search failed. Your plan is unchanged. '+e.message)}finally{busy=false;$('compute').disabled=false;const arrow=node('span','→');arrow.setAttribute('aria-hidden','true');$('compute').replaceChildren(document.createTextNode('Find recovery choices '),arrow)}},0));
-  });
+    requestAnimationFrame(()=>setTimeout(()=>{try{const r=engine.repair(clone(plan),clone(scenario),{maxCandidates:5000,maxOptions:3});result=r;selected=previewFirst&&r.options.length?0:null;accepted=null;render();if(previewFirst){$('choices').scrollIntoView({block:'start'});$('choicesHeading').focus({preventScroll:true})}say(r.options.length?r.options.length+' feasible recovery choices'+(previewFirst?'. Choice 1 is previewed; accept it or compare the others.':'. Preview one, then accept it.'):r.noSolutionReason||'No feasible option was found within the bounded search.',!!r.options.length)}catch(e){say('Recovery search failed. Your plan is unchanged. '+e.message)}finally{busy=false;$('compute').disabled=false;const arrow=node('span','→');arrow.setAttribute('aria-hidden','true');$('compute').replaceChildren(document.createTextNode('Find recovery choices '),arrow)}},0));
+  }
+  $('compute').addEventListener('click',()=>runSearch(false));
   $('accept').addEventListener('click',()=>{
     try{if(selected===null||!result)return;const decoded=optionInput(result.options[selected]),value=clone(decoded.plan), view=evaluated(value,decoded.scenario);if(view.evaluation.conflicts.length)throw new Error('This recovery still has conflicts.');const beforePlan=clone(plan),beforeScenario=clone(scenario);accepted={beforePlan,beforeScenario,plan:clone(value),replayScenario:clone(decoded.scenario),saved:clone(decoded.saved),diff:changes(view.schedule,beforePlan)};plan=value;scenario=clone(decoded.scenario);result=null;selected=null;render();say('Recovery accepted. Revised JSON and cue sheet are ready to download.',true)}catch(e){say('Recovery was not accepted: '+e.message)}
   });

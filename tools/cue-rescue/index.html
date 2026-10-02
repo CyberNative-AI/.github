@@ -18,7 +18,7 @@
   <main id="desk">
     <section class="intro" aria-labelledby="pageTitle">
       <div><p class="eyebrow">TWO ROOMS. ONE SHARED RESOURCE.</p><h1 id="pageTitle">Keep every cue.<br><em>Find the room to recover.</em></h1></div>
-      <div class="intro-note"><p>Rehearse a disruption, compare the changes, then choose a revised cue sheet.</p><p class="muted">All times are whole minutes from the start of the planning window. Examples are synthetic.</p></div>
+      <div class="intro-note"><p>Rehearse a disruption, compare the changes, then choose a revised cue sheet.</p><p class="muted">All times are whole minutes from the start of the planning window. Examples are synthetic.</p></div><div class="first-rescue"><p class="eyebrow">START HERE · ONE CLICK</p><button id="sampleRescue" class="primary" type="button"><span id="sampleLabel">Rehearse a lost resource</span><span aria-hidden="true">→</span></button><p class="muted">Takes one shared resource out of the current plan, searches for fixes and previews the first. Nothing changes until you accept.</p></div>
     </section>
     <div id="engineNote" class="notice" hidden></div>
     <section class="loadbar" aria-label="Load a rehearsal">
@@ -53,7 +53,7 @@
         <div class="recovery-status" id="recoveryStatus"><h3 id="statusHeadline">Ready for a rehearsal</h3><p id="statusDetail">Introduce a disruption to see what needs to change.</p></div>
         <button id="compute" class="primary">Find recovery choices <span aria-hidden="true">→</span></button>
         <p class="limits">Hard limits stay hard: every cue stays in its room, locks remain, and no duration falls below its minimum.</p>
-        <section id="choices" aria-labelledby="choicesHeading" hidden><div class="section-head"><h3 id="choicesHeading">Compare & choose</h3></div><p id="searchNote" class="muted"></p><div id="options"></div><button id="accept" class="primary" disabled>Accept selected recovery</button><p class="limits">Previewing does not change your plan. Accept explicitly to enable the revised downloads.</p></section>
+        <section id="choices" aria-labelledby="choicesHeading" hidden><div class="section-head"><h3 id="choicesHeading" tabindex="-1">Compare & choose</h3></div><p id="problemLine" class="problem-line"></p><div id="options"></div><p id="searchNote" class="muted"></p><button id="accept" class="primary" disabled>Accept selected recovery</button><p class="limits">Previewing does not change your plan. Accept explicitly to enable the revised downloads.</p></section>
         <section id="accepted" class="accepted" hidden><h3>Recovery accepted</h3><p id="acceptedDetail"></p><div class="download-actions"><button id="export" class="primary">Download revised JSON ↓</button><button id="sheetDownload" class="quiet">Download printable cue sheet ↓</button><button id="sheetView" class="quiet">View cue sheet & diff</button><button id="undo" class="text-button">Undo acceptance ↶</button></div></section>
       </aside>
     </section>
