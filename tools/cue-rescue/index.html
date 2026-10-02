@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Cue Rescue · Rehearsal desk</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="engine.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#desk">Skip to rehearsal desk</a>
+  <header class="masthead">
+    <div class="wordmark"><span class="mark" aria-hidden="true"><i></i><i></i><i></i></span><strong>Cue Rescue</strong><span class="edition">REHEARSAL DESK / 01</span></div>
+    <p>Private planning. Not live show control.</p>
+  </header>
+  <main id="desk">
+    <section class="intro" aria-labelledby="pageTitle">
+      <div><p class="eyebrow">TWO ROOMS. ONE SHARED RESOURCE.</p><h1 id="pageTitle">Keep every cue.<br><em>Find the room to recover.</em></h1></div>
+      <div class="intro-note"><p>Rehearse a disruption, compare the changes, then choose a revised cue sheet.</p><p class="muted">All times are whole minutes from the start of the planning window. Examples are synthetic.</p></div>
+    </section>
+    <div id="engineNote" class="notice" hidden></div>
+    <section class="loadbar" aria-label="Load a rehearsal">
+      <label>Example<select id="example"><option value="standard">Two-room rehearsal · 60 min</option><option value="tight">Hard cutoff · 45 min</option><option value="flexible">Shorter sessions · 45 min</option><option value="locked">Locked opening · 60 min</option></select></label>
+      <button id="loadExample" class="quiet">Load example</button>
+      <button id="importButton" class="quiet">Import JSON</button>
+      <input id="fileInput" type="file" accept=".json,application/json" hidden>
+      <button id="editPlan" class="quiet">Edit plan & resources</button>
+      <button id="reset" class="text-button">Reset rehearsal ↺</button>
+      <a class="jump" href="#recoveryHeading">Rehearse a disruption ↓</a>
+    </section>
+    <div id="message" class="message" role="status" aria-live="polite" hidden></div>
+    <section class="desk-grid">
+      <div class="workspace">
+        <section class="plan-heading" aria-labelledby="planTitle"><div><p class="eyebrow">CURRENT PLAN</p><h2 id="planTitle"></h2></div><div class="cutoff"><span class="eyebrow">HARD CUTOFF</span><strong id="cutoff"></strong><span id="windowText"></span></div></section>
+        <section class="timeline-panel" aria-labelledby="timelineHeading">
+          <div class="section-head"><h3 id="timelineHeading">01 / Room timeline</h3><span id="timelineMode" class="state-tag">Original plan</span></div>
+          <div class="legend"><span><i class="solid-key"></i>Current time</span><span><i class="ghost-key"></i>Original time</span><span>Room occupied for the whole cue</span></div>
+          <div id="timeline"></div>
+          <p id="timelineCaption" class="muted"></p>
+        </section>
+        <section class="conflict-panel" aria-labelledby="conflictHeading"><div class="section-head"><h3 id="conflictHeading">02 / Conflict check</h3><strong id="conflictCount"></strong></div><div id="conflicts"></div></section>
+      </div>
+      <aside class="recovery" aria-labelledby="recoveryHeading">
+        <div class="section-head"><h2 id="recoveryHeading">Rehearse a disruption</h2><span class="eyebrow">03</span></div>
+        <p>Make one cue late or take a resource out of service. The original plan stays available.</p>
+        <form id="delayForm" class="scenario-form"><label>Cue<select id="delayCue"></select></label><label>Delay (minutes)<input id="delayMinutes" type="number" min="1" max="720" step="1" value="10" required></label><button class="quiet" type="submit">Apply delay</button></form>
+        <button id="quickDelay" class="disruption">Try the opening 10 minutes late <span aria-hidden="true">↗</span></button>
+        <details class="resource-details"><summary>Take a resource out of service</summary><form id="unavailableForm"><label>Resource<select id="unavailableResource"></select></label><div class="pair"><label>From minute<input id="unavailableStart" type="number" step="1" value="20" required></label><label>Until minute<input id="unavailableEnd" type="number" step="1" value="30" required></label></div><button type="submit" class="quiet">Apply unavailability</button></form></details>
+        <div id="scenarioList" class="scenario-list"></div>
+        <button id="clearScenario" class="text-button">Clear disruptions</button>
+        <div class="recovery-status" id="recoveryStatus"><h3 id="statusHeadline">Ready for a rehearsal</h3><p id="statusDetail">Introduce a disruption to see what needs to change.</p></div>
+        <button id="compute" class="primary">Find recovery choices <span aria-hidden="true">→</span></button>
+        <p class="limits">Hard limits stay hard: every cue stays in its room, locks remain, and no duration falls below its minimum.</p>
+        <section id="choices" aria-labelledby="choicesHeading" hidden><div class="section-head"><h3 id="choicesHeading">Compare & choose</h3></div><p id="searchNote" class="muted"></p><div id="options"></div><button id="accept" class="primary" disabled>Accept selected recovery</button><p class="limits">Previewing does not change your plan. Accept explicitly to enable the revised downloads.</p></section>
+        <section id="accepted" class="accepted" hidden><h3>Recovery accepted</h3><p id="acceptedDetail"></p><div class="download-actions"><button id="export" class="primary">Download revised JSON ↓</button><button id="sheetDownload" class="quiet">Download printable cue sheet ↓</button><button id="sheetView" class="quiet">View cue sheet & diff</button><button id="undo" class="text-button">Undo acceptance ↶</button></div></section>
+      </aside>
+    </section>
+    <section class="cue-ledger" aria-labelledby="ledgerHeading"><div class="section-head"><div><p class="eyebrow">INSPECT & EDIT</p><h2 id="ledgerHeading">The cue sheet</h2></div><button id="addCue" class="quiet">Add cue +</button></div><p class="muted">Not-before, deadline, minimum duration and lock are enforced by the recovery engine. Priority 3 carries more change cost than priority 1.</p><div id="cueRows"></div></section>
+    <section class="assumptions"><h3>Planning assumptions</h3><p>One cue occupies its room and all assigned resources for its entire duration. Boundary-touching cues do not overlap. No partial setup times, live timers, networking or staffing guarantees. A bounded search may miss feasible choices; it does not prove a best result.</p></section>
+  </main>
+  <footer><strong>CyberNative AI LLC</strong><span>Local rehearsal prototype · Keep the downloaded JSON to reproduce your plan.</span></footer>
+  <dialog id="cueDialog" aria-labelledby="cueDialogTitle"><form id="cueForm"><div class="dialog-head"><h2 id="cueDialogTitle">Edit cue</h2><button type="button" data-close class="quiet">Close</button></div><div id="cueFields" class="form-grid"></div><p id="cueError" role="alert" class="form-error"></p><div class="dialog-actions"><button type="submit" class="primary">Save cue</button><button id="deleteCue" type="button" class="quiet">Remove cue</button></div></form></dialog>
+  <dialog id="planDialog" aria-labelledby="planDialogTitle"><form id="planForm"><div class="dialog-head"><h2 id="planDialogTitle">Plan & resources</h2><button type="button" data-close class="quiet">Close</button></div><label>Plan title<input id="planName" maxlength="160" required></label><div class="pair"><label>Window start<input id="planStart" type="number" step="1" required></label><label>Hard cutoff<input id="planEnd" type="number" step="1" required></label></div><label>Resources · one id,label per line<textarea id="planResources" rows="5" spellcheck="false"></textarea></label><p class="muted">Resource IDs link to cues. Keep used IDs or update the cues first. Maximum 8 resources, 4 rooms, 12 cues and a 720-minute window.</p><p id="planError" role="alert" class="form-error"></p><button class="primary" type="submit">Save plan</button></form></dialog>
+  <dialog id="sheetDialog" aria-labelledby="sheetTitle"><div class="dialog-head"><h2 id="sheetTitle">Accepted cue sheet</h2><button type="button" data-close class="quiet">Close</button></div><div id="printArea"></div><button id="print" class="primary">Print cue sheet</button></dialog>
+  <noscript>This rehearsal desk requires JavaScript. It runs locally and needs no account.</noscript>
+</body>
+</html>

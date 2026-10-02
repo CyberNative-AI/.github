@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "title": "Two-room rehearsal \u00b7 shared technician",
+  "horizon": {
+    "start": 0,
+    "end": 60
+  },
+  "resources": [
+    {
+      "id": "tech",
+      "label": "Shared technician"
+    }
+  ],
+  "cues": [
+    {
+      "id": "A",
+      "title": "Opening scene",
+      "room": "room1",
+      "plannedStart": 0,
+      "duration": 20,
+      "minDuration": 20,
+      "locked": false,
+      "notBefore": 0,
+      "deadline": 60,
+      "resources": [
+        "tech"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "B",
+      "title": "Sound demonstration",
+      "room": "room2",
+      "plannedStart": 20,
+      "duration": 20,
+      "minDuration": 15,
+      "locked": false,
+      "notBefore": 20,
+      "deadline": 60,
+      "resources": [
+        "tech"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "C",
+      "title": "Community scene",
+      "room": "room1",
+      "plannedStart": 20,
+      "duration": 20,
+      "minDuration": 20,
+      "locked": false,
+      "notBefore": 20,
+      "deadline": 60,
+      "resources": [],
+      "priority": 1
+    }
+  ]
+}
