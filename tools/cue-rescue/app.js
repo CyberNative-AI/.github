@@ -58,6 +58,11 @@
     if (!c) return null;
     return { resourceId: c.resources[0], start: c.plannedStart, end: Math.min(plan.horizon.end, c.plannedStart + Math.min(10, c.duration)) };
   }
+  // The shortcut adds its outage to entered or imported disruptions; it never replaces them.
+  function withOutage(outage) {
+    if (scenario.unavailable.some(u => u.resourceId === outage.resourceId && u.start === outage.start && u.end === outage.end)) return clone(scenario);
+    return scenario.unavailable.length < 32 ? { delays: clone(scenario.delays), unavailable: [...clone(scenario.unavailable), outage] } : null;
+  }
   function renderTimeline(schedule) {
     const base = accepted ? accepted.beforePlan : plan;
     const host = $('timeline'); host.replaceChildren();
@@ -113,7 +118,7 @@
     $('unavailableResource').replaceChildren(...plan.resources.map(r=>{const o=node('option',r.label);o.value=r.id;return o}));if(plan.resources.some(r=>r.id===oldRes))$('unavailableResource').value=oldRes;
     $('unavailableForm').querySelector('button').disabled=!plan.resources.length;
     $('clearScenario').disabled=!(scenario.delays.length||scenario.unavailable.length);
-    const outage=sampleOutage();$('sampleRescue').disabled=!outage;if(outage)$('sampleLabel').replaceChildren(document.createTextNode('Rehearse it: '+resourceLabel(outage.resourceId)+' out '),node('span',outage.start+'–'+outage.end+' min','nowrap'));else $('sampleLabel').textContent='Add a shared resource to a cue to rehearse a loss';
+    const outage=sampleOutage(),next=outage&&withOutage(outage);$('sampleRescue').disabled=!next;if(next)$('sampleLabel').replaceChildren(document.createTextNode((scenario.delays.length||scenario.unavailable.length?'Also rehearse: ':'Rehearse it: ')+resourceLabel(outage.resourceId)+' out '),node('span',outage.start+'–'+outage.end+' min','nowrap'));else $('sampleLabel').textContent=outage?'Clear some disruptions to rehearse another loss':'Add a shared resource to a cue to rehearse a loss';
     $('quickDelay').disabled=!plan.cues.length; $('quickDelay').textContent='Try cue '+plan.cues[0].id+' 10 minutes late ↗';
   }
   function renderOptions() {
@@ -153,7 +158,7 @@
   $('delayForm').addEventListener('submit',e=>{e.preventDefault();try{const minutes=int('delayMinutes');if(minutes<1||minutes>720)throw new Error('Use a delay from 1 to 720 minutes.');const cueId=$('delayCue').value;scenarioChange({...scenario,delays:[...scenario.delays.filter(d=>d.cueId!==cueId),{cueId,minutes}]})}catch(err){say(err.message)}});
   $('quickDelay').addEventListener('click',()=>{scenarioChange({...scenario,delays:[...scenario.delays.filter(d=>d.cueId!==plan.cues[0].id),{cueId:plan.cues[0].id,minutes:10}]})});
   $('unavailableForm').addEventListener('submit',e=>{e.preventDefault();try{const start=int('unavailableStart'),end=int('unavailableEnd');if(start<plan.horizon.start||end>plan.horizon.end||start>=end)throw new Error('Unavailability must be a positive interval inside the planning window.');scenarioChange({...scenario,unavailable:[...scenario.unavailable,{resourceId:$('unavailableResource').value,start,end}]})}catch(err){say(err.message)}});
-  $('sampleRescue').addEventListener('click',()=>{const outage=sampleOutage();if(!outage||busy)return;scenarioChange({delays:[],unavailable:[outage]});runSearch(true)});
+  $('sampleRescue').addEventListener('click',()=>{const outage=sampleOutage();if(!outage||busy)return;const next=withOutage(outage);if(!next)return;scenarioChange(next);runSearch(true)});
   $('clearScenario').addEventListener('click',()=>scenarioChange(emptyScenario()));
   function runSearch(previewFirst) {
     if(busy)return;busy=true;$('compute').disabled=true;$('compute').textContent='Searching up to 5,000 candidates…';$('message').hidden=true;
