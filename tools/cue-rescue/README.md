@@ -6,7 +6,7 @@ This is **not live show control or a staffing guarantee**. Examples are original
 
 ## Download and open
 
-[Download Cue Rescue ZIP](cue-rescue.zip?raw=1). Extract the whole archive into one folder, then open `index.html` in a current desktop browser with JavaScript enabled. Keep `engine.js`, `app.js` and `styles.css` alongside it. GitHub's HTML source view does not run the application. No account, server or package installation is needed.
+[Download Cue Rescue ZIP](https://raw.githubusercontent.com/CyberNative-AI/.github/refs/heads/main/tools/cue-rescue/cue-rescue.zip). Extract the whole archive into one folder, then open `index.html` in a current desktop browser with JavaScript enabled. Keep `engine.js`, `app.js` and `styles.css` alongside it. GitHub's HTML source view does not run the application. No account, server or package installation is needed.
 
 Start with the included two-room example or import a version1 JSON plan such as `fixtures/two-room.json`. CSV import is not available. Keep private schedules and personal details out of feedback.
 
