@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+<title>Cache probe · private toy</title>
+<style>
+:root{--paper:#f6f2e7;--panel:#fffdf7;--ink:#0e1427;--muted:#4a5a68;--bio:#0db8ab;--hit:#b8eae4;--miss:#f6d2bf;--rust:#9c3f17;--focus:#a82b99;--hair:#d6cfbd}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 system-ui,sans-serif}main,header,footer{max-width:1248px;margin:auto;padding-inline:32px}header{padding-block:20px;border-bottom:2px solid var(--ink);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}header strong{font-size:20px}h1{font:600 clamp(40px,5vw,68px)/1.06 Georgia,serif;letter-spacing:-.03em;max-width:15ch;margin:0 0 24px;text-wrap:balance}h2{font:600 28px/1.2 Georgia,serif;margin:0 0 12px}p{margin:0 0 16px}.mono,.eyebrow,dt{font-family:ui-monospace,monospace}.eyebrow{color:var(--muted);font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}.intro{display:grid;grid-template-columns:7fr 5fr;gap:64px;padding-block:48px}.lede{font-size:20px;max-width:44ch}.limit{border-left:3px solid var(--rust);padding-left:16px}.limit strong{color:var(--rust)}.rules{border-top:2px solid var(--ink);padding-top:20px}.rules p:last-child{margin-bottom:0}mark{background:var(--hit);color:inherit;padding:2px 6px}.start{display:flex;align-items:center;justify-content:space-between;gap:24px;border-top:2px solid var(--ink);border-bottom:1px solid var(--ink);padding-block:24px}.start p{margin:0}.state{font:600 24px/1.4 ui-monospace,monospace}.controls{display:flex;align-items:center;gap:16px;flex-wrap:wrap}label{display:block;font-weight:600;margin-bottom:8px}select,button{font:inherit;color:var(--ink);min-height:48px;border:2px solid var(--ink);border-radius:4px;padding:8px 16px;background:var(--panel)}select{max-width:100%}button{cursor:pointer;font-weight:600}button.primary{background:var(--bio)}button:disabled{color:var(--muted);border-color:var(--muted);cursor:default}button:focus-visible,select:focus-visible{outline:3px solid var(--focus);outline-offset:4px}.tracks{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding-block:32px}.track{min-width:0}.track-head{display:flex;justify-content:space-between;gap:16px;align-items:baseline;border-bottom:2px solid var(--ink);margin-bottom:20px}.track-head p{margin:0}.track select{width:100%}.current{margin-block:20px}.empty{color:var(--muted);border-block:1px solid var(--hair);padding-block:24px;margin:0}.row{padding-block:16px;border-bottom:1px solid var(--hair)}.row-title{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:12px;font-weight:600}.result{background:var(--hit);padding:2px 8px;font:600 16px/1.6 ui-monospace,monospace}.result.miss{background:var(--miss)}dl{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:0}dt{font-size:14px;color:var(--muted)}dd{margin:4px 0 0;font-family:ui-monospace,monospace;font-size:16px}.actions{display:flex;gap:16px;flex-wrap:wrap;align-items:center;padding-block:24px;border-top:2px solid var(--ink)}#message{min-height:52px;margin:0 0 16px;max-width:80ch}#message.error{color:var(--rust)}#takeaway{border-top:1px solid var(--ink);padding-block:24px;font-size:18px}footer{border-top:2px solid var(--ink);padding-block:24px;color:var(--muted)}footer p{margin:0}noscript{display:block;padding:24px;border:2px solid var(--rust)}
+@media(max-width:899px){.intro{grid-template-columns:1fr;gap:24px}.tracks{grid-template-columns:1fr;gap:32px}.start{align-items:flex-start;flex-direction:column}.lede{font-size:18px}}
+@media(max-width:599px){main,header,footer{padding-inline:20px}.intro{padding-block:32px}header{gap:4px}h1{font-size:42px}.eyebrow,dt{font-size:16px}.tracks{padding-block:24px}.track-head{align-items:flex-start;flex-direction:column;gap:4px;padding-bottom:12px}.controls{width:100%;align-items:stretch}.controls>div{flex:1}select{width:100%}.actions button{width:100%}dl{grid-template-columns:1fr 1fr}dl>div:last-child{grid-column:1/-1}.state{font-size:22px}}
+</style>
+</head>
+<body>
+<header><strong>CyberNative</strong><span class="mono">Private exercise · v1</span></header>
+<main>
+<noscript>This exercise needs JavaScript. No predictions, results or download are available without it.</noscript>
+<section class="intro" aria-labelledby="title">
+<div><p class="eyebrow">Observe the observer</p><h1 id="title">A cache probe changes the cache.</h1><p class="lede">Two orders. The same starting keys. Predict the hit sequences, then inspect what each request changes.</p><p class="limit"><strong>IDEALIZED TOY</strong><br>Synthetic keys and sequential LRU only. This does not measure production retention, performance, security, learning efficacy, demand or economics.</p></div>
+<aside class="rules" aria-label="Toy rules"><h2>The rules</h2><p>A, B and C are independent, equally sized keys. Warm an empty cache with <span class="mono">A → B → C</span>.</p><p>States read <strong>oldest → newest</strong>. A hit moves the requested key to newest. A miss adds it and, if full, evicts the oldest key.</p><p>Each order starts from an <strong>independent copy</strong> of the post-warm state. A hit is <span class="mono">H</span>; a miss is <span class="mono">M</span>.</p></aside>
+</section>
+<section class="start" aria-label="Shared starting state"><div><p>Post-warm state · oldest → newest</p><p class="state" id="initial"></p><p id="capacity-note"></p></div><div class="controls"><div><label for="capacity">Cache capacity</label><select id="capacity"><option value="2">2 keys</option><option value="3">3 keys · control</option></select></div><button id="reset" type="button">Reset attempt</button></div></section>
+<form id="experiment" novalidate>
+<div class="tracks">
+<section class="track" aria-labelledby="forward-title"><div class="track-head"><h2 id="forward-title">Forward</h2><p class="mono">A → B → C</p></div><label for="predict-forward">Predict forward hits</label><select id="predict-forward" aria-describedby="prediction-help"><option value="">Choose a sequence</option></select><p class="current">Current cache: <strong class="mono" id="current-forward"></strong></p><div id="ledger-forward"><p class="empty">No requests revealed. Your prediction comes first.</p></div></section>
+<section class="track" aria-labelledby="reverse-title"><div class="track-head"><h2 id="reverse-title">Reverse</h2><p class="mono">C → B → A</p></div><label for="predict-reverse">Predict reverse hits</label><select id="predict-reverse" aria-describedby="prediction-help"><option value="">Choose a sequence</option></select><p class="current">Current cache: <strong class="mono" id="current-reverse"></strong></p><div id="ledger-reverse"><p class="empty">No requests revealed. Your prediction comes first.</p></div></section>
+</div>
+<p id="prediction-help">Choose one H/M result for each of the three requests in each order. Both predictions are required. Reset or change capacity to try again.</p>
+<div class="actions"><button class="primary" id="advance" type="submit">Freeze predictions & reveal step 1</button><button id="download" type="button" disabled>Download complete ledger</button><span class="mono" id="progress">0 / 3 paired steps</span></div>
+</form>
+<p id="message" role="status" aria-live="polite" aria-atomic="true">Ready for your predictions. No probe requests have run.</p>
+<p id="takeaway" hidden></p>
+</main>
+<footer><p>CyberNative AI LLC · Private, self-authored demonstration.</p><p>Predictions stay in this tab. The JSON download is local; nothing is sent or saved by the exercise.</p></footer>
+<script>
+'use strict';
+const $ = id => document.getElementById(id);
+const sequences = ['HHH','HHM','HMH','HMM','MHH','MHM','MMH','MMM'];
+const orders = {forward:['A','B','C'],reverse:['C','B','A']};
+const limitation = 'IDEALIZED TOY: synthetic equally sized independent keys; sequential idealized LRU, oldest to newest. Does not measure production retention, performance, security, learning efficacy, demand or economics.';
+for (const name of Object.keys(orders)) for (const seq of sequences) {
+  const option = document.createElement('option'); option.value = seq; option.textContent = seq; $('predict-'+name).append(option);
+}
+let capacity, initial, states, rows, predictions, step;
+function transition(state, request, limit) {
+  const pre = [...state], hit = pre.includes(request);
+  const post = pre.filter(key => key !== request);
+  let victim = null;
+  if (!hit && post.length === limit) victim = post.shift();
+  post.push(request);
+  return {pre,request,hit,victim,post};
+}
+function stateText(state) { return '[' + state.join(', ') + ']'; }
+function message(text, error=false) { $('message').textContent=text; $('message').classList.toggle('error',error); }
+function reset() {
+  capacity=Number($('capacity').value);
+  initial=[]; for (const key of ['A','B','C']) initial=transition(initial,key,capacity).post;
+  states={forward:[...initial],reverse:[...initial]}; rows={forward:[],reverse:[]}; predictions=null; step=0;
+  $('initial').textContent=stateText(initial);
+  $('capacity-note').textContent=capacity===3?'Control: enough room for all three keys.':'Two slots after three warm requests.';
+  for (const name of Object.keys(orders)) {
+    const select=$('predict-'+name); select.value=''; select.disabled=false; select.removeAttribute('aria-invalid');
+    $('current-'+name).textContent=stateText(states[name]);
+    $('ledger-'+name).replaceChildren(); const empty=document.createElement('p'); empty.className='empty'; empty.textContent='No requests revealed. Your prediction comes first.'; $('ledger-'+name).append(empty);
+  }
+  $('advance').disabled=false; $('advance').textContent='Freeze predictions & reveal step 1'; $('download').disabled=true;
+  $('progress').textContent='0 / 3 paired steps'; $('takeaway').hidden=true; $('takeaway').textContent='';
+  message('Ready for your predictions. No probe requests have run.');
+}
+function renderRow(name, row, index) {
+  const article=document.createElement('article'); article.className='row'; article.dataset.step=String(index);
+  const title=document.createElement('div'); title.className='row-title';
+  const request=document.createElement('span'); request.textContent='Step '+index+' · request '+row.request;
+  const result=document.createElement('span'); result.className='result'+(row.hit?'':' miss'); result.textContent=row.hit?'H · hit':'M · miss';
+  title.append(request,result); article.append(title);
+  const list=document.createElement('dl');
+  for (const [label,value] of [['Pre-state',stateText(row.pre)],['Victim',row.victim===null?'null (none)':row.victim],['Post-state',stateText(row.post)]]) {
+    const pair=document.createElement('div'),term=document.createElement('dt'),definition=document.createElement('dd'); term.textContent=label; definition.textContent=value; pair.append(term,definition); list.append(pair);
+  }
+  article.append(list); $('ledger-'+name).append(article); $('current-'+name).textContent=stateText(row.post);
+}
+function ledger() {
+  if(step!==3 || !predictions) throw new Error('A complete attempt is required.');
+  return {schema:'cache-probe-private/v1',complete:true,capacity,warmRequests:['A','B','C'],initialState:[...initial],stateOrder:'oldest → newest',limitation,
+    experiments:Object.keys(orders).map(name=>({name,order:[...orders[name]],initialState:[...initial],prediction:predictions[name],observedSequence:rows[name].map(row=>row.hit?'H':'M').join(''),transitions:rows[name].map((row,index)=>({step:index+1,pre:[...row.pre],request:row.request,hit:row.hit,victim:row.victim,post:[...row.post]}))}))};
+}
+$('experiment').addEventListener('submit',event=>{
+  event.preventDefault(); if(step>=3) return;
+  if(!predictions) {
+    const chosen={forward:$('predict-forward').value,reverse:$('predict-reverse').value};
+    const invalid=Object.keys(orders).filter(name=>!sequences.includes(chosen[name]));
+    for(const name of Object.keys(orders)) $('predict-'+name).setAttribute('aria-invalid',String(invalid.includes(name)));
+    if(invalid.length) { message('Choose both hit sequences before revealing any request.',true); $('predict-'+invalid[0]).focus(); return; }
+    predictions=Object.freeze({...chosen}); for(const name of Object.keys(orders)) {$('predict-'+name).disabled=true; $('ledger-'+name).replaceChildren();}
+  }
+  const announcements=[];
+  for(const name of Object.keys(orders)) {
+    const row=transition(states[name],orders[name][step],capacity); states[name]=[...row.post]; rows[name].push(row); renderRow(name,row,step+1);
+    announcements.push(name+' '+row.request+': '+(row.hit?'hit':'miss')+', victim '+(row.victim===null?'none':row.victim));
+  }
+  step++; $('progress').textContent=step+' / 3 paired steps'; message('Step '+step+'. '+announcements.join('; ')+'.');
+  if(step===3) {
+    $('advance').disabled=true; $('advance').textContent='All requests revealed'; $('download').disabled=false;
+    const run=ledger(); $('takeaway').hidden=false;
+    $('takeaway').textContent=run.experiments.map(exp=>exp.name+': predicted '+exp.prediction+'; observed '+exp.observedSequence+'.').join(' ')+' The retained starting keys and the hits seen during a changing probe are different observations. Reset to predict again, or change capacity to test the control.';
+    $('download').focus();
+  } else $('advance').textContent='Reveal paired step '+(step+1);
+});
+$('capacity').addEventListener('change',reset);
+$('reset').addEventListener('click',()=>{reset();$('predict-forward').focus();});
+$('download').addEventListener('click',()=>{
+  let url;
+  try { const blob=new Blob([JSON.stringify(ledger(),null,2)+'\n'],{type:'application/json;charset=utf-8'}); url=URL.createObjectURL(blob);
+    const link=document.createElement('a'); link.href=url;link.download='cache-probe-capacity-'+capacity+'.json';document.body.append(link);link.click();link.remove();
+    message('Complete ledger download requested. Check your browser downloads.');
+  } catch(error) { message('The download could not start. Try again, or inspect the complete visible history.',true); }
+  finally { if(url) URL.revokeObjectURL(url); }
+});
+reset();
+</script>
+</body>
+</html>
