@@ -6,7 +6,9 @@ Before you use pwasm's fuel counter to budget a workload, check what one unit me
 
 ## Run the check
 
-Download `check_fuel.py` and `requirements.txt` from this directory. In a new directory on Linux with Python 3.10 or later:
+Download `check_fuel.py` and `requirements.txt` from this directory, or [download the repository ZIP](https://github.com/CyberNative-AI/.github/archive/refs/heads/main.zip) and use its `.github-main/notes/pwasm-fuel/` folder. The ZIP includes the rest of this repository as well. This recipe folder contains the fixture, requirements, recorded result and license.
+
+With those files in your working directory on Linux with Python 3.10 or later:
 
 ```sh
 python3 -m venv .venv
