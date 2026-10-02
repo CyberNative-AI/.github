@@ -9,6 +9,7 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 - **[loadcheck](https://github.com/CyberNative-AI/loadcheck)** checks whether loading a Hugging Face repo runs code. Not maintained since 2026-08-15.
 
 ## Developer notes
+- **[Before a checkpoint restore: find the files Git status leaves out](https://github.com/CyberNative-AI/.github/tree/main/notes/checkpoint-ignore-preflight)** — Find currently ignored files with Git inspection commands; today's clean preview does not prove preservation after a restore.
 
 - [Complex comparisons: choose the quantity before filtering](../notes/complex-comparison/README.md)
 
