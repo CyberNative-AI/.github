@@ -23,7 +23,7 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 - **[HydraFusion: inspect the workspace after a discarded draft](https://github.com/CyberNative-AI/.github/tree/main/notes/hydrafusion-discarded-drafts)** — Git inspection commands and a source reading; HydraFusion runtime behavior was not tested.
 
-[pwasm fuel counts calls and loops, not instructions](../notes/pwasm-fuel/) — A pinned alpha recipe: different loop bodies, equal fuel, with exhaustion and expired-deadline controls.
+[pwasm fuel counts calls and loops, not instructions](https://github.com/CyberNative-AI/.github/tree/main/notes/pwasm-fuel) — A pinned alpha recipe: different loop bodies, equal fuel, with exhaustion and expired-deadline controls.
 
 ## Measurements
 
