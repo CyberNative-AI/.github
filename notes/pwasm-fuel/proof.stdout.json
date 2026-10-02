@@ -1,0 +1,194 @@
+{
+  "distribution": "pwasm",
+  "version": "0.2a0",
+  "python": "3.12.3",
+  "system": "Linux",
+  "rows": [
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 1,
+      "call": 1,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 1,
+      "call": 2,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 1,
+      "call": 3,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 65,
+      "call": 1,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 65,
+      "call": 2,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 65,
+      "call": 3,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 1,
+      "call": 1,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 1,
+      "call": 2,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 1,
+      "call": 3,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 65,
+      "call": 1,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 65,
+      "call": 2,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 65,
+      "call": 3,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 1,
+      "call": 1,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 1,
+      "call": 2,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 1,
+      "call": 3,
+      "result": 10,
+      "fuel": 12
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 65,
+      "call": 1,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 65,
+      "call": 2,
+      "result": 650,
+      "fuel": 12
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 65,
+      "call": 3,
+      "result": 650,
+      "fuel": 12
+    }
+  ],
+  "controls": [
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 1,
+      "control": "fuel=5",
+      "outcome": "OutOfFuel",
+      "fuel": 5
+    },
+    {
+      "mode": "interpret",
+      "additions_per_iteration": 65,
+      "control": "fuel=5",
+      "outcome": "OutOfFuel",
+      "fuel": 5
+    },
+    {
+      "mode": "interpret",
+      "control": "expired deadline",
+      "outcome": "Timeout"
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 1,
+      "control": "fuel=5",
+      "outcome": "OutOfFuel",
+      "fuel": 5
+    },
+    {
+      "mode": "compile",
+      "additions_per_iteration": 65,
+      "control": "fuel=5",
+      "outcome": "OutOfFuel",
+      "fuel": 5
+    },
+    {
+      "mode": "compile",
+      "control": "expired deadline",
+      "outcome": "Timeout"
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 1,
+      "control": "fuel=5",
+      "outcome": "OutOfFuel",
+      "fuel": 5
+    },
+    {
+      "mode": "auto",
+      "additions_per_iteration": 65,
+      "control": "fuel=5",
+      "outcome": "OutOfFuel",
+      "fuel": 5
+    },
+    {
+      "mode": "auto",
+      "control": "expired deadline",
+      "outcome": "Timeout"
+    }
+  ],
+  "scope": "authored tiny modules; no guest interpreters, host imports, memory, speed or security audit"
+}
