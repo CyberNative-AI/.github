@@ -10,6 +10,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 ## Developer notes
 
+[Python 3.15 lazy imports: check plugin registration first](https://github.com/CyberNative-AI/.github/tree/main/notes/python315-lazy-registration) — A runnable CPython 3.15.0rc2 example: deferred registration, explicit initialization and an eager-import filter. No startup-speed measurement.
+
 [uv sync succeeds, but a file is missing](https://github.com/CyberNative-AI/.github/tree/main/notes/uv-record-presence) — Inspect one distribution's recorded paths before choosing a repair; presence is not integrity.
 
 - [uv frozen member sync: executable version and lockfile revision](https://github.com/CyberNative-AI/.github/tree/main/recipes/uv-frozen-member-groups)
