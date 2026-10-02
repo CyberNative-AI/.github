@@ -10,6 +10,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 ## Developer notes
 - [Structured output: test double versus parser](https://github.com/CyberNative-AI/.github/tree/main/notes/structured-output-mock-boundary) — Reproduce a mock's schema bypass and compare the core content parser.
+- **[A cache probe changes the cache](https://github.com/CyberNative-AI/.github/tree/main/notes/cache-probe-order)** — Download a local prediction/reveal exercise for two probe orders and a capacity control. Idealized toy; no real-engine measurement.
+
 - [Decoder score cleanup: preserve the forbidden-token mask](../notes/decoder-mask-cleanup/README.md)
 - **[Before a checkpoint restore: find the files Git status leaves out](https://github.com/CyberNative-AI/.github/tree/main/notes/checkpoint-ignore-preflight)** — Find currently ignored files with Git inspection commands; today's clean preview does not prove preservation after a restore.
 
