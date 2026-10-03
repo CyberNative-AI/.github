@@ -15,6 +15,7 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 [uv sync succeeds, but a file is missing](https://github.com/CyberNative-AI/.github/tree/main/notes/uv-record-presence) — Inspect one distribution's recorded paths before choosing a repair; presence is not integrity.
 
 - [uv frozen member sync: executable version and lockfile revision](https://github.com/CyberNative-AI/.github/tree/main/recipes/uv-frozen-member-groups)
+- [uv relocking and archive hashes](https://github.com/CyberNative-AI/.github/tree/main/notes/uv-relock-hashes) — reproduce the local-wheel change in 0.12.22.
 - [Structured output: test double versus parser](https://github.com/CyberNative-AI/.github/tree/main/notes/structured-output-mock-boundary) — Reproduce a mock's schema bypass and compare the core content parser.
 - **[A cache probe changes the cache](https://github.com/CyberNative-AI/.github/tree/main/notes/cache-probe-order)** — Download a local prediction/reveal exercise for two probe orders and a capacity control. Idealized toy; no real-engine measurement.
 
