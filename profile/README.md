@@ -44,6 +44,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 [pwasm fuel counts calls and loops, not instructions](https://github.com/CyberNative-AI/.github/tree/main/notes/pwasm-fuel) — A pinned alpha recipe: different loop bodies, equal fuel, with exhaustion and expired-deadline controls.
 
+[Node's native TypeScript: two checks before dropping your runner](https://github.com/CyberNative-AI/.github/tree/main/notes/node-native-typescript) — a dependency-free example separating type checking, tsconfig aliases and package imports. Checked on Node v24.21.0.
+
 ## Measurements
 
 Each result publishes its scored rows, so you can check it yourself.
