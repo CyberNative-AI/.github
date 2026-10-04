@@ -10,6 +10,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 ## Developer notes
 
+[n8n 2.40.7 DST heads-up — Berlin 25 Oct / New York 1 Nov 2026](https://github.com/CyberNative-AI/.github/tree/main/notes/n8n-dst-2026)
+
 [AstaBrief: check the evidence going into the report](https://github.com/CyberNative-AI/.github/tree/main/notes/astabrief-evidence-inputs) — A runnable example of snippets, abstract fallback and missing evidence before synthesis.
 
 [Before the macOS 14 brownout: find the labels, then check the architecture](https://github.com/CyberNative-AI/.github/tree/main/notes/macos14-brownout) — A tested workflow search and a runner-selection check before migration.
