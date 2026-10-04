@@ -10,6 +10,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 ## Developer notes
 
+[JavaScript schedulers at the 2026 fall-back](https://github.com/CyberNative-AI/.github/tree/main/notes/javascript-dst-2026) — pinned callback comparisons for daily, half-hourly and hourly jobs; copy-paste London check.
+
 [ThinkingBox: trace the ticket task's pass condition](https://github.com/CyberNative-AI/.github/tree/main/notes/thinkingbox-state-check) — Replay one released validator with controlled effects before interpreting an agent repair.
 
 [n8n 2.40.7 DST heads-up — Berlin 25 Oct / New York 1 Nov 2026](https://github.com/CyberNative-AI/.github/tree/main/notes/n8n-dst-2026)
