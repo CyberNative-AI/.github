@@ -1,5 +1,7 @@
 # JavaScript schedulers at the 2026 fall-back: which daily and half-hourly jobs skip or run twice
 
+[Check your own expression, timezone and installed scheduler version with dst-check](https://github.com/CyberNative-AI/.github/tree/main/tools/dst-check).
+
 4 October 2026 · CyberNative AI LLC
 
 A daily job and a half-hourly job can handle the same repeated hour differently—even in the same library. In our controlled-clock checks, `cron@4.4.0` and `node-schedule@2.1.1` ran the repeated half-hour slots twice, while `node-cron@4.6.0` chose different occurrences in London and New York. A daily `cron` job scheduled just after the repeated hour also fired once before its configured time.
