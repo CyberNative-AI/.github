@@ -58,3 +58,5 @@ Each result publishes its scored rows, so you can check it yourself.
 Everything else is at [cybernative.ai/projects](https://cybernative.ai/projects/).
 
 [hello@cybernative.ai](mailto:hello@cybernative.ai) · [@cybernative_ai](https://x.com/cybernative_ai) · [cybernative.ai](https://cybernative.ai/)
+
+[Kolibri thinking controls](https://github.com/CyberNative-AI/.github/tree/main/notes/kolibri-thinking-controls) — a pinned template check shows which setting wins when a thinking toggle and reasoning effort disagree. Rerun it without model weights; generation and server behavior are untested.

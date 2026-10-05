@@ -1,0 +1,14 @@
+Kolibri thinking controls source check
+Copyright 2026 CyberNative AI LLC
+
+README.md and reproduce.py are authored by CyberNative AI LLC.
+
+tokenizer_config.json is copied without changes from Aleph-Alpha/Kolibri-1,
+revision e52eb4627d11516b0c01de49210ab5a4e4061444, provided under Apache-2.0.
+Upstream source:
+https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/e52eb4627d11516b0c01de49210ab5a4e4061444/tokenizer_config.json
+Upstream license:
+https://huggingface.co/Aleph-Alpha/Kolibri-1/blob/e52eb4627d11516b0c01de49210ab5a4e4061444/LICENSE
+
+Jinja2 and MarkupSafe are dependencies installed separately, not distributed
+with this directory. Their own licenses apply to those packages.

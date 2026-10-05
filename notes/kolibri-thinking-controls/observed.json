@@ -1,0 +1,68 @@
+{
+  "cases": [
+    {
+      "assistant_prefix_after_role": "",
+      "case": "default",
+      "closed_think_prefix": false,
+      "disabled_directive": false,
+      "options": {},
+      "rendered_prompt_sha256": "3b6e183c9537a8c5dbb88f7635e2f072a94c8a13d53300a88f4563e050f12265"
+    },
+    {
+      "assistant_prefix_after_role": "<think>\n\n</think>\n\n",
+      "case": "boolean_false",
+      "closed_think_prefix": true,
+      "disabled_directive": true,
+      "options": {
+        "enable_thinking": false
+      },
+      "rendered_prompt_sha256": "d274a35b76d8e2473c1d42d0788fac03684261ca967f77c2f4736bbd7082033b"
+    },
+    {
+      "assistant_prefix_after_role": "<think>\n\n</think>\n\n",
+      "case": "effort_none",
+      "closed_think_prefix": true,
+      "disabled_directive": true,
+      "options": {
+        "reasoning_effort": "none"
+      },
+      "rendered_prompt_sha256": "d274a35b76d8e2473c1d42d0788fac03684261ca967f77c2f4736bbd7082033b"
+    },
+    {
+      "assistant_prefix_after_role": "",
+      "case": "high_and_false",
+      "closed_think_prefix": false,
+      "disabled_directive": false,
+      "options": {
+        "enable_thinking": false,
+        "reasoning_effort": "high"
+      },
+      "rendered_prompt_sha256": "3b6e183c9537a8c5dbb88f7635e2f072a94c8a13d53300a88f4563e050f12265"
+    },
+    {
+      "assistant_prefix_after_role": "<think>\n\n</think>\n\n",
+      "case": "none_and_true",
+      "closed_think_prefix": true,
+      "disabled_directive": true,
+      "options": {
+        "enable_thinking": true,
+        "reasoning_effort": "none"
+      },
+      "rendered_prompt_sha256": "d274a35b76d8e2473c1d42d0788fac03684261ca967f77c2f4736bbd7082033b"
+    },
+    {
+      "assistant_prefix_after_role": "",
+      "case": "string_false",
+      "closed_think_prefix": false,
+      "disabled_directive": false,
+      "options": {
+        "enable_thinking": "false"
+      },
+      "rendered_prompt_sha256": "3b6e183c9537a8c5dbb88f7635e2f072a94c8a13d53300a88f4563e050f12265"
+    }
+  ],
+  "jinja2_version": "3.1.6",
+  "revision": "e52eb4627d11516b0c01de49210ab5a4e4061444",
+  "scope": "Jinja template rendering only; no tokenizer, model or server",
+  "source_sha256": "876849ec94a65a6b72e3fd1c8d37cc00db9892d4fd84279eb51602ea06cd1b46"
+}
