@@ -1,0 +1,8 @@
+{
+  "command": "python3 ack_gap.py",
+  "python": "3.12.3",
+  "exit_code": 0,
+  "stdout": "normal: accepted=1, local_status=sent\nconsume_before_send_failure: accepted=0, local_status=sent\none_lost_ack_then_retry: accepted=2, local_status=sent\nthree_lost_acks_then_retry: accepted=4, local_status=sent\nrepeated_local_ack_only: accepted=1, local_status=sent\nPASS: five local scenarios; external delivery remains untested\n",
+  "stderr": "",
+  "scope": "Two independent local SQLite stores and a synthetic accepting sink. No Telegram/n8n execution, network, accounts or actual messages."
+}
