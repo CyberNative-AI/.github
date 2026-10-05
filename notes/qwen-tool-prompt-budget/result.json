@@ -1,0 +1,65 @@
+{
+  "model": "Qwen/Qwen3.8-27B-FP8",
+  "revision": "017b9c7af6b5689d5dd426a76e0bc077eb5ca20a",
+  "source_hashes": {
+    "tokenizer.json": "0997f410c57a1f4e53b09e4be8f4a172d90edd9564368fb0847030937229b9f3",
+    "tokenizer_config.json": "b11349aafa7cdc6a320767cf7ceb29ed82f7eda5d65e8e0819e76f0ce947bf27",
+    "chat_template.jinja": "c3cf9e34abf4f9e36c2d72165aa9c132d3e2a725b6c2586aaa3a8af9d7a81041"
+  },
+  "versions": {
+    "transformers": "5.15.0",
+    "tokenizers": "0.22.2",
+    "jinja2": "3.1.6"
+  },
+  "messages": [
+    {
+      "role": "user",
+      "content": "Check order A-100's status."
+    }
+  ],
+  "enable_thinking": false,
+  "add_generation_prompt": true,
+  "rows": [
+    {
+      "tools": 0,
+      "prompt_tokens": 22,
+      "increment_over_no_tools": 0,
+      "schema_only_tokens": 0,
+      "increment_minus_schema_only": 0,
+      "prompt_sha256": "ea5cdf0e2703b1ec28f37de0937d7f3969c0b78ccfdce050442f97739490bad7",
+      "ids_sha256": "5c3fc3d4704e957148c574da946896b30a418a4a6c122e8e6dfc7d24c5cf38b1"
+    },
+    {
+      "tools": 1,
+      "prompt_tokens": 293,
+      "increment_over_no_tools": 271,
+      "schema_only_tokens": 69,
+      "increment_minus_schema_only": 202,
+      "prompt_sha256": "0282b5957e6729f26756a6d098950d60c2459a83aed859ccc7f206feef2fdb7f",
+      "ids_sha256": "e1ba08ab96e4bdacc10472dff8588395c7f296666dd638c9e9bec64c6a008e96"
+    },
+    {
+      "tools": 4,
+      "prompt_tokens": 503,
+      "increment_over_no_tools": 481,
+      "schema_only_tokens": 279,
+      "increment_minus_schema_only": 202,
+      "prompt_sha256": "1c3e63adf39c6e8087bdeedcbcfdb9c96f1f9c3d9e917b0bbdf00ab13961c57f",
+      "ids_sha256": "90ed5ce82db7b257e81250ffc8a15a17a362d479306f1b44f8d246afc0380e7c"
+    },
+    {
+      "tools": 8,
+      "prompt_tokens": 783,
+      "increment_over_no_tools": 761,
+      "schema_only_tokens": 559,
+      "increment_minus_schema_only": 202,
+      "prompt_sha256": "cb57b3030c358274c9fd1512bdf820cfc42848228b71e2f45b5c862ab4cf7005",
+      "ids_sha256": "80fb6af26de721d4d2eaded06b1f327d1b447218d61f41d3af58a95fe6566b78"
+    }
+  ],
+  "controls": {
+    "empty_tools_equal_absent": true,
+    "direct_template_ids_equal_rendered_ids": true,
+    "changed_description_changes_ids": true
+  }
+}

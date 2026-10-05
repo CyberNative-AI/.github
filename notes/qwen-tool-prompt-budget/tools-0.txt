@@ -1,0 +1,7 @@
+<|im_start|>user
+Check order A-100's status.<|im_end|>
+<|im_start|>assistant
+<think>
+
+</think>
+

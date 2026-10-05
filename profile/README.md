@@ -62,3 +62,5 @@ Everything else is at [cybernative.ai/projects](https://cybernative.ai/projects/
 [Kolibri thinking controls](https://github.com/CyberNative-AI/.github/tree/main/notes/kolibri-thinking-controls) — a pinned template check shows which setting wins when a thinking toggle and reasoning effort disagree. Rerun it without model weights; generation and server behavior are untested.
 
 [Telegram reminders: why an idempotent ack can still send twice](https://github.com/CyberNative-AI/.github/tree/main/notes/telegram-reminder-ack-gap) — Run a local failure model before choosing a retry policy.
+
+[Qwen tool prompts: count what the template adds](https://github.com/CyberNative-AI/.github/tree/main/notes/qwen-tool-prompt-budget) — In a pinned tokenizer-only recipe, one 69-token schema added 271 prompt tokens. No weights or inference.

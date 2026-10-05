@@ -1,0 +1,89 @@
+{
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1075,
+      "sha256": "c7bb5ea21bf5897ef2436a0149447285215d9640a285642420f5a0d2020d7914"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3983,
+      "sha256": "6752104120789332f41b349d9e589196154d0fdb959c3b7b81dfe7fe2e48097b"
+    },
+    {
+      "path": "UPSTREAM-LICENSE",
+      "bytes": 11544,
+      "sha256": "bbedc3fda3305820b977265f01b8619d87570a6739de3a5582c3464840f1e57a"
+    },
+    {
+      "path": "UPSTREAM-NOTICE.md",
+      "bytes": 709,
+      "sha256": "d887bd5bacef80bf1e29a5dc3763ab3e7e43124e2f81cedb01e37a5693cefe3e"
+    },
+    {
+      "path": "fetch_qwen_tool_prompt_sources.py",
+      "bytes": 1417,
+      "sha256": "964f6cf62ddfb010e9b8a00872a74178316245cf23a42bcc516b47b8e7cb4669"
+    },
+    {
+      "path": "qwen_tool_prompt_budget.py",
+      "bytes": 4641,
+      "sha256": "ef0352d853347a535ada84f40a0eb36bea4bbe7b5326c2b4cb784d716fe1e65e"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 54,
+      "sha256": "0e0d22f46d3fa98cf1fe181c39e087a1d38e4fc86c8f24e8fa098fb2e7bb73b5"
+    },
+    {
+      "path": "result.json",
+      "bytes": 2230,
+      "sha256": "69a4196caac93ba11be7dde49eee3b5424eb161e033900ec3c0758f9451c5e3e"
+    },
+    {
+      "path": "sources.json",
+      "bytes": 974,
+      "sha256": "5ce051c83189498a34c8dec5e11b86e262f39b7aee9a5186f0486bf5d26e7b9a"
+    },
+    {
+      "path": "tools-0.ids.json",
+      "bytes": 126,
+      "sha256": "02533bd2d40caf32c9052f4a643a660b52efc194e47024a76969b313ec2ce2f6"
+    },
+    {
+      "path": "tools-0.txt",
+      "bytes": 96,
+      "sha256": "ea5cdf0e2703b1ec28f37de0937d7f3969c0b78ccfdce050442f97739490bad7"
+    },
+    {
+      "path": "tools-1.ids.json",
+      "bytes": 1606,
+      "sha256": "23aca0881086f7472a8da86c5fdf722e18223103f65111542551f449290d5ac6"
+    },
+    {
+      "path": "tools-1.txt",
+      "bytes": 1284,
+      "sha256": "0282b5957e6729f26756a6d098950d60c2459a83aed859ccc7f206feef2fdb7f"
+    },
+    {
+      "path": "tools-4.ids.json",
+      "bytes": 2767,
+      "sha256": "2f595d3ad73f08f49903bf41476e7a628976ebff83f3f1a3bfbf41d7db46aab6"
+    },
+    {
+      "path": "tools-4.txt",
+      "bytes": 2097,
+      "sha256": "1c3e63adf39c6e8087bdeedcbcfdb9c96f1f9c3d9e917b0bbdf00ab13961c57f"
+    },
+    {
+      "path": "tools-8.ids.json",
+      "bytes": 4315,
+      "sha256": "20ad0b32fce08374cdb1e84cc04d20f2b2e3c766b07b45f993f9df56598217bd"
+    },
+    {
+      "path": "tools-8.txt",
+      "bytes": 3181,
+      "sha256": "cb57b3030c358274c9fd1512bdf820cfc42848228b71e2f45b5c862ab4cf7005"
+    }
+  ]
+}
