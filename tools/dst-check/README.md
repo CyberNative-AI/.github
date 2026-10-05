@@ -10,6 +10,33 @@ Adjust the path to the extracted checker. It runs the scheduler version in **you
 
 Requires Node 20 or newer; tested on Node 22.23.2, ICU 78.2, tzdata 2026a. Node 20 has not been independently exercised. The checker bundles its clock dependency and needs no install or network access to run; your project must already have the selected scheduler installed.
 
+## Find schedule candidates and check confirmed runtime values
+
+1. From the project root, list source lines that may contain `cron`, `node-cron` or `node-schedule` calls:
+
+   ```sh
+   grep -rnE 'scheduleJob|\.schedule\(|CronJob' . \
+     --include='*.js' --include='*.cjs' --include='*.mjs' \
+     --include='*.ts' --include='*.jsx' --include='*.tsx' \
+     --exclude-dir=node_modules --exclude-dir=.git --exclude-dir=vendor \
+     --exclude-dir=dist --exclude-dir=build --exclude-dir=out --exclude-dir=coverage
+   ```
+
+   These lines are **candidates**, not a complete schedule inventory. Renamed aliases, wrappers and other indirect forms can be missed. Some hits are not schedules, including comments, strings and tests. Adjust source and output exclusions for your project.
+
+2. For each real schedule, confirm by hand the **actual runtime expression**, **IANA timezone**, and **installed scheduler package/version that executes it**. Check configuration files, environment variables and wrappers through your normal authorized access. A wrapper can construct a rule with one package and execute it with another. Never guess defaults or use an example configuration as a runtime value.
+
+3. Run the single-expression checker once per confirmed schedule, from the project whose installed package executes it. Replace every placeholder with a confirmed value; choose `cron`, `node-cron` or `node-schedule` for the library:
+
+   ```sh
+   node ../dst-check/bin/dst-check.cjs \
+     "<confirmed runtime cron expression>" "<confirmed IANA timezone>" \
+     --library "<executing library>" --version "<installed version>" \
+     --project /path/to/executing-project
+   ```
+
+Keep schedules with unavailable runtime values or unsupported syntax on the manual review list. An empty search or successful checker exit does not establish complete project coverage. The existing controlled-time method and syntax limits below still apply.
+
 ## Try it in an empty project
 
 Start in the directory where you saved the zip:
