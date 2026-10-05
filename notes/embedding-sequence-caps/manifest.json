@@ -1,0 +1,44 @@
+{
+  "files": {
+    "LICENSE": {
+      "bytes": 1075,
+      "sha256": "c7bb5ea21bf5897ef2436a0149447285215d9640a285642420f5a0d2020d7914"
+    },
+    "README.md": {
+      "bytes": 8093,
+      "sha256": "1f69812599807773200c547c8fb2df2901cf0557bcc642792399c1294afdcfef"
+    },
+    "check_evidence.py": {
+      "bytes": 1731,
+      "sha256": "d318cd0fc7f079b65a6cf8f7f7caea19d207aea447d9d24a2f436dd85c24c340"
+    },
+    "count_corpus_tokens.py": {
+      "bytes": 1912,
+      "sha256": "7ca4e52fe6d1f63b0688dd89aacd1828a2011b8afb999fbd29893d7cb4b34f12"
+    },
+    "download_tokenizers.py": {
+      "bytes": 812,
+      "sha256": "3ddd81cd53d88b42c7717b5247fe0f9bf4a7b045d08ce9dab387624dae1eb085"
+    },
+    "example-corpus.jsonl": {
+      "bytes": 49178,
+      "sha256": "05c200acfcc1d24530f6973341d447519540c7f5ee78ac4a7a1a07f569e76f41"
+    },
+    "minilm-reused.json": {
+      "bytes": 216752,
+      "sha256": "09b7b78af219b69b65754adf5b97118c144d66d5bf4e3b8d7242e14cfe5b4195"
+    },
+    "models.json": {
+      "bytes": 6484,
+      "sha256": "aae41dc201eafe2455b91ba39b2de0e9c2c72755d0666b97444b40ef328d059d"
+    },
+    "proof.json": {
+      "bytes": 1563423,
+      "sha256": "5940830aa8c4449d2a81e38050fa876ac7f9e7f8beae05f17f6ed8c9d156b31d"
+    },
+    "verify_caps.py": {
+      "bytes": 4166,
+      "sha256": "50334982f0457c411fd05cd86bba6b4136f691403eea28f716ba964cde0da205"
+    }
+  }
+}

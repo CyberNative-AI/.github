@@ -10,6 +10,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 ## Developer notes
 
+[Embedding sequence caps: check what your chunks lose](https://github.com/CyberNative-AI/.github/tree/main/notes/embedding-sequence-caps) — Ten pinned models; configured caps, tokenizer limits and a local corpus counter. Tokenizer-only evidence.
+
 [Perplexity contextual embeddings: keep the document boundary](https://github.com/CyberNative-AI/.github/tree/main/notes/pplx-contextual-inputs) — A pinned, weight-free source probe shows why a document's chunk list and a query batch need different handling.
 
 [JavaScript schedulers at the 2026 fall-back](https://github.com/CyberNative-AI/.github/tree/main/notes/javascript-dst-2026) — pinned callback comparisons for daily, half-hourly and hourly jobs; copy-paste London check.

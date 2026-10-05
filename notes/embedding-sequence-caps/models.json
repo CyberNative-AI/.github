@@ -1,0 +1,178 @@
+{
+  "date": "2026-10-05",
+  "ranking_url": "https://huggingface.co/api/models?filter=sentence-transformers&sort=downloads&direction=-1&limit=10&full=true",
+  "ranking_sha256": "1f85b49cdce88a2494d31674f1f94bdcfccb33967a1ec92dcd64152a24c85943",
+  "mteb_revision": "74b15646b5c64823146da4044f9e2e11f086287c",
+  "mteb_space_revision": "77f36c15120449b810846e95db1b796c8adfd493",
+  "rows": [
+    {
+      "rank": 1,
+      "repo": "sentence-transformers/all-MiniLM-L6-v2",
+      "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+      "downloads": 235658929,
+      "configured_cap": 256,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 512,
+      "card_evidence": "card Intended uses: default 256 word pieces; exact cap accounting measured separately",
+      "mteb": {
+        "name": "sentence-transformers/all-MiniLM-L6-v2",
+        "revision": "8b3219a92973c328a8e22fadcfa821b5dc75636a",
+        "max_tokens": 256,
+        "file": "mteb-sentence_transformers_models.py",
+        "line": 112
+      }
+    },
+    {
+      "rank": 2,
+      "repo": "cross-encoder/ms-marco-MiniLM-L6-v2",
+      "revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+      "downloads": 84083137,
+      "configured_cap": null,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 512,
+      "card_evidence": "no configured SentenceTransformer cap present; cross-encoder recipe uses a chosen max_length",
+      "mteb": {
+        "name": "cross-encoder/ms-marco-MiniLM-L6-v2",
+        "revision": "c5ee24cb16019beea0893ab7796b1df96625c6b8",
+        "file": "mteb-rerankers_custom.py",
+        "line": 351
+      }
+    },
+    {
+      "rank": 3,
+      "repo": "BAAI/bge-small-en-v1.5",
+      "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+      "downloads": 62625826,
+      "configured_cap": 512,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 512,
+      "card_evidence": "card sequence-length table: 512",
+      "mteb": {
+        "name": "BAAI/bge-small-en-v1.5",
+        "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+        "max_tokens": 512,
+        "file": "mteb-bge_models.py",
+        "line": 340
+      }
+    },
+    {
+      "rank": 4,
+      "repo": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+      "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+      "downloads": 50986818,
+      "configured_cap": 128,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 512,
+      "card_evidence": "card Full Model Architecture: max_seq_length 128",
+      "mteb": {
+        "name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+        "revision": "e8f8c211226b894fcb81acc59f3b34ba3efd5f42",
+        "max_tokens": 512,
+        "file": "mteb-sentence_transformers_models.py",
+        "line": 176
+      }
+    },
+    {
+      "rank": 5,
+      "repo": "BAAI/bge-m3",
+      "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+      "downloads": 34127223,
+      "configured_cap": 8192,
+      "tokenizer_model_max_length": 8192,
+      "max_position_embeddings": 8194,
+      "card_evidence": "card model table and explicit encoding max_length: 8192",
+      "mteb": {
+        "name": "BAAI/bge-m3",
+        "revision": "5617a9f61b028005a4858fdac845db406aefb181",
+        "max_tokens": 8192,
+        "file": "mteb-bge_models.py",
+        "line": 695
+      }
+    },
+    {
+      "rank": 6,
+      "repo": "sentence-transformers/all-mpnet-base-v2",
+      "revision": "e8c3b32edf5434bc2275fc9bab85f82640a19130",
+      "downloads": 19228008,
+      "configured_cap": 384,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 514,
+      "card_evidence": "card Intended uses: default 384 word pieces; exact cap accounting measured separately",
+      "mteb": {
+        "name": "sentence-transformers/all-mpnet-base-v2",
+        "revision": "9a3225965996d404b775526de6dbfe85d3368642",
+        "max_tokens": 384,
+        "file": "mteb-sentence_transformers_models.py",
+        "line": 322
+      }
+    },
+    {
+      "rank": 7,
+      "repo": "BAAI/bge-reranker-v2-m3",
+      "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+      "downloads": 16994299,
+      "configured_cap": null,
+      "tokenizer_model_max_length": 8192,
+      "max_position_embeddings": 8194,
+      "card_evidence": "no configured SentenceTransformer cap present; cross-encoder recipe uses a chosen max_length",
+      "mteb": {
+        "name": "BAAI/bge-reranker-v2-m3",
+        "revision": "953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e",
+        "max_tokens": null,
+        "file": "mteb-rerankers_custom.py",
+        "line": 208
+      }
+    },
+    {
+      "rank": 8,
+      "repo": "nomic-ai/nomic-embed-text-v1.5",
+      "revision": "e9b6763023c676ca8431644204f50c2b100d9aab",
+      "downloads": 13054312,
+      "configured_cap": 8192,
+      "tokenizer_model_max_length": 8192,
+      "max_position_embeddings": 2048,
+      "card_evidence": "card long-context tokenizer setting: 8192; serving/model scaling remains distinct",
+      "mteb": {
+        "name": "nomic-ai/nomic-embed-text-v1.5",
+        "revision": "b0753ae76394dd36bcfb912a46018088bca48be0",
+        "max_tokens": 8192,
+        "file": "mteb-nomic_models.py",
+        "line": 192
+      }
+    },
+    {
+      "rank": 9,
+      "repo": "intfloat/multilingual-e5-small",
+      "revision": "614241f622f53c4eeff9890bdc4f31cfecc418b3",
+      "downloads": 11268724,
+      "configured_cap": 512,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 512,
+      "card_evidence": "card truncation limit: at most 512 tokens",
+      "mteb": {
+        "name": "intfloat/multilingual-e5-small",
+        "revision": "fd1525a9fd15316a2d503bf26ab031a61d056e98",
+        "max_tokens": 512,
+        "file": "mteb-e5_models.py",
+        "line": 67
+      }
+    },
+    {
+      "rank": 10,
+      "repo": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+      "revision": "4328cf26390c98c5e3c738b4460a05b95f4911f5",
+      "downloads": 9840138,
+      "configured_cap": 128,
+      "tokenizer_model_max_length": 512,
+      "max_position_embeddings": 514,
+      "card_evidence": "card Full Model Architecture: max_seq_length 128",
+      "mteb": {
+        "name": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+        "revision": "79f2382ceacceacdf38563d7c5d16b9ff8d725d6",
+        "max_tokens": 512,
+        "file": "mteb-sentence_transformers_models.py",
+        "line": 208
+      }
+    }
+  ]
+}
