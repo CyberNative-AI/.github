@@ -1,0 +1,81 @@
+{
+  "checks": [
+    {
+      "version": "0.15.0",
+      "selection": "defaults",
+      "file": "mutable_default.py",
+      "codes": [],
+      "exitCode": 0
+    },
+    {
+      "version": "0.15.0",
+      "selection": "defaults",
+      "file": "lambda_alias.py",
+      "codes": [
+        "E731"
+      ],
+      "exitCode": 1
+    },
+    {
+      "version": "0.16.0",
+      "selection": "defaults",
+      "file": "mutable_default.py",
+      "codes": [
+        "B006"
+      ],
+      "exitCode": 1
+    },
+    {
+      "version": "0.16.0",
+      "selection": "defaults",
+      "file": "lambda_alias.py",
+      "codes": [],
+      "exitCode": 0
+    },
+    {
+      "version": "0.16.0",
+      "selection": "add E731",
+      "file": "mutable_default.py",
+      "codes": [
+        "B006"
+      ],
+      "exitCode": 1
+    },
+    {
+      "version": "0.16.0",
+      "selection": "add E731",
+      "file": "lambda_alias.py",
+      "codes": [
+        "E731"
+      ],
+      "exitCode": 1
+    },
+    {
+      "version": "0.16.0",
+      "selection": "old selection",
+      "file": "mutable_default.py",
+      "codes": [],
+      "exitCode": 0
+    },
+    {
+      "version": "0.16.0",
+      "selection": "old selection",
+      "file": "lambda_alias.py",
+      "codes": [
+        "E731"
+      ],
+      "exitCode": 1
+    },
+    {
+      "version": "0.16.0",
+      "selection": "defaults",
+      "file": "mutable_default_fixed.py",
+      "codes": [],
+      "exitCode": 0
+    }
+  ],
+  "python": {
+    "mutable_default.py": "['first', 'second'] ['first', 'second'] True",
+    "mutable_default_fixed.py": "['first'] ['second'] False"
+  }
+}

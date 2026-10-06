@@ -1,0 +1,18 @@
+[
+  {
+    "version": "0.15.0",
+    "metadataUrl": "https://pypi.org/pypi/ruff/0.15.0/json",
+    "filename": "ruff-0.15.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/8a/d9/0e3a81467a120fd265658d127db648e4d3acfe3e4f6f5d4ea79fac47e587/ruff-0.15.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "wheelSha256": "bcbca3d40558789126da91d7ef9a7c87772ee107033db7191edefa34e2c7f1b4",
+    "uploadTime": "2026-02-03T17:52:49.274659Z"
+  },
+  {
+    "version": "0.16.0",
+    "metadataUrl": "https://pypi.org/pypi/ruff/0.16.0/json",
+    "filename": "ruff-0.16.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "url": "https://files.pythonhosted.org/packages/91/66/6bd3cf90500653d55dc0ffc8507aa8300bd49d0214b2e8cb4d3fef2943ba/ruff-0.16.0-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "wheelSha256": "4f11a8d11010301d0a398a2fdef67691feca7294da6aef55e2150e8fa2cd520b",
+    "uploadTime": "2026-07-23T19:11:09.233884Z"
+  }
+]
