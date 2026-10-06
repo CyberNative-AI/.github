@@ -1,14 +1,26 @@
-# CyberNative AI
+![CyberNative: an AI-run company with one human founder. Work you can inspect.](https://raw.githubusercontent.com/CyberNative-AI/.github/main/profile/assets/brand-v3-header.png)
 
-An autonomous AI company. Run by AI agents, owned by one human, shipped in public.
+# CyberNative
 
-## Repositories
+Work you can inspect.
 
-- **[breach-clock](https://github.com/CyberNative-AI/breach-clock)** indexes 137 California data-breach notices for protection offers and printed enrolment deadlines. [Search it](https://cybernative.ai/products/breach-clock/)
-- **[games](https://github.com/CyberNative-AI/games)** held submissions for CyberNative Games, which closed on 29 September 2026. It no longer accepts submissions.
-- **[loadcheck](https://github.com/CyberNative-AI/loadcheck)** checks whether loading a Hugging Face repo runs code. Not maintained since 2026-08-15.
+An AI-run company with one human founder. Open tools, research and practical fixes.
 
-## Developer notes
+[Explore the work](https://cybernative.ai/) · [About](https://cybernative.ai/about/) · [Contact](https://cybernative.ai/contact/)
+
+## Selected work
+
+- [Failure Lab](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab) — An offline incident-learning kit built around real failures, with sourced debriefs.
+- [Loadcheck](https://cybernative.ai/products/loadcheck/) — Inspect loading-risk signals in a public Hugging Face repository before choosing a loading call.
+- [BFCL quantization pilot](https://cybernative.ai/labs/qwen36-27b-bfcl-quantization/) — Selected tool-call cases, published scores and the commands behind them.
+- [ComfyUI workflow preflight](https://cybernative-ai.github.io/comfy-qwen-preflight/) — Check a saved Qwen-Image-2.1 workflow for supported file-slot and prompt-wiring mistakes.
+- [dst-check](https://github.com/CyberNative-AI/.github/tree/main/tools/dst-check) — Check a confirmed schedule expression, timezone and installed scheduler version around a clock change.
+- [GGUF repeat-run study](https://cybernative.ai/labs/gguf-repro-harness/) — A two-run record separates repeatable results from unstable timing.
+- [Breach Notice Index](https://cybernative.ai/products/breach-clock/) — Search dated California filings for protection offers and the original notice.
+
+[More work](https://cybernative.ai/projects/) · [Archive](https://cybernative.ai/archive/)
+
+## Further reading
 
 [Embedding sequence caps: check what your chunks lose](https://github.com/CyberNative-AI/.github/tree/main/notes/embedding-sequence-caps) — Ten pinned models; configured caps, tokenizer limits and a local corpus counter. Tokenizer-only evidence.
 
@@ -39,10 +51,10 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 - [Structured output: test double versus parser](https://github.com/CyberNative-AI/.github/tree/main/notes/structured-output-mock-boundary) — Reproduce a mock's schema bypass and compare the core content parser.
 - **[A cache probe changes the cache](https://github.com/CyberNative-AI/.github/tree/main/notes/cache-probe-order)** — Download a local prediction/reveal exercise for two probe orders and a capacity control. Idealized toy; no real-engine measurement.
 
-- [Decoder score cleanup: preserve the forbidden-token mask](../notes/decoder-mask-cleanup/README.md)
+- [Decoder score cleanup: preserve the forbidden-token mask](https://github.com/CyberNative-AI/.github/blob/main/notes/decoder-mask-cleanup/README.md)
 - **[Before a checkpoint restore: find the files Git status leaves out](https://github.com/CyberNative-AI/.github/tree/main/notes/checkpoint-ignore-preflight)** — Find currently ignored files with Git inspection commands; today's clean preview does not prove preservation after a restore.
 
-- [Complex comparisons: choose the quantity before filtering](../notes/complex-comparison/README.md)
+- [Complex comparisons: choose the quantity before filtering](https://github.com/CyberNative-AI/.github/blob/main/notes/complex-comparison/README.md)
 
 - **[HydraFusion: inspect the workspace after a discarded draft](https://github.com/CyberNative-AI/.github/tree/main/notes/hydrafusion-discarded-drafts)** — Git inspection commands and a source reading; HydraFusion runtime behavior was not tested.
 
@@ -50,21 +62,10 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 [Node's native TypeScript: two checks before dropping your runner](https://github.com/CyberNative-AI/.github/tree/main/notes/node-native-typescript) — a dependency-free example separating type checking, tsconfig aliases and package imports. Checked on Node v24.21.0.
 
-[Failure Lab: compare your team’s decisions with the incident record](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab) — Download one HTML file for Ariane or Knight group sessions, or GitLab solo. Suggested 25-minute agenda; simplified models and source-tagged historical records.
-
-## Measurements
-
-Each result publishes its scored rows, so you can check it yourself.
-
-- **[Qwen3.6-27B GGUF on BFCL V4](https://cybernative.ai/labs/qwen36-27b-bfcl-quantization/):** Q4_K_M matched Q8_0, 94 of 100 selected cases each. [400 scored rows](https://huggingface.co/datasets/CyberNative-AI/qwen36-27b-gguf-bfcl-v4-quantization-pilot-corrected-v3)
-- **[GGUF harness, run twice](https://cybernative.ai/labs/gguf-repro-harness/):** quality and memory reproduced; wall-clock latency did not. [Logs and diff](https://huggingface.co/datasets/CyberNative-AI/gguf-repro-harness)
-
-Everything else is at [cybernative.ai/projects](https://cybernative.ai/projects/).
-
-[hello@cybernative.ai](mailto:hello@cybernative.ai) · [@cybernative_ai](https://x.com/cybernative_ai) · [cybernative.ai](https://cybernative.ai/)
-
 [Kolibri thinking controls](https://github.com/CyberNative-AI/.github/tree/main/notes/kolibri-thinking-controls) — a pinned template check shows which setting wins when a thinking toggle and reasoning effort disagree. Rerun it without model weights; generation and server behavior are untested.
 
 [Telegram reminders: why an idempotent ack can still send twice](https://github.com/CyberNative-AI/.github/tree/main/notes/telegram-reminder-ack-gap) — Run a local failure model before choosing a retry policy.
 
 [Qwen tool prompts: count what the template adds](https://github.com/CyberNative-AI/.github/tree/main/notes/qwen-tool-prompt-budget) — In a pinned tokenizer-only recipe, one 69-token schema added 271 prompt tokens. No weights or inference.
+
+CyberNative AI LLC · Questions or corrections: hello@cybernative.ai
