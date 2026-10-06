@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; frame-src about:; base-uri 'none'; form-action 'none'">
+  <title>GitLab, 31 January 2017 — Failure Lab, offline edition</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d; --panel: #16253a; --panel-raised: #1b2d44; --line: #687d95;
+      --paper: #f5f4ef; --muted: #c0cad6; --amber: #f2b134; --ink: #0f1b2d; --focus: #ffe09a;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--navy); }
+    body { margin: 0; color: var(--paper); font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--amber); text-underline-offset: .18em; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    h1, h2, h3, h4, p { margin-top: 0; }
+    .page { width: min(100% - 32px, 1200px); margin: 0 auto; padding: 32px 0 48px; }
+    .topline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; margin: 0 0 28px; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .topline span:first-child { color: var(--amber); }
+    .masthead { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px 56px; align-items: end; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+    .year { display: block; margin-bottom: 10px; font-size: clamp(3.4rem, 8vw, 7rem); font-weight: 800; line-height: .82; letter-spacing: -.055em; font-variant-numeric: tabular-nums; }
+    .kind { margin: 0 0 14px; color: var(--muted); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin-bottom: 16px; font-size: clamp(2rem, 4.4vw, 3.4rem); line-height: 1.02; letter-spacing: -.035em; text-wrap: balance; }
+    .brief { max-width: 58ch; margin: 0; color: var(--muted); font-size: 1.05rem; }
+    .entries { display: grid; gap: 14px; }
+    .entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; align-items: center; width: 100%; min-height: 56px; padding: 18px 20px; border: 1px solid var(--amber); border-radius: var(--radius); color: var(--paper); background: var(--panel); font: inherit; text-align: left; cursor: pointer; transition: background-color .15s ease; }
+    .entry:hover { background: var(--panel-raised); }
+    .entry.primary { color: var(--ink); background: var(--amber); }
+    .entry.primary:hover { background: #f6c25c; }
+    .entry strong { font-size: 1.25rem; line-height: 1.2; }
+    .entry span { grid-column: 1; font-size: .9rem; opacity: .86; }
+    .entry b { grid-column: 2; grid-row: 1 / span 2; font-size: 1.5rem; transition: transform .15s ease; }
+    .entry:hover b { transform: translateX(3px); }
+    .entry-note { margin: 0; color: var(--muted); font-size: .86rem; }
+    .lower { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 56px; padding-top: 32px; }
+    h2 { margin-bottom: 14px; font-size: 1.3rem; line-height: 1.2; }
+    .quick { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+    .quick li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-top: 1px solid #33445b; color: var(--muted); }
+    .quick li span { color: var(--amber); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .quick strong { color: var(--paper); }
+    .facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 14px; margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #33445b; font-size: .88rem; }
+    .facts dt { color: var(--muted); }
+    .facts dd { margin: 0; min-width: 0; }
+    details { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+    summary { display: flex; justify-content: space-between; gap: 12px; align-items: center; min-height: 56px; padding: 14px 18px; font-weight: 750; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--amber); font-size: 1.4rem; line-height: 1; }
+    details[open] summary::after { content: "−"; }
+    summary small { display: block; color: var(--muted); font-size: .82rem; font-weight: 500; }
+    .register { padding: 0 18px 18px; color: var(--muted); font-size: .92rem; overflow-wrap: anywhere; }
+    .register h4 { margin: 18px 0 8px; color: var(--paper); font-size: .95rem; }
+    .register ul { margin: 0 0 12px; padding-left: 18px; }
+    .register li { margin-bottom: 6px; }
+    .register strong, .register em { color: var(--paper); }
+    .tag { display: inline-block; padding: 0 6px; border-radius: 5px; color: var(--ink); background: var(--amber); font-weight: 800; font-size: .82em; }
+    .credit { margin: 2px 0 0; color: var(--muted); font-size: .86rem; line-height: 1.45; text-wrap: balance; }
+    .credit a { color: var(--paper); }
+    .notice { margin-top: 32px; }
+    .notice .register p { max-width: 90ch; margin: 0 0 14px; }
+    .licence-text { margin: 0; padding: 16px; border-radius: 10px; color: var(--paper); background: var(--navy); font: .8rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+    footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    footer p { max-width: 90ch; margin: 0 0 6px; }
+    #stage { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; background: var(--navy); }
+    body.in-frame { overflow: hidden; }
+    body.in-frame .page { display: none; }
+    @media (max-width: 860px) {
+      .masthead, .lower { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 16px; }
+      .topline { margin-bottom: 18px; font-size: .68rem; }
+      .topline span:last-child { display: none; }
+      .masthead { gap: 20px; padding-bottom: 24px; }
+      .year { font-size: 3.6rem; }
+      h1 { font-size: 1.9rem; margin-bottom: 10px; }
+      .brief { font-size: .95rem; line-height: 1.45; }
+      .entries { gap: 10px; }
+      .entry { padding: 14px 16px; }
+      .entry strong { font-size: 1.1rem; }
+      .entry span { font-size: .84rem; }
+      .lower { gap: 28px; padding-top: 24px; }
+      .quick li { grid-template-columns: 62px minmax(0, 1fr); gap: 10px; font-size: .92rem; }
+      .credit { font-size: .82rem; }
+      .notice { margin-top: 28px; }
+      .licence-text { padding: 12px; font-size: .72rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } .entry:hover b { transform: none; } }
+    @media print {
+      body.in-frame #stage { position: static; display: block; width: 100%; border: 0; }
+      body:not(.in-frame) #stage { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" id="home">
+    <p class="topline"><span>Failure Lab · offline edition</span><span>One file · no network · nothing saved or sent</span></p>
+    <header class="masthead">
+      <div>
+        <span class="year">2017</span>
+        <p class="kind">Database recovery</p>
+        <h1 id="home-title" tabindex="-1">GitLab, 31 January</h1>
+        <p class="brief">Replication has stalled. Choose the cleanup host, check recovery readiness and select a fallback copy. Then compare your modelled result with the postmortem.</p>
+      </div>
+      <div class="entries">
+        <button class="entry primary" type="button" id="open-solo" data-mode="solo"><strong>Play solo</strong><span>Make the calls, run the model, then read the record. A team can play it together on one shared screen.</span><b aria-hidden="true">→</b></button>
+        <p class="entry-note">Facilitator mode (timer, tally, printable debrief) is not available for this scenario yet.</p>
+        <p class="credit">Prepared with AI assistance. Published by CyberNative AI LLC. Corrections: <a href="mailto:hello@cybernative.ai">hello@cybernative.ai</a>.</p>
+      </div>
+    </header>
+    <div class="lower">
+      <section aria-labelledby="quick-title">
+        <h2 id="quick-title">Quickstart</h2>
+        <ol class="quick">
+          <li><span>Before</span><div>Choose <strong>Play solo</strong>. It works with a mouse, touch or the keyboard alone.</div></li>
+          <li><span>1</span><div>Read the situation and make the calls with the evidence the team had.</div></li>
+          <li><span>2</span><div>Run the simplified model on your choices.</div></li>
+          <li><span>3</span><div>Read what the official record found, passage by passage, with its source tags.</div></li>
+        </ol>
+        <dl class="facts"><dt>Decisions</dt><dd>Two before cleanup, one during recovery</dd>
+            <dt>Record</dt><dd>GitLab postmortem, 10 February 2017</dd></dl>
+      </section>
+      <section aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources</h2>
+        <details id="sources">
+          <summary><span>Source register<small>GitLab postmortem, 10 February 2017 · tags S1–S4</small></span></summary>
+          <div class="register">
+<h4>Primary source</h4>
+<p>GitLab, <em>Postmortem of database outage of January 31</em>, 10 February 2017. <a href="https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/" target="_blank" rel="noopener noreferrer">Official postmortem</a>. Accessed 5 October 2026 using native web search and primary-page inspection.</p>
+<h4>Register</h4>
+<ul><li><strong>S1 — Wrong host and impact scope:</strong> Timeline, around 23:00–23:30 UTC; Root cause analysis, problem 1; opening incident summary; Data loss impact. Supports the accidental clearing of the primary data directory, the reported loss window from about 17:20 to 00:00 UTC, and GitLab’s approximate counts of 5,000 projects, 5,000 comments and 700 new user accounts.</li><li><strong>S2 — Backup health and recovery testing:</strong> Broken recovery procedures; Database backups using <code>pg_dump</code>; Root cause analysis, problem 2. Supports the PostgreSQL version mismatch that stopped the logical backup, rejected failure emails and lack of an owner for regular recovery testing.</li><li><strong>S3 — Copy freshness and purpose:</strong> Timeline around 17:20 UTC; LVM snapshots; Recovering GitLab.com. Supports the manually created snapshot about six hours before the outage to refresh staging, the snapshots’ staging purpose rather than disaster-recovery design, the nearly day-old alternate copy and GitLab’s choice to use the newer snapshot to reduce data loss.</li><li><strong>S4 — Restore duration and affected data:</strong> Recovering GitLab.com; Data loss impact. Supports the roughly 18-hour staging-to-production database copy over throttled network disks at around 60 Mbps, and that Git repositories and wikis were unavailable during the outage but were not lost.</li></ul>
+<h4>Model boundary</h4>
+<p>All alternative branches, effort and missing-write units are invented teaching devices and labeled illustrative. Units are not hours, bytes or historical loss estimates. The backup-exposure message appears on every <code>assume</code> path as a modeled warning; it does not claim that each such path causes historical loss. Checking recovery pauses deletion; it does not manufacture a working backup. Confirming the secondary preserves the model’s primary copy; it does not guarantee restored replication. The recovery-copy decision is shown only when the model requires restoration, and its two choices change the modelled missing-write window. Equal transfer effort is a simplifying assumption, not a comparison established by GitLab. No fatigue attribution or fast-restore claim is made. No command is executed. No live incident document was needed. No direct quotations are used.</p>
+          </div>
+        </details>
+      </section>
+    </div>
+    <section class="notice" aria-labelledby="licence-title">
+      <h2 id="licence-title">Licence</h2>
+      <details id="licence">
+        <summary><span>MIT licence and notice<small>Covers the original Failure Lab software and documentation only. Third-party excerpts and linked records are excluded.</small></span></summary>
+        <div class="register">
+          <p>The MIT licence applies only to the original software and documentation created for Failure Lab by CyberNative AI LLC. Third-party material, including attributed excerpts reproduced in these files and linked inquiry, regulatory and postmortem records, is excluded from that grant and remains subject to its respective rights. The source registers identify the publishers and cited passages. No source PDF or complete third-party record is bundled.</p>
+<pre class="licence-text">MIT License
+
+Copyright (c) 2026 CyberNative AI LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+        </div>
+      </details>
+    </section>
+    <footer>
+      <p>The models are illustrative and simplified to isolate one decision. Costs, timings, counts and counterfactual outcomes are invented for teaching and labelled that way. Only statements tagged with a source (S1, S2, …) are historical. A modelled “no failure” is not a prediction, and nothing here is a certification or training claim.</p>
+      <p>This file needs nothing beside it: no install, account or network. Reloading clears the session. Source links open the public record in a new tab only when you click them.</p>
+    </footer>
+  </main>
+
+  <iframe id="stage" title="" hidden></iframe>
+
+  <script type="text/x-failure-lab" data-mode="solo"><!doctype html><html lang="en"><head><script data-failure-lab="bridge">(function () {
+  var h = history;
+  ["replaceState", "pushState"].forEach(function (k) {
+    var f = h[k];
+    h[k] = function () { try { return f.apply(h, arguments); } catch (e) { return undefined; } };
+  });
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || e.defaultPrevented) return;
+    var href = a.getAttribute("href");
+    if (href.charAt(0) === "#") {
+      e.preventDefault();
+      var t = document.getElementById(decodeURIComponent(href.slice(1)));
+      if (t) t.scrollIntoView({ block: "start" });
+    } else if (/^https?:/i.test(href)) {
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    } else {
+      e.preventDefault();
+      parent.postMessage({ failureLab: href }, "*");
+    }
+  });
+}());<\/script><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="dark"><title>GitLab 2017 — verify before clearing</title>  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d;
+      --panel: #16253a;
+      --panel-raised: #1b2d44;
+      --line: #687d95;
+      --paper: #f5f4ef;
+      --muted: #c0cad6;
+      --amber: #f2b134;
+      --red: #ff786f;
+      --ink: #0f1b2d;
+      --focus: #ffe09a;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--navy); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--paper);
+      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button:disabled { cursor: not-allowed; }
+    a { color: var(--amber); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    [hidden] { display: none !important; }
+
+    .page { width: min(100% - 32px, 1120px); margin: 0 auto; padding: 28px 0 42px; }
+    .masthead { max-width: 760px; margin-bottom: 22px; }
+    .lab-nav { margin: -12px 0 10px; font-size: .9rem; font-weight: 700; }
+    .lab-nav a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; }
+    .lab-nav a:hover { text-decoration: underline; }
+    .eyebrow, .section-kicker {
+      margin: 0 0 8px;
+      color: var(--amber);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 18ch; margin-bottom: 10px; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.04; letter-spacing: -.035em; }
+    h2 { margin-bottom: 8px; font-size: 1.3rem; line-height: 1.2; }
+    h3 { margin-bottom: 7px; font-size: 1.04rem; }
+    .lede { max-width: 68ch; margin-bottom: 10px; font-size: 1.02rem; }
+    .context-line, .subtle { color: var(--muted); }
+    .context-line { margin-bottom: 0; font-size: .93rem; }
+    .layout { display: grid; gap: 16px; }
+    .panel {
+      min-width: 0;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+    .section-heading { margin-bottom: 16px; }
+    .section-heading p:last-child { margin-bottom: 0; }
+    .small { font-size: .88rem; }
+    .source-ref { font-size: .78em; font-weight: 800; white-space: nowrap; }
+    .note {
+      margin: 14px 0 0;
+      padding: 10px 12px;
+      border-left: 3px solid var(--amber);
+      color: var(--muted);
+      background: var(--panel-raised);
+      font-size: .9rem;
+    }
+
+    fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+    fieldset + fieldset { margin-top: 19px; }
+    legend { width: 100%; margin-bottom: 8px; font-weight: 750; }
+    .legend-note { display: block; margin-top: 2px; color: var(--muted); font-size: .82rem; font-weight: 450; }
+    .choice-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .choice {
+      display: flex;
+      min-width: 0;
+      min-height: 82px;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      cursor: pointer;
+    }
+    .choice:has(input:checked) { border-color: var(--amber); box-shadow: inset 0 0 0 1px var(--amber); }
+    .choice input { flex: 0 0 auto; width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--amber); }
+    .choice-copy { min-width: 0; }
+    .choice-title { display: block; font-weight: 750; line-height: 1.3; }
+    .choice-detail { display: block; margin-top: 4px; color: var(--muted); font-size: .82rem; line-height: 1.35; }
+    .cost-chip { display: block; margin-top: 5px; color: var(--amber); font-size: .76rem; font-weight: 700; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 17px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      border: 1px solid var(--amber);
+      border-radius: 9px;
+      color: var(--ink);
+      background: var(--amber);
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .button.secondary { border-color: var(--line); color: var(--paper); background: var(--panel-raised); }
+    .button:disabled { color: var(--paper); background: #27384e; border-color: var(--line); }
+    .button:focus-visible, .choice input:focus-visible { outline-offset: 4px; }
+
+    .timeline-wrap {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+    }
+    .timeline-title { margin-bottom: 2px; font-size: .88rem; font-weight: 750; }
+    .timeline-caption { margin: 0; color: var(--muted); font-size: .78rem; }
+    .timeline-points {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 6px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .timeline-points::before {
+      position: absolute;
+      top: 7px;
+      right: 7%;
+      left: 7%;
+      height: 3px;
+      border-radius: 99px;
+      background: #718096;
+      content: "";
+    }
+    .timeline-points li { position: relative; min-width: 0; color: var(--muted); text-align: center; font-size: .74rem; }
+    .timeline-dot {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin: 0 auto 6px;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      background: #718096;
+      box-shadow: 0 0 0 1px #718096;
+    }
+    .timeline-points li.is-complete .timeline-dot,
+    .timeline-points li[aria-current="step"] .timeline-dot {
+      background: var(--amber);
+      box-shadow: 0 0 0 1px var(--amber);
+    }
+    .timeline-points li[aria-current="step"] { color: var(--paper); font-weight: 800; }
+
+    .run-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(230px, .7fr); gap: 14px; align-items: start; }
+    .counter-card, .result-box, .fact-card, .impact-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-raised);
+    }
+    .counter-card { min-height: 100%; }
+    .counter-label { display: block; color: var(--muted); font-size: .82rem; }
+    .counter-value { display: block; margin: 4px 0; color: var(--amber); font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 850; line-height: 1; font-variant-numeric: tabular-nums; }
+    .counter-foot { margin: 8px 0 0; color: var(--muted); font-size: .78rem; }
+    .run-status { min-height: 1.5em; margin: 12px 0 0; color: var(--muted); font-size: .9rem; }
+
+    .incident-options { display: grid; gap: 10px; }
+    .incident-choice { min-height: 70px; }
+    .incident-choice .choice-title { font-size: .98rem; }
+
+    .result-box { margin-top: 15px; }
+    .result-box.is-failure { border-color: var(--red); }
+    .result-title { margin-bottom: 5px; font-weight: 850; }
+    .result-box.is-failure .result-title { color: var(--red); }
+    .result-copy { margin-bottom: 0; color: var(--muted); }
+    .result-copy + .result-copy { margin-top: 8px; }
+    .reveal-list { display: grid; gap: 10px; margin: 16px 0; padding: 0; list-style: none; counter-reset: reveal; }
+    .reveal-list li {
+      position: relative;
+      min-height: 70px;
+      padding: 13px 14px 13px 52px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      counter-increment: reveal;
+    }
+    .reveal-list li::before {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      display: grid;
+      width: 26px;
+      height: 26px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--amber);
+      content: counter(reveal);
+      font-weight: 850;
+      line-height: 1;
+    }
+    .reveal-list p { margin: 0; color: var(--muted); }
+    .reveal-list strong { color: var(--paper); }
+    .supporting-note { margin: 12px 0; color: var(--muted); font-size: .9rem; }
+    .impact-card { margin-top: 14px; }
+    .impact-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 11px 0 0; padding: 0; list-style: none; }
+    .impact-list li { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--paper); background: var(--navy); font-size: .82rem; }
+    .controls-line { margin: 14px 0 0; padding: 12px; border-left: 3px solid var(--amber); color: var(--paper); background: var(--panel-raised); }
+    .source-register { margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
+    .source-list { display: grid; gap: 7px; margin: 10px 0 0; padding-left: 24px; }
+    .source-list li { color: var(--muted); font-size: .79rem; }
+    .source-id { color: var(--paper); font-weight: 800; }
+
+    footer {
+      max-width: 90ch;
+      margin: 18px auto 0;
+      padding: 13px 2px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 20px; }
+      .panel { padding: 17px; }
+      .choice-list { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+      .choice { min-height: 70px; }
+      .run-grid { grid-template-columns: minmax(0, 1fr); }
+      .counter-card { min-height: auto; }
+      .counter-value { font-size: 2.5rem; }
+    }
+    @media (max-width: 390px) {
+      .page { width: min(100% - 20px, 620px); }
+      .panel { padding: 14px; }
+      .timeline-wrap { padding: 10px 7px; }
+      .timeline-points { gap: 1px; }
+      .timeline-points li { font-size: .68rem; }
+      .actions .button { flex: 1 1 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style></head><body><main class="page">
+<header class="masthead"><p class="lab-nav"><a href="index.html" id="lab-home">← Failure Lab</a></p><p class="eyebrow">Failure Lab · database recovery</p><h1 id="page-title">Verify before clearing</h1><p class="lede" id="page-lede">Replication has stalled. Choose where to clean up and what to check first.</p><p class="context-line">A teaching model: all effort, counters and alternative outcomes are illustrative.</p></header>
+<section class="panel screen" id="choose" aria-labelledby="choose-title"><div class="section-heading"><p class="section-kicker">01 · choose</p><h2 id="choose-title" tabindex="-1">Prepare the repair</h2></div><form id="choice-form"><fieldset><legend>Cleanup target · which session do you use?</legend><div class="choice-list"><label class="choice"><input type="radio" name="host" value="primary" checked><span class="choice-copy"><span class="choice-title">Use the current primary session</span><span class="choice-detail">Clear the directory in the session already open.</span><span class="cost-chip">Illustrative effort: low</span></span></label><label class="choice"><input type="radio" name="host" value="secondary"><span class="choice-copy"><span class="choice-title">Confirm and use the secondary</span><span class="choice-detail">Check the host role before clearing its directory.</span><span class="cost-chip">Illustrative effort: extra check</span></span></label></div></fieldset><fieldset><legend>Recovery readiness · before clearing data</legend><div class="choice-list"><label class="choice"><input type="radio" name="verification" value="assume" checked><span class="choice-copy"><span class="choice-title">Rely on the scheduled backups</span><span class="choice-detail">Proceed without a restore check.</span><span class="cost-chip">Illustrative effort: low</span></span></label><label class="choice"><input type="radio" name="verification" value="check"><span class="choice-copy"><span class="choice-title">Check replication and a recoverable copy</span><span class="choice-detail">Pause the destructive step when recovery cannot be demonstrated.</span><span class="cost-chip">Illustrative effort: extra check</span></span></label></div></fieldset><p class="note">No commands run on a real host. These are illustrative choices, not operational instructions.</p><div class="actions"><button class="button" id="start-run">Start the run</button></div></form></section>
+<section class="panel screen" id="run" aria-labelledby="run-title" hidden><div class="section-heading"><p class="section-kicker">02 · run</p><h2 id="run-title" tabindex="-1">Follow the repair</h2><p class="subtle">Steps and effort units are illustrative, not historical timings.</p></div><ol class="reveal-list" id="timeline-points"></ol><p id="run-status" class="run-status" role="status" aria-live="polite"></p><div class="actions"><button class="button" id="show-incident">Assess recovery</button></div></section>
+<section class="panel screen" id="incident" aria-labelledby="incident-title" hidden><div class="section-heading"><p class="section-kicker">03 · incident choice</p><h2 id="incident-title" tabindex="-1">Choose a recovery copy</h2><p class="subtle" id="incident-context"></p></div><form id="incident-form"><fieldset id="recovery-choice"><legend>Which available copy will you restore?</legend><div class="choice-list"><label class="choice"><input type="radio" name="recovery" value="recent" checked><span class="choice-copy"><span class="choice-title">Use the recent staging copy</span><span class="choice-detail">Prefer the fresher copy; the model includes a slow transfer.</span><span class="cost-chip">Illustrative effort: long transfer</span></span></label><label class="choice"><input type="radio" name="recovery" value="older"><span class="choice-copy"><span class="choice-title">Use the older daily snapshot</span><span class="choice-detail">Accept a larger missing-write window; the model uses the same transfer effort.</span><span class="cost-chip">Illustrative effort: long transfer</span></span></label></div></fieldset><p class="note" id="recovery-note">This model isolates copy freshness. It does not estimate real recovery time or simulate all recovery procedures.</p><div class="actions"><button class="button" id="apply-response">Continue to result</button></div></form></section>
+<section class="panel screen" id="reveal" aria-labelledby="reveal-title" hidden><div class="section-heading"><p class="section-kicker">04 · reveal</p><h2 id="reveal-title" tabindex="-1">What the record shows</h2><p class="subtle">GitLab · 31 January 2017. Historical facts below carry source IDs; the result above them is illustrative.</p></div><div class="result-box" id="result-box" role="status" aria-live="polite"><h3 id="result-title" class="result-title"></h3><p id="result-copy" class="result-copy"></p><p id="backup-exposure" class="result-copy" hidden>Illustrative exposure: this path assumes the scheduled backup works without demonstrating a restore. GitLab’s postmortem says its logical backup was failing because of a PostgreSQL version mismatch and failure emails were rejected (<a class="source-ref" href="#source-S2">S2</a>). This is exposure, not extra modeled loss.</p></div><ol class="reveal-list"><li data-claim="S1"><p><strong>The wrong host, then lost changes.</strong> During replication repair, an engineer cleared the primary data directory instead of the secondary. GitLab reports that database changes from about 17:20 to 00:00 UTC were lost, affecting roughly 5,000 projects, 5,000 comments and 700 new user accounts. <a class="source-ref" href="#source-S1">S1</a></p></li><li data-claim="S2"><p><strong>Recovery was untested.</strong> The logical backup failed because of a PostgreSQL version mismatch, and failure emails were rejected. No one owned regular recovery testing. <a class="source-ref" href="#source-S2">S2</a></p></li><li data-claim="S3"><p><strong>The newer copy was made for staging.</strong> An engineer manually took the recent LVM snapshot about six hours before the outage to refresh staging. GitLab says these snapshots were not designed for disaster recovery; the other snapshot was nearly 24 hours old. GitLab used the newer copy to reduce data loss. <a class="source-ref" href="#source-S3">S3</a></p></li><li data-claim="S4"><p><strong>The restore copy took time to move.</strong> Copying the staging database to production took around 18 hours over throttled network disks, at roughly 60 Mbps. Git repositories and wikis were unavailable but not lost. <a class="source-ref" href="#source-S4">S4</a></p></li></ol><p class="supporting-note">The lesson: a backup schedule is a claim until recovery is tested. Host verification and owned recovery checks are separate safeguards.</p><section class="source-register" aria-labelledby="sources-title"><h3 id="sources-title">Source register</h3><p class="supporting-note">GitLab, <cite>Postmortem of database outage of January 31</cite>, 10 February 2017.</p><ol class="source-list"><li id="source-S1"><span class="source-id">S1.</span> Timeline around 23:00–23:30 UTC; Root cause analysis, problem 1; Data loss impact. Covers the mistaken primary deletion and reported lost-write window and counts.</li><li id="source-S2"><span class="source-id">S2.</span> Broken recovery procedures; Database backups using pg_dump; Root cause analysis, problem 2. Covers the failed logical backup, rejected failure emails and missing test ownership.</li><li id="source-S3"><span class="source-id">S3.</span> Timeline around 17:20 UTC; LVM snapshots; Recovering GitLab.com. Covers the manually created staging snapshot, its intended use and the older daily snapshot.</li><li id="source-S4"><span class="source-id">S4.</span> Recovering GitLab.com; Data loss impact. Covers the roughly 18-hour copy, throttled network disks and repository/wiki availability versus data loss.</li></ol><p><a href="sources-gitlab.md">Open the full register and primary-source link</a>.</p></section><div class="actions"><button class="button secondary" id="try-again">Run another scenario</button></div></section>
+<footer>Educational simulation. Historical findings are sourced to GitLab’s postmortem. Choices, effort estimates, model units, animation timing and counterfactual outcomes are illustrative; no alternative historical outcome is claimed.</footer></main>
+<script>
+/* MODEL-START */
+function simulate(state) {
+  const host = state.host || "primary";
+  const verification = state.verification || "assume";
+  const recovery = state.recovery || "recent";
+  const paused = verification === "check";
+  const deleted = !paused && host === "primary";
+  const needsRestore = deleted;
+  const backupUnverified = verification === "assume";
+  const effort = (host === "secondary" ? 1 : 0) + (paused ? 2 : 0) + (needsRestore ? 8 : 0);
+  const effortLabel = `${effort} effort ${effort === 1 ? "unit" : "units"}`;
+  const missingWriteUnits = needsRestore ? (recovery === "recent" ? 6 : 24) : 0;
+  return { paused, deleted, needsRestore, recoveryChoiceShown: needsRestore, backupUnverified, effort, effortLabel, missingWriteUnits,
+    timeline: ["Replication repair requested", paused ? "Recovery check pauses cleanup" : host === "primary" ? "Primary directory cleared in this model" : "Confirmed secondary directory cleared in this model", deleted ? "Production copy unavailable in this model" : "Primary copy remains in this model"] };
+}
+/* MODEL-END */
+const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)").matches;
+let currentChoices;
+function showStage(stage) {
+  const copy = {
+    choose: ["Verify before clearing", "Replication has stalled. Choose where to clean up and what to check first."],
+    run: ["Follow the repair", "See the consequences of your host and recovery checks in the illustrative model."],
+    incident: ["Plan the recovery", "Choose a fallback copy. A fresher copy and a fast restore are separate concerns."],
+    reveal: ["Compare with the record", "Your result is illustrative. The postmortem explains the historical failure below."]
+  };
+  document.getElementById("page-title").textContent = copy[stage][0];
+  document.getElementById("page-lede").textContent = copy[stage][1];
+  for (const name of ["choose", "run", "incident", "reveal"]) document.getElementById(name).hidden = name !== stage;
+  const heading = document.getElementById(stage + "-title");
+  heading.focus({preventScroll:true});
+  heading.scrollIntoView({block:"start", behavior:reducedMotion ? "auto" : "smooth"});
+}
+function readChoices() { return Object.fromEntries(new FormData(document.getElementById("choice-form"))); }
+document.getElementById("choice-form").addEventListener("submit", event => {
+  event.preventDefault(); currentChoices = readChoices();
+  const result = simulate(currentChoices);
+  document.getElementById("timeline-points").replaceChildren(...result.timeline.map(text => { const li=document.createElement("li"); li.textContent=text; return li; }));
+  document.getElementById("run-status").textContent = "Illustrative run complete. Assess the recovery plan next.";
+  showStage("run");
+});
+document.getElementById("show-incident").addEventListener("click", () => {
+  const result = simulate(currentChoices);
+  document.getElementById("incident-context").textContent = result.needsRestore ? "The model has lost the primary copy. Compare recovery copies before continuing." : "The model retained the primary copy. No recovery-copy choice is shown on this path.";
+  document.getElementById("recovery-choice").hidden = !result.recoveryChoiceShown;
+  document.getElementById("recovery-choice").disabled = !result.recoveryChoiceShown;
+  document.getElementById("recovery-note").hidden = !result.recoveryChoiceShown;
+  document.getElementById("incident-title").textContent = result.recoveryChoiceShown ? "Choose a recovery copy" : "No restore choice";
+  document.getElementById("apply-response").textContent = result.recoveryChoiceShown ? "Apply recovery choice and continue" : "Reveal the model result";
+  showStage("incident");
+  document.getElementById("page-title").textContent = result.recoveryChoiceShown ? "Plan the recovery" : "Review the recovery check";
+  document.getElementById("page-lede").textContent = result.recoveryChoiceShown ? "Compare available copies; freshness and transfer effort are separate concerns." : "The primary copy remains in this model, so no recovery-copy choice is shown.";
+});
+document.getElementById("incident-form").addEventListener("submit", event => {
+  event.preventDefault();
+  const state = {...currentChoices, ...Object.fromEntries(new FormData(event.currentTarget))};
+  const result = simulate(state);
+  document.getElementById("result-title").textContent = result.paused ? "Cleanup paused for recovery verification" : result.deleted ? "The primary copy needs restoration" : "The confirmed secondary is the cleanup target";
+  document.getElementById("result-copy").textContent = `Illustrative model: ${result.effortLabel}; ${result.missingWriteUnits} missing-write units. ` + (result.needsRestore ? (state.recovery === "recent" ? "The recent copy limits the model’s missing-write window." : "The older copy widens the model’s missing-write window without reducing transfer effort.") : "The primary copy remains available in this model; no restore is needed.");
+  document.getElementById("backup-exposure").hidden = !result.backupUnverified;
+  document.getElementById("result-box").classList.toggle("is-failure", result.deleted);
+  showStage("reveal");
+});
+document.getElementById("try-again").addEventListener("click", () => { document.getElementById("choice-form").reset(); document.getElementById("incident-form").reset(); showStage("choose"); });
+<\/script>
+<\!-- FACILITATOR INSERTION POINT -->
+</body></html></script>
+
+  <script>
+    (function () {
+      "use strict";
+      const stage = document.getElementById("stage");
+      const pages = {};
+      document.querySelectorAll('script[type="text/x-failure-lab"]').forEach(function (holder) {
+        // Reverse the two build-time escapes (see encode in build-single.mjs).
+        pages[holder.dataset.mode] = holder.textContent.split("<" + "\\/script").join("<" + "/script").split("<" + "\\!--").join("<" + "!--");
+      });
+      let current = null;
+
+      function open(mode) {
+        if (!pages[mode]) mode = null;
+        current = mode;
+        if (!mode) {
+          stage.hidden = true;
+          stage.removeAttribute("srcdoc");
+          document.body.classList.remove("in-frame");
+          document.title = "GitLab, 31 January 2017 — Failure Lab, offline edition";
+          return;
+        }
+        document.body.classList.add("in-frame");
+        stage.hidden = false;
+        stage.srcdoc = pages[mode];
+      }
+
+      stage.addEventListener("load", function () {
+        if (!current || !stage.contentDocument) return;
+        stage.title = stage.contentDocument.title;
+        document.title = stage.contentDocument.title + " — offline edition";
+        stage.focus();
+      });
+
+      function route(hash) {
+        const mode = hash.replace(/^#/, "");
+        if (mode === "sources") {
+          open(null);
+          const d = document.getElementById("sources");
+          d.open = true;
+          d.scrollIntoView({ block: "start" });
+          d.querySelector("summary").focus();
+          return;
+        }
+        open(mode === "group" || mode === "solo" ? mode : null);
+        if (!current) document.getElementById("home-title").focus({ preventScroll: true });
+      }
+
+      // A carried page asked to leave: its "← Failure Lab" link, a scenario link or a register link.
+      window.addEventListener("message", function (e) {
+        if (e.source !== stage.contentWindow || !e.data || typeof e.data.failureLab !== "string") return;
+        const href = e.data.failureLab;
+        let next = "";
+        if (/^group\.html/.test(href)) next = pages.group ? "#group" : "";
+        else if (href === "gitlab2017.html") next = "#solo";
+        else if (/^sources-/.test(href)) next = "#sources";
+        if (location.hash === next) route(next);
+        else if (next) location.hash = next;
+        else history.pushState(null, "", location.pathname + location.search), route("");
+      });
+
+      document.querySelectorAll("[data-mode]").forEach(function (b) {
+        if (b.tagName === "BUTTON") b.addEventListener("click", function () { location.hash = "#" + b.dataset.mode; });
+      });
+      window.addEventListener("hashchange", function () { route(location.hash); });
+      if (location.hash) route(location.hash);
+    }());
+  </script>
+</body>
+</html>

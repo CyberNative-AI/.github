@@ -1,0 +1,2600 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; frame-src about:; base-uri 'none'; form-action 'none'">
+  <title>Knight Capital, 1 August 2012 — Failure Lab, offline edition</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d; --panel: #16253a; --panel-raised: #1b2d44; --line: #687d95;
+      --paper: #f5f4ef; --muted: #c0cad6; --amber: #f2b134; --ink: #0f1b2d; --focus: #ffe09a;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    html, body { background: var(--navy); }
+    body { margin: 0; color: var(--paper); font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    a { color: var(--amber); text-underline-offset: .18em; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    h1, h2, h3, h4, p { margin-top: 0; }
+    .page { width: min(100% - 32px, 1200px); margin: 0 auto; padding: 32px 0 48px; }
+    .topline { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; margin: 0 0 28px; color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .11em; text-transform: uppercase; }
+    .topline span:first-child { color: var(--amber); }
+    .masthead { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: 28px 56px; align-items: end; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+    .year { display: block; margin-bottom: 10px; font-size: clamp(3.4rem, 8vw, 7rem); font-weight: 800; line-height: .82; letter-spacing: -.055em; font-variant-numeric: tabular-nums; }
+    .kind { margin: 0 0 14px; color: var(--muted); font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { margin-bottom: 16px; font-size: clamp(2rem, 4.4vw, 3.4rem); line-height: 1.02; letter-spacing: -.035em; text-wrap: balance; }
+    .brief { max-width: 58ch; margin: 0; color: var(--muted); font-size: 1.05rem; }
+    .entries { display: grid; gap: 14px; }
+    .entry { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 16px; align-items: center; width: 100%; min-height: 56px; padding: 18px 20px; border: 1px solid var(--amber); border-radius: var(--radius); color: var(--paper); background: var(--panel); font: inherit; text-align: left; cursor: pointer; transition: background-color .15s ease; }
+    .entry:hover { background: var(--panel-raised); }
+    .entry.primary { color: var(--ink); background: var(--amber); }
+    .entry.primary:hover { background: #f6c25c; }
+    .entry strong { font-size: 1.25rem; line-height: 1.2; }
+    .entry span { grid-column: 1; font-size: .9rem; opacity: .86; }
+    .entry b { grid-column: 2; grid-row: 1 / span 2; font-size: 1.5rem; transition: transform .15s ease; }
+    .entry:hover b { transform: translateX(3px); }
+    .entry-note { margin: 0; color: var(--muted); font-size: .86rem; }
+    .lower { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 56px; padding-top: 32px; }
+    h2 { margin-bottom: 14px; font-size: 1.3rem; line-height: 1.2; }
+    .quick { display: grid; gap: 0; margin: 0; padding: 0; list-style: none; }
+    .quick li { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; padding: 10px 0; border-top: 1px solid #33445b; color: var(--muted); }
+    .quick li span { color: var(--amber); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .quick strong { color: var(--paper); }
+    .facts { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 6px 14px; margin: 18px 0 0; padding-top: 14px; border-top: 1px solid #33445b; font-size: .88rem; }
+    .facts dt { color: var(--muted); }
+    .facts dd { margin: 0; min-width: 0; }
+    details { border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+    summary { display: flex; justify-content: space-between; gap: 12px; align-items: center; min-height: 56px; padding: 14px 18px; font-weight: 750; cursor: pointer; list-style: none; }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--amber); font-size: 1.4rem; line-height: 1; }
+    details[open] summary::after { content: "−"; }
+    summary small { display: block; color: var(--muted); font-size: .82rem; font-weight: 500; }
+    .register { padding: 0 18px 18px; color: var(--muted); font-size: .92rem; overflow-wrap: anywhere; }
+    .register h4 { margin: 18px 0 8px; color: var(--paper); font-size: .95rem; }
+    .register ul { margin: 0 0 12px; padding-left: 18px; }
+    .register li { margin-bottom: 6px; }
+    .register strong, .register em { color: var(--paper); }
+    .tag { display: inline-block; padding: 0 6px; border-radius: 5px; color: var(--ink); background: var(--amber); font-weight: 800; font-size: .82em; }
+    .credit { margin: 2px 0 0; color: var(--muted); font-size: .86rem; line-height: 1.45; text-wrap: balance; }
+    .credit a { color: var(--paper); }
+    .notice { margin-top: 32px; }
+    .notice .register p { max-width: 90ch; margin: 0 0 14px; }
+    .licence-text { margin: 0; padding: 16px; border-radius: 10px; color: var(--paper); background: var(--navy); font: .8rem/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; }
+    footer { margin-top: 36px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    footer p { max-width: 90ch; margin: 0 0 6px; }
+    #stage { position: fixed; inset: 0; width: 100%; height: 100%; border: 0; background: var(--navy); }
+    body.in-frame { overflow: hidden; }
+    body.in-frame .page { display: none; }
+    @media (max-width: 860px) {
+      .masthead, .lower { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 16px; }
+      .topline { margin-bottom: 18px; font-size: .68rem; }
+      .topline span:last-child { display: none; }
+      .masthead { gap: 20px; padding-bottom: 24px; }
+      .year { font-size: 3.6rem; }
+      h1 { font-size: 1.9rem; margin-bottom: 10px; }
+      .brief { font-size: .95rem; line-height: 1.45; }
+      .entries { gap: 10px; }
+      .entry { padding: 14px 16px; }
+      .entry strong { font-size: 1.1rem; }
+      .entry span { font-size: .84rem; }
+      .lower { gap: 28px; padding-top: 24px; }
+      .quick li { grid-template-columns: 62px minmax(0, 1fr); gap: 10px; font-size: .92rem; }
+      .credit { font-size: .82rem; }
+      .notice { margin-top: 28px; }
+      .licence-text { padding: 12px; font-size: .72rem; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition-duration: .01ms !important; } .entry:hover b { transform: none; } }
+    @media print {
+      body.in-frame #stage { position: static; display: block; width: 100%; border: 0; }
+      body:not(.in-frame) #stage { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page" id="home">
+    <p class="topline"><span>Failure Lab · offline edition</span><span>One file · no network · nothing saved or sent</span></p>
+    <header class="masthead">
+      <div>
+        <span class="year">2012</span>
+        <p class="kind">Trading deployment</p>
+        <h1 id="home-title" tabindex="-1">Knight Capital, 1 August</h1>
+        <p class="brief">New order-router code has to be live before the market opens. Choose how it ships to the servers, how it is switched on and what happens to old code. Then the opening bell rings, and you make one more call.</p>
+      </div>
+      <div class="entries">
+        <button class="entry primary" type="button" id="open-group" data-mode="group"><strong>Run with a group</strong><span>Projector layout, discussion timer, show-of-hands tally and a one-page printable debrief. About 25 minutes.</span><b aria-hidden="true">→</b></button>
+        <button class="entry" type="button" id="open-solo" data-mode="solo"><strong>Play solo</strong><span>Make the calls yourself, run the model, then read the record.</span><b aria-hidden="true">→</b></button>
+        <p class="credit">Prepared with AI assistance. Published by CyberNative AI LLC. Corrections: <a href="mailto:hello@cybernative.ai">hello@cybernative.ai</a>.</p>
+      </div>
+    </header>
+    <div class="lower">
+      <section aria-labelledby="quick-title">
+        <h2 id="quick-title">Quickstart for a 25-minute team session</h2>
+        <ol class="quick">
+          <li><span>Before</span><div>Put the browser in full screen (F11, or Ctrl+Cmd+F on a Mac). Choose <strong>Run with a group</strong>, pick a timer length, then Start.</div></li>
+          <li><span>0–3 min</span><div>Read the briefing aloud: role, constraints, evidence.</div></li>
+          <li><span>3–13</span><div>For each decision: read the prompt, discuss, take an optional show of hands, record the group's choice. <strong>← Back</strong> reopens the previous decision.</div></li>
+          <li><span>13–15</span><div>Run the model on the group's choices.</div></li>
+          <li><span>15–23</span><div>Compare with the record and work through the discussion questions. Each one cites a numbered source.</div></li>
+          <li><span>23–25</span><div>Open the one-page summary, write the team's actions on it, then print it or save it as a PDF.</div></li>
+        </ol>
+        <dl class="facts"><dt>Decisions</dt><dd>Three before the open, one during it</dd>
+            <dt>Record</dt><dd>U.S. SEC order, Exchange Act Release No. 70694, 16 October 2013</dd></dl>
+      </section>
+      <section aria-labelledby="sources-title">
+        <h2 id="sources-title">Sources</h2>
+        <details id="sources">
+          <summary><span>Source register<small>U.S. SEC order, Exchange Act Release No. 70694, 16 October 2013 · tags S1–S6</small></span></summary>
+          <div class="register">
+<h4>Primary source</h4>
+<p><strong>S1</strong> — U.S. Securities and Exchange Commission, <em>In the Matter of Knight Capital Americas LLC</em>, Exchange Act Release No. 70694, File No. 3-15570, administrative order, October 16, 2013. <a href="https://www.sec.gov/files/litigation/admin/2013/34-70694.pdf" target="_blank" rel="noopener noreferrer">Official SEC PDF</a>.</p>
+<p>References below are to Section III of the order and its numbered findings.</p>
+<h4>Register</h4>
+<ul><li><strong>S1 — Incident date and scale:</strong> §III, ¶1. August 1, 2012; 212 retail parent orders; about 45 minutes; more than 4 million executions in 154 stocks; more than 397 million shares; approximate long and short positions; loss greater than $460 million. The specific findings in ¶17 give 4 million executions and a $460 million loss.</li><li><strong>S2 — RLP code, retained code, and flag:</strong> §III, ¶¶12–13, 15–16. The RLP change added code to SMARS; the Power Peg functionality was no longer used but remained present and callable; the new code reused its flag; one of eight servers missed the new code and retained the old code.</li><li><strong>S3 — Fill tracking and repeated child orders:</strong> §III, ¶¶14, 16. In 2005, the cumulative-share tracking function moved earlier in the SMARS sequence and the unused Power Peg code was not retested. When the eighth server received orders carrying the reused flag, its code sent child orders rapidly without regard to executions already received.</li><li><strong>S4 — Pre-open e-mails:</strong> §III, ¶19. Beginning around 8:01 a.m. ET, 97 automated BNET reject e-mails referencing SMARS and Power Peg were sent to personnel before the 9:30 a.m. open. The order says these messages were not designed as system alerts and generally were not reviewed.</li><li><strong>S5 — Removing the new code worsened the incident:</strong> §III, ¶27. Knight removed the new RLP code from the seven servers that had received it correctly; the order says this led additional parent orders to activate Power Peg on those servers, like on the eighth.</li><li><strong>S6 — Controls and response procedures:</strong> §III, ¶¶21, 26–27. The order found inadequate SMARS output monitoring, no procedures to halt SMARS in response to its own aberrant activity, no written SMARS deployment procedures, and no supervisory incident-response procedures to guide employees.</li></ul>
+<h4>Source/spec distinctions</h4>
+<ul><li>The task brief describes a manual copy to all eight servers. The order says deployment began in stages and that one technician did not copy the new RLP code to one of eight servers (§III, ¶15); it does not say that every server was deployed by hand. The UI labels manual copy as a decision option and models a missed per-server copy, while this register preserves the narrower historical wording.</li><li>The brief requests a 9:30 to 10:15 timeline. The order reports an approximately 45-minute incident and identifies 9:30 a.m. as the market open; 10:15 is a derived endpoint, not an exact stop time stated in the order.</li><li>The introduction says Knight lost more than $460 million (§III, ¶1). The detailed impact finding reports a $460 million loss (§III, ¶17). The reveal uses the introduction's greater-than figure.</li><li>The order does not name a particular kill-switch device. The UI states only that the order found no procedures to halt SMARS in response to aberrant activity and no incident-response procedures to guide employees (§III, ¶¶21, 27).</li></ul>
+<h4>Simulation boundary</h4>
+<p>The eight-server counterfactual, order counter, animation pace, choice costs, and the outcomes of safe choices are illustrative model behavior. Historical figures and events are attributed to the cited findings. The simulation does not claim a counterfactual firm outcome.</p>
+          </div>
+        </details>
+      </section>
+    </div>
+    <section class="notice" aria-labelledby="licence-title">
+      <h2 id="licence-title">Licence</h2>
+      <details id="licence">
+        <summary><span>MIT licence and notice<small>Covers the original Failure Lab software and documentation only. Third-party excerpts and linked records are excluded.</small></span></summary>
+        <div class="register">
+          <p>The MIT licence applies only to the original software and documentation created for Failure Lab by CyberNative AI LLC. Third-party material, including attributed excerpts reproduced in these files and linked inquiry, regulatory and postmortem records, is excluded from that grant and remains subject to its respective rights. The source registers identify the publishers and cited passages. No source PDF or complete third-party record is bundled.</p>
+<pre class="licence-text">MIT License
+
+Copyright (c) 2026 CyberNative AI LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+</pre>
+        </div>
+      </details>
+    </section>
+    <footer>
+      <p>The models are illustrative and simplified to isolate one decision. Costs, timings, counts and counterfactual outcomes are invented for teaching and labelled that way. Only statements tagged with a source (S1, S2, …) are historical. A modelled “no failure” is not a prediction, and nothing here is a certification or training claim.</p>
+      <p>This file needs nothing beside it: no install, account or network. Reloading clears the session. Source links open the public record in a new tab only when you click them.</p>
+    </footer>
+  </main>
+
+  <iframe id="stage" title="" hidden></iframe>
+
+  <script type="text/x-failure-lab" data-mode="group"><!doctype html>
+<html lang="en">
+<head><script data-failure-lab="bridge">(function () {
+  var h = history;
+  ["replaceState", "pushState"].forEach(function (k) {
+    var f = h[k];
+    h[k] = function () { try { return f.apply(h, arguments); } catch (e) { return undefined; } };
+  });
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || e.defaultPrevented) return;
+    var href = a.getAttribute("href");
+    if (href.charAt(0) === "#") {
+      e.preventDefault();
+      var t = document.getElementById(decodeURIComponent(href.slice(1)));
+      if (t) t.scrollIntoView({ block: "start" });
+    } else if (/^https?:/i.test(href)) {
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    } else {
+      e.preventDefault();
+      parent.postMessage({ failureLab: href }, "*");
+    }
+  });
+}());<\/script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Run with a group — Failure Lab</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d;
+      --panel: #16253a;
+      --panel-raised: #1b2d44;
+      --line: #687d95;
+      --paper: #f5f4ef;
+      --muted: #c0cad6;
+      --amber: #f2b134;
+      --red: #ff786f;
+      --green: #8fd6a4;
+      --ink: #0f1b2d;
+      --focus: #ffe09a;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    /* Projector scale: 1rem is the body size. 24px from 1024px up, 28px on large displays. */
+    html { background: var(--navy); font-size: 18px; }
+    @media (min-width: 600px) { html { font-size: 20px; } }
+    @media (min-width: 1024px) { html { font-size: 24px; } }
+    @media (min-width: 1800px) { html { font-size: 28px; } }
+
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--paper);
+      font: 1rem/1.45 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--amber); text-underline-offset: .18em; }
+
+    :focus-visible { outline: 4px solid var(--focus); outline-offset: 3px; }
+
+    h1, h2, h3, p, ol, ul { margin-top: 0; }
+    h2:focus { outline: none; }
+
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+      overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+    }
+
+    .bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 22px;
+      align-items: center;
+      justify-content: space-between;
+      width: min(100% - 32px, 1640px);
+      margin: 0 auto;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: .72rem;
+    }
+    .bar a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 750; text-decoration: none; }
+    .bar a:hover { text-decoration: underline; }
+    .bar-title { margin: 0; color: var(--muted); font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .bar-title strong { color: var(--paper); }
+
+    .steps { display: flex; flex-wrap: wrap; gap: 4px 14px; margin: 0; padding: 0; list-style: none; color: var(--muted); }
+    .steps li { display: inline-flex; gap: 6px; align-items: center; }
+    .steps li::before { content: ""; width: .55em; height: .55em; border: 2px solid var(--line); border-radius: 50%; }
+    .steps li.done::before { border-color: var(--amber); background: var(--amber); }
+    .steps li[aria-current="step"] { color: var(--paper); font-weight: 800; }
+    .steps li[aria-current="step"]::before { border-color: var(--paper); background: var(--paper); }
+
+    .stage { width: min(100% - 32px, 1640px); margin: 0 auto; padding: 28px 0 48px; }
+
+    .kicker {
+      margin: 0 0 10px;
+      color: var(--amber);
+      font-size: .72rem;
+      font-weight: 800;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    h1 { max-width: 22ch; margin-bottom: 14px; font-size: 2.2rem; line-height: 1.05; letter-spacing: -.03em; text-wrap: balance; }
+    h2 { max-width: 30ch; margin-bottom: 18px; font-size: 1.75rem; line-height: 1.12; letter-spacing: -.02em; text-wrap: balance; }
+    h3 { margin-bottom: 12px; font-size: 1.05rem; line-height: 1.25; }
+    .lede { max-width: 46ch; color: var(--muted); }
+    .muted { color: var(--muted); }
+    .small { font-size: .78rem; }
+    .note { max-width: 70ch; color: var(--muted); font-size: .72rem; }
+
+    .src {
+      display: inline-block;
+      padding: 0 .35em;
+      border: 1px solid var(--line);
+      border-radius: 5px;
+      color: var(--amber);
+      font-size: .72em;
+      font-weight: 750;
+      line-height: 1.4;
+      white-space: nowrap;
+      vertical-align: .08em;
+    }
+    a.src { text-decoration: none; }
+    .tag {
+      display: inline-block;
+      margin-left: .3em;
+      padding: 0 .4em;
+      border-radius: 5px;
+      color: var(--ink);
+      background: var(--muted);
+      font-size: .62em;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+      vertical-align: .15em;
+    }
+
+    .button {
+      display: inline-flex;
+      gap: .4em;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: .45em 1em;
+      border: 2px solid var(--amber);
+      border-radius: 10px;
+      color: var(--ink);
+      background: var(--amber);
+      font: inherit;
+      font-weight: 800;
+      line-height: 1.2;
+      cursor: pointer;
+    }
+    .button:hover { background: #ffc85a; }
+    .button.secondary { color: var(--paper); background: transparent; border-color: var(--line); }
+    .button.secondary:hover { border-color: var(--paper); }
+    .button.quiet { min-height: 44px; padding: .3em .7em; color: var(--paper); background: transparent; border-color: transparent; font-weight: 700; text-decoration: underline; text-underline-offset: .18em; }
+    .button:disabled { cursor: not-allowed; opacity: .55; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; margin-top: 24px; }
+
+    .panel { padding: 22px 24px; border: 1px solid var(--line); border-radius: var(--radius); background: var(--panel); }
+
+    [hidden] { display: none !important; }
+
+    /* Pick */
+    .pick-grid { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px 48px; align-items: start; }
+    .scenario-list { display: grid; gap: 16px; margin: 0; padding: 0; list-style: none; }
+    .scenario {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr) auto;
+      gap: 6px 22px;
+      align-items: center;
+      padding: 20px 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+    .scenario-year { grid-row: 1 / span 2; font-size: 2.1rem; font-weight: 800; line-height: .9; letter-spacing: -.05em; font-variant-numeric: tabular-nums; }
+    .scenario h3 { margin: 0; }
+    .scenario p { grid-column: 2; margin: 0; color: var(--muted); font-size: .78rem; }
+    .scenario .button { grid-column: 3; grid-row: 1 / span 2; }
+    .agenda { margin: 0 0 18px; padding: 0; list-style: none; }
+    .agenda li { display: grid; grid-template-columns: 4.6em minmax(0, 1fr); gap: 12px; padding: 9px 0; border-top: 1px solid #33445b; font-size: .85rem; }
+    .agenda li:first-child { border-top: 0; }
+    .agenda time { color: var(--amber); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .setting { margin: 0; padding: 0; border: 0; }
+    .setting legend { margin-bottom: 8px; padding: 0; font-weight: 750; font-size: .85rem; }
+    .segmented { display: flex; flex-wrap: wrap; gap: 8px; }
+    .segmented label { position: relative; }
+    .segmented input { position: absolute; opacity: 0; inset: 0; margin: 0; }
+    .segmented span { display: inline-flex; align-items: center; min-height: 48px; padding: 0 .8em; border: 2px solid var(--line); border-radius: 9px; font-weight: 750; cursor: pointer; }
+    .segmented input:checked + span { border-color: var(--amber); color: var(--ink); background: var(--amber); }
+    .segmented input:focus-visible + span { outline: 4px solid var(--focus); outline-offset: 3px; }
+
+    /* Brief */
+    .brief-list { max-width: 48ch; margin: 0 0 18px; padding-left: 1.2em; }
+    .brief-list li { margin-bottom: 12px; }
+    .brief-list li::marker { color: var(--amber); }
+
+    /* Decide */
+    .decide-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 28px 48px; align-items: start; }
+    .context { max-width: 48ch; color: var(--muted); }
+    .discuss { margin: 0 0 20px; padding: 14px 18px; border-left: 6px solid var(--amber); border-radius: 0 10px 10px 0; background: var(--panel); }
+    .discuss p { margin: 0; font-size: 1.05rem; font-weight: 650; }
+    .discuss .kicker { margin-bottom: 4px; }
+    .data-table { width: 100%; margin: 0 0 20px; border-collapse: collapse; font-size: .78rem; font-variant-numeric: tabular-nums; }
+    .data-table caption { margin-bottom: 6px; color: var(--muted); font-size: .9em; text-align: left; }
+    .data-table th, .data-table td { padding: 5px 10px 5px 0; border-bottom: 1px solid #33445b; text-align: left; }
+    .data-table th { color: var(--muted); font-weight: 700; }
+
+    .timer { display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 10px 20px; align-items: center; }
+    .timer-readout { font-size: 2.4rem; font-weight: 800; line-height: 1; letter-spacing: -.02em; font-variant-numeric: tabular-nums; }
+    .timer.is-done .timer-readout { color: var(--amber); }
+    .timer.is-skipped { grid-template-columns: minmax(0, 1fr); }
+    .timer.is-skipped .timer-readout, .timer.is-skipped .timer-track, .timer.is-skipped #timer-toggle, .timer.is-skipped #timer-reset, .timer.is-skipped #timer-skip { display: none; }
+    .timer:not(.is-skipped) #timer-unskip { display: none; }
+    .timer-track { grid-column: 1 / -1; height: 8px; border-radius: 4px; background: #33445b; overflow: hidden; }
+    .timer-fill { display: block; height: 100%; width: 100%; background: var(--amber); transition: width .25s linear; }
+    .timer-state { margin: 0; color: var(--muted); font-size: .78rem; }
+    .timer-controls { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 10px; }
+
+    .choice-set { margin: 0; padding: 0; border: 0; min-width: 0; }
+    .choice-set legend { margin-bottom: 12px; padding: 0; font-weight: 800; }
+    .options { display: grid; gap: 12px; }
+    /* Fixed tally track: an auto track took the input's intrinsic width and crushed the option text. */
+    .option { display: grid; grid-template-columns: minmax(0, 1fr); gap: 10px; align-items: stretch; }
+    .option.has-tally { grid-template-columns: minmax(0, 1fr) 6.5rem; }
+    .option-choice {
+      display: grid;
+      grid-template-columns: auto minmax(0, 1fr);
+      gap: 2px 14px;
+      align-items: start;
+      padding: 14px 18px;
+      border: 2px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel);
+      cursor: pointer;
+    }
+    .option-choice:hover { border-color: var(--paper); }
+    .option-choice:has(input:checked) { border-color: var(--amber); background: var(--panel-raised); }
+    .option-choice input { width: 1.1rem; height: 1.1rem; margin: .15rem 0 0; accent-color: var(--amber); }
+    .option-choice input:focus-visible { outline: none; }
+    .option-choice:has(input:focus-visible) { outline: 4px solid var(--focus); outline-offset: 3px; }
+    .option-label { font-weight: 800; }
+    .option-detail { grid-column: 2; color: var(--muted); font-size: .78rem; }
+    .tally-field { display: grid; align-content: center; gap: 4px; min-width: 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; font-size: .72rem; font-weight: 750; color: var(--muted); }
+    .tally-field input {
+      width: 100%;
+      min-width: 0;
+      min-height: 48px;
+      padding: 0 .4em;
+      border: 2px solid var(--line);
+      border-radius: 8px;
+      color: var(--paper);
+      background: var(--navy);
+      font: inherit;
+      font-size: 1.5rem;
+      font-weight: 800;
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+    .tally-field input[aria-invalid="true"] { border-color: var(--red); }
+    .tally-toggle { display: flex; gap: 12px; align-items: center; min-height: 48px; margin-top: 16px; font-weight: 700; cursor: pointer; }
+    .tally-toggle input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--amber); }
+    .form-error { margin: 14px 0 0; padding: 10px 14px; border-left: 6px solid var(--red); border-radius: 0 8px 8px 0; background: #2a1d2a; color: var(--paper); font-weight: 700; }
+
+    /* Run */
+    .outcome { max-width: 1100px; }
+    .outcome-card { padding: 24px 26px; border: 2px solid var(--green); border-radius: var(--radius); background: var(--panel); }
+    .outcome-card.is-failure { border-color: var(--red); }
+    .outcome-card p { max-width: 62ch; }
+    .outcome-label { margin: 0 0 6px; font-size: .72rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--green); }
+    .outcome-card.is-failure .outcome-label { color: var(--red); }
+    .counter { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; margin: 0 0 14px; }
+    .counter strong { font-size: 2.6rem; line-height: 1; font-variant-numeric: tabular-nums; }
+    .counter span { color: var(--muted); font-size: .78rem; }
+    .steps-list { margin: 0; padding-left: 1.3em; }
+    .run-record { max-width: 1100px; margin-top: 18px; }
+    .steps-list li { margin-bottom: 8px; }
+    .steps-list strong { color: var(--amber); }
+
+    /* Debrief */
+    .compare { width: 100%; margin-bottom: 28px; border-collapse: collapse; }
+    .compare th, .compare td { padding: 12px 14px 12px 0; border-bottom: 1px solid #33445b; text-align: left; vertical-align: top; }
+    .compare thead th { color: var(--muted); font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+    .compare tbody th { width: 20%; font-weight: 800; }
+    .compare td { width: 40%; }
+    .compare .tally { display: block; color: var(--muted); font-size: .72rem; font-variant-numeric: tabular-nums; }
+    .compare .record-note { display: block; margin-top: 4px; color: var(--muted); font-size: .72rem; }
+    .match { display: inline-block; margin-top: 4px; font-size: .68rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+    .match.same { color: var(--muted); }
+    .match.diff { color: var(--amber); }
+    .two-up { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 28px; margin-bottom: 28px; }
+    .two-up .panel p:last-child, .two-up .panel ul:last-child { margin-bottom: 0; }
+    .history-list { margin: 0; padding-left: 1.1em; }
+    .history-list li { margin-bottom: 8px; }
+    .questions { margin: 0 0 24px; padding-left: 1.3em; max-width: 64ch; }
+    .questions li { margin-bottom: 14px; font-size: 1.05rem; }
+    .questions li::marker { color: var(--amber); font-weight: 800; }
+    .register { margin: 0; padding: 0; list-style: none; font-size: .72rem; color: var(--muted); }
+    .register li { margin-bottom: 6px; }
+    .register li:target { color: var(--paper); }
+
+    /* Summary sheet: a printable page, light on screen and on paper. */
+    .sheet {
+      max-width: 820px;
+      padding: 36px 40px;
+      border-radius: 6px;
+      color: #111a26;
+      background: #fff;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+    .sheet h2 { max-width: none; margin-bottom: 2px; font-size: 24px; letter-spacing: -.01em; }
+    .sheet h3 { margin: 16px 0 6px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: #5a3e00; }
+    .sheet p, .sheet li { font-size: 14px; }
+    .sheet .meta { margin-bottom: 6px; color: #3a4656; font-size: 13px; }
+    .sheet table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+    .sheet th, .sheet td { padding: 5px 8px 5px 0; border-bottom: 1px solid #c9ced6; text-align: left; vertical-align: top; }
+    .sheet thead th { color: #3a4656; font-size: 11px; letter-spacing: .06em; text-transform: uppercase; }
+    .sheet .tally { display: block; color: #3a4656; font-size: 12px; }
+    .sheet ul, .sheet ol { margin: 0; padding-left: 1.2em; }
+    .sheet li { margin-bottom: 3px; }
+    .sheet .src { border-color: #8a95a5; color: #5a3e00; }
+    .sheet .tag { color: #fff; background: #3a4656; }
+    .sheet .sources { color: #3a4656; font-size: 11.5px; }
+    .sheet .sources li { font-size: 11.5px; margin-bottom: 1px; }
+    .sheet .limits { margin: 12px 0 0; color: #3a4656; font-size: 11.5px; }
+    .sheet .lines { margin: 4px 0 0; padding: 0; list-style: none; }
+    .sheet .lines li { height: 26px; border-bottom: 1px solid #c9ced6; }
+
+    @media (max-width: 1100px) {
+      .pick-grid, .decide-grid { grid-template-columns: minmax(0, 1fr); }
+    }
+
+    @media (max-width: 600px) {
+      .option.has-tally { grid-template-columns: minmax(0, 1fr); gap: 6px; }
+      .tally-field { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 6px 12px; }
+      .tally-field input { width: 5.5rem; flex: none; }
+    }
+
+    @media (max-width: 760px) {
+      .bar, .stage { width: min(100% - 24px, 680px); }
+      .stage { padding-top: 18px; }
+      h1 { font-size: 1.8rem; }
+      h2 { font-size: 1.4rem; }
+      .scenario { grid-template-columns: auto minmax(0, 1fr); }
+      .scenario .button { grid-column: 1 / -1; grid-row: auto; justify-self: start; }
+      .scenario-year { grid-row: 1; }
+      .scenario p { grid-column: 1 / -1; }
+      .two-up { grid-template-columns: minmax(0, 1fr); }
+      .compare, .compare tbody, .compare tr, .compare th, .compare td { display: block; width: 100%; }
+      .compare thead { display: none; }
+      .compare tr { padding: 10px 0; border-bottom: 1px solid #33445b; }
+      .compare th, .compare td, .compare tbody th { width: 100%; padding: 4px 0; border: 0; }
+      .compare td::before { content: attr(data-label); display: block; color: var(--muted); font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+      .sheet { padding: 22px 18px; }
+      .sheet th, .sheet td { padding-right: 6px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      /* Off, not shortened: a short duration on every element creates transitions on every property. */
+      *, *::before, *::after { transition: none !important; animation: none !important; }
+    }
+
+    @page { margin: 12mm; }
+    @media print {
+      :root { color-scheme: light; }
+      html, body { background: #fff; font-size: 12pt; }
+      .sheet { font-size: 10pt; line-height: 1.32; }
+      .sheet h2 { font-size: 17pt; }
+      .sheet h3 { margin: 9px 0 3px; font-size: 8.5pt; }
+      .sheet p, .sheet li { font-size: 9.5pt; }
+      .sheet .meta { font-size: 9pt; }
+      .sheet table { font-size: 9.5pt; }
+      .sheet th, .sheet td { padding: 3px 8px 3px 0; }
+      .sheet thead th { font-size: 7.5pt; }
+      .sheet .tally { font-size: 8.5pt; }
+      .sheet .lines li { height: 20px; }
+      .sheet .sources { columns: 2; column-gap: 18px; }
+      .sheet .sources li { font-size: 7.5pt; break-inside: avoid; }
+      .sheet .limits { margin-top: 8px; font-size: 7.5pt; }
+      .bar, .screen:not(#summary), #summary .no-print, #live { display: none !important; }
+      .stage { width: auto; padding: 0; }
+      .sheet { max-width: none; padding: 0; border-radius: 0; }
+      .sheet tr, .sheet li { break-inside: avoid; }
+    }
+  </style>
+</head>
+<body>
+  <header class="bar">
+    <a href="index.html" id="lab-home">← Failure Lab</a>
+    <p class="bar-title">Group session<span id="bar-scenario"></span></p>
+    <ol class="steps" id="steps" aria-label="Session progress"></ol>
+  </header>
+
+  <main class="stage">
+    <section class="screen" id="pick" aria-labelledby="pick-title">
+      <div class="pick-grid">
+        <div>
+          <p class="kicker">Facilitator mode · 25 minutes · no preparation</p>
+          <h1 id="pick-title" tabindex="-1">Run an incident-learning session with your team</h1>
+          <p class="lede">Put this on the projector. The group makes the engineers' real decisions, sees what a simplified model does with them, then compares them with the official record. Nothing is saved or sent; reloading clears the session.</p>
+          <h2 class="sr-only">Pick a scenario</h2>
+          <ul class="scenario-list" id="scenario-list"></ul>
+        </div>
+        <div class="panel">
+          <h3>Suggested 25-minute agenda</h3>
+          <ol class="agenda">
+            <li><time>0–3</time><span>Read the briefing aloud.</span></li>
+            <li><time>3–13</time><span>Each decision: discuss, take a show of hands, record the choice.</span></li>
+            <li><time>13–15</time><span>Run the model on the group's choices.</span></li>
+            <li><time>15–23</time><span>Debrief: compare with the record, work through the questions.</span></li>
+            <li><time>23–25</time><span>Print or save the one-page summary; note actions.</span></li>
+          </ol>
+          <fieldset class="setting">
+            <legend>Discussion timer for each decision</legend>
+            <div class="segmented" id="timer-length">
+              <label><input type="radio" name="timer-length" value="60"><span>1 min</span></label>
+              <label><input type="radio" name="timer-length" value="120" checked><span>2 min</span></label>
+              <label><input type="radio" name="timer-length" value="180"><span>3 min</span></label>
+              <label><input type="radio" name="timer-length" value="240"><span>4 min</span></label>
+            </div>
+          </fieldset>
+          <p class="note" style="margin-top:14px">The timer is optional: start it, pause it or skip it at each decision.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen" id="brief" aria-labelledby="brief-title" hidden>
+      <p class="kicker" id="brief-kicker">Briefing</p>
+      <h2 id="brief-title" tabindex="-1"></h2>
+      <ul class="brief-list" id="brief-points"></ul>
+      <p class="note" id="brief-note"></p>
+      <div class="actions">
+        <button class="button" type="button" id="brief-start">Start decision 1 →</button>
+        <button class="button quiet" type="button" id="brief-back">Pick another scenario</button>
+      </div>
+    </section>
+
+    <section class="screen" id="decide" aria-labelledby="decide-title" hidden>
+      <p class="kicker" id="decide-kicker"></p>
+      <div class="decide-grid">
+        <div>
+          <h2 id="decide-title" tabindex="-1"></h2>
+          <p class="context" id="decide-context" hidden></p>
+          <div id="decide-table"></div>
+          <div class="discuss">
+            <p class="kicker">Discuss</p>
+            <p id="decide-discuss"></p>
+          </div>
+          <div class="panel timer" id="timer" role="group" aria-labelledby="timer-heading">
+            <h3 class="sr-only" id="timer-heading">Discussion timer</h3>
+            <span class="timer-readout" id="timer-readout" aria-hidden="true">2:00</span>
+            <p class="timer-state" id="timer-state">Ready. The timer is optional.</p>
+            <span class="timer-track" aria-hidden="true"><span class="timer-fill" id="timer-fill"></span></span>
+            <div class="timer-controls">
+              <button class="button" type="button" id="timer-toggle">Start timer</button>
+              <button class="button secondary" type="button" id="timer-reset">Reset</button>
+              <button class="button secondary" type="button" id="timer-skip">Skip timer</button>
+              <button class="button secondary" type="button" id="timer-unskip">Use the timer</button>
+            </div>
+          </div>
+        </div>
+        <form id="decide-form" novalidate>
+          <fieldset class="choice-set">
+            <legend id="decide-legend">The group's choice</legend>
+            <div class="options" id="decide-options"></div>
+          </fieldset>
+          <p class="note" id="decide-option-note" hidden></p>
+          <label class="tally-toggle" for="tally-on">
+            <input type="checkbox" id="tally-on">
+            <span>Record a show of hands (optional)</span>
+          </label>
+          <p class="form-error" id="decide-error" role="alert" hidden></p>
+          <div class="actions">
+            <button class="button" type="submit" id="decide-record">Record the group's choice →</button>
+            <button class="button quiet" type="button" id="decide-back">← Back</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="screen" id="run" aria-labelledby="run-title" hidden>
+      <p class="kicker" id="run-kicker">The model runs the group's choices</p>
+      <div class="outcome">
+        <div class="outcome-card" id="run-card">
+          <p class="outcome-label" id="run-label"></p>
+          <h2 id="run-title" tabindex="-1"></h2>
+          <p class="counter" id="run-counter" hidden><strong id="run-counter-value"></strong><span>Repeated child-order count at the last model step · illustrative model units, not a historical count</span></p>
+          <p id="run-text"></p>
+        </div>
+        <div class="panel run-record" id="run-record" hidden>
+          <p class="kicker" id="run-record-title"></p>
+          <ol class="steps-list" id="run-steps"></ol>
+        </div>
+        <p class="note" style="margin-top:14px">Simplified model. Its outcome is illustrative and does not predict what would have happened.</p>
+      </div>
+      <div class="actions">
+        <button class="button" type="button" id="run-next"></button>
+        <button class="button quiet" type="button" id="run-back">← Change the last decision</button>
+      </div>
+    </section>
+
+    <section class="screen" id="debrief" aria-labelledby="debrief-title" hidden>
+      <p class="kicker">Debrief</p>
+      <h2 id="debrief-title" tabindex="-1">The group's choices against the record</h2>
+      <p class="muted" id="debrief-score"></p>
+      <table class="compare" id="debrief-table">
+        <thead><tr><th scope="col">Decision</th><th scope="col">The group chose</th><th scope="col">The record</th></tr></thead>
+        <tbody></tbody>
+      </table>
+      <div class="two-up">
+        <div class="panel">
+          <p class="kicker">The group's modelled outcome <span class="tag">illustrative</span></p>
+          <h3 id="debrief-outcome-title"></h3>
+          <p id="debrief-outcome-text"></p>
+        </div>
+        <div class="panel">
+          <p class="kicker">What actually happened</p>
+          <h3 id="debrief-history-title"></h3>
+          <ul class="history-list" id="debrief-history"></ul>
+        </div>
+      </div>
+      <h3>Discussion questions</h3>
+      <ol class="questions" id="debrief-questions"></ol>
+      <h3>Sources</h3>
+      <p class="note" id="debrief-source-note"></p>
+      <ul class="register" id="debrief-sources"></ul>
+      <div class="actions">
+        <button class="button" type="button" id="debrief-summary">Open the one-page summary →</button>
+        <button class="button secondary" type="button" id="debrief-restart">Run another scenario</button>
+      </div>
+    </section>
+
+    <section class="screen" id="summary" aria-labelledby="summary-title" hidden>
+      <div class="actions no-print" style="margin-top:0;margin-bottom:20px">
+        <button class="button" type="button" id="summary-print">Print or save as PDF</button>
+        <button class="button secondary" type="button" id="summary-back">← Back to the debrief</button>
+      </div>
+      <article class="sheet" id="sheet"></article>
+      <p class="note no-print" style="margin-top:14px">Use your browser's print dialog and choose "Save as PDF" to keep a copy. Nothing leaves this page.</p>
+    </section>
+  </main>
+  <p class="sr-only" id="live" aria-live="polite" aria-atomic="true"></p>
+
+  <script>/* group-core.js */
+/* Failure Lab group mode: session state for a facilitated run.
+   Pure functions only: no DOM, no storage, no network. group.html renders them;
+   group.test.mjs runs them in Node. Scenario files call FailureLabGroup.register(). */
+(function (root) {
+  "use strict";
+
+  const scenarios = [];
+
+  function register(def) {
+    ["id", "title", "year", "page", "record", "brief", "decisions", "run", "history", "questions", "lessons", "sources"].forEach(function (key) {
+      if (def[key] === undefined) throw new Error("Scenario " + (def.id || "?") + " is missing " + key);
+    });
+    if (def.questions.length < 3 || def.questions.length > 5) throw new Error(def.id + ": 3 to 5 discussion questions");
+    const cite = function (item, where) {
+      if (!item.sources || !item.sources.length) throw new Error(def.id + ": " + where + " has no source");
+      item.sources.forEach(function (id) {
+        if (!def.sources[id]) throw new Error(def.id + ": " + where + " cites unknown source " + id);
+      });
+    };
+    def.questions.forEach(function (q, i) { cite(q, "question " + (i + 1)); });
+    def.lessons.forEach(function (l, i) { cite(l, "lesson " + (i + 1)); });
+    def.history.items.forEach(function (h, i) { cite(h, "history item " + (i + 1)); });
+    cite({ sources: def.history.titleSources }, "history title");
+    def.decisions.forEach(function (d) {
+      cite(d.recordNote, "record for " + d.id);
+      if (!d.options.some(function (o) { return o.value === d.recordValue; })) throw new Error(def.id + ": record value missing for " + d.id);
+    });
+    if (scenarios.some(function (s) { return s.id === def.id; })) throw new Error("Duplicate scenario " + def.id);
+    scenarios.push(def);
+  }
+
+  function list() { return scenarios.slice(); }
+
+  function get(id) {
+    return scenarios.find(function (s) { return s.id === id; }) || null;
+  }
+
+  function createSession(scenario) {
+    return { scenarioId: scenario.id, choices: {}, tallies: {} };
+  }
+
+  function choicesOf(session) { return Object.assign({}, session.choices); }
+
+  function isActive(decision, choices) {
+    return !decision.when || decision.when(choices);
+  }
+
+  /* The next decision still to record in a phase ("before" the run or "after" it), or null. */
+  function nextDecision(scenario, session, phase) {
+    const choices = choicesOf(session);
+    return scenario.decisions.find(function (d) {
+      return (d.phase || "before") === phase && isActive(d, choices) && !(d.id in session.choices);
+    }) || null;
+  }
+
+  function hasAfterPhase(scenario, session) {
+    const choices = choicesOf(session);
+    return scenario.decisions.some(function (d) { return d.phase === "after" && isActive(d, choices); });
+  }
+
+  /* Tally fields arrive as raw strings. Every option needs a whole number of hands, 0 allowed. */
+  function parseTally(decision, raw) {
+    const counts = {};
+    for (let i = 0; i < decision.options.length; i += 1) {
+      const option = decision.options[i];
+      const value = String(raw && raw[option.value] !== undefined ? raw[option.value] : "").trim();
+      const name = "“" + option.short + "”";
+      if (value === "") return { ok: false, field: option.value, error: "Enter the number of hands for " + name + ". Use 0 if nobody chose it." };
+      if (/^-/.test(value)) return { ok: false, field: option.value, error: "Hands for " + name + " cannot be negative. Enter 0 or more." };
+      if (!/^\d+$/.test(value)) return { ok: false, field: option.value, error: "Hands for " + name + " must be a whole number, like 4." };
+      const n = Number(value);
+      if (n > 9999) return { ok: false, field: option.value, error: "Hands for " + name + " looks too large. Enter up to 9999." };
+      counts[option.value] = n;
+    }
+    return { ok: true, counts: counts };
+  }
+
+  /* Returns a new session. tally is null (skipped) or the counts from parseTally. */
+  function recordChoice(scenario, session, decisionId, value, tally) {
+    const decision = scenario.decisions.find(function (d) { return d.id === decisionId; });
+    if (!decision) throw new Error("Unknown decision " + decisionId);
+    if (!decision.options.some(function (o) { return o.value === value; })) throw new Error("Unknown option " + value + " for " + decisionId);
+    const choices = Object.assign({}, session.choices);
+    const tallies = Object.assign({}, session.tallies);
+    choices[decisionId] = value;
+    if (tally) tallies[decisionId] = Object.assign({}, tally);
+    else delete tallies[decisionId];
+    // A changed answer can deactivate later decisions; drop their stale answers.
+    scenario.decisions.forEach(function (d) {
+      if (d.id !== decisionId && d.id in choices && !isActive(d, choices)) {
+        delete choices[d.id];
+        delete tallies[d.id];
+      }
+    });
+    return { scenarioId: session.scenarioId, choices: choices, tallies: tallies };
+  }
+
+  function optionLabel(decision, value) {
+    const option = decision.options.find(function (o) { return o.value === value; });
+    return option ? option.label : "";
+  }
+
+  function tallyText(decision, tally) {
+    if (!tally) return "";
+    const total = decision.options.reduce(function (sum, o) { return sum + tally[o.value]; }, 0);
+    return decision.options.map(function (o) { return o.short + " " + tally[o.value]; }).join(" · ") + " (" + total + " hands)";
+  }
+
+  function isComplete(scenario, session) {
+    return !nextDecision(scenario, session, "before") && !nextDecision(scenario, session, "after");
+  }
+
+  /* Group choice against the record, one row per decision in scenario order. */
+  function debrief(scenario, session) {
+    const choices = choicesOf(session);
+    const rows = scenario.decisions.map(function (d) {
+      const reached = isActive(d, choices) && d.id in choices;
+      const chosen = reached ? choices[d.id] : null;
+      return {
+        id: d.id,
+        title: d.title,
+        reached: reached,
+        notReachedNote: reached ? "" : (d.notReachedNote || "Not reached in this run."),
+        chosenValue: chosen,
+        chosenLabel: reached ? optionLabel(d, chosen) : "",
+        tally: reached && session.tallies[d.id] ? Object.assign({}, session.tallies[d.id]) : null,
+        tallyText: reached ? tallyText(d, session.tallies[d.id]) : "",
+        recordValue: d.recordValue,
+        recordLabel: optionLabel(d, d.recordValue),
+        recordNote: d.recordNote,
+        recordSources: d.recordNote.sources.slice(),
+        recordModelEquivalent: Boolean(d.recordModelEquivalent),
+        matchesRecord: reached && chosen === d.recordValue
+      };
+    });
+    return {
+      scenario: scenario,
+      rows: rows,
+      matched: rows.filter(function (r) { return r.matchesRecord; }).length,
+      outcome: scenario.run(choices, "final"),
+      history: scenario.history,
+      questions: scenario.questions
+    };
+  }
+
+  /* The printable one-page summary, as data. */
+  function summary(scenario, session) {
+    const d = debrief(scenario, session);
+    return {
+      heading: "Failure Lab session summary",
+      scenario: scenario.title + " (" + scenario.year + ")",
+      record: scenario.record,
+      decisions: d.rows.map(function (r) {
+        return {
+          title: r.title,
+          group: r.reached ? r.chosenLabel : r.notReachedNote,
+          tally: r.tallyText,
+          record: r.recordLabel,
+          recordModelEquivalent: r.recordModelEquivalent,
+          recordSources: r.recordSources,
+          matchesRecord: r.matchesRecord
+        };
+      }),
+      // Modelled block: model statements only, no source tags.
+      outcome: { title: d.outcome.title, text: d.outcome.text },
+      history: { title: scenario.history.title, sources: scenario.history.titleSources.slice(), items: scenario.history.items },
+      lessons: scenario.lessons,
+      questions: scenario.questions,
+      sources: Object.keys(scenario.sources).map(function (id) { return { id: id, text: scenario.sources[id] }; }),
+      limits: "Simplified teaching model. Option bundles, costs, counts, timings and counterfactual outcomes are illustrative; historical statements cite the numbered sources. Not a certification or a measure of training effect."
+    };
+  }
+
+  root.FailureLabGroup = {
+    register: register,
+    list: list,
+    get: get,
+    createSession: createSession,
+    nextDecision: nextDecision,
+    hasAfterPhase: hasAfterPhase,
+    parseTally: parseTally,
+    recordChoice: recordChoice,
+    isComplete: isComplete,
+    tallyText: tallyText,
+    debrief: debrief,
+    summary: summary
+  };
+}(typeof globalThis !== "undefined" ? globalThis : this));
+<\/script>
+  
+  <script>/* group-knight.js */
+/* Failure Lab group mode: Knight Capital, 1 August 2012.
+   The block between MODEL-START and MODEL-END is a byte-for-byte copy of knight2012.html's model;
+   group.test.mjs fails if they drift. Sources S1–S6 are the page's register (sources-knight.md). */
+(function () {
+  "use strict";
+    /* MODEL-START */
+    const MODEL_TIMES = [
+      { minute: 0, time: "9:30 a.m." },
+      { minute: 1, time: "9:31 a.m." },
+      { minute: 5, time: "9:35 a.m." },
+      { minute: 15, time: "9:45 a.m." },
+      { minute: 30, time: "10:00 a.m." },
+      { minute: 45, time: "10:15 a.m." }
+    ];
+
+    function simulate(state) {
+      const vulnerable =
+        state.deployment === "manual" &&
+        state.featureFlag === "reuse" &&
+        state.deadCode === "leave";
+      const response = state.response || "continue";
+      const halted = vulnerable && response === "halt";
+      const rolledBack = vulnerable && response === "rollback";
+      const serversRunningFault = !vulnerable || halted ? 0 : (rolledBack ? 8 : 1);
+      const cause = vulnerable
+        ? {
+            server: 8,
+            source: ["S2", "S3"],
+            description: "The eighth server kept callable Power Peg code; the reused flag activated it, and moved fill tracking did not stop repeated child orders."
+          }
+        : null;
+      const timeline = MODEL_TIMES.map((point) => ({
+        minute: point.minute,
+        time: point.time,
+        orderCount: serversRunningFault * (point.minute + 1),
+        serversRunningFault,
+        response
+      }));
+
+      return {
+        ok: !vulnerable || halted,
+        timeline,
+        cause
+      };
+    }
+
+    function rollbackComparison(rollbackResult, continuedResult) {
+      const rollbackPoint = rollbackResult.timeline.at(-1);
+      const continuedPoint = continuedResult.timeline.at(-1);
+      return `Without the rollback, this model reaches ${continuedPoint.orderCount} units by ${continuedPoint.time}; with it, ${rollbackPoint.orderCount} (illustrative model units).`;
+    }
+    /* MODEL-END */
+
+  function modelState(choices) {
+    return {
+      deployment: choices.deployment,
+      featureFlag: choices.featureFlag,
+      deadCode: choices.deadCode,
+      response: choices.response
+    };
+  }
+
+  function vulnerable(choices) {
+    return simulate(modelState({ deployment: choices.deployment, featureFlag: choices.featureFlag, deadCode: choices.deadCode })).cause !== null;
+  }
+
+  /* stage "open": just after the three release decisions. stage "final": after every decision.
+     Model statements only in title/text; sourced history goes in `record`, never in the modelled block. */
+  function run(choices, stage) {
+    const setup = modelState(choices);
+    const result = simulate(setup);
+    if (result.cause === null) {
+      return {
+        ok: true,
+        title: "No repeated-order failure in this model",
+        text: "At least one of the deployment, flag or unused-code choices breaks the modelled chain. The model counter stays at 0 through 10:15 a.m. This is a counterfactual simulation, not a claim about what would have happened.",
+        sources: [],
+        counter: "0",
+        record: null
+      };
+    }
+    if (stage === "open" || !choices.response) {
+      const first = result.timeline[1];
+      return {
+        ok: false,
+        title: "9:30 a.m.: the eighth server starts repeating child orders",
+        text: "In this model one server missed the new code, the reused flag switches on the old code there, and nothing stops it repeating child orders. By " + first.time + " the model counter reads " + first.orderCount + " (illustrative units). The group has to respond.",
+        sources: [],
+        counter: String(first.orderCount),
+        record: null
+      };
+    }
+    const end = result.timeline[result.timeline.length - 1];
+    if (choices.response === "halt") {
+      return {
+        ok: true,
+        title: "The halt stops further accumulation",
+        text: "The missed-server cause remains in this setup, but this model sets the repeated-order counter to zero after the router is halted. The model does not claim a historical or counterfactual firm outcome.",
+        sources: [],
+        counter: String(end.orderCount),
+        record: null
+      };
+    }
+    const continued = simulate(Object.assign({}, setup, { response: "continue" }));
+    return {
+      ok: false,
+      title: "The rollback widens the modelled fault to eight servers",
+      text: "In this model the rollback returns all eight servers to the old code with the reused flag still on. " + rollbackComparison(result, continued),
+      sources: [],
+      counter: String(end.orderCount),
+      record: {
+        title: "What the SEC order says about the rollback",
+        steps: [{ time: "", text: "Removing the new code from the seven correct servers caused additional parent orders to activate Power Peg on those servers too.", sources: ["S5"] }]
+      }
+    };
+  }
+
+  FailureLabGroup.register({
+    id: "knight",
+    title: "Knight Capital, 1 August",
+    year: 2012,
+    page: "knight2012.html",
+    record: "U.S. SEC order, Exchange Act Release No. 70694, 16 October 2013",
+    minutes: "3 decisions before the open, 1 during it",
+    brief: {
+      role: "You are preparing a change to the SMARS order router that has to be live before a busy market open.",
+      points: [
+        { text: "The change adds new code for a retail liquidity programme to the router, which runs on eight servers.", sources: ["S2"] },
+        { text: "Older Power Peg code is no longer used but is still in the router.", sources: ["S2"] },
+        { text: "The market opens at 9:30 a.m. You choose how the code ships, how it is switched on, and what happens to old code.", sources: ["S1", "S2"] }
+      ],
+      note: "Effort estimates, order counts and animation pace are illustrative model values."
+    },
+    decisions: [
+      {
+        id: "deployment",
+        phase: "before",
+        title: "Deployment",
+        prompt: "How does the new code reach all eight servers?",
+        discuss: "The open is fixed. What would make you confident every server runs the new version?",
+        options: [
+          { value: "manual", short: "Manual", label: "Copy to each server manually", detail: "One server at a time. Illustrative effort: 10 minutes, one technician." },
+          { value: "verified", short: "Verified", label: "Automated deploy with per-server verification", detail: "Confirm every server has the expected version. Illustrative effort: 30 minutes." }
+        ],
+        recordValue: "manual",
+        recordModelEquivalent: true,
+        recordNote: { text: "One technician did not copy the new code to one of the eight servers; no second technician reviewed the deployment and no written procedure required it. Manual copy is the model's equivalent.", sources: ["S2"] }
+      },
+      {
+        id: "featureFlag",
+        phase: "before",
+        title: "Feature flag",
+        prompt: "How is the new behaviour switched on?",
+        discuss: "Reusing a switch keeps the change small. What else might that switch still control?",
+        options: [
+          { value: "reuse", short: "Reuse", label: "Reuse an existing flag", detail: "Keep the change small with a switch already in the router." },
+          { value: "new", short: "New flag", label: "Add a new flag", detail: "Give the new behaviour its own switch. Illustrative effort: medium." }
+        ],
+        recordValue: "reuse",
+        recordNote: { text: "The new code reused a flag that had previously activated the Power Peg code.", sources: ["S2"] }
+      },
+      {
+        id: "deadCode",
+        phase: "before",
+        title: "Unused code",
+        prompt: "What happens to code this release no longer needs?",
+        discuss: "Removing old code before a deadline adds risk too. Which risk do you take?",
+        options: [
+          { value: "leave", short: "Leave", label: "Leave it in place", detail: "Do not change code outside this release." },
+          { value: "remove", short: "Remove", label: "Remove it before release", detail: "Delete the unused path and test the new behaviour." }
+        ],
+        recordValue: "leave",
+        recordNote: { text: "Power Peg was no longer used but remained present and callable.", sources: ["S2"] }
+      },
+      {
+        id: "response",
+        phase: "after",
+        title: "Response at the open",
+        prompt: "Orders are repeating after the open. What do you do?",
+        discuss: "You do not yet know the cause. Which action is safer when the fault is unknown?",
+        context: { text: "The order does not say that a specific kill-switch device existed.", sources: ["S6"] },
+        when: vulnerable,
+        notReachedNote: "Not reached: the group's release avoided the modelled incident.",
+        options: [
+          { value: "rollback", short: "Roll back", label: "Roll back the new code", detail: "Return servers to the prior version." },
+          { value: "halt", short: "Halt", label: "Halt SMARS from sending orders", detail: "Stop the router while the issue is assessed." }
+        ],
+        recordValue: "rollback",
+        recordNote: { text: "Knight removed the new code from the seven servers that had it; the order says this caused additional parent orders to activate Power Peg on those servers too.", sources: ["S5"] }
+      }
+    ],
+    run: run,
+    history: {
+      title: "About 45 minutes, over 4 million executions, over $460 million lost",
+      titleSources: ["S1"],
+      items: [
+        { text: "One of eight servers missed the new code. The reused flag woke the retained Power Peg code there, and moved fill tracking let it repeat child orders without regard to executions already received.", sources: ["S2", "S3"] },
+        { text: "97 automated e-mails referencing SMARS and Power Peg arrived before the open. They were not designed as system alerts and generally were not reviewed.", sources: ["S4"] },
+        { text: "Removing the new code from the seven correct servers made the incident worse.", sources: ["S5"] },
+        { text: "212 parent orders produced over 4 million executions in 154 stocks in about 45 minutes; Knight lost more than $460 million.", sources: ["S1"] }
+      ]
+    },
+    questions: [
+      { text: "One technician missed one of eight servers, and no second review or written procedure caught it. How do we confirm every target runs the version we think it runs?", sources: ["S2", "S6"] },
+      { text: "A reused flag woke code nobody used but nobody had removed. What dormant code or recycled switches are live in our systems?", sources: ["S2", "S3"] },
+      { text: "97 automated e-mails named the problem before the open and were not read as alerts. Which of our automated messages would we ignore?", sources: ["S4"] },
+      { text: "Removing the new code from the correct servers made the incident worse. When is rollback our reflex, and how would we know it is the wrong move?", sources: ["S5"] },
+      { text: "The order found no procedure to halt the router in response to its own aberrant activity. Who here can stop a misbehaving system, and how fast?", sources: ["S6"] }
+    ],
+    lessons: [
+      { text: "Verify every deployment target; one missed server was enough.", sources: ["S2"] },
+      { text: "Remove dead code and never reuse a flag that once switched on something else.", sources: ["S2", "S3"] },
+      { text: "Have a written way to halt a system that is misbehaving; rollback can widen an unknown fault.", sources: ["S5", "S6"] }
+    ],
+    sourceNote: "S1–S6 refer to the SEC order In the Matter of Knight Capital Americas LLC, Release No. 34-70694, §III.",
+    sources: {
+      S1: "§III, ¶1. Date, about 45 minutes, executions, shares, positions, loss greater than $460 million.",
+      S2: "§III, ¶¶12–13, 15–16. New code, retained Power Peg code, reused flag, one of eight servers missed.",
+      S3: "§III, ¶¶14, 16. Moved cumulative-share tracking; repeated child orders.",
+      S4: "§III, ¶19. 97 automated pre-open e-mails, generally not reviewed.",
+      S5: "§III, ¶27. Removing the new code from seven servers worsened the incident.",
+      S6: "§III, ¶¶21, 26–27. Deployment, unused-code, halt and incident-response controls."
+    }
+  });
+}());
+<\/script>
+  <\!-- GROUP-SCENARIOS: add one script tag per new scenario file (group-ID.js) here, only after the file exists. -->
+  <script>
+    (function () {
+      "use strict";
+      const G = window.FailureLabGroup;
+      const $ = function (id) { return document.getElementById(id); };
+
+      const app = {
+        scenario: null,
+        session: null,
+        screen: "pick",
+        decision: null,
+        timerSeconds: 120
+      };
+
+      function el(tag, className, text) {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined) node.textContent = text;
+        return node;
+      }
+
+      function srcRefs(sources, linked) {
+        const frag = document.createDocumentFragment();
+        (sources || []).forEach(function (id) {
+          frag.append(" ");
+          const ref = el(linked ? "a" : "span", "src", id);
+          if (linked) ref.href = "#src-" + id;
+          ref.setAttribute("aria-label", "source " + id);
+          frag.append(ref);
+        });
+        return frag;
+      }
+
+      function withSources(tag, item, linked, className) {
+        const node = el(tag, className, item.text);
+        node.append(srcRefs(item.sources, linked));
+        return node;
+      }
+
+      function announce(message) {
+        const live = $("live");
+        live.textContent = "";
+        window.requestAnimationFrame(function () { live.textContent = message; });
+      }
+
+      /* ---------- screens and progress ---------- */
+
+      function isActive(d) { return !d.when || d.when(app.session.choices); }
+
+      function progressSteps() {
+        if (!app.scenario) return [];
+        const s = app.scenario;
+        const after = G.hasAfterPhase(s, app.session);
+        const steps = [{ key: "brief", label: "Brief" }];
+        s.decisions.forEach(function (d, i) {
+          if ((d.phase || "before") === "before" && isActive(d)) steps.push({ key: "decide:" + d.id, label: "Decision " + (i + 1) });
+        });
+        steps.push({ key: after ? "run:open" : "run:final", label: "Run" });
+        if (after) {
+          s.decisions.forEach(function (d, i) {
+            if (d.phase === "after" && isActive(d)) steps.push({ key: "decide:" + d.id, label: "Decision " + (i + 1) });
+          });
+          steps.push({ key: "run:final", label: "Outcome" });
+        }
+        steps.push({ key: "debrief", label: "Debrief" }, { key: "summary", label: "Summary" });
+        return steps;
+      }
+
+      function currentKey() {
+        if (app.screen === "decide") return "decide:" + app.decision.id;
+        if (app.screen === "run") return "run:" + app.runStage;
+        return app.screen;
+      }
+
+      function renderProgress() {
+        const list = $("steps");
+        list.replaceChildren();
+        const steps = progressSteps();
+        const key = currentKey();
+        const at = steps.findIndex(function (s) { return s.key === key; });
+        steps.forEach(function (s, i) {
+          const li = el("li", i < at ? "done" : "", s.label);
+          if (i === at) li.setAttribute("aria-current", "step");
+          list.append(li);
+        });
+        $("bar-scenario").replaceChildren();
+        if (app.scenario) {
+          $("bar-scenario").append(" · ", el("strong", "", app.scenario.title + " " + app.scenario.year));
+        }
+      }
+
+      function show(screen, focusId) {
+        app.screen = screen;
+        document.querySelectorAll(".screen").forEach(function (s) { s.hidden = s.id !== screen; });
+        renderProgress();
+        window.scrollTo({ top: 0, behavior: "auto" });
+        const target = $(focusId);
+        if (target) target.focus({ preventScroll: true });
+      }
+
+      /* ---------- pick ---------- */
+
+      function renderPick() {
+        const list = $("scenario-list");
+        list.replaceChildren();
+        G.list().forEach(function (s) {
+          const li = el("li", "scenario");
+          li.append(el("span", "scenario-year", String(s.year)));
+          li.append(el("h3", "", s.title));
+          li.append(el("p", "", s.minutes + " · " + s.record));
+          const button = el("button", "button", "Start");
+          button.type = "button";
+          button.id = "start-" + s.id;
+          button.setAttribute("aria-label", "Start " + s.title + " " + s.year);
+          button.addEventListener("click", function () { start(s.id); });
+          li.append(button);
+          list.append(li);
+        });
+      }
+
+      document.querySelectorAll('input[name="timer-length"]').forEach(function (input) {
+        input.addEventListener("change", function () { app.timerSeconds = Number(input.value); });
+      });
+
+      function start(id) {
+        const scenario = G.get(id);
+        if (!scenario) return;
+        app.scenario = scenario;
+        app.session = G.createSession(scenario);
+        renderBrief();
+        show("brief", "brief-title");
+        if (location.hash !== "#" + id) history.replaceState(null, "", "#" + id);
+      }
+
+      function toPick() {
+        stopTimer();
+        app.scenario = null;
+        app.session = null;
+        history.replaceState(null, "", location.pathname);
+        show("pick", "pick-title");
+      }
+
+      /* ---------- brief ---------- */
+
+      function renderBrief() {
+        const s = app.scenario;
+        $("brief-kicker").textContent = "Briefing · " + s.title + " · " + s.year;
+        $("brief-title").textContent = s.brief.role;
+        const list = $("brief-points");
+        list.replaceChildren();
+        s.brief.points.forEach(function (p) { list.append(withSources("li", p, false)); });
+        $("brief-note").textContent = s.brief.note + " Read the briefing aloud, then start the first decision.";
+      }
+
+      $("brief-start").addEventListener("click", function () { advance(); });
+      $("brief-back").addEventListener("click", toPick);
+
+      /* ---------- flow ---------- */
+
+      /* Step through decisions in scenario order, so Back then re-record never skips one. */
+      function nextInOrder(d) {
+        const order = app.scenario.decisions;
+        const phase = d ? (d.phase || "before") : "before";
+        for (let j = d ? order.indexOf(d) + 1 : 0; j < order.length; j += 1) {
+          if ((order[j].phase || "before") === phase && isActive(order[j])) return order[j];
+        }
+        return null;
+      }
+
+      function advance() { openDecision(nextInOrder(null)); }
+
+      /* ---------- decide ---------- */
+
+      function decisionIndex(d) { return app.scenario.decisions.indexOf(d); }
+
+      function openDecision(d) {
+        stopTimer();
+        app.decision = d;
+        const s = app.scenario;
+        const total = s.decisions.filter(isActive).length;
+        $("decide-kicker").textContent = "Decision " + (decisionIndex(d) + 1) + " of " + total + " · " + d.title + (d.phase === "after" ? " · during the incident" : "");
+        $("decide-title").textContent = d.prompt;
+        const context = $("decide-context");
+        context.replaceChildren();
+        context.hidden = !d.context;
+        if (d.context) { context.append(d.context.text); context.append(srcRefs(d.context.sources, false)); }
+
+        const tableHost = $("decide-table");
+        tableHost.replaceChildren();
+        if (d.table) {
+          const table = el("table", "data-table");
+          table.append(el("caption", "", d.table.caption));
+          const head = el("tr");
+          d.table.head.forEach(function (h) { const th = el("th", "", h); th.scope = "col"; head.append(th); });
+          const thead = el("thead"); thead.append(head); table.append(thead);
+          const tbody = el("tbody");
+          d.table.rows.forEach(function (r) {
+            const tr = el("tr");
+            r.forEach(function (c, i) { const cell = el(i === 0 ? "th" : "td", "", c); if (i === 0) cell.scope = "row"; tr.append(cell); });
+            tbody.append(tr);
+          });
+          table.append(tbody);
+          tableHost.append(table);
+        }
+        $("decide-discuss").textContent = d.discuss;
+
+        const prior = app.session.choices[d.id];
+        const priorTally = app.session.tallies[d.id];
+        const options = $("decide-options");
+        options.replaceChildren();
+        d.options.forEach(function (o) {
+          const row = el("div", "option");
+          const label = el("label", "option-choice");
+          const input = el("input");
+          input.type = "radio";
+          input.name = "choice";
+          input.value = o.value;
+          input.id = "opt-" + o.value;
+          input.checked = prior === o.value;
+          label.append(input, el("span", "option-label", o.label), el("span", "option-detail", o.detail));
+          const tally = el("label", "tally-field");
+          tally.htmlFor = "tally-" + o.value;
+          tally.append("Hands");
+          const field = el("input");
+          field.type = "text";
+          field.inputMode = "numeric";
+          field.size = 3;
+          field.autocomplete = "off";
+          field.id = "tally-" + o.value;
+          field.dataset.option = o.value;
+          field.setAttribute("aria-label", "Hands for " + o.label);
+          field.value = priorTally ? String(priorTally[o.value]) : "";
+          tally.append(field);
+          row.append(label, tally);
+          options.append(row);
+        });
+        $("decide-option-note").textContent = d.optionNote || "";
+        $("decide-option-note").hidden = !d.optionNote;
+        $("tally-on").checked = Boolean(priorTally);
+        syncTally();
+        clearError();
+        $("decide-back").hidden = false;
+        resetTimer();
+        show("decide", "decide-title");
+      }
+
+      function syncTally() {
+        const on = $("tally-on").checked;
+        document.querySelectorAll(".tally-field").forEach(function (f) { f.hidden = !on; });
+        document.querySelectorAll("#decide-options .option").forEach(function (o) { o.classList.toggle("has-tally", on); });
+        if (!on) document.querySelectorAll(".tally-field input").forEach(function (i) { i.removeAttribute("aria-invalid"); });
+      }
+      $("tally-on").addEventListener("change", function () { syncTally(); clearError(); });
+
+      function clearError() {
+        $("decide-error").hidden = true;
+        $("decide-error").textContent = "";
+        document.querySelectorAll(".tally-field input").forEach(function (i) { i.removeAttribute("aria-invalid"); });
+      }
+
+      function showError(message, focusTarget) {
+        const box = $("decide-error");
+        box.textContent = message;
+        box.hidden = false;
+        if (focusTarget) focusTarget.focus();
+      }
+
+      $("decide-form").addEventListener("submit", function (event) {
+        event.preventDefault();
+        clearError();
+        const d = app.decision;
+        const picked = document.querySelector('#decide-options input[name="choice"]:checked');
+        let tally = null;
+        if ($("tally-on").checked) {
+          const raw = {};
+          document.querySelectorAll(".tally-field input").forEach(function (i) { raw[i.dataset.option] = i.value; });
+          const parsed = G.parseTally(d, raw);
+          if (!parsed.ok) {
+            const field = $("tally-" + parsed.field);
+            field.setAttribute("aria-invalid", "true");
+            showError(parsed.error, field);
+            return;
+          }
+          tally = parsed.counts;
+        }
+        if (!picked) {
+          showError("Choose the option the group settled on, then record it.", document.querySelector('#decide-options input[name="choice"]'));
+          return;
+        }
+        stopTimer();
+        app.session = G.recordChoice(app.scenario, app.session, d.id, picked.value, tally);
+        const chosen = d.options.find(function (o) { return o.value === picked.value; });
+        announce("Recorded: " + chosen.label + (tally ? ". " + G.tallyText(d, tally) : "."));
+        advanceFrom(d);
+      });
+
+      function advanceFrom(d) {
+        const next = nextInOrder(d);
+        if (next) return openDecision(next);
+        if ((d.phase || "before") === "before" && G.hasAfterPhase(app.scenario, app.session)) return openRun("open");
+        return openRun("final");
+      }
+
+      $("decide-back").addEventListener("click", function () {
+        stopTimer();
+        const d = app.decision;
+        const order = app.scenario.decisions;
+        const i = order.indexOf(d);
+        if (d.phase === "after") return openRun("open");
+        for (let j = i - 1; j >= 0; j -= 1) {
+          const prev = order[j];
+          if ((prev.phase || "before") === (d.phase || "before") && isActive(prev)) return openDecision(prev);
+        }
+        renderBrief();
+        show("brief", "brief-title");
+      });
+
+      /* ---------- timer ---------- */
+
+      const timer = { total: 120, remaining: 120, running: false, endAt: 0, id: 0, skipped: false };
+
+      function fmt(seconds) {
+        const s = Math.max(0, Math.ceil(seconds));
+        return Math.floor(s / 60) + ":" + String(s % 60).padStart(2, "0");
+      }
+
+      function paintTimer() {
+        $("timer-readout").textContent = timer.skipped ? "—" : fmt(timer.remaining);
+        $("timer-fill").style.width = timer.skipped ? "0%" : (timer.remaining / timer.total * 100) + "%";
+        const done = !timer.skipped && timer.remaining <= 0;
+        $("timer").classList.toggle("is-done", done);
+        $("timer").classList.toggle("is-skipped", timer.skipped);
+        $("timer-toggle").textContent = timer.running ? "Pause timer" : (timer.remaining < timer.total && !done ? "Resume timer" : "Start timer");
+        $("timer-toggle").disabled = timer.skipped || done;
+        $("timer-skip").disabled = timer.skipped;
+        let state = "Ready. The timer is optional.";
+        if (timer.skipped) state = "Timer skipped. Record the choice when the group is ready.";
+        else if (done) state = "Time is up. Take a show of hands and record the choice.";
+        else if (timer.running) state = "Running: " + fmt(timer.remaining) + " left.";
+        else if (timer.remaining < timer.total) state = "Paused at " + fmt(timer.remaining) + ".";
+        $("timer-state").textContent = state;
+      }
+
+      function tick() {
+        timer.remaining = Math.max(0, (timer.endAt - performance.now()) / 1000);
+        if (timer.remaining <= 0) {
+          stopTimer();
+          timer.remaining = 0;
+          announce("Time is up.");
+        }
+        paintTimer();
+      }
+
+      function stopTimer() {
+        if (timer.id) window.clearInterval(timer.id);
+        timer.id = 0;
+        timer.running = false;
+      }
+
+      function resetTimer() {
+        stopTimer();
+        timer.total = app.timerSeconds;
+        timer.remaining = timer.total;
+        timer.skipped = false;
+        paintTimer();
+      }
+
+      $("timer-toggle").addEventListener("click", function () {
+        if (timer.running) {
+          timer.remaining = Math.max(0, (timer.endAt - performance.now()) / 1000);
+          stopTimer();
+          announce("Timer paused at " + fmt(timer.remaining) + ".");
+        } else {
+          timer.running = true;
+          timer.endAt = performance.now() + timer.remaining * 1000;
+          timer.id = window.setInterval(tick, 250);
+          announce("Timer started: " + fmt(timer.remaining) + ".");
+        }
+        paintTimer();
+      });
+      $("timer-unskip").addEventListener("click", function () { resetTimer(); announce("Timer back: " + fmt(timer.total) + "."); $("timer-toggle").focus(); });
+      $("timer-reset").addEventListener("click", function () { resetTimer(); announce("Timer reset to " + fmt(timer.total) + "."); });
+      $("timer-skip").addEventListener("click", function () {
+        stopTimer();
+        timer.skipped = true;
+        paintTimer();
+        announce("Timer skipped.");
+        $("timer-unskip").focus();
+      });
+
+      /* ---------- run ---------- */
+
+      function openRun(stage) {
+        app.runStage = stage;
+        const out = app.scenario.run(app.session.choices, stage);
+        $("run-card").classList.toggle("is-failure", !out.ok);
+        $("run-label").textContent = out.ok ? "Modelled result · no failure" : "Modelled result · failure";
+        $("run-title").textContent = out.title;
+        $("run-text").textContent = out.text;
+        $("run-counter").hidden = out.counter === undefined;
+        $("run-counter-value").textContent = out.counter || "";
+        const steps = $("run-steps");
+        steps.replaceChildren();
+        $("run-record").hidden = !out.record;
+        if (out.record) {
+          $("run-record-title").textContent = out.record.title;
+          out.record.steps.forEach(function (step) {
+            const li = el("li");
+            if (step.time) li.append(el("strong", "", step.time + ": "));
+            li.append(step.text);
+            li.append(srcRefs(step.sources, false));
+            steps.append(li);
+          });
+        }
+        const after = stage === "open" ? G.nextDecision(app.scenario, app.session, "after") : null;
+        const next = $("run-next");
+        if (after) {
+          next.textContent = "Respond: decision " + (decisionIndex(after) + 1) + " →";
+          next.onclick = function () { openDecision(after); };
+          $("run-kicker").textContent = "The model runs the group's choices";
+        } else {
+          next.textContent = "Go to the debrief →";
+          next.onclick = openDebrief;
+          $("run-kicker").textContent = stage === "final" && G.hasAfterPhase(app.scenario, app.session) ? "Outcome after the group's response" : "The model runs the group's choices";
+        }
+        $("run-back").onclick = function () {
+          const decided = app.scenario.decisions.filter(function (d) {
+            return isActive(d) && d.id in app.session.choices && (stage === "final" || d.phase !== "after");
+          });
+          openDecision(decided[decided.length - 1]);
+        };
+        show("run", "run-title");
+        announce(out.title);
+      }
+
+      /* ---------- debrief ---------- */
+
+      function openDebrief() {
+        const d = G.debrief(app.scenario, app.session);
+        const reached = d.rows.filter(function (r) { return r.reached; }).length;
+        $("debrief-score").textContent = "The group made the historical choice on " + d.matched + " of " + reached + " decision" + (reached === 1 ? "" : "s") + " reached. Matching the record is not the goal; the question is why the engineers chose it.";
+        const tbody = $("debrief-table").querySelector("tbody");
+        tbody.replaceChildren();
+        d.rows.forEach(function (r) {
+          const tr = el("tr");
+          tr.id = "row-" + r.id;
+          const th = el("th", "", r.title);
+          th.scope = "row";
+          const group = el("td");
+          group.dataset.label = "The group chose";
+          if (r.reached) {
+            group.append(el("span", "chosen", r.chosenLabel));
+            group.append(el("span", "tally", r.tallyText || "No show of hands recorded"));
+          } else {
+            group.append(el("span", "chosen muted", r.notReachedNote));
+          }
+          const record = el("td");
+          record.dataset.label = "The record";
+          record.append(el("span", "", r.recordLabel));
+          if (r.recordModelEquivalent) record.append(el("span", "tag", "model equivalent"));
+          record.append(withSources("span", r.recordNote, true, "record-note"));
+          if (r.reached) record.append(el("span", "match " + (r.matchesRecord ? "same" : "diff"), r.matchesRecord ? "Same as the record" : "Different from the record"));
+          tr.append(th, group, record);
+          tbody.append(tr);
+        });
+        $("debrief-outcome-title").textContent = d.outcome.title;
+        $("debrief-outcome-text").textContent = d.outcome.text;
+        const histTitle = $("debrief-history-title");
+        histTitle.replaceChildren(d.history.title);
+        histTitle.append(srcRefs(d.history.titleSources, true));
+        const hist = $("debrief-history");
+        hist.replaceChildren();
+        d.history.items.forEach(function (item) { hist.append(withSources("li", item, true)); });
+        const qs = $("debrief-questions");
+        qs.replaceChildren();
+        d.questions.forEach(function (q) { qs.append(withSources("li", q, true)); });
+        $("debrief-source-note").textContent = app.scenario.sourceNote + " Full register with links: " + app.scenario.page + ".";
+        const reg = $("debrief-sources");
+        reg.replaceChildren();
+        Object.keys(app.scenario.sources).forEach(function (id) {
+          const li = el("li");
+          li.id = "src-" + id;
+          li.append(el("strong", "", id + " · "), app.scenario.sources[id]);
+          reg.append(li);
+        });
+        show("debrief", "debrief-title");
+      }
+
+      $("debrief-summary").addEventListener("click", openSummary);
+      $("debrief-restart").addEventListener("click", toPick);
+
+      /* ---------- summary ---------- */
+
+      function openSummary() {
+        const s = G.summary(app.scenario, app.session);
+        const sheet = $("sheet");
+        sheet.replaceChildren();
+        const title = el("h2", "", s.heading);
+        title.id = "summary-title";
+        title.tabIndex = -1;
+        sheet.append(title);
+        sheet.append(el("p", "meta", s.scenario + " · Session of " + new Date().toLocaleDateString(undefined, { year: "numeric", month: "long", day: "numeric" }) + " · Record: " + s.record));
+
+        sheet.append(el("h3", "", "Decisions"));
+        const table = el("table");
+        const thead = el("thead");
+        const hr = el("tr");
+        ["Decision", "Group", "Record"].forEach(function (h) { const th = el("th", "", h); th.scope = "col"; hr.append(th); });
+        thead.append(hr);
+        const tbody = el("tbody");
+        s.decisions.forEach(function (row) {
+          const tr = el("tr");
+          const th = el("th", "", row.title);
+          th.scope = "row";
+          const g = el("td", "", row.group);
+          if (row.tally) g.append(el("span", "tally", row.tally));
+          const rec = el("td", "", row.record);
+          if (row.recordModelEquivalent) rec.append(el("span", "tag", "model equivalent"));
+          rec.append(srcRefs(row.recordSources, false));
+          tr.append(th, g, rec);
+          tbody.append(tr);
+        });
+        table.append(thead, tbody);
+        sheet.append(table);
+
+        const legend = el("p", "meta", "Tags: S1–S6 cite the record; ");
+        legend.append(el("span", "tag", "model equivalent"), " marks the model's stand-in for a historical choice; ", el("span", "tag", "illustrative"), " marks model output.");
+        sheet.append(legend);
+        sheet.append(el("h3", "", "Modelled outcome"));
+        const outcome = el("p");
+        outcome.append(el("strong", "", s.outcome.title + ". "), s.outcome.text, el("span", "tag", "illustrative"));
+        sheet.append(outcome);
+
+        sheet.append(el("h3", "", "What actually happened"));
+        const histTitle = el("p");
+        histTitle.append(el("strong", "", s.history.title + "."), srcRefs(s.history.sources, false));
+        sheet.append(histTitle);
+        const hist = el("ul");
+        s.history.items.forEach(function (h) { hist.append(withSources("li", h, false)); });
+        sheet.append(hist);
+
+        sheet.append(el("h3", "", "Lessons from the record"));
+        const lessons = el("ul");
+        s.lessons.forEach(function (l) { lessons.append(withSources("li", l, false)); });
+        sheet.append(lessons);
+
+        sheet.append(el("h3", "", "Our actions"));
+        const lines = el("ul", "lines");
+        lines.setAttribute("aria-label", "Blank lines for actions");
+        for (let i = 0; i < 3; i += 1) lines.append(el("li"));
+        sheet.append(lines);
+
+        sheet.append(el("h3", "", "Sources"));
+        const src = el("ul", "sources");
+        src.append(el("li", "", app.scenario.sourceNote));
+        s.sources.forEach(function (x) { src.append(el("li", "", x.id + " · " + x.text)); });
+        sheet.append(src);
+        sheet.append(el("p", "limits", s.limits + " Made with Failure Lab."));
+        show("summary", "summary-title");
+      }
+
+      $("summary-print").addEventListener("click", function () { window.print(); });
+      $("summary-back").addEventListener("click", openDebrief);
+
+      /* ---------- start ---------- */
+
+      renderPick();
+      const fromHash = location.hash.slice(1);
+      if (fromHash && G.get(fromHash)) start(fromHash);
+      else show("pick", null);
+      window.addEventListener("hashchange", function () {
+        const id = location.hash.slice(1);
+        if (G.get(id) && (!app.scenario || app.scenario.id !== id || app.screen !== "brief")) start(id);
+      });
+    }());
+  <\/script>
+</body>
+</html>
+</script>
+  <script type="text/x-failure-lab" data-mode="solo"><!doctype html>
+<html lang="en">
+<head><script data-failure-lab="bridge">(function () {
+  var h = history;
+  ["replaceState", "pushState"].forEach(function (k) {
+    var f = h[k];
+    h[k] = function () { try { return f.apply(h, arguments); } catch (e) { return undefined; } };
+  });
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || e.defaultPrevented) return;
+    var href = a.getAttribute("href");
+    if (href.charAt(0) === "#") {
+      e.preventDefault();
+      var t = document.getElementById(decodeURIComponent(href.slice(1)));
+      if (t) t.scrollIntoView({ block: "start" });
+    } else if (/^https?:/i.test(href)) {
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    } else {
+      e.preventDefault();
+      parent.postMessage({ failureLab: href }, "*");
+    }
+  });
+}());<\/script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Knight Capital — choose what to verify</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d;
+      --panel: #16253a;
+      --panel-raised: #1b2d44;
+      --line: #687d95;
+      --paper: #f5f4ef;
+      --muted: #c0cad6;
+      --amber: #f2b134;
+      --red: #ff786f;
+      --ink: #0f1b2d;
+      --focus: #ffe09a;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--navy); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--paper);
+      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button:disabled { cursor: not-allowed; }
+    a { color: var(--amber); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    [hidden] { display: none !important; }
+
+    .page { width: min(100% - 32px, 1120px); margin: 0 auto; padding: 28px 0 42px; }
+    .masthead { max-width: 760px; margin-bottom: 22px; }
+    .lab-nav { margin: -12px 0 10px; font-size: .9rem; font-weight: 700; }
+    .lab-nav a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; }
+    .lab-nav a:hover { text-decoration: underline; }
+    .eyebrow, .section-kicker {
+      margin: 0 0 8px;
+      color: var(--amber);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 18ch; margin-bottom: 10px; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.04; letter-spacing: -.035em; }
+    h2 { margin-bottom: 8px; font-size: 1.3rem; line-height: 1.2; }
+    h3 { margin-bottom: 7px; font-size: 1.04rem; }
+    .lede { max-width: 68ch; margin-bottom: 10px; font-size: 1.02rem; }
+    .context-line, .subtle { color: var(--muted); }
+    .context-line { margin-bottom: 0; font-size: .93rem; }
+    .layout { display: grid; gap: 16px; }
+    .panel {
+      min-width: 0;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+    .section-heading { margin-bottom: 16px; }
+    .section-heading p:last-child { margin-bottom: 0; }
+    .small { font-size: .88rem; }
+    .source-ref { font-size: .78em; font-weight: 800; white-space: nowrap; }
+    .note {
+      margin: 14px 0 0;
+      padding: 10px 12px;
+      border-left: 3px solid var(--amber);
+      color: var(--muted);
+      background: var(--panel-raised);
+      font-size: .9rem;
+    }
+
+    fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+    fieldset + fieldset { margin-top: 19px; }
+    legend { width: 100%; margin-bottom: 8px; font-weight: 750; }
+    .legend-note { display: block; margin-top: 2px; color: var(--muted); font-size: .82rem; font-weight: 450; }
+    .choice-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .choice {
+      display: flex;
+      min-width: 0;
+      min-height: 82px;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      cursor: pointer;
+    }
+    .choice:has(input:checked) { border-color: var(--amber); box-shadow: inset 0 0 0 1px var(--amber); }
+    .choice input { flex: 0 0 auto; width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--amber); }
+    .choice-copy { min-width: 0; }
+    .choice-title { display: block; font-weight: 750; line-height: 1.3; }
+    .choice-detail { display: block; margin-top: 4px; color: var(--muted); font-size: .82rem; line-height: 1.35; }
+    .cost-chip { display: block; margin-top: 5px; color: var(--amber); font-size: .76rem; font-weight: 700; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 17px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      border: 1px solid var(--amber);
+      border-radius: 9px;
+      color: var(--ink);
+      background: var(--amber);
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .button.secondary { border-color: var(--line); color: var(--paper); background: var(--panel-raised); }
+    .button:disabled { color: var(--paper); background: #27384e; border-color: var(--line); }
+    .button:focus-visible, .choice input:focus-visible { outline-offset: 4px; }
+
+    .timeline-wrap {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+    }
+    .timeline-title { margin-bottom: 2px; font-size: .88rem; font-weight: 750; }
+    .timeline-caption { margin: 0; color: var(--muted); font-size: .78rem; }
+    .timeline-points {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 6px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .timeline-points::before {
+      position: absolute;
+      top: 7px;
+      right: 7%;
+      left: 7%;
+      height: 3px;
+      border-radius: 99px;
+      background: #718096;
+      content: "";
+    }
+    .timeline-points li { position: relative; min-width: 0; color: var(--muted); text-align: center; font-size: .74rem; }
+    .timeline-dot {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin: 0 auto 6px;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      background: #718096;
+      box-shadow: 0 0 0 1px #718096;
+    }
+    .timeline-points li.is-complete .timeline-dot,
+    .timeline-points li[aria-current="step"] .timeline-dot {
+      background: var(--amber);
+      box-shadow: 0 0 0 1px var(--amber);
+    }
+    .timeline-points li[aria-current="step"] { color: var(--paper); font-weight: 800; }
+
+    .run-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(230px, .7fr); gap: 14px; align-items: start; }
+    .counter-card, .result-box, .fact-card, .impact-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-raised);
+    }
+    .counter-card { min-height: 100%; }
+    .counter-label { display: block; color: var(--muted); font-size: .82rem; }
+    .counter-value { display: block; margin: 4px 0; color: var(--amber); font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 850; line-height: 1; font-variant-numeric: tabular-nums; }
+    .counter-foot { margin: 8px 0 0; color: var(--muted); font-size: .78rem; }
+    .run-status { min-height: 1.5em; margin: 12px 0 0; color: var(--muted); font-size: .9rem; }
+
+    .incident-options { display: grid; gap: 10px; }
+    .incident-choice { min-height: 70px; }
+    .incident-choice .choice-title { font-size: .98rem; }
+
+    .result-box { margin-top: 15px; }
+    .result-box.is-failure { border-color: var(--red); }
+    .result-title { margin-bottom: 5px; font-weight: 850; }
+    .result-box.is-failure .result-title { color: var(--red); }
+    .result-copy { margin-bottom: 0; color: var(--muted); }
+    .reveal-list { display: grid; gap: 10px; margin: 16px 0; padding: 0; list-style: none; counter-reset: reveal; }
+    .reveal-list li {
+      position: relative;
+      min-height: 70px;
+      padding: 13px 14px 13px 52px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      counter-increment: reveal;
+    }
+    .reveal-list li::before {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      display: grid;
+      width: 26px;
+      height: 26px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--amber);
+      content: counter(reveal);
+      font-weight: 850;
+      line-height: 1;
+    }
+    .reveal-list p { margin: 0; color: var(--muted); }
+    .reveal-list strong { color: var(--paper); }
+    .supporting-note { margin: 12px 0; color: var(--muted); font-size: .9rem; }
+    .impact-card { margin-top: 14px; }
+    .impact-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 11px 0 0; padding: 0; list-style: none; }
+    .impact-list li { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--paper); background: var(--navy); font-size: .82rem; }
+    .controls-line { margin: 14px 0 0; padding: 12px; border-left: 3px solid var(--amber); color: var(--paper); background: var(--panel-raised); }
+    .source-register { margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
+    .source-list { display: grid; gap: 7px; margin: 10px 0 0; padding-left: 24px; }
+    .source-list li { color: var(--muted); font-size: .79rem; }
+    .source-id { color: var(--paper); font-weight: 800; }
+
+    footer {
+      max-width: 90ch;
+      margin: 18px auto 0;
+      padding: 13px 2px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 20px; }
+      .panel { padding: 17px; }
+      .choice-list { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+      .choice { min-height: 70px; }
+      .run-grid { grid-template-columns: minmax(0, 1fr); }
+      .counter-card { min-height: auto; }
+      .counter-value { font-size: 2.5rem; }
+    }
+    @media (max-width: 390px) {
+      .page { width: min(100% - 20px, 620px); }
+      .panel { padding: 14px; }
+      .timeline-wrap { padding: 10px 7px; }
+      .timeline-points { gap: 1px; }
+      .timeline-points li { font-size: .68rem; }
+      .actions .button { flex: 1 1 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="lab-nav"><a href="index.html" id="lab-home">← Failure Lab</a></p>
+      <p class="eyebrow" id="page-eyebrow">Failure Lab · deployment simulation</p>
+      <h1 id="page-title">Choose what to verify</h1>
+      <p class="lede" id="page-lede">You are preparing a router change for a busy market open. Choose how to deploy it, how to gate it, and what to do with unused code.</p>
+      <p class="context-line" id="page-context">The options show trade-offs. The run reveals what the record says happened.</p>
+    </header>
+
+    <section class="panel screen" id="choose" aria-labelledby="choose-title">
+      <div class="section-heading">
+        <p class="section-kicker">01 · choose</p>
+        <h2 id="choose-title" tabindex="-1">Set up the release</h2>
+        <p class="subtle small">Choose one option in each group. Effort and time estimates are illustrative.</p>
+      </div>
+      <form id="choice-form">
+        <fieldset>
+          <legend>
+            Deployment
+            <span class="legend-note">How will the new code reach all eight servers?</span>
+          </legend>
+          <div class="choice-list">
+            <label class="choice">
+              <input type="radio" name="deployment" value="manual" checked>
+              <span class="choice-copy">
+                <span class="choice-title">Copy to each server manually</span>
+                <span class="choice-detail">One server at a time.</span>
+                <span class="cost-chip">Illustrative effort: 10 minutes · one technician</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="deployment" value="verified">
+              <span class="choice-copy">
+                <span class="choice-title">Automated deploy with per-server verification</span>
+                <span class="choice-detail">Confirm every server has the expected version.</span>
+                <span class="cost-chip">Illustrative effort: 30 minutes · setup and checks</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Feature flag
+            <span class="legend-note">How will the new behavior be switched on?</span>
+          </legend>
+          <div class="choice-list">
+            <label class="choice">
+              <input type="radio" name="featureFlag" value="reuse" checked>
+              <span class="choice-copy">
+                <span class="choice-title">Reuse an existing flag</span>
+                <span class="choice-detail">Keep the change small by using a switch already in the router.</span>
+                <span class="cost-chip">Illustrative effort: low · no new switch</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="featureFlag" value="new">
+              <span class="choice-copy">
+                <span class="choice-title">Add a new flag</span>
+                <span class="choice-detail">Give the new behavior its own switch.</span>
+                <span class="cost-chip">Illustrative effort: medium · add and test a switch</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Unused code
+            <span class="legend-note">What happens to code that the current release no longer needs?</span>
+          </legend>
+          <div class="choice-list">
+            <label class="choice">
+              <input type="radio" name="deadCode" value="leave" checked>
+              <span class="choice-copy">
+                <span class="choice-title">Leave it in place</span>
+                <span class="choice-detail">Do not change code outside this release.</span>
+                <span class="cost-chip">Illustrative effort: none before release</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="deadCode" value="remove">
+              <span class="choice-copy">
+                <span class="choice-title">Remove it before release</span>
+                <span class="choice-detail">Delete the unused path and test the new behavior.</span>
+                <span class="cost-chip">Illustrative effort: one code change and test</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <p class="note">This run is a teaching model. Its costs and any counterfactual outcome are illustrative.</p>
+        <div class="actions">
+          <button class="button" type="submit" id="start-run">Start the run</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel screen" id="run" aria-labelledby="run-title" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">02 · run</p>
+        <h2 id="run-title" tabindex="-1">The market opens</h2>
+        <p class="subtle">The timeline spans 9:30 to 10:15 a.m. The order counter and animation pace are illustrative model units.</p>
+      </div>
+      <div class="run-grid">
+        <div class="timeline-wrap" role="group" aria-label="Scenario timeline from 9:30 a.m. to 10:15 a.m.">
+          <p class="timeline-title">Opening window · 9:30 → 10:15 a.m.</p>
+          <p class="timeline-caption">A 45-minute historical span, compressed for this simulation.</p>
+          <ol class="timeline-points" id="timeline-points">
+            <li aria-current="step" data-index="0"><span class="timeline-dot"></span><span>9:30</span></li>
+            <li data-index="1"><span class="timeline-dot"></span><span>9:31</span></li>
+            <li data-index="2"><span class="timeline-dot"></span><span>9:35</span></li>
+            <li data-index="3"><span class="timeline-dot"></span><span>9:45</span></li>
+            <li data-index="4"><span class="timeline-dot"></span><span>10:00</span></li>
+            <li data-index="5"><span class="timeline-dot"></span><span>10:15</span></li>
+          </ol>
+        </div>
+        <div class="counter-card">
+          <span class="counter-label">Repeated child-order count · illustrative model units</span>
+          <strong class="counter-value" id="order-counter">0</strong>
+          <span class="counter-label" id="run-clock">9:30 a.m. ET</span>
+          <p class="counter-foot">The SEC reports millions of historical orders; this counter is not a historical count.</p>
+        </div>
+      </div>
+      <p class="run-status" id="run-status" aria-live="polite" role="status">Preparing the opening step.</p>
+      <div class="actions">
+        <button class="button" type="button" id="show-incident" hidden>Respond to the incident</button>
+      </div>
+    </section>
+
+    <section class="panel screen" id="incident" aria-labelledby="incident-title" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">03 · incident choice</p>
+        <h2 id="incident-title" tabindex="-1">An order signal appears</h2>
+        <p class="subtle">Choose your response at the open. The source record does not say that a specific kill-switch device existed.</p>
+      </div>
+      <form id="incident-form">
+        <fieldset>
+          <legend>What do you do?</legend>
+          <div class="incident-options">
+            <label class="choice incident-choice">
+              <input type="radio" name="response" value="rollback">
+              <span class="choice-copy">
+                <span class="choice-title">Roll back the new code</span>
+                <span class="choice-detail">Return servers to the prior version.</span>
+              </span>
+            </label>
+            <label class="choice incident-choice">
+              <input type="radio" name="response" value="halt">
+              <span class="choice-copy">
+                <span class="choice-title">Halt SMARS from sending orders</span>
+                <span class="choice-detail">Stop the router while the issue is assessed.</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <div class="actions">
+          <button class="button" type="submit" id="apply-response" disabled>Apply response and continue</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel screen" id="reveal" aria-labelledby="reveal-title" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">04 · reveal</p>
+        <h2 id="reveal-title" tabindex="-1">What the record shows</h2>
+        <p class="subtle">The three mechanics behind the incident are grounded in the SEC order. The model counters remain illustrative.</p>
+      </div>
+
+      <div class="result-box" id="result-box" aria-live="polite" role="status">
+        <h3 class="result-title" id="result-title"></h3>
+        <p class="result-copy" id="result-copy"></p>
+      </div>
+
+      <ol class="reveal-list">
+        <li>
+          <p><strong>One of eight servers missed the new code.</strong> The other seven processed the RLP orders correctly. The SEC says one technician did not copy the code to the eighth server; Knight did not have a second technician review the deployment and had no written procedures requiring that review. <a class="source-ref" href="#source-S2">S2</a></p>
+        </li>
+        <li>
+          <p><strong>A reused flag woke retired code.</strong> Power Peg was no longer used, but its code remained callable. The RLP change reused a flag that had previously activated Power Peg. A cumulative-share tracking function had moved earlier in the SMARS sequence in 2005 and was not retested; the eighth server then repeated child orders without regard to executions already received. <a class="source-ref" href="#source-S2">S2</a> <a class="source-ref" href="#source-S3">S3</a></p>
+        </li>
+        <li>
+          <p><strong>Removing the new code from seven servers made things worse.</strong> The SEC says that action caused additional parent orders to activate Power Peg on those servers, like on the eighth. The eight-server rollback branch in this model is illustrative. <a class="source-ref" href="#source-S5">S5</a></p>
+        </li>
+      </ol>
+
+      <p class="supporting-note"><strong>Before the open:</strong> 97 automated BNET reject e-mails began around 8:01 a.m. ET and referenced SMARS and Power Peg. The order says they were generally not reviewed as system alerts. <a class="source-ref" href="#source-S4">S4</a></p>
+
+      <section class="impact-card" aria-labelledby="impact-title">
+        <h3 id="impact-title">Historical impact · August 1, 2012 · SEC findings</h3>
+        <ul class="impact-list">
+          <li>212 parent orders</li>
+          <li>About 45 minutes</li>
+          <li>Over 4 million executions</li>
+          <li>154 stocks</li>
+          <li>More than 397 million shares</li>
+          <li>About $3.5B net long in 80 stocks</li>
+          <li>About $3.15B net short in 74 stocks</li>
+          <li>Over $460M loss</li>
+        </ul>
+        <p class="supporting-note">The order reports an approximately 45-minute event; 10:15 is calculated from the 9:30 market open, not an exact stop time stated in the order. <a class="source-ref" href="#source-S1">S1</a></p>
+      </section>
+
+      <p class="controls-line"><strong>Controls:</strong> The order found no procedures to halt SMARS in response to its own aberrant activity, and no supervisory procedures to guide incident response. It does not name a specific kill-switch device. <a class="source-ref" href="#source-S6">S6</a></p>
+
+      <section class="source-register" aria-labelledby="sources-title">
+        <h3 id="sources-title">Source register</h3>
+        <ol class="source-list">
+          <li id="source-S1"><span class="source-id">S1.</span> SEC Order, §III, ¶1 — date, duration, execution, share, position, and loss figures.</li>
+          <li id="source-S2"><span class="source-id">S2.</span> SEC Order, §III, ¶¶12–13, 15–16 — RLP code, retained Power Peg code, reused flag, and missed server.</li>
+          <li id="source-S3"><span class="source-id">S3.</span> SEC Order, §III, ¶¶14, 16 — moved cumulative-share tracking and repeated child orders.</li>
+          <li id="source-S4"><span class="source-id">S4.</span> SEC Order, §III, ¶19 — pre-open automated e-mails.</li>
+          <li id="source-S5"><span class="source-id">S5.</span> SEC Order, §III, ¶27 — removal of new code from seven servers and worsening effect.</li>
+          <li id="source-S6"><span class="source-id">S6.</span> SEC Order, §III, ¶¶21, 26–27 — SMARS, deployment, unused-code, and incident-response controls.</li>
+        </ol>
+        <p class="supporting-note"><a href="sources-knight.md">Open the full source register and official SEC PDF link</a>.</p>
+      </section>
+
+      <div class="actions">
+        <button class="button secondary" id="try-again" type="button">Run another scenario</button>
+      </div>
+    </section>
+
+    <footer>
+      Educational simulation, not financial advice. Historical findings are sourced to the SEC order. Choices, cost estimates, model units, animation timing, and counterfactual outcomes are illustrative; no counterfactual firm outcome is claimed.
+    </footer>
+  </main>
+  <script>
+    /* MODEL-START */
+    const MODEL_TIMES = [
+      { minute: 0, time: "9:30 a.m." },
+      { minute: 1, time: "9:31 a.m." },
+      { minute: 5, time: "9:35 a.m." },
+      { minute: 15, time: "9:45 a.m." },
+      { minute: 30, time: "10:00 a.m." },
+      { minute: 45, time: "10:15 a.m." }
+    ];
+
+    function simulate(state) {
+      const vulnerable =
+        state.deployment === "manual" &&
+        state.featureFlag === "reuse" &&
+        state.deadCode === "leave";
+      const response = state.response || "continue";
+      const halted = vulnerable && response === "halt";
+      const rolledBack = vulnerable && response === "rollback";
+      const serversRunningFault = !vulnerable || halted ? 0 : (rolledBack ? 8 : 1);
+      const cause = vulnerable
+        ? {
+            server: 8,
+            source: ["S2", "S3"],
+            description: "The eighth server kept callable Power Peg code; the reused flag activated it, and moved fill tracking did not stop repeated child orders."
+          }
+        : null;
+      const timeline = MODEL_TIMES.map((point) => ({
+        minute: point.minute,
+        time: point.time,
+        orderCount: serversRunningFault * (point.minute + 1),
+        serversRunningFault,
+        response
+      }));
+
+      return {
+        ok: !vulnerable || halted,
+        timeline,
+        cause
+      };
+    }
+
+    function rollbackComparison(rollbackResult, continuedResult) {
+      const rollbackPoint = rollbackResult.timeline.at(-1);
+      const continuedPoint = continuedResult.timeline.at(-1);
+      return `Without the rollback, this model reaches ${continuedPoint.orderCount} units by ${continuedPoint.time}; with it, ${rollbackPoint.orderCount} (illustrative model units).`;
+    }
+    /* MODEL-END */
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const choiceForm = document.getElementById("choice-form");
+    const incidentForm = document.getElementById("incident-form");
+    const applyResponse = document.getElementById("apply-response");
+    const chooseScreen = document.getElementById("choose");
+    const runScreen = document.getElementById("run");
+    const incidentScreen = document.getElementById("incident");
+    const revealScreen = document.getElementById("reveal");
+    const timelineItems = [...document.querySelectorAll("#timeline-points li")];
+    const orderCounter = document.getElementById("order-counter");
+    const runClock = document.getElementById("run-clock");
+    const runStatus = document.getElementById("run-status");
+    const showIncident = document.getElementById("show-incident");
+    const masthead = {
+      eyebrow: document.getElementById("page-eyebrow"),
+      title: document.getElementById("page-title"),
+      lede: document.getElementById("page-lede"),
+      context: document.getElementById("page-context")
+    };
+    const mastheadCopy = {
+      choose: {
+        eyebrow: "Failure Lab · deployment simulation",
+        title: "Choose what to verify",
+        lede: "You are preparing a router change for a busy market open. Choose how to deploy it, how to gate it, and what to do with unused code.",
+        context: "The options show trade-offs. The run reveals what the record says happened."
+      },
+      run: {
+        eyebrow: "Failure Lab · deployment simulation",
+        title: "Watch the opening timeline",
+        lede: "Follow the simulated order flow from 9:30 to 10:15 a.m. ET.",
+        context: "The SEC reports an approximately 45-minute incident; animation pace is illustrative."
+      },
+      incident: {
+        eyebrow: "Failure Lab · incident response",
+        title: "Respond at the open",
+        lede: "A system signal appears while the router is connected. Choose your next action.",
+        context: "The order describes missing procedures; it does not name a specific kill-switch device."
+      },
+      reveal: {
+        eyebrow: "Failure Lab · sourced reveal",
+        title: "See what happened",
+        lede: "One missed server, one reused flag, and an attempted rollback changed the incident.",
+        context: "Historical facts link to S1–S6; simulation branches are labeled illustrative."
+      }
+    };
+    let currentChoices = null;
+    let busy = false;
+
+    function delay(ms) {
+      return new Promise((resolve) => window.setTimeout(resolve, ms));
+    }
+
+    function focusHeading(id) {
+      const heading = document.getElementById(id);
+      if (heading) {
+        heading.focus({ preventScroll: true });
+        heading.scrollIntoView({ block: "start", behavior: reducedMotion ? "auto" : "smooth" });
+      }
+    }
+
+    function showStage(stage) {
+      chooseScreen.hidden = stage !== "choose";
+      runScreen.hidden = stage !== "run" && stage !== "incident";
+      incidentScreen.hidden = stage !== "incident";
+      revealScreen.hidden = stage !== "reveal";
+      if (stage === "choose" || stage === "incident") showIncident.hidden = true;
+      masthead.eyebrow.textContent = mastheadCopy[stage].eyebrow;
+      masthead.title.textContent = mastheadCopy[stage].title;
+      masthead.lede.textContent = mastheadCopy[stage].lede;
+      masthead.context.textContent = mastheadCopy[stage].context;
+      if (stage === "choose") focusHeading("choose-title");
+      if (stage === "run") focusHeading("run-title");
+      if (stage === "incident") focusHeading("incident-title");
+      if (stage === "reveal") focusHeading("reveal-title");
+    }
+
+    function readChoices() {
+      const data = new FormData(choiceForm);
+      return {
+        deployment: data.get("deployment"),
+        featureFlag: data.get("featureFlag"),
+        deadCode: data.get("deadCode")
+      };
+    }
+
+    function markTimeline(activeIndex) {
+      timelineItems.forEach((item, index) => {
+        item.classList.toggle("is-complete", index < activeIndex);
+        if (index === activeIndex) item.setAttribute("aria-current", "step");
+        else item.removeAttribute("aria-current");
+      });
+    }
+
+    function renderPoint(point, index) {
+      markTimeline(index);
+      orderCounter.textContent = String(point.orderCount);
+      runClock.textContent = point.time + " ET";
+    }
+
+    async function previewOpen() {
+      const preview = simulate({ ...currentChoices, response: "continue" });
+      renderPoint(preview.timeline[0], 0);
+      if (preview.cause === null) {
+        await finishRun("continue");
+        return;
+      }
+      runStatus.textContent = "9:30 a.m. ET · choose your response at the open.";
+      if (!reducedMotion) {
+        await delay(700);
+      }
+      showIncident.hidden = false;
+      showIncident.focus();
+    }
+
+    function resultText(result, response) {
+      if (result.cause === null) {
+        return {
+          title: "No repeated-order failure in this model",
+          copy: "At least one of the deployment, flag, or unused-code choices breaks the modeled chain. This is a counterfactual simulation, not a claim about what would have happened."
+        };
+      }
+      if (response === "halt") {
+        return {
+          title: "The halt stops further accumulation",
+          copy: "The missed-server cause remains in this setup, but this model sets the repeated-order counter to zero after the router is halted. The model does not claim a historical or counterfactual firm outcome."
+        };
+      }
+      if (response === "rollback") {
+        const continued = simulate({ ...currentChoices, response: "continue" });
+        return {
+          title: "The rollback widens the modelled fault to eight servers",
+          copy: "The rollback returns all eight servers to the old code with the reused flag still on. The SEC order says removing the new code from the seven correct servers caused additional parent orders to activate Power Peg (S5). " + rollbackComparison(result, continued)
+        };
+      }
+      return {
+        title: "The missed server keeps repeating child orders",
+        copy: "The model leaves the eighth server running the retained code. Its repeated-order count and timeline are illustrative; the historical figures are listed below."
+      };
+    }
+
+    function revealResult(result, response) {
+      const copy = resultText(result, response);
+      const box = document.getElementById("result-box");
+      box.classList.toggle("is-failure", !result.ok);
+      document.getElementById("result-title").textContent = copy.title;
+      document.getElementById("result-copy").textContent = copy.copy;
+    }
+
+    async function finishRun(response) {
+      const result = simulate({ ...currentChoices, response });
+      showStage("run");
+      renderPoint(result.timeline[0], 0);
+      const safePath = result.cause === null;
+      const noSignalStatus = (point) => `${point.time} ET · no repeated-order signal in this model (illustrative).`;
+      runStatus.textContent = safePath
+        ? noSignalStatus(result.timeline[0])
+        : response === "halt"
+          ? "Response applied · halting the router."
+          : "9:30 a.m. ET · response applied; continuing the opening timeline.";
+
+      if (reducedMotion) {
+        const lastIndex = result.timeline.length - 1;
+        renderPoint(result.timeline[lastIndex], lastIndex);
+        if (safePath) runStatus.textContent = noSignalStatus(result.timeline[lastIndex]);
+        revealResult(result, response);
+        showStage("reveal");
+        return;
+      }
+
+      for (let index = 1; index < result.timeline.length; index += 1) {
+        renderPoint(result.timeline[index], index);
+        runStatus.textContent = safePath
+          ? noSignalStatus(result.timeline[index])
+          : result.timeline[index].time + " ET · illustrative model count: " + result.timeline[index].orderCount + ".";
+        await delay(420);
+      }
+      revealResult(result, response);
+      showStage("reveal");
+    }
+
+    choiceForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (busy) return;
+      busy = true;
+      currentChoices = readChoices();
+      showIncident.hidden = true;
+      showStage("run");
+      await previewOpen();
+      busy = false;
+    });
+
+    showIncident.addEventListener("click", () => {
+      showStage("incident");
+    });
+
+    incidentForm.addEventListener("change", () => {
+      applyResponse.disabled = !incidentForm.querySelector('input[name="response"]:checked');
+    });
+
+    incidentForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (busy) return;
+      const selected = incidentForm.querySelector('input[name="response"]:checked');
+      if (!selected) return;
+      busy = true;
+      await finishRun(selected.value);
+      busy = false;
+    });
+
+    document.getElementById("try-again").addEventListener("click", () => {
+      incidentForm.reset();
+      applyResponse.disabled = true;
+      orderCounter.textContent = "0";
+      runClock.textContent = "9:30 a.m. ET";
+      runStatus.textContent = "Preparing the opening step.";
+      markTimeline(0);
+      currentChoices = null;
+      showStage("choose");
+    });
+  <\/script>
+</body>
+</html>
+</script>
+
+  <script>
+    (function () {
+      "use strict";
+      const stage = document.getElementById("stage");
+      const pages = {};
+      document.querySelectorAll('script[type="text/x-failure-lab"]').forEach(function (holder) {
+        // Reverse the two build-time escapes (see encode in build-single.mjs).
+        pages[holder.dataset.mode] = holder.textContent.split("<" + "\\/script").join("<" + "/script").split("<" + "\\!--").join("<" + "!--");
+      });
+      let current = null;
+
+      function open(mode) {
+        if (!pages[mode]) mode = null;
+        current = mode;
+        if (!mode) {
+          stage.hidden = true;
+          stage.removeAttribute("srcdoc");
+          document.body.classList.remove("in-frame");
+          document.title = "Knight Capital, 1 August 2012 — Failure Lab, offline edition";
+          return;
+        }
+        document.body.classList.add("in-frame");
+        stage.hidden = false;
+        stage.srcdoc = pages[mode];
+      }
+
+      stage.addEventListener("load", function () {
+        if (!current || !stage.contentDocument) return;
+        stage.title = stage.contentDocument.title;
+        document.title = stage.contentDocument.title + " — offline edition";
+        stage.focus();
+      });
+
+      function route(hash) {
+        const mode = hash.replace(/^#/, "");
+        if (mode === "sources") {
+          open(null);
+          const d = document.getElementById("sources");
+          d.open = true;
+          d.scrollIntoView({ block: "start" });
+          d.querySelector("summary").focus();
+          return;
+        }
+        open(mode === "group" || mode === "solo" ? mode : null);
+        if (!current) document.getElementById("home-title").focus({ preventScroll: true });
+      }
+
+      // A carried page asked to leave: its "← Failure Lab" link, a scenario link or a register link.
+      window.addEventListener("message", function (e) {
+        if (e.source !== stage.contentWindow || !e.data || typeof e.data.failureLab !== "string") return;
+        const href = e.data.failureLab;
+        let next = "";
+        if (/^group\.html/.test(href)) next = pages.group ? "#group" : "";
+        else if (href === "knight2012.html") next = "#solo";
+        else if (/^sources-/.test(href)) next = "#sources";
+        if (location.hash === next) route(next);
+        else if (next) location.hash = next;
+        else history.pushState(null, "", location.pathname + location.search), route("");
+      });
+
+      document.querySelectorAll("[data-mode]").forEach(function (b) {
+        if (b.tagName === "BUTTON") b.addEventListener("click", function () { location.hash = "#" + b.dataset.mode; });
+      });
+      window.addEventListener("hashchange", function () { route(location.hash); });
+      if (location.hash) route(location.hash);
+    }());
+  </script>
+</body>
+</html>

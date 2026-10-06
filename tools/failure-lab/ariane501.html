@@ -1,0 +1,918 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Flight 501 — choose what to protect</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d;
+      --panel: #16253a;
+      --panel-raised: #1b2d44;
+      --line: #687d95;
+      --paper: #f5f4ef;
+      --muted: #c0cad6;
+      --amber: #f2b134;
+      --red: #ff786f;
+      --ink: #0f1b2d;
+      --focus: #ffe09a;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: var(--navy); scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--paper);
+      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    button, input { font: inherit; }
+
+    button { cursor: pointer; }
+
+    button:disabled { cursor: not-allowed; }
+
+    a { color: var(--amber); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    [hidden] { display: none !important; }
+
+    .page {
+      width: min(100% - 32px, 1200px);
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .masthead { max-width: 760px; margin: 0 0 24px; }
+    .lab-nav { margin: -12px 0 10px; font-size: .9rem; font-weight: 700; }
+    .lab-nav a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; }
+    .lab-nav a:hover { text-decoration: underline; }
+
+    .eyebrow, .section-kicker {
+      margin: 0 0 8px;
+      color: var(--amber);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    h1 {
+      max-width: 17ch;
+      margin-bottom: 12px;
+      font-size: clamp(2rem, 5vw, 3.3rem);
+      line-height: 1.05;
+      letter-spacing: -.035em;
+    }
+
+    h2 { margin-bottom: 8px; font-size: 1.3rem; line-height: 1.2; }
+    h3 { margin-bottom: 8px; font-size: 1.02rem; }
+
+    .lede { max-width: 68ch; margin-bottom: 12px; font-size: 1.03rem; }
+    .context-line { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+    }
+
+    .panel {
+      min-width: 0;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+
+    .right-rail { display: grid; gap: 18px; min-width: 0; }
+    .section-heading { margin-bottom: 15px; }
+    .section-heading p:last-child { margin-bottom: 0; }
+    .subtle { color: var(--muted); }
+    .small { font-size: .88rem; }
+    .source-ref { font-size: .78em; font-weight: 800; white-space: nowrap; }
+
+    .intro-note {
+      margin: 14px 0 18px;
+      padding: 10px 12px;
+      border-left: 3px solid var(--amber);
+      color: var(--muted);
+      background: var(--panel-raised);
+      font-size: .9rem;
+    }
+
+    fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+
+    legend {
+      width: 100%;
+      margin-bottom: 9px;
+      font-weight: 750;
+    }
+
+    .legend-note { display: block; margin-top: 2px; color: var(--muted); font-size: .82rem; font-weight: 450; }
+    .variable-list { display: grid; gap: 8px; }
+
+    .variable-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(82px, .5fr);
+      gap: 12px;
+      min-height: 66px;
+      align-items: center;
+      padding: 8px 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+    }
+
+    .variable-choice {
+      display: flex;
+      min-height: 48px;
+      min-width: 0;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .variable-choice input, .align-toggle input {
+      flex: 0 0 auto;
+      width: 22px;
+      height: 22px;
+      accent-color: var(--amber);
+    }
+
+    .var-copy { min-width: 0; }
+    .var-name { display: block; font-weight: 750; line-height: 1.25; }
+    .var-detail { display: block; color: var(--muted); font-size: .78rem; line-height: 1.3; }
+
+    .cost-chip {
+      display: inline-block;
+      margin-top: 2px;
+      color: var(--amber);
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    .peak { min-width: 0; font-size: .75rem; }
+    .peak-label { display: block; margin-bottom: 4px; color: var(--muted); line-height: 1.25; }
+
+    .peak-track {
+      position: relative;
+      height: 8px;
+      overflow: visible;
+      border-radius: 99px;
+      background: #33445b;
+    }
+
+    .peak-fill { display: block; height: 100%; border-radius: inherit; background: var(--amber); }
+    .peak-limit {
+      position: absolute;
+      top: -3px;
+      bottom: -3px;
+      left: 55.56%;
+      width: 2px;
+      background: var(--paper);
+    }
+
+    .scale-note { display: flex; justify-content: space-between; gap: 8px; margin: 5px 0 0; color: var(--muted); font-size: .7rem; }
+
+    .load-box {
+      position: sticky;
+      bottom: 10px;
+      z-index: 2;
+      box-shadow: 0 -10px 24px 4px var(--navy);
+      margin-top: 16px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-raised);
+    }
+
+    .load-top { display: flex; justify-content: space-between; gap: 10px; align-items: baseline; }
+    .load-value { color: var(--amber); font-size: 1.1rem; font-weight: 800; white-space: nowrap; }
+
+    .load-track {
+      position: relative;
+      height: 15px;
+      margin: 8px 0 5px;
+      overflow: visible;
+      border-radius: 99px;
+      background: #33445b;
+    }
+
+    .load-fill { display: block; height: 100%; border-radius: inherit; background: var(--amber); transition: width .18s ease; }
+    .load-fill.is-over { background: var(--red); }
+    .load-target {
+      position: absolute;
+      top: -4px;
+      bottom: -4px;
+      left: 80%;
+      width: 2px;
+      background: var(--paper);
+    }
+
+    .target-labels { display: flex; justify-content: space-between; color: var(--muted); font-size: .75rem; }
+    .budget-error { margin: 9px 0 0; color: var(--red); font-weight: 750; }
+    .load-note { margin: 8px 0 0; color: var(--muted); font-size: .8rem; }
+
+    .align-toggle {
+      display: flex;
+      min-height: 56px;
+      align-items: center;
+      gap: 10px;
+      margin-top: 15px;
+      padding: 10px 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      cursor: pointer;
+    }
+
+    .align-copy { display: block; font-weight: 700; line-height: 1.25; }
+    .align-note { display: block; margin-top: 3px; color: var(--muted); font-size: .8rem; font-weight: 450; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      border: 1px solid var(--amber);
+      border-radius: 9px;
+      color: var(--ink);
+      background: var(--amber);
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .button.secondary { border-color: var(--line); color: var(--paper); background: var(--panel-raised); }
+    .button:disabled { color: var(--paper); background: #27384e; border-color: var(--line); }
+
+    .order-note {
+      margin: 14px 0 0;
+      padding: 10px 12px;
+      border-radius: 9px;
+      color: var(--muted);
+      background: var(--panel-raised);
+      font-size: .88rem;
+    }
+
+    .profile-note { margin: 0 0 14px; color: var(--muted); font-size: .9rem; }
+    .flight-controls { display: flex; flex-wrap: wrap; gap: 9px; }
+    .flight-controls .button { flex: 1 1 180px; }
+    .run-help { min-height: 1.5em; margin: 9px 0 0; color: var(--muted); font-size: .82rem; }
+
+    .timeline-wrap {
+      margin-top: 17px;
+      padding: 10px 10px 7px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+    }
+
+    .timeline-title { margin: 0 0 2px; font-size: .82rem; font-weight: 750; }
+    .timeline-svg { display: block; width: 100%; height: auto; color: var(--paper); }
+    .timeline-caption { margin: 0; color: var(--muted); font-size: .76rem; }
+    .timeline-line { stroke: #718096; stroke-width: 4; stroke-linecap: round; }
+    .timeline-progress { stroke: var(--amber); stroke-width: 4; stroke-linecap: round; }
+    .timeline-event { fill: var(--paper); stroke: var(--navy); stroke-width: 2; }
+    .timeline-marker { fill: var(--amber); stroke: var(--navy); stroke-width: 3; }
+    .timeline-label { fill: var(--paper); font: 12px/1.2 ui-sans-serif, system-ui, sans-serif; }
+
+    .result-box {
+      margin-top: 15px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-raised);
+    }
+
+    .result-box.is-failure { border-color: var(--red); }
+    .result-title { margin: 0 0 5px; font-weight: 850; }
+    .result-box.is-failure .result-title { color: var(--red); }
+    .result-copy { margin: 0; color: var(--muted); }
+    .event-list { display: grid; gap: 9px; margin: 12px 0 0; padding-left: 25px; }
+    .event-list li { padding-left: 3px; }
+    .event-list strong { color: var(--paper); }
+    .data-cycle-note { margin: 13px 0 0; padding-top: 10px; border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+    .display-pacing { margin: 8px 0 0; color: var(--muted); font-size: .76rem; }
+
+    .reveal-list { display: grid; gap: 12px; margin: 16px 0; padding: 0; list-style: none; counter-reset: reveal; }
+    .reveal-list li {
+      position: relative;
+      min-height: 54px;
+      padding: 12px 12px 12px 48px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      counter-increment: reveal;
+    }
+
+    .reveal-list li::before {
+      content: counter(reveal);
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: grid;
+      width: 25px;
+      height: 25px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--amber);
+      font-weight: 850;
+      line-height: 1;
+    }
+
+    .source-register {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .source-list { display: grid; gap: 8px; margin: 10px 0 0; padding: 0; list-style: none; }
+    .source-list li { color: var(--muted); font-size: .8rem; }
+    .source-id { color: var(--paper); font-weight: 800; }
+    .source-links { display: inline-flex; flex-wrap: wrap; gap: 8px; margin-left: 4px; }
+
+    footer {
+      max-width: 90ch;
+      margin: 18px auto 0;
+      padding: 13px 2px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 20px; }
+      .layout { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+      .right-rail { gap: 12px; }
+      .panel { padding: 17px; }
+      .variable-row { grid-template-columns: minmax(0, 1fr) minmax(112px, .45fr); gap: 8px; padding: 8px; }
+      .peak { font-size: .69rem; }
+      .flight-controls .button { flex-basis: 100%; }
+    }
+
+    @media (max-width: 360px) {
+      .page { width: min(100% - 18px, 620px); }
+      .panel { padding: 13px; }
+      .variable-row { grid-template-columns: minmax(0, 1fr) 86px; }
+      .var-detail { font-size: .73rem; }
+      .actions .button { flex: 1 1 100%; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="lab-nav"><a href="index.html" id="lab-home">← Failure Lab</a></p>
+      <p class="eyebrow">Flight 501 · decision simulation</p>
+      <h1>Choose what to protect</h1>
+      <p class="lede">You are on the 1990s inertial-reference software team. Keep processor load under <strong>80%</strong> (<a class="source-ref" href="#source-S2">S2</a>), using Ariane 4 flight evidence to decide which conversions need protection.</p>
+      <p class="context-line">One protection budget. One separate choice about what keeps running after lift-off.</p>
+    </header>
+
+    <div class="layout">
+      <section class="panel" id="choose" aria-labelledby="choose-title">
+        <div class="section-heading">
+          <p class="section-kicker">01 · choose</p>
+          <h2 id="choose-title">Spend the workload budget</h2>
+          <p class="subtle small">Select the conversions to protect. All variable labels, costs and peak magnitudes are illustrative unless a source is linked.</p>
+        </div>
+
+        <form id="choice-form">
+          <fieldset>
+            <legend>
+              Protect a conversion
+              <span class="legend-note">64-bit floating point → signed 16-bit integer (<a class="source-ref" href="#source-S1">S1</a>). The white line is the 100% limit. A–F are anonymous model labels; every cost and Ariane 4 peak is illustrative.</span>
+            </legend>
+            <div class="variable-list" id="variable-list"></div>
+          </fieldset>
+
+          <div class="load-box">
+            <div class="load-top">
+              <strong>Illustrative processor load</strong>
+              <span class="load-value" id="load-value">62%</span>
+            </div>
+            <div class="load-track" id="load-meter" role="meter" aria-label="Illustrative processor load" aria-valuemin="0" aria-valuemax="100" aria-valuenow="62" aria-valuetext="62 percent; 80 percent target">
+              <span class="load-fill" id="load-fill" style="width:62%"></span>
+              <span class="load-target" aria-hidden="true"></span>
+            </div>
+            <div class="target-labels"><span>0%</span><span>80% target (S2)</span><span>100%</span></div>
+            <p class="load-note">Illustrative base load: 62%; selected protections add illustrative cost points.</p>
+            <p class="budget-error" id="budget-error" role="status" hidden></p>
+          </div>
+
+          <label class="align-toggle" for="align-toggle">
+            <input id="align-toggle" type="checkbox" checked>
+            <span>
+              <span class="align-copy">Keep alignment running after lift-off</span>
+              <span class="align-note">Ariane 4 kept alignment running to restart quickly after a late countdown hold, avoiding launcher events that take hours to reset. This proven behaviour was retained for commonality (<a class="source-ref" href="#source-S6">S6</a>).</span>
+            </span>
+          </label>
+
+          <div class="actions">
+            <button class="button secondary" id="reset-button" type="button">Load the as-flown choice</button>
+          </div>
+        </form>
+      </section>
+
+      <div class="right-rail">
+        <section class="panel" id="fly" aria-labelledby="fly-title">
+          <div class="section-heading">
+            <p class="section-kicker">02 · fly</p>
+            <h2 id="fly-title">Run the profiles in order</h2>
+            <p class="profile-note">Ariane 4 flights using this type of inertial-reference system did not have the BH limit failure; the report links this to their early trajectory (<a class="source-ref" href="#source-S3">S3</a>). Profile peaks shown here are illustrative.</p>
+          </div>
+
+          <p class="small">Choose your protections, then fly.</p>
+          <div class="flight-controls" aria-label="Flight profile controls">
+            <button class="button" id="fly-a4" type="button">Fly Ariane 4 profile</button>
+            <button class="button" id="fly-a5" type="button" disabled>Fly Ariane 5 profile</button>
+          </div>
+          <p class="run-help" id="run-help">Run Ariane 4 first. Ariane 5 unlocks after its result.</p>
+
+          <div class="timeline-wrap">
+            <p class="timeline-title">Illustrative playback window · 4×</p>
+            <svg class="timeline-svg" viewBox="0 0 640 76" role="img" aria-label="Illustrative timeline from H0 to H0 plus 40 seconds, with sourced Ariane 501 failure markers at 36.7 and 39 seconds">
+              <line class="timeline-line" x1="30" y1="36" x2="610" y2="36"></line>
+              <line class="timeline-progress" id="timeline-progress" x1="30" y1="36" x2="30" y2="36"></line>
+              <circle class="timeline-event" cx="562" cy="36" r="6"></circle>
+              <circle class="timeline-event" cx="595" cy="36" r="6"></circle>
+              <circle class="timeline-marker" id="timeline-marker" cx="30" cy="36" r="8"></circle>
+              <text class="timeline-label" x="30" y="68" text-anchor="start">H0</text>
+              <text class="timeline-label" x="525" y="17" text-anchor="end">36.7</text>
+              <text class="timeline-label" x="585" y="68" text-anchor="end">39</text>
+              <text class="timeline-label" x="610" y="17" text-anchor="end">H0 + 40 s*</text>
+            </svg>
+            <p class="timeline-caption">White dots mark reported Ariane 501 events (<a class="source-ref" href="#source-S4">S4</a>); *the endpoint and playback scale are illustrative.</p>
+          </div>
+
+          <div class="result-box" id="flight-result" hidden aria-live="off">
+            <p class="result-title" id="result-title"></p>
+            <p class="result-copy" id="result-copy"></p>
+            <ol class="event-list" id="event-steps"></ol>
+            <p class="data-cycle-note" id="data-cycle-note" hidden></p>
+            <p class="display-pacing" id="display-pacing" hidden>Sequence text is revealed in source order; the display pacing is illustrative.</p>
+          </div>
+        </section>
+
+        <section class="panel" id="reveal" aria-labelledby="reveal-title" hidden>
+          <div class="section-heading">
+            <p class="section-kicker">03 · reveal</p>
+            <h2 id="reveal-title">What the report found</h2>
+            <p class="subtle small">These findings describe the historical flight; the choices above are a simplified counterfactual model.</p>
+          </div>
+          <ol class="reveal-list">
+            <li>The report says protection was added to “four of the variables,” while “three of the variables” remained unprotected, BH among them (<a class="source-ref" href="#source-S2">S2</a>). It found no evidence trajectory data were used to analyze the unprotected variables (<a class="source-ref" href="#source-S3">S3</a>). In this model the as-flown choice is A, B, C and E; A–F are anonymous labels, so that mapping is illustrative.</li>
+            <li>The backup unit's failure was followed about 0.05 seconds later by the active unit's same failure, despite identical hardware and software (<a class="source-ref" href="#source-S4">S4</a>).</li>
+            <li>The alignment function had no purpose after lift-off on Ariane 5 (<a class="source-ref" href="#source-S1">S1</a>), and the Board's first recommendation was: “Switch off the alignment function of the inertial reference system immediately after lift-off.” (<a class="source-ref" href="#source-S5">S5</a>)</li>
+          </ol>
+          <button class="button secondary" id="try-again" type="button">Try another choice</button>
+        </section>
+      </div>
+    </div>
+
+    <section class="source-register" aria-labelledby="sources-title">
+      <h2 id="sources-title">Source passages</h2>
+      <p class="small subtle">S1–S6 refer to the ESA/CNES Inquiry Board report, 19 July 1996. Section and physical PDF page locators are included for direct checking.</p>
+      <ul class="source-list">
+        <li id="source-S1"><span class="source-id">S1 · §2.1, PDF p. 5.</span> BH was an alignment result related to horizontal velocity; its conversion from 64-bit floating point to signed 16-bit integer caused an Operand Error. The alignment function served no purpose after lift-off. <span class="source-links"><a href="https://www-users.cse.umn.edu/~arnold/disasters/ariane5rep.html" target="_blank" rel="noopener">Report text</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=5" target="_blank" rel="noopener">PDF p. 5</a></span></li>
+        <li id="source-S2"><span class="source-id">S2 · §2.2, PDF p. 6.</span> The workload target was 80%; seven variables were considered at risk; protection covered four and three, including BH, remained unprotected. Costs and anonymous A–F labels are not from the report. <span class="source-links"><a href="https://www-users.cse.umn.edu/~arnold/disasters/ariane5rep.html" target="_blank" rel="noopener">Report text</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=6" target="_blank" rel="noopener">PDF p. 6</a></span></li>
+        <li id="source-S3"><span class="source-id">S3 · §2.2, PDF p. 6; §3.1(o), PDF p. 13.</span> The report found faulty reasoning about BH and no evidence Ariane 5 trajectory data were used; Ariane 4's early trajectory kept BH within its limit. <span class="source-links"><a href="https://www-users.cse.umn.edu/~arnold/disasters/ariane5rep.html" target="_blank" rel="noopener">Report text</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=13" target="_blank" rel="noopener">PDF p. 13</a></span></li>
+        <li id="source-S4"><span class="source-id">S4 · §3.1(e–j), PDF pp. 11–12; §2.1, PDF p. 5.</span> The backup failed at H0 + 36.7 s; the active unit failed approximately 0.05 s later; diagnostic data was treated as flight data; disintegration occurred at H0 + 39 s, followed by automatic destruction. The separate 72 ms data-cycle wording is in §2.1. <span class="source-links"><a href="https://www-users.cse.umn.edu/~arnold/disasters/ariane5rep.html" target="_blank" rel="noopener">Report text</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=11" target="_blank" rel="noopener">PDF p. 11</a></span></li>
+        <li id="source-S5"><span class="source-id">S5 · §4, Recommendation 1, PDF p. 14.</span> The Board recommended turning the alignment function off immediately after lift-off. <span class="source-links"><a href="https://www-users.cse.umn.edu/~arnold/disasters/ariane5rep.html" target="_blank" rel="noopener">Report text</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=14" target="_blank" rel="noopener">PDF p. 14</a></span></li>
+        <li id="source-S6"><span class="source-id">S6 · §2.2, PDF p. 7; §3.1(m), PDF p. 12.</span> Continued alignment supported late-hold restart on Ariane 4; the requirement was retained for commonality. <span class="source-links"><a href="https://www-users.cse.umn.edu/~arnold/disasters/ariane5rep.html" target="_blank" rel="noopener">Report text</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=7" target="_blank" rel="noopener">PDF p. 7</a><a href="https://ocw.mit.edu/courses/16-355j-software-engineering-concepts-fall-2005/91f1e550b30b00ad797293f430220f18_ari5fail_ful_rep.pdf#page=12" target="_blank" rel="noopener">PDF p. 12</a></span></li>
+      </ul>
+      <p class="small subtle">Ariane 4/Ariane 5 model peaks, costs, load points, timeline scale and counterfactual outcomes are illustrative. The report describes the historical failure, not these modeled outcomes.</p>
+    </section>
+
+    <footer><span class="lab-footer">Failure Lab models are simplified to isolate one decision; costs, timings and counterfactual outcomes not in the record are labelled illustrative. Sources are primary: each scenario cites the official inquiry or regulatory record, passage by passage.</span> Simplified educational model. Costs, peaks, curves and counterfactual outcomes are illustrative; sourced facts link to the Inquiry Board report (<a class="source-ref" href="#source-S1">S1</a>–<a class="source-ref" href="#source-S5">S5</a>).</footer>
+    <p class="sr-only" id="live-status" aria-live="polite" aria-atomic="true"></p>
+  </main>
+
+  <script>
+    /* MODEL-START */
+    const MODEL = Object.freeze({
+      baseLoad: 62,
+      target: 80,
+      costs: Object.freeze({ A: 4, B: 3, C: 5, D: 3, E: 4, F: 2, BH: 4 }),
+      defaultProtected: Object.freeze(["A", "B", "C", "E"]),
+      variables: Object.freeze(["A", "B", "C", "D", "E", "F", "BH"]),
+      peaks: Object.freeze({
+        A4: Object.freeze({ A: 140, B: 120, C: 130, D: 40, E: 96, F: 30, BH: 60 }),
+        A5: Object.freeze({ A: 150, B: 125, C: 135, D: 70, E: 98, F: 50, BH: 310 })
+      })
+    });
+
+    function modelLoad(protectedVariables) {
+      const selected = new Set(protectedVariables || []);
+      let load = MODEL.baseLoad;
+      MODEL.variables.forEach(function (id) {
+        if (selected.has(id)) load += MODEL.costs[id];
+      });
+      return load;
+    }
+
+    function simulate(state, profile) {
+      const load = modelLoad(state.protected);
+      const overBudget = load > MODEL.target;
+      if (overBudget) return { ok: false, load: load, overBudget: true, failure: null };
+      const peaks = MODEL.peaks[profile];
+      if (!peaks) throw new Error("Unknown profile");
+      let failure = null;
+      MODEL.variables.some(function (id) {
+        if (id === "BH" && !state.alignAfterLiftoff) return false;
+        if (!state.protected.includes(id) && peaks[id] > 100) {
+          failure = { var: id, tBackup: id === "BH" && profile === "A5" ? 36.7 : null, tActiveApprox: id === "BH" && profile === "A5" ? "~0.05 s later" : null, tBreakup: id === "BH" && profile === "A5" ? 39 : null };
+          return true;
+        }
+        return false;
+      });
+      return { ok: failure === null, load: load, overBudget: false, failure: failure };
+    }
+    const INITIAL_CHOICE = Object.freeze({ protected: Object.freeze([]), alignAfterLiftoff: true });
+
+    function survivalReason(choice, profile) {
+      if (profile !== "A5") return "";
+      if (!choice.alignAfterLiftoff) return "Illustrative: Alignment stopped at lift-off, so BH was not computed in flight.";
+      return "Illustrative: BH reached 310% of the limit; the protected conversion did not halt the unit in this model.";
+    }
+    /* MODEL-END */
+
+    (function () {
+      "use strict";
+
+      const ROWS = [
+        { id: "A", name: "Variable A", detail: "", cost: 4, peak: 140 },
+        { id: "B", name: "Variable B", detail: "", cost: 3, peak: 120 },
+        { id: "C", name: "Variable C", detail: "", cost: 5, peak: 130 },
+        { id: "D", name: "Variable D", detail: "", cost: 3, peak: 40 },
+        { id: "E", name: "Variable E", detail: "", cost: 4, peak: 96 },
+        { id: "F", name: "Variable F", detail: "", cost: 2, peak: 30 },
+        { id: "BH", name: "BH · Horizontal Bias", detail: "Alignment result related to horizontal velocity", cost: 4, peak: 60 }
+      ];
+
+      const state = {
+        protected: new Set(INITIAL_CHOICE.protected),
+        alignAfterLiftoff: true,
+        results: { A4: null, A5: null },
+        busy: false,
+        runToken: 0,
+        frameId: 0,
+        timers: []
+      };
+
+      const $ = function (id) { return document.getElementById(id); };
+      const variableList = $("variable-list");
+      const loadValue = $("load-value");
+      const loadMeter = $("load-meter");
+      const loadFill = $("load-fill");
+      const budgetError = $("budget-error");
+      const flyA4 = $("fly-a4");
+      const flyA5 = $("fly-a5");
+      const runHelp = $("run-help");
+      const resultBox = $("flight-result");
+      const resultTitle = $("result-title");
+      const resultCopy = $("result-copy");
+      const eventSteps = $("event-steps");
+      const dataCycleNote = $("data-cycle-note");
+      const displayPacing = $("display-pacing");
+      const reveal = $("reveal");
+      const liveStatus = $("live-status");
+
+      function createRows() {
+        ROWS.forEach(function (row) {
+          const container = document.createElement("div");
+          container.className = "variable-row";
+
+          const label = document.createElement("label");
+          label.className = "variable-choice";
+          label.htmlFor = "protect-" + row.id;
+
+          const input = document.createElement("input");
+          input.type = "checkbox";
+          input.id = "protect-" + row.id;
+          input.name = "protected";
+          input.value = row.id;
+          input.checked = state.protected.has(row.id);
+          input.addEventListener("change", onProtectionChange);
+
+          const copy = document.createElement("span");
+          copy.className = "var-copy";
+          const name = document.createElement("span");
+          name.className = "var-name";
+          name.textContent = row.name;
+          const detail = document.createElement("span");
+          detail.className = "var-detail";
+          detail.textContent = row.detail;
+          if (row.id === "BH") {
+            detail.append(document.createTextNode(" "), sourceRef("S1"));
+          }
+          const cost = document.createElement("span");
+          cost.className = "cost-chip";
+          cost.textContent = "Protection cost: " + row.cost + " points";
+          copy.append(name);
+          if (row.detail) copy.append(detail);
+          copy.append(cost);
+          label.append(input, copy);
+
+          const peak = document.createElement("div");
+          peak.className = "peak";
+          const peakLabel = document.createElement("span");
+          peakLabel.className = "peak-label";
+          peakLabel.textContent = "Ariane 4 peak: " + row.peak + "%";
+          const track = document.createElement("div");
+          track.className = "peak-track";
+          track.setAttribute("aria-hidden", "true");
+          const fill = document.createElement("span");
+          fill.className = "peak-fill";
+          fill.style.width = Math.min(row.peak / 180 * 100, 100) + "%";
+          const limit = document.createElement("span");
+          limit.className = "peak-limit";
+          track.append(fill, limit);
+          peak.append(peakLabel, track);
+
+          container.append(label, peak);
+          variableList.append(container);
+        });
+      }
+
+      function currentState() {
+        return { protected: Array.from(state.protected), alignAfterLiftoff: state.alignAfterLiftoff };
+      }
+
+      function announce(message) {
+        liveStatus.textContent = "";
+        window.requestAnimationFrame(function () { liveStatus.textContent = message; });
+      }
+
+      function updateMeter() {
+        const load = modelLoad(state.protected);
+        const overBudget = load > MODEL.target;
+        loadValue.textContent = load + "%";
+        loadMeter.setAttribute("aria-valuenow", String(load));
+        loadMeter.setAttribute("aria-valuetext", load + " percent; 80 percent target");
+        loadFill.style.width = Math.min(load, 100) + "%";
+        loadFill.classList.toggle("is-over", overBudget);
+        budgetError.hidden = !overBudget;
+        budgetError.textContent = overBudget ? "Workload " + load + "% exceeds the 80% target" : "";
+        return { load: load, overBudget: overBudget };
+      }
+
+      function updateButtons() {
+        const budget = updateMeter();
+        flyA4.disabled = budget.overBudget || state.busy;
+        flyA5.disabled = budget.overBudget || state.busy || !state.results.A4;
+        if (budget.overBudget) runHelp.textContent = "Workload " + budget.load + "% exceeds the 80% target. Reduce protections before flying.";
+        else if (state.busy) runHelp.textContent = "Profile playback is running at 4×.";
+        else if (!state.results.A4) runHelp.textContent = "Run Ariane 4 first. Ariane 5 unlocks after its result.";
+        else runHelp.textContent = "Ariane 4 result recorded. Continue with Ariane 5, or change a choice to clear both results.";
+      }
+
+      function clearTimers() {
+        state.timers.forEach(function (id) { window.clearTimeout(id); });
+        state.timers = [];
+      }
+
+      function cancelPlayback() {
+        state.runToken += 1;
+        if (state.frameId) window.cancelAnimationFrame(state.frameId);
+        state.frameId = 0;
+        clearTimers();
+        state.busy = false;
+      }
+
+      function hideResult() {
+        resultBox.hidden = true;
+        resultBox.classList.remove("is-failure");
+        eventSteps.replaceChildren();
+        dataCycleNote.hidden = true;
+        displayPacing.hidden = true;
+      }
+
+      function resetTimeline() {
+        $("timeline-marker").setAttribute("cx", "30");
+        $("timeline-progress").setAttribute("x2", "30");
+      }
+
+      function setTimeline(seconds) {
+        const bounded = Math.max(0, Math.min(40, seconds));
+        const x = 30 + (bounded / 40) * 580;
+        const position = String(Math.round(x * 10) / 10);
+        $("timeline-marker").setAttribute("cx", position);
+        $("timeline-progress").setAttribute("x2", position);
+      }
+
+      function invalidateResults(message) {
+        cancelPlayback();
+        state.results = { A4: null, A5: null };
+        hideResult();
+        reveal.hidden = true;
+        resetTimeline();
+        updateButtons();
+        announce(message || "Choices changed. Earlier profile results were cleared.");
+      }
+
+      function onProtectionChange(event) {
+        if (event.target.checked) state.protected.add(event.target.value);
+        else state.protected.delete(event.target.value);
+        invalidateResults("Protection choices changed. Ariane 4 must be run again before Ariane 5.");
+      }
+
+      function onAlignmentChange(event) {
+        state.alignAfterLiftoff = event.target.checked;
+        invalidateResults("Alignment choice changed. Earlier profile results were cleared.");
+      }
+
+      function appendEvent(step, title, detail, sources) {
+        const item = document.createElement("li");
+        const strong = document.createElement("strong");
+        strong.textContent = step + " ";
+        item.append(strong, document.createTextNode(title + " " + detail));
+        (sources || []).forEach(function (source) {
+          item.append(document.createTextNode(" "), sourceRef(source));
+        });
+        eventSteps.append(item);
+        announce(step + " " + title + " " + detail);
+      }
+
+      function sourceRef(id) {
+        const link = document.createElement("a");
+        link.className = "source-ref";
+        link.href = "#source-" + id;
+        link.textContent = id;
+        link.setAttribute("aria-label", "Source " + id);
+        return link;
+      }
+
+      function showOutcome(profile, result, token) {
+        resultBox.hidden = false;
+        resultBox.classList.toggle("is-failure", !result.ok);
+        if (result.ok) {
+          resultTitle.textContent = "This modelled failure is avoided.";
+          resultCopy.textContent = "This outcome applies only to the simplified model; it does not predict the full mission outcome.";
+          if (profile === "A5") {
+            const reason = document.createElement("span");
+            reason.className = "small";
+            reason.style.display = "block";
+            reason.id = "survival-reason";
+            reason.textContent = survivalReason(currentState(), profile);
+            if (!state.alignAfterLiftoff) reason.append(" ", sourceRef("S6"));
+            resultCopy.append(reason);
+          }
+          announce(profileName(profile) + " profile complete. This modelled failure is avoided.");
+          return;
+        }
+
+        resultTitle.textContent = "The model reaches an overflow.";
+        if (profile === "A4") {
+          resultCopy.textContent = "Illustrative profile: " + result.failure.var + " exceeds the modelled limit. This is not a reported Ariane 4 event.";
+          appendEvent("Model result:", result.failure.var + " exceeds the limit.", "Illustrative value; no historical event time is assigned.");
+          return;
+        }
+
+        if (result.failure.var === "BH" && state.alignAfterLiftoff) {
+          resultCopy.textContent = "This choice leaves BH unprotected while alignment runs. The sequence below summarizes the Inquiry Board's historical account, not telemetry generated by this model.";
+          const steps = [
+            ["H0 + 36.7 s:", "The backup unit fails.", "Its BH conversion overflows the signed 16-bit limit in this illustrative profile.", ["S1", "S4"]],
+            ["About 0.05 s later:", "The active unit fails the same way.", "The units used identical hardware and software.", ["S4"]],
+            ["Next in the report sequence:", "Diagnostic data is read as flight data.", "The flight computer commands full nozzle deflections.", ["S4"]],
+            ["H0 + 39 s:", "The launcher disintegrates.", "Automatic destruction follows.", ["S4"]]
+          ];
+          steps.forEach(function (step, index) {
+            const timer = window.setTimeout(function () {
+              if (token === state.runToken) appendEvent(step[0], step[1], step[2], step[3]);
+            }, index * 650);
+            state.timers.push(timer);
+          });
+          const noteTimer = window.setTimeout(function () {
+            if (token !== state.runToken) return;
+            dataCycleNote.replaceChildren(
+              document.createTextNode("Separate timing detail: §2.1 places the backup failure in the previous 72 ms data cycle ("),
+              sourceRef("S4"),
+              document.createTextNode("). The report's 0.05 s active-unit interval and 72 ms data-cycle description are separate statements.")
+            );
+            dataCycleNote.hidden = false;
+          }, steps.length * 650);
+          state.timers.push(noteTimer);
+          displayPacing.hidden = false;
+        } else {
+          resultCopy.textContent = "Variable " + result.failure.var + " is unprotected and exceeds its limit in this illustrative profile. The report describes no matching Ariane 501 event, so no historical sequence is shown.";
+        }
+      }
+
+      function profileName(profile) { return profile === "A4" ? "Ariane 4" : "Ariane 5"; }
+
+      function finishFlight(profile, result, token) {
+        if (token !== state.runToken) return;
+        state.busy = false;
+        state.frameId = 0;
+        state.results[profile] = result;
+        if (profile === "A4") state.results.A5 = null;
+        setTimeline(40);
+        showOutcome(profile, result, token);
+        reveal.hidden = profile !== "A5";
+        updateButtons();
+        if (profile === "A5") announce("Ariane 5 profile complete. Reveal is available.");
+      }
+
+      function runFlight(profile) {
+        const budget = updateMeter();
+        if (budget.overBudget || state.busy) return;
+        if (profile === "A5" && !state.results.A4) return;
+
+        cancelPlayback();
+        const token = state.runToken;
+        state.busy = true;
+        if (profile === "A4") state.results.A5 = null;
+        reveal.hidden = true;
+        hideResult();
+        resetTimeline();
+        const result = simulate(currentState(), profile);
+        updateButtons();
+        announce(profileName(profile) + " profile started. Illustrative playback runs at four times speed.");
+
+        const reducedMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        if (reducedMotion) {
+          setTimeline(40);
+          finishFlight(profile, result, token);
+          return;
+        }
+
+        const duration = 10000;
+        let start = 0;
+        function frame(now) {
+          if (token !== state.runToken) return;
+          if (!start) start = now;
+          const elapsed = Math.min(now - start, duration);
+          setTimeline(elapsed * 4 / 1000);
+          if (elapsed >= duration) finishFlight(profile, result, token);
+          else state.frameId = window.requestAnimationFrame(frame);
+        }
+        state.frameId = window.requestAnimationFrame(frame);
+      }
+
+      function resetToAsFlown() {
+        cancelPlayback();
+        state.protected = new Set(MODEL.defaultProtected);
+        state.alignAfterLiftoff = true;
+        state.results = { A4: null, A5: null };
+        ROWS.forEach(function (row) { $("protect-" + row.id).checked = state.protected.has(row.id); });
+        $("align-toggle").checked = true;
+        hideResult();
+        reveal.hidden = true;
+        resetTimeline();
+        updateButtons();
+        announce("Reset to the as-flown illustrative choices. Ariane 4 must be run first.");
+      }
+
+      createRows();
+      $("align-toggle").addEventListener("change", onAlignmentChange);
+      $("reset-button").addEventListener("click", resetToAsFlown);
+      $("fly-a4").addEventListener("click", function () { runFlight("A4"); });
+      $("fly-a5").addEventListener("click", function () { runFlight("A5"); });
+      $("try-again").addEventListener("click", function () {
+        $("choose-title").focus();
+        $("choose").scrollIntoView({ block: "start" });
+      });
+      $("choose-title").tabIndex = -1;
+      updateButtons();
+    }());
+  </script>
+</body>
+</html>

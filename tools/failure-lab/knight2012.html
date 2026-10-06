@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Knight Capital — choose what to verify</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d;
+      --panel: #16253a;
+      --panel-raised: #1b2d44;
+      --line: #687d95;
+      --paper: #f5f4ef;
+      --muted: #c0cad6;
+      --amber: #f2b134;
+      --red: #ff786f;
+      --ink: #0f1b2d;
+      --focus: #ffe09a;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+    html { background: var(--navy); scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--paper);
+      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    button, input { font: inherit; }
+    button { cursor: pointer; }
+    button:disabled { cursor: not-allowed; }
+    a { color: var(--amber); text-underline-offset: .18em; }
+    a:hover { text-decoration-thickness: 2px; }
+    :focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+    [hidden] { display: none !important; }
+
+    .page { width: min(100% - 32px, 1120px); margin: 0 auto; padding: 28px 0 42px; }
+    .masthead { max-width: 760px; margin-bottom: 22px; }
+    .lab-nav { margin: -12px 0 10px; font-size: .9rem; font-weight: 700; }
+    .lab-nav a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: none; }
+    .lab-nav a:hover { text-decoration: underline; }
+    .eyebrow, .section-kicker {
+      margin: 0 0 8px;
+      color: var(--amber);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 18ch; margin-bottom: 10px; font-size: clamp(2rem, 5vw, 3.25rem); line-height: 1.04; letter-spacing: -.035em; }
+    h2 { margin-bottom: 8px; font-size: 1.3rem; line-height: 1.2; }
+    h3 { margin-bottom: 7px; font-size: 1.04rem; }
+    .lede { max-width: 68ch; margin-bottom: 10px; font-size: 1.02rem; }
+    .context-line, .subtle { color: var(--muted); }
+    .context-line { margin-bottom: 0; font-size: .93rem; }
+    .layout { display: grid; gap: 16px; }
+    .panel {
+      min-width: 0;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+    }
+    .section-heading { margin-bottom: 16px; }
+    .section-heading p:last-child { margin-bottom: 0; }
+    .small { font-size: .88rem; }
+    .source-ref { font-size: .78em; font-weight: 800; white-space: nowrap; }
+    .note {
+      margin: 14px 0 0;
+      padding: 10px 12px;
+      border-left: 3px solid var(--amber);
+      color: var(--muted);
+      background: var(--panel-raised);
+      font-size: .9rem;
+    }
+
+    fieldset { min-width: 0; margin: 0; padding: 0; border: 0; }
+    fieldset + fieldset { margin-top: 19px; }
+    legend { width: 100%; margin-bottom: 8px; font-weight: 750; }
+    .legend-note { display: block; margin-top: 2px; color: var(--muted); font-size: .82rem; font-weight: 450; }
+    .choice-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .choice {
+      display: flex;
+      min-width: 0;
+      min-height: 82px;
+      align-items: flex-start;
+      gap: 11px;
+      padding: 12px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      cursor: pointer;
+    }
+    .choice:has(input:checked) { border-color: var(--amber); box-shadow: inset 0 0 0 1px var(--amber); }
+    .choice input { flex: 0 0 auto; width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--amber); }
+    .choice-copy { min-width: 0; }
+    .choice-title { display: block; font-weight: 750; line-height: 1.3; }
+    .choice-detail { display: block; margin-top: 4px; color: var(--muted); font-size: .82rem; line-height: 1.35; }
+    .cost-chip { display: block; margin-top: 5px; color: var(--amber); font-size: .76rem; font-weight: 700; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 17px; }
+    .button {
+      display: inline-flex;
+      min-height: 48px;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 15px;
+      border: 1px solid var(--amber);
+      border-radius: 9px;
+      color: var(--ink);
+      background: var(--amber);
+      font-weight: 800;
+      text-align: center;
+      line-height: 1.2;
+    }
+    .button.secondary { border-color: var(--line); color: var(--paper); background: var(--panel-raised); }
+    .button:disabled { color: var(--paper); background: #27384e; border-color: var(--line); }
+    .button:focus-visible, .choice input:focus-visible { outline-offset: 4px; }
+
+    .timeline-wrap {
+      margin-top: 14px;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+    }
+    .timeline-title { margin-bottom: 2px; font-size: .88rem; font-weight: 750; }
+    .timeline-caption { margin: 0; color: var(--muted); font-size: .78rem; }
+    .timeline-points {
+      position: relative;
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 6px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+    .timeline-points::before {
+      position: absolute;
+      top: 7px;
+      right: 7%;
+      left: 7%;
+      height: 3px;
+      border-radius: 99px;
+      background: #718096;
+      content: "";
+    }
+    .timeline-points li { position: relative; min-width: 0; color: var(--muted); text-align: center; font-size: .74rem; }
+    .timeline-dot {
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin: 0 auto 6px;
+      border: 3px solid var(--navy);
+      border-radius: 50%;
+      background: #718096;
+      box-shadow: 0 0 0 1px #718096;
+    }
+    .timeline-points li.is-complete .timeline-dot,
+    .timeline-points li[aria-current="step"] .timeline-dot {
+      background: var(--amber);
+      box-shadow: 0 0 0 1px var(--amber);
+    }
+    .timeline-points li[aria-current="step"] { color: var(--paper); font-weight: 800; }
+
+    .run-grid { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(230px, .7fr); gap: 14px; align-items: start; }
+    .counter-card, .result-box, .fact-card, .impact-card {
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-raised);
+    }
+    .counter-card { min-height: 100%; }
+    .counter-label { display: block; color: var(--muted); font-size: .82rem; }
+    .counter-value { display: block; margin: 4px 0; color: var(--amber); font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 850; line-height: 1; font-variant-numeric: tabular-nums; }
+    .counter-foot { margin: 8px 0 0; color: var(--muted); font-size: .78rem; }
+    .run-status { min-height: 1.5em; margin: 12px 0 0; color: var(--muted); font-size: .9rem; }
+
+    .incident-options { display: grid; gap: 10px; }
+    .incident-choice { min-height: 70px; }
+    .incident-choice .choice-title { font-size: .98rem; }
+
+    .result-box { margin-top: 15px; }
+    .result-box.is-failure { border-color: var(--red); }
+    .result-title { margin-bottom: 5px; font-weight: 850; }
+    .result-box.is-failure .result-title { color: var(--red); }
+    .result-copy { margin-bottom: 0; color: var(--muted); }
+    .reveal-list { display: grid; gap: 10px; margin: 16px 0; padding: 0; list-style: none; counter-reset: reveal; }
+    .reveal-list li {
+      position: relative;
+      min-height: 70px;
+      padding: 13px 14px 13px 52px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--navy);
+      counter-increment: reveal;
+    }
+    .reveal-list li::before {
+      position: absolute;
+      top: 13px;
+      left: 13px;
+      display: grid;
+      width: 26px;
+      height: 26px;
+      place-items: center;
+      border-radius: 50%;
+      color: var(--ink);
+      background: var(--amber);
+      content: counter(reveal);
+      font-weight: 850;
+      line-height: 1;
+    }
+    .reveal-list p { margin: 0; color: var(--muted); }
+    .reveal-list strong { color: var(--paper); }
+    .supporting-note { margin: 12px 0; color: var(--muted); font-size: .9rem; }
+    .impact-card { margin-top: 14px; }
+    .impact-list { display: flex; flex-wrap: wrap; gap: 8px; margin: 11px 0 0; padding: 0; list-style: none; }
+    .impact-list li { padding: 5px 9px; border: 1px solid var(--line); border-radius: 999px; color: var(--paper); background: var(--navy); font-size: .82rem; }
+    .controls-line { margin: 14px 0 0; padding: 12px; border-left: 3px solid var(--amber); color: var(--paper); background: var(--panel-raised); }
+    .source-register { margin-top: 18px; padding-top: 15px; border-top: 1px solid var(--line); }
+    .source-list { display: grid; gap: 7px; margin: 10px 0 0; padding-left: 24px; }
+    .source-list li { color: var(--muted); font-size: .79rem; }
+    .source-id { color: var(--paper); font-weight: 800; }
+
+    footer {
+      max-width: 90ch;
+      margin: 18px auto 0;
+      padding: 13px 2px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 20px; }
+      .panel { padding: 17px; }
+      .choice-list { grid-template-columns: minmax(0, 1fr); gap: 8px; }
+      .choice { min-height: 70px; }
+      .run-grid { grid-template-columns: minmax(0, 1fr); }
+      .counter-card { min-height: auto; }
+      .counter-value { font-size: 2.5rem; }
+    }
+    @media (max-width: 390px) {
+      .page { width: min(100% - 20px, 620px); }
+      .panel { padding: 14px; }
+      .timeline-wrap { padding: 10px 7px; }
+      .timeline-points { gap: 1px; }
+      .timeline-points li { font-size: .68rem; }
+      .actions .button { flex: 1 1 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <p class="lab-nav"><a href="index.html" id="lab-home">← Failure Lab</a></p>
+      <p class="eyebrow" id="page-eyebrow">Failure Lab · deployment simulation</p>
+      <h1 id="page-title">Choose what to verify</h1>
+      <p class="lede" id="page-lede">You are preparing a router change for a busy market open. Choose how to deploy it, how to gate it, and what to do with unused code.</p>
+      <p class="context-line" id="page-context">The options show trade-offs. The run reveals what the record says happened.</p>
+    </header>
+
+    <section class="panel screen" id="choose" aria-labelledby="choose-title">
+      <div class="section-heading">
+        <p class="section-kicker">01 · choose</p>
+        <h2 id="choose-title" tabindex="-1">Set up the release</h2>
+        <p class="subtle small">Choose one option in each group. Effort and time estimates are illustrative.</p>
+      </div>
+      <form id="choice-form">
+        <fieldset>
+          <legend>
+            Deployment
+            <span class="legend-note">How will the new code reach all eight servers?</span>
+          </legend>
+          <div class="choice-list">
+            <label class="choice">
+              <input type="radio" name="deployment" value="manual" checked>
+              <span class="choice-copy">
+                <span class="choice-title">Copy to each server manually</span>
+                <span class="choice-detail">One server at a time.</span>
+                <span class="cost-chip">Illustrative effort: 10 minutes · one technician</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="deployment" value="verified">
+              <span class="choice-copy">
+                <span class="choice-title">Automated deploy with per-server verification</span>
+                <span class="choice-detail">Confirm every server has the expected version.</span>
+                <span class="cost-chip">Illustrative effort: 30 minutes · setup and checks</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Feature flag
+            <span class="legend-note">How will the new behavior be switched on?</span>
+          </legend>
+          <div class="choice-list">
+            <label class="choice">
+              <input type="radio" name="featureFlag" value="reuse" checked>
+              <span class="choice-copy">
+                <span class="choice-title">Reuse an existing flag</span>
+                <span class="choice-detail">Keep the change small by using a switch already in the router.</span>
+                <span class="cost-chip">Illustrative effort: low · no new switch</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="featureFlag" value="new">
+              <span class="choice-copy">
+                <span class="choice-title">Add a new flag</span>
+                <span class="choice-detail">Give the new behavior its own switch.</span>
+                <span class="cost-chip">Illustrative effort: medium · add and test a switch</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>
+            Unused code
+            <span class="legend-note">What happens to code that the current release no longer needs?</span>
+          </legend>
+          <div class="choice-list">
+            <label class="choice">
+              <input type="radio" name="deadCode" value="leave" checked>
+              <span class="choice-copy">
+                <span class="choice-title">Leave it in place</span>
+                <span class="choice-detail">Do not change code outside this release.</span>
+                <span class="cost-chip">Illustrative effort: none before release</span>
+              </span>
+            </label>
+            <label class="choice">
+              <input type="radio" name="deadCode" value="remove">
+              <span class="choice-copy">
+                <span class="choice-title">Remove it before release</span>
+                <span class="choice-detail">Delete the unused path and test the new behavior.</span>
+                <span class="cost-chip">Illustrative effort: one code change and test</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <p class="note">This run is a teaching model. Its costs and any counterfactual outcome are illustrative.</p>
+        <div class="actions">
+          <button class="button" type="submit" id="start-run">Start the run</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel screen" id="run" aria-labelledby="run-title" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">02 · run</p>
+        <h2 id="run-title" tabindex="-1">The market opens</h2>
+        <p class="subtle">The timeline spans 9:30 to 10:15 a.m. The order counter and animation pace are illustrative model units.</p>
+      </div>
+      <div class="run-grid">
+        <div class="timeline-wrap" role="group" aria-label="Scenario timeline from 9:30 a.m. to 10:15 a.m.">
+          <p class="timeline-title">Opening window · 9:30 → 10:15 a.m.</p>
+          <p class="timeline-caption">A 45-minute historical span, compressed for this simulation.</p>
+          <ol class="timeline-points" id="timeline-points">
+            <li aria-current="step" data-index="0"><span class="timeline-dot"></span><span>9:30</span></li>
+            <li data-index="1"><span class="timeline-dot"></span><span>9:31</span></li>
+            <li data-index="2"><span class="timeline-dot"></span><span>9:35</span></li>
+            <li data-index="3"><span class="timeline-dot"></span><span>9:45</span></li>
+            <li data-index="4"><span class="timeline-dot"></span><span>10:00</span></li>
+            <li data-index="5"><span class="timeline-dot"></span><span>10:15</span></li>
+          </ol>
+        </div>
+        <div class="counter-card">
+          <span class="counter-label">Repeated child-order count · illustrative model units</span>
+          <strong class="counter-value" id="order-counter">0</strong>
+          <span class="counter-label" id="run-clock">9:30 a.m. ET</span>
+          <p class="counter-foot">The SEC reports millions of historical orders; this counter is not a historical count.</p>
+        </div>
+      </div>
+      <p class="run-status" id="run-status" aria-live="polite" role="status">Preparing the opening step.</p>
+      <div class="actions">
+        <button class="button" type="button" id="show-incident" hidden>Respond to the incident</button>
+      </div>
+    </section>
+
+    <section class="panel screen" id="incident" aria-labelledby="incident-title" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">03 · incident choice</p>
+        <h2 id="incident-title" tabindex="-1">An order signal appears</h2>
+        <p class="subtle">Choose your response at the open. The source record does not say that a specific kill-switch device existed.</p>
+      </div>
+      <form id="incident-form">
+        <fieldset>
+          <legend>What do you do?</legend>
+          <div class="incident-options">
+            <label class="choice incident-choice">
+              <input type="radio" name="response" value="rollback">
+              <span class="choice-copy">
+                <span class="choice-title">Roll back the new code</span>
+                <span class="choice-detail">Return servers to the prior version.</span>
+              </span>
+            </label>
+            <label class="choice incident-choice">
+              <input type="radio" name="response" value="halt">
+              <span class="choice-copy">
+                <span class="choice-title">Halt SMARS from sending orders</span>
+                <span class="choice-detail">Stop the router while the issue is assessed.</span>
+              </span>
+            </label>
+          </div>
+        </fieldset>
+        <div class="actions">
+          <button class="button" type="submit" id="apply-response" disabled>Apply response and continue</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel screen" id="reveal" aria-labelledby="reveal-title" hidden>
+      <div class="section-heading">
+        <p class="section-kicker">04 · reveal</p>
+        <h2 id="reveal-title" tabindex="-1">What the record shows</h2>
+        <p class="subtle">The three mechanics behind the incident are grounded in the SEC order. The model counters remain illustrative.</p>
+      </div>
+
+      <div class="result-box" id="result-box" aria-live="polite" role="status">
+        <h3 class="result-title" id="result-title"></h3>
+        <p class="result-copy" id="result-copy"></p>
+      </div>
+
+      <ol class="reveal-list">
+        <li>
+          <p><strong>One of eight servers missed the new code.</strong> The other seven processed the RLP orders correctly. The SEC says one technician did not copy the code to the eighth server; Knight did not have a second technician review the deployment and had no written procedures requiring that review. <a class="source-ref" href="#source-S2">S2</a></p>
+        </li>
+        <li>
+          <p><strong>A reused flag woke retired code.</strong> Power Peg was no longer used, but its code remained callable. The RLP change reused a flag that had previously activated Power Peg. A cumulative-share tracking function had moved earlier in the SMARS sequence in 2005 and was not retested; the eighth server then repeated child orders without regard to executions already received. <a class="source-ref" href="#source-S2">S2</a> <a class="source-ref" href="#source-S3">S3</a></p>
+        </li>
+        <li>
+          <p><strong>Removing the new code from seven servers made things worse.</strong> The SEC says that action caused additional parent orders to activate Power Peg on those servers, like on the eighth. The eight-server rollback branch in this model is illustrative. <a class="source-ref" href="#source-S5">S5</a></p>
+        </li>
+      </ol>
+
+      <p class="supporting-note"><strong>Before the open:</strong> 97 automated BNET reject e-mails began around 8:01 a.m. ET and referenced SMARS and Power Peg. The order says they were generally not reviewed as system alerts. <a class="source-ref" href="#source-S4">S4</a></p>
+
+      <section class="impact-card" aria-labelledby="impact-title">
+        <h3 id="impact-title">Historical impact · August 1, 2012 · SEC findings</h3>
+        <ul class="impact-list">
+          <li>212 parent orders</li>
+          <li>About 45 minutes</li>
+          <li>Over 4 million executions</li>
+          <li>154 stocks</li>
+          <li>More than 397 million shares</li>
+          <li>About $3.5B net long in 80 stocks</li>
+          <li>About $3.15B net short in 74 stocks</li>
+          <li>Over $460M loss</li>
+        </ul>
+        <p class="supporting-note">The order reports an approximately 45-minute event; 10:15 is calculated from the 9:30 market open, not an exact stop time stated in the order. <a class="source-ref" href="#source-S1">S1</a></p>
+      </section>
+
+      <p class="controls-line"><strong>Controls:</strong> The order found no procedures to halt SMARS in response to its own aberrant activity, and no supervisory procedures to guide incident response. It does not name a specific kill-switch device. <a class="source-ref" href="#source-S6">S6</a></p>
+
+      <section class="source-register" aria-labelledby="sources-title">
+        <h3 id="sources-title">Source register</h3>
+        <ol class="source-list">
+          <li id="source-S1"><span class="source-id">S1.</span> SEC Order, §III, ¶1 — date, duration, execution, share, position, and loss figures.</li>
+          <li id="source-S2"><span class="source-id">S2.</span> SEC Order, §III, ¶¶12–13, 15–16 — RLP code, retained Power Peg code, reused flag, and missed server.</li>
+          <li id="source-S3"><span class="source-id">S3.</span> SEC Order, §III, ¶¶14, 16 — moved cumulative-share tracking and repeated child orders.</li>
+          <li id="source-S4"><span class="source-id">S4.</span> SEC Order, §III, ¶19 — pre-open automated e-mails.</li>
+          <li id="source-S5"><span class="source-id">S5.</span> SEC Order, §III, ¶27 — removal of new code from seven servers and worsening effect.</li>
+          <li id="source-S6"><span class="source-id">S6.</span> SEC Order, §III, ¶¶21, 26–27 — SMARS, deployment, unused-code, and incident-response controls.</li>
+        </ol>
+        <p class="supporting-note"><a href="sources-knight.md">Open the full source register and official SEC PDF link</a>.</p>
+      </section>
+
+      <div class="actions">
+        <button class="button secondary" id="try-again" type="button">Run another scenario</button>
+      </div>
+    </section>
+
+    <footer>
+      Educational simulation, not financial advice. Historical findings are sourced to the SEC order. Choices, cost estimates, model units, animation timing, and counterfactual outcomes are illustrative; no counterfactual firm outcome is claimed.
+    </footer>
+  </main>
+  <script>
+    /* MODEL-START */
+    const MODEL_TIMES = [
+      { minute: 0, time: "9:30 a.m." },
+      { minute: 1, time: "9:31 a.m." },
+      { minute: 5, time: "9:35 a.m." },
+      { minute: 15, time: "9:45 a.m." },
+      { minute: 30, time: "10:00 a.m." },
+      { minute: 45, time: "10:15 a.m." }
+    ];
+
+    function simulate(state) {
+      const vulnerable =
+        state.deployment === "manual" &&
+        state.featureFlag === "reuse" &&
+        state.deadCode === "leave";
+      const response = state.response || "continue";
+      const halted = vulnerable && response === "halt";
+      const rolledBack = vulnerable && response === "rollback";
+      const serversRunningFault = !vulnerable || halted ? 0 : (rolledBack ? 8 : 1);
+      const cause = vulnerable
+        ? {
+            server: 8,
+            source: ["S2", "S3"],
+            description: "The eighth server kept callable Power Peg code; the reused flag activated it, and moved fill tracking did not stop repeated child orders."
+          }
+        : null;
+      const timeline = MODEL_TIMES.map((point) => ({
+        minute: point.minute,
+        time: point.time,
+        orderCount: serversRunningFault * (point.minute + 1),
+        serversRunningFault,
+        response
+      }));
+
+      return {
+        ok: !vulnerable || halted,
+        timeline,
+        cause
+      };
+    }
+
+    function rollbackComparison(rollbackResult, continuedResult) {
+      const rollbackPoint = rollbackResult.timeline.at(-1);
+      const continuedPoint = continuedResult.timeline.at(-1);
+      return `Without the rollback, this model reaches ${continuedPoint.orderCount} units by ${continuedPoint.time}; with it, ${rollbackPoint.orderCount} (illustrative model units).`;
+    }
+    /* MODEL-END */
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const choiceForm = document.getElementById("choice-form");
+    const incidentForm = document.getElementById("incident-form");
+    const applyResponse = document.getElementById("apply-response");
+    const chooseScreen = document.getElementById("choose");
+    const runScreen = document.getElementById("run");
+    const incidentScreen = document.getElementById("incident");
+    const revealScreen = document.getElementById("reveal");
+    const timelineItems = [...document.querySelectorAll("#timeline-points li")];
+    const orderCounter = document.getElementById("order-counter");
+    const runClock = document.getElementById("run-clock");
+    const runStatus = document.getElementById("run-status");
+    const showIncident = document.getElementById("show-incident");
+    const masthead = {
+      eyebrow: document.getElementById("page-eyebrow"),
+      title: document.getElementById("page-title"),
+      lede: document.getElementById("page-lede"),
+      context: document.getElementById("page-context")
+    };
+    const mastheadCopy = {
+      choose: {
+        eyebrow: "Failure Lab · deployment simulation",
+        title: "Choose what to verify",
+        lede: "You are preparing a router change for a busy market open. Choose how to deploy it, how to gate it, and what to do with unused code.",
+        context: "The options show trade-offs. The run reveals what the record says happened."
+      },
+      run: {
+        eyebrow: "Failure Lab · deployment simulation",
+        title: "Watch the opening timeline",
+        lede: "Follow the simulated order flow from 9:30 to 10:15 a.m. ET.",
+        context: "The SEC reports an approximately 45-minute incident; animation pace is illustrative."
+      },
+      incident: {
+        eyebrow: "Failure Lab · incident response",
+        title: "Respond at the open",
+        lede: "A system signal appears while the router is connected. Choose your next action.",
+        context: "The order describes missing procedures; it does not name a specific kill-switch device."
+      },
+      reveal: {
+        eyebrow: "Failure Lab · sourced reveal",
+        title: "See what happened",
+        lede: "One missed server, one reused flag, and an attempted rollback changed the incident.",
+        context: "Historical facts link to S1–S6; simulation branches are labeled illustrative."
+      }
+    };
+    let currentChoices = null;
+    let busy = false;
+
+    function delay(ms) {
+      return new Promise((resolve) => window.setTimeout(resolve, ms));
+    }
+
+    function focusHeading(id) {
+      const heading = document.getElementById(id);
+      if (heading) {
+        heading.focus({ preventScroll: true });
+        heading.scrollIntoView({ block: "start", behavior: reducedMotion ? "auto" : "smooth" });
+      }
+    }
+
+    function showStage(stage) {
+      chooseScreen.hidden = stage !== "choose";
+      runScreen.hidden = stage !== "run" && stage !== "incident";
+      incidentScreen.hidden = stage !== "incident";
+      revealScreen.hidden = stage !== "reveal";
+      if (stage === "choose" || stage === "incident") showIncident.hidden = true;
+      masthead.eyebrow.textContent = mastheadCopy[stage].eyebrow;
+      masthead.title.textContent = mastheadCopy[stage].title;
+      masthead.lede.textContent = mastheadCopy[stage].lede;
+      masthead.context.textContent = mastheadCopy[stage].context;
+      if (stage === "choose") focusHeading("choose-title");
+      if (stage === "run") focusHeading("run-title");
+      if (stage === "incident") focusHeading("incident-title");
+      if (stage === "reveal") focusHeading("reveal-title");
+    }
+
+    function readChoices() {
+      const data = new FormData(choiceForm);
+      return {
+        deployment: data.get("deployment"),
+        featureFlag: data.get("featureFlag"),
+        deadCode: data.get("deadCode")
+      };
+    }
+
+    function markTimeline(activeIndex) {
+      timelineItems.forEach((item, index) => {
+        item.classList.toggle("is-complete", index < activeIndex);
+        if (index === activeIndex) item.setAttribute("aria-current", "step");
+        else item.removeAttribute("aria-current");
+      });
+    }
+
+    function renderPoint(point, index) {
+      markTimeline(index);
+      orderCounter.textContent = String(point.orderCount);
+      runClock.textContent = point.time + " ET";
+    }
+
+    async function previewOpen() {
+      const preview = simulate({ ...currentChoices, response: "continue" });
+      renderPoint(preview.timeline[0], 0);
+      if (preview.cause === null) {
+        await finishRun("continue");
+        return;
+      }
+      runStatus.textContent = "9:30 a.m. ET · choose your response at the open.";
+      if (!reducedMotion) {
+        await delay(700);
+      }
+      showIncident.hidden = false;
+      showIncident.focus();
+    }
+
+    function resultText(result, response) {
+      if (result.cause === null) {
+        return {
+          title: "No repeated-order failure in this model",
+          copy: "At least one of the deployment, flag, or unused-code choices breaks the modeled chain. This is a counterfactual simulation, not a claim about what would have happened."
+        };
+      }
+      if (response === "halt") {
+        return {
+          title: "The halt stops further accumulation",
+          copy: "The missed-server cause remains in this setup, but this model sets the repeated-order counter to zero after the router is halted. The model does not claim a historical or counterfactual firm outcome."
+        };
+      }
+      if (response === "rollback") {
+        const continued = simulate({ ...currentChoices, response: "continue" });
+        return {
+          title: "The rollback widens the modelled fault to eight servers",
+          copy: "The rollback returns all eight servers to the old code with the reused flag still on. The SEC order says removing the new code from the seven correct servers caused additional parent orders to activate Power Peg (S5). " + rollbackComparison(result, continued)
+        };
+      }
+      return {
+        title: "The missed server keeps repeating child orders",
+        copy: "The model leaves the eighth server running the retained code. Its repeated-order count and timeline are illustrative; the historical figures are listed below."
+      };
+    }
+
+    function revealResult(result, response) {
+      const copy = resultText(result, response);
+      const box = document.getElementById("result-box");
+      box.classList.toggle("is-failure", !result.ok);
+      document.getElementById("result-title").textContent = copy.title;
+      document.getElementById("result-copy").textContent = copy.copy;
+    }
+
+    async function finishRun(response) {
+      const result = simulate({ ...currentChoices, response });
+      showStage("run");
+      renderPoint(result.timeline[0], 0);
+      const safePath = result.cause === null;
+      const noSignalStatus = (point) => `${point.time} ET · no repeated-order signal in this model (illustrative).`;
+      runStatus.textContent = safePath
+        ? noSignalStatus(result.timeline[0])
+        : response === "halt"
+          ? "Response applied · halting the router."
+          : "9:30 a.m. ET · response applied; continuing the opening timeline.";
+
+      if (reducedMotion) {
+        const lastIndex = result.timeline.length - 1;
+        renderPoint(result.timeline[lastIndex], lastIndex);
+        if (safePath) runStatus.textContent = noSignalStatus(result.timeline[lastIndex]);
+        revealResult(result, response);
+        showStage("reveal");
+        return;
+      }
+
+      for (let index = 1; index < result.timeline.length; index += 1) {
+        renderPoint(result.timeline[index], index);
+        runStatus.textContent = safePath
+          ? noSignalStatus(result.timeline[index])
+          : result.timeline[index].time + " ET · illustrative model count: " + result.timeline[index].orderCount + ".";
+        await delay(420);
+      }
+      revealResult(result, response);
+      showStage("reveal");
+    }
+
+    choiceForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (busy) return;
+      busy = true;
+      currentChoices = readChoices();
+      showIncident.hidden = true;
+      showStage("run");
+      await previewOpen();
+      busy = false;
+    });
+
+    showIncident.addEventListener("click", () => {
+      showStage("incident");
+    });
+
+    incidentForm.addEventListener("change", () => {
+      applyResponse.disabled = !incidentForm.querySelector('input[name="response"]:checked');
+    });
+
+    incidentForm.addEventListener("submit", async (event) => {
+      event.preventDefault();
+      if (busy) return;
+      const selected = incidentForm.querySelector('input[name="response"]:checked');
+      if (!selected) return;
+      busy = true;
+      await finishRun(selected.value);
+      busy = false;
+    });
+
+    document.getElementById("try-again").addEventListener("click", () => {
+      incidentForm.reset();
+      applyResponse.disabled = true;
+      orderCounter.textContent = "0";
+      runClock.textContent = "9:30 a.m. ET";
+      runStatus.textContent = "Preparing the opening step.";
+      markTimeline(0);
+      currentChoices = null;
+      showStage("choose");
+    });
+  </script>
+</body>
+</html>

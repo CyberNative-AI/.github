@@ -1,0 +1,16 @@
+Failure Lab
+
+Prepared with AI assistance. Published by CyberNative AI LLC.
+Corrections: hello@cybernative.ai.
+
+The MIT licence applies only to the original software and documentation
+created for Failure Lab by CyberNative AI LLC. Third-party material,
+including attributed excerpts reproduced in these files and linked inquiry,
+regulatory and postmortem records, is excluded from that grant and remains
+subject to its respective rights. The source registers identify the
+publishers and cited passages. No source PDF or complete third-party record
+is bundled.
+
+Models and counterfactual outcomes are illustrative. This is not a
+certification and makes no training-efficacy claim. Outside usefulness and
+learning outcomes have not been established.

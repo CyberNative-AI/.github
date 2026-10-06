@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Failure Lab — interactive engineering post-mortems</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --navy: #0f1b2d;
+      --panel: #16253a;
+      --panel-raised: #1b2d44;
+      --line: #687d95;
+      --paper: #f5f4ef;
+      --muted: #c0cad6;
+      --amber: #f2b134;
+      --red: #ff786f;
+      --ink: #0f1b2d;
+      --focus: #ffe09a;
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { background: var(--navy); }
+
+    body {
+      margin: 0;
+      background: var(--navy);
+      color: var(--paper);
+      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--amber); text-underline-offset: .18em; }
+
+    :focus-visible {
+      outline: 3px solid var(--focus);
+      outline-offset: 3px;
+    }
+
+    h1, h2, h3, p { margin-top: 0; }
+
+    .page {
+      width: min(100% - 32px, 1200px);
+      margin: 0 auto;
+      padding: 40px 0 48px;
+    }
+
+    .masthead {
+      display: grid;
+      grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+      gap: 24px 48px;
+      align-items: end;
+      padding-bottom: 32px;
+      margin-bottom: 32px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow, .kicker {
+      margin: 0 0 12px;
+      color: var(--amber);
+      font-size: .78rem;
+      font-weight: 750;
+      letter-spacing: .11em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 19ch;
+      margin-bottom: 0;
+      font-size: clamp(2.1rem, 5.2vw, 4rem);
+      line-height: 1.02;
+      letter-spacing: -.035em;
+      text-wrap: balance;
+    }
+
+    .method { margin: 0; padding: 0; list-style: none; counter-reset: step; display: grid; gap: 10px; }
+
+    .method li {
+      display: grid;
+      grid-template-columns: 34px minmax(0, 1fr);
+      gap: 12px;
+      align-items: baseline;
+      color: var(--muted);
+      font-size: .95rem;
+      counter-increment: step;
+    }
+
+    .method li::before {
+      content: "0" counter(step);
+      color: var(--amber);
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .method strong { color: var(--paper); }
+
+    .cases-heading {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 6px 16px;
+      align-items: baseline;
+      margin-bottom: 14px;
+    }
+
+    .cases-heading h2 { margin: 0; font-size: 1.3rem; line-height: 1.2; }
+    .cases-heading p { margin: 0; color: var(--muted); font-size: .88rem; }
+
+    .cases {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .case {
+      position: relative;
+      display: grid;
+      grid-template-rows: auto auto auto 1fr auto;
+      min-width: 0;
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: var(--panel);
+      transition: background-color .15s ease, border-color .15s ease;
+    }
+
+    .case:hover { border-color: var(--amber); background: var(--panel-raised); }
+    .case:focus-within { border-color: var(--focus); }
+
+    .case-top span:last-child { text-align: right; }
+    .case-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 22px;
+      color: var(--muted);
+      font-size: .8rem;
+      font-weight: 700;
+      letter-spacing: .06em;
+      text-transform: uppercase;
+    }
+
+    .case-year {
+      color: var(--paper);
+      font-size: clamp(3rem, 4.4vw, 4.6rem);
+      font-weight: 800;
+      line-height: .85;
+      letter-spacing: -.05em;
+      font-variant-numeric: tabular-nums;
+      text-transform: none;
+    }
+
+    /* Each scenario runs on its own clock; dots mark recorded moments. */
+    .clock { margin: 0 0 20px; color: var(--muted); font-size: .75rem; font-variant-numeric: tabular-nums; }
+    .clock-track { position: relative; display: block; height: 2px; margin: 9px 0 7px; background: var(--line); }
+    .clock-track i {
+      position: absolute;
+      top: 50%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--paper);
+      transform: translate(-50%, -50%);
+    }
+    .clock-track i.start { background: var(--amber); }
+    .clock-labels { display: flex; justify-content: space-between; gap: 12px; }
+
+    .case h3 { margin-bottom: 10px; font-size: 1.45rem; line-height: 1.15; letter-spacing: -.015em; }
+
+    .case h3 a { color: var(--paper); text-decoration: none; }
+
+    /* The whole card is the link target; the heading link carries the name and focus. */
+    .case h3 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+    .case h3 a:focus-visible { outline: none; }
+    .case h3 a:focus-visible::after { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+    .case-brief { margin-bottom: 20px; color: var(--muted); max-width: 52ch; }
+
+    .case-facts {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr);
+      gap: 6px 14px;
+      margin: 0 0 20px;
+      padding-top: 16px;
+      border-top: 1px solid #33445b;
+      font-size: .86rem;
+    }
+
+    .case-facts dt { color: var(--muted); }
+    .case-facts dd { margin: 0; min-width: 0; }
+
+    .case-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      justify-self: start;
+      min-height: 48px;
+      padding: 10px 16px;
+      border-radius: 9px;
+      color: var(--ink);
+      background: var(--amber);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .case-cta span { transition: transform .15s ease; }
+    .case:hover .case-cta span { transform: translateX(3px); }
+
+    /* Facilitator entry: the masthead's second action, for teams. */
+    .masthead-side { display: grid; gap: 22px; min-width: 0; }
+    .group-entry {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 4px 16px;
+      align-items: center;
+      padding: 16px 18px;
+      border: 1px solid var(--amber);
+      border-radius: var(--radius);
+      color: var(--paper);
+      background: var(--panel);
+      text-decoration: none;
+      transition: background-color .15s ease;
+    }
+    .group-entry:hover { background: var(--panel-raised); }
+    .group-entry-kicker { color: var(--amber); font-size: .74rem; font-weight: 750; letter-spacing: .11em; text-transform: uppercase; }
+    .group-entry strong { grid-column: 1; font-size: 1.15rem; line-height: 1.2; }
+    .group-entry-copy { grid-column: 1; color: var(--muted); font-size: .88rem; }
+    .group-entry-arrow { grid-column: 2; grid-row: 1 / span 3; color: var(--amber); font-size: 1.5rem; font-weight: 800; transition: transform .15s ease; }
+    .group-entry:hover .group-entry-arrow { transform: translateX(3px); }
+
+    .case-actions { display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
+    /* Sits above the card-wide link overlay so it stays its own target. */
+    .case-group {
+      position: relative;
+      z-index: 1;
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 0 4px;
+      font-weight: 750;
+    }
+
+    footer {
+      max-width: 90ch;
+      margin: 36px 0 0;
+      padding: 14px 2px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: .82rem;
+    }
+
+    footer p { margin: 0; }
+
+    @media (max-width: 860px) {
+      .masthead { grid-template-columns: minmax(0, 1fr); gap: 22px; padding-bottom: 24px; margin-bottom: 24px; }
+      .cases { grid-template-columns: minmax(0, 1fr); gap: 14px; }
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 24px, 620px); padding-top: 20px; }
+      /* Phone: the first "Make the call" must sit above an 844px fold. */
+      .eyebrow { margin-bottom: 8px; font-size: .7rem; }
+      h1 { font-size: 1.85rem; }
+      .masthead { gap: 16px; padding-bottom: 18px; margin-bottom: 18px; }
+      .masthead-side { gap: 12px; }
+      .method { display: flex; flex-wrap: wrap; gap: 4px 16px; }
+      .method li { display: flex; grid-template-columns: none; gap: 6px; font-size: .9rem; }
+      .method-rest { display: none; }
+      .group-entry { padding: 10px 14px; }
+      .group-entry-kicker, .group-entry-copy { display: none; }
+      .group-entry-arrow { grid-row: 1; font-size: 1.2rem; }
+      .group-entry strong { font-size: 1rem; }
+      .cases-heading { margin-bottom: 10px; }
+      .cases-heading p { display: none; }
+      .case { padding: 16px 18px 14px; }
+      .case-top { align-items: center; margin-bottom: 10px; }
+      .case-year { font-size: 2.4rem; }
+      .clock { display: none; }
+      .case h3 { margin-bottom: 6px; font-size: 1.3rem; }
+      .case-brief { margin-bottom: 14px; font-size: .95rem; line-height: 1.45; }
+      .case-facts { margin-bottom: 14px; padding-top: 12px; font-size: .82rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; }
+      .case:hover .case-cta span, .group-entry:hover .group-entry-arrow { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="masthead">
+      <div>
+        <p class="eyebrow">Failure Lab · interactive engineering post&#8209;mortems</p>
+        <h1>Make the call the engineers made, then see what the record says happened.</h1>
+      </div>
+      <div class="masthead-side">
+        <ol class="method" aria-label="How each scenario works">
+          <li><span><strong>Decide</strong><span class="method-rest"> with the evidence the team had at the time.</span></span></li>
+          <li><span><strong>Run</strong><span class="method-rest"> a simplified model of the system.</span></span></li>
+          <li><span><strong>Read</strong><span class="method-rest"> what the official record found, passage by passage.</span></span></li>
+        </ol>
+        <a class="group-entry" href="group.html" id="group-entry">
+          <span class="group-entry-kicker">For a team session · 25 minutes</span>
+          <strong>Run with a group</strong>
+          <span class="group-entry-copy">Projector layout, discussion timer, show-of-hands tally and a printable debrief. No preparation; nothing is saved or sent.</span>
+          <span class="group-entry-arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </header>
+
+    <section aria-labelledby="cases-title">
+      <div class="cases-heading">
+        <h2 id="cases-title">Scenarios</h2>
+        <p>No sign-up, no tracking. Each model runs entirely in your browser.</p>
+      </div>
+      <ul class="cases">
+        <li class="case" id="case-ariane">
+          <div class="case-top"><span class="case-year">1996</span><span>Flight software</span></div>
+          <div class="clock" aria-hidden="true">
+            <span class="clock-track"><i class="start" style="left:0"></i><i style="left:91.75%"></i><i style="left:97.5%"></i></span>
+            <span class="clock-labels"><span>H0</span><span>H0 + 40 s</span></span>
+          </div>
+          <h3><a href="ariane501.html">Ariane 5 Flight 501</a></h3>
+          <p class="case-brief">You are on the inertial-reference software team with an 80% processor budget. Seven conversions could overflow. Ariane 4 flight evidence says which ones matter. Choose what to protect, and whether proven behaviour keeps running after lift-off.</p>
+          <dl class="case-facts">
+            <dt>Decisions</dt><dd>A protection budget and one heritage setting</dd>
+            <dt>Record</dt><dd>ESA/CNES Inquiry Board report, 19 July 1996</dd>
+          </dl>
+          <div class="case-actions">
+            <span class="case-cta" aria-hidden="true">Make the call <span>→</span></span>
+            <a class="case-group" href="group.html#ariane">Run with a group</a>
+          </div>
+        </li>
+        <li class="case" id="case-knight">
+          <div class="case-top"><span class="case-year">2012</span><span>Trading deployment</span></div>
+          <div class="clock" aria-hidden="true">
+            <span class="clock-track"><i class="start" style="left:0"></i></span>
+            <span class="clock-labels"><span>09:30 open</span><span>10:15</span></span>
+          </div>
+          <h3><a href="knight2012.html">Knight Capital, 1 August</a></h3>
+          <p class="case-brief">New order-router code has to be live before the market opens. Choose how it ships to the servers, how it is switched on and what happens to old code. Then the opening bell rings, and you make one more call.</p>
+          <dl class="case-facts">
+            <dt>Decisions</dt><dd>Three before the open, one during it</dd>
+            <dt>Record</dt><dd>U.S. SEC order, Exchange Act Release No. 70694, 16 October 2013</dd>
+          </dl>
+          <div class="case-actions">
+            <span class="case-cta" aria-hidden="true">Make the call <span>→</span></span>
+            <a class="case-group" href="group.html#knight">Run with a group</a>
+          </div>
+        </li>
+        <li class="case" id="case-gitlab">
+          <div class="case-top"><span class="case-year">2017</span><span>Database recovery</span></div>
+          <div class="clock" aria-hidden="true">
+            <span class="clock-track"><i class="start" style="left:0"></i></span>
+            <span class="clock-labels"><span>Choose</span><span>Recover</span></span>
+          </div>
+          <h3><a href="gitlab2017.html">GitLab, 31 January</a></h3>
+          <p class="case-brief">Replication has stalled. Choose the cleanup host, check recovery readiness and select a fallback copy. Then compare your modelled result with the postmortem.</p>
+          <dl class="case-facts">
+            <dt>Decisions</dt><dd>Two before cleanup, one during recovery</dd>
+            <dt>Record</dt><dd>GitLab postmortem, 10 February 2017</dd>
+          </dl>
+          <div class="case-actions">
+            <span class="case-cta" aria-hidden="true">Make the call <span>→</span></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Failure Lab models are simplified to isolate one decision; costs, timings and counterfactual outcomes not in the record are labelled illustrative. Sources are primary: each scenario cites the official inquiry or regulatory record, passage by passage.</p>
+    </footer>
+  </main>
+</body>
+</html>
