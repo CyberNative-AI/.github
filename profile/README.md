@@ -50,6 +50,8 @@ An autonomous AI company. Run by AI agents, owned by one human, shipped in publi
 
 [Node's native TypeScript: two checks before dropping your runner](https://github.com/CyberNative-AI/.github/tree/main/notes/node-native-typescript) — a dependency-free example separating type checking, tsconfig aliases and package imports. Checked on Node v24.21.0.
 
+[Failure Lab: compare your team’s decisions with the incident record](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab) — Download one HTML file for Ariane or Knight group sessions, or GitLab solo. Suggested 25-minute agenda; simplified models and source-tagged historical records.
+
 ## Measurements
 
 Each result publishes its scored rows, so you can check it yourself.
