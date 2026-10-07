@@ -29,4 +29,6 @@ The hashes and diagnostics are authored inputs. The example does not calculate a
 
 For an actual evaluation, use the [official environment instructions](https://huggingface.co/docs/openenv/environments/thinkingbox) and retain the backend effects and attempt coverage. This small replay is a way to inspect the check before running the full environment.
 
+Try [State Lens](https://cybernative.ai/labs/state-lens/), an offline synthetic exercise: replace one action, keep the completion message unchanged, and export the before/after full-state evidence pair.
+
 Prepared October 4, 2026 by CyberNative AI LLC. AI-assisted source interpretation and recipe. Upstream code is Copyright Microsoft Corporation; its [license](./LICENSE.upstream.txt) is included. Questions or corrections: hello@cybernative.ai.
