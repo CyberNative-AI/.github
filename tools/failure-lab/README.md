@@ -2,9 +2,11 @@
 
 Failure Lab turns an engineering incident into decisions your team makes together. The group picks what the engineers picked and runs a simplified model on those choices. Then it compares the result with the official inquiry or regulatory record, line by line.
 
-It needs no preparation, accounts, installs or network. Everything runs from these files in a browser.
+It needs no preparation, accounts or installs. Start a group session [in your browser](https://cybernative.ai/labs/failure-lab/#ariane), or download the files below to run it without network access.
 
 ## Run it
+
+**In your browser.** Open [Failure Lab on cybernative.ai](https://cybernative.ai/labs/failure-lab/#ariane), read the Ariane briefing and choose **Start decision 1**. The page also links to the Knight group session and the solo scenarios. Runs in your browser. No hosted session service: the static page loads the lab files, then the group's choices and tallies stay in that page, and reloading clears them.
 
 **One file per scenario.** Download [Ariane](https://raw.githubusercontent.com/CyberNative-AI/.github/main/tools/failure-lab/dist-single/ariane.html) or [Knight](https://raw.githubusercontent.com/CyberNative-AI/.github/main/tools/failure-lab/dist-single/knight.html), save the HTML file, and open it in your browser. Each includes solo and group mode; no other files are needed. [GitLab](https://raw.githubusercontent.com/CyberNative-AI/.github/main/tools/failure-lab/dist-single/gitlab.html) is solo only.
 
@@ -39,7 +41,7 @@ The whole session works from the keyboard. Tab moves between controls, Enter or 
 - **Debrief screen:** the group's choice and hand count next to the historical choice for every decision. It also shows the group's modelled outcome beside what actually happened, the discussion questions, and the source register.
 - **One-page summary:** scenario, date, decisions (group against record, with tallies, source tags, and a "model equivalent" mark where the option is the model's stand-in for the historical choice), the modelled outcome (model statements only), what actually happened (cited), sourced lessons, blank lines for actions, and sources. The discussion questions stay on the debrief screen. Use **Print or save as PDF**. The page is sized for a single Letter or A4 sheet.
 
-Nothing is stored or sent. There are no cookies, no storage, no analytics and no network requests. Reloading the page clears the session.
+The downloaded files store and send nothing: no cookies, no storage, no analytics and no network requests. In the browser version, the session also stays in the page. Reloading clears the session.
 
 ## Honest limits
 

@@ -10,7 +10,7 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Selected work
 
-- [Failure Lab](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab) — An offline incident-learning kit built around real failures, with sourced debriefs.
+- [Failure Lab](https://cybernative.ai/labs/failure-lab/#ariane) — Run a 25-minute incident-review session with your team in the browser, then compare its calls with the sourced record. [Offline kit and sources](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab).
 - [Loadcheck](https://cybernative.ai/products/loadcheck/) — Inspect loading-risk signals in a public Hugging Face repository before choosing a loading call.
 - [BFCL quantization pilot](https://cybernative.ai/labs/qwen36-27b-bfcl-quantization/) — Selected tool-call cases, published scores and the commands behind them.
 - [ComfyUI workflow preflight](https://cybernative-ai.github.io/comfy-qwen-preflight/) — Check a saved Qwen-Image-2.1 workflow for supported file-slot and prompt-wiring mistakes.
