@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 # Rerun: ./check.sh            (needs Docker, ~1.3 GB disk, about 13 minutes; TRIALS=N to change)
 # Each trial runs query.py in a fresh container with a hard memory limit and
-# no swap, then prints one JSON line. Exit 137 means the kernel OOM-killed it.
+# no swap, then prints one JSON line. Exit 137 means SIGKILL: consistent with an
+# OOM kill under this limit; the cause is not recorded. peak_var_tmp_kb comes
+# from a du sample every 0.3 s, so short-lived spill growth can be missed.
 set -u
 cd "$(dirname "$0")"
 DATA=$(mktemp -d)
