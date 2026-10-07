@@ -22,6 +22,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[pnpm deploys: stop the second install after a frozen install](https://github.com/CyberNative-AI/.github/tree/main/notes/pnpm-frozen-run) — Four pinned releases: upgrading alone keeps the extra install; two fixes work, each with a condition to check first.
+
 [Ruff upgrades change which checks run](https://github.com/CyberNative-AI/.github/tree/main/notes/ruff-default-policy) — Pinned examples show a newly caught shared-list bug, a removed lambda check and how to retain both checks.
 
 [Embedding sequence caps: check what your chunks lose](https://github.com/CyberNative-AI/.github/tree/main/notes/embedding-sequence-caps) — Ten pinned models; configured caps, tokenizer limits and a local corpus counter. Tokenizer-only evidence.

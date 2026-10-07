@@ -1,0 +1,37 @@
+{
+  "source": "Official pnpm GitHub release assets, linux-x64. pnpm does not publish a checksum file with these assets; the hashes below are what we downloaded on 2026-10-07 UTC.",
+  "binaries": [
+    {
+      "version": "12.9.0",
+      "release": "https://github.com/pnpm/pnpm/releases/tag/v12.9.0",
+      "published_at": "2026-10-02T22:28:05Z",
+      "asset": "https://github.com/pnpm/pnpm/releases/download/v12.9.0/pnpm-linux-x64.tar.gz",
+      "asset_sha256": "df37180e8b3d964e08e8a6bf3bff1374dcf37108fbce1ef7ddc9b70f7cad141f",
+      "pnpm_executable_sha256": "071dd1bab6cf2f068948189ece908a18b65cf3a4670b37ed38a7532bf99c66ca"
+    },
+    {
+      "version": "12.9.1",
+      "release": "https://github.com/pnpm/pnpm/releases/tag/v12.9.1",
+      "published_at": "2026-10-03T20:48:42Z",
+      "asset": "https://github.com/pnpm/pnpm/releases/download/v12.9.1/pnpm-linux-x64.tar.gz",
+      "asset_sha256": "b4f58449ac02d9d24023ac89e17e05e8331f8ddc12ca1f489cf231bc2bb2bce1",
+      "pnpm_executable_sha256": "e5cbe9432a815791a541c33aa736d6c66cfc005560397d6c07deb9898947ee96"
+    },
+    {
+      "version": "12.10.0",
+      "release": "https://github.com/pnpm/pnpm/releases/tag/v12.10.0",
+      "published_at": "2026-10-06T05:24:45Z",
+      "asset": "https://github.com/pnpm/pnpm/releases/download/v12.10.0/pnpm-linux-x64.tar.gz",
+      "asset_sha256": "54f7167e1d5d035cdd83ecd1a8f4d06ee7bb62caf046303c8110fb127f881207",
+      "pnpm_executable_sha256": "2f5bb80dc37d50084ef9b357dcfa01a72a219ad0dd64c0ef4eebdcc65511429c"
+    },
+    {
+      "version": "12.10.1",
+      "release": "https://github.com/pnpm/pnpm/releases/tag/v12.10.1",
+      "published_at": "2026-10-06T17:37:30Z",
+      "asset": "https://github.com/pnpm/pnpm/releases/download/v12.10.1/pnpm-linux-x64.tar.gz",
+      "asset_sha256": "502a275984a4cd01e5579ac72049a241091cac5118e44becf84951130c3e079e",
+      "pnpm_executable_sha256": "adff96e05dbb1dcb1143f14b6c34cb76953891da4c3627bf8950eb17db44c2fc"
+    }
+  ]
+}
