@@ -1,0 +1,80 @@
+{
+ "transformers": "5.18.0",
+ "torch": "2.14.1+cu130",
+ "python": "3.12.3",
+ "tokenizer": "openai-community/gpt2@607a30d783dfa663caf39e06633721c8d4cfcd7e",
+ "watermarking_config": {
+  "greenlist_ratio": 0.25,
+  "bias": 2.0,
+  "hashing_key": 15485863,
+  "seeding_scheme": "lefthash",
+  "context_width": 1
+ },
+ "window_tokens": 200,
+ "counts": {
+  "prose": {
+   "windows": 239,
+   "same_z_with_and_without_ignore": 239,
+   "flagged_z>3.0_ignore_False": 5,
+   "flagged_z>3.0_ignore_True": 5,
+   "flagged_z>4.0_ignore_False": 3,
+   "flagged_z>4.0_ignore_True": 3
+  },
+  "all": {
+   "windows": 2880,
+   "same_z_with_and_without_ignore": 2880,
+   "flagged_z>3.0_ignore_False": 2537,
+   "flagged_z>3.0_ignore_True": 2537,
+   "flagged_z>4.0_ignore_False": 2473,
+   "flagged_z>4.0_ignore_True": 2473
+  },
+  "code": {
+   "windows": 2181,
+   "same_z_with_and_without_ignore": 2181,
+   "flagged_z>3.0_ignore_False": 2122,
+   "flagged_z>3.0_ignore_True": 2122,
+   "flagged_z>4.0_ignore_False": 2068,
+   "flagged_z>4.0_ignore_True": 2068
+  },
+  "csv": {
+   "windows": 460,
+   "same_z_with_and_without_ignore": 460,
+   "flagged_z>3.0_ignore_False": 410,
+   "flagged_z>3.0_ignore_True": 410,
+   "flagged_z>4.0_ignore_False": 402,
+   "flagged_z>4.0_ignore_True": 402
+  }
+ },
+ "highest_z_ignore_True": [
+  {
+   "file": "modeling_utils.py",
+   "token_offset": 23200,
+   "z_ignore_True": 18.7,
+   "z_ignore_False": 18.7
+  },
+  {
+   "file": "modeling_utils.py",
+   "token_offset": 23400,
+   "z_ignore_True": 18.38,
+   "z_ignore_False": 18.38
+  },
+  {
+   "file": "generation_utils.py",
+   "token_offset": 105800,
+   "z_ignore_True": 18.21,
+   "z_ignore_False": 18.21
+  },
+  {
+   "file": "trainer.py",
+   "token_offset": 42800,
+   "z_ignore_True": 18.05,
+   "z_ignore_False": 18.05
+  },
+  {
+   "file": "generation_utils.py",
+   "token_offset": 106000,
+   "z_ignore_True": 17.89,
+   "z_ignore_False": 17.89
+  }
+ ]
+}

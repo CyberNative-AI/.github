@@ -22,6 +22,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[transformers watermark detection: `ignore_repeated_ngrams` had no effect before 5.19.0](https://github.com/CyberNative-AI/.github/tree/main/notes/watermark-repeated-ngrams) — On 2,880 windows of human text, 5.18.0 flagged 2,537 as watermarked with the option on; 5.19.0 flagged 13. Default key, GPT-2 tokenizer.
+
 [pnpm deploys: stop the second install after a frozen install](https://github.com/CyberNative-AI/.github/tree/main/notes/pnpm-frozen-run) — Four pinned releases: upgrading alone keeps the extra install; two fixes work, each with a condition to check first.
 
 [Ruff upgrades change which checks run](https://github.com/CyberNative-AI/.github/tree/main/notes/ruff-default-policy) — Pinned examples show a newly caught shared-list bug, a removed lambda check and how to retain both checks.
