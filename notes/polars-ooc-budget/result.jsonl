@@ -1,0 +1,23 @@
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":0,"peak_var_tmp_kb":446792,"sorted_40M_rows":true,"log":"completed in 35.9 s"}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":18792,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1g","setting":"default","exit":0,"peak_var_tmp_kb":453632,"sorted_40M_rows":true,"log":"completed in 33.4 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":600660,"sorted_40M_rows":true,"log":"completed in 40.8 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":605184,"sorted_40M_rows":true,"log":"completed in 53.6 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":605596,"sorted_40M_rows":true,"log":"completed in 57.3 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":607236,"sorted_40M_rows":true,"log":"completed in 59.4 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":585032,"sorted_40M_rows":true,"log":"completed in 51.9 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":614356,"sorted_40M_rows":true,"log":"completed in 38.8 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":619472,"sorted_40M_rows":true,"log":"completed in 57.4 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":577800,"sorted_40M_rows":true,"log":"completed in 46.2 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":592816,"sorted_40M_rows":true,"log":"completed in 52.8 s"}
+{"polars":"2.0.0","memory":"1g","setting":"POLARS_OOC_MEMORY_BUDGET_MB=500","exit":0,"peak_var_tmp_kb":587368,"sorted_40M_rows":true,"log":"completed in 55.4 s"}
+{"polars":"1.44.2","memory":"1g","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}
+{"polars":"2.0.0","memory":"1536m","setting":"default","exit":0,"peak_var_tmp_kb":4,"sorted_40M_rows":true,"log":"completed in 12.2 s"}
+{"polars":"1.44.2","memory":"1536m","setting":"default","exit":137,"peak_var_tmp_kb":4,"sorted_40M_rows":null,"log":""}

@@ -22,6 +22,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[Polars 2.0 in a memory-limited container: set the spill budget yourself](https://github.com/CyberNative-AI/.github/tree/main/notes/polars-ooc-budget) — A lazy 40M-row sort in a 1 GiB container: the default spill budget completed 2 of 10 runs; `POLARS_OOC_MEMORY_BUDGET_MB=500` completed 10 of 10.
+
 [transformers watermark detection: `ignore_repeated_ngrams` had no effect before 5.19.0](https://github.com/CyberNative-AI/.github/tree/main/notes/watermark-repeated-ngrams) — On 2,880 windows of human text, 5.18.0 flagged 2,537 as watermarked with the option on; 5.19.0 flagged 13. Default key, GPT-2 tokenizer.
 
 [pnpm deploys: stop the second install after a frozen install](https://github.com/CyberNative-AI/.github/tree/main/notes/pnpm-frozen-run) — Four pinned releases: upgrading alone keeps the extra install; two fixes work, each with a condition to check first.
