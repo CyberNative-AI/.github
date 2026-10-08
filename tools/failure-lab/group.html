@@ -42,7 +42,7 @@
     :focus-visible { outline: 4px solid var(--focus); outline-offset: 3px; }
 
     h1, h2, h3, p, ol, ul { margin-top: 0; }
-    h2:focus { outline: none; }
+    h1:focus, h2:focus { outline: none; }
 
     .sr-only {
       position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
@@ -247,6 +247,8 @@
     .tally-toggle { display: flex; gap: 12px; align-items: center; min-height: 48px; margin-top: 16px; font-weight: 700; cursor: pointer; }
     .tally-toggle input { width: 1.1rem; height: 1.1rem; margin: 0; accent-color: var(--amber); }
     .form-error { margin: 14px 0 0; padding: 10px 14px; border-left: 6px solid var(--red); border-radius: 0 8px 8px 0; background: #2a1d2a; color: var(--paper); font-weight: 700; }
+    .choice-set > .form-error { margin: 0 0 12px; }
+    .options > .form-error { margin: 0; }
 
     /* Run */
     .outcome { max-width: 1100px; }
@@ -321,6 +323,8 @@
       .option.has-tally { grid-template-columns: minmax(0, 1fr); gap: 6px; }
       .tally-field { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 6px 12px; }
       .tally-field input { width: 5.5rem; flex: none; }
+      /* The projector scale sits on an 18px root here, so its small tiers fall to 13-15px. Phone reading text, including model limits and sources, stays at 16px. */
+      .note, .small, .scenario p, .agenda li, .timer-state, .counter span, .register, .compare .record-note { font-size: 16px; }
     }
 
     @media (max-width: 760px) {
@@ -784,19 +788,37 @@
         document.querySelectorAll("#decide-options .option").forEach(function (o) { o.classList.toggle("has-tally", on); });
         if (!on) document.querySelectorAll(".tally-field input").forEach(function (i) { i.removeAttribute("aria-invalid"); });
       }
-      $("tally-on").addEventListener("change", function () { syncTally(); clearError(); });
+      $("tally-on").addEventListener("change", function () {
+        // The count fields open above the toggle; keep the toggle where it was pressed.
+        const toggle = $("tally-on");
+        const before = toggle.getBoundingClientRect().top;
+        syncTally();
+        clearError();
+        window.scrollBy(0, toggle.getBoundingClientRect().top - before);
+      });
+
+      // The message sits beside the field it explains, so it is on screen when focus moves there.
+      const errorBox = $("decide-error");
+      const errorHome = errorBox.nextElementSibling;
 
       function clearError() {
-        $("decide-error").hidden = true;
-        $("decide-error").textContent = "";
+        errorBox.hidden = true;
+        errorBox.textContent = "";
+        errorHome.before(errorBox);
+        document.querySelectorAll("#decide-form [aria-describedby='decide-error']").forEach(function (i) { i.removeAttribute("aria-describedby"); });
         document.querySelectorAll(".tally-field input").forEach(function (i) { i.removeAttribute("aria-invalid"); });
       }
 
-      function showError(message, focusTarget) {
-        const box = $("decide-error");
-        box.textContent = message;
-        box.hidden = false;
-        if (focusTarget) focusTarget.focus();
+      function showError(message, focusTarget, anchor) {
+        if (anchor) anchor.after(errorBox);
+        errorBox.textContent = message;
+        errorBox.hidden = false;
+        if (focusTarget) {
+          focusTarget.setAttribute("aria-describedby", "decide-error");
+          focusTarget.focus({ preventScroll: true });
+          // Keep the option or question, the field and the message on screen together.
+          [anchor, focusTarget, errorBox].forEach(function (el) { if (el) el.scrollIntoView({ block: "nearest" }); });
+        }
       }
 
       $("decide-form").addEventListener("submit", function (event) {
@@ -812,13 +834,13 @@
           if (!parsed.ok) {
             const field = $("tally-" + parsed.field);
             field.setAttribute("aria-invalid", "true");
-            showError(parsed.error, field);
+            showError(parsed.error, field, field.closest(".option"));
             return;
           }
           tally = parsed.counts;
         }
         if (!picked) {
-          showError("Choose the option the group settled on, then record it.", document.querySelector('#decide-options input[name="choice"]'));
+          showError("Choose the option the group settled on, then record it.", document.querySelector('#decide-options input[name="choice"]'), $("decide-legend"));
           return;
         }
         stopTimer();
