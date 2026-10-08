@@ -4,6 +4,16 @@ Failure Lab turns an engineering incident into decisions your team makes togethe
 
 It needs no preparation, accounts or installs. Start a group session [in your browser](https://cybernative.ai/labs/failure-lab/#ariane), or download the files below to run it without network access.
 
+## What the room sees
+
+![Ariane 5 Flight 501, decision 1 of 2: which conversions get overflow protection. A table of Ariane 4 peaks and protection costs, a question to discuss, and four options, each with an empty box for the show of hands.](frames/decide.png)
+
+*Minutes 3–13.* Each decision: the evidence, a question to discuss and the options, with a box for each show of hands.
+
+![Ariane 5 debrief from an example run. Both of the group's choices match the record. The illustrative model still reaches an overflow on BH; the record says Flight 501 broke up 39 seconds after lift-off.](frames/debrief.png)
+
+*Minutes 15–23.* Debrief from an example run: the group's choices beside the record, and the model's outcome beside what happened.
+
 ## Run it
 
 **In your browser.** Open [Failure Lab on cybernative.ai](https://cybernative.ai/labs/failure-lab/#ariane), read the Ariane briefing and choose **Start decision 1**. The page also links to the Knight group session and the solo scenarios. Runs in your browser. No hosted session service: the static page loads the lab files, then the group's choices and tallies stay in that page, and reloading clears them.
@@ -63,6 +73,7 @@ The downloaded files store and send nothing: no cookies, no storage, no analytic
 | `group-ariane.js`, `group-knight.js` | Group scenarios. Each holds a byte-for-byte copy of its page's model, plus prompts, record notes, questions and lessons, all tied to that page's source register. |
 | `group.test.mjs` | Node tests for the facilitator state, sourcing, model custody and the no-network boundary. |
 | `dist-single/ariane.html`, `dist-single/knight.html`, `dist-single/gitlab.html` | One self-contained file per scenario, built from the files above. Ariane and Knight include solo and group mode; GitLab is solo only. |
+| `frames/decide.png`, `frames/debrief.png` | The two pictures above, captured from `group.html` (Ariane, first option at each decision, no show of hands recorded). |
 
 To run the included checks, use Node's built-in test runner: `node --test test.mjs knight.test.mjs group.test.mjs`. The browser application itself does not require Node.
 
