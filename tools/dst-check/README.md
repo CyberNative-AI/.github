@@ -10,6 +10,25 @@ Adjust the path to the extracted checker. It runs the scheduler version in **you
 
 Requires Node 20 or newer; tested on Node 22.23.2, ICU 78.2, tzdata 2026a. Node 20 has not been independently exercised. The checker bundles its clock dependency and needs no install or network access to run; your project must already have the selected scheduler installed.
 
+## What a report looks like
+
+A daily 03:00 job in Berlin on `cron@4.4.0`, checked across 2026 ([setup](#try-it-in-an-empty-project)):
+
+```text
+DST check: 0 0 3 * * * | Europe/Berlin | cron@4.4.0
+
+GAP 2026-03-29T01:00:00.000Z (60 minutes)
+  ok         2026-03-29T01:00:00.000Z | 2026-03-29T03:00:00+02:00
+
+OVERLAP 2026-10-25T01:00:00.000Z (-60 minutes)
+  SHIFTED    2026-10-25T01:00:00.000Z | 2026-10-25T02:00:00+01:00
+  ok         2026-10-25T02:00:00.000Z | 2026-10-25T03:00:00+01:00
+
+Consequence: At least one callback ran at a local time that does not match the expression.
+```
+
+Here each row is one callback: label, UTC instant, local time. At the 25 October fall-back, the job is called at 02:00 local, outside its expression, and again at 03:00. The full report also prints three method and policy lines after the first line, and closing `Safer hint` and `Limits` lines; they are omitted here.
+
 ## Find schedule candidates and check confirmed runtime values
 
 1. From the project root, list source lines that may contain `cron`, `node-cron` or `node-schedule` calls:
