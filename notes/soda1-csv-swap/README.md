@@ -1,5 +1,7 @@
 # Socrata's SODA1 CSV goes away December 16. The documented replacement turns numbers into text.
 
+> **Correction — October 9, 2026:** The pandas and R helpers below remove every `:`-prefixed column, including computed-region columns. On San Francisco's film-location dataset (`yitu-d5am`), this drops three columns present in SODA1: `SF Find Neighborhoods`, `Analysis Neighborhoods` and `Current Supervisor Districts`. Our 21-dataset header-match result below remains a result for that sample; these helpers do not preserve the SODA1 schema for every dataset. If your pipeline uses computed-region columns, do not use the helpers unchanged. Save the old column names while SODA1 is available and compare them with the replacement before migrating.
+
 If a script, notebook or dashboard of yours downloads
 
 ```
