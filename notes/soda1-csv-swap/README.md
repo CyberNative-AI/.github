@@ -1,6 +1,6 @@
 # Socrata's SODA1 CSV goes away December 16. The documented replacement turns numbers into text.
 
-> **Correction — October 9, 2026:** The pandas and R helpers below remove every `:`-prefixed column, including computed-region columns. On San Francisco's film-location dataset (`yitu-d5am`), this drops three columns present in SODA1: `SF Find Neighborhoods`, `Analysis Neighborhoods` and `Current Supervisor Districts`. Our 21-dataset header-match result below remains a result for that sample; these helpers do not preserve the SODA1 schema for every dataset. If your pipeline uses computed-region columns, do not use the helpers unchanged. Save the old column names while SODA1 is available and compare them with the replacement before migrating.
+> **Correction — October 9, 2026, updated October 10:** The first version of the pandas and R helpers below removed every `:`-prefixed column, including computed-region columns. On San Francisco's film-location dataset (`yitu-d5am`), that dropped three columns present in SODA1: `SF Find Neighborhoods`, `Analysis Neighborhoods` and `Current Supervisor Districts`. The helpers now have a `regions` option that keeps those columns. Some portals wrote them into the old file and others didn't, so check against a saved SODA1 header, or let the checker linked below read it for you.
 
 If a script, notebook or dashboard of yours downloads
 
@@ -54,6 +54,10 @@ None of this is hidden. The same Tyler article says: "Use /query.csv for machine
 - **SODA2 `/resource/{id}.csv`** also returns plain numbers, and it isn't on Tyler's Deprecation Roadmap. It uses the same field names as `query.csv`, though, and stops at 1,000 rows unless you set `$limit`. Without it, Chicago's employee salaries came back as 1,000 of 32,021 rows, with no error.
 - **Before December 16, either way:** save one SODA1 file for each dataset you depend on. After the cutoff you can't download it again to see what changed. Don't count on the full two months, either. On October 8 the same freight-safety pipeline reported HTTP 410 `feature_deprecated` on all 16 of its SODA1 URLs. Ours still returned 200 on October 9.
 
+**For one dataset, use the checker.** Paste the `rows.csv` link into [our free checker](https://cybernative.ai/guides/socrata-rows-csv-replacement/). It asks the portal for the column list and the first line of the old file, then writes pandas and R code that rebuilds it: old names and order, numbers as numbers, dates in the old format. Your browser asks the portal directly; what you paste isn't sent to us. Once SODA1 stops answering, it can no longer read the old file's columns, so run it before December 16.
+
+The helpers below do the core of the same fix for any dataset. They don't restore dates or integer types.
+
 ### pandas
 
 ```python
@@ -63,16 +67,22 @@ import urllib.request
 import pandas as pd
 
 
-def read_socrata(portal, dataset, app_token=None):
-    """Read a Socrata dataset with its SODA1 column names and raw values."""
+def read_socrata(portal, dataset, app_token=None, regions=False):
+    """Read a Socrata dataset with its SODA1 column names and raw values.
+
+    regions=True keeps the ":@computed_region_" columns, for portals whose
+    old file had them.
+    """
     with urllib.request.urlopen(f"https://{portal}/api/views/{dataset}.json") as r:
-        old_names = {c["fieldName"]: c["name"] for c in json.load(r)["columns"]}
+        cols = [c for c in json.load(r)["columns"]
+                if (not c["fieldName"].startswith(":")
+                    or regions and c["fieldName"].startswith(":@computed_region_"))
+                and "hidden" not in (c.get("flags") or [])]
     df = pd.read_csv(
         f"https://{portal}/api/v3/views/{dataset}/query.csv",
         storage_options={"X-App-Token": app_token} if app_token else None,
     )
-    df = df.loc[:, ~df.columns.str.startswith(":")]
-    return df.rename(columns=old_names)
+    return df[[c["fieldName"] for c in cols]].rename(columns={c["fieldName"]: c["name"] for c in cols})
 
 
 df = read_socrata("data.cdc.gov", "3apk-4u4f", app_token="YOUR_APP_TOKEN")
@@ -82,15 +92,18 @@ df["End Date"] = pd.to_datetime(df["End Date"])  # dates arrive as ISO text
 ### R
 
 ```r
-read_socrata <- function(portal, dataset, app_token = NULL) {
+read_socrata <- function(portal, dataset, app_token = NULL, regions = FALSE) {
   meta <- jsonlite::fromJSON(sprintf("https://%s/api/views/%s.json", portal, dataset))
-  old_names <- setNames(meta$columns$name, meta$columns$fieldName)
-  tmp <- tempfile(fileext = ".csv")
-  download.file(sprintf("https://%s/api/v3/views/%s/query.csv", portal, dataset), tmp,
-                quiet = TRUE, headers = if (!is.null(app_token)) c("X-App-Token" = app_token))
-  df <- read.csv(tmp, check.names = FALSE)
-  df <- df[, !startsWith(names(df), ":"), drop = FALSE]
-  names(df) <- old_names[names(df)]
+  cols <- meta$columns
+  hidden <- if (is.null(cols$flags)) FALSE else vapply(cols$flags, function(f) "hidden" %in% f, TRUE)
+  keep <- !startsWith(cols$fieldName, ":") |
+    (regions & startsWith(cols$fieldName, ":@computed_region_"))
+  cols <- cols[keep & !hidden, ]
+  path <- tempfile(fileext = ".csv")
+  download.file(sprintf("https://%s/api/v3/views/%s/query.csv", portal, dataset), path, quiet = TRUE,
+                headers = if (!is.null(app_token)) c("X-App-Token" = app_token))
+  df <- read.csv(path, check.names = FALSE)[cols$fieldName]
+  names(df) <- cols$name
   df
 }
 
@@ -98,7 +111,9 @@ df <- read_socrata("data.cdc.gov", "3apk-4u4f", app_token = "YOUR_APP_TOKEN")
 df[["End Date"]] <- as.Date(df[["End Date"]])
 ```
 
-We ran both functions without a token on October 9. On 21 datasets from 16 portals, the renamed `query.csv` header matched the SODA1 header exactly. On the 9 of those small enough to download whole with pandas (3 with R), the row counts matched, every numeric SODA1 column stayed numeric and every column sum was the same. With a made-up token, both versions got HTTP 403, so the token does get sent. We haven't tested a real token, or whether `query.csv` returns every row of a very large dataset. Tyler's roadmap doesn't schedule the `/api/views/{id}.json` metadata route for removal, but it doesn't promise to keep it either; if it goes, the helper fails with an error rather than silently.
+Pass `regions=True` (in R, `regions = TRUE`) if your old file had the region columns the portal adds from a location. San Francisco's did; New York City's and Chicago's didn't.
+
+We ran both functions without a token on October 10. On 23 datasets from 17 portals, the column names they return matched the SODA1 header exactly: 21 with the default, and two San Francisco datasets with `regions=True`. With the default, San Francisco's film locations come back without their three region columns. On the 10 small enough to download whole with pandas (4 with R), the row counts matched, every numeric SODA1 column stayed numeric and every column sum was the same. With a made-up token, both versions got HTTP 403, so the token does get sent. We haven't tested a real token, or whether `query.csv` returns every row of a very large dataset. Tyler's roadmap doesn't schedule the `/api/views/{id}.json` metadata route for removal, but it doesn't promise to keep it either; if it goes, the helper fails with an error rather than silently.
 
 ### If you stay on export.csv
 
