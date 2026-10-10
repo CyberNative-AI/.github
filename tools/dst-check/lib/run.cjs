@@ -52,12 +52,14 @@ function analyze(c, run) {
     instantCounts.set(event.observedUTC, (instantCounts.get(event.observedUTC) || 0) + 1);
     return {...event, ...stamp(ms, c.tz), matchesExpression: parse(c.expr).matches(p)};
   });
-  const observed = events.map(event => event.observedUTC), observedSet = new Set(observed);
+  // An expected slot counts as observed when a callback ran in the same UTC second
+  // (some versions call back 1 ms late). An earlier second never matches.
+  const observed = events.map(event => event.observedUTC), observedSeconds = new Set(observed.map(utc => new Date(Math.floor(Date.parse(utc) / 1000) * 1000).toISOString()));
   const repeatedWallTimes = [...wallCounts.entries()].filter(([, count]) => count > 1).map(([wall, count]) => ({wall, count}));
   const duplicateInstants = [...instantCounts.entries()].filter(([, count]) => count > 1).map(([utc, count]) => ({utc, count}));
   const flags = {
     gapSlots: expected.nonexistent.length,
-    missingFirstSlots: expected.first.filter(utc => !observedSet.has(utc)),
+    missingFirstSlots: expected.first.filter(utc => !observedSeconds.has(utc)),
     repeatedWallTimes,
     duplicateInstants,
     outOfExpression: events.filter(event => !event.matchesExpression).map(event => event.observedUTC),

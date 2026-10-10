@@ -59,7 +59,19 @@ function dstConsequences(results) {
     hint: 'Choose a fixed UTC cadence only if changing local fire times across offset changes and regions is acceptable. If fixed local wall time is required, use the intended IANA timezone and re-test the exact expression, timezone and installed library version. UTC is not a universal fix for library defects.'
   };
 }
-function consequences(results) {
+function versionHint(results, installed) {
+  const match = installed && installed.name === 'node-cron' && /^(\d+)\.(\d+)\./.exec(installed.version || '');
+  if (!match || Number(match[1]) !== 4 || Number(match[2]) >= 3) return '';
+  const noCallback = results.some(result => (result.rows || []).some(row => row.label === 'MISSED' && row.utc && !row.reasonCode &&
+    !(result.events || []).some(event => event.local.slice(0, 19) === row.local.slice(0, 19))));
+  if (!noCallback) return '';
+  return ' Installed node-cron@' + installed.version + ' is the likely cause of an occurrence with no callback: in controlled-time checks, node-cron 4.0 to 4.2 skipped some runs on clock-change days, and whether a run was skipped can depend on when the process started. Upgrade to node-cron 4.3.0 or newer and re-test the exact expression, timezone and installed library version.';
+}
+function consequences(results, installed) {
+  const guidance = policyConsequences(results);
+  return {...guidance, hint: guidance.hint + versionHint(results, installed)};
+}
+function policyConsequences(results) {
   const policyRows = results.flatMap(result => result.rows || []).filter(row => row.reasonCode === 'CALENDAR_POLICY_DIFFERENCE');
   if (!policyRows.length) return dstConsequences(results);
   const filtered = results.map(result => ({...result, rows: (result.rows || []).filter(row => row.reasonCode !== 'CALENDAR_POLICY_DIFFERENCE')}));
@@ -87,7 +99,7 @@ function main() {
     const run = execute(request), analysis = analyze({id: transition.kind, library: installed.name, version: installed.version, expr: options.expression, tz: options.zone, from: request.from, to: request.to, transition}, run);
     return {transition, events: analysis.events, rows: analysis.rows, flags: analysis.flags, run};
   });
-  const guidance = consequences(results);
+  const guidance = consequences(results, installed);
   const report = {expression: options.expression, zone: options.zone, library: installed.name, version: installed.version,
     calendarPolicy, methodLimits,
     comparisonPolicy: 'Skip nonexistent wall slots and use the first occurrence of a repeated wall time. This is a comparison policy, not a universal DST rule.',
