@@ -1,0 +1,130 @@
+{
+  "files": [
+    {
+      "bytes": 11357,
+      "file": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "bytes": 7917,
+      "file": "NOTE.md",
+      "sha256": "52ca403840c1b3c4ee07023a6f0dc1ec58f9cd506b1819be40c4b8b068b068cc"
+    },
+    {
+      "bytes": 908,
+      "file": "NOTICE",
+      "sha256": "b56623e73e63b6204edfda32244159d64ada0be3c08567cd62e0456502cc9545"
+    },
+    {
+      "bytes": 4402,
+      "file": "PROVENANCE.md",
+      "sha256": "d1bfd686baa078b78f202697a5c8c035e45d07db834794c69a14a2bf3f0134f3"
+    },
+    {
+      "bytes": 5548,
+      "file": "README.md",
+      "sha256": "225cf0b51359a40d3e02563a4f62ec35e5a6c1ab145d02413fce6c0e378313dd"
+    },
+    {
+      "bytes": 7431,
+      "file": "smolagents/smolagents-body.md",
+      "sha256": "b892f2e12b006b6a08d8253ba2d9933edbb15465139efda35c7a1dacbec4a461"
+    },
+    {
+      "bytes": 88,
+      "file": "smolagents/smolagents-title.txt",
+      "sha256": "c909adae9a29c7e0f1f5bc64ac5b3d7d93f549c44f47947b6d2a3f044bcb5450"
+    },
+    {
+      "bytes": 2435,
+      "file": "smolagents/smolagents_repro.py",
+      "sha256": "5374146734c89ad92ca8f6f4b37d4a6af05cb8017d42aef7f9b961c66d5358c8"
+    },
+    {
+      "bytes": 561,
+      "file": "source/Dockerfile",
+      "sha256": "3becc81f1e881b76fb1cbf604122506b632de71cdffb2380913ea8697756e937"
+    },
+    {
+      "bytes": 2401,
+      "file": "source/MANIFEST.json",
+      "sha256": "00ea7e1a724997dbc46ecb7638c8442352d7f7c8e5011d04df41afe2b5a22dc6"
+    },
+    {
+      "bytes": 4664,
+      "file": "source/analyze.py",
+      "sha256": "5b61d15d4eb5c35f02f58eeb6c758500e978284f08677c57a226e731e7fa398e"
+    },
+    {
+      "bytes": 39162,
+      "file": "source/cells.jsonl",
+      "sha256": "ab4521440171f53ed5e037e1e441e945a0493486d5507f7eaad9921089df8816"
+    },
+    {
+      "bytes": 3431,
+      "file": "source/drive.py",
+      "sha256": "26275daff9bd5cd1b2ed59bd30a2bc2163f1c097d4e7321811278f15828fe74d"
+    },
+    {
+      "bytes": 6324,
+      "file": "source/facts.json",
+      "sha256": "c472c4f13a74650249c0f483a23c9eb45d9cf9afc40c272fcfeb40db215c15a0"
+    },
+    {
+      "bytes": 6161,
+      "file": "source/mock_llm.py",
+      "sha256": "a55990d0d3d8fa7bc6d3f5d0d4ad450fc3aeff98e64b3bab751b74abac07748f"
+    },
+    {
+      "bytes": 511,
+      "file": "source/req-autogen.txt",
+      "sha256": "9134bfb6f737a232ea30ee0ce7ddd61a9ddb85ca81882fa8c6bc689ad0d96049"
+    },
+    {
+      "bytes": 2660,
+      "file": "source/req-crewai.txt",
+      "sha256": "5726d90d26a93c9db43a6882f5d8a7f4f7088748c62bea673d88bb13e5892193"
+    },
+    {
+      "bytes": 1478,
+      "file": "source/req-google-adk.txt",
+      "sha256": "b6894f252184528bf1511f2c7997e862f319b1668c62823885e673fcb2d4266e"
+    },
+    {
+      "bytes": 811,
+      "file": "source/req-langchain.txt",
+      "sha256": "a2ffa39970e8da821c136fa204affb33a3275ae274b17439f2125d1daf0b9659"
+    },
+    {
+      "bytes": 1227,
+      "file": "source/req-llama-index.txt",
+      "sha256": "1c35e0068d761d8993ce8274a6d335d287d0bb67f0f6e9e8a0b043125bd03855"
+    },
+    {
+      "bytes": 697,
+      "file": "source/req-openai-agents.txt",
+      "sha256": "f30fb83990370126376fd5ec1dbd0fb4bbb635d82a5457a335c0de4287298410"
+    },
+    {
+      "bytes": 488,
+      "file": "source/req-pydantic-ai.txt",
+      "sha256": "aa6a57940af194ffa255a7993bec2fb601079168b24d899300d158ec5c3f6f2b"
+    },
+    {
+      "bytes": 601,
+      "file": "source/req-smolagents.txt",
+      "sha256": "5fb0ab36abd090540a6a4ac5acba95d9c4cdf709469d656ec81d990cb7634000"
+    },
+    {
+      "bytes": 1061,
+      "file": "source/req-strands.txt",
+      "sha256": "a82c37aeb69c23ee8f0ab6cf83fdfc6c18f5a8050e9a3af029425a6f33bc45c7"
+    },
+    {
+      "bytes": 8268,
+      "file": "source/run_one.py",
+      "sha256": "8ccc491ddf4af70cb84a058f1c85ae42c6fcc668ec9fdf2ad617ae4a62623963"
+    }
+  ],
+  "source_manifest_sha256": "00ea7e1a724997dbc46ecb7638c8442352d7f7c8e5011d04df41afe2b5a22dc6"
+}

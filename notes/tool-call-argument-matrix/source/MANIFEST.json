@@ -1,0 +1,84 @@
+{
+  "files": [
+    {
+      "bytes": 561,
+      "file": "Dockerfile",
+      "sha256": "3becc81f1e881b76fb1cbf604122506b632de71cdffb2380913ea8697756e937"
+    },
+    {
+      "bytes": 4664,
+      "file": "analyze.py",
+      "sha256": "5b61d15d4eb5c35f02f58eeb6c758500e978284f08677c57a226e731e7fa398e"
+    },
+    {
+      "bytes": 39162,
+      "file": "cells.jsonl",
+      "sha256": "ab4521440171f53ed5e037e1e441e945a0493486d5507f7eaad9921089df8816"
+    },
+    {
+      "bytes": 3431,
+      "file": "drive.py",
+      "sha256": "26275daff9bd5cd1b2ed59bd30a2bc2163f1c097d4e7321811278f15828fe74d"
+    },
+    {
+      "bytes": 6324,
+      "file": "facts.json",
+      "sha256": "c472c4f13a74650249c0f483a23c9eb45d9cf9afc40c272fcfeb40db215c15a0"
+    },
+    {
+      "bytes": 6161,
+      "file": "mock_llm.py",
+      "sha256": "a55990d0d3d8fa7bc6d3f5d0d4ad450fc3aeff98e64b3bab751b74abac07748f"
+    },
+    {
+      "bytes": 511,
+      "file": "req-autogen.txt",
+      "sha256": "9134bfb6f737a232ea30ee0ce7ddd61a9ddb85ca81882fa8c6bc689ad0d96049"
+    },
+    {
+      "bytes": 2660,
+      "file": "req-crewai.txt",
+      "sha256": "5726d90d26a93c9db43a6882f5d8a7f4f7088748c62bea673d88bb13e5892193"
+    },
+    {
+      "bytes": 1478,
+      "file": "req-google-adk.txt",
+      "sha256": "b6894f252184528bf1511f2c7997e862f319b1668c62823885e673fcb2d4266e"
+    },
+    {
+      "bytes": 811,
+      "file": "req-langchain.txt",
+      "sha256": "a2ffa39970e8da821c136fa204affb33a3275ae274b17439f2125d1daf0b9659"
+    },
+    {
+      "bytes": 1227,
+      "file": "req-llama-index.txt",
+      "sha256": "1c35e0068d761d8993ce8274a6d335d287d0bb67f0f6e9e8a0b043125bd03855"
+    },
+    {
+      "bytes": 697,
+      "file": "req-openai-agents.txt",
+      "sha256": "f30fb83990370126376fd5ec1dbd0fb4bbb635d82a5457a335c0de4287298410"
+    },
+    {
+      "bytes": 488,
+      "file": "req-pydantic-ai.txt",
+      "sha256": "aa6a57940af194ffa255a7993bec2fb601079168b24d899300d158ec5c3f6f2b"
+    },
+    {
+      "bytes": 601,
+      "file": "req-smolagents.txt",
+      "sha256": "5fb0ab36abd090540a6a4ac5acba95d9c4cdf709469d656ec81d990cb7634000"
+    },
+    {
+      "bytes": 1061,
+      "file": "req-strands.txt",
+      "sha256": "a82c37aeb69c23ee8f0ab6cf83fdfc6c18f5a8050e9a3af029425a6f33bc45c7"
+    },
+    {
+      "bytes": 8268,
+      "file": "run_one.py",
+      "sha256": "8ccc491ddf4af70cb84a058f1c85ae42c6fcc668ec9fdf2ad617ae4a62623963"
+    }
+  ]
+}

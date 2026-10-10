@@ -1,0 +1,131 @@
+{
+  "artifact_check": {
+    "description": "Executed by AI agents and checked by a separate AI-agent rerun using the same image and machine. All 162 cells agreed on tool invocations, outcomes, model request counts, schemas and model-returned text. This is not independent scientific reproduction or replication.",
+    "label": "Artifact checked"
+  },
+  "corrections": "hello@cybernative.ai",
+  "framework_caveats": {
+    "google-adk": "LiteLlm path tested, not native Gemini. Error is exposed in structured fields. ReflectAndRetryModelPlugin is available but not enabled by default.",
+    "langchain": "create_agent + ChatOpenAI path tested. Errors remain in invalid_tool_calls; final text is empty in core variants.",
+    "llama-index": "OpenAI-compatible integration tested. Truncation is repaired. Extra closing brace invokes with defaults. Documented non-dict-JSON intent in upstream pull request 16316 does not establish documented intent for invalid JSON.",
+    "openai-agents_and_crewai": "Strict schemas are advertised; the mock deliberately supplies malformed arguments. Real strict-decoding providers may prevent them.",
+    "pydantic-ai": "The installed distribution is pydantic-ai-slim, version 2.55.0.",
+    "smolagents": "OpenAIServerModel + ToolCallingAgent, single-parameter tools tested. Malformed string reaches the tool parameter. Source suggests broader first-parameter reach; multi-parameter behavior was not tested.",
+    "strands": "OpenAIModel streaming path tested. Parse failure logs a default WARNING and substitutes an empty object; this is already reported upstream. The WARNING is emitted under default logging settings, so the substitution is visible in logs."
+  },
+  "installed_versions": {
+    "autogen-agentchat": "0.7.5",
+    "autogen-core": "0.7.5",
+    "autogen-ext": "0.7.5",
+    "crewai": "1.15.27",
+    "google-adk": "2.11.0",
+    "langchain": "1.4.4",
+    "langchain-core": "1.6.9",
+    "langchain-openai": "1.7.0",
+    "langgraph": "1.2.14",
+    "litellm_adk_environment": "1.104.2",
+    "llama-index-core": "0.14.25",
+    "llama-index-llms-openai": "0.8.2",
+    "llama-index-llms-openai-like": "0.8.1",
+    "openai-agents": "0.23.1",
+    "pydantic-ai-slim": "2.55.0",
+    "smolagents": "1.26.0",
+    "strands-agents": "1.59.0"
+  },
+  "limits": [
+    "No real-model frequency or repair behavior measured.",
+    "No production effects, user harm, vulnerability, safety ranking or demand established.",
+    "Single-parameter synthetic tools only; multi-parameter tools untested.",
+    "Python and Chat Completions only; no JavaScript or Responses API generalization.",
+    "Pinned versions and tested provider paths only; current releases may differ.",
+    "Original prompts, framework prompt templates, stderr and infrastructure are excluded. Cell data is a derived allowlisted export; private originals remain unchanged."
+  ],
+  "methods": {
+    "api_path": "Chat Completions",
+    "cells": 162,
+    "core_scenarios": [
+      "v_trunc",
+      "v_extra_brace"
+    ],
+    "default_semantics": "The synthetic list_items tool has one optional status argument; None lists all items, while archived lists archived items.",
+    "execution_date": "2026-10-10",
+    "frameworks": 9,
+    "intended_arguments": {
+      "get_weather": {
+        "city": "Paris"
+      },
+      "list_items": {
+        "status": "archived"
+      }
+    },
+    "mock_behavior": "The first reply calls a tool with the scenario arguments. Every later reply is Done., regardless of whether an error or tool result was returned. No model repair or user-facing success claim is measured.",
+    "model": "deterministic synthetic mock",
+    "python": "3.12.15",
+    "replicates": 2,
+    "report_only_scenario": "v_empty",
+    "scenarios": {
+      "ctl_empty_obj": "{}",
+      "ctl_valid": "{\"status\": \"archived\"}",
+      "r_trunc": "{\"city\": \"Paris\"",
+      "v_double_enc": "\"{\\\"status\\\": \\\"archived\\\"}\"",
+      "v_empty": "",
+      "v_extra_brace": "{\"status\": \"archived\"}}",
+      "v_fenced": "```json\n{\"status\": \"archived\"}\n```",
+      "v_single_quote": "{'status': 'archived'}",
+      "v_trunc": "{\"status\": \"archived\""
+    },
+    "versions_pinned_date": "2026-10-09"
+  },
+  "public_references": {
+    "llama_index_non_dict_intent": "https://github.com/run-llama/llama_index/pull/16316",
+    "smolagents_bug_template": "https://github.com/huggingface/smolagents/blob/main/.github/ISSUE_TEMPLATE/bug_report.md",
+    "smolagents_contributing": "https://github.com/huggingface/smolagents/blob/main/CONTRIBUTING.md",
+    "smolagents_parser": "https://github.com/huggingface/smolagents/blob/v1.26.0/src/smolagents/models.py#L193-L200",
+    "strands_existing_report": "https://github.com/strands-agents/harness-sdk/issues/2051",
+    "strands_proposed_fix": "https://github.com/strands-agents/harness-sdk/pull/4655"
+  },
+  "publisher": "CyberNative AI LLC",
+  "results": {
+    "count_when_structured_error_fields_are_visible": 3,
+    "empty_argument_default_execution_report_only": "7/9; excluded from the ruling",
+    "execution_other_arguments_core": {
+      "count": 3,
+      "frameworks": [
+        "strands",
+        "llama-index",
+        "smolagents"
+      ]
+    },
+    "frozen_continuation_threshold": 3,
+    "frozen_ruling": "CONTINUE",
+    "no_execution_no_model_error_core": {
+      "count": 2,
+      "diagnostic": "LangChain exposes invalid_tool_calls.error and ADK exposes MALFORMED_FUNCTION_CALL in structured fields; the model receives no second turn on these calls.",
+      "frameworks": [
+        "langchain",
+        "google-adk"
+      ]
+    },
+    "parse_error_returned": {
+      "count": 4,
+      "to_caller": [
+        "autogen"
+      ],
+      "to_model": [
+        "openai-agents",
+        "pydantic-ai",
+        "crewai"
+      ]
+    },
+    "stable_pairs": 81,
+    "text_only_frozen_count": 5,
+    "timeouts": 0,
+    "valid_control_frameworks": 9
+  },
+  "source_classification": "company-authored source with a derived allowlisted export of the checked raw outputs",
+  "source_integrity": {
+    "checked_results_sha256": "7fe51495144acf216eb7dcb27af8fdde3e6d7c84a27a4a5030b3e099e051484a",
+    "original_results_sha256": "7fe51495144acf216eb7dcb27af8fdde3e6d7c84a27a4a5030b3e099e051484a"
+  },
+  "title": "Malformed tool-call arguments: a pinned Python framework matrix"
+}

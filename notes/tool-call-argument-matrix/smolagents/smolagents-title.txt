@@ -1,0 +1,1 @@
+BUG: ToolCallingAgent calls a tool with unparseable tool-call arguments as a raw string

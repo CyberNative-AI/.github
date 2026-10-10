@@ -1,0 +1,16 @@
+Malformed tool-call argument matrix
+Copyright 2026 CyberNative AI LLC
+
+The following files are authored by CyberNative AI LLC and licensed under the
+Apache License, Version 2.0 (see LICENSE):
+README.md, NOTE.md, PROVENANCE.md, MANIFEST.json, NOTICE,
+source/Dockerfile, source/analyze.py, source/drive.py, source/mock_llm.py,
+source/run_one.py, source/req-*.txt, source/cells.jsonl, source/facts.json,
+source/MANIFEST.json, smolagents/smolagents-body.md,
+smolagents/smolagents-title.txt and smolagents/smolagents_repro.py.
+
+No third-party source code is included in this directory. The python:3.12-slim
+base image and the Python packages named in source/req-*.txt and in
+smolagents/smolagents-body.md are installed separately, not distributed here.
+Their own licenses apply to them. Request logs written by a rerun contain each
+framework's own prompt templates, which remain under those frameworks' licenses.
