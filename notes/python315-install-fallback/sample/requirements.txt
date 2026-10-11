@@ -1,0 +1,9 @@
+# sample app: transcripts -> LLM summaries, scheduled with prefect, run on modal
+requests
+pyyaml
+pydantic
+numpy
+litellm
+youtube-transcript-api
+modal
+prefect

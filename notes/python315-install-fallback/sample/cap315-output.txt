@@ -1,0 +1,8 @@
+NO-WHEEL  fastuuid                         0.14.0       no 3.15 wheel; builds from source
+CAP       litellm                          1.105.0      requires_python <3.15,>=3.10     newest uncapped: 1.83.7 (2026-04-13)
+CAP       modal                            1.6.1        requires_python <3.15,>=3.10     newest uncapped: 1.2.1 (2025-10-22)
+CAP       prefect                          3.8.8        requires_python <3.15,>=3.10     newest uncapped: 3.2.15 (2025-03-28)
+NO-WHEEL  pyyaml                           6.0.3        no 3.15 wheel; builds from source
+NO-WHEEL  ruamel-yaml-clib                 0.2.15       no 3.15 wheel; builds from source
+CAP       youtube-transcript-api           1.2.4        requires_python <3.15,>=3.8      newest uncapped: 0.6.2 (2023-12-27)
+139 packages checked, 4 capped below 3.15
