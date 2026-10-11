@@ -56,7 +56,7 @@ The API appears to split the strength string on every `;`, including ones inside
 
 For patent use codes, exclusivity dates and kit strengths, use the [legacy zip](https://www.fda.gov/media/76860/download) or FDA's [Orange Book web pages](https://www.accessdata.fda.gov/scripts/cder/ob/). In this snapshot, TE codes, reference-drug flags, marketing status and approval dates matched the legacy files for all 48,761 products.
 
-[NOTICE LINE]
+We reported this to the openFDA maintainers on October 11, 2026: [FDA/openfda#225](https://github.com/FDA/openfda/issues/225).
 
 ## How we checked
 
