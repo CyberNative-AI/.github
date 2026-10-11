@@ -1,0 +1,108 @@
+{
+ "asof": "20261011",
+ "E1_product_code_pairs_api_date_past_legacy_unexpired": [
+  [
+   "N",
+   "202806",
+   "001",
+   "PED"
+  ],
+  [
+   "N",
+   "202806",
+   "002",
+   "PED"
+  ],
+  [
+   "N",
+   "205552",
+   "001",
+   "PED"
+  ],
+  [
+   "N",
+   "205552",
+   "002",
+   "PED"
+  ],
+  [
+   "N",
+   "210563",
+   "001",
+   "PED"
+  ],
+  [
+   "N",
+   "210563",
+   "002",
+   "PED"
+  ],
+  [
+   "N",
+   "210563",
+   "003",
+   "PED"
+  ],
+  [
+   "N",
+   "210563",
+   "004",
+   "PED"
+  ],
+  [
+   "N",
+   "212306",
+   "002",
+   "ODE*"
+  ],
+  [
+   "N",
+   "215985",
+   "001",
+   "NPP"
+  ],
+  [
+   "N",
+   "217003",
+   "001",
+   "PED"
+  ],
+  [
+   "N",
+   "217513",
+   "001",
+   "PED"
+  ],
+  [
+   "N",
+   "217514",
+   "001",
+   "PED"
+  ]
+ ],
+ "E1_products": 13,
+ "E2_products_no_unexpired_api_exclusivity": [
+  [
+   "N",
+   "212306",
+   "002"
+  ],
+  [
+   "N",
+   "215985",
+   "001"
+  ]
+ ],
+ "E3_products_legacy_unexpired_api_none": 0,
+ "E4_products_api_latest_date_earlier": 44,
+ "E4_of_which_legacy_latest_unexpired": 44,
+ "C1_lost_use_code_rows": 4649,
+ "C1_lost_on_unexpired_patents": 4456,
+ "C1_products": 657,
+ "C1_products_marketed": 605,
+ "C1_applications": 304,
+ "C1_application_types": {
+  "N": 304
+ },
+ "C1_distinct_use_codes": 1160
+}

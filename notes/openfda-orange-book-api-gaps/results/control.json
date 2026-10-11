@@ -1,0 +1,47 @@
+{
+ "A": {
+  "by_sub": {},
+  "mismatch": 0,
+  "rate": 0.0,
+  "rows": [],
+  "units": 48761,
+  "value_changing": 0
+ },
+ "B": {
+  "by_field": {},
+  "cosmetic_by_field": {},
+  "mismatch": 0,
+  "rate": 0.0,
+  "rows": [],
+  "units": 48761
+ },
+ "C": {
+  "C1_by_reason": {},
+  "C1_mismatch": [],
+  "C1_rate": 0.0,
+  "C1_units": 22303,
+  "C2_by_field": {},
+  "C2_mismatch": [],
+  "C2_rate": 0.0,
+  "C2_units": 17654,
+  "api_only_facts": [],
+  "legacy_exact_duplicate_rows": 0,
+  "legacy_patent_rows": 22303
+ },
+ "D": {
+  "D_distinct": 2326,
+  "D_mismatch": [],
+  "D_rate": 0.0,
+  "D_units": 2400,
+  "api_only": []
+ },
+ "mode": "control",
+ "n_products": 48761,
+ "only_api": 0,
+ "only_legacy": 0,
+ "positive_control": {
+  "N~020971~001": false,
+  "N~020971~002": false,
+  "N~220641~001": false
+ }
+}

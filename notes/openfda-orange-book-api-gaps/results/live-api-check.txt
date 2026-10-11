@@ -1,0 +1,19 @@
+Sampled live queries to the openFDA Orange Book API, October 11, 2026.
+Query form: https://api.fda.gov/drug/orangebook.json?search=products.application_number:"202806"+AND+product_number:"001"
+Fields shown: exclusivity (code, date), patents (number, use code), strengths. meta.last_updated was 2026-10-07 in every response.
+
+First pass:
+212306 002 excl [('ODE*', '20260703')] pat [] str ['40MG']
+202806 001 excl [('I-908', '20260316'), ('ODE-428', '20300316'), ('PED', '20260916')] pat [] str ['EQ 50MG BASE']
+021695 005 excl [] pat [('9314447', 'U-1448')] str ['90MG **Federal Register determination that product was not discontinued or withdrawn for safety or effectiveness reasons**']
+020971 001 excl [] pat [] str ['4%', 'EQ 0.017MG BASE/1.7ML (4%']
+020971 002 excl [] pat [] str ['4%', 'EQ 0.0085MG BASE/1.7ML (4%']
+220641 001 excl [('NCE', '20310325')] pat [] str ['100MG']
+
+Second pass (exclusivity only):
+202806 001 excl [('I-908', '20260316'), ('ODE-428', '20300316'), ('PED', '20260916')]
+212306 002 excl [('ODE*', '20260703')]
+215985 001 excl [('NPP', '20261005')]
+
+Third pass (patents only):
+021695 005 pat [('9314447', 'U-1448')]

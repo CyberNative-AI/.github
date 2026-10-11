@@ -1,0 +1,444 @@
+{
+ "checked_on": "2026-10-11",
+ "checks": 40,
+ "distinct_products": 36,
+ "items": [
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "A218314-002",
+   "legacy_strength": "4.02GM/15ML;4.14GM/15ML (268MG/ML;276MG/ML)",
+   "api_strengths": [
+    "4.02GM/15ML",
+    "4.14GM/15ML (268MG/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=A&Appl_No=218314",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "A209997-002",
+   "legacy_strength": "4.02GM/15ML;4.14GM/15ML (268MG/ML;276MG/ML)",
+   "api_strengths": [
+    "4.02GM/15ML",
+    "4.14GM/15ML (268MG/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=A&Appl_No=209997",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "N220641-001",
+   "legacy_strength": "100MG;25MG",
+   "api_strengths": [
+    "100MG"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=N&Appl_No=220641",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "A209997-001",
+   "legacy_strength": "1.34GM/5ML;1.38GM/5ML (268MG/ML;276MG/ML)",
+   "api_strengths": [
+    "1.34GM/5ML",
+    "1.38GM/5ML (268MG/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=A&Appl_No=209997",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "A207096-001",
+   "legacy_strength": "10%;10% (5GM/50ML;5GM/50ML)",
+   "api_strengths": [
+    "10%",
+    "10% (5GM/50ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=A&Appl_No=207096",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "A075874-002",
+   "legacy_strength": "3GM/60ML;1GM/10ML (50MG/ML;100MG/ML)",
+   "api_strengths": [
+    "3GM/60ML",
+    "1GM/10ML (50MG/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=A&Appl_No=075874",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "N203324-001",
+   "legacy_strength": "EQ 0.146% BASE/ML;EQ 0.146% BASE/ML",
+   "api_strengths": [
+    "EQ 0.146% BASE/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=N&Appl_No=203324",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "N219910-001",
+   "legacy_strength": "EQ 0.239% BASE/ML;EQ 0.177% BASE/ML",
+   "api_strengths": [
+    "EQ 0.239% BASE/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=N&Appl_No=219910",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "N216962-001",
+   "legacy_strength": "120MG/10ML;2400MG/10ML (12MG/ML;240MG/ML)",
+   "api_strengths": [
+    "120MG/10ML",
+    "2400MG/10ML (12MG/ML"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=N&Appl_No=216962",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "A",
+   "product": "N020971-002",
+   "legacy_strength": "4%; EQ 0.0085MG BASE/1.7ML (4%; EQ 0.005MG BASE/ML)",
+   "api_strengths": [
+    "4%",
+    "EQ 0.0085MG BASE/1.7ML (4%"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/results_product.cfm?Appl_Type=N&Appl_No=020971",
+   "result": "FDA page matches legacy"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N203469-003",
+   "patent": "9029533",
+   "lost_use_code": "U-1283",
+   "api_use_codes": [
+    "U-1699"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=003&Appl_No=203469&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N208692-002",
+   "patent": "12128039",
+   "lost_use_code": "U-1480",
+   "api_use_codes": [
+    "U-4131"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=002&Appl_No=208692&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N217806-015",
+   "patent": "12343382",
+   "lost_use_code": "U-4409",
+   "api_use_codes": [
+    "U-4410"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=015&Appl_No=217806&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N217806-014",
+   "patent": "12616740",
+   "lost_use_code": "U-4497",
+   "api_use_codes": [
+    "U-4499"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=014&Appl_No=217806&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N201635-002",
+   "patent": "9555004",
+   "lost_use_code": "U-1992",
+   "api_use_codes": [
+    "U-1675"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=002&Appl_No=201635&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N020866-001",
+   "patent": "10688155",
+   "lost_use_code": "U-2891",
+   "api_use_codes": [
+    "U-2934"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=020866&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N207958-002",
+   "patent": "9669009",
+   "lost_use_code": "U-2021",
+   "api_use_codes": [
+    "U-1850"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=002&Appl_No=207958&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N022425-001",
+   "patent": "8410167",
+   "lost_use_code": "U-1388",
+   "api_use_codes": [
+    "U-1387"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=022425&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N216793-001",
+   "patent": "11986469",
+   "lost_use_code": "U-4368",
+   "api_use_codes": [
+    "U-2830"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=216793&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "C1",
+   "product": "N220358-005",
+   "patent": "8999638",
+   "lost_use_code": "U-4436",
+   "api_use_codes": [
+    "U-4437"
+   ],
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=005&Appl_No=220358&Appl_type=N",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N205437-002",
+   "code": "PED",
+   "date": "20270119",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=002&Appl_No=205437&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N213246-001",
+   "code": "PED",
+   "date": "20271108",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=213246&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N204114-001",
+   "code": "PED",
+   "date": "20260916",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=204114&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N207925-005",
+   "code": "PED",
+   "date": "20261103",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=005&Appl_No=207925&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N202806-001",
+   "code": "PED",
+   "date": "20300916",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=202806&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N212306-003",
+   "code": "ODE*",
+   "date": "20260703",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=003&Appl_No=212306&Appl_type=N",
+   "first_scoring": "FDA page matches legacy",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N207925-003",
+   "code": "PED",
+   "date": "20261029",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=003&Appl_No=207925&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N213246-001",
+   "code": "PED",
+   "date": "20311129",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=213246&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N210563-001",
+   "code": "PED",
+   "date": "20300224",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=210563&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "first",
+   "family": "D",
+   "product": "N211358-003",
+   "code": "PED",
+   "date": "20300302",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=003&Appl_No=211358&Appl_type=N",
+   "first_scoring": "FDA page matches API",
+   "result": "date on FDA page, absent from API",
+   "note": "First scoring looked for the legacy code text literally; FDA's page prints pediatric exclusivity as '<code> *PED <date>'. Corrected matcher re-scored the same item."
+  },
+  {
+   "pass": "second",
+   "family": "C1",
+   "product": "N217186-001",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=217186&Appl_type=N",
+   "patent": "12201596",
+   "lost_use_code": "U-1649",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "C1",
+   "product": "N215866-012",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=012&Appl_No=215866&Appl_type=N",
+   "patent": "12453755",
+   "lost_use_code": "U-4384",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "C1",
+   "product": "N217180-003",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=003&Appl_No=217180&Appl_type=N",
+   "patent": "11576864",
+   "lost_use_code": "U-3230",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "C1",
+   "product": "N205580-001",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=205580&Appl_type=N",
+   "patent": "12350257",
+   "lost_use_code": "U-1542",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "C1",
+   "product": "N217186-001",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=217186&Appl_type=N",
+   "patent": "12263149",
+   "lost_use_code": "U-4004",
+   "result": "use code on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "D",
+   "product": "N218160-003",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=003&Appl_No=218160&Appl_type=N",
+   "code": "ODE*",
+   "date": "20290921",
+   "result": "date on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "D",
+   "product": "N213246-002",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=002&Appl_No=213246&Appl_type=N",
+   "code": "PED",
+   "date": "20271108",
+   "result": "date on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "D",
+   "product": "N213246-002",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=002&Appl_No=213246&Appl_type=N",
+   "code": "PED",
+   "date": "20280327",
+   "result": "date on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "D",
+   "product": "N205422-006",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=006&Appl_No=205422&Appl_type=N",
+   "code": "PED",
+   "date": "20271108",
+   "result": "date on FDA page, absent from API"
+  },
+  {
+   "pass": "second",
+   "family": "D",
+   "product": "N213246-001",
+   "fda_page": "https://www.accessdata.fda.gov/scripts/cder/ob/patent_info.cfm?Product_No=001&Appl_No=213246&Appl_type=N",
+   "code": "PED",
+   "date": "20271108",
+   "result": "date on FDA page, absent from API"
+  }
+ ]
+}
