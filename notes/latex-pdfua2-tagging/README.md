@@ -8,6 +8,8 @@ LaTeX can now write a tagged PDF that claims PDF/UA-2 conformance. You add one l
 \DocumentMetadata{lang=en, pdfversion=2.0, pdfstandard=ua-2, tagging=on}
 ```
 
+This needs LaTeX 2025-06-01 or later, the release that added the `tagging` key ([LaTeX News 41](https://www.latex-project.org/news/latex2e-news/ltnews41.pdf)). The release date is on the `LaTeX2e <...>` line near the top of the `.log` file. Older releases report `The key 'document/metadata/tagging' is unknown` and still write a PDF. When we tried TeX Live 2023 and 2024, that PDF had no tags, yet its metadata still claimed PDF/UA-2. Ubuntu 24.04 LTS packages TeX Live 2023 ([texlive-base](https://packages.ubuntu.com/noble/texlive-base)). Overleaf does not upgrade existing projects to a newer TeX Live ([Overleaf docs](https://docs.overleaf.com/troubleshooting-and-support/tex-live)), so check the version in the project's settings.
+
 We wanted to know how often that line works on preambles people actually use. We sampled 280 recent arXiv papers and skipped 20: 17 used a class file shipped with the paper, 2 had no LaTeX source and 1 had no clear main file. From the other 260 we took the `\documentclass` and `\usepackage` lines and added the tagging line. We compiled each with a short body (sections, inline and display math, a cross-reference, a list and a table) and checked the PDF with veraPDF's PDF/UA-2 profile.
 
 | engine | preambles that compile without tagging | pass veraPDF PDF/UA-2, compiled until LaTeX stops asking for a rerun | pass after exactly two compiles |
@@ -56,7 +58,7 @@ Slides are a separate problem. The tagging project lists Beamer as not supported
 - We compiled preambles, not documents. There were no author macros, figures or bibliographies, so real documents can fail more often than this.
 - These are research-paper preambles. Course notes may load other packages.
 - veraPDF checks are necessary, not sufficient. We did no screen-reader testing and did not judge how math is exposed.
-- All runs used one TeX Live 2026 image (LaTeX 2026-06-01, built 2026-10-04) and veraPDF 1.30.3. Later releases may differ.
+- The study used one TeX Live 2026 image (LaTeX 2026-06-01, built 2026-10-04) and veraPDF 1.30.3. We later compiled `check.sh`'s four small files with LaTeX 2025-11-01 (TeX Live 2025) and got the same veraPDF results. Later releases may differ.
 - We ran the 260 preambles twice: once with exactly two compiles, and once compiling until no rerun was requested (at most five; none needed more than three). A separate run of the single-package and footnote checks matched the second. All runs used our own machines; none is an outside replication.
 
 ## Check it
@@ -67,6 +69,6 @@ Slides are a separate problem. The tagging project lists Beamer as not supported
 python3 -I recount.py preambles.csv     # recomputes the 260-preamble counts
 ```
 
-[check.sh](check.sh) needs Docker. It pulls the exact TeX Live and veraPDF images we used and runs them with networking off. It compiles each file until the log stops asking for a rerun, and also builds `hyperref.tex` under pdfLaTeX with exactly two compiles. Expected output: under pdfLaTeX, `footnote.pdf` fails and `hyperref.pdf` passes after three compiles, while `pdflatex-2pass/hyperref.pdf` fails; under LuaLaTeX, all four pass. With `all`, the only other failures are `cls-acmart` and `cls-elsarticle`. [preambles.csv](preambles.csv) has one row per paper: arXiv ID, class, package names, the status-report flag, and each engine's pass count, result and failed rules, plus the two-compile results. It does not include any paper text. We skipped 85 style or macro files that ship with individual papers (in 82 preambles); the CSV counts them per row. [recount.py](recount.py) uses only the Python standard library.
+[check.sh](check.sh) needs Docker. It pulls the exact TeX Live and veraPDF images we used and runs them with networking off. The first run downloads about 2.8 GB of images (about 5.8 GB on disk) and prints nothing while it does; the times above assume the images are already there. It compiles each file until the log stops asking for a rerun, and also builds `hyperref.tex` under pdfLaTeX with exactly two compiles. Expected output: under pdfLaTeX, `footnote.pdf` fails and `hyperref.pdf` passes after three compiles, while `pdflatex-2pass/hyperref.pdf` fails; under LuaLaTeX, all four pass. With `all`, the only other failures are `cls-acmart` and `cls-elsarticle`. [preambles.csv](preambles.csv) has one row per paper: arXiv ID, class, package names, the status-report flag, and each engine's pass count, result and failed rules, plus the two-compile results. It does not include any paper text. We skipped 85 style or macro files that ship with individual papers (in 82 preambles); the CSV counts them per row. [recount.py](recount.py) uses only the Python standard library.
 
 AI-written note from CyberNative AI LLC. Questions or corrections: hello@cybernative.ai.
