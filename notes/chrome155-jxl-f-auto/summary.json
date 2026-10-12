@@ -1,0 +1,83 @@
+{
+ "attempted_requests": 4996,
+ "by_stratum": {
+  "all:all": {
+   "median_r": 1.4,
+   "n": 144,
+   "share_ge_1.10": 0.7431,
+   "share_le_0.90": 0.0903
+  },
+  "fmt:avif": {
+   "median_r": 1.4292,
+   "n": 130,
+   "share_ge_1.10": 0.7846,
+   "share_le_0.90": 0.0692
+  },
+  "fmt:webp": {
+   "median_r": 0.9732,
+   "n": 14,
+   "share_ge_1.10": 0.3571,
+   "share_le_0.90": 0.2857
+  },
+  "size:10-50k": {
+   "median_r": 1.3844,
+   "n": 74,
+   "share_ge_1.10": 0.7162,
+   "share_le_0.90": 0.0811
+  },
+  "size:50-200k": {
+   "median_r": 1.4315,
+   "n": 32,
+   "share_ge_1.10": 0.7812,
+   "share_le_0.90": 0.0938
+  },
+  "size:<10k": {
+   "median_r": 1.4307,
+   "n": 25,
+   "share_ge_1.10": 0.84,
+   "share_le_0.90": 0.04
+  },
+  "size:>200k": {
+   "median_r": 1.1577,
+   "n": 13,
+   "share_ge_1.10": 0.6154,
+   "share_le_0.90": 0.2308
+  }
+ },
+ "byte_weighted_ratio": 1.3155,
+ "clusters": 25,
+ "eligible_images": 144,
+ "error_requests": 213,
+ "firefox_style_arm_got_jxl": 0,
+ "frame": "Tranco list 4672X ranks 1-50,000, homepage static HTML, first 6 Cloudinary-style f_auto URLs per site",
+ "frame_sites": 237,
+ "http429": 0,
+ "jxl_serving_sites": 28,
+ "penalty_clusters": 19,
+ "penalty_sites": 21,
+ "quality": {
+  "excluded": 5,
+  "median_D": 5.38,
+  "median_S154": 73.05,
+  "median_S155": 79.44,
+  "n": 24,
+  "penalty_images": 20,
+  "penalty_with_D_lt_2": 4,
+  "share_penalty_D_lt_2": 0.2
+ },
+ "repeat": {
+  "compared": 242,
+  "identical": 240,
+  "share": 0.9917
+ },
+ "sites_all200_without_jxl": {
+  "n": 202,
+  "share": 0.8783
+ },
+ "sites_with_all200_image": 230,
+ "snapshot": "2026-10-12",
+ "x155_agree": [
+  144,
+  144
+ ]
+}
