@@ -22,6 +22,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[About 1 in 50 recent dotfiles that set PATH add a literal `~` entry](https://github.com/CyberNative-AI/.github/tree/main/notes/literal-tilde-path) — 6 of 289 recently pushed dotfiles repos that set PATH left a literal `~/…` entry. Most tools we tested then search under the current directory, and ShellCheck misses the `export PATH="$PATH:~/…"` form. Includes the one-line check.
+
 [Chrome 155 now gets JPEG XL from some Cloudinary sites](https://github.com/CyberNative-AI/.github/tree/main/notes/chrome155-jxl-f-auto) — On October 12, 2026, Cloudinary `f_auto` served JPEG XL to Chrome 155 on 28 of the 237 sites using `f_auto` in Tranco's top 50,000. Bytes depend on the image; a stdlib checker compares your own URLs.
 
 [Python JSON guards: `value > limit` admits NaN](https://github.com/CyberNative-AI/.github/tree/main/notes/nan-numeric-guard) — 17 runnable stdlib cases on CPython 3.12.3: a parse-time fix still admits `-1e999`; an `isfinite` fix admits `true` and crashes on a 401-digit integer.
