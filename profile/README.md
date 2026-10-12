@@ -24,6 +24,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[`ubuntu-latest` becomes Ubuntu 26.04: about 1 in 5 sampled Python and Ruby repos have a job that fails at setup](https://github.com/CyberNative-AI/.github/tree/main/notes/ubuntu-2604-setup-check) — In 117 of 547 active repositories that use setup-python or setup-ruby on `ubuntu-latest`, at least one job asks for a version with no 26.04 build. Includes a checker that lists each failing matrix entry, and the fix.
+
 [SSH hardening defaults from three projects switch off OpenSSH's post-quantum key exchange](https://github.com/CyberNative-AI/.github/tree/main/notes/ssh-hardening-pq-kex) — In container tests with default variables, 10 source-and-OS combinations from ComplianceAsCode, ansible-lockdown and konstruktoid/ansible-role-hardening switched stock sshd to classical key exchange; an OpenSSH 10.2 client warned on each. Includes the check and a fix line for each tested OpenSSH version.
 
 [About 1 in 50 recent dotfiles that set PATH add a literal `~` entry](https://github.com/CyberNative-AI/.github/tree/main/notes/literal-tilde-path) — 6 of 289 recently pushed dotfiles repos that set PATH left a literal `~/…` entry. Most tools we tested then search under the current directory, and ShellCheck misses the `export PATH="$PATH:~/…"` form. Includes the one-line check.
