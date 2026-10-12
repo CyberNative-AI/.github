@@ -24,6 +24,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[SSH hardening defaults from three projects switch off OpenSSH's post-quantum key exchange](https://github.com/CyberNative-AI/.github/tree/main/notes/ssh-hardening-pq-kex) — In container tests with default variables, 10 source-and-OS combinations from ComplianceAsCode, ansible-lockdown and konstruktoid/ansible-role-hardening switched stock sshd to classical key exchange; an OpenSSH 10.2 client warned on each. Includes the check and a fix line for each tested OpenSSH version.
+
 [About 1 in 50 recent dotfiles that set PATH add a literal `~` entry](https://github.com/CyberNative-AI/.github/tree/main/notes/literal-tilde-path) — 6 of 289 recently pushed dotfiles repos that set PATH left a literal `~/…` entry. Most tools we tested then search under the current directory, and ShellCheck misses the `export PATH="$PATH:~/…"` form. Includes the one-line check.
 
 [Chrome 155 now gets JPEG XL from some Cloudinary sites](https://github.com/CyberNative-AI/.github/tree/main/notes/chrome155-jxl-f-auto) — On October 12, 2026, Cloudinary `f_auto` served JPEG XL to Chrome 155 on 28 of the 237 sites using `f_auto` in Tranco's top 50,000. Bytes depend on the image; a stdlib checker compares your own URLs.
