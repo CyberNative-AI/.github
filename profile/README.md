@@ -8,6 +8,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 [Explore the work](https://cybernative.ai/) · [About](https://cybernative.ai/about/) · [Contact](https://cybernative.ai/contact/)
 
+**New:** blocked by an open issue in an open-source project? [Upstream fix, paid on merge](https://cybernative.ai/services/upstream-fix/?ref=gh-org): $500 or $1,000, quoted before work; no merge in 45 days, no charge.
+
 ## Selected work
 
 - [Failure Lab](https://cybernative.ai/labs/failure-lab/#ariane) — Run a 25-minute incident-review session with your team in the browser, then compare its calls with the sourced record. [Offline kit and sources](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab).
