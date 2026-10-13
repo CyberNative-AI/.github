@@ -1,0 +1,14 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/py/mcp-1.28.1/bin/python\", \"/src/adapters/py/server_mcp1.py\"]"}
+{"t_ms": 0.6, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 851.9, "dir": "err", "line": "/envs/py/mcp-1.28.1/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined."}
+{"t_ms": 852.0, "dir": "err", "line": "  warnings.warn("}
+{"t_ms": 897.0, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.28.1\"}}}"}
+{"t_ms": 902.5, "dir": "c2s", "line": "{\"method\":\"notifications/initialized\",\"jsonrpc\":\"2.0\"}"}
+{"t_ms": 905.0, "dir": "c2s", "line": "{\"method\":\"tools/list\",\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 905.9, "dir": "err", "line": "Processing request of type ListToolsRequest"}
+{"t_ms": 906.8, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"title\":\"echoArguments\",\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"title\":\"echoOutput\",\"type\":\"object\"}}]}}"}
+{"t_ms": 914.8, "dir": "c2s", "line": "{\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 915.6, "dir": "err", "line": "Processing request of type CallToolRequest"}
+{"t_ms": 917.5, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"structuredContent\":{\"result\":\"echo:hello-re13340\"},\"isError\":false}}"}
+{"t_ms": 919.9, "dir": "client-eof", "line": ""}
+{"t_ms": 1069.7, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 919.9}"}

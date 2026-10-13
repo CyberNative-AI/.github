@@ -1,0 +1,2 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/senv/py/mcp-1.6.0/bin/python\", \"/supp/server_mcp1.py\"]"}
+{"t_ms": 0.8, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"server/discover\",\"params\":{\"_meta\":{\"io.modelcontextprotocol/clientCapabilities\":{\"roots\":{\"listChanged\":true}},\"io.modelcontextprotocol/clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"io.modelcontextprotocol/protocolVersion\":\"2026-07-28\"}}}"}

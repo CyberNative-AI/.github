@@ -1,0 +1,110 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/py/mcp-1.28.1/bin/python\", \"/src/adapters/py/server_mcp1.py\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"server/discover\",\"params\":{\"_meta\":{\"io.modelcontextprotocol/clientCapabilities\":{\"roots\":{\"listChanged\":true}},\"io.modelcontextprotocol/clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"io.modelcontextprotocol/protocolVersion\":\"2026-07-28\"}}}"}
+{"t_ms": 756.1, "dir": "err", "line": "/envs/py/mcp-1.28.1/lib/python3.11/site-packages/pydantic_settings/sources/utils.py:47: IncompleteFieldDefinitionWarning: Field 'lifespan' has an incomplete definition: its annotation contains an unresolved forward reference, so settings sources may fail to correctly resolve its value. Call `model_rebuild()` on the model where the field is defined, once all the referenced types are defined."}
+{"t_ms": 756.2, "dir": "err", "line": "  warnings.warn("}
+{"t_ms": 792.6, "dir": "err", "line": "Failed to validate request: 31 validation errors for ClientRequest"}
+{"t_ms": 792.6, "dir": "err", "line": "PingRequest.method"}
+{"t_ms": 792.6, "dir": "err", "line": "  Input should be 'ping' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.6, "dir": "err", "line": "InitializeRequest.method"}
+{"t_ms": 792.6, "dir": "err", "line": "  Input should be 'initialize' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.7, "dir": "err", "line": "InitializeRequest.params.protocolVersion"}
+{"t_ms": 792.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.7, "dir": "err", "line": "InitializeRequest.params.capabilities"}
+{"t_ms": 792.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.7, "dir": "err", "line": "InitializeRequest.params.clientInfo"}
+{"t_ms": 792.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.7, "dir": "err", "line": "CompleteRequest.method"}
+{"t_ms": 792.7, "dir": "err", "line": "  Input should be 'completion/complete' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.7, "dir": "err", "line": "CompleteRequest.params.ref"}
+{"t_ms": 792.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.7, "dir": "err", "line": "CompleteRequest.params.argument"}
+{"t_ms": 792.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.8, "dir": "err", "line": "SetLevelRequest.method"}
+{"t_ms": 792.8, "dir": "err", "line": "  Input should be 'logging/setLevel' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.8, "dir": "err", "line": "SetLevelRequest.params.level"}
+{"t_ms": 792.8, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.8, "dir": "err", "line": "GetPromptRequest.method"}
+{"t_ms": 792.8, "dir": "err", "line": "  Input should be 'prompts/get' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.8, "dir": "err", "line": "GetPromptRequest.params.name"}
+{"t_ms": 792.8, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.8, "dir": "err", "line": "ListPromptsRequest.method"}
+{"t_ms": 792.8, "dir": "err", "line": "  Input should be 'prompts/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.9, "dir": "err", "line": "ListResourcesRequest.method"}
+{"t_ms": 792.9, "dir": "err", "line": "  Input should be 'resources/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.9, "dir": "err", "line": "ListResourceTemplatesRequest.method"}
+{"t_ms": 792.9, "dir": "err", "line": "  Input should be 'resources/templates/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.9, "dir": "err", "line": "ReadResourceRequest.method"}
+{"t_ms": 792.9, "dir": "err", "line": "  Input should be 'resources/read' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.9, "dir": "err", "line": "ReadResourceRequest.params.uri"}
+{"t_ms": 792.9, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.9, "dir": "err", "line": "SubscribeRequest.method"}
+{"t_ms": 792.9, "dir": "err", "line": "  Input should be 'resources/subscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 792.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 792.9, "dir": "err", "line": "SubscribeRequest.params.uri"}
+{"t_ms": 792.9, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 792.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 792.9, "dir": "err", "line": "UnsubscribeRequest.method"}
+{"t_ms": 793.0, "dir": "err", "line": "  Input should be 'resources/unsubscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.0, "dir": "err", "line": "UnsubscribeRequest.params.uri"}
+{"t_ms": 793.0, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 793.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 793.0, "dir": "err", "line": "CallToolRequest.method"}
+{"t_ms": 793.0, "dir": "err", "line": "  Input should be 'tools/call' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.0, "dir": "err", "line": "CallToolRequest.params.name"}
+{"t_ms": 793.0, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 793.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 793.0, "dir": "err", "line": "ListToolsRequest.method"}
+{"t_ms": 793.0, "dir": "err", "line": "  Input should be 'tools/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.0, "dir": "err", "line": "GetTaskRequest.method"}
+{"t_ms": 793.1, "dir": "err", "line": "  Input should be 'tasks/get' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.1, "dir": "err", "line": "GetTaskRequest.params.taskId"}
+{"t_ms": 793.1, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 793.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 793.1, "dir": "err", "line": "GetTaskPayloadRequest.method"}
+{"t_ms": 793.1, "dir": "err", "line": "  Input should be 'tasks/result' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.1, "dir": "err", "line": "GetTaskPayloadRequest.params.taskId"}
+{"t_ms": 793.1, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 793.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 793.1, "dir": "err", "line": "ListTasksRequest.method"}
+{"t_ms": 793.1, "dir": "err", "line": "  Input should be 'tasks/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.1, "dir": "err", "line": "CancelTaskRequest.method"}
+{"t_ms": 793.1, "dir": "err", "line": "  Input should be 'tasks/cancel' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 793.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 793.1, "dir": "err", "line": "CancelTaskRequest.params.taskId"}
+{"t_ms": 793.2, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 793.2, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 793.4, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32602,\"message\":\"Invalid request parameters\",\"data\":\"\"}}"}
+{"t_ms": 793.8, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"initialize\",\"params\":{\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"roots\":{\"listChanged\":true}}}}"}
+{"t_ms": 794.7, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.28.1\"}}}"}
+{"t_ms": 795.0, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":{}}"}
+{"t_ms": 795.0, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 795.9, "dir": "err", "line": "Processing request of type ListToolsRequest"}
+{"t_ms": 796.5, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"title\":\"echoArguments\",\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"title\":\"echoOutput\",\"type\":\"object\"}}]}}"}
+{"t_ms": 796.8, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":4,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 797.9, "dir": "err", "line": "Processing request of type CallToolRequest"}
+{"t_ms": 799.4, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":4,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"structuredContent\":{\"result\":\"echo:hello-re13340\"},\"isError\":false}}"}
+{"t_ms": 799.8, "dir": "client-eof", "line": ""}
+{"t_ms": 950.0, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 799.8}"}

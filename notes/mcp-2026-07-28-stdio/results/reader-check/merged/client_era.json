@@ -1,0 +1,17 @@
+{
+ "basis": "first method + initialize-after-discover against fake-legacy_32602, tag classify",
+ "client_era": {
+  "go-sdk-1.6.1": "LEGACY",
+  "go-sdk-1.8.0": "DUAL",
+  "mcp-go-0.57.0": "LEGACY",
+  "mcp-go-1.2.1": "DUAL",
+  "py-fastmcp-3.4.8": "LEGACY",
+  "py-fastmcp-4.1.0": "DUAL",
+  "py-mcp-1.28.1": "LEGACY",
+  "py-mcp-1.30.0": "LEGACY",
+  "py-mcp-2.3.0": "DUAL",
+  "ts-sdk-1.29.0": "LEGACY",
+  "ts-sdk-1.32.1": "LEGACY",
+  "ts-v2-2.3.1": "LEGACY"
+ }
+}

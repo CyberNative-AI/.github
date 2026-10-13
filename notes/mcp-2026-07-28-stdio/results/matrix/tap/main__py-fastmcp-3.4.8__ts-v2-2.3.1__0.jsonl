@@ -1,0 +1,10 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"node\", \"/src/adapters/node/server-ts-v2-2.3.1.mjs\"]"}
+{"t_ms": 0.9, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 195.5, "dir": "s2c", "line": "{\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"tools\":{\"listChanged\":true}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 196.4, "dir": "c2s", "line": "{\"method\":\"notifications/initialized\",\"jsonrpc\":\"2.0\"}"}
+{"t_ms": 198.5, "dir": "c2s", "line": "{\"method\":\"tools/list\",\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 201.2, "dir": "s2c", "line": "{\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"type\":\"object\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"]}}]},\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 202.3, "dir": "c2s", "line": "{\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"},\"_meta\":{\"progressToken\":2}},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 206.9, "dir": "s2c", "line": "{\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}]},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 208.0, "dir": "client-eof", "line": ""}
+{"t_ms": 221.7, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 208.0}"}

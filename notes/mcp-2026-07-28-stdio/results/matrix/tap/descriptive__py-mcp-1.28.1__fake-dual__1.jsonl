@@ -1,0 +1,10 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/usr/bin/python3\", \"/src/fake_server.py\", \"dual\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 14.8, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 0, \"result\": {\"protocolVersion\": \"2025-11-25\", \"capabilities\": {\"tools\": {}}, \"serverInfo\": {\"name\": \"echo-server\", \"version\": \"1.0.0\"}}}"}
+{"t_ms": 15.6, "dir": "c2s", "line": "{\"method\":\"notifications/initialized\",\"jsonrpc\":\"2.0\"}"}
+{"t_ms": 15.6, "dir": "c2s", "line": "{\"method\":\"tools/list\",\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 15.7, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 1, \"result\": {\"tools\": [{\"name\": \"echo\", \"description\": \"Echo the message\", \"inputSchema\": {\"type\": \"object\", \"properties\": {\"message\": {\"type\": \"string\"}}, \"required\": [\"message\"]}}]}}"}
+{"t_ms": 16.0, "dir": "c2s", "line": "{\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 16.0, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 2, \"result\": {\"content\": [{\"type\": \"text\", \"text\": \"echo:hello-re13340\"}], \"isError\": false}}"}
+{"t_ms": 16.4, "dir": "client-eof", "line": ""}
+{"t_ms": 19.4, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 16.4}"}

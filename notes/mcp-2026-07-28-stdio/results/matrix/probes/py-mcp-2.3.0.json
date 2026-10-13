@@ -1,0 +1,134 @@
+{
+ "cmd": [
+  "/envs/py/mcp-2.3.0/bin/python",
+  "/src/adapters/py/server_mcp2.py"
+ ],
+ "discover_error": null,
+ "discover_shape": "result",
+ "discover_supported": [
+  "2026-07-28"
+ ],
+ "era": "DUAL",
+ "initialize_error": null,
+ "initialize_version": "2025-11-25",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"cacheScope\":\"private\",\"capabilities\":{\"prompts\":{\"listChanged\":true},\"resources\":{\"listChanged\":true,\"subscribe\":true},\"tools\":{\"listChanged\":true}},\"resultType\":\"complete\",\"supportedVersions\":[\"2026-07-28\"],\"ttlMs\":0,\"_meta\":{\"io.modelcontextprotocol/serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}}",
+     "t_ms": 974.7
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "_meta": {
+       "io.modelcontextprotocol/serverInfo": {
+        "name": "echo-server",
+        "version": "1.0.0"
+       }
+      },
+      "cacheScope": "private",
+      "capabilities": {
+       "prompts": {
+        "listChanged": true
+       },
+       "resources": {
+        "listChanged": true,
+        "subscribe": true
+       },
+       "tools": {
+        "listChanged": true
+       }
+      },
+      "resultType": "complete",
+      "supportedVersions": [
+       "2026-07-28"
+      ],
+      "ttlMs": 0
+     }
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"capabilities\":{\"prompts\":{\"listChanged\":false},\"resources\":{\"listChanged\":false,\"subscribe\":false},\"tools\":{\"listChanged\":false}},\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}",
+     "t_ms": 956.1
+    },
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\",\"title\":\"echoArguments\"},\"name\":\"echo\",\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"type\":\"object\",\"title\":\"echoOutput\"}}]}}",
+     "t_ms": 957.1
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "prompts": {
+        "listChanged": false
+       },
+       "resources": {
+        "listChanged": false,
+        "subscribe": false
+       },
+       "tools": {
+        "listChanged": false
+       }
+      },
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.0.0"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "description": "Echo the message",
+        "inputSchema": {
+         "properties": {
+          "message": {
+           "title": "Message",
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "title": "echoArguments",
+         "type": "object"
+        },
+        "name": "echo",
+        "outputSchema": {
+         "properties": {
+          "result": {
+           "title": "Result",
+           "type": "string"
+          }
+         },
+         "required": [
+          "result"
+         ],
+         "title": "echoOutput",
+         "type": "object"
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "cmd": [
+  "/envs/py/fastmcp-3.4.8/bin/python",
+  "/src/adapters/py/server_fastmcp.py"
+ ],
+ "discover_error": {
+  "code": -32602,
+  "data": "",
+  "message": "Invalid request parameters"
+ },
+ "discover_shape": "error:-32602",
+ "discover_supported": [],
+ "era": "LEGACY_ONLY",
+ "initialize_error": null,
+ "initialize_version": "2025-11-25",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32602,\"message\":\"Invalid request parameters\",\"data\":\"\"}}",
+     "t_ms": 3130.6
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "error": {
+      "code": -32602,
+      "data": "",
+      "message": "Invalid request parameters"
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"experimental\":{},\"logging\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":true},\"extensions\":{\"io.modelcontextprotocol/ui\":{}}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}",
+     "t_ms": 1747.1
+    },
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"additionalProperties\":false,\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"type\":\"string\"}},\"required\":[\"result\"],\"type\":\"object\",\"x-fastmcp-wrap-result\":true},\"_meta\":{\"fastmcp\":{\"tags\":[]}}}]}}",
+     "t_ms": 1777.1
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "experimental": {},
+       "extensions": {
+        "io.modelcontextprotocol/ui": {}
+       },
+       "logging": {},
+       "prompts": {
+        "listChanged": false
+       },
+       "resources": {
+        "listChanged": false,
+        "subscribe": false
+       },
+       "tools": {
+        "listChanged": true
+       }
+      },
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.0.0"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "_meta": {
+         "fastmcp": {
+          "tags": []
+         }
+        },
+        "description": "Echo the message",
+        "inputSchema": {
+         "additionalProperties": false,
+         "properties": {
+          "message": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "type": "object"
+        },
+        "name": "echo",
+        "outputSchema": {
+         "properties": {
+          "result": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "result"
+         ],
+         "type": "object",
+         "x-fastmcp-wrap-result": true
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

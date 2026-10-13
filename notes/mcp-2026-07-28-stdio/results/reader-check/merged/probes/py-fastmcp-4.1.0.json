@@ -1,0 +1,143 @@
+{
+ "cmd": [
+  "/envs/py/fastmcp-4.1.0/bin/python",
+  "/src/adapters/py/server_fastmcp.py"
+ ],
+ "discover_error": null,
+ "discover_shape": "result",
+ "discover_supported": [
+  "2026-07-28"
+ ],
+ "era": "DUAL",
+ "initialize_error": null,
+ "initialize_version": "2025-11-25",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"_meta\":{\"io.modelcontextprotocol/serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}},\"ttlMs\":0,\"cacheScope\":\"private\",\"supportedVersions\":[\"2026-07-28\"],\"capabilities\":{\"logging\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false},\"extensions\":{\"io.modelcontextprotocol/ui\":{}}},\"resultType\":\"complete\"}}",
+     "t_ms": 1949.8
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "_meta": {
+       "io.modelcontextprotocol/serverInfo": {
+        "name": "echo-server",
+        "version": "1.0.0"
+       }
+      },
+      "cacheScope": "private",
+      "capabilities": {
+       "extensions": {
+        "io.modelcontextprotocol/ui": {}
+       },
+       "logging": {},
+       "prompts": {
+        "listChanged": false
+       },
+       "resources": {
+        "listChanged": false,
+        "subscribe": false
+       },
+       "tools": {
+        "listChanged": false
+       }
+      },
+      "resultType": "complete",
+      "supportedVersions": [
+       "2026-07-28"
+      ],
+      "ttlMs": 0
+     }
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"logging\":{},\"prompts\":{\"listChanged\":true},\"resources\":{\"subscribe\":false,\"listChanged\":true},\"tools\":{\"listChanged\":true}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}",
+     "t_ms": 1709.3
+    },
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"_meta\":{\"fastmcp\":{\"tags\":[]}},\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\",\"additionalProperties\":false},\"name\":\"echo\",\"outputSchema\":{\"properties\":{\"result\":{\"type\":\"string\"}},\"required\":[\"result\"],\"type\":\"object\",\"x-fastmcp-wrap-result\":true},\"title\":\"Echo\"}]}}",
+     "t_ms": 2053.9
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "logging": {},
+       "prompts": {
+        "listChanged": true
+       },
+       "resources": {
+        "listChanged": true,
+        "subscribe": false
+       },
+       "tools": {
+        "listChanged": true
+       }
+      },
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.0.0"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "_meta": {
+         "fastmcp": {
+          "tags": []
+         }
+        },
+        "description": "Echo the message",
+        "inputSchema": {
+         "additionalProperties": false,
+         "properties": {
+          "message": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "type": "object"
+        },
+        "name": "echo",
+        "outputSchema": {
+         "properties": {
+          "result": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "result"
+         ],
+         "type": "object",
+         "x-fastmcp-wrap-result": true
+        },
+        "title": "Echo"
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

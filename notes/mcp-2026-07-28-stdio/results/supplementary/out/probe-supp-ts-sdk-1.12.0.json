@@ -1,0 +1,92 @@
+{
+ "cmd": [
+  "node",
+  "/senv/node/ts-sdk-1.12.0/server_ts1.mjs"
+ ],
+ "discover_error": {
+  "code": -32601,
+  "message": "Method not found"
+ },
+ "discover_shape": "error:-32601",
+ "discover_supported": [],
+ "era": "LEGACY_ONLY",
+ "initialize_error": null,
+ "initialize_version": "2025-03-26",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32601,\"message\":\"Method not found\"}}",
+     "t_ms": 66.6
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "error": {
+      "code": -32601,
+      "message": "Method not found"
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"result\":{\"protocolVersion\":\"2025-03-26\",\"capabilities\":{\"tools\":{\"listChanged\":true}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}},\"jsonrpc\":\"2.0\",\"id\":1}",
+     "t_ms": 68.2
+    },
+    {
+     "line": "{\"result\":{\"tools\":[{\"name\":\"echo\",\"inputSchema\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"additionalProperties\":false,\"$schema\":\"http://json-schema.org/draft-07/schema#\"}}]},\"jsonrpc\":\"2.0\",\"id\":2}",
+     "t_ms": 70.4
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "tools": {
+        "listChanged": true
+       }
+      },
+      "protocolVersion": "2025-03-26",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.0.0"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "inputSchema": {
+         "$schema": "http://json-schema.org/draft-07/schema#",
+         "additionalProperties": false,
+         "properties": {
+          "message": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "type": "object"
+        },
+        "name": "echo"
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

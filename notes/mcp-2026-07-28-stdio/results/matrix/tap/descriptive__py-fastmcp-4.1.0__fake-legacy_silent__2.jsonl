@@ -1,0 +1,11 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/usr/bin/python3\", \"/src/fake_server.py\", \"legacy_silent\"]"}
+{"t_ms": 0.8, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"server/discover\",\"params\":{\"_meta\":{\"io.modelcontextprotocol/protocolVersion\":\"2026-07-28\",\"io.modelcontextprotocol/clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"},\"io.modelcontextprotocol/clientCapabilities\":{}}}}"}
+{"t_ms": 9991.4, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"}}}"}
+{"t_ms": 9991.7, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 2, \"result\": {\"protocolVersion\": \"2025-11-25\", \"capabilities\": {\"tools\": {}}, \"serverInfo\": {\"name\": \"echo-server\", \"version\": \"1.0.0\"}}}"}
+{"t_ms": 9992.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\"}"}
+{"t_ms": 9992.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/list\"}"}
+{"t_ms": 9992.8, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 3, \"result\": {\"tools\": [{\"name\": \"echo\", \"description\": \"Echo the message\", \"inputSchema\": {\"type\": \"object\", \"properties\": {\"message\": {\"type\": \"string\"}}, \"required\": [\"message\"]}}]}}"}
+{"t_ms": 9994.0, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":4,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"},\"_meta\":{\"progressToken\":4}}}"}
+{"t_ms": 9994.0, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 4, \"result\": {\"content\": [{\"type\": \"text\", \"text\": \"echo:hello-re13340\"}], \"isError\": false}}"}
+{"t_ms": 9995.0, "dir": "client-eof", "line": ""}
+{"t_ms": 9998.4, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 9995.0}"}

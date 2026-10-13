@@ -1,0 +1,3 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/usr/bin/python3\", \"/src/fake_server.py\", \"legacy_exit\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"server/discover\",\"params\":{\"_meta\":{\"io.modelcontextprotocol/protocolVersion\":\"2026-07-28\",\"io.modelcontextprotocol/clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"},\"io.modelcontextprotocol/clientCapabilities\":{}}}}"}
+{"t_ms": 17.1, "dir": "exit", "line": "{\"rc\": 1, \"client_eof_ms\": null}"}

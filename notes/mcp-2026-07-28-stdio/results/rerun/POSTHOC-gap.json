@@ -1,0 +1,602 @@
+{
+ "connect_by_server": {
+  "everything-1.0.0": {
+   "DUAL": {
+    "median_ms": 248.05,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 235.60000000000002,
+    "n": 24
+   }
+  },
+  "everything-2026.7.4": {
+   "DUAL": {
+    "median_ms": 223.35000000000002,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 229.85000000000002,
+    "n": 24
+   }
+  },
+  "filesystem-1.0.0": {
+   "DUAL": {
+    "median_ms": 223.60000000000002,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 231.75,
+    "n": 24
+   }
+  },
+  "filesystem-2026.7.4": {
+   "DUAL": {
+    "median_ms": 258.35,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 225.35,
+    "n": 24
+   }
+  },
+  "go-sdk-1.6.1": {
+   "DUAL": {
+    "median_ms": 25.05,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 33.4,
+    "n": 24
+   }
+  },
+  "go-sdk-1.8.0": {
+   "DUAL": {
+    "median_ms": 25.25,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 31.75,
+    "n": 24
+   }
+  },
+  "mcp-go-0.57.0": {
+   "DUAL": {
+    "median_ms": 32.3,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 35.2,
+    "n": 24
+   }
+  },
+  "mcp-go-1.2.1": {
+   "DUAL": {
+    "median_ms": 31.0,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 35.7,
+    "n": 24
+   }
+  },
+  "py-fastmcp-2.14.0": {
+   "DUAL": {
+    "median_ms": 2058.75,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 2093.25,
+    "n": 24
+   }
+  },
+  "py-fastmcp-3.4.8": {
+   "DUAL": {
+    "median_ms": 1835.6,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 1785.15,
+    "n": 24
+   }
+  },
+  "py-fastmcp-4.1.0": {
+   "DUAL": {
+    "median_ms": 1676.0,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 1675.1999999999998,
+    "n": 24
+   }
+  },
+  "py-mcp-1.12.4": {
+   "DUAL": {
+    "median_ms": 797.8,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 786.7,
+    "n": 24
+   }
+  },
+  "py-mcp-1.28.1": {
+   "DUAL": {
+    "median_ms": 905.5999999999999,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 825.8,
+    "n": 24
+   }
+  },
+  "py-mcp-1.30.0": {
+   "DUAL": {
+    "median_ms": 801.4,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 864.0,
+    "n": 24
+   }
+  },
+  "py-mcp-2.3.0": {
+   "DUAL": {
+    "median_ms": 1033.0500000000002,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 1017.5,
+    "n": 24
+   }
+  },
+  "ts-sdk-1.29.0": {
+   "DUAL": {
+    "median_ms": 225.9,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 211.55,
+    "n": 24
+   }
+  },
+  "ts-sdk-1.32.1": {
+   "DUAL": {
+    "median_ms": 208.10000000000002,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 208.45,
+    "n": 24
+   }
+  },
+  "ts-v2-2.3.1": {
+   "DUAL": {
+    "median_ms": 184.75,
+    "n": 12
+   },
+   "LEGACY": {
+    "median_ms": 192.8,
+    "n": 24
+   }
+  }
+ },
+ "fallback_cells": [
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.4000000000000057,
+   "client_fallback_ms_median": 0.30000000000001137,
+   "n": 3,
+   "server": "everything-1.0.0",
+   "server_reply_ms_median": 226.79999999999998
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.700000000000017,
+   "client_fallback_ms_median": 0.5,
+   "n": 3,
+   "server": "everything-2026.7.4",
+   "server_reply_ms_median": 205.5
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.29999999999998295,
+   "client_fallback_ms_median": 0.29999999999998295,
+   "n": 3,
+   "server": "filesystem-1.0.0",
+   "server_reply_ms_median": 187.0
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.5999999999999943,
+   "client_fallback_ms_median": 0.4000000000000057,
+   "n": 3,
+   "server": "filesystem-2026.7.4",
+   "server_reply_ms_median": 216.2
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.3999999999999999,
+   "client_fallback_ms_median": 0.30000000000000027,
+   "n": 3,
+   "server": "go-sdk-1.6.1",
+   "server_reply_ms_median": 2.3
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.5999999999999996,
+   "client_fallback_ms_median": 0.40000000000000036,
+   "n": 3,
+   "server": "mcp-go-0.57.0",
+   "server_reply_ms_median": 7.499999999999999
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.40000000000009095,
+   "client_fallback_ms_median": 0.40000000000009095,
+   "n": 3,
+   "server": "py-fastmcp-2.14.0",
+   "server_reply_ms_median": 2008.8
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.3999999999998636,
+   "client_fallback_ms_median": 0.3000000000001819,
+   "n": 3,
+   "server": "py-fastmcp-3.4.8",
+   "server_reply_ms_median": 1705.5
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.39999999999997726,
+   "client_fallback_ms_median": 0.2999999999999545,
+   "n": 3,
+   "server": "py-mcp-1.12.4",
+   "server_reply_ms_median": 789.4000000000001
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.6000000000000227,
+   "client_fallback_ms_median": 0.3000000000000682,
+   "n": 3,
+   "server": "py-mcp-1.28.1",
+   "server_reply_ms_median": 876.6999999999999
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.5,
+   "client_fallback_ms_median": 0.39999999999997726,
+   "n": 3,
+   "server": "py-mcp-1.30.0",
+   "server_reply_ms_median": 863.0
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 1.5,
+   "client_fallback_ms_median": 0.4000000000000057,
+   "n": 3,
+   "server": "ts-sdk-1.29.0",
+   "server_reply_ms_median": 199.20000000000002
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_fallback_ms_max": 0.5,
+   "client_fallback_ms_median": 0.4000000000000057,
+   "n": 3,
+   "server": "ts-sdk-1.32.1",
+   "server_reply_ms_median": 176.89999999999998
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 2.0,
+   "client_fallback_ms_median": 0.39999999999997726,
+   "n": 3,
+   "server": "everything-1.0.0",
+   "server_reply_ms_median": 202.7
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.5,
+   "client_fallback_ms_median": 0.30000000000001137,
+   "n": 3,
+   "server": "everything-2026.7.4",
+   "server_reply_ms_median": 180.8
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.6999999999999886,
+   "client_fallback_ms_median": 0.5,
+   "n": 3,
+   "server": "filesystem-1.0.0",
+   "server_reply_ms_median": 238.9
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.30000000000001137,
+   "client_fallback_ms_median": 0.30000000000001137,
+   "n": 3,
+   "server": "filesystem-2026.7.4",
+   "server_reply_ms_median": 215.2
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.30000000000000027,
+   "client_fallback_ms_median": 0.30000000000000027,
+   "n": 3,
+   "server": "go-sdk-1.6.1",
+   "server_reply_ms_median": 2.2
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.40000000000000036,
+   "client_fallback_ms_median": 0.3000000000000007,
+   "n": 3,
+   "server": "mcp-go-0.57.0",
+   "server_reply_ms_median": 8.4
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.2999999999999545,
+   "client_fallback_ms_median": 0.29999999999972715,
+   "n": 3,
+   "server": "py-fastmcp-2.14.0",
+   "server_reply_ms_median": 2103.6000000000004
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.2999999999999545,
+   "client_fallback_ms_median": 0.09999999999990905,
+   "n": 3,
+   "server": "py-fastmcp-3.4.8",
+   "server_reply_ms_median": 1868.7
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 1.0,
+   "client_fallback_ms_median": 0.2999999999999545,
+   "n": 3,
+   "server": "py-mcp-1.12.4",
+   "server_reply_ms_median": 928.8000000000001
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.5,
+   "client_fallback_ms_median": 0.5,
+   "n": 3,
+   "server": "py-mcp-1.28.1",
+   "server_reply_ms_median": 936.8000000000001
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.2999999999999545,
+   "client_fallback_ms_median": 0.20000000000004547,
+   "n": 3,
+   "server": "py-mcp-1.30.0",
+   "server_reply_ms_median": 789.1999999999999
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 1.6000000000000227,
+   "client_fallback_ms_median": 0.30000000000001137,
+   "n": 3,
+   "server": "ts-sdk-1.29.0",
+   "server_reply_ms_median": 163.3
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_fallback_ms_max": 0.30000000000001137,
+   "client_fallback_ms_median": 0.30000000000001137,
+   "n": 3,
+   "server": "ts-sdk-1.32.1",
+   "server_reply_ms_median": 194.3
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 1.1000000000000227,
+   "client_fallback_ms_median": 0.9000000000000057,
+   "n": 3,
+   "server": "everything-1.0.0",
+   "server_reply_ms_median": 207.20000000000002
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.799999999999983,
+   "client_fallback_ms_median": 0.700000000000017,
+   "n": 3,
+   "server": "everything-2026.7.4",
+   "server_reply_ms_median": 180.70000000000002
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 1.0,
+   "client_fallback_ms_median": 0.6000000000000227,
+   "n": 3,
+   "server": "filesystem-1.0.0",
+   "server_reply_ms_median": 186.1
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 1.0999999999999943,
+   "client_fallback_ms_median": 1.0,
+   "n": 3,
+   "server": "filesystem-2026.7.4",
+   "server_reply_ms_median": 229.0
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.7000000000000002,
+   "client_fallback_ms_median": 0.7000000000000002,
+   "n": 3,
+   "server": "go-sdk-1.6.1",
+   "server_reply_ms_median": 2.0999999999999996
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.8000000000000007,
+   "client_fallback_ms_median": 0.7999999999999998,
+   "n": 3,
+   "server": "mcp-go-0.57.0",
+   "server_reply_ms_median": 6.2
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.7999999999999545,
+   "client_fallback_ms_median": 0.7000000000002728,
+   "n": 3,
+   "server": "py-fastmcp-2.14.0",
+   "server_reply_ms_median": 1986.6
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.7999999999999545,
+   "client_fallback_ms_median": 0.6999999999998181,
+   "n": 3,
+   "server": "py-fastmcp-3.4.8",
+   "server_reply_ms_median": 1809.6000000000001
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.8000000000000682,
+   "client_fallback_ms_median": 0.7999999999999545,
+   "n": 3,
+   "server": "py-mcp-1.12.4",
+   "server_reply_ms_median": 739.0
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.7000000000000455,
+   "client_fallback_ms_median": 0.3000000000000682,
+   "n": 3,
+   "server": "py-mcp-1.28.1",
+   "server_reply_ms_median": 736.4
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 0.8999999999999773,
+   "client_fallback_ms_median": 0.6999999999999318,
+   "n": 3,
+   "server": "py-mcp-1.30.0",
+   "server_reply_ms_median": 761.9
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 1.0999999999999943,
+   "client_fallback_ms_median": 1.0,
+   "n": 3,
+   "server": "ts-sdk-1.29.0",
+   "server_reply_ms_median": 168.4
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_fallback_ms_max": 1.6999999999999886,
+   "client_fallback_ms_median": 1.1999999999999886,
+   "n": 3,
+   "server": "ts-sdk-1.32.1",
+   "server_reply_ms_median": 161.0
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 0.9000000000000057,
+   "client_fallback_ms_median": 0.9000000000000057,
+   "n": 3,
+   "server": "everything-1.0.0",
+   "server_reply_ms_median": 194.39999999999998
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.9000000000000057,
+   "client_fallback_ms_median": 0.9000000000000057,
+   "n": 3,
+   "server": "everything-2026.7.4",
+   "server_reply_ms_median": 222.7
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.0,
+   "client_fallback_ms_median": 0.6999999999999886,
+   "n": 3,
+   "server": "filesystem-1.0.0",
+   "server_reply_ms_median": 180.10000000000002
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 0.9000000000000057,
+   "client_fallback_ms_median": 0.8000000000000114,
+   "n": 3,
+   "server": "filesystem-2026.7.4",
+   "server_reply_ms_median": 239.4
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 0.8000000000000003,
+   "client_fallback_ms_median": 0.7000000000000002,
+   "n": 3,
+   "server": "go-sdk-1.6.1",
+   "server_reply_ms_median": 2.2
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.0999999999999996,
+   "client_fallback_ms_median": 0.9000000000000004,
+   "n": 3,
+   "server": "mcp-go-0.57.0",
+   "server_reply_ms_median": 6.3
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.099999999999909,
+   "client_fallback_ms_median": 0.900000000000091,
+   "n": 3,
+   "server": "py-fastmcp-2.14.0",
+   "server_reply_ms_median": 2190.1
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 0.8999999999998636,
+   "client_fallback_ms_median": 0.8999999999998636,
+   "n": 3,
+   "server": "py-fastmcp-3.4.8",
+   "server_reply_ms_median": 1769.8
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.099999999999909,
+   "client_fallback_ms_median": 0.7000000000000455,
+   "n": 3,
+   "server": "py-mcp-1.12.4",
+   "server_reply_ms_median": 678.5
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.0,
+   "client_fallback_ms_median": 0.7000000000000455,
+   "n": 3,
+   "server": "py-mcp-1.28.1",
+   "server_reply_ms_median": 850.5999999999999
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 0.8000000000000682,
+   "client_fallback_ms_median": 0.5,
+   "n": 3,
+   "server": "py-mcp-1.30.0",
+   "server_reply_ms_median": 737.0999999999999
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.0,
+   "client_fallback_ms_median": 0.9000000000000057,
+   "n": 3,
+   "server": "ts-sdk-1.29.0",
+   "server_reply_ms_median": 188.1
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_fallback_ms_max": 1.1000000000000227,
+   "client_fallback_ms_median": 0.9000000000000057,
+   "n": 3,
+   "server": "ts-sdk-1.32.1",
+   "server_reply_ms_median": 159.0
+  }
+ ]
+}

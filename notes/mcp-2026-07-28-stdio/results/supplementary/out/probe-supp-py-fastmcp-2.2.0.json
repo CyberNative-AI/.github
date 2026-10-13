@@ -1,0 +1,40 @@
+{
+ "cmd": [
+  "/senv/py/fastmcp-2.2.0/bin/python",
+  "/supp/server_fastmcp.py"
+ ],
+ "discover_error": null,
+ "discover_shape": "exit",
+ "discover_supported": [],
+ "era": "NEITHER",
+ "initialize_error": null,
+ "initialize_version": null,
+ "legacy_tools_ok": false,
+ "raw": {
+  "discover": {
+   "lines": [],
+   "rc": 1,
+   "replies": {
+    "1": {
+     "_no_reply": true,
+     "exited": true,
+     "rc": 1
+    }
+   }
+  },
+  "legacy": {
+   "lines": [],
+   "rc": 1,
+   "replies": {
+    "1": {
+     "_no_reply": true,
+     "exited": true,
+     "rc": 1
+    },
+    "_pipe": {
+     "error": "BrokenPipeError(32, 'Broken pipe')"
+    }
+   }
+  }
+ }
+}

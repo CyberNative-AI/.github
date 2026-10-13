@@ -1,0 +1,116 @@
+{
+ "cmd": [
+  "/envs/py/mcp-1.28.1/bin/python",
+  "/src/adapters/py/server_mcp1.py"
+ ],
+ "discover_error": {
+  "code": -32602,
+  "data": "",
+  "message": "Invalid request parameters"
+ },
+ "discover_shape": "error:-32602",
+ "discover_supported": [],
+ "era": "LEGACY_ONLY",
+ "initialize_error": null,
+ "initialize_version": "2025-11-25",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32602,\"message\":\"Invalid request parameters\",\"data\":\"\"}}",
+     "t_ms": 1373.8
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "error": {
+      "code": -32602,
+      "data": "",
+      "message": "Invalid request parameters"
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.28.1\"}}}",
+     "t_ms": 930.0
+    },
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"title\":\"echoArguments\",\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"title\":\"echoOutput\",\"type\":\"object\"}}]}}",
+     "t_ms": 931.3
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "experimental": {},
+       "prompts": {
+        "listChanged": false
+       },
+       "resources": {
+        "listChanged": false,
+        "subscribe": false
+       },
+       "tools": {
+        "listChanged": false
+       }
+      },
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.28.1"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "description": "Echo the message",
+        "inputSchema": {
+         "properties": {
+          "message": {
+           "title": "Message",
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "title": "echoArguments",
+         "type": "object"
+        },
+        "name": "echo",
+        "outputSchema": {
+         "properties": {
+          "result": {
+           "title": "Result",
+           "type": "string"
+          }
+         },
+         "required": [
+          "result"
+         ],
+         "title": "echoOutput",
+         "type": "object"
+        }
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}
