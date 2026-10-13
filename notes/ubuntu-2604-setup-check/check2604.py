@@ -314,9 +314,12 @@ EXPR = re.compile(r"\$\{\{\s*(.*?)\s*\}\}")
 _SEG = re.compile(r"\.([A-Za-z0-9_-]+)|\[(\d+)\]|\[['\"]([^'\"]+)['\"]\]")
 
 
+_PATH = re.compile(r"(matrix|env)((?:\.[A-Za-z0-9_-]+|\[\d+\]|\[['\"][^'\"]+['\"]\])+)")
+
+
 def lookup(e, ctx):
     """Value of a matrix./env. path such as matrix.os.image or matrix.plat[0]; Unknown otherwise."""
-    m = re.fullmatch(r"(matrix|env)((?:\.[A-Za-z0-9_-]+|\[\d+\]|\[['\"][^'\"]+['\"]\])+)", e.strip())
+    m = _PATH.fullmatch(e.strip())
     if not m:
         raise Unknown(f"expression ${{{{ {e} }}}}")
     v = ctx[m.group(1)]
@@ -336,14 +339,40 @@ def lookup(e, ctx):
     return v
 
 
+_LIT = re.compile(r"'((?:[^']|'')*)'")
+
+
+def fallback(e, ctx):
+    """`matrix.os || 'ubuntu-latest'`: the first truthy operand, else the last one, as in the runner.
+    Operands are matrix./env. paths or string literals; a matrix value missing from this combination
+    is null. Any other operand (&&, !, ==, calls, inputs., vars.) leaves the expression Unknown."""
+    v = None
+    for p in (x.strip() for x in e.split("||")):  # && and comparisons bind tighter than ||
+        lit = _LIT.fullmatch(p)
+        if lit:
+            v = lit.group(1).replace("''", "'")
+        elif _PATH.fullmatch(p):
+            try:
+                v = lookup(p, ctx)
+            except Unknown:
+                if not p.startswith("matrix"):
+                    raise
+                v = None
+        else:
+            raise Unknown(f"expression ${{{{ {e} }}}}")
+        if v is not None and v is not False and v != 0 and v != "":
+            return v
+    return "" if v is None else v
+
+
 def substitute(val, ctx):
-    """Replace ${{ matrix.x }} / ${{ env.X }}; raise Unknown on anything else."""
+    """Replace ${{ matrix.x }} / ${{ env.X }} / ${{ a || 'b' }}; raise Unknown on anything else."""
     if isinstance(val, (list, dict)):
         raise Unknown("non-scalar input")
     s = js_str(val)
 
     def rep(m):
-        v = lookup(m.group(1), ctx)
+        v = fallback(m.group(1), ctx) if "||" in m.group(1) else lookup(m.group(1), ctx)
         if isinstance(v, (list, dict)):
             raise Unknown(f"non-scalar {m.group(1)}")
         return js_str(v)
@@ -378,17 +407,15 @@ def expand_matrix(strategy):
     if isinstance(excl, str) or isinstance(inc, str):
         raise Unknown("include/exclude is an expression")
     combos = [c for c in combos if not any(all(c.get(k) == v for k, v in e.items()) for e in excl)]
-    originals = [dict(c) for c in combos]
+    originals = [dict(c) for c in combos]  # include entries never extend combinations added by include
     for e in inc:
         applied = False
-        for i, c in enumerate(combos):
-            orig = originals[i]
+        for c, orig in zip(combos, originals):
             if all(orig.get(k, v) == v for k, v in e.items() if k in base):
                 c.update(e)
                 applied = True
         if not applied:
             combos.append(dict(e))
-            originals.append(dict(e))
     return combos or [{}]
 
 

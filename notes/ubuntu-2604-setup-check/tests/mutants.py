@@ -14,6 +14,10 @@ MUTANTS = {
     "runs-on-any-ubuntu": ('return runs_on.strip() == "ubuntu-latest"', 'return runs_on.strip().startswith("ubuntu")'),
     "case-sensitive-compare": ('eq = left.lower() == mm.group(3).lower()', 'eq = left == mm.group(3)'),
     "no-explicit-ruby-file": ('elif raw in (".ruby-version", ".tool-versions", "mise.toml"):', 'elif False:'),
+    "fallback-unknown-is-null": ('                if not p.startswith("matrix"):\n                    raise\n', ''),
+    "fallback-missing-key-unknown": ('                if not p.startswith("matrix"):\n                    raise\n                v = None',
+                                     '                raise'),
+    "include-extends-added": ('            combos.append(dict(e))\n', '            combos.append(dict(e))\n            originals.append(dict(e))\n'),
     "soft-unknown-kills-job": ('                    soft = None  # continue-on-error', '                    raise  # continue-on-error'),
 }
 src = open(os.path.join(TOOL, "check2604.py")).read()
