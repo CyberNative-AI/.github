@@ -70,6 +70,8 @@ Real output, from builds in this note:
 
 Read `discover_shape` as an observation, not a verdict. `result` or `error:<code>` means the probe got an answer, which is what the probing clients we tested needed. `silence` or `exit` is a warning sign: a silent server that keeps running still works with three of the four probing clients after their timeouts (see below), while `mcp` 1.6.0 is silent and then exits. Either way, test your server with the clients your users run. The full exchange is in `probe.json`.
 
+The probe waits up to 5 seconds for each reply, and the first wait includes start-up. If your command downloads the server on launch (`npx -y …`, `uvx …`), run it once by hand first and stop it with Ctrl-C once it has started. On a cold cache the download can use up the wait, the probe can stop it partway, and a `silence`, `exit` or `NEITHER` reading then says nothing about the server.
+
 ## Hand-written stdio loops
 
 The two bad shapes also show up in stdio servers that people write by hand. We tested two small synthetic servers. These are not real projects, and we did not sample real hand-written servers.
