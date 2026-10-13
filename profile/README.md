@@ -24,6 +24,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[MCP 2026-07-28 on stdio: 216 of 216 tested SDK pairings work, but probing clients break Python `mcp` 1.2.1 and 1.6.0 servers](https://github.com/CyberNative-AI/.github/tree/main/notes/mcp-2026-07-28-stdio) — 12 SDK client builds against 18 server builds over stdio, three runs each. Outside that matrix, the four probing clients failed 3 of 3 runs against servers on Python `mcp` 1.2.1 and 1.6.0. Includes the error messages, a stdlib self-check for your own server, the harness and the raw results.
+
 [`ubuntu-latest` becomes Ubuntu 26.04: about 1 in 5 sampled Python and Ruby repos have a job that fails at setup](https://github.com/CyberNative-AI/.github/tree/main/notes/ubuntu-2604-setup-check) — In 122 of 548 active repositories that use setup-python or setup-ruby on `ubuntu-latest`, at least one job asks for a version with no 26.04 build. Includes a checker that lists each failing matrix entry, and the fix.
 
 [SSH hardening defaults from three projects switch off OpenSSH's post-quantum key exchange](https://github.com/CyberNative-AI/.github/tree/main/notes/ssh-hardening-pq-kex) — In container tests with default variables, 10 source-and-OS combinations from ComplianceAsCode, ansible-lockdown and konstruktoid/ansible-role-hardening switched stock sshd to classical key exchange; an OpenSSH 10.2 client warned on each. Includes the check and a fix line for each tested OpenSSH version.
