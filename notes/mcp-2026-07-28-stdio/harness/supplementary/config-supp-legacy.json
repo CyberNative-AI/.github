@@ -1,0 +1,95 @@
+{
+ "clients": {
+  "py-mcp-1.30.0": [
+   "/envs/py/mcp-1.30.0/bin/python",
+   "/src/adapters/py/client_mcp1.py"
+  ],
+  "ts-sdk-1.32.1": [
+   "node",
+   "/src/adapters/node/client-ts-sdk-1.32.1.mjs"
+  ],
+  "go-sdk-1.6.1": [
+   "/envs/gobin/go-sdk-1.6.1-client"
+  ]
+ },
+ "servers": {
+  "supp-py-mcp-1.2.1": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/senv/py/mcp-1.2.1/bin/python",
+    "/supp/server_mcp1.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-mcp",
+   "tool": "echo"
+  },
+  "supp-py-mcp-1.6.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/senv/py/mcp-1.6.0/bin/python",
+    "/supp/server_mcp1.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-mcp",
+   "tool": "echo"
+  },
+  "supp-py-fastmcp-2.2.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/senv/py/fastmcp-2.2.0/bin/python",
+    "/supp/server_fastmcp.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-fastmcp",
+   "tool": "echo"
+  },
+  "supp-py-fastmcp-2.10.6": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/senv/py/fastmcp-2.10.6/bin/python",
+    "/supp/server_fastmcp.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-fastmcp",
+   "tool": "echo"
+  },
+  "supp-ts-sdk-1.7.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/senv/node/ts-sdk-1.7.0/server_ts1.mjs"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  },
+  "supp-ts-sdk-1.12.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/senv/node/ts-sdk-1.12.0/server_ts1.mjs"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  }
+ }
+}

@@ -1,0 +1,398 @@
+{
+ "client_root": {
+  "go-sdk-1.6.1": "go-sdk",
+  "go-sdk-1.8.0": "go-sdk",
+  "mcp-go-0.57.0": "mcp-go",
+  "mcp-go-1.2.1": "mcp-go",
+  "py-fastmcp-3.4.8": "py-fastmcp",
+  "py-fastmcp-4.1.0": "py-fastmcp",
+  "py-mcp-1.28.1": "py-mcp",
+  "py-mcp-1.30.0": "py-mcp",
+  "py-mcp-2.3.0": "py-mcp",
+  "ts-sdk-1.29.0": "ts",
+  "ts-sdk-1.32.1": "ts",
+  "ts-v2-2.3.1": "ts"
+ },
+ "clients": {
+  "go-sdk-1.6.1": [
+   "/envs/gobin/go-sdk-1.6.1-client"
+  ],
+  "go-sdk-1.8.0": [
+   "/envs/gobin/go-sdk-1.8.0-client"
+  ],
+  "mcp-go-0.57.0": [
+   "/envs/gobin/mcp-go-0.57.0-client"
+  ],
+  "mcp-go-1.2.1": [
+   "/envs/gobin/mcp-go-1.2.1-client"
+  ],
+  "py-fastmcp-3.4.8": [
+   "/envs/py/fastmcp-3.4.8/bin/python",
+   "/src/adapters/py/client_fastmcp.py"
+  ],
+  "py-fastmcp-4.1.0": [
+   "/envs/py/fastmcp-4.1.0/bin/python",
+   "/src/adapters/py/client_fastmcp.py"
+  ],
+  "py-mcp-1.28.1": [
+   "/envs/py/mcp-1.28.1/bin/python",
+   "/src/adapters/py/client_mcp1.py"
+  ],
+  "py-mcp-1.30.0": [
+   "/envs/py/mcp-1.30.0/bin/python",
+   "/src/adapters/py/client_mcp1.py"
+  ],
+  "py-mcp-2.3.0": [
+   "/envs/py/mcp-2.3.0/bin/python",
+   "/src/adapters/py/client_mcp2.py"
+  ],
+  "ts-sdk-1.29.0": [
+   "node",
+   "/src/adapters/node/client-ts-sdk-1.29.0.mjs"
+  ],
+  "ts-sdk-1.32.1": [
+   "node",
+   "/src/adapters/node/client-ts-sdk-1.32.1.mjs"
+  ],
+  "ts-v2-2.3.1": [
+   "node",
+   "/src/adapters/node/client-ts-v2-2.3.1.mjs"
+  ]
+ },
+ "self_cells": {
+  "go-sdk-1.6.1": "go-sdk-1.6.1",
+  "go-sdk-1.8.0": "go-sdk-1.8.0",
+  "mcp-go-0.57.0": "mcp-go-0.57.0",
+  "mcp-go-1.2.1": "mcp-go-1.2.1",
+  "py-fastmcp-3.4.8": "py-fastmcp-3.4.8",
+  "py-fastmcp-4.1.0": "py-fastmcp-4.1.0",
+  "py-mcp-1.28.1": "py-mcp-1.28.1",
+  "py-mcp-1.30.0": "py-mcp-1.30.0",
+  "py-mcp-2.3.0": "py-mcp-2.3.0",
+  "ts-sdk-1.29.0": "ts-sdk-1.29.0",
+  "ts-sdk-1.32.1": "ts-sdk-1.32.1",
+  "ts-v2-2.3.1": "ts-v2-2.3.1"
+ },
+ "servers": {
+  "everything-1.0.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/envs/node/everything-1.0.0/node_modules/@modelcontextprotocol/server-everything/dist/index.js"
+   ],
+   "expect": "Echo: hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  },
+  "everything-2026.7.4": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/envs/node/everything-2026.7.4/node_modules/@modelcontextprotocol/server-everything/dist/index.js"
+   ],
+   "expect": "Echo: hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  },
+  "fake-dual": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/usr/bin/python3",
+    "/src/fake_server.py",
+    "dual"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": false,
+   "root": "synthetic",
+   "tool": "echo"
+  },
+  "fake-legacy_32602": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/usr/bin/python3",
+    "/src/fake_server.py",
+    "legacy_32602"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": false,
+   "root": "synthetic",
+   "tool": "echo"
+  },
+  "fake-legacy_exit": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/usr/bin/python3",
+    "/src/fake_server.py",
+    "legacy_exit"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": false,
+   "root": "synthetic",
+   "tool": "echo"
+  },
+  "fake-legacy_silent": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/usr/bin/python3",
+    "/src/fake_server.py",
+    "legacy_silent"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": false,
+   "root": "synthetic",
+   "tool": "echo"
+  },
+  "fake-modern": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/usr/bin/python3",
+    "/src/fake_server.py",
+    "modern"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": false,
+   "root": "synthetic",
+   "tool": "echo"
+  },
+  "filesystem-1.0.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/envs/node/filesystem-1.0.0/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
+    "/tmp"
+   ],
+   "expect": "Allowed directories",
+   "real": true,
+   "root": "ts",
+   "tool": "list_allowed_directories"
+  },
+  "filesystem-2026.7.4": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/envs/node/filesystem-2026.7.4/node_modules/@modelcontextprotocol/server-filesystem/dist/index.js",
+    "/tmp"
+   ],
+   "expect": "Allowed directories",
+   "real": true,
+   "root": "ts",
+   "tool": "list_allowed_directories"
+  },
+  "go-sdk-1.6.1": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/gobin/go-sdk-1.6.1-server"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "go-sdk",
+   "tool": "echo"
+  },
+  "go-sdk-1.8.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/gobin/go-sdk-1.8.0-server"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "go-sdk",
+   "tool": "echo"
+  },
+  "mcp-go-0.57.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/gobin/mcp-go-0.57.0-server"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "mcp-go",
+   "tool": "echo"
+  },
+  "mcp-go-1.2.1": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/gobin/mcp-go-1.2.1-server"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "mcp-go",
+   "tool": "echo"
+  },
+  "py-fastmcp-2.14.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/fastmcp-2.14.0/bin/python",
+    "/src/adapters/py/server_fastmcp.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-fastmcp",
+   "tool": "echo"
+  },
+  "py-fastmcp-3.4.8": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/fastmcp-3.4.8/bin/python",
+    "/src/adapters/py/server_fastmcp.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-fastmcp",
+   "tool": "echo"
+  },
+  "py-fastmcp-4.1.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/fastmcp-4.1.0/bin/python",
+    "/src/adapters/py/server_fastmcp.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-fastmcp",
+   "tool": "echo"
+  },
+  "py-mcp-1.12.4": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/mcp-1.12.4/bin/python",
+    "/src/adapters/py/server_mcp1.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-mcp",
+   "tool": "echo"
+  },
+  "py-mcp-1.28.1": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/mcp-1.28.1/bin/python",
+    "/src/adapters/py/server_mcp1.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-mcp",
+   "tool": "echo"
+  },
+  "py-mcp-1.30.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/mcp-1.30.0/bin/python",
+    "/src/adapters/py/server_mcp1.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-mcp",
+   "tool": "echo"
+  },
+  "py-mcp-2.3.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "/envs/py/mcp-2.3.0/bin/python",
+    "/src/adapters/py/server_mcp2.py"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "py-mcp",
+   "tool": "echo"
+  },
+  "ts-sdk-1.29.0": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/src/adapters/node/server-ts-sdk-1.29.0.mjs"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  },
+  "ts-sdk-1.32.1": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/src/adapters/node/server-ts-sdk-1.32.1.mjs"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  },
+  "ts-v2-2.3.1": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/src/adapters/node/server-ts-v2-2.3.1.mjs"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": true,
+   "root": "ts",
+   "tool": "echo"
+  },
+  "ts-v2-2.3.1-connect": {
+   "args": {
+    "message": "hello-re13340"
+   },
+   "cmd": [
+    "node",
+    "/src/adapters/node/server-ts-v2-2.3.1-connect.mjs"
+   ],
+   "expect": "echo:hello-re13340",
+   "real": false,
+   "root": "ts",
+   "tool": "echo"
+  }
+ },
+ "transparency": {
+  "go-sdk-1.8.0": "go-sdk-1.8.0",
+  "py-mcp-2.3.0": "py-mcp-2.3.0",
+  "ts-v2-2.3.1": "ts-v2-2.3.1"
+ }
+}

@@ -1,0 +1,94 @@
+{
+ "cmd": [
+  "/envs/gobin/mcp-go-0.57.0-server"
+ ],
+ "discover_error": {
+  "code": -32601,
+  "message": "Method server/discover not found"
+ },
+ "discover_shape": "error:-32601",
+ "discover_supported": [],
+ "era": "LEGACY_ONLY",
+ "initialize_error": null,
+ "initialize_version": "2025-11-25",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32601,\"message\":\"Method server/discover not found\"}}",
+     "t_ms": 6.8
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "error": {
+      "code": -32601,
+      "message": "Method server/discover not found"
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"tools\":{}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}",
+     "t_ms": 7.4
+    },
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"annotations\":{\"readOnlyHint\":false,\"destructiveHint\":true,\"idempotentHint\":false,\"openWorldHint\":true},\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\"},\"name\":\"echo\"}]}}",
+     "t_ms": 7.6
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "tools": {}
+      },
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.0.0"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "annotations": {
+         "destructiveHint": true,
+         "idempotentHint": false,
+         "openWorldHint": true,
+         "readOnlyHint": false
+        },
+        "description": "Echo the message",
+        "inputSchema": {
+         "properties": {
+          "message": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "type": "object"
+        },
+        "name": "echo"
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

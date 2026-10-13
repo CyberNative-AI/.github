@@ -1,0 +1,92 @@
+{
+ "cmd": [
+  "/envs/gobin/go-sdk-1.6.1-server"
+ ],
+ "discover_error": {
+  "code": 0,
+  "message": "method \"server/discover\" is invalid during session initialization"
+ },
+ "discover_shape": "error:0",
+ "discover_supported": [],
+ "era": "LEGACY_ONLY",
+ "initialize_error": null,
+ "initialize_version": "2025-11-25",
+ "legacy_tools_ok": true,
+ "raw": {
+  "discover": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":0,\"message\":\"method \\\"server/discover\\\" is invalid during session initialization\"}}",
+     "t_ms": 120.1
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "error": {
+      "code": 0,
+      "message": "method \"server/discover\" is invalid during session initialization"
+     },
+     "id": 1,
+     "jsonrpc": "2.0"
+    }
+   }
+  },
+  "legacy": {
+   "lines": [
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"capabilities\":{\"logging\":{},\"tools\":{\"listChanged\":true}},\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}",
+     "t_ms": 2.5
+    },
+    {
+     "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"description\":\"Echo the message\",\"inputSchema\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"additionalProperties\":false},\"name\":\"echo\"}]}}",
+     "t_ms": 3.1
+    }
+   ],
+   "rc": 0,
+   "replies": {
+    "1": {
+     "id": 1,
+     "jsonrpc": "2.0",
+     "result": {
+      "capabilities": {
+       "logging": {},
+       "tools": {
+        "listChanged": true
+       }
+      },
+      "protocolVersion": "2025-11-25",
+      "serverInfo": {
+       "name": "echo-server",
+       "version": "1.0.0"
+      }
+     }
+    },
+    "2": {
+     "id": 2,
+     "jsonrpc": "2.0",
+     "result": {
+      "tools": [
+       {
+        "description": "Echo the message",
+        "inputSchema": {
+         "additionalProperties": false,
+         "properties": {
+          "message": {
+           "type": "string"
+          }
+         },
+         "required": [
+          "message"
+         ],
+         "type": "object"
+        },
+        "name": "echo"
+       }
+      ]
+     }
+    }
+   }
+  }
+ }
+}

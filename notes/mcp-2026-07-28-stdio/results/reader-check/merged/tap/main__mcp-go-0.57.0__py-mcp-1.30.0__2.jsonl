@@ -1,0 +1,12 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/py/mcp-1.30.0/bin/python\", \"/src/adapters/py/server_mcp1.py\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"capabilities\":{}}}"}
+{"t_ms": 873.8, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.30.0\"}}}"}
+{"t_ms": 874.6, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\"}"}
+{"t_ms": 874.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 875.8, "dir": "err", "line": "Processing request of type ListToolsRequest"}
+{"t_ms": 876.4, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"title\":\"echoArguments\",\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"title\":\"echoOutput\",\"type\":\"object\"}}]}}"}
+{"t_ms": 876.8, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 877.4, "dir": "err", "line": "Processing request of type CallToolRequest"}
+{"t_ms": 879.4, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"structuredContent\":{\"result\":\"echo:hello-re13340\"},\"isError\":false}}"}
+{"t_ms": 879.6, "dir": "client-eof", "line": ""}
+{"t_ms": 1077.3, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 879.6}"}

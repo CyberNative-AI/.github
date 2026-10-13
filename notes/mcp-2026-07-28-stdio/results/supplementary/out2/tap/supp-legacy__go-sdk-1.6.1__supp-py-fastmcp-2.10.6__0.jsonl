@@ -1,0 +1,36 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/senv/py/fastmcp-2.10.6/bin/python\", \"/supp/server_fastmcp.py\"]"}
+{"t_ms": 0.6, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"roots\":{\"listChanged\":true}}}}"}
+{"t_ms": 1025.7, "dir": "err", "line": ""}
+{"t_ms": 1025.8, "dir": "err", "line": ""}
+{"t_ms": 1025.8, "dir": "err", "line": "\u256d\u2500 FastMCP 2.0 \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e"}
+{"t_ms": 1025.8, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502        _ __ ___ ______           __  __  _____________    ____    ____     \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502       _ __ ___ / ____/___ ______/ /_/  |/  / ____/ __ \\  |___ \\  / __ \\    \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502      _ __ ___ / /_  / __ `/ ___/ __/ /|_/ / /   / /_/ /  ___/ / / / / /    \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502     _ __ ___ / __/ / /_/ (__  ) /_/ /  / / /___/ ____/  /  __/_/ /_/ /     \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    _ __ ___ /_/    \\__,_/____/\\__/_/  /_/\\____/_/      /_____(_)____/      \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    \ud83d\udda5\ufe0f  Server name:     echo-server                                         \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    \ud83d\udce6 Transport:       STDIO                                               \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    \ud83d\udcda Docs:            https://gofastmcp.com                               \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    \ud83d\ude80 Deploy:          https://fastmcp.cloud                               \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    \ud83c\udfce\ufe0f  FastMCP version: 2.10.6                                              \u2502"}
+{"t_ms": 1025.9, "dir": "err", "line": "\u2502    \ud83e\udd1d MCP version:     1.12.2                                              \u2502"}
+{"t_ms": 1026.0, "dir": "err", "line": "\u2502                                                                            \u2502"}
+{"t_ms": 1026.0, "dir": "err", "line": "\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f"}
+{"t_ms": 1026.0, "dir": "err", "line": ""}
+{"t_ms": 1026.0, "dir": "err", "line": ""}
+{"t_ms": 1026.9, "dir": "err", "line": "[10/13/26 08:31:02] INFO     Starting MCP server 'echo-server'    server.py:1371"}
+{"t_ms": 1026.9, "dir": "err", "line": "                             with transport 'stdio'                             "}
+{"t_ms": 1029.6, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":true}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.12.2\"}}}"}
+{"t_ms": 1030.0, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":{}}"}
+{"t_ms": 1030.1, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 1031.2, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"title\":\"_WrappedResult\",\"type\":\"object\",\"x-fastmcp-wrap-result\":true}}]}}"}
+{"t_ms": 1031.4, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 1033.7, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"structuredContent\":{\"result\":\"echo:hello-re13340\"},\"isError\":false}}"}
+{"t_ms": 1034.0, "dir": "client-eof", "line": ""}
+{"t_ms": 1173.9, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 1034.0}"}

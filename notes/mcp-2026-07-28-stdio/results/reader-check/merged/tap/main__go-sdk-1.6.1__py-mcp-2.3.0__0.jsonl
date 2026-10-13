@@ -1,0 +1,10 @@
+{"t_ms": 1.4, "dir": "start", "line": "[\"/envs/py/mcp-2.3.0/bin/python\", \"/src/adapters/py/server_mcp2.py\"]"}
+{"t_ms": 3.6, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"roots\":{\"listChanged\":true}}}}"}
+{"t_ms": 1214.3, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"capabilities\":{\"prompts\":{\"listChanged\":false},\"resources\":{\"listChanged\":false,\"subscribe\":false},\"tools\":{\"listChanged\":false}},\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}"}
+{"t_ms": 1214.9, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":{}}"}
+{"t_ms": 1214.9, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 1216.9, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\",\"title\":\"echoArguments\"},\"name\":\"echo\",\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"type\":\"object\",\"title\":\"echoOutput\"}}]}}"}
+{"t_ms": 1217.6, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 1219.0, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"content\":[{\"text\":\"echo:hello-re13340\",\"type\":\"text\"}],\"isError\":false,\"structuredContent\":{\"result\":\"echo:hello-re13340\"}}}"}
+{"t_ms": 1219.4, "dir": "client-eof", "line": ""}
+{"t_ms": 1522.9, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 1219.4}"}

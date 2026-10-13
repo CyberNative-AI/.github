@@ -1,0 +1,4 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/usr/bin/python3\", \"/src/fake_server.py\", \"modern\"]"}
+{"t_ms": 4.7, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 21.7, "dir": "s2c", "line": "{\"jsonrpc\": \"2.0\", \"id\": 0, \"error\": {\"code\": -32022, \"message\": \"Unsupported protocol version; supported: 2026-07-28\", \"data\": {\"supported\": [\"2026-07-28\"], \"requested\": \"2025-11-25\"}}}"}
+{"t_ms": 23.2, "dir": "client-eof", "line": ""}

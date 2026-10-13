@@ -1,0 +1,10 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/gobin/go-sdk-1.6.1-server\"]"}
+{"t_ms": 1.1, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 3.7, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":{\"capabilities\":{\"logging\":{},\"tools\":{\"listChanged\":true}},\"protocolVersion\":\"2025-11-25\",\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}"}
+{"t_ms": 9.5, "dir": "c2s", "line": "{\"method\":\"notifications/initialized\",\"jsonrpc\":\"2.0\"}"}
+{"t_ms": 9.7, "dir": "c2s", "line": "{\"method\":\"tools/list\",\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 11.1, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"tools\":[{\"description\":\"Echo the message\",\"inputSchema\":{\"type\":\"object\",\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"additionalProperties\":false},\"name\":\"echo\"}]}}"}
+{"t_ms": 12.0, "dir": "c2s", "line": "{\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 12.3, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}]}}"}
+{"t_ms": 13.4, "dir": "client-eof", "line": ""}
+{"t_ms": 14.4, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 13.4}"}

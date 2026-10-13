@@ -1,0 +1,12 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/py/mcp-1.12.4/bin/python\", \"/src/adapters/py/server_mcp1.py\"]"}
+{"t_ms": 0.8, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"roots\":{\"listChanged\":true}}}}"}
+{"t_ms": 844.7, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"protocolVersion\":\"2025-06-18\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.12.4\"}}}"}
+{"t_ms": 845.3, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":{}}"}
+{"t_ms": 845.3, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 847.2, "dir": "err", "line": "Processing request of type ListToolsRequest"}
+{"t_ms": 847.6, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"title\":\"echoArguments\",\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"title\":\"Result\",\"type\":\"string\"}},\"required\":[\"result\"],\"title\":\"echoOutput\",\"type\":\"object\"}}]}}"}
+{"t_ms": 848.0, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 848.8, "dir": "err", "line": "Processing request of type CallToolRequest"}
+{"t_ms": 852.8, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"structuredContent\":{\"result\":\"echo:hello-re13340\"},\"isError\":false}}"}
+{"t_ms": 853.3, "dir": "client-eof", "line": ""}
+{"t_ms": 1029.1, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 853.3}"}

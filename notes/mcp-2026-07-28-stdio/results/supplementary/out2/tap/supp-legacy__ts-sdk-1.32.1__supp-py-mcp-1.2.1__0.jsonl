@@ -1,0 +1,12 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/senv/py/mcp-1.2.1/bin/python\", \"/supp/server_mcp1.py\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 577.5, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":{\"protocolVersion\":\"2024-11-05\",\"capabilities\":{\"experimental\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":false}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.2.1\"}}}"}
+{"t_ms": 582.8, "dir": "c2s", "line": "{\"method\":\"notifications/initialized\",\"jsonrpc\":\"2.0\"}"}
+{"t_ms": 582.9, "dir": "c2s", "line": "{\"method\":\"tools/list\",\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 584.0, "dir": "err", "line": "Processing request of type ListToolsRequest"}
+{"t_ms": 584.8, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"title\":\"Message\",\"type\":\"string\"}},\"required\":[\"message\"],\"title\":\"echoArguments\",\"type\":\"object\"}}]}}"}
+{"t_ms": 586.8, "dir": "c2s", "line": "{\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 587.3, "dir": "err", "line": "Processing request of type CallToolRequest"}
+{"t_ms": 587.9, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"isError\":false}}"}
+{"t_ms": 589.2, "dir": "client-eof", "line": ""}
+{"t_ms": 656.3, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 589.2}"}

@@ -1,0 +1,10 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/gobin/mcp-go-0.57.0-server\"]"}
+{"t_ms": 0.6, "dir": "c2s", "line": "{\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{},\"clientInfo\":{\"name\":\"mcp\",\"version\":\"0.1.0\"}},\"jsonrpc\":\"2.0\",\"id\":0}"}
+{"t_ms": 7.9, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":0,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"tools\":{}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}"}
+{"t_ms": 10.4, "dir": "c2s", "line": "{\"method\":\"notifications/initialized\",\"jsonrpc\":\"2.0\"}"}
+{"t_ms": 10.5, "dir": "c2s", "line": "{\"method\":\"tools/list\",\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 10.8, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"result\":{\"tools\":[{\"annotations\":{\"readOnlyHint\":false,\"destructiveHint\":true,\"idempotentHint\":false,\"openWorldHint\":true},\"description\":\"Echo the message\",\"inputSchema\":{\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\"},\"name\":\"echo\"}]}}"}
+{"t_ms": 11.8, "dir": "c2s", "line": "{\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"},\"_meta\":{\"progressToken\":2}},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 12.2, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}]}}"}
+{"t_ms": 13.0, "dir": "client-eof", "line": ""}
+{"t_ms": 14.5, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 13.0}"}

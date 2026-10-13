@@ -1,0 +1,10 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"node\", \"/src/adapters/node/server-ts-v2-2.3.1.mjs\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"initialize\",\"params\":{\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"roots\":{\"listChanged\":true}}}}"}
+{"t_ms": 145.8, "dir": "s2c", "line": "{\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"tools\":{\"listChanged\":true}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}},\"jsonrpc\":\"2.0\",\"id\":1}"}
+{"t_ms": 146.3, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":{}}"}
+{"t_ms": 146.4, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 151.8, "dir": "s2c", "line": "{\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"type\":\"object\",\"$schema\":\"https://json-schema.org/draft/2020-12/schema\",\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"]}}]},\"jsonrpc\":\"2.0\",\"id\":2}"}
+{"t_ms": 152.1, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 156.1, "dir": "s2c", "line": "{\"result\":{\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}]},\"jsonrpc\":\"2.0\",\"id\":3}"}
+{"t_ms": 156.4, "dir": "client-eof", "line": ""}
+{"t_ms": 167.0, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 156.3}"}

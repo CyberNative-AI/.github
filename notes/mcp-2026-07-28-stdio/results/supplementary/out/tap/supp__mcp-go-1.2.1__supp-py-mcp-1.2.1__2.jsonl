@@ -1,0 +1,227 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/senv/py/mcp-1.2.1/bin/python\", \"/supp/server_mcp1.py\"]"}
+{"t_ms": 0.7, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"server/discover\",\"params\":{\"_meta\":{\"io.modelcontextprotocol/clientCapabilities\":{},\"io.modelcontextprotocol/clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"io.modelcontextprotocol/protocolVersion\":\"2026-07-28\"}}}"}
+{"t_ms": 4985.0, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"initialize\",\"params\":{\"protocolVersion\":\"2025-11-25\",\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"capabilities\":{}}}"}
+{"t_ms": 4986.2, "dir": "err", "line": "  + Exception Group Traceback (most recent call last):"}
+{"t_ms": 4986.3, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/stdio.py\", line 83, in stdio_server"}
+{"t_ms": 4986.4, "dir": "err", "line": "  |     yield read_stream, write_stream"}
+{"t_ms": 4986.4, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/fastmcp/server.py\", line 421, in run_stdio_async"}
+{"t_ms": 4986.5, "dir": "err", "line": "  |     await self._mcp_server.run("}
+{"t_ms": 4986.6, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/lowlevel/server.py\", line 424, in run"}
+{"t_ms": 4986.6, "dir": "err", "line": "  |     async with ServerSession("}
+{"t_ms": 4986.7, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/shared/session.py\", line 122, in __aexit__"}
+{"t_ms": 4986.7, "dir": "err", "line": "  |     return await self._task_group.__aexit__(exc_type, exc_val, exc_tb)"}
+{"t_ms": 4986.7, "dir": "err", "line": "  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4986.8, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/anyio/_backends/_asyncio.py\", line 767, in __aexit__"}
+{"t_ms": 4986.9, "dir": "err", "line": "  |     raise BaseExceptionGroup("}
+{"t_ms": 4986.9, "dir": "err", "line": "  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)"}
+{"t_ms": 4986.9, "dir": "err", "line": "  +-+---------------- 1 ----------------"}
+{"t_ms": 4986.9, "dir": "err", "line": "    | Traceback (most recent call last):"}
+{"t_ms": 4986.9, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/shared/session.py\", line 217, in _receive_loop"}
+{"t_ms": 4988.2, "dir": "err", "line": "    |     validated_request = self._receive_request_type.model_validate("}
+{"t_ms": 4988.2, "dir": "err", "line": "    |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4988.2, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/pydantic/main.py\", line 627, in model_validate"}
+{"t_ms": 4988.3, "dir": "err", "line": "    |     return cls.__pydantic_validator__.validate_python("}
+{"t_ms": 4988.3, "dir": "err", "line": "    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4988.3, "dir": "err", "line": "    | pydantic_core._pydantic_core.ValidationError: 24 validation errors for ClientRequest"}
+{"t_ms": 4988.3, "dir": "err", "line": "PingRequest.method"}
+{"t_ms": 4988.3, "dir": "err", "line": "  Input should be 'ping' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.3, "dir": "err", "line": "InitializeRequest.method"}
+{"t_ms": 4988.3, "dir": "err", "line": "  Input should be 'initialize' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.3, "dir": "err", "line": "InitializeRequest.params.protocolVersion"}
+{"t_ms": 4988.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.4, "dir": "err", "line": "InitializeRequest.params.capabilities"}
+{"t_ms": 4988.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.4, "dir": "err", "line": "InitializeRequest.params.clientInfo"}
+{"t_ms": 4988.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.4, "dir": "err", "line": "CompleteRequest.method"}
+{"t_ms": 4988.4, "dir": "err", "line": "  Input should be 'completion/complete' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.4, "dir": "err", "line": "CompleteRequest.params.ref"}
+{"t_ms": 4988.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.5, "dir": "err", "line": "CompleteRequest.params.argument"}
+{"t_ms": 4988.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.5, "dir": "err", "line": "SetLevelRequest.method"}
+{"t_ms": 4988.5, "dir": "err", "line": "  Input should be 'logging/setLevel' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.5, "dir": "err", "line": "SetLevelRequest.params.level"}
+{"t_ms": 4988.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.5, "dir": "err", "line": "GetPromptRequest.method"}
+{"t_ms": 4988.5, "dir": "err", "line": "  Input should be 'prompts/get' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.5, "dir": "err", "line": "GetPromptRequest.params.name"}
+{"t_ms": 4988.6, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.6, "dir": "err", "line": "ListPromptsRequest.method"}
+{"t_ms": 4988.6, "dir": "err", "line": "  Input should be 'prompts/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.6, "dir": "err", "line": "ListResourcesRequest.method"}
+{"t_ms": 4988.6, "dir": "err", "line": "  Input should be 'resources/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.6, "dir": "err", "line": "ListResourceTemplatesRequest.method"}
+{"t_ms": 4988.6, "dir": "err", "line": "  Input should be 'resources/templates/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.6, "dir": "err", "line": "ReadResourceRequest.method"}
+{"t_ms": 4988.6, "dir": "err", "line": "  Input should be 'resources/read' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.7, "dir": "err", "line": "ReadResourceRequest.params.uri"}
+{"t_ms": 4988.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.7, "dir": "err", "line": "SubscribeRequest.method"}
+{"t_ms": 4988.7, "dir": "err", "line": "  Input should be 'resources/subscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.7, "dir": "err", "line": "SubscribeRequest.params.uri"}
+{"t_ms": 4988.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.7, "dir": "err", "line": "UnsubscribeRequest.method"}
+{"t_ms": 4988.7, "dir": "err", "line": "  Input should be 'resources/unsubscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.8, "dir": "err", "line": "UnsubscribeRequest.params.uri"}
+{"t_ms": 4988.8, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.8, "dir": "err", "line": "CallToolRequest.method"}
+{"t_ms": 4988.8, "dir": "err", "line": "  Input should be 'tools/call' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.8, "dir": "err", "line": "CallToolRequest.params.name"}
+{"t_ms": 4988.8, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4988.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4988.8, "dir": "err", "line": "ListToolsRequest.method"}
+{"t_ms": 4988.8, "dir": "err", "line": "  Input should be 'tools/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4988.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4988.8, "dir": "err", "line": "    +------------------------------------"}
+{"t_ms": 4988.8, "dir": "err", "line": ""}
+{"t_ms": 4988.9, "dir": "err", "line": "During handling of the above exception, another exception occurred:"}
+{"t_ms": 4988.9, "dir": "err", "line": ""}
+{"t_ms": 4988.9, "dir": "err", "line": "  + Exception Group Traceback (most recent call last):"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |   File \"/supp/server_mcp1.py\", line 8, in <module>"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |     mcp.run()"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/fastmcp/server.py\", line 123, in run"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |     anyio.run(self.run_stdio_async)"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/anyio/_core/_eventloop.py\", line 74, in run"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |     return async_backend.run(func, args, {}, backend_options)"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/anyio/_backends/_asyncio.py\", line 2303, in run"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |     return runner.run(wrapper())"}
+{"t_ms": 4988.9, "dir": "err", "line": "  |            ^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |   File \"/usr/lib/python3.11/asyncio/runners.py\", line 118, in run"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |     return self._loop.run_until_complete(task)"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |   File \"/usr/lib/python3.11/asyncio/base_events.py\", line 653, in run_until_complete"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |     return future.result()"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |            ^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/anyio/_backends/_asyncio.py\", line 2291, in wrapper"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |     return await func(*args)"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |            ^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/fastmcp/server.py\", line 420, in run_stdio_async"}
+{"t_ms": 4989.0, "dir": "err", "line": "  |     async with stdio_server() as (read_stream, write_stream):"}
+{"t_ms": 4989.1, "dir": "err", "line": "  |   File \"/usr/lib/python3.11/contextlib.py\", line 222, in __aexit__"}
+{"t_ms": 4989.1, "dir": "err", "line": "  |     await self.gen.athrow(typ, value, traceback)"}
+{"t_ms": 4989.1, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/stdio.py\", line 80, in stdio_server"}
+{"t_ms": 4989.1, "dir": "err", "line": "  |     async with anyio.create_task_group() as tg:"}
+{"t_ms": 4989.1, "dir": "err", "line": "  |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/anyio/_backends/_asyncio.py\", line 767, in __aexit__"}
+{"t_ms": 4989.1, "dir": "err", "line": "  |     raise BaseExceptionGroup("}
+{"t_ms": 4989.1, "dir": "err", "line": "  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)"}
+{"t_ms": 4989.1, "dir": "err", "line": "  +-+---------------- 1 ----------------"}
+{"t_ms": 4989.1, "dir": "err", "line": "    | Exception Group Traceback (most recent call last):"}
+{"t_ms": 4989.1, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/stdio.py\", line 83, in stdio_server"}
+{"t_ms": 4989.1, "dir": "err", "line": "    |     yield read_stream, write_stream"}
+{"t_ms": 4989.1, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/fastmcp/server.py\", line 421, in run_stdio_async"}
+{"t_ms": 4989.1, "dir": "err", "line": "    |     await self._mcp_server.run("}
+{"t_ms": 4989.1, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/server/lowlevel/server.py\", line 424, in run"}
+{"t_ms": 4989.2, "dir": "err", "line": "    |     async with ServerSession("}
+{"t_ms": 4989.2, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/shared/session.py\", line 122, in __aexit__"}
+{"t_ms": 4989.2, "dir": "err", "line": "    |     return await self._task_group.__aexit__(exc_type, exc_val, exc_tb)"}
+{"t_ms": 4989.2, "dir": "err", "line": "    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.2, "dir": "err", "line": "    |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/anyio/_backends/_asyncio.py\", line 767, in __aexit__"}
+{"t_ms": 4989.2, "dir": "err", "line": "    |     raise BaseExceptionGroup("}
+{"t_ms": 4989.2, "dir": "err", "line": "    | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)"}
+{"t_ms": 4989.2, "dir": "err", "line": "    +-+---------------- 1 ----------------"}
+{"t_ms": 4989.2, "dir": "err", "line": "      | Traceback (most recent call last):"}
+{"t_ms": 4989.2, "dir": "err", "line": "      |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/mcp/shared/session.py\", line 217, in _receive_loop"}
+{"t_ms": 4989.2, "dir": "err", "line": "      |     validated_request = self._receive_request_type.model_validate("}
+{"t_ms": 4989.2, "dir": "err", "line": "      |                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.2, "dir": "err", "line": "      |   File \"/senv/py/mcp-1.2.1/lib/python3.11/site-packages/pydantic/main.py\", line 627, in model_validate"}
+{"t_ms": 4989.3, "dir": "err", "line": "      |     return cls.__pydantic_validator__.validate_python("}
+{"t_ms": 4989.3, "dir": "err", "line": "      |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^"}
+{"t_ms": 4989.3, "dir": "err", "line": "      | pydantic_core._pydantic_core.ValidationError: 24 validation errors for ClientRequest"}
+{"t_ms": 4989.3, "dir": "err", "line": "PingRequest.method"}
+{"t_ms": 4989.3, "dir": "err", "line": "  Input should be 'ping' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.3, "dir": "err", "line": "InitializeRequest.method"}
+{"t_ms": 4989.3, "dir": "err", "line": "  Input should be 'initialize' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.3, "dir": "err", "line": "InitializeRequest.params.protocolVersion"}
+{"t_ms": 4989.3, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.3, "dir": "err", "line": "InitializeRequest.params.capabilities"}
+{"t_ms": 4989.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.4, "dir": "err", "line": "InitializeRequest.params.clientInfo"}
+{"t_ms": 4989.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.4, "dir": "err", "line": "CompleteRequest.method"}
+{"t_ms": 4989.4, "dir": "err", "line": "  Input should be 'completion/complete' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.4, "dir": "err", "line": "CompleteRequest.params.ref"}
+{"t_ms": 4989.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.4, "dir": "err", "line": "CompleteRequest.params.argument"}
+{"t_ms": 4989.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.5, "dir": "err", "line": "SetLevelRequest.method"}
+{"t_ms": 4989.5, "dir": "err", "line": "  Input should be 'logging/setLevel' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.5, "dir": "err", "line": "SetLevelRequest.params.level"}
+{"t_ms": 4989.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.5, "dir": "err", "line": "GetPromptRequest.method"}
+{"t_ms": 4989.5, "dir": "err", "line": "  Input should be 'prompts/get' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.5, "dir": "err", "line": "GetPromptRequest.params.name"}
+{"t_ms": 4989.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.5, "dir": "err", "line": "ListPromptsRequest.method"}
+{"t_ms": 4989.5, "dir": "err", "line": "  Input should be 'prompts/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.6, "dir": "err", "line": "ListResourcesRequest.method"}
+{"t_ms": 4989.6, "dir": "err", "line": "  Input should be 'resources/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.6, "dir": "err", "line": "ListResourceTemplatesRequest.method"}
+{"t_ms": 4989.6, "dir": "err", "line": "  Input should be 'resources/templates/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.6, "dir": "err", "line": "ReadResourceRequest.method"}
+{"t_ms": 4989.6, "dir": "err", "line": "  Input should be 'resources/read' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.6, "dir": "err", "line": "ReadResourceRequest.params.uri"}
+{"t_ms": 4989.6, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.6, "dir": "err", "line": "SubscribeRequest.method"}
+{"t_ms": 4989.6, "dir": "err", "line": "  Input should be 'resources/subscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.6, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.7, "dir": "err", "line": "SubscribeRequest.params.uri"}
+{"t_ms": 4989.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.7, "dir": "err", "line": "UnsubscribeRequest.method"}
+{"t_ms": 4989.7, "dir": "err", "line": "  Input should be 'resources/unsubscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.7, "dir": "err", "line": "UnsubscribeRequest.params.uri"}
+{"t_ms": 4989.7, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.7, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.7, "dir": "err", "line": "CallToolRequest.method"}
+{"t_ms": 4989.7, "dir": "err", "line": "  Input should be 'tools/call' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.8, "dir": "err", "line": "CallToolRequest.params.name"}
+{"t_ms": 4989.8, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 4989.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/missing"}
+{"t_ms": 4989.8, "dir": "err", "line": "ListToolsRequest.method"}
+{"t_ms": 4989.8, "dir": "err", "line": "  Input should be 'tools/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 4989.8, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.10/v/literal_error"}
+{"t_ms": 4989.8, "dir": "err", "line": "      +------------------------------------"}
+{"t_ms": 5102.4, "dir": "exit", "line": "{\"rc\": 1, \"client_eof_ms\": null}"}

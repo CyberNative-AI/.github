@@ -1,0 +1,6610 @@
+{
+ "SLOW": [
+  {
+   "client": "go-sdk-1.8.0",
+   "fallback_gap_median_ms": 2532.5,
+   "server": "py-fastmcp-2.14.0"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "fallback_gap_median_ms": 2154.6,
+   "server": "py-fastmcp-3.4.8"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "fallback_gap_median_ms": 1058.8,
+   "server": "py-mcp-1.28.1"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "fallback_gap_median_ms": 2539.0,
+   "server": "py-fastmcp-2.14.0"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "fallback_gap_median_ms": 2279.7000000000003,
+   "server": "py-fastmcp-3.4.8"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "fallback_gap_median_ms": 1037.0,
+   "server": "py-mcp-1.30.0"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "fallback_gap_median_ms": 2541.4,
+   "server": "py-fastmcp-2.14.0"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "fallback_gap_median_ms": 1809.5,
+   "server": "py-fastmcp-3.4.8"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "fallback_gap_median_ms": 2671.4,
+   "server": "py-fastmcp-2.14.0"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "fallback_gap_median_ms": 1980.6999999999998,
+   "server": "py-fastmcp-3.4.8"
+  }
+ ],
+ "baseline_legacy_legacy_fails": [],
+ "client_era": {
+  "go-sdk-1.6.1": "LEGACY",
+  "go-sdk-1.8.0": "DUAL",
+  "mcp-go-0.57.0": "LEGACY",
+  "mcp-go-1.2.1": "DUAL",
+  "py-fastmcp-3.4.8": "LEGACY",
+  "py-fastmcp-4.1.0": "DUAL",
+  "py-mcp-1.28.1": "LEGACY",
+  "py-mcp-1.30.0": "LEGACY",
+  "py-mcp-2.3.0": "DUAL",
+  "ts-sdk-1.29.0": "LEGACY",
+  "ts-sdk-1.32.1": "LEGACY",
+  "ts-v2-2.3.1": "LEGACY"
+ },
+ "controls": {
+  "harness_max_client_rate": 0.0,
+  "harness_ok": true,
+  "harness_rate": 0.0,
+  "probe_controls": {
+   "fake-dual": "DUAL",
+   "fake-legacy_32602": "LEGACY_ONLY",
+   "fake-modern": "MODERN_ONLY",
+   "py-mcp-1.12.4": "LEGACY_ONLY"
+  },
+  "probe_ok": true,
+  "self_cells": {
+   "go-sdk-1.6.1": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "go-sdk-1.8.0": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "mcp-go-0.57.0": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "mcp-go-1.2.1": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "py-fastmcp-3.4.8": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "py-fastmcp-4.1.0": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "py-mcp-1.28.1": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "py-mcp-1.30.0": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "py-mcp-2.3.0": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "ts-sdk-1.29.0": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "ts-sdk-1.32.1": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "ts-v2-2.3.1": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ]
+  },
+  "self_ok": true,
+  "transparency": {
+   "go-sdk-1.8.0": {
+    "dt_median_ms": 24.8,
+    "ok": true,
+    "outcomes_notap": [
+     "PASS",
+     "PASS",
+     "PASS"
+    ],
+    "outcomes_tap": [
+     "PASS",
+     "PASS",
+     "PASS"
+    ]
+   },
+   "py-mcp-2.3.0": {
+    "dt_median_ms": 83.79999999999995,
+    "ok": true,
+    "outcomes_notap": [
+     "PASS",
+     "PASS",
+     "PASS"
+    ],
+    "outcomes_tap": [
+     "PASS",
+     "PASS",
+     "PASS"
+    ]
+   },
+   "ts-v2-2.3.1": {
+    "dt_median_ms": 6.600000000000023,
+    "ok": true,
+    "outcomes_notap": [
+     "PASS",
+     "PASS",
+     "PASS"
+    ],
+    "outcomes_tap": [
+     "PASS",
+     "PASS",
+     "PASS"
+    ]
+   }
+  },
+  "transparency_ok": true
+ },
+ "descriptive_cells": [
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 40.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 52.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 47.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 52.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: [-32022] calling \"initialize\": Unsupported protocol version; supported: 2026-07-28"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 236.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 53.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 14.7,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 40.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [
+    "connect: connection closed: calling \"initialize\": client is closing: EOF"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [
+    "connect: harness deadline 40s"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 43.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 151.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 181.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 41.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 38.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 44.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 48,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: Unsupported protocol version; supported: 2026-07-28"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 236.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 43.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 22.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 55.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [
+    "connect: transport error: transport closed"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 4979.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 5005.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 45.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 191.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 231,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 46.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 48.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 43.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 40.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: [-32022] Unsupported protocol version; supported: 2026-07-28"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 228.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 45.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 22.099999999999998,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 50.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [
+    "connect: [-32000] Connection closed"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 9991.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 10014.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 35.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 172.10000000000002,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 207.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 76.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 94.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 91.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 82.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: [-32022] Unsupported protocol version; supported: 2026-07-28"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 263.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 75.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 86.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 91.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 71.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: [-32022] Unsupported protocol version; supported: 2026-07-28"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 252.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 93.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 19.4,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 74.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [
+    "connect: [-32000] Connection closed"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 9988.9,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 10046.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 77.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 193.3,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 284.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 42.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 53.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 73,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 58,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: MCP error -32022: Unsupported protocol version; supported: 2026-07-28 [code=-32022]"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 254.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 46.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 45.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 55.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 61.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: MCP error -32022: Unsupported protocol version; supported: 2026-07-28 [code=-32022]"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 238.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-dual",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 55.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_32602",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 58,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_exit",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 54.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "fake-legacy_silent",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 46.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [
+    "connect: Unsupported protocol version; supported: 2026-07-28 [code=-32022]"
+   ],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize"
+   ],
+   "runs": [
+    "FAIL",
+    "FAIL",
+    "FAIL"
+   ],
+   "server": "fake-modern",
+   "server_era": "MODERN_ONLY",
+   "spec": "Fails",
+   "t_connect_median_ms": null,
+   "verdict": "FAIL"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1-connect",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 247.5,
+   "verdict": "PASS"
+  }
+ ],
+ "items": [],
+ "main_cells": [
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 281.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 258.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 218.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 336.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 27.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 24.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 28.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 41.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2582.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2066,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1896.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 749.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 933.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 953,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1289.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 255.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 182.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.6.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 221.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 202.8,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 234.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 177.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 201,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 201.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 225.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 205.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 228.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2.7,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 23.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 28.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 8.299999999999999,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 33.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 29.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2532.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2561.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2154.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2186.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1710.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 845.8000000000001,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 869.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 1058.8,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1089.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 850.4,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 878.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1049.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 197.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 231,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 180.10000000000002,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 203.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "go-sdk-1.8.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 236.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 281.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 289.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 245.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 256.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 31,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 32.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 27.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 38.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2599.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2241.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1697.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 842.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 989,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 895.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1172.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 210.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 259.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-0.57.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 228.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 213.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 242.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 279.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 308.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 251.4,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 282.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 177.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 201.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 22.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 29.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 11.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 44.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 31.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2539.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2560.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2279.7000000000003,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2320.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1847.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 998.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1039.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 924.2,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 947.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 1037.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1064.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1326,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 219.89999999999998,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 247.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 234.1,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 264.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "mcp-go-1.2.1",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 196.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 242.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 277.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 266.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 249.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 25.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 38.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 33.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 36.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2620.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2090.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1805.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 878.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1009.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1009.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1183.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 234.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 243.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-3.4.8",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 199.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 177.39999999999998,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 201.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 227.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 261.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 199.79999999999998,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 229.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 190.10000000000002,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 219.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 3.4,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 32.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 26.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 7.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 29.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 30.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2541.4,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2575.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 1809.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1836.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1890.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 825.8000000000001,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 856.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 912.9,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 933.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 991.2,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1020.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1018.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 224.0,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 261.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 217.9,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 255.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-fastmcp-4.1.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 215.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 330.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 325.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 273.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 268.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 50.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 75.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 60.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 65.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2356.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2131.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1891.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 928.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1040.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1070.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1111.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 252.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 290.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.28.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 220.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 307.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 288.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 230.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 297.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 63.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 66.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 57.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 75.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2166.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2268.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1778.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 806.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 967.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 853.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1197.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 258.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 268.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-1.30.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 221.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 203.9,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 265.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 216.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 273.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 211.7,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 268.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 209.1,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 263.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 4.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 73.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 70.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 8.3,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 63.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 72.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 2671.4,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2748.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 1980.6999999999998,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2052.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1730.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 889.5,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 965.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 966.9,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1018.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 915.6,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 983.0,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1200.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 184.60000000000002,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 245.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": 238.2,
+   "methods_first_run": [
+    "server/discover",
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 301.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "py-mcp-2.3.0",
+   "client_era": "DUAL",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "server/discover",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 272.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 300.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 261.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 275.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 236.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 31.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 43.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 44.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 47.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2311.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1968.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1864.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 954.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 923.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1063.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 858.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 260.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 253.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.29.0",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 215.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 329.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 239.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 261.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 258.8,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 34.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 29.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 41.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 40.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2127.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1858.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1580.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 767.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 813.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1080.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1163,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 244.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 257.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-sdk-1.32.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 208.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 271.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "everything-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 321.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-1.0.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 282.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "filesystem-2026.7.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 364.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.6.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 38.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "go-sdk-1.8.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 41.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-0.57.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 39,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "mcp-go-1.2.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 35.4,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-2.14.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2693.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-3.4.8",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 2097.9,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-fastmcp-4.1.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1910.7,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.12.4",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 829.2,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.28.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 931,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-1.30.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 1031.5,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "py-mcp-2.3.0",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 1298.6,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.29.0",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 281.3,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-sdk-1.32.1",
+   "server_era": "LEGACY_ONLY",
+   "spec": "Works",
+   "t_connect_median_ms": 293.1,
+   "verdict": "PASS"
+  },
+  {
+   "client": "ts-v2-2.3.1",
+   "client_era": "LEGACY",
+   "errors": [],
+   "fallback_gap_median_ms": null,
+   "methods_first_run": [
+    "initialize",
+    "notifications/initialized",
+    "tools/list",
+    "tools/call"
+   ],
+   "runs": [
+    "PASS",
+    "PASS",
+    "PASS"
+   ],
+   "server": "ts-v2-2.3.1",
+   "server_era": "DUAL",
+   "spec": "Works",
+   "t_connect_median_ms": 212.7,
+   "verdict": "PASS"
+  }
+ ],
+ "n_items": 0,
+ "n_main_runs": 648,
+ "n_new": 0,
+ "roots": [],
+ "ruling": "CHANGE",
+ "server_discover_shape": {
+  "everything-1.0.0": "error:-32601",
+  "everything-2026.7.4": "error:-32601",
+  "fake-dual": "result",
+  "fake-legacy_32602": "error:-32602",
+  "fake-legacy_exit": "exit",
+  "fake-legacy_silent": "silence",
+  "fake-modern": "result",
+  "filesystem-1.0.0": "error:-32601",
+  "filesystem-2026.7.4": "error:-32601",
+  "go-sdk-1.6.1": "error:0",
+  "go-sdk-1.8.0": "result",
+  "mcp-go-0.57.0": "error:-32601",
+  "mcp-go-1.2.1": "result",
+  "py-fastmcp-2.14.0": "error:-32602",
+  "py-fastmcp-3.4.8": "error:-32602",
+  "py-fastmcp-4.1.0": "result",
+  "py-mcp-1.12.4": "error:-32602",
+  "py-mcp-1.28.1": "error:-32602",
+  "py-mcp-1.30.0": "error:-32602",
+  "py-mcp-2.3.0": "result",
+  "ts-sdk-1.29.0": "error:-32601",
+  "ts-sdk-1.32.1": "error:-32601",
+  "ts-v2-2.3.1": "result",
+  "ts-v2-2.3.1-connect": "error:-32601"
+ },
+ "server_era": {
+  "everything-1.0.0": "LEGACY_ONLY",
+  "everything-2026.7.4": "LEGACY_ONLY",
+  "fake-dual": "DUAL",
+  "fake-legacy_32602": "LEGACY_ONLY",
+  "fake-legacy_exit": "LEGACY_ONLY",
+  "fake-legacy_silent": "LEGACY_ONLY",
+  "fake-modern": "MODERN_ONLY",
+  "filesystem-1.0.0": "LEGACY_ONLY",
+  "filesystem-2026.7.4": "LEGACY_ONLY",
+  "go-sdk-1.6.1": "LEGACY_ONLY",
+  "go-sdk-1.8.0": "DUAL",
+  "mcp-go-0.57.0": "LEGACY_ONLY",
+  "mcp-go-1.2.1": "DUAL",
+  "py-fastmcp-2.14.0": "LEGACY_ONLY",
+  "py-fastmcp-3.4.8": "LEGACY_ONLY",
+  "py-fastmcp-4.1.0": "DUAL",
+  "py-mcp-1.12.4": "LEGACY_ONLY",
+  "py-mcp-1.28.1": "LEGACY_ONLY",
+  "py-mcp-1.30.0": "LEGACY_ONLY",
+  "py-mcp-2.3.0": "DUAL",
+  "ts-sdk-1.29.0": "LEGACY_ONLY",
+  "ts-sdk-1.32.1": "LEGACY_ONLY",
+  "ts-v2-2.3.1": "DUAL",
+  "ts-v2-2.3.1-connect": "LEGACY_ONLY"
+ },
+ "unadjudicated": []
+}

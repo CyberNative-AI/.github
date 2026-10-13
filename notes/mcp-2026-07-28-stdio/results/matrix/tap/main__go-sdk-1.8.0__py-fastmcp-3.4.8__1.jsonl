@@ -1,0 +1,127 @@
+{"t_ms": 0.1, "dir": "start", "line": "[\"/envs/py/fastmcp-3.4.8/bin/python\", \"/src/adapters/py/server_fastmcp.py\"]"}
+{"t_ms": 4.6, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"server/discover\",\"params\":{\"_meta\":{\"io.modelcontextprotocol/clientCapabilities\":{\"roots\":{\"listChanged\":true}},\"io.modelcontextprotocol/clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"io.modelcontextprotocol/protocolVersion\":\"2026-07-28\"}}}"}
+{"t_ms": 2081.0, "dir": "err", "line": ""}
+{"t_ms": 2081.1, "dir": "err", "line": ""}
+{"t_ms": 2081.1, "dir": "err", "line": "\u256d\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256e"}
+{"t_ms": 2081.1, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.1, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                         \u2584\u2580\u2580 \u2584\u2580\u2588 \u2588\u2580\u2580 \u2580\u2588\u2580 \u2588\u2580\u2584\u2580\u2588 \u2588\u2580\u2580 \u2588\u2580\u2588                        \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                         \u2588\u2580  \u2588\u2580\u2588 \u2584\u2584\u2588  \u2588  \u2588 \u2580 \u2588 \u2588\u2584\u2584 \u2588\u2580\u2580                        \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                                FastMCP 3.4.8                                 \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                            https://gofastmcp.com                             \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                  \ud83d\udda5  Server:      echo-server, 1.0.0                          \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                  \ud83d\ude80 Deploy free: https://horizon.prefect.io                  \u2502"}
+{"t_ms": 2081.2, "dir": "err", "line": "\u2502                                                                              \u2502"}
+{"t_ms": 2081.3, "dir": "err", "line": "\u2570\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u256f"}
+{"t_ms": 2081.3, "dir": "err", "line": ""}
+{"t_ms": 2081.3, "dir": "err", "line": ""}
+{"t_ms": 2082.7, "dir": "err", "line": "[10/13/26 07:56:27] INFO     Starting MCP server 'echo-server'  transport.py:241"}
+{"t_ms": 2082.7, "dir": "err", "line": "                             with transport 'stdio'                             "}
+{"t_ms": 2084.8, "dir": "err", "line": "WARNING:root:Failed to validate request: 31 validation errors for ClientRequest"}
+{"t_ms": 2084.9, "dir": "err", "line": "PingRequest.method"}
+{"t_ms": 2084.9, "dir": "err", "line": "  Input should be 'ping' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2084.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2084.9, "dir": "err", "line": "InitializeRequest.method"}
+{"t_ms": 2084.9, "dir": "err", "line": "  Input should be 'initialize' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2084.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2084.9, "dir": "err", "line": "InitializeRequest.params.protocolVersion"}
+{"t_ms": 2084.9, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2084.9, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2084.9, "dir": "err", "line": "InitializeRequest.params.capabilities"}
+{"t_ms": 2085.0, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.0, "dir": "err", "line": "InitializeRequest.params.clientInfo"}
+{"t_ms": 2085.0, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.0, "dir": "err", "line": "CompleteRequest.method"}
+{"t_ms": 2085.0, "dir": "err", "line": "  Input should be 'completion/complete' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.0, "dir": "err", "line": "CompleteRequest.params.ref"}
+{"t_ms": 2085.0, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.0, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.0, "dir": "err", "line": "CompleteRequest.params.argument"}
+{"t_ms": 2085.0, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.1, "dir": "err", "line": "SetLevelRequest.method"}
+{"t_ms": 2085.1, "dir": "err", "line": "  Input should be 'logging/setLevel' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.1, "dir": "err", "line": "SetLevelRequest.params.level"}
+{"t_ms": 2085.1, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.1, "dir": "err", "line": "GetPromptRequest.method"}
+{"t_ms": 2085.1, "dir": "err", "line": "  Input should be 'prompts/get' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.1, "dir": "err", "line": "GetPromptRequest.params.name"}
+{"t_ms": 2085.1, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.1, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.1, "dir": "err", "line": "ListPromptsRequest.method"}
+{"t_ms": 2085.2, "dir": "err", "line": "  Input should be 'prompts/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.2, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.2, "dir": "err", "line": "ListResourcesRequest.method"}
+{"t_ms": 2085.2, "dir": "err", "line": "  Input should be 'resources/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.2, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.2, "dir": "err", "line": "ListResourceTemplatesRequest.method"}
+{"t_ms": 2085.2, "dir": "err", "line": "  Input should be 'resources/templates/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.2, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.2, "dir": "err", "line": "ReadResourceRequest.method"}
+{"t_ms": 2085.2, "dir": "err", "line": "  Input should be 'resources/read' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.2, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.2, "dir": "err", "line": "ReadResourceRequest.params.uri"}
+{"t_ms": 2085.2, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.2, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.2, "dir": "err", "line": "SubscribeRequest.method"}
+{"t_ms": 2085.3, "dir": "err", "line": "  Input should be 'resources/subscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.3, "dir": "err", "line": "SubscribeRequest.params.uri"}
+{"t_ms": 2085.3, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.3, "dir": "err", "line": "UnsubscribeRequest.method"}
+{"t_ms": 2085.3, "dir": "err", "line": "  Input should be 'resources/unsubscribe' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.3, "dir": "err", "line": "UnsubscribeRequest.params.uri"}
+{"t_ms": 2085.3, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.3, "dir": "err", "line": "CallToolRequest.method"}
+{"t_ms": 2085.3, "dir": "err", "line": "  Input should be 'tools/call' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.3, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.4, "dir": "err", "line": "CallToolRequest.params.name"}
+{"t_ms": 2085.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.4, "dir": "err", "line": "ListToolsRequest.method"}
+{"t_ms": 2085.4, "dir": "err", "line": "  Input should be 'tools/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.4, "dir": "err", "line": "GetTaskRequest.method"}
+{"t_ms": 2085.4, "dir": "err", "line": "  Input should be 'tasks/get' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.4, "dir": "err", "line": "GetTaskRequest.params.taskId"}
+{"t_ms": 2085.4, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.4, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.4, "dir": "err", "line": "GetTaskPayloadRequest.method"}
+{"t_ms": 2085.4, "dir": "err", "line": "  Input should be 'tasks/result' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.5, "dir": "err", "line": "GetTaskPayloadRequest.params.taskId"}
+{"t_ms": 2085.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.5, "dir": "err", "line": "ListTasksRequest.method"}
+{"t_ms": 2085.5, "dir": "err", "line": "  Input should be 'tasks/list' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.5, "dir": "err", "line": "CancelTaskRequest.method"}
+{"t_ms": 2085.5, "dir": "err", "line": "  Input should be 'tasks/cancel' [type=literal_error, input_value='server/discover', input_type=str]"}
+{"t_ms": 2085.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/literal_error"}
+{"t_ms": 2085.5, "dir": "err", "line": "CancelTaskRequest.params.taskId"}
+{"t_ms": 2085.5, "dir": "err", "line": "  Field required [type=missing, input_value={'_meta': {'io.modelconte...Version': '2026-07-28'}}, input_type=dict]"}
+{"t_ms": 2085.5, "dir": "err", "line": "    For further information visit https://errors.pydantic.dev/2.14/v/missing"}
+{"t_ms": 2085.8, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":1,\"error\":{\"code\":-32602,\"message\":\"Invalid request parameters\",\"data\":\"\"}}"}
+{"t_ms": 2086.3, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"method\":\"initialize\",\"params\":{\"clientInfo\":{\"name\":\"re13340-client\",\"version\":\"1.0.0\"},\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"roots\":{\"listChanged\":true}}}}"}
+{"t_ms": 2088.6, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":2,\"result\":{\"protocolVersion\":\"2025-11-25\",\"capabilities\":{\"experimental\":{},\"logging\":{},\"prompts\":{\"listChanged\":false},\"resources\":{\"subscribe\":false,\"listChanged\":false},\"tools\":{\"listChanged\":true},\"extensions\":{\"io.modelcontextprotocol/ui\":{}}},\"serverInfo\":{\"name\":\"echo-server\",\"version\":\"1.0.0\"}}}"}
+{"t_ms": 2089.2, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"method\":\"notifications/initialized\",\"params\":{}}"}
+{"t_ms": 2089.2, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"method\":\"tools/list\",\"params\":{}}"}
+{"t_ms": 2117.9, "dir": "c2s", "line": "{\"jsonrpc\":\"2.0\",\"id\":4,\"method\":\"tools/call\",\"params\":{\"name\":\"echo\",\"arguments\":{\"message\":\"hello-re13340\"}}}"}
+{"t_ms": 2118.0, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":3,\"result\":{\"tools\":[{\"name\":\"echo\",\"description\":\"Echo the message\",\"inputSchema\":{\"additionalProperties\":false,\"properties\":{\"message\":{\"type\":\"string\"}},\"required\":[\"message\"],\"type\":\"object\"},\"outputSchema\":{\"properties\":{\"result\":{\"type\":\"string\"}},\"required\":[\"result\"],\"type\":\"object\",\"x-fastmcp-wrap-result\":true},\"_meta\":{\"fastmcp\":{\"tags\":[]}}}]}}"}
+{"t_ms": 2122.4, "dir": "s2c", "line": "{\"jsonrpc\":\"2.0\",\"id\":4,\"result\":{\"_meta\":{\"fastmcp\":{\"wrap_result\":true}},\"content\":[{\"type\":\"text\",\"text\":\"echo:hello-re13340\"}],\"structuredContent\":{\"result\":\"echo:hello-re13340\"},\"isError\":false}}"}
+{"t_ms": 2122.8, "dir": "client-eof", "line": ""}
+{"t_ms": 2400.5, "dir": "exit", "line": "{\"rc\": 0, \"client_eof_ms\": 2122.8}"}
