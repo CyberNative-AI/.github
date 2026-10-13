@@ -257,6 +257,64 @@ class Python(unittest.TestCase):
         self.assertTrue(all("plat.name" not in x[3] and "name=win" not in x[3] for x in r))
         self.assertEqual({x[4] for x in r if x[0] == "BREAK"}, {None})
 
+    def test_include_does_not_extend_added_combinations(self):
+        # GitHub's documented example: {fruit: banana, animal: cat} stays apart from the added {fruit: banana}
+        combos = c.expand_matrix({"matrix": {
+            "fruit": ["apple", "pear"], "animal": ["cat", "dog"],
+            "include": [{"color": "green"}, {"color": "pink", "animal": "cat"}, {"fruit": "apple", "shape": "circle"},
+                        {"fruit": "banana"}, {"fruit": "banana", "animal": "cat"}]}})
+        self.assertEqual(sorted(combos, key=lambda x: sorted(x.items())), sorted([
+            {"fruit": "apple", "animal": "cat", "color": "pink", "shape": "circle"},
+            {"fruit": "apple", "animal": "dog", "color": "green", "shape": "circle"},
+            {"fruit": "pear", "animal": "cat", "color": "pink"},
+            {"fruit": "pear", "animal": "dog", "color": "green"},
+            {"fruit": "banana"}, {"fruit": "banana", "animal": "cat"}], key=lambda x: sorted(x.items())))
+
+    def test_or_fallback(self):
+        r = run("""
+            on: {workflow_call: {inputs: {os: {type: string}}}}
+            jobs:
+              a:
+                runs-on: ${{ matrix.os || 'ubuntu-latest' }}
+                strategy:
+                  matrix:
+                    py: ["3.9", "3.12"]
+                    include:
+                      - {py: "3.8", os: ubuntu-22.04}
+                      - {py: "3.8", os: ""}  # a separate combination, as in GitHub's matrix docs
+                steps:
+                  - uses: actions/setup-python@v5
+                    with: {python-version: "${{ matrix.py }}"}
+              b:
+                runs-on: ["${{ matrix.combo.os || 'ubuntu-latest' }}"]
+                strategy:
+                  matrix:
+                    combo: [{py: "3.10"}, {py: "3.8", os: windows-latest}, {py: "3.11", os: ubuntu-latest}]
+                steps:
+                  - uses: actions/setup-python@v5
+                    with: {python-version: "${{ matrix.combo.py || '3.7' }}"}
+              c:
+                runs-on: ${{ inputs.os || 'ubuntu-latest' }}
+                steps:
+                  - uses: actions/setup-python@v5
+                    with: {python-version: "3.12"}
+              d:
+                runs-on: ${{ matrix.os == 'win' || 'ubuntu-latest' }}
+                steps:
+                  - uses: actions/setup-python@v5
+                    with: {python-version: "3.12"}
+              e:
+                runs-on: ubuntu-latest
+                steps:
+                  - uses: actions/setup-python@v5
+                    with: {python-version: "${{ env.PY || '3.12' }}"}
+            """)
+        got = sorted((where.split(":")[1].split("[")[0], spec, st) for st, spec, where in r)
+        self.assertEqual(got, [
+            ("a", "3.12", "OK"), ("a", "3.8", "BREAK"), ("a", "3.9", "BREAK"),  # "" is falsy too
+            ("b", "3.10", "OK"), ("b", "3.11", "OK"),
+            ("c", "", "UNKNOWN"), ("d", "", "UNKNOWN"), ("e", "", "UNKNOWN")])
+
     def test_bad_yaml_is_unknown(self):
         r = run("jobs: [unclosed\n")
         self.assertEqual([st for st, _, _ in r], ["UNKNOWN"])
