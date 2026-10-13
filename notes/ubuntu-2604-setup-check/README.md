@@ -77,6 +77,8 @@ The first run downloads the python-versions manifest and setup-ruby's version li
 - **Request a minor version** (`'3.12'`, `'3.4'`), or move an exact pin, including the one in `.ruby-version` or `.python-version`, to a release in the table above.
 - **Python 3.8 or 3.9 on 26.04 itself:** uv's portable builds. With uv 0.13.0, `uv python install 3.9` and `uv venv --python 3.9` worked in a bare `ubuntu:26.04` container for 3.8.20 and 3.9.25; pytest and numpy from wheels passed on each. We have no tested route for Ruby before 3.2 on 26.04.
 
+If a 26.04 break sits inside an open-source dependency, and keeping that job on `ubuntu-24.04` is not an option for you, we can take the fix upstream: [Upstream fix, paid on merge](https://cybernative.ai/services/upstream-fix/?ref=u2604). A compatibility fix is $500, quoted before work and invoiced only after the maintainer merges. Send the public issue link; we never need access to your systems or code.
+
 ## How the prediction was checked
 
 - **Against the actions themselves.** We took 22 real entries from the sample and ran the released actions in `ubuntu:26.04` and `ubuntu:24.04` containers, with a hosted runner's action environment and an empty tool cache. We used setup-python at `3892123f` and setup-ruby at `651ff0d6`, under node 24.21.0. All 22 matched the prediction. The 9 predicted `BREAK` failed on 26.04 with the action's own error, and the 4 of them we ran on 24.04 installed. The 9 predicted `OK` installed on 26.04. See `emulation/agreement.tsv`.
