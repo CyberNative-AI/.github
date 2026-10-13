@@ -1,0 +1,96 @@
+{
+ "random-dedup/A": {
+  "R": 0.03778,
+  "cosmetic_only_repos": 1,
+  "denominator": 1297,
+  "exercised_share": 0.4785,
+  "occurrences": 5133,
+  "per_command": {
+   "base64": 49,
+   "cut": 12,
+   "date": 1,
+   "nproc": 17
+  },
+  "repos_hit": 49,
+  "version_env_repos": 0,
+  "wilson95": [
+   0.02869,
+   0.0496
+  ]
+ },
+ "random-dedup/B": {
+  "R": 0.03932,
+  "cosmetic_only_repos": 1,
+  "denominator": 1297,
+  "exercised_share": 0.7514,
+  "occurrences": 5133,
+  "per_command": {
+   "base64": 49,
+   "cut": 12,
+   "date": 1,
+   "install": 2,
+   "nproc": 17
+  },
+  "repos_hit": 51,
+  "version_env_repos": 0,
+  "wilson95": [
+   0.03003,
+   0.05133
+  ]
+ },
+ "ruling": "INVALID",
+ "top/A": {
+  "R": 0.06857,
+  "cosmetic_only_repos": 0,
+  "denominator": 175,
+  "exercised_share": 0.5043,
+  "occurrences": 3694,
+  "per_command": {
+   "base64": 16,
+   "cut": 1,
+   "date": 3,
+   "nproc": 3
+  },
+  "repos_hit": 12,
+  "version_env_repos": 0,
+  "wilson95": [
+   0.03966,
+   0.11602
+  ]
+ },
+ "top/B": {
+  "R": 0.07429,
+  "cosmetic_only_repos": 0,
+  "denominator": 175,
+  "exercised_share": 0.7428,
+  "occurrences": 3694,
+  "per_command": {
+   "base64": 16,
+   "cut": 1,
+   "date": 3,
+   "install": 1,
+   "nproc": 3
+  },
+  "repos_hit": 13,
+  "version_env_repos": 0,
+  "wilson95": [
+   0.04392,
+   0.12294
+  ]
+ },
+ "validity": {
+  "complete_passes": true,
+  "controls_flagged": "6/6",
+  "determinism": {
+   "gnu94": "6980/7024 (cases 7024)",
+   "uutils": "6982/7024 (cases 7024)"
+  },
+  "exec_errors": {
+   "gnu94-1": 1,
+   "gnu94-2": 0,
+   "gnu97-1": 0,
+   "uutils-1": 0,
+   "uutils-2": 0
+  }
+ }
+}

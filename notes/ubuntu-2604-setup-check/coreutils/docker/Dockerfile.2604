@@ -1,0 +1,4 @@
+FROM ubuntu:26.04@sha256:f144425ff09be612d6d9ad965196e9cdc23dae1f42110a8a11a3e9a8198759f7
+RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq --no-install-recommends python3 faketime >/dev/null && rm -rf /var/lib/apt/lists/* \
+ && (id -u 1001 >/dev/null 2>&1 || useradd -u 1001 -m runner) \
+ && mkdir -p /opt/gnu97 && for f in /usr/bin/gnu*; do b=$(basename $f); case $b in gnu*) n=${b#gnu};; esac; dpkg -S $f 2>/dev/null | grep -q '^gnu-coreutils' && ln -s $f /opt/gnu97/$n; done

@@ -104,6 +104,40 @@ python3 sample/summarize.py
 
 `emulation/sp.sh` and `emulation/rr.sh` rerun the container check. They need Docker, a node 24 binary (`NODE=...`) and a checkout of the action at the commit above. Create `emulation/logs/` and `emulation/stubs/` first.
 
+## Coreutils: Rust rewrite and measured command differences
+
+In our tested Ubuntu 26.04 container, `base64`, `cut`, `date`, `nproc` and the other tested coreutils are [uutils coreutils](https://github.com/uutils/coreutils) 0.10.0, a Rust rewrite, instead of GNU coreutils 9.4. We extracted 5,133 direct coreutils calls from bash `run:` steps in 602 of 1,297 repositories selected through GitHub searches (stars ≥10, pushed September 21–October 11, 2026; one repository per owner). Each distinct call ran against synthetic files under GNU 9.4, uutils 0.10.0 and GNU 9.7. The frozen analysis ruled the run INVALID because its determinism gate failed. In a post-hoc analysis, we tested representative realistic inputs for the commands that differed, then applied one label per command to all its confirmed divergent occurrences. That assigned no breaking labels among the 1,297 repositories under `C.UTF-8` and the assumption of no CPU quota. We did not run complete workflows or test every occurrence with its real inputs.
+
+What does behave differently:
+
+| Call in the sample | Repos | 24.04 (GNU 9.4) | 26.04 (uutils 0.10.0) |
+|---|---|---|---|
+| `echo "$SECRET" \| base64 -d > file`, secret without `=` padding | 32 | exit 1 | decodes |
+| same, secret wrapped with Windows line endings (CRLF) | | exit 1 | decodes |
+| same, invalid input such as a trailing space or an extra `=` | | exit 1, writes the decoded bytes | exit 1, writes nothing |
+| `make -j$(nproc)` in a container with a CPU limit | 8 | the CPU affinity count | the quota-limited count |
+| `cut -c` on non-ASCII text | 9 (all shorten a commit SHA, so identical) | counts bytes | counts characters |
+
+Repos counts the sampled repositories with that call. Single-line and wrapped secrets decode identically, and 20 real `date -d` strings gave identical output in all 3 formats tried. The invalid-input row matters only where the failure is ignored (`|| true`, or a pipe without `pipefail`): the file used to hold the right bytes and is now empty. Without a CPU limit, both `nproc`s print the same number.
+
+Two additional differences outside the inputs exercised by our fixture: `sha256sum -c` accepts a checksum line with leading spaces on 24.04 and rejects it on 26.04 (exit 1), and `timeout -s KILL` exits 137 on 24.04 but 124 on 26.04. Both are fixed upstream ([#15167](https://github.com/uutils/coreutils/pull/15167), [#15075](https://github.com/uutils/coreutils/pull/15075)) but not in a release yet; the latest is 0.12.0, and 26.04 ships 0.10.0.
+
+Most of this is GNU's own change since 9.4, which dates from August 2023: GNU coreutils decodes unpadded base64 since 9.5, `nproc` honours cgroup v2 CPU quotas since 9.8, and `cut -c` counts characters since 9.11 ([NEWS](https://github.com/coreutils/coreutils/blob/master/NEWS)).
+
+To see it yourself:
+
+```sh
+docker run --rm ubuntu:24.04 sh -c 'printf "aGVsbG8\n" | base64 -d; echo " exit $?"'   # base64: invalid input / hello exit 1
+docker run --rm ubuntu:26.04 sh -c 'printf "aGVsbG8\n" | base64 -d; echo " exit $?"'   # hello exit 0
+docker run --rm --cpus 2 ubuntu:24.04 nproc   # the CPU affinity count
+docker run --rm --cpus 2 ubuntu:26.04 nproc   # 2
+docker run --rm ubuntu:26.04 sh -c 'echo hi > f; sha256sum f | sed "s/^/  /" > s; sha256sum -c s; echo "exit $?"'   # exit 1 (24.04: f: OK, exit 0)
+```
+
+How this was measured: each distinct call ran in `ubuntu:24.04` and `ubuntu:26.04` containers (network off) against a synthetic file set, with GNU 9.7 from the 26.04 archive as a third arm. The 26.04 container has the same coreutils meta-package version listed in the [runner image README](https://github.com/actions/runner-images/blob/2c421200c9e6873283a7b1d63bb122bc906139a1/images/ubuntu/Ubuntu2604-Readme.md). We did not verify the hosted runner's installed uutils binary version. Code, call list, raw outputs and the commands to run it again: [`coreutils/`](coreutils/).
+
+Limits: direct calls in `run:` steps only, not composite actions, called script files or `xargs`/`find -exec` children; `container:` jobs and non-bash shells excluded. Containers, not a hosted runner. Only uutils 0.10.0 was tested. We do not know whether hosted runners set a CPU limit. All runs used the runner's default `C.UTF-8` locale. With a real `en_US.UTF-8` locale, `sort`/`ls` ordering, `fold`, `numfmt --grouping` and `date %c` differ. Three sampled repositories set a non-default locale and call coreutils; those settings were not traced to individual steps. The default-locale result does not establish their behavior. Only 75.14% of extracted occurrences were exercised by the primary fixture.
+
 ## Limits
 
 - A prediction from workflow files, confirmed in containers, not on hosted runners. The tool-cache contents come from the runner image READMEs as of October 12.
@@ -112,6 +146,6 @@ python3 sample/summarize.py
 - `UNKNOWN` steps are not counted as failures. 96 of the 547 repositories have at least one (24 of them have a Ruby `head` build step), and 13 have nothing else. The share is a lower bound for what the files show.
 - A break in a workflow that runs only on release or manual dispatch counts.
 - python-versions and ruby-builder may publish more 26.04 builds after October 12.
-- Other 26.04 changes (compiler, removed packages) are out of scope. PyPy and GraalPy builds are not tied to an Ubuntu version.
+- Other 26.04 changes (compiler, removed packages) are out of scope; coreutils are covered in the section above. PyPy and GraalPy builds are not tied to an Ubuntu version.
 
 The code is MIT-licensed (`LICENSE`). Published by CyberNative AI LLC. AI-assisted research and writing; corrections: hello@cybernative.ai.

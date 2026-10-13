@@ -1,0 +1,86 @@
+{"argv": ["base64", "-d"], "control": false, "id": "06285973d4dd7243", "mode": "B", "piped_in": true}
+{"argv": ["env", "-u", "true"], "control": false, "id": "097e232a822876f8", "mode": "A", "piped_in": false}
+{"argv": ["readlink", "-e", "-f", "missing.txt"], "control": true, "id": "0b3268af3267b50c", "mode": "A", "piped_in": false}
+{"argv": ["base64", "--decode"], "control": false, "id": "0ce6e625f2035447", "mode": "A", "piped_in": true}
+{"argv": ["cat", "/proc/sys/kernel/random/uuid"], "control": false, "id": "0efd576299b8eaac", "mode": "B", "piped_in": false}
+{"argv": ["dd", "if=/dev/urandom", "bs=15", "count=1", "status=none"], "control": false, "id": "0fa58342b86e953a", "mode": "A", "piped_in": false}
+{"argv": ["date", "-u", "-d", "d1 days ago", "+%Y-%m-%d"], "control": false, "id": "129619bf94773911", "mode": "A", "piped_in": false}
+{"argv": ["uname", "-a"], "control": false, "id": "139b8d5852bccd57", "mode": "A", "piped_in": false}
+{"argv": ["split", "--numeric-suffixes=1", "-d", "f1.txt"], "control": true, "id": "15258b7370cdb9d5", "mode": "A", "piped_in": false}
+{"argv": ["cat", "/proc/meminfo"], "control": false, "id": "15f23af03c808d19", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "-d", "/tmp/netdata-credentialfile-ci.XXXXXX"], "control": false, "id": "18ac79f700606d2b", "mode": "A", "piped_in": false}
+{"argv": ["nproc"], "control": false, "id": "191108d051184164", "mode": "B", "piped_in": false}
+{"argv": ["cut", "-c1-8"], "control": false, "id": "1d1887f56af8d5e6", "mode": "B", "piped_in": true}
+{"argv": ["sum", "--sysv", "-r", "f1.txt"], "control": true, "id": "1e5a498f4899c5ed", "mode": "A", "piped_in": false}
+{"argv": ["stat", "../d1"], "control": false, "id": "21f7c2f71936d975", "mode": "B", "piped_in": false}
+{"argv": ["cut", "-c1-7"], "control": false, "id": "239a7978d878d25e", "mode": "B", "piped_in": true}
+{"argv": ["nproc"], "control": false, "id": "2b7ea087a8b1943a", "mode": "A", "piped_in": false}
+{"argv": ["mktemp"], "control": false, "id": "2be67f9299e1683d", "mode": "B", "piped_in": false}
+{"argv": ["date", "-u", "-d", "d1 days ago", "+%Y-%m-%d"], "control": false, "id": "2fc7587dd8328eda", "mode": "B", "piped_in": false}
+{"argv": ["date", "-u", "-d", "d1 days ago", "+%s"], "control": false, "id": "3af2f1feca035324", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "d1/protected-release-output.XXXXXX"], "control": false, "id": "3eea66c611e207b0", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "d1/create-protected-release-draft.XXXXXX.mjs"], "control": false, "id": "3f0e0f2ac8ffcdec", "mode": "A", "piped_in": false}
+{"argv": ["date", "-u", "-d", "+d1 hours", "+%Y-%m-%dT%H:%M:%SZ"], "control": false, "id": "48e52f8a84028e62", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/omniroute-schemathesis.XXXXXX"], "control": false, "id": "49088bdfffb1ed8b", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "d1/protected-release-output.XXXXXX"], "control": false, "id": "4bed7cfd61cb74b9", "mode": "B", "piped_in": false}
+{"argv": ["cut", "-c1-8"], "control": false, "id": "4dac9c0271f9c9b1", "mode": "A", "piped_in": true}
+{"argv": ["df", "--output=avail", "-B1", "/"], "control": false, "id": "5701eef2bc6907d6", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "-d"], "control": false, "id": "5704941d54e9cea3", "mode": "A", "piped_in": false}
+{"argv": ["base64", "-id"], "control": false, "id": "57e0580fba270ab2", "mode": "B", "piped_in": true}
+{"argv": ["dd", "if=/dev/urandom", "bs=15", "count=1", "status=none"], "control": false, "id": "581247010c2c3746", "mode": "B", "piped_in": false}
+{"argv": ["date", "-u", "-d", "d1 days ago", "+%s"], "control": false, "id": "5c2a633fbaece8b3", "mode": "A", "piped_in": false}
+{"argv": ["cat", "/proc/meminfo"], "control": false, "id": "605d5a0092a223b1", "mode": "A", "piped_in": false}
+{"argv": ["ls", "--file-type", "--classify=auto"], "control": true, "id": "77e056bf21a89f98", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/stagewise-smoke-d1.XXXXXX"], "control": false, "id": "7c1ddbb7814a5ac5", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/stagewise-smoke-d1.XXXXXX"], "control": false, "id": "7d1ebe5710f13938", "mode": "A", "piped_in": false}
+{"argv": ["stat", "./d1"], "control": false, "id": "7fb44d02253dbdcc", "mode": "B", "piped_in": false}
+{"argv": ["stat", "../d1"], "control": false, "id": "817ab7819e28d6e0", "mode": "A", "piped_in": false}
+{"argv": ["realpath", "--no-symlinks", "--logical", "link1"], "control": true, "id": "85fedc5269282f89", "mode": "A", "piped_in": false}
+{"argv": ["stat", "--printf=x", "-c", "%n", "f2.txt"], "control": true, "id": "89142e0ab0d9964c", "mode": "A", "piped_in": false}
+{"argv": ["head", "-c", "24", "/dev/urandom"], "control": false, "id": "8c7c630d780f3662", "mode": "B", "piped_in": false}
+{"argv": ["head", "-c", "16", "/dev/urandom"], "control": false, "id": "8eccb5fa158e3308", "mode": "B", "piped_in": false}
+{"argv": ["base64", "-d"], "control": false, "id": "8f97c6445dc324d0", "mode": "A", "piped_in": true}
+{"argv": ["mktemp", "doc_diff_XXXXXX"], "control": false, "id": "90c7865a73fc87a3", "mode": "A", "piped_in": false}
+{"argv": ["base64", "-d", "-"], "control": false, "id": "939449f25821b97d", "mode": "B", "piped_in": true}
+{"argv": ["base64", "--decode"], "control": false, "id": "9472b72627c4b871", "mode": "B", "piped_in": true}
+{"argv": ["cat", "/proc/cpuinfo"], "control": false, "id": "9d47d7832a0c7c6a", "mode": "B", "piped_in": false}
+{"argv": ["base64", "-id"], "control": false, "id": "9e9af063d5315187", "mode": "A", "piped_in": true}
+{"argv": ["cut", "-c1-7"], "control": false, "id": "9f134c3d0577b7d4", "mode": "A", "piped_in": true}
+{"argv": ["mktemp", "-d", "d1/sync-master-to-3x.XXXXXX"], "control": false, "id": "a360d89ec2d1eb10", "mode": "B", "piped_in": false}
+{"argv": ["date", "-u", "-d", "-d1 days", "+%Y.%m.%d"], "control": false, "id": "a68cc58ebc6cafeb", "mode": "A", "piped_in": false}
+{"argv": ["date", "-u", "-d", "-d1 days", "+%Y.%m.%d"], "control": false, "id": "a88c91a97661e2d5", "mode": "B", "piped_in": false}
+{"argv": ["mktemp"], "control": false, "id": "a8e068198f99a8cf", "mode": "A", "piped_in": false}
+{"argv": ["uname", "-a"], "control": false, "id": "abc10b58812d9f93", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/plugin-npm-bootstrap.XXXXXX"], "control": false, "id": "ac66adb41a0d7e08", "mode": "B", "piped_in": false}
+{"argv": ["printenv"], "control": false, "id": "ae7d53ade91a6f82", "mode": "A", "piped_in": false}
+{"argv": ["env", "-u", "true"], "control": false, "id": "aefd02e852d6ba25", "mode": "B", "piped_in": true}
+{"argv": ["cp", "f1.txt", "upload/d1"], "control": false, "id": "b1f3243c4f2f675b", "mode": "A", "piped_in": true}
+{"argv": ["install", "-D", "--mode=755", "actionlint", "/usr/bin/"], "control": false, "id": "b4e8e50c1018175c", "mode": "B", "piped_in": false}
+{"argv": ["base64", "-d", "-"], "control": false, "id": "b5145d7e56d76a4f", "mode": "A", "piped_in": true}
+{"argv": ["mktemp", "-d", "/tmp/netdata-credentialfile-ci.XXXXXX"], "control": false, "id": "b892821528e33a0e", "mode": "B", "piped_in": false}
+{"argv": ["install", "-d", "-o", "root", "-g", "root", "-m", "0755", "/opt/wukongim-issue-agent/baseline"], "control": false, "id": "ba8b36e2e653ecb3", "mode": "B", "piped_in": false}
+{"argv": ["cat", "/etc/os-release"], "control": false, "id": "c075b07b5ee0b609", "mode": "A", "piped_in": false}
+{"argv": ["ls", "-latr"], "control": false, "id": "c29da215fb5932ef", "mode": "B", "piped_in": false}
+{"argv": ["ls", "-latr"], "control": false, "id": "c2c20ddf9007dacf", "mode": "A", "piped_in": false}
+{"argv": ["env"], "control": false, "id": "c57bfe0362206a83", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "-d"], "control": false, "id": "c93cbd8c758384b5", "mode": "B", "piped_in": false}
+{"argv": ["env", "-u", "true"], "control": false, "id": "caddeed5e8a8a4d0", "mode": "A", "piped_in": true}
+{"argv": ["head", "-c", "16", "/dev/urandom"], "control": false, "id": "d04b587d4d576efc", "mode": "A", "piped_in": false}
+{"argv": ["head", "-c", "24", "/dev/urandom"], "control": false, "id": "d110656dd7c02123", "mode": "A", "piped_in": false}
+{"argv": ["stat", "./d1"], "control": false, "id": "d35711b7d66a799d", "mode": "A", "piped_in": false}
+{"argv": ["cat", "/proc/sys/kernel/random/uuid"], "control": false, "id": "d74d55830ca922af", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/omniroute-schemathesis.XXXXXX"], "control": false, "id": "d837d9c43e75202a", "mode": "A", "piped_in": false}
+{"argv": ["env"], "control": false, "id": "d99ce3ca2c04dac5", "mode": "B", "piped_in": false}
+{"argv": ["env", "-u", "true"], "control": false, "id": "e240a78a45bb4493", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/plugin-npm-bootstrap.XXXXXX"], "control": false, "id": "e2dbce54b8609839", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "-d", "d1/sync-master-to-3x.XXXXXX"], "control": false, "id": "e3fdccb10cdb3e97", "mode": "A", "piped_in": false}
+{"argv": ["df", "--output=avail", "-B1", "/mnt"], "control": false, "id": "e98d5dc4ef3ddd79", "mode": "A", "piped_in": false}
+{"argv": ["cat", "/proc/cpuinfo"], "control": false, "id": "eb40981c40af855e", "mode": "A", "piped_in": false}
+{"argv": ["mktemp", "doc_diff_XXXXXX"], "control": false, "id": "f261a2aef26c1c7f", "mode": "B", "piped_in": false}
+{"argv": ["cut", "-c", "1-7"], "control": false, "id": "f614a9739b9e6e46", "mode": "B", "piped_in": true}
+{"argv": ["printenv"], "control": false, "id": "f61afaba92fa6774", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "d1/plugin-npm-oidc.XXXXXX"], "control": false, "id": "f63aeb7a02e79201", "mode": "B", "piped_in": false}
+{"argv": ["mktemp", "d1/create-protected-release-draft.XXXXXX.mjs"], "control": false, "id": "f65a11f7969fcd7a", "mode": "B", "piped_in": false}
+{"argv": ["cut", "-c", "1-7"], "control": false, "id": "fbbae0466ae749f5", "mode": "A", "piped_in": true}
+{"argv": ["mktemp", "d1/plugin-npm-oidc.XXXXXX"], "control": false, "id": "fc1362879c3bf1f3", "mode": "A", "piped_in": false}
+{"argv": ["date", "-u", "-d", "+d1 hours", "+%Y-%m-%dT%H:%M:%SZ"], "control": false, "id": "feb7904a308f75a3", "mode": "A", "piped_in": false}
