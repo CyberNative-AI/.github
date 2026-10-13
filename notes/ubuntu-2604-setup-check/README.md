@@ -7,7 +7,9 @@ The version '3.9' with architecture 'x64' was not found for ubuntu 26.04.
 Unavailable version 3.4.4 for ruby on ubuntu-26.04
 ```
 
-We checked 547 active public Python and Ruby repositories that set up Python or Ruby on `ubuntu-latest`. **117 (21%) have at least one job predicted to fail at setup on 26.04**: 75 of 224 Ruby repositories (33%) and 42 of 323 Python repositories (13%). In 115 of the 117, the failing job has no `continue-on-error`. We are not naming repositories; the checker below runs on your own.
+We checked 548 active public Python and Ruby repositories that set up Python or Ruby on `ubuntu-latest`. **122 (22%) have at least one job predicted to fail at setup on 26.04**: 79 of 224 Ruby repositories (35%) and 43 of 324 Python repositories (13%). In 120 of the 122, the failing job has no `continue-on-error`. We are not naming repositories; the checker below runs on your own.
+
+*Updated October 13, 2026:* the checker now resolves fallbacks such as `runs-on: ${{ matrix.os || 'ubuntu-latest' }}`, and `include` entries expand as GitHub documents: an entry no longer merges into a job that an earlier entry added, which had collapsed include-only matrices into one job. On the same October 12 sample and data, the count rose from 117 of 547 (21%) to 122 of 548. No repository lost a predicted failure. If you ran the checker before, download it again.
 
 ## What installs on 26.04
 
@@ -16,7 +18,7 @@ As of October 12, 2026 (x64):
 | | Versions with a 26.04 build |
 |---|---|
 | Python 3.8, 3.9 | none |
-| Python 3.10 – 3.14 | 3.10.20–3.10.22, 3.11.15–3.11.17, 3.12.13–3.12.15, 3.13.13–3.13.16, 3.14.6–3.14.8 |
+| Python 3.10 – 3.15 | 3.10.20–3.10.22, 3.11.15–3.11.17, 3.12.13–3.12.15, 3.13.13–3.13.16, 3.14.6–3.14.8, 3.15.0 |
 | Ruby before 3.2 | none |
 | Ruby 3.2 – 4.0 | 3.2.11, 3.3.11–3.3.12, 3.4.9–3.4.11, 4.0.5–4.0.7 |
 
@@ -26,9 +28,9 @@ The failing steps in the sample (after matrix expansion), by cause:
 
 | Cause | Failing steps |
 |---|---|
-| Ruby 2.5–3.1 | 193 |
-| Ruby exact patch release without a 26.04 build, often in `.ruby-version` (3.4.4, 3.4.8, 3.3.0, 4.0.1) | 181 |
-| Python 3.8 or 3.9 | 61 |
+| Ruby 2.3–3.1 | 200 |
+| Ruby exact patch release without a 26.04 build, often in `.ruby-version` (3.4.4, 3.4.8, 3.3.0, 4.0.1) | 193 |
+| Python 3.8 or 3.9 | 74 |
 | Python exact patch release without a 26.04 build | 21 |
 
 ## Check your repository
@@ -55,7 +57,7 @@ BREAK    setup-ruby    3.4.4      .github/workflows/ci.yml:rb: version file: rub
 | `ALREADY` | fails on 24.04 too, for example an unquoted `3.10`, which YAML reads as 3.1 |
 | `UNKNOWN` | cannot be resolved from the files: expressions from inputs, `needs` or `vars`, generated matrices, `head` builds |
 
-Nothing is reported `OK` unless it was resolved. The exit status is 1 when any entry is `BREAK`; `--json` prints one object per repository.
+A `||` fallback such as `${{ matrix.os || 'ubuntu-latest' }}` is resolved the way the runner does it: a matrix value the entry does not set counts as empty. Nothing is reported `OK` unless it was resolved. The exit status is 1 when any entry is `BREAK`; `--json` prints one object per repository.
 
 The first run downloads the python-versions manifest and setup-ruby's version list into `data/` next to the script, and checks ruby-builder assets with HEAD requests. Both projects can add 26.04 builds during the rollout: delete `data/` before you check again.
 
@@ -79,7 +81,7 @@ The first run downloads the python-versions manifest and setup-ruby's version li
 
 - **Against the actions themselves.** We took 22 real entries from the sample and ran the released actions in `ubuntu:26.04` and `ubuntu:24.04` containers, with a hosted runner's action environment and an empty tool cache. We used setup-python at `3892123f` and setup-ruby at `651ff0d6`, under node 24.21.0. All 22 matched the prediction. The 9 predicted `BREAK` failed on 26.04 with the action's own error, and the 4 of them we ran on 24.04 installed. The 9 predicted `OK` installed on 26.04. See `emulation/agreement.tsv`.
 - **Version ranges.** The range matching agrees with node-semver (npm's bundled copy in `node:24`) on 10,496 version/range pairs: `python3 tests/semver_compare.py`.
-- **Tests.** `python3 -m unittest discover -s tests` runs 17 fixture tests against the October 12 data in `tests/data/`. `python3 tests/mutants.py` checks that they catch 12 seeded faults.
+- **Tests.** `python3 -m unittest discover -s tests` runs 19 fixture tests against the October 12 data in `tests/data/`. `python3 tests/mutants.py` checks that they catch 15 seeded faults.
 
 ## How the sample was drawn
 
@@ -87,11 +89,11 @@ GitHub repository search, anonymous, on October 12, 2026: not forks, not archive
 
 | Search | Repos | With a setup step | ≥1 `BREAK` | Share |
 |---|---|---|---|---|
-| Python, 100–1,000 stars, most recently updated | 299 | 190 | 23 | 12.1% |
-| Python, more than 5,000 stars | 200 | 133 | 19 | 14.3% |
-| Ruby, 50–1,000 stars, most recently updated | 200 | 138 | 42 | 30.4% |
-| Ruby, more than 1,000 stars | 100 | 86 | 33 | 38.4% |
-| **All** | 799 | 547 | **117** | **21.4%** |
+| Python, 100–1,000 stars, most recently updated | 299 | 190 | 24 | 12.6% |
+| Python, more than 5,000 stars | 200 | 134 | 19 | 14.2% |
+| Ruby, 50–1,000 stars, most recently updated | 200 | 138 | 44 | 31.9% |
+| Ruby, more than 1,000 stars | 100 | 86 | 35 | 40.7% |
+| **All** | 799 | 548 | **122** | **22.3%** |
 
 To draw a fresh sample the same way (search results change, so you will get a different list):
 
@@ -143,7 +145,7 @@ Limits: direct calls in `run:` steps only, not composite actions, called script 
 - A prediction from workflow files, confirmed in containers, not on hosted runners. The tool-cache contents come from the runner image READMEs as of October 12.
 - x64 runners labelled exactly `ubuntu-latest`. Not covered: arm64, self-hosted, Windows, macOS, and jobs that run in a `container:`.
 - The sample is search-ranked, not random. "Most recently updated" favours very active repositories.
-- `UNKNOWN` steps are not counted as failures. 96 of the 547 repositories have at least one (24 of them have a Ruby `head` build step), and 13 have nothing else. The share is a lower bound for what the files show.
+- `UNKNOWN` steps are not counted as failures. 94 of the 548 repositories have at least one (25 of them have a Ruby `head` build step), and 11 have nothing else. The share is a lower bound for what the files show.
 - A break in a workflow that runs only on release or manual dispatch counts.
 - python-versions and ruby-builder may publish more 26.04 builds after October 12.
 - Other 26.04 changes (compiler, removed packages) are out of scope; coreutils are covered in the section above. PyPy and GraalPy builds are not tied to an Ubuntu version.
