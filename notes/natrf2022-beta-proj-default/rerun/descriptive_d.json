@@ -1,0 +1,438 @@
+{
+ "engines": {
+  "gdal-3.12.0": {
+   "cs2cs_banner": "Rel. 9.7.0, September 1st, 2025",
+   "cs2cs_out": [
+    "37.8145170000\t-79.4477540000 0.0000000000",
+    "42.2103800000\t-103.0817790000 0.0000000000",
+    "38.6482360000\t-88.9203620000 0.0000000000",
+    "42.4033390000\t-92.7902440000 0.0000000000",
+    "39.9170320000\t-83.7836760000 0.0000000000",
+    "41.5770080000\t-96.6458520000 0.0000000000",
+    "40.2967100000\t-81.9301090000 0.0000000000",
+    "39.8644400000\t-93.1080190000 0.0000000000",
+    "45.9419320000\t-123.0810790000 0.0000000000",
+    "32.1721080000\t-82.5333490000 0.0000000000"
+   ],
+   "cs2cs_rc": 0,
+   "cs2cs_stderr": "",
+   "gdal": "GDAL 3.12.0 \"Chicoutimi\", released 2025/11/03",
+   "gdaltransform_out": [
+    "-79.447754 37.814517 0",
+    "-103.081779 42.21038 0",
+    "-88.920362 38.648236 0",
+    "-92.790244 42.403339 0",
+    "-83.783676 39.917032 0",
+    "-96.645852 41.577008 0",
+    "-81.930109 40.29671 0",
+    "-93.108019 39.86444 0",
+    "-123.081079 45.941932 0",
+    "-82.533349 32.172108 0"
+   ],
+   "gdaltransform_rc": 0,
+   "gdaltransform_stderr": "",
+   "image": "ghcr.io/osgeo/gdal:ubuntu-small-3.12.0",
+   "proj_db": "{'EPSG.VERSION': 'v11.004', 'PROJ.VERSION': '9.4.0'}",
+   "projinfo_default": [
+    "Candidate operations found: 1",
+    "Note: using '--spatial-test intersects' would bring more results (2)",
+    "unknown id, Ballpark geographic offset from NAD83(2011) to NATRF2022, unknown accuracy, World, has ballpark transformation"
+   ]
+  },
+  "gdal-latest": {
+   "cs2cs_banner": "Rel. 9.10.0, March 1st, 2027",
+   "cs2cs_out": [
+    "37.8145249330\t-79.4477593387 -1.2988313818",
+    "42.2103862073\t-103.0817916244 -0.8481950713",
+    "38.6482432085\t-88.9203702840 -1.1703037219",
+    "42.4033464390\t-92.7902540496 -1.0098312143",
+    "39.9170399457\t-83.7836829835 -1.1945132120",
+    "41.5770148754\t-96.6458629135 -0.9752821764",
+    "40.2967181928\t-81.9301154778 -1.2019143645",
+    "39.8644469909\t-93.1080286512 -1.0773399882",
+    "45.9419358923\t-123.0810961846 -0.3447405854",
+    "32.1721144665\t-82.5333545624 -1.4271080699"
+   ],
+   "cs2cs_rc": 0,
+   "cs2cs_stderr": "",
+   "gdal": "GDAL 3.14.0dev-b0844ad1f122672b0c6c269f54c183dc69f8535d, released 2026/10/13",
+   "gdaltransform_out": [
+    "-79.4477593386934 37.8145249330026 -1.29883138183504",
+    "-103.081791624421 42.2103862073472 -0.848195071332157",
+    "-88.9203702839697 38.6482432085467 -1.17030372191221",
+    "-92.7902540495755 42.4033464390403 -1.00983121432364",
+    "-83.7836829835439 39.9170399457377 -1.19451321195811",
+    "-96.6458629135303 41.5770148754164 -0.975282176397741",
+    "-81.9301154778184 40.296718192836 -1.20191436447203",
+    "-93.1080286511985 39.86444699094 -1.07733998820186",
+    "-123.081096184615 45.9419358922781 -0.344740585424006",
+    "-82.5333545623613 32.1721144664837 -1.4271080698818"
+   ],
+   "gdaltransform_rc": 0,
+   "gdaltransform_stderr": "",
+   "image": "ghcr.io/osgeo/gdal:ubuntu-small-latest",
+   "proj_db": "{'EPSG.VERSION': 'v12.029', 'PROJ.VERSION': '9.7.1'}",
+   "projinfo_default": [
+    "Candidate operations found: 1",
+    "Note: using '--spatial-test intersects' would bring more results (4)",
+    "unknown id, Ballpark geographic offset from NAD83(2011) to NATRF2022e2020, unknown accuracy, World, has ballpark transformation"
+   ]
+  }
+ },
+ "ids": [
+  "51163",
+  "31013",
+  "17121",
+  "19075",
+  "39023",
+  "31053",
+  "39031",
+  "29115",
+  "41009",
+  "13209"
+ ],
+ "pyproj": {
+  "accuracy": -1.0,
+  "desc": "unavailable until proj_trans is called",
+  "epsg": "v12.029",
+  "ops": null,
+  "out": [
+   [
+    37.814517,
+    -79.447754
+   ],
+   [
+    42.21038,
+    -103.081779
+   ],
+   [
+    38.648236,
+    -88.920362
+   ],
+   [
+    42.403339,
+    -92.790244
+   ],
+   [
+    39.917032,
+    -83.783676
+   ],
+   [
+    41.577008,
+    -96.645852
+   ],
+   [
+    40.29671,
+    -81.930109
+   ],
+   [
+    39.86444,
+    -93.108019
+   ],
+   [
+    45.941932,
+    -123.081079
+   ],
+   [
+    32.172108,
+    -82.533349
+   ]
+  ],
+  "proj": "9.8.1",
+  "pyproj": "3.8.0",
+  "warnings": null
+ },
+ "pyproj_stderr": "",
+ "rows": [
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.0910577576354836,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.14702709321060412,
+   "cs2cs_9.9.0_vs_ncat_m": 0.14702709321060412,
+   "gdaltransform[gdal-3.12.0]": [
+    37.814517,
+    -79.447754
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.0910577576354836,
+   "gdaltransform[gdal-latest]": [
+    37.8145249330026,
+    -79.4477593386934
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.14702762862693308,
+   "id": "51163",
+   "lat": 37.814517,
+   "lon": -79.447754,
+   "name": "Rockbridge County",
+   "ncat": [
+    37.8145251151,
+    -79.4477609926
+   ],
+   "pyproj": [
+    37.814517,
+    -79.447754
+   ],
+   "pyproj_vs_ncat_m": 1.0910577576354836,
+   "state": "VA"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.348193144238905,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.16180816336361128,
+   "cs2cs_9.9.0_vs_ncat_m": 0.16180816336361128,
+   "gdaltransform[gdal-3.12.0]": [
+    42.21038,
+    -103.081779
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.348193144238905,
+   "gdaltransform[gdal-latest]": [
+    42.2103862073472,
+    -103.081791624421
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.16180852512222532,
+   "id": "31013",
+   "lat": 42.21038,
+   "lon": -103.081779,
+   "name": "Box Butte County",
+   "ncat": [
+    42.2103856618,
+    -103.0817934413
+   ],
+   "pyproj": [
+    42.21038,
+    -103.081779
+   ],
+   "pyproj_vs_ncat_m": 1.348193144238905,
+   "state": "NE"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.1956536421406276,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.15616051139058715,
+   "cs2cs_9.9.0_vs_ncat_m": 0.15616051139058715,
+   "gdaltransform[gdal-3.12.0]": [
+    38.648236,
+    -88.920362
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.1956536421406276,
+   "gdaltransform[gdal-latest]": [
+    38.6482432085467,
+    -88.9203702839697
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.15616271370591037,
+   "id": "17121",
+   "lat": 38.648236,
+   "lon": -88.920362,
+   "name": "Marion County",
+   "ncat": [
+    38.6482433229,
+    -88.9203720719
+   ],
+   "pyproj": [
+    38.648236,
+    -88.920362
+   ],
+   "pyproj_vs_ncat_m": 1.1956536421406276,
+   "state": "IL"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.2743002906949017,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.1588104021772445,
+   "cs2cs_9.9.0_vs_ncat_m": 0.1588104021772445,
+   "gdaltransform[gdal-3.12.0]": [
+    42.403339,
+    -92.790244
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.2743002906949017,
+   "gdaltransform[gdal-latest]": [
+    42.4033464390403,
+    -92.7902540495755
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.1588129093071611,
+   "id": "19075",
+   "lat": 42.403339,
+   "lon": -92.790244,
+   "name": "Grundy County",
+   "ncat": [
+    42.4033462768,
+    -92.7902559662
+   ],
+   "pyproj": [
+    42.403339,
+    -92.790244
+   ],
+   "pyproj_vs_ncat_m": 1.2743002906949017,
+   "state": "IA"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.1670310965331734,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.1528494920224021,
+   "cs2cs_9.9.0_vs_ncat_m": 0.1528494920224021,
+   "gdaltransform[gdal-3.12.0]": [
+    39.917032,
+    -83.783676
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.1670310965331734,
+   "gdaltransform[gdal-latest]": [
+    39.9170399457377,
+    -83.7836829835439
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.15284541346157668,
+   "id": "39023",
+   "lat": 39.917032,
+   "lon": -83.783676,
+   "name": "Clark County",
+   "ncat": [
+    39.9170400572,
+    -83.7836847654
+   ],
+   "pyproj": [
+    39.917032,
+    -83.783676
+   ],
+   "pyproj_vs_ncat_m": 1.1670310965331734,
+   "state": "OH"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.2824560694848122,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.14918164320342978,
+   "cs2cs_9.9.0_vs_ncat_m": 0.14918164320342978,
+   "gdaltransform[gdal-3.12.0]": [
+    41.577008,
+    -96.645852
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.2824560694848122,
+   "gdaltransform[gdal-latest]": [
+    41.5770148754164,
+    -96.6458629135303
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.14917960623836396,
+   "id": "31053",
+   "lat": 41.577008,
+   "lon": -96.645852,
+   "name": "Dodge County",
+   "ncat": [
+    41.5770145622,
+    -96.645864653
+   ],
+   "pyproj": [
+    41.577008,
+    -96.645852
+   ],
+   "pyproj_vs_ncat_m": 1.2824560694848122,
+   "state": "NE"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.1888195765531628,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.14045899535113934,
+   "cs2cs_9.9.0_vs_ncat_m": 0.14045899535113934,
+   "gdaltransform[gdal-3.12.0]": [
+    40.29671,
+    -81.930109
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.1888195765531628,
+   "gdaltransform[gdal-latest]": [
+    40.296718192836,
+    -81.9301154778184
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.14045563301274253,
+   "id": "39031",
+   "lat": 40.29671,
+   "lon": -81.930109,
+   "name": "Coshocton County",
+   "ncat": [
+    40.2967188317,
+    -81.9301169036
+   ],
+   "pyproj": [
+    40.29671,
+    -81.930109
+   ],
+   "pyproj_vs_ncat_m": 1.1888195765531628,
+   "state": "OH"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.2378727326700074,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.15030853205350456,
+   "cs2cs_9.9.0_vs_ncat_m": 0.15030853205350456,
+   "gdaltransform[gdal-3.12.0]": [
+    39.86444,
+    -93.108019
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.2378727326700074,
+   "gdaltransform[gdal-latest]": [
+    39.86444699094,
+    -93.1080286511985
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.15030907372615646,
+   "id": "29115",
+   "lat": 39.86444,
+   "lon": -93.108019,
+   "name": "Linn County",
+   "ncat": [
+    39.8644468642,
+    -93.1080304002
+   ],
+   "pyproj": [
+    39.86444,
+    -93.108019
+   ],
+   "pyproj_vs_ncat_m": 1.2378727326700074,
+   "state": "MO"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 1.480511817011618,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.1121097145992862,
+   "cs2cs_9.9.0_vs_ncat_m": 0.1121097145992862,
+   "gdaltransform[gdal-3.12.0]": [
+    45.941932,
+    -123.081079
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 1.480511817011618,
+   "gdaltransform[gdal-latest]": [
+    45.9419358922781,
+    -123.081096184615
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.11210753154299967,
+   "id": "41009",
+   "lat": 45.941932,
+   "lon": -123.081079,
+   "name": "Columbia County",
+   "ncat": [
+    45.9419354116,
+    -123.0810974556
+   ],
+   "pyproj": [
+    45.941932,
+    -123.081079
+   ],
+   "pyproj_vs_ncat_m": 1.480511817011618,
+   "state": "OR"
+  },
+  {
+   "cs2cs[gdal-3.12.0]_vs_ncat_m": 0.9865704953787537,
+   "cs2cs[gdal-latest]_vs_ncat_m": 0.130924059839598,
+   "cs2cs_9.9.0_vs_ncat_m": 0.130924059839598,
+   "gdaltransform[gdal-3.12.0]": [
+    32.172108,
+    -82.533349
+   ],
+   "gdaltransform[gdal-3.12.0]_vs_ncat_m": 0.9865704953787537,
+   "gdaltransform[gdal-latest]": [
+    32.1721144664837,
+    -82.5333545623613
+   ],
+   "gdaltransform[gdal-latest]_vs_ncat_m": 0.13092796645108767,
+   "id": "13209",
+   "lat": 32.172108,
+   "lon": -82.533349,
+   "name": "Montgomery County",
+   "ncat": [
+    32.1721146634,
+    -82.5333559311
+   ],
+   "pyproj": [
+    32.172108,
+    -82.533349
+   ],
+   "pyproj_vs_ncat_m": 0.9865704953787537,
+   "state": "GA"
+  }
+ ]
+}
