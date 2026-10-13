@@ -1,0 +1,10 @@
+{
+ "note": "POST HOC, not in frozen rule",
+ "east_CONUS_A1_min_m": 0.09133981701978539,
+ "east_CONUS_A1_max_m": 0.17983857065056655,
+ "east_CONUS_A1_median_dN_m": 0.006540831597765923,
+ "east_CONUS_A1_median_dE_m": 0.1435137217409634,
+ "A1_stderr": "",
+ "A2_stderr": "",
+ "A3_stderr_first": "Input coordinates lack a coordinate epoch, whereas the destination CRS is dynamic. Results might be inaccurate.\nInput co"
+}
