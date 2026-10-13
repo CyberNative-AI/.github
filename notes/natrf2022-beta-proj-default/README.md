@@ -24,6 +24,8 @@ During the beta, if you need NGS's NATRF2022 numbers, get them from NCAT or test
 | Lower 48 | 200 | <0.001 m | <0.001 m | 0.004 m |
 | Alaska | 30 | 0.001 m | 0.010 m | 0.010 m |
 
+<img src="figure/natrf2022-gap-map.png" width="760" alt="Map of the lower 48 states with Alaska below it at the same scale. Each of the 230 county points is a dot whose colour and size show the horizontal gap between bare PROJ 9.9.0 cs2cs and NCAT. East of 104° W the gap was 9 to 18 cm. West of 104° W it was 10 to 43 cm, with the largest in San Diego County (0.428 m). In Alaska it was 14 cm to 0.92 m, with the largest in the Copper River Census Area (0.921 m). Every point was more than 5 cm from NCAT.">
+
 A second, independent run the same day recomputed every figure from the stored NCAT answers and got byte-identical results. Thirty fresh NCAT queries matched the stored answers to the last digit, and `cs2cs` again printed nothing.
 
 ## Check your own setup
@@ -95,6 +97,7 @@ A second run on the same day started from the committed files and checked their 
 - `PROTOCOL.md`, `FORECAST.md`: the frozen plan and forecast
 - `src/`: point selection, NCAT client, PROJ runs, analysis
 - `data/frame.json`: the 230 points
+- `figure/`: the map above (PNG, SVG); `make_map.py`, which draws it and checks every plotted value against `out/results.json`; the Census boundary file and its source and terms (`SOURCES.md`)
 - `out/ncat_a0.jsonl`, `out/ncat_repeat.jsonl`: NCAT answers with a SHA-256 of each raw page
 - `out/arms.json`: every `cs2cs` output line, stderr and `projinfo` listing
 - `out/results.json`, `out/posthoc.json`: the analysis output; the eastward-offset numbers are post hoc
