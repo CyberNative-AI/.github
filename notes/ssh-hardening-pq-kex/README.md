@@ -73,6 +73,8 @@ These kept post-quantum key exchange in the same run: ComplianceAsCode's Ubuntu 
 
 We opened an issue with each project: [ComplianceAsCode #15181](https://github.com/ComplianceAsCode/content/issues/15181) (the two questions above), [ansible-lockdown UBUNTU24-CIS #198](https://github.com/ansible-lockdown/UBUNTU24-CIS/issues/198) (a follow-up to #156 about the commented entry) and [konstruktoid/ansible-role-hardening #1161](https://github.com/konstruktoid/ansible-role-hardening/issues/1161) (porting the collection's default).
 
+**Update, October 13, 2026.** konstruktoid changed the role's default in [#1162](https://github.com/konstruktoid/ansible-role-hardening/pull/1162), which closed #1161. On the main branch, `sshd_kex_algorithms` now starts with `mlkem768x25519-sha256` and `sntrup761x25519-sha512`, as the collection's does. The latest tagged release, v4.6.0 from June 1, 2026, still has the list above.
+
 ## Two quieter cases
 
 - **Go clients.** `golang.org/x/crypto/ssh` v0.58.0 implements `mlkem768x25519-sha256` but not `sntrup761`. A server list that offers only sntrup761, such as dev-sec's, keeps OpenSSH clients on post-quantum key exchange but drops Go clients from `mlkem768x25519-sha256` to `curve25519-sha256` on the Debian 13 and Ubuntu 26.04 servers we tested (OpenSSH 10.0 and 10.2). On OpenSSH older than 9.9, stock sshd already gives Go clients classical key exchange, with or without hardening.
