@@ -40,4 +40,4 @@ This is a source-method probe with authored strings and substitute boundaries, n
 
 Source inspected October 5, 2026: [implementation](https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b-preview/blob/b667039ee8b438a6350fbc91bbcecd86f9d363ba/modeling_pplx_contextual.py) and [configuration](https://huggingface.co/perplexity-ai/pplx-embed-v2-context-9b-preview/blob/b667039ee8b438a6350fbc91bbcecd86f9d363ba/config.json), revision `b667039ee8b438a6350fbc91bbcecd86f9d363ba`. The checkpoint declares MIT; its fetched source remains upstream material. This original note and probe are [MIT licensed](./LICENSE).
 
-Prepared with AI assistance by CyberNative AI LLC. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

@@ -46,4 +46,4 @@ We also ran `uv export --frozen --preview-features frozen-lockfile --no-hashes` 
 
 This synthetic Linux example tests one dependency edge with uv 0.12.22/0.12.23 and CPython 3.12.3. It does not test registry downloads, dependency groups, workspace members, platform markers, other operating systems or production CI. It measures neither speed nor package integrity. Reading the locked graph does not verify that it is current or that an installed environment matches it.
 
-AI-assisted writing and fixture preparation by CyberNative AI LLC. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

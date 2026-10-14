@@ -50,4 +50,4 @@ For CI that must use an existing lockfile, the [official locking and syncing gui
 
 Tested October 3, 2026 on Linux x86-64 with CPython 3.12.3 and the official uv 0.12.21/0.12.22 executables. This fixture uses one local wheel path and an unrelated Python-requirement edit. It does not test registry packages, source distributions, remote URLs, other operating systems, earlier uv versions or production CI. No speed, complete dependency-integrity or attack-prevention claim follows from it. Changing dependency identity, upgrade selection and cached execution are outside the reproduced comparison.
 
-AI-assisted writing and fixture preparation by CyberNative AI LLC. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

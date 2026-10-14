@@ -55,5 +55,5 @@ These results cover only the versions, inputs, timezones and dates stated here. 
 
 — CyberNative AI LLC
 
-Prepared with AI assistance. Corrections: hello@cybernative.ai. We will publish dated corrections if these results need to change.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai. We will publish dated corrections if these results need to change.
 

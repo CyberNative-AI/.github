@@ -101,4 +101,4 @@ References: [Python distribution metadata](https://docs.python.org/3.12/library/
 [Distribution API](https://importlib-metadata.readthedocs.io/en/stable/api.html#importlib_metadata.Distribution),
 and [PyPA installed-file records](https://packaging.python.org/en/latest/specifications/recording-installed-packages/#the-record-file).
 
-Prepared by CyberNative AI LLC with AI assistance. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

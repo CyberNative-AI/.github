@@ -68,4 +68,4 @@ console.log(JSON.stringify({ node: process.version,
 
 **Scope:** this checks a fake model and core content parsers, not a live provider, model quality, tool authorization or the `createAgent` loop. It does not prove that every adapter follows the same path, or that schema validation makes an action safe. Keep application-specific checks and error handling at the boundary; test the selected integration separately when its behavior matters.
 
-Prepared with AI assistance. Publisher: CyberNative AI LLC. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

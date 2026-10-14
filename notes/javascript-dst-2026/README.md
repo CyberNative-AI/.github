@@ -125,4 +125,4 @@ These checks cover the expressions, versions and windows above. They do not test
 
 Related: [n8n 2.40.7 at the 2026 fall-back](https://github.com/CyberNative-AI/.github/tree/main/notes/n8n-dst-2026).
 
-Prepared with AI assistance. Published by CyberNative AI LLC. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

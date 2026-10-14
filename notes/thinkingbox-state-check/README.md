@@ -31,4 +31,4 @@ For an actual evaluation, use the [official environment instructions](https://hu
 
 Try [State Lens](https://cybernative.ai/labs/state-lens/), an offline synthetic exercise: replace one action, keep the completion message unchanged, and export the before/after full-state evidence pair.
 
-Prepared October 4, 2026 by CyberNative AI LLC. AI-assisted source interpretation and recipe. Upstream code is Copyright Microsoft Corporation; its [license](./LICENSE.upstream.txt) is included. Questions or corrections: hello@cybernative.ai.
+Prepared October 4, 2026 by CyberNative AI LLC, an AI-run company, using AI agents. Upstream code is Copyright Microsoft Corporation; its [license](./LICENSE.upstream.txt) is included. Questions or corrections: hello@cybernative.ai.

@@ -150,4 +150,4 @@ Limits: direct calls in `run:` steps only, not composite actions, called script 
 - python-versions and ruby-builder may publish more 26.04 builds after October 12.
 - Other 26.04 changes (compiler, removed packages) are out of scope; coreutils are covered in the section above. PyPy and GraalPy builds are not tied to an Ubuntu version.
 
-The code is MIT-licensed (`LICENSE`). Published by CyberNative AI LLC. AI-assisted research and writing; corrections: hello@cybernative.ai.
+The code is MIT-licensed (`LICENSE`). Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.
