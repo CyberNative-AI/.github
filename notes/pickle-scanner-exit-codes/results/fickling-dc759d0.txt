@@ -1,0 +1,71 @@
+fickling built from trailofbits/fickling commit dc759d003e7d6fcf0e0dcc6089b6674c3bcdd695
+(the merge of pull request 330), run on October 14, 2026.
+
+Install (network on):
+  pip install "fickling @ https://github.com/trailofbits/fickling/archive/dc759d003e7d6fcf0e0dcc6089b6674c3bcdd695.tar.gz"
+  -> fickling @ ...dc759d003e7d6fcf0e0dcc6089b6674c3bcdd695.tar.gz#sha256=213e5b804b828723edfa22b80f5b27e900f743cadb53b07e7bb51c6975b25ea1
+Run: python:3.12-slim (Python 3.12.15), no network, non-root, all capabilities dropped,
+read-only root, the 9 PoC files mounted read-only (same SHA-256 as pocs.sha256).
+
+== fickling --check-safety FILE: exit codes
+add_extension.pkl      1
+bz22pickle.joblib      2
+gzip2pickle.joblib     2
+inverted_registry.pkl  1
+lz42pickle.joblib      2
+lzma2pickle.joblib     1
+tar2pickle.tar         1
+xz2pickle.joblib       2
+zlib2pickle.joblib     2
+
+Without --print-results, the two copyreg files print nothing; fickling 0.1.12
+printed an AttributeError traceback on both.
+
+== fickling --check-safety --print-results --json-output add_extension.pkl.json add_extension.pkl   (exit 1)
+Warning: Fickling detected that the pickle file may be unsafe.
+
+Do not unpickle this file if it is from an untrusted source!
+
+Call to `copyreg._inverted_registry.get(...)` can execute arbitrary code and is inherently unsafe
+Call to `__import__(_var1[0])` can execute arbitrary code and is inherently unsafe
+Call to `getattr(...)` can execute arbitrary code and is inherently unsafe
+Call to `_var2("echo 'Yippie!'")` can execute arbitrary code and is inherently unsafe
+`import copyreg, sys` is suspicious and indicative of an overtly malicious pickle file
+Variable `_var0` is assigned value `add_extension('os', 'system', 1)` but unused afterward; this is suspicious and indicative of a malicious pickle file
+
+-- add_extension.pkl.json
+{
+    "severity": "LIKELY_OVERTLY_MALICIOUS",
+    "analysis": "Call to `copyreg._inverted_registry.get(...)` can execute arbitrary code and is inherently unsafe\nCall to `__import__(_var1[0])` can execute arbitrary code and is inherently unsafe\nCall to `getattr(...)` can execute arbitrary code and is inherently unsafe\nCall to `_var2(\"echo 'Yippie!'\")` can execute arbitrary code and is inherently unsafe\n`import copyreg, sys` is suspicious and indicative of an overtly malicious pickle file\nVariable `_var0` is assigned value `add_extension('os', 'system', 1)` but unused afterward; this is suspicious and indicative of a malicious pickle file",
+    "detailed_results": {
+        "AnalysisResult": {
+            "OvertlyBadEval": "_var2(\"echo 'Yippie!'\")",
+            "UnsafeImports": "import copyreg, sys",
+            "UnusedVariables": "_var0: add_extension('os', 'system', 1)"
+        }
+    }
+}
+
+== fickling --check-safety --print-results --json-output inverted_registry.pkl.json inverted_registry.pkl   (exit 1)
+Warning: Fickling detected that the pickle file may be unsafe.
+
+Do not unpickle this file if it is from an untrusted source!
+
+Call to `copyreg._inverted_registry.get(...)` can execute arbitrary code and is inherently unsafe
+Call to `__import__(_var1[0])` can execute arbitrary code and is inherently unsafe
+Call to `getattr(...)` can execute arbitrary code and is inherently unsafe
+Call to `_var2("echo 'Yippie!'")` can execute arbitrary code and is inherently unsafe
+`import copyreg, sys` is suspicious and indicative of an overtly malicious pickle file
+
+-- inverted_registry.pkl.json
+{
+    "severity": "LIKELY_OVERTLY_MALICIOUS",
+    "analysis": "Call to `copyreg._inverted_registry.get(...)` can execute arbitrary code and is inherently unsafe\nCall to `__import__(_var1[0])` can execute arbitrary code and is inherently unsafe\nCall to `getattr(...)` can execute arbitrary code and is inherently unsafe\nCall to `_var2(\"echo 'Yippie!'\")` can execute arbitrary code and is inherently unsafe\n`import copyreg, sys` is suspicious and indicative of an overtly malicious pickle file",
+    "detailed_results": {
+        "AnalysisResult": {
+            "OvertlyBadEval": "_var2(\"echo 'Yippie!'\")",
+            "UnsafeImports": "import copyreg, sys"
+        }
+    }
+}
+
