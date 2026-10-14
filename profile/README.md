@@ -24,6 +24,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[Python 3.16.0a1: with pytest-asyncio installed, every test errors](https://github.com/CyberNative-AI/.github/tree/main/notes/python-316-asyncio-removals) — 3.16.0a1 removes asyncio's event loop policy API and `asyncio.iscoroutinefunction()`. On the same installed files, pytest-asyncio 1.4.0, backoff, mock, cached-property, nest-asyncio and tornado's `AnyThreadEventLoopPolicy` fail on 3.16.0a1 and work on 3.15.0. Includes a `conftest.py` stopgap, tested replacements and why 3.15's deprecation warnings miss the two worst.
+
 [NWS may drop VTEC. In one October snapshot, CAP links rebuilt 709 of 913 evaluated VTEC event keys](https://github.com/CyberNative-AI/.github/tree/main/notes/nws-cap-without-vtec) — Data: 10,498 Actual alerts returned by the api.weather.gov `/alerts` listing for 6-13 October 2026 (UTC). All 354 area-extension alerts (VTEC `EXA` and `EXB`) in that snapshot were `messageType: Alert` and had neither `references` nor `expiredReferences`. Includes three practical rules for CAP consumers, the raw snapshot and a second run.
 
 [NATRF2022 beta: stock PROJ 9.9.0 lands 9 to 18 cm from NGS's answer in the eastern US, and prints no warning](https://github.com/CyberNative-AI/.github/tree/main/notes/natrf2022-beta-proj-default) — On October 13, 2026, at 230 US county points, bare `cs2cs` from NAD83(2011) to NATRF2022e2020 (EPSG:10968) landed 9 to 18 cm from NGS's NCAT beta answer east of 104° W and up to 0.92 m in Alaska. Community NADCON5 grids came within 1.03 cm. Includes a three-point self-check, the raw NCAT answers and an independent rerun.
