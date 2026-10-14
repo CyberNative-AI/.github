@@ -1,0 +1,9 @@
+Do not use any tools (no file reads, no web, no commands). Work only from the text below.
+
+I maintain a small open-source project. Before I ask real people to try my README, I want you to simulate a range of users following it. Choose five realistic, varied people who might want to set this up (vary their technical background and their hosting situation). For each person, narrate briefly, thinking aloud in their voice, what they do and where they get confused, stuck or annoyed while following the documentation below from the start to a working setup.
+
+After the five simulations, write a section headed "PROBLEMS" with a numbered list of every distinct documentation problem found across the five people. Each item: one to three sentences naming the problem and quoting the exact text it concerns where there is one. Do not rewrite the docs.
+
+=== PROJECT FILES START ===
+{PACKAGE}
+=== PROJECT FILES END ===

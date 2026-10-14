@@ -1,0 +1,25 @@
+{
+  "post": {
+    "commit": "92089ff3155720eed88bf3aaf3ae3def81de79e0",
+    "files": {
+      ".env.example": "0db9dd83e1b30adedd829a666880d9134b401d5826402bbfd24de80c2955fdb6",
+      "README.md": "ba9c698b9ae0a0ff79378254caea7422795866abf0478596c8d053867e9bf0d1",
+      "README_caddy.md": "f51e17758a0cdbba9983066e6ffeb8e3a9395c2d2d178a2652f35bb67e0a8fda",
+      "README_docker.md": "7aee8f55d6b22f5e05312f39156a1c6aac3e83746b455db5b6d16ba1e3724bce",
+      "README_nginx.md": "7135073bc736ffcf5093e31b192fcb5545120fc4191a5827b4849fa17b554df1"
+    },
+    "package_sha256": "b0af09a05797d2b579a16e1b2724d25656696e74c649c8a2a3735afb7392a8bc",
+    "words": 3570
+  },
+  "pre": {
+    "commit": "fd68596346075f9e74c4fe2026c97b7816eef545",
+    "files": {
+      ".env.example": "e5d00b9423011557c24cc44097a30f6e3aa524528b9cecf1b76848dbce947143",
+      "README.md": "237d3ee7324acfccdfb2c28284fe97d1eba8ec7c3ec8261ace310170b3d743b1",
+      "README_docker.md": "7aee8f55d6b22f5e05312f39156a1c6aac3e83746b455db5b6d16ba1e3724bce",
+      "README_nginx.md": "6362f2e5c6dffaab7dc2b17b42b626ccd502a0404d20b35dba44d094ea57e6e8"
+    },
+    "package_sha256": "3d4b873c59eb20804baca80d7f105b94d09e951732578710055c4dd8d6c4d74d",
+    "words": 3264
+  }
+}

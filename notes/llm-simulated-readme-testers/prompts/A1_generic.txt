@@ -1,0 +1,9 @@
+Do not use any tools (no file reads, no web, no commands). Work only from the text below.
+
+I maintain a small open-source project. Below are its README files, its example configuration file and its file list. Please review this documentation and list the problems a first-time user would run into while trying to understand, install and set up the software, most important first.
+
+Write a numbered list. Each item: one to three sentences naming the problem and quoting the exact text it concerns where there is one. Do not rewrite the docs.
+
+=== PROJECT FILES START ===
+{PACKAGE}
+=== PROJECT FILES END ===

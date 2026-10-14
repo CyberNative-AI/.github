@@ -1,0 +1,285 @@
+{
+ "cells": [
+  {
+   "uid": "U2934",
+   "item": "H08",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U3920",
+   "item": "H01",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U4300",
+   "item": "C05",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U2934",
+   "item": "H02",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U2934",
+   "item": "H06",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U6810",
+   "item": "C05",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U8550",
+   "item": "C08",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U8550",
+   "item": "H10",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U5302",
+   "item": "H02",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U8550",
+   "item": "H03",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U5302",
+   "item": "C05",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U5302",
+   "item": "C01",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U3920",
+   "item": "C01",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U7861",
+   "item": "R01",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U1863",
+   "item": "C02",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U6404",
+   "item": "C07",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U2008",
+   "item": "C07",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U6404",
+   "item": "H03",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U4300",
+   "item": "H08",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U9172",
+   "item": "C02",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U9172",
+   "item": "H09",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U3059",
+   "item": "H11",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U8550",
+   "item": "C05",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U9207",
+   "item": "H10",
+   "mine": false,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U2813",
+   "item": "R01",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U2008",
+   "item": "H04",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U3837",
+   "item": "H01",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "far"
+  },
+  {
+   "uid": "U3552",
+   "item": "C01",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U3920",
+   "item": "H02",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U2934",
+   "item": "C02",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U9207",
+   "item": "C06",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U5570",
+   "item": "C05",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U5570",
+   "item": "H07",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U9172",
+   "item": "H08",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U5302",
+   "item": "H07",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U3837",
+   "item": "H09",
+   "mine": false,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U1834",
+   "item": "H08",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U6404",
+   "item": "R01",
+   "mine": true,
+   "adjudicator": false,
+   "stratum": "near"
+  },
+  {
+   "uid": "U8803",
+   "item": "H11",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  },
+  {
+   "uid": "U9378",
+   "item": "H11",
+   "mine": true,
+   "adjudicator": true,
+   "stratum": "yes"
+  }
+ ],
+ "note": "Cells sampled by rerun/sample_cells.py (random.Random(20261014); U3972 excluded; 20 adjudicator-yes, 12 near-miss no, 8 other no; seed order). 'mine' = judgments written from batch text before verdicts were read for these cells; 'adjudicator' = committed verdicts."
+}

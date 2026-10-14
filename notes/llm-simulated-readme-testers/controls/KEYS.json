@@ -1,0 +1,53 @@
+{
+ "PC1": {
+  "yes": [
+   "H01",
+   "H03",
+   "H06",
+   "H09",
+   "C02",
+   "C07"
+  ],
+  "either": [
+   "H02"
+  ],
+  "planted": [
+   "H01",
+   "H03",
+   "H06",
+   "H09",
+   "C02",
+   "C07"
+  ]
+ },
+ "PC2": {
+  "yes": [],
+  "either": [],
+  "planted": []
+ },
+ "PC3": {
+  "yes": [
+   "H01",
+   "H02",
+   "H03",
+   "H05",
+   "H06",
+   "H08",
+   "H10",
+   "C04",
+   "C05"
+  ],
+  "either": [
+   "H07"
+  ],
+  "planted": [
+   "H02",
+   "H05",
+   "H08",
+   "H10",
+   "C04",
+   "C05"
+  ],
+  "note": "Written by a separate model instance of the same model family (one Read of package/pre.md, 25 s) from a planted list; its KEY called items 2, 7, 10 near-misses but item 2 meets H01, item 3 also meets H03 and item 5 meets H06 under the frozen match rules. Expected key corrected by the protocol author BEFORE any scoring; extra true items are 'yes', not FP. Transcript narration omitted; only the PROBLEMS list is the scored unit (as for A2)."
+ }
+}

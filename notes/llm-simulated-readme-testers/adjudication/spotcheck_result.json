@@ -1,0 +1,39 @@
+{
+ "n": 40,
+ "agreement": 0.9,
+ "kappa": 0.783,
+ "positive_agreement": 0.857,
+ "adj_yes": 16,
+ "mine_yes": 12,
+ "disagreements": [
+  [
+   "S00",
+   "U9207",
+   "H10",
+   true,
+   false
+  ],
+  [
+   "S06",
+   "U8803",
+   "H06",
+   true,
+   false
+  ],
+  [
+   "S23",
+   "U6404",
+   "H08",
+   true,
+   false
+  ],
+  [
+   "S25",
+   "U2326",
+   "H02",
+   true,
+   false
+  ]
+ ],
+ "pass": true
+}

@@ -1,0 +1,7 @@
+Do not use any tools (no file reads, no web, no commands). Work only from the description below.
+
+I maintain a small open-source project: ActivityBot, a single PHP file (plus an .htaccess file and an example .env configuration file) that runs an ActivityPub/Fediverse bot account. You upload it to the root of a subdomain on an ordinary web host with HTTPS, fill in a keypair, password and username, and then post to the bot through an HTTP API using Python examples. It also has instructions for nginx and Docker.
+
+Without seeing my documentation, list the problems a first-time user would most likely run into while trying to understand, install and set up software like this from a typical README, most important first.
+
+Write a numbered list. Each item: one to three sentences naming the problem.

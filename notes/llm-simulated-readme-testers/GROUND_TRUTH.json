@@ -1,0 +1,193 @@
+{
+ "sources": {
+  "blog": "https://shkspr.mobi/blog/2026/10/i-paid-people-to-try-and-follow-my-readme/ (Terence Eden, 2026-10-11, doi 10.59350/41s5v-7q247): bullet list 'Amongst the highlights I discovered were'",
+  "commits": "gitlab.com/edent/activity-bot fd68596..92089ff (2026-10-05 15:57 .. 2026-10-06 16:41 +0100; messages 'Usability feedback', '(user feedback)', 'following user feedback', 'based on testing', 'based on feedback')",
+  "baseline_note": "pre = fd68596 (last commit before the first 2026-10-05 session fix fa720be). fd68596 itself (2026-09-30, keypair order 'following user feedback') may reflect an earlier session; that item is excluded."
+ },
+ "primary_set": "H",
+ "items": [
+  {
+   "id": "H01",
+   "set": "H",
+   "fixed_in_post": "yes",
+   "human": "The link to the demo tool was wrong.",
+   "match": "Says the key-generator file named in .env.example (tools/rsa_keys.html) does not exist / does not match the file list (tools/rsa_key_generator.html), or that the referenced tool path is wrong.",
+   "detectability": "text"
+  },
+  {
+   "id": "H02",
+   "set": "H",
+   "fixed_in_post": "no",
+   "human": "What does it actually mean to rename a file?",
+   "match": "Says the instruction to rename .env.example to .env assumes the reader knows how/where to rename a file (locally vs on the server, with what tool) and needs explanation.",
+   "detectability": "text"
+  },
+  {
+   "id": "H03",
+   "set": "H",
+   "fixed_in_post": "no",
+   "human": "How do you rename a hidden file?",
+   "match": "Notes that .env / .htaccess / .env.example are dotfiles that may be hidden or hard to create/rename/upload in file managers, FTP clients, Windows or macOS.",
+   "detectability": "text"
+  },
+  {
+   "id": "H04",
+   "set": "H",
+   "fixed_in_post": "yes",
+   "human": "Should a demo tool be available on the web or just the user's local machine?",
+   "match": "Says it is unclear whether the key generator (or the tools/ folder) should be opened locally, uploaded to the server, or is hosted somewhere; or warns about uploading tools/ to the public site.",
+   "detectability": "text"
+  },
+  {
+   "id": "H05",
+   "set": "H",
+   "fixed_in_post": "no",
+   "human": "Why does some text explicitly need to be quoted and some not?",
+   "match": "Flags inconsistent or unexplained quoting of values in .env / .env.example (some quoted, some not), or unclear quoting/escaping rules for values.",
+   "detectability": "text"
+  },
+  {
+   "id": "H06",
+   "set": "H",
+   "fixed_in_post": "partial",
+   "human": "My jokes aren't funny and are actively confusing.",
+   "match": "Flags jokes/humour/snark in the docs (e.g. the GLaDOS/none-of-these list, 'Because I hate you', 'We live in the future now', 'Dunno', '*sigh*') as confusing, off-putting or unclear.",
+   "detectability": "text"
+  },
+  {
+   "id": "H07",
+   "set": "H",
+   "fixed_in_post": "partial",
+   "generic": true,
+   "human": "Some of the technical terminology needed explaining.",
+   "match": "Names specific unexplained jargon a newcomer would not know (e.g. ActivityPub, Fediverse, WebFinger, keypair/RSA, .htaccess, subdomain, HTTPS certificate, DID, PHP-FPM).",
+   "detectability": "text"
+  },
+  {
+   "id": "H08",
+   "set": "H",
+   "fixed_in_post": "yes",
+   "human": "The ordering of the different sections was confusing.",
+   "match": "Complains about section order/structure (e.g. setup buried after a long feature list, no quick start near the top, requirements/setup/how-it-works ordering, steps out of order).",
+   "detectability": "text"
+  },
+  {
+   "id": "H09",
+   "set": "H",
+   "fixed_in_post": "yes",
+   "human": "I hadn't actually explained what the software would do.",
+   "match": "Says the intro does not explain what the user actually gets or what it is for (e.g. a Fediverse account at your own subdomain that people on Mastodon can follow), as opposed to a feature list.",
+   "detectability": "text"
+  },
+  {
+   "id": "H10",
+   "set": "H",
+   "fixed_in_post": "yes",
+   "inferred_from_diff": true,
+   "human": "A whole section which was technically interesting to me was utterly confusing to everyone else.",
+   "match": "Identifies the 'How this works' section (htaccess rewriting to index.php?path=, data directories list) as confusing, too technical or not useful for users setting it up.",
+   "detectability": "text"
+  },
+  {
+   "id": "H11",
+   "set": "H",
+   "fixed_in_post": "partial",
+   "human": "Not all web servers use permissions in the same way.",
+   "match": "Notes that setup does not mention file/directory permissions or ownership, or that PHP/the web server must be able to create/write data directories (data/, posts/), or that hosts differ in this.",
+   "detectability": "execution-likely (no permission text in pre; inferable only from hosting knowledge)"
+  },
+  {
+   "id": "C01",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": "commit b5ea0e2 'Check cURL version (user feedback)'; README requirements add PHP cURL",
+   "match": "Says the requirements omit the PHP cURL extension (README_nginx installs php-curl but the main requirements list only OpenSSL) or the extension list is incomplete with cURL named.",
+   "detectability": "text"
+  },
+  {
+   "id": "C02",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": ".env.example USERNAME: 'Do not include the domain name.'",
+   "match": "Says it is unclear whether USERNAME should include the domain / full handle (user@domain).",
+   "detectability": "text"
+  },
+  {
+   "id": "C03",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": ".env.example REALNAME: 'real name' -> 'display name'",
+   "match": "Says REALNAME / \"real\" name is unclear or misleading (should it be a person's real name? it is the display name).",
+   "detectability": "text"
+  },
+  {
+   "id": "C04",
+   "set": "C",
+   "fixed_in_post": "partial",
+   "human": ".env.example password: 'You can also run on the command line'",
+   "match": "Says the password-hash step is unclear for non-developers: where/how to run password_hash(...) or php tools/generate_password.php (needs PHP/CLI locally; shared hosts lack a shell).",
+   "detectability": "text"
+  },
+  {
+   "id": "C05",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": "commit 0c5112c 'Clarify the relative path of data' (/data/logs/ -> data/logs/)",
+   "match": "Says /data/logs/ (or /data, /posts) is ambiguous: filesystem root vs inside the site directory, or where to find the logs.",
+   "detectability": "text"
+  },
+  {
+   "id": "C06",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": "commit 2b3f23e 'Make other servers like nginx more obvious' + Caddy instructions",
+   "match": "Says setup silently assumes Apache/.htaccess, or that nginx/Docker/other-server instructions are hidden (only in FAQs) or missing (e.g. Caddy).",
+   "detectability": "text"
+  },
+  {
+   "id": "C07",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": "commit f204a54 'Clarify HTML support in README'",
+   "match": "Says 'Only formatting elements are allowed' is unclear: which HTML elements are allowed/stripped.",
+   "detectability": "text"
+  },
+  {
+   "id": "C08",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": "Set Up: avatar/banner step now says 'Edit .env to include the image locations'",
+   "match": "Says the optional avatar/banner upload step does not explain how ActivityBot finds the images (configure AVATAR/BANNER in .env) or where to put them.",
+   "detectability": "text"
+  },
+  {
+   "id": "C09",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": "Set Up rewritten: .env is the primary path, upload index.php, .htaccess and .env; Quickstart added",
+   "match": "Flags confusion between the two configuration methods (edit index.php vs .env) or about exactly which files to upload (e.g. conditional '.env if you use one', .htaccess).",
+   "detectability": "text"
+  },
+  {
+   "id": "C10",
+   "set": "C",
+   "fixed_in_post": "yes",
+   "human": ".env.example PAGE_SIZE: 'per page' -> 'per page on the website'",
+   "match": "Says PAGE_SIZE is unclear (per page of what / where).",
+   "detectability": "text"
+  }
+ ],
+ "report_only": [
+  {
+   "id": "R01",
+   "human": "Some people read a README in the terminal.",
+   "match": "Mentions reading the README as raw text/terminal, or that markdown/emoji rendering is assumed."
+  }
+ ],
+ "excluded_code_only": [
+  "a6f2f47 leading slash (Caddy)",
+  "c91b465/b874f96 mkdir 0744->0775 and directory checks (code side of H11)",
+  "3c19769 invalid birthday default",
+  "fd68596 keypair order (pre-baseline)"
+ ]
+}
