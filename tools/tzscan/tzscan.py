@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""tzscan: find every copy of the IANA time-zone database inside a container
-image or directory tree, without running anything from it, and say whether each
-copy is still wrong for Canada's 1 November 2026 change (and Morocco's
-September 2026 change).
+"""tzscan: find the copies of the IANA time-zone database that it recognises
+inside a container image or directory tree, without running anything from it,
+and say whether each copy is still wrong for Canada's 1 November 2026 change
+(and Morocco's September 2026 change).
 
 usage:
   tzscan.py IMAGE [IMAGE ...]        # needs docker; uses `docker create` + `docker export`
@@ -38,6 +38,9 @@ import tarfile
 import tempfile
 import zipfile
 import zlib
+if sys.version_info < (3, 9):  # before "import zoneinfo": an ImportError here would exit 1 ("stale")
+    sys.stderr.write("tzscan: needs Python 3.9 or newer; this is %d.%d\n" % sys.version_info[:2])
+    sys.exit(2)
 import zoneinfo
 try:
     from compression import zstd  # Python 3.14+
