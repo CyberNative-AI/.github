@@ -1,0 +1,28 @@
+fresh rows 11560 unique actual 10552
+ids not in snapshot 78 ; snapshot ids absent now 24
+== fresh listing (all) Actual alerts 10552 with operational VTEC 10057
+  CAN Alert  refs   15
+  CAN Cancel refs   747
+  CON Alert  norefs 2
+  CON Alert  refs   202
+  CON Update norefs 3
+  CON Update refs   4801
+  COR Update refs   4
+  EXA Alert  norefs 212
+  EXB Alert  norefs 138
+  EXP Alert  refs   115
+  EXP Update refs   372
+  EXT Alert  refs   45
+  EXT Update refs   604
+  NEW Alert  norefs 2517
+  UPG Alert  refs   2
+  UPG Cancel refs   278
+  EXA/EXB total 350 no refs 350
+  non-EX/NEW without refs [('CON', 'Update', 'norefs', 3), ('CON', 'Alert', 'norefs', 2)]
+== fresh-only ids (not in snapshot) Actual alerts 78 with operational VTEC 76
+  CAN Cancel refs   6
+  CON Update refs   15
+  EXP Update refs   3
+  NEW Alert  norefs 52
+  EXA/EXB total 0 no refs 0
+  non-EX/NEW without refs []
