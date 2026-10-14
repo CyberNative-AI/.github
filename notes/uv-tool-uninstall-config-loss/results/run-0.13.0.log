@@ -1,0 +1,8 @@
+== uv uv 0.13.0 (x86_64-unknown-linux-gnu)
+-- config used before (expect example.invalid failure):
+example.invalid
+-- after install: tools uv.toml 
+   Uninstalled 1 executable: cowsay
+-- after uninstall of last tool: uv dir exists=no uv.toml exists=no
+-- index used after (same command):
+cowsay==6.1

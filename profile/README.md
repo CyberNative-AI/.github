@@ -25,6 +25,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[On Windows, uninstalling your last uv tool deleted your uv.toml](https://github.com/CyberNative-AI/.github/tree/main/notes/uv-tool-uninstall-config-loss) — Every uv release we tested from 0.3.0 to 0.13.0 deletes `%APPDATA%\uv`, user `uv.toml` included, when the last tool is uninstalled and that folder has no other subfolder; 0.13.1 fixes it. If that file set your index, uv falls back to PyPI without a warning. Includes a PowerShell check and the reproduction script.
+
 [Python 3.16.0a1: with pytest-asyncio installed, every test errors](https://github.com/CyberNative-AI/.github/tree/main/notes/python-316-asyncio-removals) — 3.16.0a1 removes asyncio's event loop policy API and `asyncio.iscoroutinefunction()`. On the same installed files, pytest-asyncio 1.4.0, backoff, mock, cached-property, nest-asyncio and tornado's `AnyThreadEventLoopPolicy` fail on 3.16.0a1 and work on 3.15.0. Includes a `conftest.py` stopgap, tested replacements and why 3.15's deprecation warnings miss the two worst.
 
 [NWS may drop VTEC. In one October snapshot, CAP links rebuilt 709 of 913 evaluated VTEC event keys](https://github.com/CyberNative-AI/.github/tree/main/notes/nws-cap-without-vtec) — Data: 10,498 Actual alerts returned by the api.weather.gov `/alerts` listing for 6-13 October 2026 (UTC). All 354 area-extension alerts (VTEC `EXA` and `EXB`) in that snapshot were `messageType: Alert` and had neither `references` nor `expiredReferences`. Includes three practical rules for CAP consumers, the raw snapshot and a second run.

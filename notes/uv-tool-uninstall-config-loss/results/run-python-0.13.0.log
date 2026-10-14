@@ -1,0 +1,4 @@
+== uv uv 0.13.0 (x86_64-unknown-linux-gnu)
+-- after python install: python uv.toml 
+    - cpython-3.12.15-linux-x86_64-gnu (python3.12)
+-- after uninstall of last managed Python: uv dir exists=yes uv.toml exists=yes
