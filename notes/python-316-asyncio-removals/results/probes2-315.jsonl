@@ -1,0 +1,10 @@
+{"pkg": "mock", "rc": 0, "out": "5.2.0", "err": ""}
+{"pkg": "fire", "rc": 0, "out": "hi y", "err": ""}
+{"pkg": "cached-property", "rc": 0, "out": "1", "err": ""}
+{"pkg": "fastcore", "rc": 0, "out": "[]", "err": ""}
+{"pkg": "respx", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "posthog", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "backoff", "rc": 0, "out": "1", "err": ""}
+{"pkg": "nest-asyncio", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "nest-asyncio2", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "freezegun", "rc": 0, "out": "2020-01-01", "err": ""}

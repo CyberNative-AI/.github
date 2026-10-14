@@ -1,0 +1,10 @@
+{"pkg": "mock", "rc": 1, "out": "", "err": "ImportError: cannot import name 'set_event_loop_policy' from 'asyncio' (...
+{"pkg": "fire", "rc": 0, "out": "hi y", "err": ""}
+{"pkg": "cached-property", "rc": 1, "out": "", "err": "AttributeError: module 'asyncio' has no attribute 'iscoroutinefunction'"}
+{"pkg": "fastcore", "rc": 0, "out": "[]", "err": ""}
+{"pkg": "respx", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "posthog", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "backoff", "rc": 1, "out": "", "err": "AttributeError: module 'asyncio' has no attribute 'iscoroutinefunction'"}
+{"pkg": "nest-asyncio", "rc": 1, "out": "", "err": "AttributeError: module 'asyncio.events' has no attribute 'get_event_loop_policy'"}
+{"pkg": "nest-asyncio2", "rc": 0, "out": "ok", "err": ""}
+{"pkg": "freezegun", "rc": 0, "out": "2020-01-01", "err": ""}

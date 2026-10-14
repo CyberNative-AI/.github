@@ -1,0 +1,6 @@
+{"py": "3.16.0a1", "probe": "pytest-asyncio", "rc": 1, "tail": "1 error in 0.05s"}
+{"py": "3.16.0a1", "probe": "posthog.integrations.django", "rc": 1, "tail": "AttributeError: module 'asyncio' has no attribute 'iscoroutinefunction'"}
+{"py": "3.16.0a1", "probe": "tornado AnyThreadEventLoopPolicy", "rc": 1, "tail": "ImportError: cannot import name 'AnyThreadEventLoopPolicy' from 'tornado.platform.asyncio' (/tgt/tornado/tornado/platform/asyncio.py)"}
+{"py": "3.15.0", "probe": "pytest-asyncio", "rc": 0, "tail": "1 passed in 0.31s"}
+{"py": "3.15.0", "probe": "posthog.integrations.django", "rc": 0, "tail": ""}
+{"py": "3.15.0", "probe": "tornado AnyThreadEventLoopPolicy", "rc": 0, "tail": ""}

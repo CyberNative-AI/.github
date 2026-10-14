@@ -1,0 +1,46 @@
+anyio OK
+starlette OK
+aiohttp OK
+fastapi       disabled for all packages (i.e., with `--no-build`)
+sqlalchemy OK
+pytest-asyncio OK
+uvloop       disabled for all packages (i.e., with `--no-build`)
+redis OK
+scikit-learn       source is disabled for all packages (i.e., with `--no-build`)
+backoff OK
+psycopg OK
+sentry-sdk OK
+asgiref OK
+tornado OK
+ipython OK
+pyzmq OK
+nest-asyncio OK
+langsmith       disabled for all packages (i.e., with `--no-build`)
+jupyter-core OK
+kubernetes       source is disabled for all packages (i.e., with `--no-build`)
+polars OK
+modal OK
+nbconvert       is disabled for all packages (i.e., with `--no-build`)
+freezegun OK
+langgraph-checkpoint       is disabled for all packages (i.e., with `--no-build`)
+ddtrace       disabled for all packages (i.e., with `--no-build`)
+posthog OK
+peewee OK
+pylint OK
+fastcore OK
+jupyter-server       is disabled for all packages (i.e., with `--no-build`)
+curl-cffi       disabled for all packages (i.e., with `--no-build`)
+nest-asyncio2 OK
+jupyterlab-server       is disabled for all packages (i.e., with `--no-build`)
+langchain-community       disabled for all packages (i.e., with `--no-build`)
+mock OK
+langfuse       disabled for all packages (i.e., with `--no-build`)
+respx OK
+slowapi OK
+supabase-auth       source is disabled for all packages (i.e., with `--no-build`)
+cached-property OK
+yfinance       disabled for all packages (i.e., with `--no-build`)
+fire OK
+azure-servicebus OK
+papermill       disabled for all packages (i.e., with `--no-build`)
+twisted       source is disabled for all packages (i.e., with `--no-build`)

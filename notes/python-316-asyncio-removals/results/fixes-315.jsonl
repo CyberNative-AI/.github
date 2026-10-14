@@ -1,0 +1,10 @@
+{"py": "3.15.0", "fix": "backoff + iscoroutinefunction shim (sync+async)", "rc": 1, "out": "", "err": "DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated and slated for removal in Python 3.16; use inspect.iscoroutinefunction() instead"}
+{"py": "3.15.0", "fix": "tenacity retry (sync+async)", "rc": 0, "out": "3 True", "err": ""}
+{"py": "3.15.0", "fix": "cached-property + shim (sync+async)", "rc": 1, "out": "", "err": "DeprecationWarning: 'asyncio.iscoroutinefunction' is deprecated and slated for removal in Python 3.16; use inspect.iscoroutinefunction() instead"}
+{"py": "3.15.0", "fix": "functools.cached_property (sync)", "rc": 0, "out": "1", "err": ""}
+{"py": "3.15.0", "fix": "unittest.mock incl. AsyncMock", "rc": 0, "out": "3 True", "err": ""}
+{"py": "3.15.0", "fix": "nest-asyncio2 nested run", "rc": 0, "out": "2", "err": ""}
+{"py": "3.15.0", "fix": "asyncio.run(loop_factory=SelectorEventLoop)", "rc": 0, "out": "_UnixSelectorEventLoop", "err": ""}
+{"py": "3.15.0", "fix": "asyncio.Runner(loop_factory=...)", "rc": 0, "out": "1 1", "err": ""}
+{"py": "3.15.0", "fix": "tornado IOLoop in a worker thread", "rc": 0, "out": "[7]", "err": ""}
+{"py": "3.15.0", "fix": "inspect.iscoroutinefunction + markcoroutinefunction", "rc": 0, "out": "True True", "err": ""}
