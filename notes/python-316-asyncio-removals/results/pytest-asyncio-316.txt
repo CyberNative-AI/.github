@@ -1,0 +1,16 @@
+# pytest-asyncio 1.4.0 (wheel) on 3.16.0a1 vs 3.15.0, 2026-10-14T10:26:50Z
+Python 3.16.0a1 | plain-sync-test | 1 error in 0.04s
+Python 3.16.0a1 | sample-no-shim | 5 errors in 0.12s
+Python 3.16.0a1 | sample-with-conftest-shim | 5 passed in 0.02s
+Python 3.16.0a1 | plain-sync-test -p no:asyncio | 1 passed in 0.00s
+Python 3.15.0 | plain-sync-test | 1 passed in 0.00s
+Python 3.15.0 | sample-no-shim | 5 passed in 0.02s
+Python 3.15.0 | sample-with-conftest-shim | 5 passed in 0.02s
+Python 3.15.0 | plain-sync-test -p no:asyncio | 1 passed in 0.00s
+# pytest-asyncio main d8c51d8990 (2026-10-14T05:35Z) source on 3.16.0a1
+plain-sync | 1 error in 0.04s
+sample-no-shim | 5 errors in 0.12s
+sample-with-conftest-shim | 5 passed in 0.02s
+# PR #1517 head 2ac8576b source on 3.16.0a1
+plain-sync | 1 passed in 0.00s
+sample-no-shim | 1 passed, 4 errors in 0.13s

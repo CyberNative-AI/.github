@@ -1,0 +1,17 @@
+{"name": "backoff.on_exception (sync fn)", "rc": 1, "out": "", "err": "AttributeError: module 'asyncio' has no attribute 'iscoroutinefunction'"}
+{"name": "backoff.on_predicate (async fn)", "rc": 1, "out": "", "err": "AttributeError: module 'asyncio' has no attribute 'iscoroutinefunction'"}
+{"name": "nest_asyncio.apply()", "rc": 1, "out": "", "err": "AttributeError: module 'asyncio.events' has no attribute 'get_event_loop_policy'"}
+{"name": "uvloop absent check", "rc": 0, "out": "False", "err": ""}
+{"name": "pytest-asyncio trivial test", "rc": 1, "out": "", "err": ["ERROR probe/t_async.py::test_a - AttributeError: module 'asyncio' has no attr..."]}
+{"name": "anyio.run", "rc": 0, "out": "1", "err": ""}
+{"name": "tornado IOLoop run_sync", "rc": 0, "out": "1", "err": ""}
+{"name": "tornado AnyThreadEventLoopPolicy", "rc": 1, "out": "", "err": "ImportError: cannot import name 'AnyThreadEventLoopPolicy' from 'tornado.platform.asyncio' (.../tornado/platform/asyncio.py)"}
+{"name": "aiohttp web app", "rc": 0, "out": "ok", "err": ""}
+{"name": "psycopg import", "rc": 1, "out": "", "err": "- couldn't import psycopg 'python' implementation: libpq library not found", "note": "not a 3.16 result: libpq system library absent in test environment"}
+{"name": "sqlalchemy.ext.asyncio import", "rc": 1, "out": "", "err": "ImportError: The SQLAlchemy asyncio module requires that the Python 'greenlet' library is installed.  In order to ensure this dependency is available, use the 'sqlalchemy[asyncio]' install target:  'pip install sqlalchemy[asyncio]'", "note": "not a 3.16 result: greenlet dependency not installed in test environment"}
+{"name": "starlette/fastapi app", "rc": 1, "out": "", "err": "ImportError: cannot import name 'TypeAdapter' from 'pydantic' (.../pydantic/__init__.py)", "note": "not a 3.16 result: fastapi did not install from wheels; mismatched pydantic in test environment"}
+{"name": "asgiref sync_to_async", "rc": 0, "out": "1", "err": ""}
+{"name": "redis.asyncio import", "rc": 0, "out": "ok", "err": ""}
+{"name": "jupyter_core run_sync", "rc": 0, "out": "1", "err": ""}
+{"name": "zmq.asyncio import", "rc": 0, "out": "ok", "err": ""}
+{"name": "sentry_sdk init", "rc": 0, "out": "ok", "err": ""}
