@@ -1,0 +1,64 @@
+repos scanned 1978; with workflows 1802; with >=1 remote action 1782
+  job-container-tag        305 repos   16.9% of repos with workflows
+  action-dockerfile        248 repos   13.8% of repos with workflows
+  action-image-tag         168 repos    9.3% of repos with workflows
+  composite-local-path     111 repos    6.2% of repos with workflows
+  workflow-docker-tag       21 repos    1.2% of repos with workflows
+  composite-docker-tag      11 repos    0.6% of repos with workflows
+  ANY silent image         382 repos   21.2%
+  prebuilt image by tag    177 repos    9.8%
+  silent via SHA-pinned    220 repos
+
+action-image-tag: 50 distinct actions
+    81  ossf/scorecard-action  ghcr.io/ossf/scorecard-action:v2.4.4
+    21  EnricoMi/publish-unit-test-result-action  ghcr.io/enricomi/publish-unit-test-result-action:v2.25.0
+    10  actions/jekyll-build-pages  ghcr.io/actions/jekyll-build-pages:v1.0.13
+     6  wagoid/commitlint-github-action  wagoid/commitlint-github-action:6.2.1
+     4  reviewdog/action-yamllint  ghcr.io/reviewdog/action-yamllint:v1.25.2
+     4  symfonycorp/security-checker-action  ghcr.io/symfony-cli/symfony-cli:v5
+     4  mszostok/codeowners-validator  ghcr.io/mszostok/codeowners-validator:v0.7.4
+     3  rojopolis/spellcheck-github-actions  jonasbn/github-action-spellcheck:0.66.0
+     3  trstringer/manual-approval  ghcr.io/trstringer/manual-approval:1.12.0
+     3  cbrgm/mastodon-github-action  ghcr.io/cbrgm/mastodon-github-action:v2
+     3  christian-korneck/update-container-description-action  docker.io/chko/docker-pushrm:1
+     2  super-linter/super-linter/slim  ghcr.io/super-linter/super-linter:slim-v8.7.0
+     2  repo-sync/github-sync  ghcr.io/repo-sync/github-sync:v2.3.0
+     2  laminas/automatic-releases  ghcr.io/laminas/automatic-releases:1
+     2  citation-file-format/cffconvert-github-action  citationcff/cffconvert:2.0.0
+
+action-dockerfile: 164 distinct actions
+    18  codespell-project/actions-codespell  ['python:3.13-alpine']
+    15  crowdin/github-action  ['crowdin/cli:5.3.0']
+    10  google/oss-fuzz/infra/cifuzz/actions/build_fuzzers  ['gcr.io/oss-fuzz-base/cifuzz-base']
+     9  google/oss-fuzz/infra/cifuzz/actions/run_fuzzers  ['gcr.io/oss-fuzz-base/cifuzz-base']
+     9  Ilshidur/action-discord  ['mhart/alpine-node:12.19.1']
+     7  fsfe/reuse-action  ['fsfe/reuse:6']
+     6  calibreapp/image-actions  ['node:lts-alpine']
+     6  supercharge/mongodb-github-action  ['docker:latest']
+     5  stefanzweifel/changelog-updater-action  ['php:cli-alpine']
+     5  codelytv/pr-size-labeler  ['alpine:3.15']
+     5  hadolint/hadolint-action  ['ghcr.io/hadolint/hadolint:v2.14.0-debian']
+     4  cirrus-actions/rebase  ['alpine:latest']
+     4  srvaroa/labeler  ['alpine:3.17.2']
+     4  KSXGitHub/github-actions-deploy-aur  ['archlinux:base']
+     3  Azure/static-web-apps-deploy  ['mcr.microsoft.com/appsvc/staticappsclient:stable']
+
+composite-docker-tag: 1 distinct actions
+    11  getsentry/action-release  ghcr.io/getsentry/action-release-image:3.7.1
+
+composite-local-path: 19 distinct actions
+    99  pypa/gh-action-pypi-publish  ./.github/.tmp/.generated-actions/run-pypi-publish-in-docker-container
+     4  check-spelling/check-spelling  ./../check-spelling-actions/checkout
+     2  grafana/shared-workflows/actions/dockerhub-login  ./_shared-workflows-dockerhub-login/actions/get-vault-secrets
+     2  SonarSource/gh-action_cache  ./.actions/cache-metrics
+     2  SonarSource/ci-github-actions/config-pip  ./.actions/get-build-number
+     2  SonarSource/ci-github-actions/promote  ./.actions/get-build-number
+     1  dmlc/xgboost-devops/actions/miniforge-setup  ./xgboost-devops/actions/impls/miniforge-setup
+     1  envoyproxy/toolshed/actions/using/steps  ./.tmp.action
+     1  tobyhs/codemention  ./populate-cache
+     1  grafana/shared-workflows/actions/send-slack-message  ./_shared-workflows-slack/actions/get-vault-secrets
+     1  protocolbuffers/protobuf-ci/ccache  ./../../_actions/current/internal/ccache-setup-windows
+     1  protocolbuffers/protobuf-ci/docker  ./../../_actions/current/internal/setup-runner
+     1  protocolbuffers/protobuf-ci/bazel-docker  ./../../_actions/current/internal/gcloud-auth
+     1  protocolbuffers/protobuf-ci/sccache  ./../../_actions/current/internal/gcloud-auth
+     1  protocolbuffers/protobuf-ci/cross-compile-protoc  ./../../_actions/current/bazel-docker

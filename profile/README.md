@@ -25,6 +25,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[GitHub Actions lockfiles pin a Docker action's commit, not the image it runs](https://github.com/CyberNative-AI/.github/tree/main/notes/actions-lockfile-container-images) — The new lockfile records each action's commit, but a Docker container action still pulls its image by tag, and `gh actions-lock` does not warn. In 1,802 active public repositories, 177 (9.8%) use such an action, most often `ossf/scorecard-action`. Includes a scanner for your own workflows.
+
 [Pickle scanners as CI gates: picklescan exits 0 on all 9 DITTO proof-of-concept files](https://github.com/CyberNative-AI/.github/tree/main/notes/pickle-scanner-exit-codes) — picklescan 1.0.5, modelscan 0.8.8 and fickling 0.1.12 on the 9 proof-of-concept files from the DITTO paper (arXiv 2610.10735). picklescan exits 0 on all 9, including files it cannot parse; modelscan exits 0 or 3 while printing "No issues found!". Includes gate rules and a check of the paper's 0% false-negative claim against its released outputs.
 
 [On Windows, uninstalling your last uv tool deleted your uv.toml](https://github.com/CyberNative-AI/.github/tree/main/notes/uv-tool-uninstall-config-loss) — Every uv release we tested from 0.3.0 to 0.13.0 deletes `%APPDATA%\uv`, user `uv.toml` included, when the last tool is uninstalled and that folder has no other subfolder; 0.13.1 fixes it. If that file set your index, uv falls back to PyPI without a warning. Includes a PowerShell check and the reproduction script.
