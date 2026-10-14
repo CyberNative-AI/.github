@@ -1,0 +1,164 @@
+{
+ "add_extension.pkl": {
+  "picklescan": {
+   "rc": 0,
+   "out": "----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 1\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 1,
+   "out": "/pocs/add_extension.pkl: dangerous import 'copyreg add_extension' FOUND (promoted by --strict)\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 1\nSuspicious globals: 0\nDangerous globals: 1\n"
+  },
+  "modelscan": {
+   "rc": 0,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/add_extension.pkl using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n"
+  },
+  "fickling": {
+   "rc": 1,
+   "out": "Traceback (most recent call last):\n  File \"/w/venv/arm/bin/fickling\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/cli.py\", line 335, in main\n    safety_results = check_safety(pickled, json_output_path=json_output_path)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 652, in check_safety\n    results = analyzer.analyze(pickled)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 109, in analyze\n    context.analyze(a)\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 48, in analyze\n    results = list(analysis.analyze(self))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 337, in analyze\n    node.module.rsplit(\".\", i)[0] for i in range(0, node.module.count(\".\") + 1)\n                                                    ^^^^^^^^^^^\nAttributeError: 'Import' object has no attribute 'module'\n"
+  }
+ },
+ "bz22pickle.joblib": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/bz22pickle.joblib as pickle: expected 825518170 bytes in a bytes4, but only 84 remain\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/bz22pickle.joblib as pickle: expected 825518170 bytes in a bytes4, but only 84 remain\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/bz22pickle.joblib using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Errors --- \n\nError 1:\nThe following error was raised during a pickle scan: \nParsing error: expected 825518170 bytes in a bytes4, but only 84 remain\n"
+  },
+  "fickling": {
+   "rc": 2,
+   "out": "Fickling failed to parse this pickle file. Error: No pickle files detected\nParsing errors might be indicative of a maliciously crafted pickle file. DO NOT TRUST this file without performing further analysis!\n\n(If this is a valid pickle file, please report the error at https://github.com/trailofbits/fickling)\n"
+  }
+ },
+ "gzip2pickle.joblib": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/gzip2pickle.joblib as pickle: at position 0, opcode b'\\x1f' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/gzip2pickle.joblib as pickle: at position 0, opcode b'\\x1f' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/gzip2pickle.joblib using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Errors --- \n\nError 1:\nThe following error was raised during a pickle scan: \nParsing error: at position 0, opcode b'\\x1f' unknown\n"
+  },
+  "fickling": {
+   "rc": 2,
+   "out": "Fickling failed to parse this pickle file. Error: No pickle files detected\nParsing errors might be indicative of a maliciously crafted pickle file. DO NOT TRUST this file without performing further analysis!\n\n(If this is a valid pickle file, please report the error at https://github.com/trailofbits/fickling)\n"
+  }
+ },
+ "inverted_registry.pkl": {
+  "picklescan": {
+   "rc": 0,
+   "out": "----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 1\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 1,
+   "out": "/pocs/inverted_registry.pkl: dangerous import 'copyreg _inverted_registry' FOUND (promoted by --strict)\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 1\nSuspicious globals: 0\nDangerous globals: 1\n"
+  },
+  "modelscan": {
+   "rc": 0,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/inverted_registry.pkl using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n"
+  },
+  "fickling": {
+   "rc": 1,
+   "out": "Traceback (most recent call last):\n  File \"/w/venv/arm/bin/fickling\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/cli.py\", line 335, in main\n    safety_results = check_safety(pickled, json_output_path=json_output_path)\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 652, in check_safety\n    results = analyzer.analyze(pickled)\n              ^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 109, in analyze\n    context.analyze(a)\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 48, in analyze\n    results = list(analysis.analyze(self))\n              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/w/venv/arm/lib/python3.12/site-packages/fickling/analysis.py\", line 337, in analyze\n    node.module.rsplit(\".\", i)[0] for i in range(0, node.module.count(\".\") + 1)\n                                                    ^^^^^^^^^^^\nAttributeError: 'Import' object has no attribute 'module'\n"
+  }
+ },
+ "lz42pickle.joblib": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/lz42pickle.joblib as pickle: at position 0, opcode b'\\x04' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/lz42pickle.joblib as pickle: at position 0, opcode b'\\x04' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/lz42pickle.joblib using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Errors --- \n\nError 1:\nThe following error was raised during a pickle scan: \nParsing error: at position 0, opcode b'\\x04' unknown\n"
+  },
+  "fickling": {
+   "rc": 2,
+   "out": "Fickling failed to parse this pickle file. Error: No pickle files detected\nParsing errors might be indicative of a maliciously crafted pickle file. DO NOT TRUST this file without performing further analysis!\n\n(If this is a valid pickle file, please report the error at https://github.com/trailofbits/fickling)\n"
+  }
+ },
+ "lzma2pickle.joblib": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/lzma2pickle.joblib as pickle: at position 1, opcode b'\\x00' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/lzma2pickle.joblib as pickle: at position 1, opcode b'\\x00' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/lzma2pickle.joblib using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Errors --- \n\nError 1:\nThe following error was raised during a pickle scan: \nParsing error: at position 1, opcode b'\\x00' unknown\n"
+  },
+  "fickling": {
+   "rc": 1,
+   "out": ""
+  }
+ },
+ "tar2pickle.tar": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/tar2pickle.tar as pickle: at position 8, opcode b'\\x00' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/tar2pickle.tar as pickle: at position 8, opcode b'\\x00' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Skipped --- \n\nTotal skipped: 1 - run with --show-skipped to see the full list.\n"
+  },
+  "fickling": {
+   "rc": 1,
+   "out": ""
+  }
+ },
+ "xz2pickle.joblib": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/xz2pickle.joblib as pickle: at position 0, opcode b'\\xfd' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/xz2pickle.joblib as pickle: at position 0, opcode b'\\xfd' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/xz2pickle.joblib using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Errors --- \n\nError 1:\nThe following error was raised during a pickle scan: \nParsing error: at position 0, opcode b'\\xfd' unknown\n"
+  },
+  "fickling": {
+   "rc": 2,
+   "out": "Fickling failed to parse this pickle file. Error: No pickle files detected\nParsing errors might be indicative of a maliciously crafted pickle file. DO NOT TRUST this file without performing further analysis!\n\n(If this is a valid pickle file, please report the error at https://github.com/trailofbits/fickling)\n"
+  }
+ },
+ "zlib2pickle.joblib": {
+  "picklescan": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/zlib2pickle.joblib as pickle: at position 0, opcode b'x' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "picklescan_strict": {
+   "rc": 0,
+   "out": "WARNING: could not parse /pocs/zlib2pickle.joblib as pickle: at position 0, opcode b'x' unknown\n----------- SCAN SUMMARY -----------\nScanned files: 1\nInfected files: 0\nSuspicious globals: 0\nDangerous globals: 0\n"
+  },
+  "modelscan": {
+   "rc": 3,
+   "out": "No settings file detected at /tmp/modelscan-settings.toml. Using defaults. \n\nScanning /pocs/zlib2pickle.joblib using modelscan.scanners.PickleUnsafeOpScan model scan\n\n--- Summary ---\n\n No issues found! \ud83c\udf89\n\n--- Errors --- \n\nError 1:\nThe following error was raised during a pickle scan: \nParsing error: at position 0, opcode b'x' unknown\n"
+  },
+  "fickling": {
+   "rc": 2,
+   "out": "Fickling failed to parse this pickle file. Error: No pickle files detected\nParsing errors might be indicative of a maliciously crafted pickle file. DO NOT TRUST this file without performing further analysis!\n\n(If this is a valid pickle file, please report the error at https://github.com/trailofbits/fickling)\n"
+  }
+ }
+}

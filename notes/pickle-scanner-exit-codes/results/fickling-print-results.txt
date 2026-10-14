@@ -1,0 +1,12 @@
+ file has malformed opcode sequences (IndexError: Opcode SetItem(info=<pickletools.OpcodeInfo object at 0x70a206393640>, argument=None, data=b's', position=0) attempted to pop from an empty stack); it is either corrupted or attempting to bypass the pickle security analysis
+Warning: Fickling detected that the pickle file may be unsafe.
+
+Do not unpickle this file if it is from an untrusted source!
+
+rc=1
+Warning: Fickling detected that the pickle file may be unsafe.
+
+Do not unpickle this file if it is from an untrusted source!
+
+The file has invalid opcode(s). It is either corrupted or attempting to bypass the pickle security analysis
+rc=1
