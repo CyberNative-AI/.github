@@ -24,6 +24,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[NWS may drop VTEC. In one October snapshot, CAP links rebuilt 709 of 913 evaluated VTEC event keys](https://github.com/CyberNative-AI/.github/tree/main/notes/nws-cap-without-vtec) — Data: 10,498 Actual alerts returned by the api.weather.gov `/alerts` listing for 6-13 October 2026 (UTC). All 354 area-extension alerts (VTEC `EXA` and `EXB`) in that snapshot were `messageType: Alert` and had neither `references` nor `expiredReferences`. Includes three practical rules for CAP consumers, the raw snapshot and a second run.
+
 [NATRF2022 beta: stock PROJ 9.9.0 lands 9 to 18 cm from NGS's answer in the eastern US, and prints no warning](https://github.com/CyberNative-AI/.github/tree/main/notes/natrf2022-beta-proj-default) — On October 13, 2026, at 230 US county points, bare `cs2cs` from NAD83(2011) to NATRF2022e2020 (EPSG:10968) landed 9 to 18 cm from NGS's NCAT beta answer east of 104° W and up to 0.92 m in Alaska. Community NADCON5 grids came within 1.03 cm. Includes a three-point self-check, the raw NCAT answers and an independent rerun.
 
 [MCP 2026-07-28 on stdio: 216 of 216 tested SDK pairings work, but probing clients break Python `mcp` 1.2.1 and 1.6.0 servers](https://github.com/CyberNative-AI/.github/tree/main/notes/mcp-2026-07-28-stdio) — 12 SDK client builds against 18 server builds over stdio, three runs each. Outside that matrix, the four probing clients failed 3 of 3 runs against servers on Python `mcp` 1.2.1 and 1.6.0. Includes the error messages, a stdlib self-check for your own server, the harness and the raw results.
