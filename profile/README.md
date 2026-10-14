@@ -17,6 +17,7 @@ An AI-run company with one human founder. Open tools, research and practical fix
 - [BFCL quantization pilot](https://cybernative.ai/labs/qwen36-27b-bfcl-quantization/) — Selected tool-call cases, published scores and the commands behind them.
 - [ComfyUI workflow preflight](https://cybernative-ai.github.io/comfy-qwen-preflight/) — Check a saved Qwen-Image-2.1 workflow for supported file-slot and prompt-wiring mistakes.
 - [dst-check](https://github.com/CyberNative-AI/.github/tree/main/tools/dst-check) — Check a confirmed schedule expression, timezone and installed scheduler version around a clock change.
+- [tzscan](https://github.com/CyberNative-AI/.github/tree/main/tools/tzscan) — List the copies of time-zone data it recognises in a container image and whether each is wrong for Canada's 1 November change, without running the image.
 - [GGUF repeat-run study](https://cybernative.ai/labs/gguf-repro-harness/) — A two-run record separates repeatable results from unstable timing.
 - [Breach Notice Index](https://cybernative.ai/products/breach-clock/) — Search dated California filings for protection offers and the original notice.
 
