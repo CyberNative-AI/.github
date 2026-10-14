@@ -1,0 +1,18 @@
+{
+ "CAN|Alert|has_refs": 15,
+ "CAN|Cancel|has_refs": 748,
+ "CON|Alert|has_refs": 202,
+ "CON|Alert|no_refs": 2,
+ "CON|Update|has_refs": 4792,
+ "CON|Update|no_refs": 3,
+ "COR|Update|has_refs": 4,
+ "EXA|Alert|no_refs": 212,
+ "EXB|Alert|no_refs": 142,
+ "EXP|Alert|has_refs": 115,
+ "EXP|Update|has_refs": 373,
+ "EXT|Alert|has_refs": 45,
+ "EXT|Update|has_refs": 605,
+ "NEW|Alert|no_refs": 2467,
+ "UPG|Alert|has_refs": 2,
+ "UPG|Cancel|has_refs": 278
+}

@@ -1,0 +1,405 @@
+evaluated 913 split 204 exact 709
+
+== PAFC.SC.Y.7613 alerts 2 components 2
+ comp 1 root 5b78d765fcd603202d.032.1 | NEW/A
+ comp 1 root 5b78d765fcd603202d.031.2 | NEW/A
+  ROOT NEW Alert 2026-10-09T15:41:00-08:00 ['CWFALU'] ['FZAK52 PAFC 092341'] refs 0 expref 0 5b78d765fcd603202d.032.1 PAFC.SC.Y.7613 | Bristol Bay from Port Heiden to Cape Chichagof out
+  ROOT NEW Alert 2026-10-09T15:41:00-08:00 ['CWFALU'] ['FZAK52 PAFC 092341'] refs 0 expref 0 5b78d765fcd603202d.031.2 PAFC.SC.Y.7613 | Bristol Bay greater than 15 NM
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== KCAR.GL.W.0026 alerts 2 components 2
+ comp 1 root 4a9c593a446acd166a.002.1 | NEW/A
+ comp 1 root 4a9c593a446acd166a.001.2 | NEW/A
+  ROOT NEW Alert 2026-10-13T13:46:00-04:00 ['MWWCAR'] ['WHUS71 KCAR 131746'] refs 0 expref 0 4a9c593a446acd166a.002.1 KCAR.GL.W.0026 | Waters from Eastport ME to Schoodic Point ME from 
+  ROOT NEW Alert 2026-10-13T13:46:00-04:00 ['MWWCAR'] ['WHUS71 KCAR 131746'] refs 0 expref 0 4a9c593a446acd166a.001.2 KCAR.GL.W.0026 | Coastal Waters from Eastport, ME to Schoodic Point
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== KAKQ.BH.S.0016 alerts 16 components 3
+ comp 6 root e4b61d501d5bf8f7d5.001.3 | NEW/A CON/U CON/U CON/A CON/U CON/U
+ comp 5 root e4b61d501d5bf8f7d5.004.2 | NEW/A CON/U CON/U CON/A CON/U
+ comp 5 root e4b61d501d5bf8f7d5.007.1 | NEW/A CON/U CON/U CON/A CON/U
+  ROOT NEW Alert 2026-10-10T15:20:00-04:00 ['CFWAKQ'] ['WHUS41 KAKQ 101920'] refs 0 expref 0 e4b61d501d5bf8f7d5.001.3 KAKQ.BH.S.0016 | Accomack; Northampton
+  ROOT NEW Alert 2026-10-10T15:20:00-04:00 ['CFWAKQ'] ['WHUS41 KAKQ 101920'] refs 0 expref 0 e4b61d501d5bf8f7d5.004.2 KAKQ.BH.S.0016 | Maryland Beaches
+  ROOT NEW Alert 2026-10-10T15:20:00-04:00 ['CFWAKQ'] ['WHUS41 KAKQ 101920'] refs 0 expref 0 e4b61d501d5bf8f7d5.007.1 KAKQ.BH.S.0016 | Eastern Currituck; Virginia Beach
+  (b) NEW roots 3 same AWIPS+sent: True 
+
+== KLIX.SS.A.1009 alerts 31 components 8
+ comp 4 root 60601610077251b3b8.007.2 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.004.1 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.006.1 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.002.1 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.001.1 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.005.1 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.008.2 | NEW/A CON/U CON/U UPG/C
+ comp 3 root 60601610077251b3b8.003.1 | NEW/A CON/U CAN/C
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.007.2 KLIX.SS.A.1009 | Southern Harrison
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.004.1 KLIX.SS.A.1009 | Eastern Orleans
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.006.1 KLIX.SS.A.1009 | Southern Hancock
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.002.1 KLIX.SS.A.1009 | Lower St. Bernard
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.001.1 KLIX.SS.A.1009 | Lower Plaquemines
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.005.1 KLIX.SS.A.1009 | Southeast St. Tammany
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.008.2 KLIX.SS.A.1009 | Southern Jackson
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.003.1 KLIX.SS.A.1009 | Upper St. Bernard
+  (b) NEW roots 8 same AWIPS+sent: True 
+
+== KGSP.WI.Y.0007 alerts 15 components 2
+ comp 8 root f8adc9537a5d3b6a3e.002.1 | NEW/A CON/A CON/A CON/A CAN/C CON/U CON/U CAN/C
+ comp 7 root f8adc9537a5d3b6a3e.001.2 | NEW/A CON/A CON/A CON/A CON/U CON/U CAN/C
+  ROOT NEW Alert 2026-10-09T11:23:00-04:00 ['NPWGSP'] ['WWUS72 KGSP 091523'] refs 0 expref 0 f8adc9537a5d3b6a3e.002.1 KGSP.WI.Y.0007 | Rabun; Habersham; Stephens; Franklin; Hart; Elbert
+  ROOT NEW Alert 2026-10-09T11:23:00-04:00 ['NPWGSP'] ['WWUS72 KGSP 091523'] refs 0 expref 0 f8adc9537a5d3b6a3e.001.2 KGSP.WI.Y.0007 | Madison; Yancey; Mitchell; Swain; Haywood; Buncomb
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== PAJK.SC.Y.0328 alerts 30 components 10
+ comp 3 root f644e1d60bb4e42b3d.001.4 | NEW/A CON/U EXT/U
+ comp 3 root f644e1d60bb4e42b3d.002.3 | NEW/A CON/U CON/U
+ comp 4 root f644e1d60bb4e42b3d.003.3 | NEW/A CON/U EXT/U CON/U
+ comp 3 root f644e1d60bb4e42b3d.011.1 | NEW/A CON/U EXT/U
+ comp 3 root f644e1d60bb4e42b3d.015.1 | NEW/A CON/U CON/U
+ comp 3 root f644e1d60bb4e42b3d.004.3 | NEW/A CON/U CON/U
+ comp 3 root f644e1d60bb4e42b3d.014.1 | NEW/A CON/U EXT/U
+ comp 1 root 9ff15627134b66816c.014.1 | EXA/A
+ comp 3 root f644e1d60bb4e42b3d.013.1 | NEW/A CON/U EXT/U
+ comp 4 root f644e1d60bb4e42b3d.012.1 | NEW/A CON/U EXT/U CON/U
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.001.4 PAJK.SC.Y.0328 | Icy Cape to Cape Suckling out to 15 NM
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.002.3 PAJK.SC.Y.0328 | Cape Decision to Cape Edgecumbe out to 15 NM
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.003.3 PAJK.SC.Y.0328 | Dixon Entrance to Cape Decision from 15 to 90 NM; 
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.011.1 PAJK.SC.Y.0328 | Icy Strait
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.015.1 PAJK.SC.Y.0328 | Yakutat Bay
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.004.3 PAJK.SC.Y.0328 | Dixon Entrance to Cape Decision out to 15 NM
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.014.1 PAJK.SC.Y.0328 | Frederick Sound
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.013.1 PAJK.SC.Y.0328 | Sumner Strait
+  ROOT NEW Alert 2026-10-13T04:15:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 131215'] refs 0 expref 0 f644e1d60bb4e42b3d.012.1 PAJK.SC.Y.0328 | Cross Sound; Southern Chatham Strait
+  ROOT EXA Alert 2026-10-13T15:09:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 132309'] refs 0 expref 0 9ff15627134b66816c.014.1 PAJK.SC.Y.0328 | Northern Chatham Strait
+  EX EXA Alert refs 0 exprefs 0
+  (b) NEW roots 9 same AWIPS+sent: True 
+
+== KTAE.HU.W.1009 alerts 71 components 10
+ comp 11 root 708cde932ff24e3805.001.3 | NEW/A NEW/A CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CAN/C
+ comp 8 root 5f57c5f04c433c9bb7.003.1 | EXA/A CON/U CON/U CON/U CON/U CON/U CON/U CAN/C
+ comp 8 root 5f57c5f04c433c9bb7.002.1 | EXA/A CON/U CON/U CON/U CON/U CON/U CON/U CAN/C
+ comp 4 root 44472632a660c292b6.016.1 | EXA/A CON/U CON/U CAN/C
+ comp 4 root 44472632a660c292b6.025.1 | EXA/A CON/U CON/U CAN/C
+ comp 12 root 831150e8e7f312ede1.004.1 | NEW/A CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CAN/C
+ comp 12 root 831150e8e7f312ede1.001.1 | NEW/A CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U CAN/C
+ comp 4 root 44472632a660c292b6.017.1 | EXA/A CON/U CON/U CAN/C
+ comp 4 root 44472632a660c292b6.024.1 | EXA/A CON/U CON/U CAN/C
+ comp 4 root 44472632a660c292b6.005.1 | EXA/A CON/U CON/U CAN/C
+  ROOT NEW Alert 2026-10-07T23:00:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 080300'] refs 0 expref 0 831150e8e7f312ede1.004.1 KTAE.HU.W.1009 | Coastal Bay
+  ROOT NEW Alert 2026-10-07T23:00:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 080300'] refs 0 expref 0 831150e8e7f312ede1.001.1 KTAE.HU.W.1009 | South Walton
+  ROOT NEW Alert 2026-10-07T23:03:00-04:00 ['MWWTAE'] ['WHUS72 KTAE 080303'] refs 0 expref 0 708cde932ff24e3805.001.3 KTAE.HU.W.1009 | Coastal waters from Okaloosa-Walton County Line to
+  ROOT EXA Alert 2026-10-08T17:22:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 082122'] refs 0 expref 0 5f57c5f04c433c9bb7.003.1 KTAE.HU.W.1009 | North Walton
+  ROOT EXA Alert 2026-10-08T17:22:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 082122'] refs 0 expref 0 5f57c5f04c433c9bb7.002.1 KTAE.HU.W.1009 | Central Walton
+  ROOT EXA Alert 2026-10-09T11:05:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 091505'] refs 0 expref 0 44472632a660c292b6.016.1 KTAE.HU.W.1009 | Washington
+  ROOT EXA Alert 2026-10-09T11:05:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 091505'] refs 0 expref 0 44472632a660c292b6.025.1 KTAE.HU.W.1009 | Coffee
+  ROOT EXA Alert 2026-10-09T11:05:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 091505'] refs 0 expref 0 44472632a660c292b6.017.1 KTAE.HU.W.1009 | Holmes
+  ROOT EXA Alert 2026-10-09T11:05:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 091505'] refs 0 expref 0 44472632a660c292b6.024.1 KTAE.HU.W.1009 | Geneva
+  ROOT EXA Alert 2026-10-09T11:05:00-04:00 ['TCVTAE'] ['WTUS82 KTAE 091505'] refs 0 expref 0 44472632a660c292b6.005.1 KTAE.HU.W.1009 | Inland Bay
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+  (b) NEW roots 3 same AWIPS+sent: False {(('MWWTAE',), '2026-10-07T23:03:00-04:00'), (('TCVTAE',), '2026-10-07T23:00:00-04:00')}
+
+== KMQT.SC.Y.0152 alerts 68 components 6
+ comp 12 root 7433d1258f8f4b9138.008.1 | NEW/A CON/U CON/U EXT/U CON/U CON/U CON/U CON/U CON/U EXT/U CON/U CON/U
+ comp 11 root 7433d1258f8f4b9138.003.1 | NEW/A CON/U CON/U EXT/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U
+ comp 13 root 7433d1258f8f4b9138.005.1 | NEW/A NEW/A CON/U CON/U EXT/U EXT/U CON/U CON/U CON/U CON/U CON/U CON/U EXP/U
+ comp 13 root 7433d1258f8f4b9138.004.1 | NEW/A CON/U CON/U EXT/U EXT/U CON/U CON/U CON/U CON/U CON/U CON/U CON/U EXP/U
+ comp 10 root 7433d1258f8f4b9138.002.1 | NEW/A CON/U CON/U EXT/U CON/U CON/U CON/U CON/U CON/U CON/U
+ comp 9 root 7433d1258f8f4b9138.001.2 | NEW/A NEW/A CON/U CON/U EXT/U CON/U CON/U CON/U UPG/C
+  ROOT NEW Alert 2026-10-09T04:03:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 090803'] refs 0 expref 0 7433d1258f8f4b9138.008.1 KMQT.SC.Y.0152 | Seul Choix Point to Point Detour MI; 5NM East of a
+  ROOT NEW Alert 2026-10-09T04:03:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 090803'] refs 0 expref 0 7433d1258f8f4b9138.003.1 KMQT.SC.Y.0152 | Saxon Harbor WI to Black River MI
+  ROOT NEW Alert 2026-10-09T04:03:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 090803'] refs 0 expref 0 7433d1258f8f4b9138.005.1 KMQT.SC.Y.0152 | Upper Entrance of Portage Canal to Eagle River MI;
+  ROOT NEW Alert 2026-10-09T04:03:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 090803'] refs 0 expref 0 7433d1258f8f4b9138.004.1 KMQT.SC.Y.0152 | Black River To Ontonagon MI; Ontonagon to Upper En
+  ROOT NEW Alert 2026-10-09T04:03:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 090803'] refs 0 expref 0 7433d1258f8f4b9138.002.1 KMQT.SC.Y.0152 | Green Bay North of line from Cedar River MI to Roc
+  ROOT NEW Alert 2026-10-09T04:03:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 090803'] refs 0 expref 0 7433d1258f8f4b9138.001.2 KMQT.SC.Y.0152 | Grand Marais to Whitefish Point MI
+  (b) NEW roots 6 same AWIPS+sent: True 
+
+== KBOX.SC.Y.0097 alerts 3 components 2
+ comp 2 root eea435dc1b1e048ab4.001.2 | NEW/A EXT/U
+ comp 1 root d6b0f64c7a68a032f6.001.1 | EXB/A
+  ROOT NEW Alert 2026-10-13T02:00:00-04:00 ['MWWBOX'] ['WHUS71 KBOX 130600'] refs 0 expref 0 eea435dc1b1e048ab4.001.2 KBOX.SC.Y.0097 | Coastal Waters extending out to 25 NM South of Mar
+  ROOT EXB Alert 2026-10-13T14:58:00-04:00 ['MWWBOX'] ['WHUS71 KBOX 131858'] refs 0 expref 0 d6b0f64c7a68a032f6.001.1 KBOX.SC.Y.0097 | Cape Cod Bay; Nantucket Sound; Vineyard Sound; Buz
+  EX EXB Alert refs 0 exprefs 0
+
+== PAFC.SC.Y.1594 alerts 2 components 2
+ comp 1 root ab061ea51a048ddf61.005.1 | NEW/A
+ comp 1 root 21b06efcee2cd35d0e.029.1 | NEW/A
+  ROOT NEW Alert 2026-10-10T04:36:00-08:00 ['CWFALU'] ['FZAK52 PAFC 101236'] refs 0 expref 0 21b06efcee2cd35d0e.029.1 PAFC.SC.Y.1594 | Kiska to Attu Pacific Side
+  ROOT NEW Alert 2026-10-10T14:58:00-08:00 ['CWFALU'] ['FZAK52 PAFC 102258'] refs 0 expref 0 ab061ea51a048ddf61.005.1 PAFC.SC.Y.1594 | Castle Cape to Cape Tolstoi from 15 to 100 NM
+  (b) NEW roots 2 same AWIPS+sent: False {(('CWFALU',), '2026-10-10T04:36:00-08:00'), (('CWFALU',), '2026-10-10T14:58:00-08:00')}
+
+== PAJK.GL.W.0110 alerts 23 components 3
+ comp 5 root 9a0b5ba0bf4336476e.001.2 | EXB/A CON/U CON/U CON/U EXP/U
+ comp 9 root 03ea2c92bcf366c586.003.2 | NEW/A CON/U CON/A EXT/U CON/U CON/U CON/U CON/U EXP/U
+ comp 9 root 03ea2c92bcf366c586.002.2 | NEW/A CON/U CON/A CON/U CON/U CON/U CON/U CON/U EXP/U
+  ROOT NEW Alert 2026-10-10T03:44:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 101144'] refs 0 expref 0 03ea2c92bcf366c586.003.2 PAJK.GL.W.0110 | Icy Cape to Cape Suckling out to 15 NM
+  ROOT NEW Alert 2026-10-10T03:44:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 101144'] refs 0 expref 0 03ea2c92bcf366c586.002.2 PAJK.GL.W.0110 | Icy Cape to Cape Suckling from 15 to 80 NM
+  ROOT EXB Alert 2026-10-11T03:31:00-08:00 ['MWWAJK'] ['WHAK77 PAJK 111131'] refs 0 expref 0 9a0b5ba0bf4336476e.001.2 PAJK.GL.W.0110 | Cape Fairweather to Icy Cape out to 15 NM
+  EX EXB Alert refs 0 exprefs 0
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== KLCH.FW.W.0006 alerts 6 components 2
+ comp 5 root df9b0fac6377995631.001.1 | NEW/A EXA/A CON/U CON/U CON/U
+ comp 1 root bf6e114a45eeddb857.001.1 | EXA/A
+  ROOT NEW Alert 2026-10-08T15:00:00-05:00 ['RFWLCH'] ['WWUS84 KLCH 082000'] refs 0 expref 0 df9b0fac6377995631.001.1 KLCH.FW.W.0006 | Vernon; Rapides; Beauregard; Allen; Evangeline; No
+  ROOT EXA Alert 2026-10-09T08:59:00-05:00 ['RFWLCH'] ['WWUS84 KLCH 091359'] refs 0 expref 0 bf6e114a45eeddb857.001.1 KLCH.FW.W.0006 | Northern Calcasieu; Southern Calcasieu; Northern O
+  EX EXA Alert refs 0 exprefs 0
+  EX EXA Alert refs 0 exprefs 0
+
+== PAFC.SC.Y.1599 alerts 2 components 2
+ comp 1 root ab061ea51a048ddf61.010.1 | NEW/A
+ comp 1 root 21b06efcee2cd35d0e.035.1 | NEW/A
+  ROOT NEW Alert 2026-10-10T04:36:00-08:00 ['CWFALU'] ['FZAK52 PAFC 101236'] refs 0 expref 0 21b06efcee2cd35d0e.035.1 PAFC.SC.Y.1599 | Kuskokwim Delta from 15 to 80 NM
+  ROOT NEW Alert 2026-10-10T14:58:00-08:00 ['CWFALU'] ['FZAK52 PAFC 102258'] refs 0 expref 0 ab061ea51a048ddf61.010.1 PAFC.SC.Y.1599 | Nelson Lagoon to Cape Sarichef out to 15 NM
+  (b) NEW roots 2 same AWIPS+sent: False {(('CWFALU',), '2026-10-10T04:36:00-08:00'), (('CWFALU',), '2026-10-10T14:58:00-08:00')}
+
+== KDLH.SC.Y.0120 alerts 21 components 4
+ comp 12 root 5434f8059b0191fc43.004.1 | NEW/A CON/U CON/U CON/U EXT/U CON/U EXT/U CON/U CON/U CON/U EXT/U EXP/U
+ comp 3 root 5434f8059b0191fc43.001.1 | NEW/A CON/U CON/U
+ comp 3 root 5434f8059b0191fc43.002.1 | NEW/A CON/U CON/U
+ comp 3 root 5434f8059b0191fc43.003.1 | NEW/A CON/U CON/U
+  ROOT NEW Alert 2026-10-11T14:47:00-05:00 ['MWWDLH'] ['WHUS73 KDLH 111947'] refs 0 expref 0 5434f8059b0191fc43.004.1 KDLH.SC.Y.0120 | Chequamegon Bay-Bayfield to Oak Point WI; Oak Poin
+  ROOT NEW Alert 2026-10-11T14:47:00-05:00 ['MWWDLH'] ['WHUS73 KDLH 111947'] refs 0 expref 0 5434f8059b0191fc43.001.1 KDLH.SC.Y.0120 | Grand Portage to Grand Marais MN; Outer Apostle Is
+  ROOT NEW Alert 2026-10-11T14:47:00-05:00 ['MWWDLH'] ['WHUS73 KDLH 111947'] refs 0 expref 0 5434f8059b0191fc43.002.1 KDLH.SC.Y.0120 | Silver Bay Harbor to Two Harbors MN; Two Harbors t
+  ROOT NEW Alert 2026-10-11T14:47:00-05:00 ['MWWDLH'] ['WHUS73 KDLH 111947'] refs 0 expref 0 5434f8059b0191fc43.003.1 KDLH.SC.Y.0120 | Grand Marais to Taconite Harbor MN; Taconite Harbo
+  (b) NEW roots 4 same AWIPS+sent: True 
+
+== KLIX.TR.A.1009 alerts 24 components 6
+ comp 4 root 6d1eb5837c126fe7a5.002.2 | NEW/A NEW/A CON/U UPG/C
+ comp 4 root 60601610077251b3b8.001.2 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.002.2 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.005.2 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.004.2 | NEW/A CON/U CON/U UPG/C
+ comp 4 root 60601610077251b3b8.006.2 | NEW/A CON/U CON/U UPG/C
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.001.2 KLIX.TR.A.1009 | Lower Plaquemines
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.002.2 KLIX.TR.A.1009 | Lower St. Bernard
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.005.2 KLIX.TR.A.1009 | Southeast St. Tammany
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.004.2 KLIX.TR.A.1009 | Eastern Orleans
+  ROOT NEW Alert 2026-10-07T10:12:00-05:00 ['TCVLIX'] ['WTUS84 KLIX 071512'] refs 0 expref 0 60601610077251b3b8.006.2 KLIX.TR.A.1009 | Southern Hancock
+  ROOT NEW Alert 2026-10-07T10:21:00-05:00 ['MWWLIX'] ['WHUS74 KLIX 071521'] refs 0 expref 0 6d1eb5837c126fe7a5.002.2 KLIX.TR.A.1009 | Lake Borgne
+  (b) NEW roots 6 same AWIPS+sent: False {(('TCVLIX',), '2026-10-07T10:12:00-05:00'), (('MWWLIX',), '2026-10-07T10:21:00-05:00')}
+
+== KMOB.TO.A.0677 alerts 4 components 2
+ comp 2 root a9872ca1291c3f29b7.002.1 | NEW/A CAN/C
+ comp 2 root a9872ca1291c3f29b7.001.1 | NEW/A CAN/C
+  ROOT NEW Alert 2026-10-09T12:29:00-05:00 ['WCNMOB'] ['WWUS64 KMOB 091729'] refs 0 expref 0 a9872ca1291c3f29b7.002.1 KMOB.TO.A.0677 | Pensacola Bay Area including Santa Rosa Sound; Wes
+  ROOT NEW Alert 2026-10-09T12:29:00-05:00 ['WCNMOB'] ['WWUS64 KMOB 091729'] refs 0 expref 0 a9872ca1291c3f29b7.001.1 KMOB.TO.A.0677 | Okaloosa, FL; Santa Rosa, FL
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== KMQT.GL.W.0049 alerts 8 components 2
+ comp 4 root 93a808beed92c55433.001.2 | NEW/A CON/U CON/U CAN/C
+ comp 4 root 93a808beed92c55433.002.2 | NEW/A CON/U CON/U CAN/C
+  ROOT NEW Alert 2026-10-11T16:13:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 112013'] refs 0 expref 0 93a808beed92c55433.001.2 KMQT.GL.W.0049 | Lake Superior from Saxon Harbor WI to Upper Entran
+  ROOT NEW Alert 2026-10-11T16:13:00-04:00 ['MWWMQT'] ['WHUS73 KMQT 112013'] refs 0 expref 0 93a808beed92c55433.002.2 KMQT.GL.W.0049 | Lake Superior west of a line from Saxon Harbor WI 
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== PAFC.SC.Y.4543 alerts 2 components 2
+ comp 1 root 23954277d11381c4f8.023.2 | NEW/A
+ comp 1 root 23954277d11381c4f8.024.1 | NEW/A
+  ROOT NEW Alert 2026-10-12T03:22:00-08:00 ['CWFALU'] ['FZAK52 PAFC 121122'] refs 0 expref 0 23954277d11381c4f8.023.2 PAFC.SC.Y.4543 | Seguam to Adak Bering Side from 15 to 85 NM
+  ROOT NEW Alert 2026-10-12T03:22:00-08:00 ['CWFALU'] ['FZAK52 PAFC 121122'] refs 0 expref 0 23954277d11381c4f8.024.1 PAFC.SC.Y.4543 | Seguam to Adak Pacific Side out to 15 NM
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== KAKQ.TO.A.0681 alerts 6 components 2
+ comp 4 root 7a18390fe324ea4428.001.1 | NEW/A CON/U CAN/C CAN/C
+ comp 2 root 7a18390fe324ea4428.002.1 | NEW/A CAN/C
+  ROOT NEW Alert 2026-10-11T13:56:00-04:00 ['WCNAKQ'] ['WWUS61 KAKQ 111756'] refs 0 expref 0 7a18390fe324ea4428.001.1 KAKQ.TO.A.0681 | Bertie, NC; Camden, NC; Chowan, NC; Currituck, NC;
+  ROOT NEW Alert 2026-10-11T13:56:00-04:00 ['WCNAKQ'] ['WWUS61 KAKQ 111756'] refs 0 expref 0 7a18390fe324ea4428.002.1 KAKQ.TO.A.0681 | Chesapeake Bay from New Point Comfort to Little Cr
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+== KMTR.SC.Y.0121 alerts 32 components 2
+ comp 19 root 12ca53fbf00de03fec.001.1 | NEW/A CON/U EXT/U CON/U CON/U CON/U EXT/U CON/U CON/U CON/U EXT/U CON/U CON/U CON/U EXT/U CON/U CON/U CON/U EXP/U
+ comp 13 root 12ca53fbf00de03fec.002.1 | NEW/A CON/U EXT/U CON/U CON/U CON/U EXT/U CON/U CON/U CON/U CON/U CON/U EXP/U
+  ROOT NEW Alert 2026-10-08T14:11:00-07:00 ['MWWMTR'] ['WHUS76 KMTR 082111'] refs 0 expref 0 12ca53fbf00de03fec.001.1 KMTR.SC.Y.0121 | Waters from Pigeon Point to Point Pinos 10-60 NM
+  ROOT NEW Alert 2026-10-08T14:11:00-07:00 ['MWWMTR'] ['WHUS76 KMTR 082111'] refs 0 expref 0 12ca53fbf00de03fec.002.1 KMTR.SC.Y.0121 | San Francisco Bay South of the Bay Bridge
+  (b) NEW roots 2 same AWIPS+sent: True 
+
+[
+{
+"k": "PAFC.SC.Y.7613",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KCAR.GL.W.0026",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KAKQ.BH.S.0016",
+"newroots": 3,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KLIX.SS.A.1009",
+"newroots": 8,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KGSP.WI.Y.0007",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "PAJK.SC.Y.0328",
+"newroots": 9,
+"b": true,
+"restart": 1,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KTAE.HU.W.1009",
+"newroots": 3,
+"b": false,
+"restart": 7,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KMQT.SC.Y.0152",
+"newroots": 6,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KBOX.SC.Y.0097",
+"newroots": 1,
+"b": null,
+"restart": 1,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "PAFC.SC.Y.1594",
+"newroots": 2,
+"b": false,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "PAJK.GL.W.0110",
+"newroots": 2,
+"b": true,
+"restart": 1,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KLCH.FW.W.0006",
+"newroots": 1,
+"b": null,
+"restart": 1,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "PAFC.SC.Y.1599",
+"newroots": 2,
+"b": false,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KDLH.SC.Y.0120",
+"newroots": 4,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KLIX.TR.A.1009",
+"newroots": 6,
+"b": false,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KMOB.TO.A.0677",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KMQT.GL.W.0049",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "PAFC.SC.Y.4543",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KAKQ.TO.A.0681",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+},
+{
+"k": "KMTR.SC.Y.0121",
+"newroots": 2,
+"b": true,
+"restart": 0,
+"restart_noref": true,
+"ex_all_noref": true,
+"oneETN": true
+}
+]
+(a) all EXA/EXB checked have no refs: True ; restart roots no refs: True
+(b) events with >=2 NEW roots: 18 all same AWIPS+sent: False
+(c) one key: True
