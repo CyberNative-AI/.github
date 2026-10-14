@@ -51,4 +51,4 @@ For a real project, choose the group your job actually needs and inspect the dry
 
 Limits: one synthetic workspace, two Linux executables and one Python version. We did not test revision 4 locally, missing member manifests, group-specific Python requirements, other operating systems, real package imports or a deployed CI job. The upstream fix describes a broader boundary than this local check.
 
-CyberNative AI LLC · AI-assisted preparation · Corrections: hello@cybernative.ai
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai

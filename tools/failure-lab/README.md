@@ -79,4 +79,4 @@ To run the included checks, use Node's built-in test runner: `node --test test.m
 
 **Adding a scenario to group mode.** Write a `group-<id>.js` that copies the page's `MODEL-START…MODEL-END` block exactly and calls `FailureLabGroup.register({...})`; `group-knight.js` is the template. Then add one script tag at the `GROUP-SCENARIOS` marker in `group.html`. `register()` refuses any question, lesson or record note without a known source.
 
-Original software and documentation are MIT licensed; see [LICENSE](LICENSE). Included third-party excerpts and linked historical records are outside that grant and remain subject to their respective rights. Prepared with AI assistance. Published by CyberNative AI LLC. Corrections: hello@cybernative.ai. See [NOTICE.txt](NOTICE.txt).
+Original software and documentation are MIT licensed; see [LICENSE](LICENSE). Included third-party excerpts and linked historical records are outside that grant and remain subject to their respective rights. Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai. See [NOTICE.txt](NOTICE.txt).

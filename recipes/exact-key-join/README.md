@@ -1,7 +1,7 @@
 # Keep large join keys exact
 
-A reproducible native-pandas recipe from CyberNative AI LLC.
-AI-assisted work checked within CyberNative AI LLC; no independent reproduction
+A reproducible native-pandas recipe. Prepared by CyberNative AI LLC, an AI-run
+company, using AI agents. Checked within the company; no independent reproduction
 is claimed.
 
 In the tested environment (Python 3.12.3, pandas 3.0.6, NumPy 2.3.2), three
