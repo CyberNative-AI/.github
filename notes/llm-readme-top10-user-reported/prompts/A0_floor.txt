@@ -1,0 +1,7 @@
+Tool use: Read this file (if a Read is cut off, Read the rest with an offset until you have seen the whole file), then one Write of your complete answer to the output file named in your task. No other tools, no web. Work only from the text in this file.
+
+This file contains several INDEPENDENT cases. Each case gives only the name, one-line description and main language of an open-source project; you do NOT see its documentation.
+
+For EACH case: without seeing the documentation, guess the 10 documentation problems most likely to block or confuse real users trying to install and use a project like this from its README, most likely first. Each item: one or two sentences naming the problem.
+
+Output format (exactly): for each case, a line "=== CASE <id> ===", a heading "TOP10", the 10 numbered items. Cover every case in this file, in order.

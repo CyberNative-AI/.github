@@ -1,0 +1,642 @@
+{
+ "I001": {
+  "url": "https://github.com/KayKoehle/myTCG/issues/4",
+  "item": "The README's header image (./images/color/creatures/Arcane Disruptor.png, an unencoded path with a space) does not render, so the README shows no working picture of the application.",
+  "match_rule": "The critique must assert that the README's top image is broken, missing or does not render (or that its path is invalid, e.g. the unencoded space). A generic suggestion to add screenshots, without saying the existing image is broken, does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Unencoded space in relative image path is visibly broken in markdown."
+ },
+ "I002": {
+  "url": "https://github.com/looseleafgallery/trellis/issues/2",
+  "item": "The README's install section gives only the contributor editable install `pip install -e '.[dev]'` (which needs a clone) and no end-user install command such as pip install from the git URL.",
+  "match_rule": "The critique must assert that the install instructions are the developer/editable install requiring a clone, or that there is no end-user install path (e.g. pip/pipx from the git URL). Generic 'installation is unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Only contributor editable install shown; missing end-user install is visible."
+ },
+ "I003": {
+  "url": "https://github.com/Healthy-Stellar/Healthy-Stellar-backend/issues/780",
+  "item": "The README setup steps go from migrations straight to starting the app and omit the `npm run seed` step, leaving a new user with an empty database and no test users.",
+  "match_rule": "The critique must assert that the setup omits a database seeding step (npm run seed / test data / test users to log in with). Generic remarks about incomplete setup or migrations do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Knowing a seed script exists requires package.json/project code."
+ },
+ "I004": {
+  "url": "https://github.com/r-lib/ir/issues/137",
+  "item": "The README example script declares the dependency `dplyr>=1.0`, a version range that ir does not support, so copying the example fails dependency resolution.",
+  "match_rule": "The critique must assert that the example's package spec (the `dplyr>=1.0` version range, or the example's dependency declarations) is unsupported or would make the example fail to resolve. A generic 'the example may not work' or 'explain frontmatter syntax' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing ir tool's unsupported version-range behaviour."
+ },
+ "I005": {
+  "url": "https://github.com/cloud-gov/cg-oracle-database-19c-stig-overlay/issues/5",
+  "item": "The README status text treats closed/merged issues and PRs (#3, aws-broker#519, #537) as open work, says no live-instance validation has happened, and omits the responsibility model and most repo directories.",
+  "match_rule": "The critique must assert a specific staleness: that the status/tracking references point to work that is no longer open, that the claim of no live validation is outdated, or that the layout omits existing directories/docs such as controls/, runner/ or docs/RESPONSIBILITY.md. A generic 'README may be out of date' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking linked issue/PR states and repo contents."
+ },
+ "I006": {
+  "url": "https://github.com/qbtrix/soul-protocol/issues/286",
+  "item": "The README eternal-storage examples use a nonexistent `--source` flag for `soul recover` (which needs a reference, `--tier` and `--output`) and a comma-joined `--tiers local,ipfs` with an unregistered `local` tier.",
+  "match_rule": "The critique must assert that the `soul recover`/`soul archive` example flags are wrong (e.g. `--source` does not exist, missing `--output`, `--tiers` cannot take a comma list, or `local` is not a valid tier). Generic 'CLI examples are unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires actual CLI options of soul recover."
+ },
+ "I007": {
+  "url": "https://github.com/Djarvur/ddg-search/issues/19",
+  "item": "The README's `go install github.com/Djarvur/ddg-search@latest` targets the module root, which has no main package; each tool must be installed from its cmd/<tool> path.",
+  "match_rule": "The critique must assert that the go install command points at a path without a main package / should target the cmd/ subdirectories. Generic 'installation instructions unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing repo has no main package at module root."
+ },
+ "I008": {
+  "url": "https://github.com/svsticky/Tavern/issues/139",
+  "item": "The README's .env section omits the backup admin email variable required for local development and presents other variables as needing to be filled in that the devcontainer already provides.",
+  "match_rule": "The critique must assert that the README omits the required backup email (BACKUP_ACCOUNT_EMAIL) variable, or that it misstates which .env variables are actually required for local devcontainer development. Generic 'environment configuration is confusing' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires code/devcontainer to know required variables."
+ },
+ "I009": {
+  "url": "https://github.com/the-monkeys/the_monkeys/issues/590",
+  "item": "The README development section does not state the required minimum Node.js version.",
+  "match_rule": "The critique must assert that the README does not specify the required Node.js version. Generic 'prerequisites are missing' counts only if it names Node.js version.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Missing prerequisite version is visible from doc absence."
+ },
+ "I010": {
+  "url": "https://github.com/onemen/firefox-scripts/issues/86",
+  "item": "The heading 'How to install the installer' and missing statement leave unclear whether the installer itself or other persistent components are installed, and 'update automatically in the background' is ambiguous about which background.",
+  "match_rule": "The critique must assert that it is unclear what the installer leaves installed (itself, background processes) or that the 'install the installer' heading or 'in the background' wording is confusing/ambiguous. Generic 'installation unclear' does not count.",
+  "kind": "conceptual",
+  "static_detectable": "yes",
+  "static_why": "Ambiguous heading and wording evident from text alone."
+ },
+ "I011": {
+  "url": "https://github.com/rmoesbergen/openwrt-ha-device-tracker/issues/85",
+  "item": "The install step names plain `mosquitto-client`, which can resolve to the larger SSL variant and run out of flash space, instead of specifying `mosquitto-client-nossl` (or baking it into the image).",
+  "match_rule": "The critique must assert that the package choice should be the nossl variant, that `mosquitto-client` is ambiguous between ssl/nossl variants, or that the SSL variant may not fit on space-constrained devices. Generic 'space requirements unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Depends on OpenWrt apk package resolution and device flash behaviour."
+ },
+ "I013": {
+  "url": "https://github.com/danyuchn/asd-ste100-skill/issues/10",
+  "item": "The README Before/After table's 'After' rewrites drop the original hedges ('may have failed' becomes 'failed', 'will attempt to' becomes 'synchronizes') and invent a 'most common cause' claim, contradicting the project's own modality rule.",
+  "match_rule": "The critique must assert that the After rewrites change the meaning by removing hedges/uncertainty or adding an unsupported frequency claim, or that they contradict the examples file/skill rules. Generic 'the examples could be improved' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Rewrites visibly drop hedges, changing meaning within the table."
+ },
+ "I014": {
+  "url": "https://github.com/kellymusk/Aframp/issues/426",
+  "item": "The README describes a nonexistent src/ project layout, tells users to open localhost:3000 although the app runs on 3001, lists environment variables the code never reads, and shows the wrong Next.js version.",
+  "match_rule": "The critique must assert at least one of these specific errors: wrong app port, a project structure that does not match the Next.js App Router layout, env variables not used or absent from .env.example, or the wrong Next.js version. A generic 'README may be out of date' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires code to know real layout, port, env vars."
+ },
+ "I015": {
+  "url": "https://github.com/conduit-protocol/streamFi-contracts/issues/289",
+  "item": "The README's DripFactory::Error table omits codes 11-17 and 22-25 and does not explain the 18-21 gap.",
+  "match_rule": "The critique must assert that the error-code table is incomplete (missing codes or a numbering gap between 10 and 26) or name specific missing errors. Generic 'error handling is not documented' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Error code numbering gap 10 to 26 visible in table."
+ },
+ "I016": {
+  "url": "https://github.com/aksman-dev/hearmark/issues/5",
+  "item": "The README's quick-install prompt and clone instruction give only the SSH clone URL, which fails on machines without GitHub SSH keys; no HTTPS URL is offered.",
+  "match_rule": "The critique must assert that the clone URL is SSH-only/requires SSH keys and an HTTPS URL should be given. Generic 'installation prerequisites unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "SSH-only clone URL failing without keys is general knowledge."
+ },
+ "I017": {
+  "url": "https://github.com/Ares960826/zotero-grouptag/issues/1",
+  "item": "The Installation section's Releases link points to the wrong GitHub owner (ares/zotero-grouptag), so it is dead.",
+  "match_rule": "The critique must assert that the Releases/installation link is broken or points to the wrong repository owner. Generic 'check links' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking link liveness/actual repo owner."
+ },
+ "I018": {
+  "url": "https://github.com/plur-ai/plur/issues/618",
+  "item": "The README install commands pin outdated versions `@plur-ai/cli@0.10.1` and `plur-hermes==0.10.0` and present them as the verified pairing.",
+  "match_rule": "The critique must assert that the pinned CLI/plugin versions in the install commands are stale or should not be pinned. Generic 'versions may be outdated' without pointing at the install pins does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing current release version."
+ },
+ "I019": {
+  "url": "https://github.com/gflohr/anki-chess-opening-trainer/issues/31",
+  "item": "The README's example move sequence '1. d4 d6 2. c4 d6' is illegal because Black plays d6 twice.",
+  "match_rule": "The critique must assert that the example move sequence is invalid/illegal (d6 played twice or the first Black move is wrong). Generic remarks about example clarity do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Illegal repeated move d6 visible with chess knowledge."
+ },
+ "I020": {
+  "url": "https://github.com/fennaraOfficial/fennara-godot-ai/issues/75",
+  "item": "The README does not say whether running Fennara (MCP config or install/update) from a separate tooling folder with `--project` pointing at another Godot project is supported.",
+  "match_rule": "The critique must assert that the README does not explain running from outside the Godot project / using `--project` with a separate tooling repo or where MCP config must live. Generic 'CLI options are not fully documented' does not count.",
+  "kind": "conceptual",
+  "static_detectable": "yes",
+  "static_why": "Unaddressed supported-setup question is a visible doc gap."
+ },
+ "I021": {
+  "url": "https://github.com/bmlt-enabled/mayo/issues/321",
+  "item": "The shortcode documentation does not say that category/tag names containing spaces must be given with dashes (slug form) in shortcode parameters such as [mayo_announcement_form].",
+  "match_rule": "The critique must assert that the docs do not explain how to specify category or tag names that contain spaces (or their slug/dashed form) in the shortcode parameters. Generic remarks that shortcode parameters or categories are under-documented do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Unexplained parameter format for names with spaces is ambiguous."
+ },
+ "I022": {
+  "url": "https://github.com/AfriWage/AfriWage/issues/128",
+  "item": "The setup section claims no secrets are required for testnet (all values public), although the app requires the server-only secrets POSTGRES_URL and YELLOWCARD_API_KEY.",
+  "match_rule": "The critique must point out that the 'no secrets required / all values are public' setup claim is wrong or contradicts the required server-side secrets (POSTGRES_URL / YELLOWCARD_API_KEY). Generic remarks that environment setup is unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires .env.example/code to know server secrets needed."
+ },
+ "I023": {
+  "url": "https://github.com/swigerb/squad-hub/issues/119",
+  "item": "The README deployment command for deploy-appservice.ps1 omits the -Owner (and subscription) parameter that the script requires in order to deploy.",
+  "match_rule": "The critique must assert that the documented deploy-appservice.ps1 command is missing a required parameter, specifically -Owner (or -Subscription / an access-control option). Generic remarks that deployment instructions are incomplete do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires reading script's required parameters."
+ },
+ "I025": {
+  "url": "https://github.com/Doist/outline-cli/issues/87",
+  "item": "The README tells users to log in with `ol auth login --token <token>`, but that flag does not exist; the correct command is `ol auth token <token>`.",
+  "match_rule": "The critique must assert that the documented `ol auth login --token` command/flag is wrong or nonexistent (or that token auth should use `ol auth token`). Generic remarks that authentication setup is unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires actual CLI behaviour."
+ },
+ "I026": {
+  "url": "https://github.com/vibe-code-tours/team-09-app/issues/100",
+  "item": "The README project-structure tree places the Expo app under a nested mhat-tan/ directory that does not exist; App.tsx, index.ts and src/ live at the repository root.",
+  "match_rule": "The critique must assert that the project-structure section shows a nonexistent mhat-tan/ directory or that the app root/paths shown do not match the actual repo layout. Generic remarks that the structure section is confusing or outdated do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires repo layout to see directory missing."
+ },
+ "I029": {
+  "url": "https://github.com/natashabatalha/PandExo/issues/120",
+  "item": "The installation guide places the reference-data verification step (which imports pandeia.engine) before the step that pip-installs pandeia.engine/pandexo.engine, so it cannot work in the documented order.",
+  "match_rule": "The critique must assert that the verification command importing pandeia.engine comes before (or is out of order with) the package installation step. Generic remarks that the install steps are long or confusingly ordered, without naming this verification-before-install problem, do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Steps out of order: import before install."
+ },
+ "I030": {
+  "url": "https://github.com/VilnaCRM-Org/ui-toolkit/issues/85",
+  "item": "The README documents only the contributor workflow and gives package consumers no install command, peer-dependency list, import example, or required styles.css import.",
+  "match_rule": "The critique must assert that the README lacks consumer-facing usage documentation for the package, naming at least one of: how to install it, the required peer dependencies, an import example, or the required styles.css import. Generic remarks that the README is short or could be improved do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Missing consumer install/import docs visible from absence."
+ },
+ "I031": {
+  "url": "https://github.com/codingjoe/django-health-check/issues/760",
+  "item": "The install docs' urls.py example registers HealthCheckView without a `name=`, yet the health_check management command needs a URL pattern name to reverse as its endpoint argument.",
+  "match_rule": "The critique must assert that the urls.py example lacks a URL pattern name, or that the docs do not explain what value to pass as the management command's endpoint argument / that it must be a reversible URL name. Generic remarks that the CLI/management command is under-documented do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Django knowledge: reverse needs URL name; snippet lacks name=."
+ },
+ "I032": {
+  "url": "https://github.com/amerand/PMOIRED/issues/15",
+  "item": "The README uninstall section gives the command `pmrd.py --remove`, which will not run as written; it should be invoked via `python pmrd.py --remove`.",
+  "match_rule": "The critique must assert that the uninstall command `pmrd.py --remove` is wrong/not runnable as written (missing `python` or `./`). Generic remarks about uninstall instructions or typos do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Bare script name without python/path won't run as written."
+ },
+ "I033": {
+  "url": "https://github.com/massimobonanni/DBSemanticSearch/issues/3",
+  "item": "The README's test command `dotnet test DBSemanticSearch.sln` uses the wrong path; the solution file is at src/DBSemanticSearch.sln.",
+  "match_rule": "The critique must assert that the `dotnet test DBSemanticSearch.sln` command uses a wrong path to the solution (it lives under src/). Generic remarks that commands or paths may be wrong do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires repo layout to know solution path."
+ },
+ "I034": {
+  "url": "https://github.com/PierrunoYT/MossTTS-Pinokio/issues/11",
+  "item": "The README links Pinokio to pinokio.com, an unrelated company, instead of the Pinokio app platform at pinokio.co.",
+  "match_rule": "The critique must assert that the Pinokio link (pinokio.com) is wrong or points to an unrelated site. Generic remarks about links needing checking do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking what the linked domain hosts."
+ },
+ "I035": {
+  "url": "https://github.com/Necmttn/ax/issues/797",
+  "item": "The README install command pipes the installer to `sh`, but the installer requires bash, so it fails on systems where /bin/sh is dash (Debian/Ubuntu).",
+  "match_rule": "The critique must assert that the `curl ... | sh` install command should use bash or will fail under POSIX sh/dash. Generic remarks about curl-pipe-to-shell security or install being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires reading installer script to know bash dependency."
+ },
+ "I037": {
+  "url": "https://github.com/nikiomori/Pretype/issues/2",
+  "item": "The README's Homebrew install command and HOMEBREW_CASK_OPTS tip use the `--no-quarantine` flag, which was removed in Homebrew 6.",
+  "match_rule": "The critique must assert that the `--no-quarantine` flag is removed/deprecated/invalid in current Homebrew. Generic remarks about Gatekeeper or Homebrew install being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Depends on current Homebrew version flag removal."
+ },
+ "I040": {
+  "url": "https://github.com/TNG/oh-my-agentic-coder/issues/53",
+  "item": "The README harness table links opencode to the archived opencode-ai/opencode repo and links Copilot CLI docs to a 404 URL.",
+  "match_rule": "The critique must specifically identify that the opencode link points to an archived/outdated repo or that the Copilot CLI docs link is broken/404. Generic remarks that some links may be outdated do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking link liveness/archived repo status."
+ },
+ "I041": {
+  "url": "https://github.com/jerichoBob/aidev-toolkit-dist/issues/2",
+  "item": "All install/clone commands in the README point to the nonexistent repository jerichoBob/aidev-toolkit-dist-dist instead of jerichoBob/aidev-toolkit-dist.",
+  "match_rule": "The critique must assert that the clone/install commands use a wrong or nonexistent repository name (e.g. the doubled '-dist-dist'). Generic remarks that installation is unclear or may fail do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Doubled -dist-dist suffix is a visible typo."
+ },
+ "I043": {
+  "url": "https://github.com/crawlseo/crawlseo/issues/1",
+  "item": "The getting-started environment-file step is wrong: the README's env template copy command does not match the project's actual env files (it copies .env.example to .env.local rather than to .env).",
+  "match_rule": "The critique must assert that the env-file copy/setup command in the getting-started instructions names the wrong file (wrong sample/template file or wrong target such as .env.local vs .env). Generic remarks that configuration or setup is unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires repo env files to see mismatch."
+ },
+ "I044": {
+  "url": "https://github.com/a11q1/pair-universal/issues/1",
+  "item": "The README gives no command for installing or opening the project's Linux man page.",
+  "match_rule": "The critique must assert that the README lacks (or gives wrong) instructions for the man page, e.g. how to install or open it with `man`. Generic remarks about missing documentation or installation clarity do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Missing man page install step visible from absence."
+ },
+ "I046": {
+  "url": "https://github.com/team-telnyx/telnyx-webrtc-android/issues/814",
+  "item": "The README table of contents links to Call Quality Metrics sections that do not exist in the file, so the anchors are broken and the feature is undocumented.",
+  "match_rule": "The critique must assert that the Call Quality Metrics table-of-contents links are broken/point to missing sections, or that the Call Quality Metrics content is missing. Generic remarks about broken links elsewhere or incomplete docs do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "TOC anchors to sections absent from same file."
+ },
+ "I047": {
+  "url": "https://github.com/weisJ/jsvg/issues/174",
+  "item": "The README lists the image anti-aliasing values as VALUE_IMAGE_ANTIALIAS_ON/OFF, but the actual constants are VALUE_IMAGE_ANTIALIASING_ON/OFF.",
+  "match_rule": "The critique must assert that the KEY_IMAGE_ANTIALIASING value names are wrong or inconsistent (ANTIALIAS vs ANTIALIASING). Generic remarks about the rendering-hints table being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires actual constant names in code."
+ },
+ "I048": {
+  "url": "https://github.com/lanl/bngsim/issues/343",
+  "item": "The quickstart code uses outdated API names (sim.run(t_end=..., n_steps=...), result.times, result[\"A\"], result.to_dataframe()) that do not exist in the current library.",
+  "match_rule": "The critique must assert that specific quickstart API calls or attributes are wrong/outdated (e.g. t_end/n_steps parameters, result.times, subscripting result, to_dataframe, or from_net_file). A generic remark that the example may be out of date without naming any wrong call does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires current library API."
+ },
+ "I049": {
+  "url": "https://github.com/CICE-Consortium/Icepack/issues/564",
+  "item": "The README's CICE Consortium forum link points to the outdated xenforo.cgd.ucar.edu host instead of bb.cgd.ucar.edu.",
+  "match_rule": "The critique must assert that the Consortium forum link is outdated, broken, or points to the wrong host. Generic remarks about links possibly being stale without naming the forum link do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing forum host moved."
+ },
+ "I051": {
+  "url": "https://github.com/yrvelez/qualtrics-mcp-server/issues/11",
+  "item": "The README's Claude Desktop config uses a bare `node` command with no PATH entry, which fails on macOS Homebrew/nvm installs because Claude Desktop launches servers with a minimal PATH.",
+  "match_rule": "The critique must assert that the Claude Desktop config's bare node/npx command may not be found (PATH/absolute-path problem, e.g. on macOS Homebrew or nvm) or that an env PATH/absolute path is needed. Generic remarks that the MCP client configuration is unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Depends on runtime PATH behaviour of Claude Desktop."
+ },
+ "I052": {
+  "url": "https://github.com/drop-stones/im-switch.nvim/issues/36",
+  "item": "The README has no vim.pack installation instructions, including the required manual `require('im-switch.build').setup()` call to download the CLI.",
+  "match_rule": "The critique must assert that installation with vim.pack (Neovim's built-in package manager) is not documented, or that non-lazy.nvim users are not told to run the build step that downloads the im-switch CLI. Generic remarks that installation options are limited do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Missing vim.pack install section visible from absence."
+ },
+ "I053": {
+  "url": "https://github.com/rfresh2/ZenithProxyWebAPI/issues/1",
+  "item": "The README documents the rate-limit command as `webApi rateLimitRequestsPerMinute <rate>` instead of `webApi rateLimiter requestsPerMinute <rate>`.",
+  "match_rule": "The critique must assert that the webApi rate-limit requests-per-minute command syntax is wrong or inconsistent with the `webApi rateLimiter` command. Generic remarks about the command list being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires actual command names."
+ },
+ "I054": {
+  "url": "https://github.com/SebGalina/betaflight-claude-skill/issues/11",
+  "item": "The README pins betaflight-chirp-core to 0.1.6 (and 0.1.7 in the manual install command), versions not installable from PyPI and inconsistent with each other.",
+  "match_rule": "The critique must assert that the pinned betaflight-chirp-core version in the README is wrong, unavailable, or inconsistent (0.1.6 vs 0.1.7). Generic remarks about dependency installation or Python version being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "README pins 0.1.6 and 0.1.7 inconsistently."
+ },
+ "I056": {
+  "url": "https://github.com/pkoretic/qt-nats/issues/22",
+  "item": "The README's license badge states MIT while the repository's LICENSE file contains LGPLv3, so the stated license is contradictory.",
+  "match_rule": "The critique must assert that the license stated in the README (MIT badge) conflicts with or is not confirmed by the LICENSE file, or that the project's license is ambiguous. A remark only that a license section is missing, without noting the conflict or ambiguity, does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires reading LICENSE file outside the README."
+ },
+ "I059": {
+  "url": "https://github.com/sadsfae/ansible-elk/issues/110",
+  "item": "The README's ELK client command references install/elk-client.yml, but the playbook is install/elk_client.yml.",
+  "match_rule": "The critique must assert that the client ansible-playbook command uses the wrong playbook filename/path (hyphen vs underscore). Generic remarks about client setup being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires repo file name."
+ },
+ "I060": {
+  "url": "https://github.com/unikraft-cloud/cli/issues/399",
+  "item": "The README's shell-completion commands (`unikraft completion fish` etc.) omit the required `-c` flag, so they print instructions instead of a completion script.",
+  "match_rule": "The critique must assert that the shell completion commands are wrong (e.g. missing the -c flag or not producing a completion script). Generic remarks about shell completion setup being unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires actual CLI flag behaviour."
+ },
+ "I061": {
+  "url": "https://github.com/go-bdd/gobdd/issues/162",
+  "item": "The README installation command uses `go install github.com/go-bdd/gobdd@latest` although this is a library that should be added with `go get`.",
+  "match_rule": "The critique must assert that the install command `go install ...gobdd@latest` is the wrong Go command for adding this library (should be `go get` / added as a module dependency). A generic remark that installation is unclear does not match.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "General Go knowledge: libraries use go get, not go install."
+ },
+ "I063": {
+  "url": "https://github.com/JSE-ORG/trust-link-contract/issues/581",
+  "item": "The README state machine diagram omits states and transitions the contract has (PendingFinalization, RefundRequested, Expired, appeal and multi-resolver flows).",
+  "match_rule": "The critique must assert that the state machine diagram/key rules are incomplete or outdated, naming at least one missing state or transition (e.g. Expired, RefundRequested, PendingFinalization, appeal or refund flow). A generic remark that the diagram is hard to read does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires contract code to know extra states."
+ },
+ "I064": {
+  "url": "https://github.com/kourtispanos/Voice_assistant/issues/1",
+  "item": "The Setup `pip install` command lists dependencies by hand and omits packages the code imports (e.g. pyttsx3), so a fresh install fails with ModuleNotFoundError.",
+  "match_rule": "The critique must assert that the hand-written pip install dependency list is incomplete or out of sync with the code's imports (e.g. a named missing package, or that a requirements file should be used). A generic remark that setup is long or complex does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires code imports to know missing packages."
+ },
+ "I065": {
+  "url": "https://github.com/edrlab/thorium-reader/issues/3699",
+  "item": "The dev setup runs `npm ci --ignore-scripts` but omits the manual Electron install/postinstall step, so `npm run start:dev` fails because the Electron binary is never set up.",
+  "match_rule": "The critique must assert that the dev setup is missing a step to install/set up the Electron binary (e.g. running electron's postinstall/install.js) after `npm ci --ignore-scripts`, or that `--ignore-scripts` skips needed install scripts. A generic remark that build instructions are incomplete does not match.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "General knowledge: --ignore-scripts skips Electron binary download."
+ },
+ "I066": {
+  "url": "https://github.com/yosemite01/stellar-creator-portfolio/issues/1243",
+  "item": "The README does not give the command or details for seeding demo data after migrations.",
+  "match_rule": "The critique must assert that the README lacks (or is unclear about) how to seed demo/sample data, e.g. no seed command. A generic remark that setup or database instructions are unclear without mentioning seeding/demo data does not match.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Missing seeding command/detail visible as ambiguous step."
+ },
+ "I067": {
+  "url": "https://github.com/ouster-lidar/ouster-ros/issues/555",
+  "item": "The README presents only build-from-source installation and does not mention that the driver can be installed via `apt install ros-${ROS_DISTRO}-ouster-ros`.",
+  "match_rule": "The critique must assert that the README omits a binary/package-manager installation option (apt / ROS package index) and only documents building from source. A generic remark that the build process is hard does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing an apt package exists."
+ },
+ "I069": {
+  "url": "https://github.com/maloyan/manim-web/issues/549",
+  "item": "The README React (and Vue) example passes a `construct` prop to ManimScene, which does not exist in the component's API (it uses onSceneReady / ready).",
+  "match_rule": "The critique must assert that the React/Vue ManimScene example uses a wrong or nonexistent prop (`construct`) or does not match the component API. A generic remark that the framework examples are thin or unclear does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires component API."
+ },
+ "I071": {
+  "url": "https://github.com/Panniantong/Agent-Reach/issues/547",
+  "item": "The README install walkthrough says the CLI is installed via `pip install`, implying a PyPI package `agent-reach` that is not the project's (unregistered) instead of installing from the repository.",
+  "match_rule": "The critique must assert that the README's `pip install` phrasing suggests installing `agent-reach` from PyPI when the package is not published there / installation must be from the repository. A generic remark that install steps are vague does not match.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "pip install with no package/source specified is ambiguous."
+ },
+ "I073": {
+  "url": "https://github.com/Beneficial-AI-Foundation/probe-aeneas/issues/42",
+  "item": "The README's install command extracts `probe-aeneas` from the archive, but the binary is inside a `probe-aeneas-<target>/` directory, so tar fails.",
+  "match_rule": "The critique must assert that the tar extraction command uses the wrong member path (the binary sits in a target-named subdirectory) or otherwise that the curl|tar install command fails. A generic remark that installation is platform-specific or unclear does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires archive layout."
+ },
+ "I074": {
+  "url": "https://github.com/refusedguy/Harbor-Harness/issues/61",
+  "item": "The build-from-source instructions clone the wrong repository URL (harbor-sh/harbor) instead of refusedguy/Harbor-Harness.",
+  "match_rule": "The critique must assert that the git clone URL (and resulting directory name) is wrong or points to a different repository. A generic remark that build instructions are sparse does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing actual repository URL."
+ },
+ "I075": {
+  "url": "https://github.com/p2p-ld/numpydantic/issues/87",
+  "item": "The README install command uses the extra `[array]` but the package defines it as `[arrays]`.",
+  "match_rule": "The critique must assert that the `numpydantic[array]` extra name is wrong (should be `arrays`) or does not exist. A generic remark about install options does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires pyproject extras names."
+ },
+ "I076": {
+  "url": "https://github.com/allometric/allometric/issues/205",
+  "item": "Links in the README point to outdated or nonexistent pages on the documentation site.",
+  "match_rule": "The critique must assert that one or more README links to allometric.org are broken, outdated, or point to the wrong page. A generic remark that the README relies on the external site does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking link targets."
+ },
+ "I077": {
+  "url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops/issues/793",
+  "item": "The Cross-CLI Installation section tells users to run `npx claude-ops-installer install`, but that package is not published on npm, so the command fails.",
+  "match_rule": "The critique must assert that the `npx claude-ops-installer install` command will not work because the package is not on npm (or must be run from the cloned repo). A generic remark that installation is complex does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking npm registry."
+ },
+ "I078": {
+  "url": "https://github.com/loopj/aiovantage/issues/382",
+  "item": "The state-change subscription example uses an outdated API: `subscribe(callback)` with a three-argument callback, whereas the current API is `subscribe(event_type, callback)` with a single typed event.",
+  "match_rule": "The critique must assert that the subscribe example's call signature or callback signature is wrong/outdated (e.g. missing event type argument, wrong callback parameters). A generic remark that examples lack detail does not match.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires current library API."
+ },
+ "I079": {
+  "url": "https://github.com/LyraCoreProject/LyraCore/issues/658",
+  "item": "The Importing data section says the import reads the cMaNGOS classic-db dump the user supplies but gives no way to supply it and does not explain that the import downloads it automatically.",
+  "match_rule": "The critique must assert that the README is unclear or silent about how the cMaNGOS classic-db dump is obtained/provided to the import (only the client data path is configured). A generic remark that importing is underdocumented without reference to the database dump does not match.",
+  "kind": "conceptual",
+  "static_detectable": "yes",
+  "static_why": "Doc says user supplies dump but gives no way to."
+ },
+ "I080": {
+  "url": "https://github.com/chouchongYHMing/Jiao_Translator/issues/1",
+  "item": "The setup instructions only give the Unix `source .venv/bin/activate` command and no Windows equivalent for activating the virtual environment.",
+  "match_rule": "The critique must assert that the venv activation (or setup commands) are Unix-only and lack Windows/PowerShell instructions. A generic remark that setup is platform-specific without referring to venv activation or Windows commands does not match.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Unix-only activate command; Windows gap is general knowledge."
+ },
+ "I081": {
+  "url": "https://github.com/YusDyr/luci-app-trafficctl/issues/47",
+  "item": "The 'Option B — SSH (with signature verification)' install path (add the signing key, then apk add without --allow-untrusted) cannot work because standalone .apk files are not signature-verifiable this way, so following it fails with an UNTRUSTED signature error.",
+  "match_rule": "The critique must assert that the signature-verified SSH install option (adding the .pub key to /etc/apk/keys and running apk add without --allow-untrusted) will fail or that per-package signature verification of the downloaded .apk is not supported/does not work. Generic remarks that installation is unclear or that security/signing should be explained do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires apk signature-verification behaviour; seen by running."
+ },
+ "I082": {
+  "url": "https://github.com/vdbulcke/zellij-workspace/issues/9",
+  "item": "The README's 'Cosign Install' link points to the outdated URL https://docs.sigstore.dev/cosign/installation/, which returns 404.",
+  "match_rule": "The critique must identify the cosign installation link specifically as broken, dead or outdated. A general remark that links should be checked or that cosign installation is not explained does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking link liveness."
+ },
+ "I083": {
+  "url": "https://github.com/ChainLearnOfficial/chainlearn-contracts/issues/426",
+  "item": "The README's API documentation is internally inconsistent: claim_reward is given two different signatures ((learner, quiz_id, score) vs (learner, course_id, quiz_id)), ProgressInfo is documented twice with different fields, and TOKEN_DECIMALS is listed as a shared constant that does not exist.",
+  "match_rule": "The critique must point out at least one of: the conflicting claim_reward signatures, the duplicate/contradictory ProgressInfo definitions, or that TOKEN_DECIMALS is not actually a shared constant. Generic remarks that the API docs may be outdated or inconsistent, without naming one of these, do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Two conflicting signatures and duplicate struct within README."
+ },
+ "I085": {
+  "url": "https://github.com/rrthomas/sokoban/issues/3",
+  "item": "The README describes Sokoban as a Repton-like game of tunnelling through caverns collecting diamonds and avoiding falling rocks, which is a different game, not Sokoban (pushing boxes to target squares).",
+  "match_rule": "The critique must assert that the README's description of the game is wrong, i.e. that it describes a Repton/Boulder-Dash-style diamond-collecting game rather than Sokoban's box-pushing puzzle. Generic remarks that the introduction is vague or could be expanded do not count.",
+  "kind": "conceptual",
+  "static_detectable": "yes",
+  "static_why": "General knowledge: description fits Repton/Boulder Dash, not Sokoban."
+ },
+ "I086": {
+  "url": "https://github.com/redhat-developer/vscode-yaml/issues/1269",
+  "item": "The example settings in the 'Associating a schema to a glob pattern via yaml.schemas' section are invalid JSON because some keys are not wrapped in double quotes.",
+  "match_rule": "The critique must state that the yaml.schemas example settings snippets are invalid JSON (e.g. unquoted keys / syntax errors). A generic remark that the configuration section is confusing or that examples should be added does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Unquoted JSON keys visible as invalid syntax."
+ },
+ "I087": {
+  "url": "https://github.com/coconautilus17/LibraForge/issues/260",
+  "item": "The credits section links Uvicorn to the outdated URL https://www.uvicorn.org/ instead of https://www.uvicorn.dev/.",
+  "match_rule": "The critique must identify the Uvicorn link as wrong or outdated. Generic remarks about checking links or about the credits section do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing project's current domain."
+ },
+ "I088": {
+  "url": "https://github.com/supabase/server/issues/188",
+  "item": "The README documentation table links to src/adapters/README.md for the adapter inventory/contribution guide, a file that only exists in a source checkout and is not shipped in the published package, so the link is unreachable for installed-package readers.",
+  "match_rule": "The critique must assert that the src/adapters/README.md reference is broken, missing or unavailable to package users (or points outside the shipped docs). Generic remarks that adapters are under-documented do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires published package contents."
+ },
+ "I090": {
+  "url": "https://github.com/eclipse-cdt/cdt/issues/1492",
+  "item": "The README's 'Eclipse IDE download site' link points to https://eclipseide.org/release/, which returns 403 Forbidden.",
+  "match_rule": "The critique must identify the Eclipse IDE download site link as broken, forbidden or wrong. Generic remarks that download instructions could be clearer do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires checking link response."
+ },
+ "I091": {
+  "url": "https://github.com/onionshare/onionshare/issues/2100",
+  "item": "The Linux install instructions link is hardcoded to the outdated 2.6 version of the OnionShare documentation rather than the current version.",
+  "match_rule": "The critique must state that the Linux installation documentation link points to an outdated/hardcoded docs version (2.6). Generic remarks about Linux installation being under-explained do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing current docs version."
+ },
+ "I092": {
+  "url": "https://github.com/NOAA-EMC/WW4/issues/62",
+  "item": "The README contains no setup or build instructions and no list of required modules/libraries.",
+  "match_rule": "The critique must assert that the README lacks instructions for building/compiling the project or lacks the list of build prerequisites/dependencies. A remark only about missing usage examples or general documentation quality does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Absence of setup/build instructions visible."
+ },
+ "I093": {
+  "url": "https://github.com/parenworks/clatter.el/issues/73",
+  "item": "The use-package installation snippet omits the required (clatter-setup) call, which appears only under manual installation, making it seem setup is needed only for manual installs.",
+  "match_rule": "The critique must assert that the use-package snippet is missing the clatter-setup call, or that it is unclear whether clatter-setup must be called for package-manager installs. Generic remarks that installation or configuration is unclear, without referring to clatter-setup, do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Setup call in manual section absent from use-package snippet."
+ },
+ "I094": {
+  "url": "https://github.com/ossia/qml-remote/issues/110",
+  "item": "The Getting Started section points to releases/latest (a 2021 release) with obsolete WASM/SimpleHTTPServer instructions and does not mention the Continuous release channel or the AppImage/native builds that are the current distribution.",
+  "match_rule": "The critique must assert that the Getting Started download/run instructions are outdated, e.g. that they only cover the old WASM tarball with python SimpleHTTPServer, point to a stale latest release, or omit the Continuous channel / native (AppImage) builds. A generic 'installation is unclear' remark does not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires release dates and current distribution channels."
+ },
+ "I095": {
+  "url": "https://github.com/SuntekCorps-xLab/eric-compliance-tools/issues/26",
+  "item": "The Quick Start installs only Chromium (npx playwright install chromium), but the E2E suite's mobile project needs WebKit, so following the README makes the mobile tests fail.",
+  "match_rule": "The critique must assert that the Playwright browser install step is insufficient, specifically that WebKit (or all required browsers) must also be installed for the E2E/mobile tests. Generic remarks that test setup is unclear do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires test config showing WebKit mobile project."
+ },
+ "I100": {
+  "url": "https://github.com/HexRaysSA/ida-hcli/issues/300",
+  "item": "The README gives no installation command, forcing readers to go to the external docs site to learn how to install hcli.",
+  "match_rule": "The critique must assert that the README lacks installation instructions/an install command for hcli. Generic remarks about missing usage examples or overall brevity do not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Missing install command visible from absence."
+ },
+ "I104": {
+  "url": "https://github.com/mrpmorris/Roslynk/issues/11",
+  "item": "The README only documents Claude setup and gives no dotnet tool install step or manual mcp.json configuration (including the required trailing stdio argument) for other MCP clients.",
+  "match_rule": "The critique must assert that setup instructions for non-Claude MCP clients (a manual mcp.json/config entry or the dotnet tool install) are missing, or that the required stdio argument is undocumented. A generic 'installation is unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "Only Claude setup; missing other-client setup visible."
+ },
+ "I105": {
+  "url": "https://github.com/camaraproject/DeviceIdentifier/issues/201",
+  "item": "The README Scope capability list omits the retrieve-ppid (pseudonymised device identifier) capability.",
+  "match_rule": "The critique must assert that the Scope/capability list is missing the PPID / pseudonymous identifier retrieval capability. Generic remarks that the scope is incomplete or outdated do not count.",
+  "kind": "mechanical",
+  "static_detectable": "no",
+  "static_why": "Requires knowing capability added in spec release."
+ },
+ "I106": {
+  "url": "https://github.com/php/pie/issues/771",
+  "item": "The install one-liner runs `gh attestation verify` without stating that gh must be authenticated (gh auth login or GH_TOKEN), so it fails in fresh environments such as Docker.",
+  "match_rule": "The critique must assert that the install command depends on an authenticated GitHub CLI (or that the one-liner fails in Docker/unauthenticated environments) and this prerequisite or alternative is not documented. A generic 'install prerequisites are unclear' does not count.",
+  "kind": "mechanical",
+  "static_detectable": "yes",
+  "static_why": "General gh knowledge: attestation verify needs authentication."
+ }
+}

@@ -1,0 +1,1232 @@
+[
+ {
+  "case": "I001",
+  "issue_url": "https://github.com/KayKoehle/myTCG/issues/4",
+  "repo": "KayKoehle/myTCG",
+  "parent_sha": "5e17ba4d270ffcb5fe5f3401750a580127b4755b",
+  "fix_sha": "1d7efc1f9eda287190a3941be002575725013766",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "edabb152f39a4efba5f923403b17805b3c45af559ecf08e06a85d144a52da373",
+    "post_sha256": "c46f7c7fdce66cfbdc7b84ec383c02d4a6eec3b6eebca9a302a4b10998027319"
+   }
+  ]
+ },
+ {
+  "case": "I002",
+  "issue_url": "https://github.com/looseleafgallery/trellis/issues/2",
+  "repo": "looseleafgallery/trellis",
+  "parent_sha": "f20494a3d5ed8ae4995990ee281175bdeaa175d2",
+  "fix_sha": "016da741366b12be780d47c9c67ee6e6ef1baf94",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "83a58abc639c724a1df711e2e9be0f7f0355c731d058c3ba4921021c72d9d5c5",
+    "post_sha256": "87fb882ba6c06360414b94667d44245a0ec068e758c95015baa168e2201d4f33"
+   }
+  ]
+ },
+ {
+  "case": "I003",
+  "issue_url": "https://github.com/Healthy-Stellar/Healthy-Stellar-backend/issues/780",
+  "repo": "Healthy-Stellar/Healthy-Stellar-backend",
+  "parent_sha": "f01a94b0fa52c75905cc6b47c57014e8342bce27",
+  "fix_sha": "f13ddfa2d66edf2175f9660591d01590dac352d5",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "3adda645e6603041643ddf67808d30a2de35561ecc9ea4a728e25b2c8590f828",
+    "post_sha256": "817474c597752767c613fbbbac3614d37635c986def4364dacd9826e3e365f0e"
+   }
+  ]
+ },
+ {
+  "case": "I004",
+  "issue_url": "https://github.com/r-lib/ir/issues/137",
+  "repo": "r-lib/ir",
+  "parent_sha": "a9b9fb19f505c18888c520a0c813f80c52ffee56",
+  "fix_sha": "ac2c59ebbe16b216b0e1732e86e20169ff4d15dd",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "bdcec0cb0b3e2dd67a78c5ea32b2b6b31e252c4b17659dc08aa595a48dfa2927",
+    "post_sha256": "d8a4b2614f744cddb27cfff470b0a7561319d67e085fa36a72852a9c1fd8cd4e"
+   }
+  ]
+ },
+ {
+  "case": "I005",
+  "issue_url": "https://github.com/cloud-gov/cg-oracle-database-19c-stig-overlay/issues/5",
+  "repo": "cloud-gov/cg-oracle-database-19c-stig-overlay",
+  "parent_sha": "126aad7ee7fe69ebdc81885f8777ec66f516c650",
+  "fix_sha": "caa6959677e0e21f2e68116a29c8a66d7365ad70",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "5cd6d82db6034c32d1a81268c05211181e4c5e91e256e6e2a2784fa40dfcdb84",
+    "post_sha256": "478d9a1ffceee35ca6ac7662de89fe3591dc809ab84e3934f894b66538ace72c"
+   }
+  ]
+ },
+ {
+  "case": "I006",
+  "issue_url": "https://github.com/qbtrix/soul-protocol/issues/286",
+  "repo": "qbtrix/soul-protocol",
+  "parent_sha": "dae6aa67f86cbdafa8a1d44ac8cf2f48abaddd62",
+  "fix_sha": "294943468b5a4f2bf4cae235bf13359fcd7336dc",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "ad9001a4393a0073a0d682de84d7ef36e149441e202b0590ae9211a513cc8232",
+    "post_sha256": "11fa3a969c1aae9805e151142b1fa5b63b1fba8dea9de4711b683d3a52febdae"
+   }
+  ]
+ },
+ {
+  "case": "I007",
+  "issue_url": "https://github.com/Djarvur/ddg-search/issues/19",
+  "repo": "Djarvur/ddg-search",
+  "parent_sha": "d39d278e266ca1bcc8fe532e762c81f8424166ac",
+  "fix_sha": "497e2f98eee518cb43f3d6523fa44731786d350c",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "d270a2c5364199794d57a1023de2bf15e8265fc10fd8d45e57d238132e247ef7",
+    "post_sha256": "a4c9238f39400d4e7cdeda0d74316c55c61a6b7f74922ad8f1bf6a1653152dfa"
+   }
+  ]
+ },
+ {
+  "case": "I008",
+  "issue_url": "https://github.com/svsticky/Tavern/issues/139",
+  "repo": "svsticky/Tavern",
+  "parent_sha": "f285af572fa4025be26922c2983c2bef956ca441",
+  "fix_sha": "fefdf38757373c11442a1c3a99f57210669e3f0a",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "850aa88abf082e09a454f61063191e3550cc8209c974d41ebff5972f3ab10187",
+    "post_sha256": "518286c0b36d5136fceb8f381e3ec6503bda4d79a6dea85285982355b0170313"
+   }
+  ]
+ },
+ {
+  "case": "I009",
+  "issue_url": "https://github.com/the-monkeys/the_monkeys/issues/590",
+  "repo": "the-monkeys/the_monkeys",
+  "parent_sha": "32784bc04560e8eaab3544b659a3248008fbac2c",
+  "fix_sha": "40d83615aaa50799c5ee262e8f9b6d91a42d4fb1",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "e2d1558155f607e0d69bf16d29f22e36e46470c760bfcb052e02bd5b3f70f5e0",
+    "post_sha256": "5631a84050cb42ea61c81f6cd47afc29d99a73048f62d6ac72c7e1df636453b3"
+   }
+  ]
+ },
+ {
+  "case": "I010",
+  "issue_url": "https://github.com/onemen/firefox-scripts/issues/86",
+  "repo": "onemen/firefox-scripts",
+  "parent_sha": "3883dcb20ed6b1843af88acc313b6ef875c16e38",
+  "fix_sha": "db393ec7048ad6b59e4078f09d699976420553ac",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "b086fcf15dbfbabd82e5d57a80fdeaa485be5a7c7c7471e12f1e2817abe9c6d0",
+    "post_sha256": "be268f4ee5cd5caa51b4e584416415988eb954c850125646c1467fc0067b4424"
+   }
+  ]
+ },
+ {
+  "case": "I011",
+  "issue_url": "https://github.com/rmoesbergen/openwrt-ha-device-tracker/issues/85",
+  "repo": "rmoesbergen/openwrt-ha-device-tracker",
+  "parent_sha": "5b131efe951dfc6f604d8ce7f5080ee5742fabf8",
+  "fix_sha": "7a5191224abc2bfdd7c73c8331ac7a3529953b4c",
+  "docs": [
+   {
+    "pre_path": "README-lightweight.md",
+    "post_path": "README-lightweight.md",
+    "pre_sha256": "7b7d09e96335b79c392779110d9218cc87489d76e3b25fe09248f4e211b5437c",
+    "post_sha256": "b306e2f66b1e183a58559c14ccb066f8cc36eb456a63ef576ac4520da93c6230"
+   }
+  ]
+ },
+ {
+  "case": "I013",
+  "issue_url": "https://github.com/danyuchn/asd-ste100-skill/issues/10",
+  "repo": "danyuchn/asd-ste100-skill",
+  "parent_sha": "e4d64d1dc7f80baa6c590bbf47a99280a90e1b40",
+  "fix_sha": "004bcce4f27b07690a261987d0b295065e79bfaa",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "1e3f152b498b09a9a199af0fc612e895d2263d043dbfa78241b1887ef39fd17b",
+    "post_sha256": "4e6f924cf42a6eee485ea844b5caa7e39f31e67040dc7fe12a0c78aeb92ce8cd"
+   }
+  ]
+ },
+ {
+  "case": "I014",
+  "issue_url": "https://github.com/kellymusk/Aframp/issues/426",
+  "repo": "kellymusk/Aframp",
+  "parent_sha": "1a3b54411e3094b18d1d9557af86089e6b949a24",
+  "fix_sha": "650f09656bfb42b1189f5fb0733609a16b1b5876",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "6df95903c32818087ecab13bfceb56797903de5b41ca787452369312e1347fd5",
+    "post_sha256": "e6b2680c641671f517b789db6f96ff8ca3c5eea1c8ec76be3b5c6490618116a9"
+   }
+  ]
+ },
+ {
+  "case": "I015",
+  "issue_url": "https://github.com/conduit-protocol/streamFi-contracts/issues/289",
+  "repo": "conduit-protocol/streamFi-contracts",
+  "parent_sha": "2c8a4ccb2af14eda88f44a65a4d24c4287dd1a2d",
+  "fix_sha": "9e4ffd103e46b454aad52159df20cc3165680a60",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "cde06f9f02b5834a7cf8f3edc9e69cfdd2c40db09a72241686493dc0fd96107b",
+    "post_sha256": "97aa7b48594ad325870aa5cfaade8fb30dff8049252b0fdf5b31a6e2c8137618"
+   }
+  ]
+ },
+ {
+  "case": "I016",
+  "issue_url": "https://github.com/aksman-dev/hearmark/issues/5",
+  "repo": "aksman-dev/hearmark",
+  "parent_sha": "2856d840d2718283861372bf353ca0f80e8e2a36",
+  "fix_sha": "e11c73b35aa80a617e8a5cab58edc6c168879ba1",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "cd7e92ab8358482daad7a190945b02dd90d735bcc9bd09f05a23877df1c640f5",
+    "post_sha256": "d7019182a650a478c96f91ce40f6f8a0b5dff5822025ab209fd0146d05089f9d"
+   }
+  ]
+ },
+ {
+  "case": "I017",
+  "issue_url": "https://github.com/Ares960826/zotero-grouptag/issues/1",
+  "repo": "Ares960826/zotero-grouptag",
+  "parent_sha": "3d60c01a50c437a1f42930227a27a2547adbd1bb",
+  "fix_sha": "7b72c699713b79478e002a9c6d9868d24c941ca5",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "95193ccf3a884175e42bc9b8687c2005c651c006cf3cb05e56214f989048dbac",
+    "post_sha256": "aa32c0eac35ec975b5e9e36ff17b25893ac12ac093ce01fc63c6acb9e2502780"
+   }
+  ]
+ },
+ {
+  "case": "I018",
+  "issue_url": "https://github.com/plur-ai/plur/issues/618",
+  "repo": "plur-ai/plur",
+  "parent_sha": "1bc349a0c088699d90176661d57078981ddb63ab",
+  "fix_sha": "e3386bed4deddd91cfcc05b0ca203e30076073fb",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "f2085b3052bc32ed688b89d17be539a7e5e857952afe8a5960fdca708e606ae2",
+    "post_sha256": "f6d41978c02c5817215db3729315af9c6bc4b655b66f61a4df068ae5e02aa1e4"
+   }
+  ]
+ },
+ {
+  "case": "I019",
+  "issue_url": "https://github.com/gflohr/anki-chess-opening-trainer/issues/31",
+  "repo": "gflohr/anki-chess-opening-trainer",
+  "parent_sha": "c3ba120444808f4207a99512515eac071b152062",
+  "fix_sha": "714690a75c6973c99794e4771a17251483481857",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "00874302cb851f4e246ae32c07f180c44625f3e3ff84a0e3864e9385b05ff2a1",
+    "post_sha256": "c4103de7614eeed0072ca31fef4105177d3324b012da20e508c941c7b631082c"
+   }
+  ]
+ },
+ {
+  "case": "I020",
+  "issue_url": "https://github.com/fennaraOfficial/fennara-godot-ai/issues/75",
+  "repo": "fennaraOfficial/fennara-godot-ai",
+  "parent_sha": "9dc1af755e0cf2ba0067e6eb38cee5fd8eeda5e4",
+  "fix_sha": "a70ef8b736c4748fc2a0bca73b61eae5810a4bd0",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "744eefcc2d85f4304ac78beb3e2be94e67ac6218af8a2c8943baaeb39c345203",
+    "post_sha256": "20e5112dd129af29df522d234356278789d42d2abcc824fda9ebbb2fa14520c6"
+   }
+  ]
+ },
+ {
+  "case": "I021",
+  "issue_url": "https://github.com/bmlt-enabled/mayo/issues/321",
+  "repo": "bmlt-enabled/mayo",
+  "parent_sha": "8067497ebf7a82fba4e00a66dfd5a43c60ff8b84",
+  "fix_sha": "990b7f53b7720ab699fb896679805430737bba21",
+  "docs": [
+   {
+    "pre_path": "readme.txt",
+    "post_path": "readme.txt",
+    "pre_sha256": "6e1a243cbc06d80ddb0016b0634ed5b5be68323afd3c1fafbf7f1ff3c0e02b27",
+    "post_sha256": "5ac8e05d63072aad7f0009f84b1b2ef7865c991778175a2fe8a09f9e4464c9fe"
+   }
+  ]
+ },
+ {
+  "case": "I022",
+  "issue_url": "https://github.com/AfriWage/AfriWage/issues/128",
+  "repo": "AfriWage/AfriWage",
+  "parent_sha": "389b73fb087eee7556149d0b1c78f77e6999fd19",
+  "fix_sha": "0d764b29305dac6d03fb0c6b6f4bd28a23f2ade0",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "bb472f78226555f32d458e59c6e5d1f15234fe108b1fcb1862f2968da3b20cf7",
+    "post_sha256": "6e45de3b796beeb4424cc2343f117f30b8ab45f44e2157952fea8e3de0a4610d"
+   }
+  ]
+ },
+ {
+  "case": "I023",
+  "issue_url": "https://github.com/swigerb/squad-hub/issues/119",
+  "repo": "swigerb/squad-hub",
+  "parent_sha": "7357b97def731f3f4f01b4aed71c9bc97bd96d9c",
+  "fix_sha": "bf5116a88b05c2ec03efb17eefdb8f16400776d8",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "40bd6dc925ad7c5e641b28a6b2092a84aa1c570822126f1fabfaca3db5466d09",
+    "post_sha256": "fa9a1304a8de8355b3457d147e06651ec7257005ea20d55f856db244618611ea"
+   }
+  ]
+ },
+ {
+  "case": "I025",
+  "issue_url": "https://github.com/Doist/outline-cli/issues/87",
+  "repo": "Doist/outline-cli",
+  "parent_sha": "16c28af8569fe27dad25b7b828f20d0c5ec134cc",
+  "fix_sha": "8bfe8a0d4f5a7b8e1be8a5bef1de3c6661cfd205",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "4717afff47e15b2cb687da74414b7d4891ea5890abebc6ed7ce4a20e56da90e1",
+    "post_sha256": "1d0fca57a9aa04f9eee536e1ae51edd19a8c68977dcca6618ad60be24c5b4b80"
+   }
+  ]
+ },
+ {
+  "case": "I026",
+  "issue_url": "https://github.com/vibe-code-tours/team-09-app/issues/100",
+  "repo": "vibe-code-tours/team-09-app",
+  "parent_sha": "81d3ad896bc93c7a4265e05dac60feeb01d19ea4",
+  "fix_sha": "71081191f8ca9036ba01f2f82f8b228d347be322",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "300845f89d49b19d0168e0b434b82110e12d395db912e7381044e0b2afaa640a",
+    "post_sha256": "14b09f1cc1db63e46b8eb26efcbdfed497fed90a3957530413f3cf97e5c9f5af"
+   }
+  ]
+ },
+ {
+  "case": "I029",
+  "issue_url": "https://github.com/natashabatalha/PandExo/issues/120",
+  "repo": "natashabatalha/PandExo",
+  "parent_sha": "34e42d81f782c8358bb30fc6e8cdf4b87e488263",
+  "fix_sha": "e87f5ebd40da94f9f15c9d4475fe39739fb0c835",
+  "docs": [
+   {
+    "pre_path": "docs/installation.rst",
+    "post_path": "docs/installation.rst",
+    "pre_sha256": "9a6ce3e5192b4a29152d81160b8493070a0b20922d0d51685b4f6032d10cb7ab",
+    "post_sha256": "8ef6b5a9cacc622b9cfb4ec323d0b2cda65a53ca9d9c71c01eedf90fe913513e"
+   },
+   {
+    "pre_path": "docs/installation_windows.rst",
+    "post_path": "docs/installation_windows.rst",
+    "pre_sha256": "0d369237911a65ad4a6dd3dbd5a96709bd074ac7410ee65e052c0e9e1e489e31",
+    "post_sha256": "568eaea8e3f41cae3737f8eec4b80a7c38dde7e013e509cc74f0e15d2663ff26"
+   }
+  ]
+ },
+ {
+  "case": "I030",
+  "issue_url": "https://github.com/VilnaCRM-Org/ui-toolkit/issues/85",
+  "repo": "VilnaCRM-Org/ui-toolkit",
+  "parent_sha": "a64e2e7a903947331865870ae75e2cf30870568f",
+  "fix_sha": "2cbad40ec0ad8e52d6c744034566d2659ed41bf8",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "da6de56d4e9e907f5ee1e67941e827d1dcea563233a7d9354b5d1c825d834beb",
+    "post_sha256": "1e7f7964c044e2701fe143c9e29ce2af8a64b1010df65a749845728e4fd754c6"
+   }
+  ]
+ },
+ {
+  "case": "I031",
+  "issue_url": "https://github.com/codingjoe/django-health-check/issues/760",
+  "repo": "codingjoe/django-health-check",
+  "parent_sha": "918881bc37d00cd2b496afe0e9f659fcb9614b40",
+  "fix_sha": "8d0e3dc91c93fea8bfd95bdb8d61e862e9e5f191",
+  "docs": [
+   {
+    "pre_path": "docs/install.md",
+    "post_path": "docs/install.md",
+    "pre_sha256": "e1f15ab5d87a159238f5909b23ad929a1c8c8c0217d2b2964e2b3f6f91f87128",
+    "post_sha256": "5f7375a17591fd6a78732a4ac94adabec34e4603f16c52e5682a8d2439a717d7"
+   }
+  ]
+ },
+ {
+  "case": "I032",
+  "issue_url": "https://github.com/amerand/PMOIRED/issues/15",
+  "repo": "amerand/PMOIRED",
+  "parent_sha": "86f5c0e3816260d69b95a49bdf92d6c66a22469e",
+  "fix_sha": "7425063c66f494f133f984720c7f11fbf61feaec",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "3f92172878a082f25c25d387c400d1e2fb648a4bf2fd410671fbaaab148ba53c",
+    "post_sha256": "e62e2a31c9878575e81caf5e18ad19d2e924832d53feaab0a8c44bd47017bde2"
+   }
+  ]
+ },
+ {
+  "case": "I033",
+  "issue_url": "https://github.com/massimobonanni/DBSemanticSearch/issues/3",
+  "repo": "massimobonanni/DBSemanticSearch",
+  "parent_sha": "8a7f7b23c7e27ec2ade8ceef4d159f791ed3f38c",
+  "fix_sha": "5e9c8bc0018af61de209a0c4257e986d9e930de2",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "268e99d09b04c6d922bed52d77c7eb260b019f537d96e5922ae405328526a18e",
+    "post_sha256": "829b0aafd688db95eb59908572da28d51d8814c49c2b7bff1d263b9c203b0171"
+   }
+  ]
+ },
+ {
+  "case": "I034",
+  "issue_url": "https://github.com/PierrunoYT/MossTTS-Pinokio/issues/11",
+  "repo": "PierrunoYT/MossTTS-Pinokio",
+  "parent_sha": "a831fb28d4fbdf20214f93803a905b32eb78a12e",
+  "fix_sha": "4e6f4a2d4482efe5ac91ff95597d9aa61e4d0a6c",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "40f01914be04837ca5068a21aff357e64140ae8e969dd26ed9233abe85ae3f2c",
+    "post_sha256": "c5ffff18f8a516deb1bd32a93d6bba4b948a08f52be2e713015242abb05fb284"
+   }
+  ]
+ },
+ {
+  "case": "I035",
+  "issue_url": "https://github.com/Necmttn/ax/issues/797",
+  "repo": "Necmttn/ax",
+  "parent_sha": "345a70836e547a2dce5c0a2cd3ac4a401b34d66a",
+  "fix_sha": "8356f6df8d0050c9f52a5af2a68cd3029b984aea",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "6105680448c641ca5327727d2330a273d563c295cc7bf8388b1e1b8bd98ef131",
+    "post_sha256": "b45f14e76b9afae43e71aabf47bcbbfde72167e5e13523827a418915a696be4c"
+   }
+  ]
+ },
+ {
+  "case": "I037",
+  "issue_url": "https://github.com/nikiomori/Pretype/issues/2",
+  "repo": "nikiomori/Pretype",
+  "parent_sha": "9b4a4ef6735e5058520006ac690bb1b4983801bd",
+  "fix_sha": "38fab578189c7f6ab037ee1a388459eff988a80c",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "39c336e8d8aa71cdec37cbe1a54847a5fcd9857fc5b9157798c348b3c0018b91",
+    "post_sha256": "f65454b925477ef74e57aea84f838ca2ceb402b2f15777ab1d71cc8111ca1c0a"
+   }
+  ]
+ },
+ {
+  "case": "I040",
+  "issue_url": "https://github.com/TNG/oh-my-agentic-coder/issues/53",
+  "repo": "TNG/oh-my-agentic-coder",
+  "parent_sha": "a8a193ba20dfcc601a239170b67f16af73422a72",
+  "fix_sha": "88694ea3fcadec8c0934639c2be7b7afa5c498e4",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "721f8ccd4b815219f96b4ff6596b139a814bc3b6bd061d906022c78985c7e09c",
+    "post_sha256": "054191afd497f4752f27044f051018e9219e76c5a7e723cbf2ceb8ca21c1bec9"
+   }
+  ]
+ },
+ {
+  "case": "I041",
+  "issue_url": "https://github.com/jerichoBob/aidev-toolkit-dist/issues/2",
+  "repo": "jerichoBob/aidev-toolkit-dist",
+  "parent_sha": "ec3ca6e85d239e031b40a82522d091b52184cadb",
+  "fix_sha": "eef5e5492bc84ff68f392d64cb97760d91de1f65",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "ae10b8bbbc831f59de3a14af990a915c1f22015e08b9cb9fef69a194530d4938",
+    "post_sha256": "c3e2d8be098a110580290fa2485dc58b54354124c1a08428b6439eed514b6e43"
+   }
+  ]
+ },
+ {
+  "case": "I043",
+  "issue_url": "https://github.com/crawlseo/crawlseo/issues/1",
+  "repo": "crawlseo/crawlseo",
+  "parent_sha": "497ff6b9bbadfa44a903092030e59a03e9fd3668",
+  "fix_sha": "12881124c15d332f73d44ff6f980c72c32bf708f",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "7146f7d8c298b0f68ef04d7fbd16bf8f54dccdf9bc23c850950f9df0fc507757",
+    "post_sha256": "574e5925b602a2d6aa5a16b8e4337e65b5570863614bfb1518a03326e4f7f6c5"
+   }
+  ]
+ },
+ {
+  "case": "I044",
+  "issue_url": "https://github.com/a11q1/pair-universal/issues/1",
+  "repo": "a11q1/pair-universal",
+  "parent_sha": "7a8e879aca0f0f6b88460783df9a4afc4575281f",
+  "fix_sha": "3675fd5072c55d69d926d368be61548a41dd7767",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "47a7aa9b269419c689c85c1cbcb5fa88412e5528a69b167ebd918f85cd5716d0",
+    "post_sha256": "14596726c39aae72d12e4dfe5c5b85e35c0ea0dbc0bbd72016d0b24a503b766f"
+   }
+  ]
+ },
+ {
+  "case": "I046",
+  "issue_url": "https://github.com/team-telnyx/telnyx-webrtc-android/issues/814",
+  "repo": "team-telnyx/telnyx-webrtc-android",
+  "parent_sha": "817cbfb0b0cc150eae555e3bb4d99c340bf0dff6",
+  "fix_sha": "e508e66422d4aca67f22e25de881fc5e5f5fde4a",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "0fcee70e5969a38c62144e4b4aa93e085e7da0e7b75ce1ca6ffa9c41e67a1e95",
+    "post_sha256": "9fe0e19d7aff227cc9e70215dad2b97e1b6aa6bee4be65320bac2df6205631c1"
+   }
+  ]
+ },
+ {
+  "case": "I047",
+  "issue_url": "https://github.com/weisJ/jsvg/issues/174",
+  "repo": "weisJ/jsvg",
+  "parent_sha": "5b909df719f1f35edd489ed7b4384dc5e78a14ca",
+  "fix_sha": "2049286501c5085b82af49b0477ddee72790ca6d",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "971c7c50ffeac40f6b13a47e6295e1aa489b79280841e314f770df0670a83247",
+    "post_sha256": "99e9ffd1d90f4cd40ef44f19be56be9c4c9b8f56c62c320c5b0711cd12684afd"
+   }
+  ]
+ },
+ {
+  "case": "I048",
+  "issue_url": "https://github.com/lanl/bngsim/issues/343",
+  "repo": "lanl/bngsim",
+  "parent_sha": "8717eb917dbe0ada30f748103edf65f3fb5aa15d",
+  "fix_sha": "0f4018d9ae80475f12e0df72eb6ae4b3ab5c4d5b",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "a1073a9f8305fff606d1a162574832120fb2cc4e273f50e0da450574db017591",
+    "post_sha256": "0d16f7eca196d4651d50d998001fc3c5fdfdb549e0fbf33825ecc8ae35765f6d"
+   }
+  ]
+ },
+ {
+  "case": "I049",
+  "issue_url": "https://github.com/CICE-Consortium/Icepack/issues/564",
+  "repo": "CICE-Consortium/Icepack",
+  "parent_sha": "0fa79f8a8c35798adc8e177c25ff7ea5857bb70f",
+  "fix_sha": "a348e4c1e189a48c2d1501875e062da4b532e066",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "a14020fa51e58e4277ac685bcd6196d07bb684b240e5b306ffeeddba4dd204ff",
+    "post_sha256": "2a8ecbaf5542096c982216d44206906f088fb8a5b758fdc1cd29da187bf86495"
+   }
+  ]
+ },
+ {
+  "case": "I051",
+  "issue_url": "https://github.com/yrvelez/qualtrics-mcp-server/issues/11",
+  "repo": "yrvelez/qualtrics-mcp-server",
+  "parent_sha": "2f40f12cc1bc8fda4f2901a16bf6bd845ee32320",
+  "fix_sha": "0b40e26cbac6fa57ccd11060bf59cf9202e42920",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "2d1073b58efacd216b6d55d79178d0d572d6d815a4c644ddf7fdb9796f511b31",
+    "post_sha256": "7d4ff35368a78901fe930a5ea54ca4b14887079fc67ed7b93a3de428991c0e02"
+   }
+  ]
+ },
+ {
+  "case": "I052",
+  "issue_url": "https://github.com/drop-stones/im-switch.nvim/issues/36",
+  "repo": "drop-stones/im-switch.nvim",
+  "parent_sha": "8addcbf7f45a5393715614ff92a1c95c5127acc5",
+  "fix_sha": "227c62dbc577da0e34676b459a4631714563f1a8",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "c64eb28ee3e9d7aceaeb719d26cbab22c2c0f33973bf7e7b44ee9da39618396f",
+    "post_sha256": "ba968e0c717d713f7bc6fc2ef756dd030e4c8e8d6f651b7c1b60f224246ad16c"
+   }
+  ]
+ },
+ {
+  "case": "I053",
+  "issue_url": "https://github.com/rfresh2/ZenithProxyWebAPI/issues/1",
+  "repo": "rfresh2/ZenithProxyWebAPI",
+  "parent_sha": "94500db403e99ed31dea9c7b2d4170f43f5e4c70",
+  "fix_sha": "cc9ca38ad03c3b1c21009287a0e6a389791a67a0",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "853df1379893a8ae39e7d3d5d629173b37c2432542de8b0e0ef23f30c5d8521b",
+    "post_sha256": "65f3b9f41774887ca0d4594d9e39a2d5480c849883ea17bfbcec2c176a19ded1"
+   }
+  ]
+ },
+ {
+  "case": "I054",
+  "issue_url": "https://github.com/SebGalina/betaflight-claude-skill/issues/11",
+  "repo": "SebGalina/betaflight-claude-skill",
+  "parent_sha": "92d1f7bd9171f401a202a47685f2bd18b41b43c9",
+  "fix_sha": "66e0ecedcb29ba0fb8e672815888d3f84993a01c",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "c6a2b6f25ca880cb30a18d1dfdbd84af5a0a947a630458cdce859fa60ca84950",
+    "post_sha256": "8da58272960b33b9d6fcbadb3023d63417fa77e4e682026e6a51d71a6754b98a"
+   }
+  ]
+ },
+ {
+  "case": "I056",
+  "issue_url": "https://github.com/pkoretic/qt-nats/issues/22",
+  "repo": "pkoretic/qt-nats",
+  "parent_sha": "39d376e35dacc456a05e7757df58de8c70ad6da9",
+  "fix_sha": "ba88158e5428751ad6daf5495db53541acdeaaed",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "36d4343df578a99b08773f667cbb3c7c721a5fb3fcdfa8864607f2e31baeff4b",
+    "post_sha256": "58302f389010bfa21bb10d497fcb759e963cae374ee356bf347dd99017acdfbe"
+   }
+  ]
+ },
+ {
+  "case": "I059",
+  "issue_url": "https://github.com/sadsfae/ansible-elk/issues/110",
+  "repo": "sadsfae/ansible-elk",
+  "parent_sha": "b8bb40933e555684fcdef21bccdd3a4351f7dff9",
+  "fix_sha": "bd63f98f197fb0cd6445ad40981025afa3345ef8",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "68fef03553fc56f8c93eeb657177a6181d2408ed6149a0d6f6ca13057b11d027",
+    "post_sha256": "fe15902a4ce2843e25af85bb85eae1c1fd7140f6aef6595c0560d0b06a428b5e"
+   }
+  ]
+ },
+ {
+  "case": "I060",
+  "issue_url": "https://github.com/unikraft-cloud/cli/issues/399",
+  "repo": "unikraft-cloud/cli",
+  "parent_sha": "c3fea0731a6e294a69df11b252dd014029683851",
+  "fix_sha": "740a4e962bacf6bfcae77ba93fa094427c721477",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "103b4806c4e63ff592d2e7a37fff8f0fbd6206e25604a4c0e21ddc51231eeb4f",
+    "post_sha256": "34f54a52e4565ccbe81a15adb1bfcee1e92db21f7abe6c1fcbbd2ca93ec5910c"
+   }
+  ]
+ },
+ {
+  "case": "I061",
+  "issue_url": "https://github.com/go-bdd/gobdd/issues/162",
+  "repo": "go-bdd/gobdd",
+  "parent_sha": "2e88865322dfc8828c7e88d9c395fd5cddc1df6f",
+  "fix_sha": "7ebb79d95b3cbb6c9f4f73e1ee7cd340a5ddf674",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "9f5498453f24331c2d6745748ea0bcc5385b02cd7efdf793b7e8302ae60f2c0a",
+    "post_sha256": "ec0c061b734164f48fecaacb8cabe5d79ba5758e9c5eed8c29075127da4e351a"
+   }
+  ]
+ },
+ {
+  "case": "I063",
+  "issue_url": "https://github.com/JSE-ORG/trust-link-contract/issues/581",
+  "repo": "JSE-ORG/trust-link-contract",
+  "parent_sha": "4cb68deeda27cdf3496da1fe8a5214b9026433a0",
+  "fix_sha": "daa66cef7667079a8d6c92b9a39787ea08bd3548",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "1d5131e501265cc7ead34a4ea3a0a90051aa5ce280f06eaaa0dee140fbcfb188",
+    "post_sha256": "85b32c4c44617259ffa23393123d23ed65c5ad1f86750c802c1f5154b1b8e78c"
+   }
+  ]
+ },
+ {
+  "case": "I064",
+  "issue_url": "https://github.com/kourtispanos/Voice_assistant/issues/1",
+  "repo": "kourtispanos/Voice_assistant",
+  "parent_sha": "07d0481c1c77c7ed2fb7f4bdf20f9285d5e78eb5",
+  "fix_sha": "ee0b3283f099ac5674c28c18a6d0d334cf55617b",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "069b53cfa12ad9225e3d3d7339cf0e9c912214175df41a2c33ec6d2c39252479",
+    "post_sha256": "21d32895df04a9e691b5b9b1e669b0151141f718d3f80fe115ea90b31147e1f0"
+   }
+  ]
+ },
+ {
+  "case": "I065",
+  "issue_url": "https://github.com/edrlab/thorium-reader/issues/3699",
+  "repo": "edrlab/thorium-reader",
+  "parent_sha": "8a52461ce40f52f67619ce38ebd03539b29d1f5a",
+  "fix_sha": "ae1692de8df4d1c604954b15d2c8e913ebc13d7b",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "d51d0a88d6b0f08d75d203cdb44b88284313e4c642e96666210422ebc87fb8af",
+    "post_sha256": "742be2a7602867e213ed504977d40315a1082ad080716607166657f2e6d572c1"
+   }
+  ]
+ },
+ {
+  "case": "I066",
+  "issue_url": "https://github.com/yosemite01/stellar-creator-portfolio/issues/1243",
+  "repo": "yosemite01/stellar-creator-portfolio",
+  "parent_sha": "4be8ab2074ccce4dcd8d1ed65e080fc639d78441",
+  "fix_sha": "a57f08330035e44fd5586f49ac62e056cfa22a45",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "77f38b95b85b1f837f73417c88ee6caad32348272ca10868b8d28efdb8f513f6",
+    "post_sha256": "880ed72ccff1a2815a041f4634a147a179f09abc289c5b15a9e2003d9af62947"
+   }
+  ]
+ },
+ {
+  "case": "I067",
+  "issue_url": "https://github.com/ouster-lidar/ouster-ros/issues/555",
+  "repo": "ouster-lidar/ouster-ros",
+  "parent_sha": "f5c4ef872684c748a018e9343958bc53f95f7845",
+  "fix_sha": "be0c7f4c8072a28e06f70698a3779f8072717d55",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "4d3689fe253210938a36123dc9cd956125883503a2e45e5693c775f4514ba9d8",
+    "post_sha256": "7e617d5c468ad468d601ee627cb371037285b1a3feb636acc25c69d2f8b25de9"
+   }
+  ]
+ },
+ {
+  "case": "I069",
+  "issue_url": "https://github.com/maloyan/manim-web/issues/549",
+  "repo": "maloyan/manim-web",
+  "parent_sha": "f2324f50525c28d221df982b14f96c1398bdce8e",
+  "fix_sha": "2742dd134fbdf46e0f551e8028c64b1739c12d62",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "56f3cccb656a88d9f966c2653bd18c9a4a1062ed00738faca1ae35a30873f281",
+    "post_sha256": "cd121f5dfc1a44d2ad988c0bc8d26939f8136b901ea957423895e974abdf43f4"
+   }
+  ]
+ },
+ {
+  "case": "I071",
+  "issue_url": "https://github.com/Panniantong/Agent-Reach/issues/547",
+  "repo": "Panniantong/Agent-Reach",
+  "parent_sha": "ad43b1ff64fd762b808a05f2c390acf9d2d1f168",
+  "fix_sha": "3fc3c32cbb098d6f75dc9499bc8a19fb69d2fc77",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "d89b7b8b2a17429e5d6693ad5eab07de8448a10676fcc0c27363d4fe35873b00",
+    "post_sha256": "5e084f9f275e6366495ffec88116069c3eb7c91c32a400bfbaa74330d3e5469b"
+   }
+  ]
+ },
+ {
+  "case": "I073",
+  "issue_url": "https://github.com/Beneficial-AI-Foundation/probe-aeneas/issues/42",
+  "repo": "Beneficial-AI-Foundation/probe-aeneas",
+  "parent_sha": "5a706c1930918345e9a3e34fdc2724aece0919d2",
+  "fix_sha": "ebfb3fe5ed30dfc4d1ea571778e70300c481f7e8",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "8eacb7d15e14fe4d32dcb3ffc6a723871d95f426ed7896e11c191f2ac699c325",
+    "post_sha256": "1cd7c93a91c14b86f877dafcb0414e372842125e9947656f1eec8dbf938fb420"
+   }
+  ]
+ },
+ {
+  "case": "I074",
+  "issue_url": "https://github.com/refusedguy/Harbor-Harness/issues/61",
+  "repo": "refusedguy/Harbor-Harness",
+  "parent_sha": "7fd01a0e5c6187c1c503f2c9c0e463cd69eb6e5c",
+  "fix_sha": "d4abf5b7060a71ef8605184ed072d99a76ca2e24",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "de6a64e1c62c7ef5215dae5869bbd4999f8046677eef2c82262ddafd271f380c",
+    "post_sha256": "7abc0accfb246aa6cd1ab5d5739b2fe60c43018bff5219e2a5e9b32ceb60d6e2"
+   }
+  ]
+ },
+ {
+  "case": "I075",
+  "issue_url": "https://github.com/p2p-ld/numpydantic/issues/87",
+  "repo": "p2p-ld/numpydantic",
+  "parent_sha": "0f0765c51a238ff9a720e6be99d63b87a62589d2",
+  "fix_sha": "1c4475dcdf237d59e041eaa9b5c03ba212ec0e01",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "a3a345a2fdc1fd7fec2de0d3b477b3b5cc851c93fdad686e0e4a071805736163",
+    "post_sha256": "28222f752441b751ba024eb2a6e9c37b51f3cae16e18b09dc1d84c70c79d2622"
+   }
+  ]
+ },
+ {
+  "case": "I076",
+  "issue_url": "https://github.com/allometric/allometric/issues/205",
+  "repo": "allometric/allometric",
+  "parent_sha": "999c40340a07a2f3ce72ecde9c9c7edca76bee49",
+  "fix_sha": "94001f684e2a91045a5c634d7bec0b2c907c41e6",
+  "docs": [
+   {
+    "pre_path": "README.Rmd",
+    "post_path": "README.Rmd",
+    "pre_sha256": "eb49c8b3b90ba078aa4b3b53165346833e890b84945e6f45c82613c6619042e1",
+    "post_sha256": "ef86e94783634ff9f4764b53d728b3c18200950fc87d07ede21528854e27fbf0"
+   },
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "ff0b76d9d67dd096d9836ae7c02ced31b3be00ee548f51c6d7134ba7747e1955",
+    "post_sha256": "eacff55b9055184bec99c42adcbe179c516e456ad6aebd9a7a6fd969d1138f0e"
+   }
+  ]
+ },
+ {
+  "case": "I077",
+  "issue_url": "https://github.com/Lifecycle-Innovations-Limited/claude-ops/issues/793",
+  "repo": "Lifecycle-Innovations-Limited/claude-ops",
+  "parent_sha": "ce9d168f2e4052047ef5db55041c541c16651115",
+  "fix_sha": "eb89c763dfb3edd7aa743e4ba74c7ae9231975c0",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "2d9274b52496a370271a938529cfa15339e8c48781c91bf5e2418e29ff0f5592",
+    "post_sha256": "f3996431c49e8ba8844c50abcec6866d8d106e5d10ef7977d0f3d411e42862dd"
+   }
+  ]
+ },
+ {
+  "case": "I078",
+  "issue_url": "https://github.com/loopj/aiovantage/issues/382",
+  "repo": "loopj/aiovantage",
+  "parent_sha": "f2e63a719a3fa1ac5ac43aeaaed8e0cf492cff5d",
+  "fix_sha": "d85577bd2d1aa6fc01085a792ae8640f55e8bf2d",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "8ceb8603f5a60ed8d321ca7723a1b3694eb0ec43e375d665fc2732fb4817997a",
+    "post_sha256": "58623d44077712b96d4f80ba2d3fffee623327a517fa2e2da8f4c863b51225bc"
+   }
+  ]
+ },
+ {
+  "case": "I079",
+  "issue_url": "https://github.com/LyraCoreProject/LyraCore/issues/658",
+  "repo": "LyraCoreProject/LyraCore",
+  "parent_sha": "bb40302dd6119e356c10b4a662c7aa8bf764f656",
+  "fix_sha": "0d084310db5dc9d37a60247b5e669ddaf0b71bb8",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "ce8225d6ac6dd8a58b3444214bfc2dd9222bf06cf31d7f3e305d8ed57b008981",
+    "post_sha256": "dc63d3efd67e6d12428f782460a9145d93109a912ff07e84c82d788669cbbead"
+   }
+  ]
+ },
+ {
+  "case": "I080",
+  "issue_url": "https://github.com/chouchongYHMing/Jiao_Translator/issues/1",
+  "repo": "chouchongYHMing/Jiao_Translator",
+  "parent_sha": "80bcc40dbed3c786811cbfbbefabff132caefa57",
+  "fix_sha": "0c0e69259912ba0c9fc95153a8d016af79c643c1",
+  "docs": [
+   {
+    "pre_path": "README.ca.md",
+    "post_path": "README.ca.md",
+    "pre_sha256": "1d1b3e737ab178779e5bab7a5e499e780596c8e9556ba5f6ffaa0dbfa66006b1",
+    "post_sha256": "295613865e980b3aa177b28373183adc5be8f4fd184a081492074be387e704d4"
+   },
+   {
+    "pre_path": "README.es.md",
+    "post_path": "README.es.md",
+    "pre_sha256": "8cbba45d17f6ec73f40dcf611e4c25f13c6406995fded89e243b6ca30e9d2075",
+    "post_sha256": "a48bc31243854433c8ab46c0a4a84db94b169c53d41b1381ac2f64f1426ddc3b"
+   },
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "f8ca01f3ffdcc423e319088e60af7863e30adb094246a3fabbf22847a06cc97b",
+    "post_sha256": "f821708b26819efc23def38df10cd7dbe38ddeed74f0f1fa81eea28f156066df"
+   },
+   {
+    "pre_path": "README.zh-CN.md",
+    "post_path": "README.zh-CN.md",
+    "pre_sha256": "291fee42ecc341a1bbe93428d922f4199324a5330cc190345bb5f8a5aa23d4d1",
+    "post_sha256": "cc3d14e0f26e2cf4ee634089ce5868894519428da382c3b482b4d74396988d46"
+   }
+  ]
+ },
+ {
+  "case": "I081",
+  "issue_url": "https://github.com/YusDyr/luci-app-trafficctl/issues/47",
+  "repo": "YusDyr/luci-app-trafficctl",
+  "parent_sha": "67f379a0fca64a30e96560a3e7b3c1728e312c2e",
+  "fix_sha": "fd0a9b1b6ad9ed8f0f58f35d3b7d00845c05771f",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "aa8988c041353b62938cfc1a17f04feafdd77938d2f6cd66e463faac4688b582",
+    "post_sha256": "4fc188a6339a2442245f2109440a5cdf2fd0000dd50f9e488769b96faa5b9cc9"
+   }
+  ]
+ },
+ {
+  "case": "I082",
+  "issue_url": "https://github.com/vdbulcke/zellij-workspace/issues/9",
+  "repo": "vdbulcke/zellij-workspace",
+  "parent_sha": "e8c7698e3bc2c05fd2d5668e4860be5c6e89718d",
+  "fix_sha": "6f0e48208596cf6c84f7b5a2e9546cbb9edb68bf",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "8092ea1add989a0653a69f4dc6be1411621ef39c6c82af199e51399927b66a3e",
+    "post_sha256": "29c000c243b3573d0fd2306e16bb965d70902cbe73b9ce50f897b1bfe6d30039"
+   }
+  ]
+ },
+ {
+  "case": "I083",
+  "issue_url": "https://github.com/ChainLearnOfficial/chainlearn-contracts/issues/426",
+  "repo": "ChainLearnOfficial/chainlearn-contracts",
+  "parent_sha": "f6d6e861810f65f12c097f54c390bc302b80da01",
+  "fix_sha": "e31c05702f6268785b35cbda3c03adf7fe124484",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "3fa8fce2d9145f1ca0a1a54396d5cce5091073e5c2321a960bc3b6bbd33229af",
+    "post_sha256": "685b9279423a360cb658361b5bcdbd6e819bcbc70e646f1263d2e76e1c8e4477"
+   }
+  ]
+ },
+ {
+  "case": "I085",
+  "issue_url": "https://github.com/rrthomas/sokoban/issues/3",
+  "repo": "rrthomas/sokoban",
+  "parent_sha": "b2a375cecc231060ec9f41bd5e34463559f589c2",
+  "fix_sha": "cf95c0537311b8314dfad11e7e07d80ebb885201",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "e09a6e0df334c6ffeb2af46f877215f99c631fa3653d3305da74a175ef169156",
+    "post_sha256": "06c364d32b6583d7e089ca17cd621be99a875ee512e33b2820cfd56a63fd1818"
+   }
+  ]
+ },
+ {
+  "case": "I086",
+  "issue_url": "https://github.com/redhat-developer/vscode-yaml/issues/1269",
+  "repo": "redhat-developer/vscode-yaml",
+  "parent_sha": "cb719511f7b0eaa82ee4259819205f000bde6afd",
+  "fix_sha": "7b0f5af8bef12c0d87d4eebadcf223b6f0c716d9",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "196d93366a4f8329756e241bea4c51a0cefde1b6cd1c742ac2a0961988835ee0",
+    "post_sha256": "c2e2a91f2a2afa2c8c8e30bfabe7a71389816c75c5288b70128bb9ce2a80b522"
+   }
+  ]
+ },
+ {
+  "case": "I087",
+  "issue_url": "https://github.com/coconautilus17/LibraForge/issues/260",
+  "repo": "coconautilus17/LibraForge",
+  "parent_sha": "9d4c303d9d6a79c6c89685466187e5f40a7534c3",
+  "fix_sha": "7cf1161734fd9b4af369a9ba0d2590fa9db1b4a1",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "194c4e0d2c3035da0e9f8be170bf374c1e9916b048887cfdfc2622e87c21b954",
+    "post_sha256": "f05077a519194cf0e53e20401e307057727db80ecb741af9592c1122942bd7a6"
+   }
+  ]
+ },
+ {
+  "case": "I088",
+  "issue_url": "https://github.com/supabase/server/issues/188",
+  "repo": "supabase/server",
+  "parent_sha": "99eb65cebe55abb03881bd70a2e089b3a1db745f",
+  "fix_sha": "e632e4f85d794b355e6d19d1ffceb00caf08110a",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "5d427154145c0a1ef97abb283685a8888c7d5f7ad08b4e1859805ca0bde1f983",
+    "post_sha256": "67c226844a585f9bec5f47de7df5484472e708997ac456fe5fed4ba7ed56267f"
+   }
+  ]
+ },
+ {
+  "case": "I090",
+  "issue_url": "https://github.com/eclipse-cdt/cdt/issues/1492",
+  "repo": "eclipse-cdt/cdt",
+  "parent_sha": "c0c339a43c1361e9f78e5608150f1d13739d360e",
+  "fix_sha": "55436cb4e60afa4bb2184a993577b5a63786dd7d",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "12503b02a7ab4b94ea7a5a1e4c1faca2029352ec113cee745086eb4012586643",
+    "post_sha256": "e9168fbb4a1720bb02459948d3a1984549becb4160496a6a6e0750d2879bd4db"
+   }
+  ]
+ },
+ {
+  "case": "I091",
+  "issue_url": "https://github.com/onionshare/onionshare/issues/2100",
+  "repo": "onionshare/onionshare",
+  "parent_sha": "447876b30846bbd31868726f11c4dd66ad476125",
+  "fix_sha": "e2b21c3dfbf988741b4de8a5f925cd9e12f5cf71",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "5784021d77090170aa058e5d0e6e323d3fc43afd6c39e3bb7cce9652bb8f0199",
+    "post_sha256": "e04869a0f7148e91119ff6a9cd49b00c1f79da86ab29bdb7c8ec1881b9447049"
+   }
+  ]
+ },
+ {
+  "case": "I092",
+  "issue_url": "https://github.com/NOAA-EMC/WW4/issues/62",
+  "repo": "NOAA-EMC/WW4",
+  "parent_sha": "f719269a96514b19e86839c0c512817173629e6f",
+  "fix_sha": "12f363f5faccbd6eabe3ed544e792d42420f9a00",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "26eeb2e005eed23ab26d889a593cebaccdd7d6b4abc8fb59377c67665dc9c3e9",
+    "post_sha256": "8ad1230242dafac3ff74044ee42da09e20ce8ee5ca291668040886abe636e87c"
+   }
+  ]
+ },
+ {
+  "case": "I093",
+  "issue_url": "https://github.com/parenworks/clatter.el/issues/73",
+  "repo": "parenworks/clatter.el",
+  "parent_sha": "b5a8c948d4f2026618f2206ff354417f83223888",
+  "fix_sha": "6b4cf67918fc17c2c0fa07b0e43086159255cfa2",
+  "docs": [
+   {
+    "pre_path": "README.org",
+    "post_path": "README.org",
+    "pre_sha256": "6802c7728d9668e4dafc3c8decf6c5863061f1301b34bffb4e34ed046f2533eb",
+    "post_sha256": "29a2d687464afd35b47c74a00858ab61d8c98bef355f92bb372fc1b17645678b"
+   }
+  ]
+ },
+ {
+  "case": "I094",
+  "issue_url": "https://github.com/ossia/qml-remote/issues/110",
+  "repo": "ossia/qml-remote",
+  "parent_sha": "42ffd9372c3136054106b6e47d86b997b1539054",
+  "fix_sha": "7dc08ddfb34b155c68b76a474bcf78e05f2095b9",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "1673a05e916c585658fb749a0374ab13460a15a2e3794d8b02f9e1aef21071f0",
+    "post_sha256": "c04a63cde4398e4b8b25c22491014498b1aae278605204f5af0cf29eae4faa3c"
+   }
+  ]
+ },
+ {
+  "case": "I095",
+  "issue_url": "https://github.com/SuntekCorps-xLab/eric-compliance-tools/issues/26",
+  "repo": "SuntekCorps-xLab/eric-compliance-tools",
+  "parent_sha": "f98dd8849cc392bbd7b25b44ec1d0f0d747cbc28",
+  "fix_sha": "d48cb88812dcdd77648e95c1e901ec0a6e689bfb",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "2bd3e7d5753e601118193c1dc9e9d9b9a81364e08cc15873b150822907e8fa22",
+    "post_sha256": "736863fbb0829a55ffe35199da64d0efa6b423828d034651985f1335fbd16dbf"
+   }
+  ]
+ },
+ {
+  "case": "I100",
+  "issue_url": "https://github.com/HexRaysSA/ida-hcli/issues/300",
+  "repo": "HexRaysSA/ida-hcli",
+  "parent_sha": "51853596e1b81548be2c642ecb34799df4e40ca7",
+  "fix_sha": "773fb74cdb0820f7d7580b233d1bd0fe25f61c4a",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "0da248548884aa8dad39963ffbdd30d580980d56e49bb8a0835a82dd8d67b137",
+    "post_sha256": "d21d8a4871164edd1ee52aae274992e3107256c23a2f92a178927fc547b6cef2"
+   }
+  ]
+ },
+ {
+  "case": "I104",
+  "issue_url": "https://github.com/mrpmorris/Roslynk/issues/11",
+  "repo": "mrpmorris/Roslynk",
+  "parent_sha": "4f64c7c5faf289f7823b7d39e019800d3d4cbf5c",
+  "fix_sha": "bcecbff4494da09229810db6f3cd2a2b0e40bf04",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "f62423d7a0d12972916f73cc77ee8b32ac29c8ed0166ca57de096ef0a998b1f2",
+    "post_sha256": "b068fbac0abf9c93f3ffe970ad5a423c8ece922fe30eacc844dca993c086f82e"
+   }
+  ]
+ },
+ {
+  "case": "I105",
+  "issue_url": "https://github.com/camaraproject/DeviceIdentifier/issues/201",
+  "repo": "camaraproject/DeviceIdentifier",
+  "parent_sha": "c6ea318488c9d2c9e4746f2f45654b933c23bca2",
+  "fix_sha": "29d6a17a9d7a767fa96ea6dfa946bea9b5f760c0",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "d1b4fcaf543025b107b660e8c3c2fd002cd4acd292979813158ce35414bf6707",
+    "post_sha256": "7610284a1bcb6d9f3ec4135b328b0875a8be7d933669826f75d61b0cfee37fa7"
+   }
+  ]
+ },
+ {
+  "case": "I106",
+  "issue_url": "https://github.com/php/pie/issues/771",
+  "repo": "php/pie",
+  "parent_sha": "f29a47e4d3558c2e7d0513e64ef902205b289067",
+  "fix_sha": "2efcdaa4e9e3868eafb793d611784d8eda4a6041",
+  "docs": [
+   {
+    "pre_path": "README.md",
+    "post_path": "README.md",
+    "pre_sha256": "a8c437aea95224bac7ddbe5ffff2f38ffab7c206c720855d08b8365b262548db",
+    "post_sha256": "92ffb72d898145b1483c8cfe17fb0d643f73e3712909bf4c215b206e73769016"
+   }
+  ]
+ }
+]
