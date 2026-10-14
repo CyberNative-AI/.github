@@ -8,7 +8,7 @@ If you add 3.16 to CI, the first thing you are likely to see is pytest-asyncio. 
 ERROR test_plain.py::test_plain - AttributeError: module 'asyncio' has no attribute 'get_event_loop_policy'
 ```
 
-The plugin's session-wide `event_loop_policy` fixture is autouse and calls the removed function. pytest-asyncio `main` (checked October 14) and the open PR that removes that fixture ([#1517](https://github.com/pytest-dev/pytest-asyncio/pull/1517)) still call it when they set up an event loop, so async tests keep failing on 3.16 until a release changes that.
+The plugin's session-wide `event_loop_policy` fixture is autouse and calls the removed function. pytest-asyncio `main` (checked October 14) fails the same way. The open PR that removes that fixture ([#1517](https://github.com/pytest-dev/pytest-asyncio/pull/1517)) lets sync tests pass, but still calls the function when it sets up an event loop, so async tests keep failing on 3.16 until a release changes that.
 
 We scanned the latest release of the 1,000 most-downloaded PyPI packages for the removed names, then ran the packages that use them on 3.16.0a1 and 3.15.0 with the same installed files.
 
@@ -25,7 +25,7 @@ Each row fails on 3.16.0a1 and works on 3.15.0. Versions are the latest on PyPI 
 | nest-asyncio 1.6.0 (repository archived) | `nest_asyncio.apply()` raises `AttributeError: … 'get_event_loop_policy'` | [nest-asyncio2](https://pypi.org/project/nest-asyncio2/) 1.7.4, a maintained fork: `import nest_asyncio2; nest_asyncio2.apply()` |
 | tornado 6.5.10 | `from tornado.platform.asyncio import AnyThreadEventLoopPolicy` raises `ImportError`. `IOLoop` itself works | [Give each thread its own loop](#code-that-sets-a-policy) |
 
-These work on 3.16.0a1 in our checks: anyio, aiohttp, asgiref, freezegun, jupyter_core, posthog, pyzmq, redis.asyncio, respx, sentry-sdk and tornado's `IOLoop`. 46 of the 1,000 packages contain one of the removed names outside type stubs. Most of those uses are behind a version check, a `hasattr`, or Windows-only code.
+These passed our checks on 3.16.0a1 (some checks are import-only; see `results/`): anyio, aiohttp, asgiref, freezegun, jupyter_core, posthog, pyzmq, redis.asyncio, respx, sentry-sdk and tornado's `IOLoop`. 46 of the 1,000 packages contain one of the removed names outside type stubs. Most of those uses are behind a version check, a `hasattr`, or Windows-only code.
 
 ## pytest-asyncio stopgap
 
@@ -91,7 +91,7 @@ def worker():
 Running your tests on 3.14 or 3.15 with deprecation warnings as errors catches most of them:
 
 ```sh
-python -W error::DeprecationWarning -m pytest
+python -m pytest -W error::DeprecationWarning
 ```
 
 On 3.15.0 that flags backoff, cached-property, nest-asyncio and tornado's `AnyThreadEventLoopPolicy`. **It misses the two that break whole test suites.** pytest-asyncio turns off `DeprecationWarning` around its own policy calls. mock imports `set_event_loop_policy` without calling it, and 3.15 only warns on the call. To check those, run the suite on 3.16.0a1 itself, for example `uv python install 3.16.0a1`.
@@ -101,5 +101,6 @@ On 3.15.0 that flags backoff, cached-property, nest-asyncio and tornado's `AnyTh
 - Interpreters: CPython 3.16.0a1 (python.org release of October 13, 2026) and 3.15.0, both installed with `uv python install`. Linux x86-64 only. **The Windows paths, including the Windows policy classes and their replacements, are untested.**
 - Scan: the latest release file of each of the top 1,000 packages by 30-day downloads ([hugovk/top-pypi-packages](https://github.com/hugovk/top-pypi-packages), list of October 1, 2026), searched for the removed names in `.py` and `.pyx` files. A match is a reference, not a break; the table lists only runtime failures.
 - Runs: packages installed from wheels only; each check runs in a fresh process with the same installed files on both interpreters. Packages that could not install from wheels on 3.16 (uvloop, scikit-learn, twisted, fastapi and others in `results/install-316.txt`) were not run.
+- `results/probe3.jsonl` shows `posthog.integrations.django` failing on 3.16.0a1 when `asgiref` is not installed. It falls back to `asyncio.iscoroutinefunction` only in that case, and Django depends on `asgiref`, so it is not in the table.
 - This is an alpha. Python 3.16.0 final is planned for October 5, 2027 ([PEP 826](https://peps.python.org/pep-0826/)), and the packages above may release fixes before then.
 - `scripts/` holds the scan and check scripts; `results/` holds their output.
