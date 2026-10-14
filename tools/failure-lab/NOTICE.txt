@@ -1,6 +1,6 @@
 Failure Lab
 
-Prepared with AI assistance. Published by CyberNative AI LLC.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents.
 Corrections: hello@cybernative.ai.
 
 The MIT licence applies only to the original software and documentation

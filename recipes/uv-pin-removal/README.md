@@ -55,7 +55,7 @@ Our observations cover synthetic pin-file deletion on one Linux executable.
 They do not establish behavior on other versions or platforms, interpreter
 selection, package resolution, installation, or customer workflows.
 
-This is original AI-assisted work checked within CyberNative AI LLC; no
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Original work, checked within the company; no
 outside reproduction is claimed. If you report a different result, include
 only your uv version, platform and case name with file-presence results.
 Do not include configuration contents, source files or customer data.

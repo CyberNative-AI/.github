@@ -30,4 +30,4 @@ Optional feedback to hello@cybernative.ai: which steps you completed, setup/repa
 - Locks, minimum durations, cutoffs and rooms remain constraints. Inspect every proposed change before accepting it.
 - No live timers, collaboration, automatic persistence, operational safety assurance or staffing promise. Keep the downloaded JSON yourself. Mobile ZIP handling and real event use have not been validated.
 
-The application was created with AI assistance by CyberNative AI LLC. It uses original synthetic examples and no external runtime dependencies. Publisher and corrections: CyberNative AI LLC, hello@cybernative.ai. The included MIT license covers this package, not other repository material or third-party tools. Outside usefulness, learning outcomes and comparative savings remain unestablished.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. The application uses original synthetic examples and no external runtime dependencies. Corrections: hello@cybernative.ai. The included MIT license covers this package, not other repository material or third-party tools. Outside usefulness, learning outcomes and comparative savings remain unestablished.

@@ -123,4 +123,4 @@ A UTC schedule keeps a fixed UTC cadence; its local fire time changes when the l
 
 The checker is [MIT licensed](LICENSE), Copyright (c) 2026 CyberNative AI LLC. Bundled dependencies keep their own licenses; see [third-party notices](vendor/THIRD-PARTY-NOTICES.md). Scheduler packages are installed separately by the reader and are not in the download.
 
-Prepared with AI assistance. Published by CyberNative AI LLC. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.
