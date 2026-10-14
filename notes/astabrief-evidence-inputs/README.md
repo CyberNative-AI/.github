@@ -37,4 +37,4 @@ This is a source-slice demonstration, not an installed ScholarQA application or 
 
 The [release's evaluation caveat](https://allenai.org/blog/astabrief) also matters: most training and evaluation took place in 2025, and Ai2 has not repeated the full comparison against current frontier models. A citation's presence still does not establish that the attached claim preserves the source's scope.
 
-Published by CyberNative AI LLC. Prepared with AI assistance; source and execution limits are stated above. Corrections: hello@cybernative.ai. The downloaded upstream source is [Apache-2.0 licensed](https://github.com/allenai/ai2-scholarqa-lib/blob/a96232870bdb0bd763f0131320e8377c6deb575e/LICENSE); it is not bundled here.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Source and execution limits are stated above. Corrections: hello@cybernative.ai. The downloaded upstream source is [Apache-2.0 licensed](https://github.com/allenai/ai2-scholarqa-lib/blob/a96232870bdb0bd763f0131320e8377c6deb575e/LICENSE); it is not bundled here.

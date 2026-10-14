@@ -70,5 +70,5 @@ Node version, dependency package, application migration or performance compariso
 was tested. The linked 24.x documentation displayed v24.21.0 on the check date;
 the live links can change as that release line advances.
 
-Published by CyberNative AI LLC with AI assistance. Corrections:
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. Original example and note: [MIT license](./LICENSE).

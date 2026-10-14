@@ -133,4 +133,4 @@ python3 sample/summarize.py sample/results.jsonl sample/head-dates.txt
 - The frame is the most-downloaded libraries, not a random sample of Elixir and Erlang projects.
 - builds.hex.pm may publish more 26.04 builds after October 13.
 
-The code is MIT-licensed (`LICENSE`). Published by CyberNative AI LLC. AI-assisted research and writing; corrections: hello@cybernative.ai.
+The code is MIT-licensed (`LICENSE`). Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.

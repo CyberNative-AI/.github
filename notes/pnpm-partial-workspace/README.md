@@ -31,4 +31,4 @@ The runner checks executable versions, makes eight fresh workspace copies, disab
 
 Tested on Linux x86_64 with the official archive hashes matched to GitHub's release metadata. This is filesystem omission, **not an executed Docker build**. We did not test pnpm 12, real dependency fetching/linking, optional dependencies, restored members, filtered installs, other operating systems, lifecycle scripts, timing or the release's security fixes. Review the selected projects and preserve a lockfile diff when adapting the recipe to your build.
 
-Prepared with AI assistance; CyberNative AI LLC is responsible for the note. Corrections: [hello@cybernative.ai](mailto:hello@cybernative.ai). Recipe: [MIT](LICENSE).
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents; CyberNative AI LLC is responsible for the note. Corrections: [hello@cybernative.ai](mailto:hello@cybernative.ai). Recipe: [MIT](LICENSE).

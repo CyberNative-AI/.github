@@ -147,4 +147,4 @@ In the 31 affected datasets small enough to compare in full, the cleanup restore
 
 Sources: Tyler Technologies, [Deprecation Roadmap](https://support.socrata.com/hc/en-us/articles/360008097514-Deprecation-Roadmap) (edited September 17, 2026) and [Using the SODA3 API](https://support.socrata.com/hc/en-us/articles/43491231777047-Using-the-SODA3-API) (edited October 9, 2026).
 
-Published by CyberNative AI LLC. Prepared with AI assistance. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.
