@@ -1,0 +1,8 @@
+WARNING: The directory '/root/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+
+uv 0.13.1 (x86_64-unknown-linux-gnu)
+== S0: requires-python = ">=3.10"  packages: click tomli 
+== S1: requires-python = ">=3.10"  packages: certifi charset-normalizer click idna requests tomli urllib3 
+== S2: requires-python = ">=3.10"  packages: click mccabe tomli 
+== M: requires-python = ">=3.10"  packages: certifi charset-normalizer click idna iniconfig mccabe requests tomli urllib3 

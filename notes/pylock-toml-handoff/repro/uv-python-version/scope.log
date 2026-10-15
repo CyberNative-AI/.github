@@ -1,0 +1,10 @@
+
+uv 0.13.1 (x86_64-unknown-linux-gnu)
+== uv pip compile pyproject.toml --universal --exclude-newer 2026-10-14T00:00:00Z  --format pylock.toml
+requires-python = ">=3.12"
+name = "click"
+== uv pip compile pyproject.toml --universal --exclude-newer 2026-10-14T00:00:00Z --python-version 3.10 --format pylock.toml
+requires-python = ">=3.10"
+name = "click"
+name = "tomli"
+marker = "python_full_version < '3.11'"

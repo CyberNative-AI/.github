@@ -1,0 +1,12 @@
+WARNING: The directory '/root/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+pip 26.2.1 from /usr/local/lib/python3.10/site-packages/pip (python 3.10)
+uv 0.13.1 (x86_64-unknown-linux-gnu)
+RESULT sel=S0 tool=pip rc=0 installed=['click==8.5.0', 'tomli==2.5.0']
+RESULT sel=S0 tool=uv rc=0 installed=['click==8.5.0', 'tomli==2.5.0']
+RESULT sel=S1 tool=pip rc=0 installed=['certifi==2026.7.22', 'charset-normalizer==3.5.2', 'click==8.5.0', 'idna==3.20', 'requests==2.34.2', 'tomli==2.5.0', 'urllib3==2.8.0']
+RESULT sel=S1 tool=uv rc=0 installed=['certifi==2026.7.22', 'charset-normalizer==3.5.2', 'click==8.5.0', 'idna==3.20', 'requests==2.34.2', 'tomli==2.5.0', 'urllib3==2.8.0']
+RESULT sel=S2 tool=pip rc=0 installed=['click==8.5.0', 'mccabe==0.7.0', 'tomli==2.5.0']
+RESULT sel=S2 tool=uv rc=0 installed=['click==8.5.0', 'mccabe==0.7.0', 'tomli==2.5.0']
+RESULT sel=M tool=pip rc=0 installed=['certifi==2026.7.22', 'charset-normalizer==3.5.2', 'click==8.5.0', 'idna==3.20', 'iniconfig==2.3.1', 'mccabe==0.7.0', 'requests==2.34.2', 'tomli==2.5.0', 'urllib3==2.8.0']
+RESULT sel=M tool=uv rc=0 installed=['certifi==2026.7.22', 'charset-normalizer==3.5.2', 'click==8.5.0', 'idna==3.20', 'iniconfig==2.3.1', 'mccabe==0.7.0', 'requests==2.34.2', 'tomli==2.5.0', 'urllib3==2.8.0']

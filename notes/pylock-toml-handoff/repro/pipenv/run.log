@@ -1,0 +1,21 @@
+[notice] To update, run: pip install --upgrade pip
+pip 23.0.1 from /usr/local/lib/python3.10/site-packages/pip (python 3.10)
+pipenv, version 2026.9.1
+RESULT case=A tool=pipenv rc=0 installed=['click==8.5.0']
+    created virtual environment CPython3.10.20.final.0-64-x86_64 in 1172ms
+    ✔ Successfully created virtual environment!
+RESULT case=A tool=pip rc=1 installed=[]
+    WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.
+    ERROR: Cannot select requirements from pylock file 'pylock.toml': python_full_version '3.10.20' in provided environment does not satisfy the Python version requirement '>=3.12'
+RESULT case=B tool=pipenv rc=0 installed=['click==8.5.0']
+    created virtual environment CPython3.10.20.final.0-64-x86_64 in 264ms
+    ✔ Successfully created virtual environment!
+RESULT case=B tool=pip rc=1 installed=[]
+    WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.
+    ERROR: Cannot select requirements from pylock file 'pylock.toml': Provided environment does not satisfy any of the environments specified in the lock file
+RESULT case=C tool=pipenv rc=0 installed=['click==8.5.0']
+    created virtual environment CPython3.10.20.final.0-64-x86_64 in 288ms
+    ✔ Successfully created virtual environment!
+RESULT case=C tool=pip rc=1 installed=[]
+    WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.
+    ERROR: Cannot select requirements from pylock file 'pylock.toml': python_full_version '3.10.20' in provided environment does not satisfy the Python version requirement '>=3.12' for package 'click' at packages[0]

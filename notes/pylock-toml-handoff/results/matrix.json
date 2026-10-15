@@ -1,0 +1,72 @@
+{
+ "3.10|pdm-fixture|pylock": {
+  "OK": 18
+ },
+ "3.10|pdm-fixture|req": {
+  "OK": 6
+ },
+ "3.10|pip-fixture|pylock": {
+  "LOUD": 4,
+  "SILENT_WRONG": 8
+ },
+ "3.10|poetry-fixture|pylock": {
+  "OK": 18
+ },
+ "3.10|poetry-fixture|req": {
+  "OK": 6
+ },
+ "3.10|uv-fixture-env|pylock": {
+  "OK": 6,
+  "SILENT_WRONG": 12
+ },
+ "3.10|uv-fixture-env|req": {
+  "SILENT_WRONG": 6
+ },
+ "3.10|uv-fixture|pylock": {
+  "OK": 18
+ },
+ "3.10|uv-fixture|req": {
+  "OK": 6
+ },
+ "3.10|uvc-fixture|pylock": {
+  "LOUD": 9,
+  "OK": 5,
+  "SILENT_WRONG": 4
+ },
+ "3.10|uvc-fixture|req": {
+  "SILENT_WRONG": 6
+ },
+ "3.12-r2|pdm-fixture|pylock": {
+  "OK": 18
+ },
+ "3.12-r2|pdm-fixture|req": {
+  "OK": 6
+ },
+ "3.12-r2|pip-fixture|pylock": {
+  "OK": 12
+ },
+ "3.12-r2|poetry-fixture|pylock": {
+  "OK": 18
+ },
+ "3.12-r2|poetry-fixture|req": {
+  "OK": 6
+ },
+ "3.12-r2|uv-fixture-env|pylock": {
+  "OK": 18
+ },
+ "3.12-r2|uv-fixture-env|req": {
+  "OK": 6
+ },
+ "3.12-r2|uv-fixture|pylock": {
+  "OK": 18
+ },
+ "3.12-r2|uv-fixture|req": {
+  "OK": 6
+ },
+ "3.12-r2|uvc-fixture|pylock": {
+  "OK": 18
+ },
+ "3.12-r2|uvc-fixture|req": {
+  "OK": 6
+ }
+}

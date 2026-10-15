@@ -1,0 +1,7 @@
+pip==26.2.1
+uv==0.13.1
+pdm==2.29.2
+pipenv==2026.9.1
+poetry==2.5.1
+poetry-plugin-export
+packaging==26.3

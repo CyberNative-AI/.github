@@ -1,0 +1,6143 @@
+[
+ {
+  "cell": "pdm-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "pdm-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "pdm-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "poetry-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "poetry-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "uv-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "uv-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "uv-fixture-env/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "uv-fixture-env/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "uvc-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.12-r2"
+ },
+ {
+  "cell": "uvc-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.12-r2",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 1,
+  "sel": "S1",
+  "tail": "WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.\nERROR: Cannot select requirements from pylock file 'pylock.toml': No wheel found matching the provided tags for package 'charset-normalizer' at packages[1], and no sdist available as a fallback\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 2,
+  "sel": "S1",
+  "tail": "without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: Package `charset-normalizer` can't be installed because it doesn't have a source distribution or wheel for the current platform\n\nhint: You're using CPython 3.10 (`cp310`), but `charset-normalizer` (v3.5.2) only has wheels with the following Python implementation tag: `cp312`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 2,
+  "sel": "S1",
+  "tail": "without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: Package `charset-normalizer` can't be installed because it doesn't have a source distribution or wheel for the current platform\n\nhint: You're using CPython 3.10 (`cp310`), but `charset-normalizer` (v3.5.2) only has wheels with the following Python implementation tag: `cp312`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "pip-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 1,
+  "sel": "S1",
+  "tail": "\n--hash=sha256:255bc9599cf7748b4b1a446ccc735421bd08a2ae529a8b88597d3de5664ee360, \nidna==3.20 \n--hash=sha256:ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c, \nrequests==2.34.2 \n--hash=sha256:2a0d60c172f83ac6ab31e4554906c0f3b3588d37b5cb939b1c061f4907e278e0, \nurllib3==2.8.0 \n--hash=sha256:0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3\nPackage installation failed...\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pip-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "pip-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "producer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "vs_oracle": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "producer_side": {
+   "native_refuses": true,
+   "oracle_refuses": []
+  },
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 1,
+  "sel": "M",
+  "tail": "WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.\nERROR: Cannot select requirements from pylock file 'pylock.toml': python_full_version '3.10.20' in provided environment does not satisfy the Python version requirement '>=3.12'\n",
+  "target": "3.10",
+  "why": "oracle refuses (requires-python)"
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "M",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10",
+  "why": "oracle refuses (requires-python)"
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "M",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10",
+  "why": "oracle refuses (requires-python)"
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "installed_despite_oracle_refusal": [
+    "requires-python"
+   ]
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10",
+  "why": "oracle refuses (requires-python)"
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-install+S1",
+  "consume_sel": "S1",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "M",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10",
+  "why": "oracle refuses (requires-python)"
+ },
+ {
+  "cell": "uvc-fixture/M/pylock/uv-install+S2",
+  "consume_sel": "S2",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "OK",
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "M",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10",
+  "why": "oracle refuses (requires-python)"
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 1,
+  "sel": "S0",
+  "tail": "WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.\nERROR: Cannot select requirements from pylock file 'pylock.toml': python_full_version '3.10.20' in provided environment does not satisfy the Python version requirement '>=3.12'\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "S0",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "S0",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S0/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "installed_despite_oracle_refusal": [
+    "requires-python"
+   ]
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 1,
+  "sel": "S1",
+  "tail": "WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.\nERROR: Cannot select requirements from pylock file 'pylock.toml': python_full_version '3.10.20' in provided environment does not satisfy the Python version requirement '>=3.12'\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "S1",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "S1",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S1/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "installed_despite_oracle_refusal": [
+    "requires-python"
+   ]
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 1,
+  "sel": "S2",
+  "tail": "WARNING: Using pylock.toml as a requirements source is an experimental feature. It may be removed/changed in a future release without prior warning.\nERROR: Cannot select requirements from pylock file 'pylock.toml': python_full_version '3.10.20' in provided environment does not satisfy the Python version requirement '>=3.12'\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "S2",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/uv-sync",
+  "consume_sel": "default",
+  "consumer": "uv-sync",
+  "kind": "pylock",
+  "label": "LOUD",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 2,
+  "sel": "S2",
+  "tail": "warning: The `--pylock` option is experimental and may change without warning. Pass `--preview-features pylock` to disable this warning.\nUsing Python 3.10.20 environment at: venv\nerror: The requested interpreter resolved to Python 3.10.20, which is incompatible with the `pylock.toml`'s Python requirement: `>=3.12`\n",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S2/pylock/pipenv",
+  "consume_sel": "default",
+  "consumer": "pipenv",
+  "consumer_side": {
+   "installed_despite_oracle_refusal": [
+    "requires-python"
+   ]
+  },
+  "kind": "pylock",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "pdm-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "pdm-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "pdm-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "pdm-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "poetry-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "poetry-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "poetry-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "poetry-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "uv-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "uv-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "OK",
+  "native_rc": 0,
+  "producer": "uv-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [],
+   "version": []
+  }
+ },
+ {
+  "cell": "uv-fixture-env/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "uv-fixture-env/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "uv-fixture-env/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uv-fixture-env/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 2,
+  "producer": "uv-fixture-env",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "why": "native refuses; consumer installs"
+ },
+ {
+  "cell": "uvc-fixture/M/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/M/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "NO_ORACLE",
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "M",
+  "target": "3.10"
+ },
+ {
+  "cell": "uvc-fixture/S0/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S0/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S0",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S1/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S1",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/req/pip",
+  "consume_sel": "default",
+  "consumer": "pip",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ },
+ {
+  "cell": "uvc-fixture/S2/req/uv-install",
+  "consume_sel": "default",
+  "consumer": "uv-install",
+  "kind": "req",
+  "label": "SILENT_WRONG",
+  "native_rc": 0,
+  "producer": "uvc-fixture",
+  "rc": 0,
+  "sel": "S2",
+  "target": "3.10",
+  "vs_native": {
+   "extra": [],
+   "missing": [
+    "tomli"
+   ],
+   "version": []
+  }
+ }
+]
