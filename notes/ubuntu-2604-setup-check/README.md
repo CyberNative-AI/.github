@@ -11,6 +11,8 @@ We checked 548 active public Python and Ruby repositories that set up Python or 
 
 *Updated October 13, 2026:* the checker now resolves fallbacks such as `runs-on: ${{ matrix.os || 'ubuntu-latest' }}`, and `include` entries expand as GitHub documents: an entry no longer merges into a job that an earlier entry added, which had collapsed include-only matrices into one job. On the same October 12 sample and data, the count rose from 117 of 547 (21%) to 122 of 548. No repository lost a predicted failure. If you ran the checker before, download it again.
 
+*Updated October 15, 2026:* to run your own tests on `ubuntu-26.04` beside a 24.04 baseline, not only read the files, use [Future CI](https://github.com/CyberNative-AI/future-ci): a reusable GitHub Actions workflow that includes this checker and writes one dated report of what breaks and when. MIT-licensed, like this checker.
+
 ## What installs on 26.04
 
 As of October 12, 2026 (x64):
