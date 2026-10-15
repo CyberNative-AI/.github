@@ -25,6 +25,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[GitHub's AI Scan skips fork and Dependabot pull requests. In 35 popular repos, that was 58% of merged PRs](https://github.com/CyberNative-AI/.github/tree/main/notes/ai-scan-fork-prs) — GitHub's new AI Scan for pull requests does not run on PRs from forks or Dependabot. In 35 of the most-starred active PHP, Shell, HCL and Dockerfile repositories with recent merges, 58% of 1,455 merged pull requests came from one of those, including many maintainers' own. A standard-library script measures your repository before you enable it.
+
 [pylock.toml between tools: same Python worked every time; for another Python, check the scope first](https://github.com/CyberNative-AI/.github/tree/main/notes/pylock-toml-handoff) — Five tools wrote pylock.toml files and pip, uv and pipenv installed them on Python 3.12 and 3.10. All 102 same-Python handoffs matched; on 3.10 the result depended on the scope the lock records. Includes a one-line scope check and a tested fix for `uv pip compile`.
 
 [GitHub stopped sending push emails. Here is the same email from Actions](https://github.com/CyberNative-AI/.github/tree/main/notes/github-push-email-actions) — On 15 October 2026 GitHub retired email notifications for push events, which projects used to feed commits mailing lists. A workflow and standard-library script send the same message from Actions; all 39 GitHub emails with commits in qemu-commits' October archive come out byte-identical when rebuilt. Includes the details that are easy to get wrong and the pushes for which Actions creates no event.

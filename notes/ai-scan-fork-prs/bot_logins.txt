@@ -1,0 +1,10 @@
+poseidon/typhoon {'dghubble-renovate[bot]': 7}
+coollabsio/coolify {'github-actions[bot]': 9}
+nextcloud/server {'backportbot[bot]': 33}
+firefly-iii/firefly-iii {'github-actions[bot]': 87}
+mattpocock/skills {'github-actions[bot]': 5}
+ohmyzsh/ohmyzsh {'ohmyzsh[bot]': 5}
+dockur/windows {'renovate[bot]': 2}
+autowarefoundation/autoware {'awf-autoware-bot[bot]': 13}
+dotnet/dotnet-docker {'net-containers-bot[bot]': 18, 'github-actions[bot]': 1}
+ALL {'dghubble-renovate[bot]': 7, 'github-actions[bot]': 102, 'backportbot[bot]': 33, 'ohmyzsh[bot]': 5, 'renovate[bot]': 2, 'awf-autoware-bot[bot]': 13, 'net-containers-bot[bot]': 18}
