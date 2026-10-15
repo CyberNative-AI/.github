@@ -1,0 +1,33 @@
+# Sends the push email GitHub stopped sending on 2026-10-15, in the same format.
+# Copy to .github/workflows/push-email.yml and push_email.py to .github/scripts/
+# on every branch that should send mail, then set the SMTP_* and MAIL_* secrets.
+name: Push email
+on:
+  push:
+    branches: ["**"]  # a tag push carries no new commits
+permissions:
+  contents: read
+jobs:
+  mail:
+    if: ${{ !github.event.repository.fork && !github.event.deleted }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      # The Actions push payload has no added/removed/modified lists, so the
+      # changed paths and committer dates come from git: full history, no blobs.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          fetch-depth: 0
+          filter: blob:none
+          sparse-checkout: .github/scripts
+          persist-credentials: false
+      - run: python3 .github/scripts/push_email.py
+        env:
+          SMTP_HOST: ${{ secrets.SMTP_HOST }}
+          SMTP_PORT: ${{ secrets.SMTP_PORT }}
+          SMTP_SECURITY: starttls
+          SMTP_USER: ${{ secrets.SMTP_USER }}
+          SMTP_PASSWORD: ${{ secrets.SMTP_PASSWORD }}
+          MAIL_FROM: ${{ secrets.MAIL_FROM }}
+          MAIL_TO: ${{ secrets.MAIL_TO }}
+          MAIL_APPROVED: ${{ secrets.MAIL_APPROVED }}
