@@ -1,0 +1,88 @@
+{"arm": "QA26", "code": "QA00101", "desc": "SCN2A-related neurodevelopmental disorder", "dotted": "QA0.0101"}
+{"arm": "QA26", "code": "QA00102", "desc": "CACNA1A-related neurodevelopmental disorder", "dotted": "QA0.0102"}
+{"arm": "QA26", "code": "QA00109", "desc": "Neurodevelopmental disorder related to pathogenic variant in other ion channel gene", "dotted": "QA0.0109"}
+{"arm": "QA26", "code": "QA0011", "desc": "Neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes", "dotted": "QA0.011"}
+{"arm": "QA26", "code": "QA0012", "desc": "Neurodevelopmental disorders, related to pathogenic variants in other receptor genes", "dotted": "QA0.012"}
+{"arm": "QA26", "code": "QA00131", "desc": "SLC6A1-related disorder", "dotted": "QA0.0131"}
+{"arm": "QA26", "code": "QA00139", "desc": "Neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene", "dotted": "QA0.0139"}
+{"arm": "QA26", "code": "QA00141", "desc": "Syntaxin-binding protein 1-related disorder", "dotted": "QA0.0141"}
+{"arm": "QA26", "code": "QA00142", "desc": "DLG4-related synaptopathy", "dotted": "QA0.0142"}
+{"arm": "QA26", "code": "QA00149", "desc": "Neurodevelopmental disorder, related to pathogenic variant in other synapse related gene", "dotted": "QA0.0149"}
+{"arm": "QA26", "code": "QA00151", "desc": "FOXG1 syndrome", "dotted": "QA0.0151"}
+{"arm": "QA26", "code": "QA00159", "desc": "Neurodevelopmental disorder, related to other genes associated with transcription and gene expression", "dotted": "QA0.0159"}
+{"arm": "QA26", "code": "QA08", "desc": "Other neurodevelopmental disorders related to pathogenic variants in other specific genes", "dotted": "QA0.8"}
+{"arm": "QA27", "code": "QA171", "desc": "Lynch syndrome", "dotted": "QA1.71"}
+{"arm": "QA27", "code": "QA1790", "desc": "Familial cancer syndrome with pathogenic BRCA1 mutation", "dotted": "QA1.790"}
+{"arm": "QA27", "code": "QA1791", "desc": "Familial cancer syndrome with pathogenic BRCA2 mutation", "dotted": "QA1.791"}
+{"arm": "QA27", "code": "QA1792", "desc": "Li Fraumeni syndrome", "dotted": "QA1.792"}
+{"arm": "QA27", "code": "QA1798", "desc": "Other inherited neoplasm predisposition syndrome of multiple systems", "dotted": "QA1.798"}
+{"arm": "N26", "code": "G35A", "desc": "Relapsing-remitting multiple sclerosis", "dotted": "G35.A"}
+{"arm": "N26", "code": "G35C1", "desc": "Active secondary progressive multiple sclerosis", "dotted": "G35.C1"}
+{"arm": "N26", "code": "L98479", "desc": "Non-pressure chronic ulcer of groin with unspecified severity", "dotted": "L98.479"}
+{"arm": "N26", "code": "L98A298", "desc": "Non-pressure chronic ulcer of unspecified forearm with other specified severity", "dotted": "L98.A298"}
+{"arm": "N26", "code": "L98A316", "desc": "Non-pressure chronic ulcer of right hand with bone involvement without evidence of necrosis", "dotted": "L98.A316"}
+{"arm": "N26", "code": "L98A325", "desc": "Non-pressure chronic ulcer of left hand with muscle involvement without evidence of necrosis", "dotted": "L98.A325"}
+{"arm": "N26", "code": "Q8989", "desc": "Other specified congenital malformations", "dotted": "Q89.89"}
+{"arm": "N26", "code": "S31136D", "desc": "Puncture wound of abdominal wall without foreign body, right flank without penetration into peritoneal cavity, subsequent encounter", "dotted": "S31.136D"}
+{"arm": "N26", "code": "S31617D", "desc": "Laceration without foreign body of abdominal wall, left flank with penetration into peritoneal cavity, subsequent encounter", "dotted": "S31.617D"}
+{"arm": "N26", "code": "S31626S", "desc": "Laceration with foreign body of abdominal wall, right flank with penetration into peritoneal cavity, sequela", "dotted": "S31.626S"}
+{"arm": "N26", "code": "T36AX6A", "desc": "Underdosing of fluoroquinolone antibiotics, initial encounter", "dotted": "T36.AX6A"}
+{"arm": "N26", "code": "T65844D", "desc": "Toxic effect of xylazine, undetermined, subsequent encounter", "dotted": "T65.844D"}
+{"arm": "N26", "code": "T78081D", "desc": "Anaphylactic reaction due to egg with reactivity to baked egg, subsequent encounter", "dotted": "T78.081D"}
+{"arm": "N27", "code": "I4209", "desc": "Other dilated cardiomyopathy", "dotted": "I42.09"}
+{"arm": "N27", "code": "I4981", "desc": "Brugada syndrome", "dotted": "I49.81"}
+{"arm": "N27", "code": "I4982", "desc": "Ventricular bigeminy", "dotted": "I49.82"}
+{"arm": "N27", "code": "K740A", "desc": "Hepatic fibrosis, moderate fibrosis", "dotted": "K74.0A"}
+{"arm": "N27", "code": "M868X39", "desc": "Other osteomyelitis, unspecified forearm", "dotted": "M86.8X39"}
+{"arm": "N27", "code": "M868X71", "desc": "Other osteomyelitis, right ankle and foot", "dotted": "M86.8X71"}
+{"arm": "N27", "code": "O0041", "desc": "Cervical ectopic pregnancy without intrauterine pregnancy", "dotted": "O00.41"}
+{"arm": "N27", "code": "O3140X4", "desc": "Continuing pregnancy after vanishing twin syndrome of one fetus or more, unspecified trimester, fetus 4", "dotted": "O31.40X4"}
+{"arm": "N27", "code": "O3142X2", "desc": "Continuing pregnancy after vanishing twin syndrome of one fetus or more, second trimester, fetus 2", "dotted": "O31.42X2"}
+{"arm": "N27", "code": "O3142X3", "desc": "Continuing pregnancy after vanishing twin syndrome of one fetus or more, second trimester, fetus 3", "dotted": "O31.42X3"}
+{"arm": "N27", "code": "T52891A", "desc": "Toxic effect of other organic solvents, accidental (unintentional), initial encounter", "dotted": "T52.891A"}
+{"arm": "N27", "code": "T52892A", "desc": "Toxic effect of other organic solvents, intentional self-harm, initial encounter", "dotted": "T52.892A"}
+{"arm": "N27", "code": "Z6818", "desc": "Body mass index [BMI] 18.4 or less, adult", "dotted": "Z68.18"}
+{"arm": "OLD", "code": "C8596", "desc": "Non-Hodgkin lymphoma, unspecified, intrapelvic lymph nodes", "dotted": "C85.96"}
+{"arm": "OLD", "code": "D120", "desc": "Benign neoplasm of cecum", "dotted": "D12.0"}
+{"arm": "OLD", "code": "H16291", "desc": "Other keratoconjunctivitis, right eye", "dotted": "H16.291"}
+{"arm": "OLD", "code": "H449", "desc": "Unspecified disorder of globe", "dotted": "H44.9"}
+{"arm": "OLD", "code": "M47891", "desc": "Other spondylosis, occipito-atlanto-axial region", "dotted": "M47.891"}
+{"arm": "OLD", "code": "S31120S", "desc": "Laceration of abdominal wall with foreign body, right upper quadrant without penetration into peritoneal cavity, sequela", "dotted": "S31.120S"}
+{"arm": "OLD", "code": "S45919S", "desc": "Laceration of unspecified blood vessel at shoulder and upper arm level, unspecified arm, sequela", "dotted": "S45.919S"}
+{"arm": "OLD", "code": "S52515M", "desc": "Nondisplaced fracture of left radial styloid process, subsequent encounter for open fracture type I or II with nonunion", "dotted": "S52.515M"}
+{"arm": "OLD", "code": "S53412D", "desc": "Radiohumeral (joint) sprain of left elbow, subsequent encounter", "dotted": "S53.412D"}
+{"arm": "OLD", "code": "S60470S", "desc": "Other superficial bite of right index finger, sequela", "dotted": "S60.470S"}
+{"arm": "OLD", "code": "S85399D", "desc": "Other specified injury of greater saphenous vein at lower leg level, unspecified leg, subsequent encounter", "dotted": "S85.399D"}
+{"arm": "OLD", "code": "T22799S", "desc": "Corrosion of third degree of multiple sites of unspecified shoulder and upper limb, except wrist and hand, sequela", "dotted": "T22.799S"}
+{"arm": "OLD", "code": "V9535XA", "desc": "Commercial fixed-wing aircraft explosion injuring occupant, initial encounter", "dotted": "V95.35XA"}
+{"arm": "DEL27", "code": "D691", "desc": "Qualitative platelet defects", "dotted": "D69.1"}
+{"arm": "DEL27", "code": "I420", "desc": "Dilated cardiomyopathy", "dotted": "I42.0"}
+{"arm": "DEL27", "code": "I428", "desc": "Other cardiomyopathies", "dotted": "I42.8"}
+{"arm": "DEL27", "code": "M722", "desc": "Plantar fascial fibromatosis", "dotted": "M72.2"}
+{"arm": "DEL27", "code": "M868X1", "desc": "Other osteomyelitis, shoulder", "dotted": "M86.8X1"}
+{"arm": "DEL27", "code": "M868X5", "desc": "Other osteomyelitis, thigh", "dotted": "M86.8X5"}
+{"arm": "DEL27", "code": "T528X1D", "desc": "Toxic effect of other organic solvents, accidental (unintentional), subsequent encounter", "dotted": "T52.8X1D"}
+{"arm": "DEL27", "code": "T528X2A", "desc": "Toxic effect of other organic solvents, intentional self-harm, initial encounter", "dotted": "T52.8X2A"}
+{"arm": "DEL27", "code": "T528X3A", "desc": "Toxic effect of other organic solvents, assault, initial encounter", "dotted": "T52.8X3A"}
+{"arm": "DEL27", "code": "T528X3D", "desc": "Toxic effect of other organic solvents, assault, subsequent encounter", "dotted": "T52.8X3D"}
+{"arm": "DEL27", "code": "T528X3S", "desc": "Toxic effect of other organic solvents, assault, sequela", "dotted": "T52.8X3S"}
+{"arm": "DEL27", "code": "T528X4A", "desc": "Toxic effect of other organic solvents, undetermined, initial encounter", "dotted": "T52.8X4A"}
+{"arm": "DEL27", "code": "T528X4S", "desc": "Toxic effect of other organic solvents, undetermined, sequela", "dotted": "T52.8X4S"}
+{"arm": "M26", "code": "D718", "desc": "Other functional disorders of polymorphonuclear neutrophils", "dotted": "D71.8"}
+{"arm": "M26", "code": "L98465", "desc": "Non-pressure chronic ulcer of face with muscle involvement without evidence of necrosis", "dotted": "L98.465"}
+{"arm": "M26", "code": "L98472", "desc": "Non-pressure chronic ulcer of groin with fat layer exposed", "dotted": "L98.472"}
+{"arm": "M26", "code": "L98A119", "desc": "Non-pressure chronic ulcer of right upper arm with unspecified severity", "dotted": "L98.A119"}
+{"arm": "M26", "code": "L98A121", "desc": "Non-pressure chronic ulcer of left upper arm limited to breakdown of skin", "dotted": "L98.A121"}
+{"arm": "M26", "code": "L98A194", "desc": "Non-pressure chronic ulcer of unspecified upper arm with necrosis of bone", "dotted": "L98.A194"}
+{"arm": "M26", "code": "L98A223", "desc": "Non-pressure chronic ulcer of left forearm with necrosis of muscle", "dotted": "L98.A223"}
+{"arm": "M26", "code": "L98A225", "desc": "Non-pressure chronic ulcer of left forearm with muscle involvement without evidence of necrosis", "dotted": "L98.A225"}
+{"arm": "M26", "code": "L98A293", "desc": "Non-pressure chronic ulcer of unspecified forearm with necrosis of muscle", "dotted": "L98.A293"}
+{"arm": "M26", "code": "L98A311", "desc": "Non-pressure chronic ulcer of right hand limited to breakdown of skin", "dotted": "L98.A311"}
+{"arm": "M26", "code": "L98A315", "desc": "Non-pressure chronic ulcer of right hand with muscle involvement without evidence of necrosis", "dotted": "L98.A315"}
+{"arm": "M26", "code": "L98A395", "desc": "Non-pressure chronic ulcer of unspecified hand with muscle involvement without evidence of necrosis", "dotted": "L98.A395"}
+{"arm": "M26", "code": "Z910110", "desc": "Allergy to milk products, unspecified", "dotted": "Z91.0110"}
+{"arm": "JUNK", "code": "XYZ", "desc": "", "dotted": "XYZ"}
+{"arm": "JUNK", "code": "12345", "desc": "", "dotted": "12345"}
+{"arm": "JUNK", "code": "A0", "desc": "", "dotted": "A0"}
+{"arm": "JUNK", "code": "QA", "desc": "", "dotted": "QA"}
+{"arm": "JUNK", "code": "Q9999999", "desc": "", "dotted": "Q99.99999"}

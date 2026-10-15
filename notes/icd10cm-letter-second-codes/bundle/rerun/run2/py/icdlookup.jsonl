@@ -1,0 +1,88 @@
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00101", "error": null, "raw": "scn2a-related neurodevelopmental disorder", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00102", "error": null, "raw": "cacna1a-related neurodevelopmental disorder", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00109", "error": null, "raw": "neurodevelopmental disorder related to pathogenic variant in other ion channel gene", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA0011", "error": null, "raw": "neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA0012", "error": null, "raw": "neurodevelopmental disorders, related to pathogenic variants in other receptor genes", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00131", "error": null, "raw": "slc6a1-related disorder", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00139", "error": null, "raw": "neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00141", "error": null, "raw": "syntaxin-binding protein 1-related disorder", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00142", "error": null, "raw": "dlg4-related synaptopathy", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00149", "error": null, "raw": "neurodevelopmental disorder, related to pathogenic variant in other synapse related gene", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00151", "error": null, "raw": "foxg1 syndrome", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA00159", "error": null, "raw": "neurodevelopmental disorder, related to other genes associated with transcription and gene expression", "tool": "icdlookup"}
+{"accept": true, "arm": "QA26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA08", "error": null, "raw": "other neurodevelopmental disorders related to pathogenic variants in other specific genes", "tool": "icdlookup"}
+{"accept": false, "arm": "QA27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA171", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "QA27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA1790", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "QA27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA1791", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "QA27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA1792", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "QA27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA1798", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "G35A", "error": null, "raw": "relapsing-remitting multiple sclerosis", "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "G35C1", "error": null, "raw": "active secondary progressive multiple sclerosis", "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98479", "error": null, "raw": "non-pressure chronic ulcer of groin with unspecified severity", "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A298", "error": null, "raw": "non-pressure chronic ulcer of unspecified forearm with other specified severity", "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A316", "error": null, "raw": "non-pressure chronic ulcer of right hand with bone involvement without evidence of necrosis", "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A325", "error": null, "raw": "non-pressure chronic ulcer of left hand with muscle involvement without evidence of necrosis", "tool": "icdlookup"}
+{"accept": true, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "Q8989", "error": null, "raw": "other specified congenital malformations", "tool": "icdlookup"}
+{"accept": false, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S31136D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S31617D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S31626S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T36AX6A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T65844D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T78081D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "I4209", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "I4981", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "I4982", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "K740A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M868X39", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M868X71", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "O0041", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "O3140X4", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "O3142X2", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "O3142X3", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T52891A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T52892A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "N27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "Z6818", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "C8596", "error": null, "raw": "non-hodgkin lymphoma, unspecified, intrapelvic lymph nodes", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "D120", "error": null, "raw": "benign neoplasm of cecum", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "H16291", "error": null, "raw": "other keratoconjunctivitis, right eye", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "H449", "error": null, "raw": "unspecified disorder of globe", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M47891", "error": null, "raw": "other spondylosis, occipito-atlanto-axial region", "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S31120S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S45919S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S52515M", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S53412D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S60470S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S85399D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T22799S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "V9535XA", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": true, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "D691", "error": null, "raw": "qualitative platelet defects", "tool": "icdlookup"}
+{"accept": true, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "I420", "error": null, "raw": "dilated cardiomyopathy", "tool": "icdlookup"}
+{"accept": true, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "I428", "error": null, "raw": "other cardiomyopathies", "tool": "icdlookup"}
+{"accept": true, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M722", "error": null, "raw": "plantar fascial fibromatosis", "tool": "icdlookup"}
+{"accept": true, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M868X1", "error": null, "raw": "other osteomyelitis, shoulder", "tool": "icdlookup"}
+{"accept": true, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M868X5", "error": null, "raw": "other osteomyelitis, thigh", "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X1D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X2A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X3A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X3D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X3S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X4A", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "DEL27", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T528X4S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "D718", "error": null, "raw": "other functional disorders of polymorphonuclear neutrophils", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98465", "error": null, "raw": "non-pressure chronic ulcer of face with muscle involvement without evidence of necrosis", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98472", "error": null, "raw": "non-pressure chronic ulcer of groin with fat layer exposed", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A119", "error": null, "raw": "non-pressure chronic ulcer of right upper arm with unspecified severity", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A121", "error": null, "raw": "non-pressure chronic ulcer of left upper arm limited to breakdown of skin", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A194", "error": null, "raw": "non-pressure chronic ulcer of unspecified upper arm with necrosis of bone", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A223", "error": null, "raw": "non-pressure chronic ulcer of left forearm with necrosis of muscle", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A225", "error": null, "raw": "non-pressure chronic ulcer of left forearm with muscle involvement without evidence of necrosis", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A293", "error": null, "raw": "non-pressure chronic ulcer of unspecified forearm with necrosis of muscle", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A311", "error": null, "raw": "non-pressure chronic ulcer of right hand limited to breakdown of skin", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A315", "error": null, "raw": "non-pressure chronic ulcer of right hand with muscle involvement without evidence of necrosis", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "L98A395", "error": null, "raw": "non-pressure chronic ulcer of unspecified hand with muscle involvement without evidence of necrosis", "tool": "icdlookup"}
+{"accept": true, "arm": "M26", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "Z910110", "error": null, "raw": "allergy to milk products, unspecified", "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "XYZ", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "12345", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "A0", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "Q9999999", "error": null, "raw": null, "tool": "icdlookup"}

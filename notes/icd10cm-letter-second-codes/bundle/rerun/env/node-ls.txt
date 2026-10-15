@@ -1,0 +1,337 @@
+node@1.0.0 /w/envs/node
++-- @cosyte/terminology@0.1.0
++-- @cyanheads/medical-codes-mcp-server@0.4.1
+| +-- @cyanheads/mcp-ts-core@0.13.15
+| | +-- UNMET OPTIONAL DEPENDENCY @duckdb/node-api@^1.5.5-r.1 || ^1.5.6-r.1
+| | +-- @hono/node-server@2.1.5
+| | | `-- hono@4.13.13 deduped
+| | +-- UNMET OPTIONAL DEPENDENCY @hono/otel@^1.1.2
+| | +-- UNMET OPTIONAL DEPENDENCY @modelcontextprotocol/client@^2.1.0
+| | +-- UNMET OPTIONAL DEPENDENCY @modelcontextprotocol/ext-apps@^2.0.0
+| | +-- @modelcontextprotocol/server@2.3.1
+| | | +-- @modelcontextprotocol/core@2.3.1
+| | | | `-- zod@4.6.7 deduped
+| | | `-- zod@4.6.7 deduped
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/api-logs@^0.223.0
+| | +-- @opentelemetry/api@1.9.1
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/exporter-logs-otlp-http@^0.223.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/exporter-metrics-otlp-http@^0.223.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/exporter-trace-otlp-http@^0.223.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/instrumentation-http@^0.223.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/instrumentation-pino@^0.69.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/resources@^2.10.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/sdk-logs@^0.223.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/sdk-metrics@^2.10.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/sdk-node@^0.223.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/sdk-trace-node@^2.10.0
+| | +-- UNMET OPTIONAL DEPENDENCY @opentelemetry/semantic-conventions@^1.43.0
+| | +-- UNMET OPTIONAL DEPENDENCY @supabase/supabase-js@^2.110.8
+| | +-- better-sqlite3@13.0.3 deduped
+| | +-- UNMET OPTIONAL DEPENDENCY chrono-node@^2.10.1
+| | +-- UNMET OPTIONAL DEPENDENCY defuddle@^0.19.2
+| | +-- UNMET OPTIONAL DEPENDENCY diff@^9.0.0
+| | +-- UNMET OPTIONAL DEPENDENCY fast-check@^4.9.0
+| | +-- UNMET OPTIONAL DEPENDENCY fast-xml-parser@^5.10.1
+| | +-- hono@4.13.13
+| | +-- jose@6.2.12
+| | +-- UNMET OPTIONAL DEPENDENCY js-yaml@^5.2.2
+| | +-- UNMET OPTIONAL DEPENDENCY linkedom@^0.18.13
+| | +-- UNMET OPTIONAL DEPENDENCY node-cron@^4.6.0
+| | +-- UNMET OPTIONAL DEPENDENCY openai@^6.48.0 || ^7.0.0
+| | +-- UNMET OPTIONAL DEPENDENCY papaparse@^5.5.4
+| | +-- UNMET OPTIONAL DEPENDENCY partial-json@^0.1.7
+| | +-- UNMET OPTIONAL DEPENDENCY pdf-lib@^1.17.1
+| | +-- pino@10.4.0
+| | | +-- @pinojs/redact@0.4.0
+| | | +-- atomic-sleep@1.0.0
+| | | +-- on-exit-leak-free@2.1.2 deduped
+| | | +-- pino-abstract-transport@3.0.0 deduped
+| | | +-- pino-std-serializers@7.1.0
+| | | +-- process-warning@5.1.1
+| | | +-- quick-format-unescaped@4.0.4
+| | | +-- real-require@1.0.0
+| | | +-- safe-stable-stringify@2.5.0
+| | | +-- sonic-boom@4.2.1
+| | | | `-- atomic-sleep@1.0.0 deduped
+| | | `-- thread-stream@4.2.0
+| | |   `-- real-require@1.0.0 deduped
+| | +-- UNMET OPTIONAL DEPENDENCY sanitize-html@^2.17.6
+| | +-- UNMET OPTIONAL DEPENDENCY unpdf@^1.6.2
+| | +-- UNMET OPTIONAL DEPENDENCY vitest@>=4.0.0
+| | `-- zod@4.6.7 deduped
+| +-- better-sqlite3@13.0.3
+| | `-- node-addon-api@8.9.2
+| +-- pino-pretty@13.2.0
+| | +-- colorette@2.0.20
+| | +-- dateformat@4.6.3
+| | +-- fast-copy@4.2.0
+| | +-- fast-safe-stringify@2.1.1
+| | +-- help-me@5.0.0
+| | +-- joycon@3.1.1
+| | +-- minimist@1.2.8
+| | +-- on-exit-leak-free@2.1.2
+| | +-- pino-abstract-transport@3.0.0
+| | | `-- split2@4.2.0
+| | +-- pump@3.0.4
+| | | +-- end-of-stream@1.4.5
+| | | | `-- once@1.4.0 deduped
+| | | `-- once@1.4.0
+| | |   `-- wrappy@1.0.2
+| | +-- secure-json-parse@4.1.1
+| | +-- sonic-boom@5.0.2
+| | | `-- atomic-sleep@1.0.0 deduped
+| | `-- strip-json-comments@5.0.3
+| `-- zod@4.6.7
++-- @easysolutions906/mcp-healthcare@1.1.3
+| +-- @modelcontextprotocol/sdk@1.32.1
+| | +-- UNMET OPTIONAL DEPENDENCY @cfworker/json-schema@^4.1.1
+| | +-- @hono/node-server@2.1.5 deduped
+| | +-- ajv-formats@3.0.1
+| | | `-- ajv@8.20.0 deduped
+| | +-- ajv@8.20.0
+| | | +-- fast-deep-equal@3.1.3
+| | | +-- fast-uri@3.1.8
+| | | +-- json-schema-traverse@1.0.0
+| | | `-- require-from-string@2.0.2
+| | +-- content-type@1.0.5
+| | +-- cors@2.8.6
+| | | +-- object-assign@4.1.1
+| | | `-- vary@1.1.2 deduped
+| | +-- cross-spawn@7.0.6
+| | | +-- path-key@3.1.1
+| | | +-- shebang-command@2.0.0
+| | | | `-- shebang-regex@3.0.0
+| | | `-- which@2.0.2
+| | |   `-- isexe@2.0.0
+| | +-- eventsource-parser@3.1.1
+| | +-- eventsource@3.0.7
+| | | `-- eventsource-parser@3.1.1 deduped
+| | +-- express-rate-limit@8.7.1
+| | | +-- debug@4.4.3
+| | | | `-- ms@2.1.3
+| | | +-- express@4.22.3 deduped
+| | | `-- ip-address@10.7.4
+| | +-- express@5.3.0
+| | | +-- accepts@2.0.0
+| | | | +-- mime-types@3.0.2 deduped
+| | | | `-- negotiator@1.1.0
+| | | |   `-- content-type@2.1.0
+| | | +-- body-parser@2.3.0
+| | | | +-- bytes@3.1.2 deduped
+| | | | +-- content-type@2.1.0
+| | | | +-- debug@4.4.3 deduped
+| | | | +-- http-errors@2.0.1 deduped
+| | | | +-- iconv-lite@0.7.3
+| | | | | `-- safer-buffer@2.1.2 deduped
+| | | | +-- on-finished@2.4.1 deduped
+| | | | +-- qs@6.16.1 deduped
+| | | | +-- raw-body@3.0.2 deduped
+| | | | `-- type-is@2.1.0 deduped
+| | | +-- content-disposition@2.0.1
+| | | +-- content-type@2.1.0
+| | | +-- cookie-signature@1.2.2
+| | | +-- cookie@0.7.2 deduped
+| | | +-- debug@4.4.3
+| | | | `-- ms@2.1.3
+| | | +-- depd@2.0.0 deduped
+| | | +-- encodeurl@2.0.0 deduped
+| | | +-- escape-html@1.0.3 deduped
+| | | +-- etag@1.8.1 deduped
+| | | +-- finalhandler@2.1.1
+| | | | +-- debug@4.4.3 deduped
+| | | | +-- encodeurl@2.0.0 deduped
+| | | | +-- escape-html@1.0.3 deduped
+| | | | +-- on-finished@2.4.1 deduped
+| | | | +-- parseurl@1.3.3 deduped
+| | | | `-- statuses@2.0.2 deduped
+| | | +-- fresh@2.0.0
+| | | +-- http-errors@2.0.1 deduped
+| | | +-- merge-descriptors@2.0.0
+| | | +-- mime-types@3.0.2
+| | | | `-- mime-db@1.54.0
+| | | +-- on-finished@2.4.1 deduped
+| | | +-- once@1.4.0 deduped
+| | | +-- parseurl@1.3.3 deduped
+| | | +-- proxy-addr@2.0.8 deduped
+| | | +-- qs@6.16.1 deduped
+| | | +-- range-parser@1.2.1 deduped
+| | | +-- router@2.2.0
+| | | | +-- debug@4.4.3
+| | | | | `-- ms@2.1.3
+| | | | +-- depd@2.0.0 deduped
+| | | | +-- is-promise@4.0.0
+| | | | +-- parseurl@1.3.3 deduped
+| | | | `-- path-to-regexp@8.4.2
+| | | +-- send@1.2.1
+| | | | +-- debug@4.4.3 deduped
+| | | | +-- encodeurl@2.0.0 deduped
+| | | | +-- escape-html@1.0.3 deduped
+| | | | +-- etag@1.8.1 deduped
+| | | | +-- fresh@2.0.0 deduped
+| | | | +-- http-errors@2.0.1 deduped
+| | | | +-- mime-types@3.0.2 deduped
+| | | | +-- ms@2.1.3 deduped
+| | | | +-- on-finished@2.4.1 deduped
+| | | | +-- range-parser@1.2.1 deduped
+| | | | `-- statuses@2.0.2 deduped
+| | | +-- serve-static@2.2.1
+| | | | +-- encodeurl@2.0.0 deduped
+| | | | +-- escape-html@1.0.3 deduped
+| | | | +-- parseurl@1.3.3 deduped
+| | | | `-- send@1.2.1 deduped
+| | | +-- statuses@2.0.2 deduped
+| | | +-- type-is@2.1.0
+| | | | +-- content-type@2.1.0
+| | | | +-- media-typer@1.1.1
+| | | | `-- mime-types@3.0.2 deduped
+| | | `-- vary@1.1.2 deduped
+| | +-- hono@4.13.13 deduped
+| | +-- jose@6.2.12 deduped
+| | +-- json-schema-typed@8.0.2
+| | +-- pkce-challenge@5.0.1
+| | +-- raw-body@3.0.2
+| | | +-- bytes@3.1.2
+| | | +-- http-errors@2.0.1 deduped
+| | | +-- iconv-lite@0.7.3
+| | | | `-- safer-buffer@2.1.2
+| | | `-- unpipe@1.0.0
+| | +-- zod-to-json-schema@3.25.2
+| | | `-- zod@4.6.7 deduped
+| | `-- zod@4.6.7 deduped
+| +-- express@4.22.3
+| | +-- accepts@1.3.8
+| | | +-- mime-types@2.1.35
+| | | | `-- mime-db@1.52.0
+| | | `-- negotiator@0.6.3
+| | +-- array-flatten@1.1.1
+| | +-- body-parser@1.20.8
+| | | +-- bytes@3.1.2 deduped
+| | | +-- content-type@1.0.5 deduped
+| | | +-- debug@2.6.9 deduped
+| | | +-- depd@2.0.0 deduped
+| | | +-- destroy@1.2.0
+| | | +-- http-errors@2.0.1 deduped
+| | | +-- iconv-lite@0.4.24
+| | | | `-- safer-buffer@2.1.2 deduped
+| | | +-- on-finished@2.4.1 deduped
+| | | +-- qs@6.16.1 deduped
+| | | +-- raw-body@2.5.3
+| | | | +-- bytes@3.1.2 deduped
+| | | | +-- http-errors@2.0.1 deduped
+| | | | +-- iconv-lite@0.4.24 deduped
+| | | | `-- unpipe@1.0.0 deduped
+| | | +-- type-is@1.6.18 deduped
+| | | `-- unpipe@1.0.0 deduped
+| | +-- content-disposition@0.5.4
+| | | `-- safe-buffer@5.2.1 deduped
+| | +-- content-type@1.0.5 deduped
+| | +-- cookie-signature@1.0.7
+| | +-- cookie@0.7.2
+| | +-- debug@2.6.9
+| | | `-- ms@2.0.0
+| | +-- depd@2.0.0
+| | +-- encodeurl@2.0.0
+| | +-- escape-html@1.0.3
+| | +-- etag@1.8.1
+| | +-- finalhandler@1.3.2
+| | | +-- debug@2.6.9 deduped
+| | | +-- encodeurl@2.0.0 deduped
+| | | +-- escape-html@1.0.3 deduped
+| | | +-- on-finished@2.4.1 deduped
+| | | +-- parseurl@1.3.3 deduped
+| | | +-- statuses@2.0.2 deduped
+| | | `-- unpipe@1.0.0 deduped
+| | +-- fresh@0.5.2
+| | +-- http-errors@2.0.1
+| | | +-- depd@2.0.0 deduped
+| | | +-- inherits@2.0.4
+| | | +-- setprototypeof@1.2.0 deduped
+| | | +-- statuses@2.0.2 deduped
+| | | `-- toidentifier@1.0.1
+| | +-- merge-descriptors@1.0.3
+| | +-- methods@1.1.2
+| | +-- on-finished@2.4.1
+| | | `-- ee-first@1.1.1
+| | +-- parseurl@1.3.3
+| | +-- path-to-regexp@0.1.13
+| | +-- proxy-addr@2.0.8
+| | | +-- forwarded@0.2.0
+| | | `-- ipaddr.js@1.9.1
+| | +-- qs@6.16.1
+| | | +-- es-define-property@1.0.1
+| | | `-- side-channel@1.1.1
+| | |   +-- es-errors@1.3.0
+| | |   +-- object-inspect@1.13.4
+| | |   +-- side-channel-list@1.0.1
+| | |   | +-- es-errors@1.3.0 deduped
+| | |   | `-- object-inspect@1.13.4 deduped
+| | |   +-- side-channel-map@1.0.1
+| | |   | +-- call-bound@1.0.4
+| | |   | | +-- call-bind-apply-helpers@1.0.2
+| | |   | | | +-- es-errors@1.3.0 deduped
+| | |   | | | `-- function-bind@1.1.2 deduped
+| | |   | | `-- get-intrinsic@1.3.0 deduped
+| | |   | +-- es-errors@1.3.0 deduped
+| | |   | +-- get-intrinsic@1.3.0
+| | |   | | +-- call-bind-apply-helpers@1.0.2 deduped
+| | |   | | +-- es-define-property@1.0.1 deduped
+| | |   | | +-- es-errors@1.3.0 deduped
+| | |   | | +-- es-object-atoms@1.1.2
+| | |   | | | `-- es-errors@1.3.0 deduped
+| | |   | | +-- function-bind@1.1.2
+| | |   | | +-- get-proto@1.0.1
+| | |   | | | +-- dunder-proto@1.0.1
+| | |   | | | | +-- call-bind-apply-helpers@1.0.2 deduped
+| | |   | | | | +-- es-errors@1.3.0 deduped
+| | |   | | | | `-- gopd@1.2.0 deduped
+| | |   | | | `-- es-object-atoms@1.1.2 deduped
+| | |   | | +-- gopd@1.2.0
+| | |   | | +-- has-symbols@1.1.0
+| | |   | | +-- hasown@2.0.4
+| | |   | | | `-- function-bind@1.1.2 deduped
+| | |   | | `-- math-intrinsics@1.1.0
+| | |   | `-- object-inspect@1.13.4 deduped
+| | |   `-- side-channel-weakmap@1.0.2
+| | |     +-- call-bound@1.0.4 deduped
+| | |     +-- es-errors@1.3.0 deduped
+| | |     +-- get-intrinsic@1.3.0 deduped
+| | |     +-- object-inspect@1.13.4 deduped
+| | |     `-- side-channel-map@1.0.1 deduped
+| | +-- range-parser@1.2.1
+| | +-- safe-buffer@5.2.1
+| | +-- send@0.19.2
+| | | +-- debug@2.6.9 deduped
+| | | +-- depd@2.0.0 deduped
+| | | +-- destroy@1.2.0 deduped
+| | | +-- encodeurl@2.0.0 deduped
+| | | +-- escape-html@1.0.3 deduped
+| | | +-- etag@1.8.1 deduped
+| | | +-- fresh@0.5.2 deduped
+| | | +-- http-errors@2.0.1 deduped
+| | | +-- mime@1.6.0
+| | | +-- ms@2.1.3
+| | | +-- on-finished@2.4.1 deduped
+| | | +-- range-parser@1.2.1 deduped
+| | | `-- statuses@2.0.2 deduped
+| | +-- serve-static@1.16.3
+| | | +-- encodeurl@2.0.0 deduped
+| | | +-- escape-html@1.0.3 deduped
+| | | +-- parseurl@1.3.3 deduped
+| | | `-- send@0.19.2 deduped
+| | +-- setprototypeof@1.2.0
+| | +-- statuses@2.0.2
+| | +-- type-is@1.6.18
+| | | +-- media-typer@0.3.0
+| | | `-- mime-types@2.1.35 deduped
+| | +-- utils-merge@1.0.1
+| | `-- vary@1.1.2
+| +-- stripe@17.7.0
+| | +-- @types/node@26.6.5
+| | | `-- undici-types@8.9.0
+| | `-- qs@6.16.1 deduped
+| `-- zod@3.25.76
++-- @lowlysre/icd-10-cm@3.1.1
+`-- icdwise@0.1.2
+  +-- @modelcontextprotocol/sdk@1.32.1 deduped
+  `-- zod@3.25.76
+

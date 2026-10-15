@@ -1,0 +1,18 @@
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "C8596", "error": null, "raw": "non-hodgkin lymphoma, unspecified, intrapelvic lymph nodes", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "D120", "error": null, "raw": "benign neoplasm of cecum", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "H16291", "error": null, "raw": "other keratoconjunctivitis, right eye", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "H449", "error": null, "raw": "unspecified disorder of globe", "tool": "icdlookup"}
+{"accept": true, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "M47891", "error": null, "raw": "other spondylosis, occipito-atlanto-axial region", "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S31120S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S45919S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S52515M", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S53412D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S60470S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "S85399D", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "T22799S", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "OLD", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "V9535XA", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "XYZ", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "12345", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "A0", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "QA", "error": null, "raw": null, "tool": "icdlookup"}
+{"accept": false, "arm": "JUNK", "call": "icdlookup 0.1.0 lookup(dotted)", "code": "Q9999999", "error": null, "raw": null, "tool": "icdlookup"}

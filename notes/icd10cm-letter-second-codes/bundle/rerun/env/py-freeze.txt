@@ -1,0 +1,13 @@
+beautifulsoup4==4.15.0
+certifi==2026.7.22
+charset-normalizer==3.5.2
+cms-icd==0.3.1
+icd10-coder==0.2.3
+icdlookup==0.1.0
+idna==3.20
+pypdf==6.20.1
+requests==2.34.2
+simple_icd_10_cm==1.5.0
+soupsieve==3.0.3
+typing_extensions==4.16.0
+urllib3==2.8.0

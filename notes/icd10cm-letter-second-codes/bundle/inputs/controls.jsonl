@@ -1,0 +1,18 @@
+{"arm": "OLD", "code": "C8596", "desc": "Non-Hodgkin lymphoma, unspecified, intrapelvic lymph nodes", "dotted": "C85.96"}
+{"arm": "OLD", "code": "D120", "desc": "Benign neoplasm of cecum", "dotted": "D12.0"}
+{"arm": "OLD", "code": "H16291", "desc": "Other keratoconjunctivitis, right eye", "dotted": "H16.291"}
+{"arm": "OLD", "code": "H449", "desc": "Unspecified disorder of globe", "dotted": "H44.9"}
+{"arm": "OLD", "code": "M47891", "desc": "Other spondylosis, occipito-atlanto-axial region", "dotted": "M47.891"}
+{"arm": "OLD", "code": "S31120S", "desc": "Laceration of abdominal wall with foreign body, right upper quadrant without penetration into peritoneal cavity, sequela", "dotted": "S31.120S"}
+{"arm": "OLD", "code": "S45919S", "desc": "Laceration of unspecified blood vessel at shoulder and upper arm level, unspecified arm, sequela", "dotted": "S45.919S"}
+{"arm": "OLD", "code": "S52515M", "desc": "Nondisplaced fracture of left radial styloid process, subsequent encounter for open fracture type I or II with nonunion", "dotted": "S52.515M"}
+{"arm": "OLD", "code": "S53412D", "desc": "Radiohumeral (joint) sprain of left elbow, subsequent encounter", "dotted": "S53.412D"}
+{"arm": "OLD", "code": "S60470S", "desc": "Other superficial bite of right index finger, sequela", "dotted": "S60.470S"}
+{"arm": "OLD", "code": "S85399D", "desc": "Other specified injury of greater saphenous vein at lower leg level, unspecified leg, subsequent encounter", "dotted": "S85.399D"}
+{"arm": "OLD", "code": "T22799S", "desc": "Corrosion of third degree of multiple sites of unspecified shoulder and upper limb, except wrist and hand, sequela", "dotted": "T22.799S"}
+{"arm": "OLD", "code": "V9535XA", "desc": "Commercial fixed-wing aircraft explosion injuring occupant, initial encounter", "dotted": "V95.35XA"}
+{"arm": "JUNK", "code": "XYZ", "desc": "", "dotted": "XYZ"}
+{"arm": "JUNK", "code": "12345", "desc": "", "dotted": "12345"}
+{"arm": "JUNK", "code": "A0", "desc": "", "dotted": "A0"}
+{"arm": "JUNK", "code": "QA", "desc": "", "dotted": "QA"}
+{"arm": "JUNK", "code": "Q9999999", "desc": "", "dotted": "Q99.99999"}

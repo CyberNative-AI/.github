@@ -1,0 +1,1979 @@
+{
+ "hits": [
+  "icdwise"
+ ],
+ "n_excluded": 0,
+ "n_tools": 11,
+ "ruling": "CHANGE",
+ "tools": {
+  "@cosyte/terminology": {
+   "arms": {
+    "DEL27": {
+     "accept": 6,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 5,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "@cosyte/terminology 0.1.0 loadCodeSystem(fixed-width FY2027 order file, ICD10CM_ORDER_FILE_FIELDS) + validateCode(undotted); count=98403",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "CURRENT27",
+   "maintainer": "cosyte",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "{\"valid\":true,\"status\":{\"activity\":\"active\",\"active\":true,\"raw\":\"1\",\"billable\":true}}"
+    }
+   ],
+   "rerun_identical": true
+  },
+  "@cyanheads/medical-codes-mcp-server": {
+   "arms": {
+    "DEL27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "@cyanheads/medical-codes-mcp-server 0.4.1 checkCode(dotted) [system auto, as medcode check_code without system]",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "cyanheads",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "valid_billable "
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "unknown \"QA1.71\" is not present in any bundled code system (ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm), and matches no bundled code shape."
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "unknown \"QA1.790\" is not present in any bundled code system (ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm), and matches no bundled code shape."
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "unknown \"QA1.791\" is not present in any bundled code system (ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm), and matches no bundled code shape."
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "unknown \"QA1.792\" is not present in any bundled code system (ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm), and matches no bundled code shape."
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "unknown \"QA1.798\" is not present in any bundled code system (ICD-10-CM, ICD-10-PCS, HCPCS Level II, RxNorm), and matches no bundled code shape."
+    }
+   ],
+   "rerun_identical": true
+  },
+  "@easysolutions906/mcp-healthcare": {
+   "arms": {
+    "DEL27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "@easysolutions906/mcp-healthcare 1.1.3 validate(dotted).valid",
+   "class": "STALE_PRE26",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "easysolutions906",
+   "qa_rows": [
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "Code not found in ICD-10-CM 2025"
+    }
+   ],
+   "rerun_identical": true
+  },
+  "@lowlysre/icd-10-cm": {
+   "arms": {
+    "DEL27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 5,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "@lowlysre/icd-10-cm 3.1.1 getICD10Description(dotted) {\"fiscalYear\":2027,\"effectiveDate\":\"2026-10-01\",\"codeCount\":74879}",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "CURRENT27",
+   "maintainer": "lowlysre",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "SCN2A-related neurodevelopmental disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "CACNA1A-related neurodevelopmental disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "Neurodevelopmental disorder related to pathogenic variant in other ion channel gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "Neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "Neurodevelopmental disorders, related to pathogenic variants in other receptor genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "SLC6A1-related disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "Neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "Syntaxin-binding protein 1-related disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "DLG4-related synaptopathy"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "Neurodevelopmental disorder, related to pathogenic variant in other synapse related gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "FOXG1 syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "Neurodevelopmental disorder, related to other genes associated with transcription and gene expression"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "Other neurodevelopmental disorders related to pathogenic variants in other specific genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "Lynch syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "Familial cancer syndrome with pathogenic BRCA1 mutation"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "Familial cancer syndrome with pathogenic BRCA2 mutation"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "Li Fraumeni syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "Other inherited neoplasm predisposition syndrome of multiple systems"
+    }
+   ],
+   "rerun_identical": true
+  },
+  "cms-icd": {
+   "arms": {
+    "DEL27": {
+     "accept": 6,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 5,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "cms-icd 0.3.1 ICD10KnowledgeBase.for_date(2026-10-14).cm[dotted]",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "CURRENT27",
+   "maintainer": "ipolharvard",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "SCN2A-related neurodevelopmental disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "CACNA1A-related neurodevelopmental disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "Neurodevelopmental disorder related to pathogenic variant in other ion channel gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "Neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "Neurodevelopmental disorders, related to pathogenic variants in other receptor genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "SLC6A1-related disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "Neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "Syntaxin-binding protein 1-related disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "DLG4-related synaptopathy"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "Neurodevelopmental disorder, related to pathogenic variant in other synapse related gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "FOXG1 syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "Neurodevelopmental disorder, related to other genes associated with transcription and gene expression"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "Other neurodevelopmental disorders related to pathogenic variants in other specific genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "Lynch syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "Familial cancer syndrome with pathogenic BRCA1 mutation"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "Familial cancer syndrome with pathogenic BRCA2 mutation"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "Li Fraumeni syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "Other inherited neoplasm predisposition syndrome of multiple systems"
+    }
+   ],
+   "rerun_identical": true
+  },
+  "icd10-coder": {
+   "arms": {
+    "DEL27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "icd10-coder 0.2.3 _code_exists('cm', undotted) (used by its `code` command)",
+   "class": "STALE_PRE26",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "icd10-coder",
+   "qa_rows": [
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": null
+    }
+   ],
+   "rerun_identical": true
+  },
+  "icdlookup": {
+   "arms": {
+    "DEL27": {
+     "accept": 6,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 7,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 5,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "icdlookup 0.1.0 lookup(dotted)",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "icdlookup",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "scn2a-related neurodevelopmental disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "cacna1a-related neurodevelopmental disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "neurodevelopmental disorder related to pathogenic variant in other ion channel gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "neurodevelopmental disorders, related to pathogenic variants in other receptor genes"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "slc6a1-related disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "syntaxin-binding protein 1-related disorder"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "dlg4-related synaptopathy"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "neurodevelopmental disorder, related to pathogenic variant in other synapse related gene"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "foxg1 syndrome"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "neurodevelopmental disorder, related to other genes associated with transcription and gene expression"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "other neurodevelopmental disorders related to pathogenic variants in other specific genes"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": null
+    }
+   ],
+   "rerun_identical": true
+  },
+  "icdwise": {
+   "arms": {
+    "DEL27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "icdwise 0.1.2 validateIcd10(dotted).valid dataset=2026",
+   "class": "FORMAT_REJECT",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "icdwise",
+   "qa_rows": [
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0101\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0102\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0109\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "{\"input\":\"QA0.011\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed "
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "{\"input\":\"QA0.012\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed "
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0131\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0139\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0141\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0142\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0149\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0151\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "{\"input\":\"QA0.0159\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed"
+    },
+    {
+     "accept": false,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "{\"input\":\"QA0.8\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed IC"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "{\"input\":\"QA1.71\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed I"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "{\"input\":\"QA1.790\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed "
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "{\"input\":\"QA1.791\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed "
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "{\"input\":\"QA1.792\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed "
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "{\"input\":\"QA1.798\",\"code\":null,\"wellFormed\":false,\"existsInDataset\":false,\"valid\":false,\"description\":null,\"datasetVersion\":\"2026\",\"errors\":[\"Not a well-formed "
+    }
+   ],
+   "rerun_identical": true
+  },
+  "nlm-clinicaltables": {
+   "arms": {
+    "DEL27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 5,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "GET clinicaltables.nlm.nih.gov/api/icd10cm/v3/search sf=code terms=dotted; accept = exact dotted code in result list",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "CURRENT27",
+   "maintainer": "NLM",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "[[\"QA0.0101\", \"SCN2A-related neurodevelopmental disorder\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "[[\"QA0.0102\", \"CACNA1A-related neurodevelopmental disorder\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "[[\"QA0.0109\", \"Neurodevelopmental disorder related to pathogenic variant in other ion channel gene\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "[[\"QA0.011\", \"Neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "[[\"QA0.012\", \"Neurodevelopmental disorders, related to pathogenic variants in other receptor genes\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "[[\"QA0.0131\", \"SLC6A1-related disorder\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "[[\"QA0.0139\", \"Neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "[[\"QA0.0141\", \"Syntaxin-binding protein 1-related disorder\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "[[\"QA0.0142\", \"DLG4-related synaptopathy\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "[[\"QA0.0149\", \"Neurodevelopmental disorder, related to pathogenic variant in other synapse related gene\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "[[\"QA0.0151\", \"FOXG1 syndrome\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "[[\"QA0.0159\", \"Neurodevelopmental disorder, related to other genes associated with transcription and gene expression\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "[[\"QA0.8\", \"Other neurodevelopmental disorders related to pathogenic variants in other specific genes\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "[[\"QA1.71\", \"Lynch syndrome\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "[[\"QA1.790\", \"Familial cancer syndrome with pathogenic BRCA1 mutation\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "[[\"QA1.791\", \"Familial cancer syndrome with pathogenic BRCA2 mutation\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "[[\"QA1.792\", \"Li Fraumeni syndrome\"]]"
+    },
+    {
+     "accept": true,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "[[\"QA1.798\", \"Other inherited neoplasm predisposition syndrome of multiple systems\"]]"
+    }
+   ],
+   "rerun_identical": null
+  },
+  "simple-icd-10-cm": {
+   "arms": {
+    "DEL27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "simple-icd-10-cm 1.5.0 is_valid_item(dotted)",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "StefanoTrv",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": null
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": null
+    }
+   ],
+   "rerun_identical": true
+  },
+  "tx.fhir.org": {
+   "arms": {
+    "DEL27": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "JUNK": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    },
+    "M26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "N27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 13
+    },
+    "OLD": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA26": {
+     "accept": 13,
+     "errors": 0,
+     "n": 13
+    },
+    "QA27": {
+     "accept": 0,
+     "errors": 0,
+     "n": 5
+    }
+   },
+   "call": "GET tx.fhir.org/r4/CodeSystem/$validate-code url=http://hl7.org/fhir/sid/icd-10-cm code=dotted; accept = result true",
+   "class": "QA_OK",
+   "error_rate": 0.0,
+   "excluded": null,
+   "fy2027": "NOT_CURRENT27",
+   "maintainer": "HL7",
+   "qa_rows": [
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00101",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"SCN2A-related neurodevelopmental disorder\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00102",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"CACNA1A-related neurodevelopmental disorder\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00109",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Neurodevelopmental disorder related to pathogenic variant in other ion channel gene\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0011",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Neurodevelopmental disorders, related to pathogenic variants in glutamate receptor genes\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA0012",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Neurodevelopmental disorders, related to pathogenic variants in other receptor genes\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00131",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"SLC6A1-related disorder\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00139",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Neurodevelopmental disorder, related to pathogenic variant in other transporter or solute carrier gene\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00141",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Syntaxin-binding protein 1-related disorder\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00142",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"DLG4-related synaptopathy\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00149",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Neurodevelopmental disorder, related to pathogenic variant in other synapse related gene\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00151",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"FOXG1 syndrome\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA00159",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Neurodevelopmental disorder, related to other genes associated with transcription and gene expression\", \"message\": null}"
+    },
+    {
+     "accept": true,
+     "arm": "QA26",
+     "code": "QA08",
+     "error": null,
+     "raw": "{\"version\": \"2026-04-01\", \"display\": \"Other neurodevelopmental disorders related to pathogenic variants in other specific genes\", \"message\": null}"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA171",
+     "error": null,
+     "raw": "{\"version\": null, \"display\": null, \"message\": \"Unknown code 'QA1.71' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2026-04-01'\"}"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1790",
+     "error": null,
+     "raw": "{\"version\": null, \"display\": null, \"message\": \"Unknown code 'QA1.790' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2026-04-01'\"}"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1791",
+     "error": null,
+     "raw": "{\"version\": null, \"display\": null, \"message\": \"Unknown code 'QA1.791' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2026-04-01'\"}"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1792",
+     "error": null,
+     "raw": "{\"version\": null, \"display\": null, \"message\": \"Unknown code 'QA1.792' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2026-04-01'\"}"
+    },
+    {
+     "accept": false,
+     "arm": "QA27",
+     "code": "QA1798",
+     "error": null,
+     "raw": "{\"version\": null, \"display\": null, \"message\": \"Unknown code 'QA1.798' in the CodeSystem 'http://hl7.org/fhir/sid/icd-10-cm' version '2026-04-01'\"}"
+    }
+   ],
+   "rerun_identical": null
+  }
+ }
+}
