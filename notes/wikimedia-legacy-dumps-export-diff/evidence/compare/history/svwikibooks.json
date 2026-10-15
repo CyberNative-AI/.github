@@ -1,0 +1,163 @@
+{
+ "arm": "history",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "svwikibooks-2026-10-01-p2p11398.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 330,
+    "sha1_attr": "il5tmkmsjlhswethrvspz4kvd35x4y2",
+    "tdel": null,
+    "text_len": 1300,
+    "text_sha1": "616162a6736930c5c6f9b86b6b7b735b9fb4b4e3",
+    "title": "Matematik/Matematik C",
+    "ts": "2004-08-22T00:43:40Z"
+   },
+   "key": [
+    98,
+    330
+   ],
+   "legacy": {
+    "file": "svwikibooks-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 330,
+    "sha1_attr": "il5tmkmsjlhswethrvspz4kvd35x4y2",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Matematik/Matematik C",
+    "ts": "2004-08-22T00:43:40Z"
+   },
+   "live": {
+    "latest": {
+     "parentid": 45759,
+     "revid": 57582,
+     "sha1": "748ad2408a8b04274472217cd0d20e5fa6ac30a0",
+     "size": 3801,
+     "slots": {
+      "main": {
+       "sha1": "748ad2408a8b04274472217cd0d20e5fa6ac30a0"
+      }
+     },
+     "timestamp": "2025-09-10T14:31:39Z"
+    },
+    "rev": {
+     "page": 98,
+     "parentid": 329,
+     "revid": 330,
+     "sha1": "9f208d030c94dba3231520de28cf7c887619384a",
+     "size": 1288,
+     "slots": {
+      "main": {
+       "sha1": "9f208d030c94dba3231520de28cf7c887619384a"
+      }
+     },
+     "timestamp": "2004-08-22T00:43:40Z"
+    },
+    "verdict": "BOTH_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "svwikibooks-2026-10-01-p2p11398.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 345,
+    "sha1_attr": "rle78x4hqd5tkofcbqp5nro3djgwih2",
+    "tdel": null,
+    "text_len": 1486,
+    "text_sha1": "9f9deadd949ef721310239daa9b68a45fe395754",
+    "title": "Matematik/Matematik C",
+    "ts": "2004-08-22T00:48:49Z"
+   },
+   "key": [
+    98,
+    345
+   ],
+   "legacy": {
+    "file": "svwikibooks-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 345,
+    "sha1_attr": "rle78x4hqd5tkofcbqp5nro3djgwih2",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Matematik/Matematik C",
+    "ts": "2004-08-22T00:48:49Z"
+   },
+   "live": {
+    "latest": {
+     "parentid": 45759,
+     "revid": 57582,
+     "sha1": "748ad2408a8b04274472217cd0d20e5fa6ac30a0",
+     "size": 3801,
+     "slots": {
+      "main": {
+       "sha1": "748ad2408a8b04274472217cd0d20e5fa6ac30a0"
+      }
+     },
+     "timestamp": "2025-09-10T14:31:39Z"
+    },
+    "rev": {
+     "page": 98,
+     "parentid": 330,
+     "revid": 345,
+     "sha1": "ec3adccd29b97371d9bddac7f52842f1230df186",
+     "size": 1460,
+     "slots": {
+      "main": {
+       "sha1": "ec3adccd29b97371d9bddac7f52842f1230df186"
+      }
+     },
+     "timestamp": "2004-08-22T00:48:49Z"
+    },
+    "verdict": "BOTH_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 6,
+  "MISSING_EXPORT|TIMING": 1,
+  "TEXT_DIFF|UNEXPLAINED": 2
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 4,
+   "no_text_not_deleted": 113,
+   "sha1_attr_mismatch": 2
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 2,
+   "no_text_not_deleted": 115
+  }
+ },
+ "live": {
+  "BOTH_WRONG": 2
+ },
+ "live_checked": 2,
+ "max_ts": {
+  "export": "2026-09-25T11:46:33Z",
+  "legacy": "2026-10-01T12:42:56Z"
+ },
+ "n_diffs": 9,
+ "n_export": 47419,
+ "n_legacy": 47420,
+ "rc_covers_window": true,
+ "rc_rows": 17,
+ "unexplained_primary": 2,
+ "wiki": "svwikibooks"
+}

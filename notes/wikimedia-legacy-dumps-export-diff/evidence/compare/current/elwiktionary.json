@@ -1,0 +1,6469 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 248350,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ὑδρο-",
+    "rid": 5718988,
+    "sha1_attr": "g4jz9lzxkjqnpczgyp81ltlifqjtih3",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "8a0e703674637b60e419261737d0140f437c0dc7",
+    "title": "ὑδρ-",
+    "ts": "2023-08-05T20:16:53Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1550936,
+     "revid": 5718988,
+     "sha1": "8a0e703674637b60e419261737d0140f437c0dc7",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "8a0e703674637b60e419261737d0140f437c0dc7"
+      }
+     },
+     "timestamp": "2023-08-05T20:16:53Z"
+    },
+    "rev": {
+     "page": 248350,
+     "parentid": 1550936,
+     "revid": 5718988,
+     "sha1": "8a0e703674637b60e419261737d0140f437c0dc7",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "8a0e703674637b60e419261737d0140f437c0dc7"
+      }
+     },
+     "timestamp": "2023-08-05T20:16:53Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 803591,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἰσο-",
+    "rid": 4822095,
+    "sha1_attr": "fe1niwv3yyiuq3588e9pvql85tbp9hb",
+    "tdel": null,
+    "text_len": 22,
+    "text_sha1": "83c0a58ab711e43585ff0e2cf5251da3fd8acb3f",
+    "title": "ἰσό-",
+    "ts": "2020-08-22T08:57:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4822091,
+     "revid": 4822095,
+     "sha1": "83c0a58ab711e43585ff0e2cf5251da3fd8acb3f",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "83c0a58ab711e43585ff0e2cf5251da3fd8acb3f"
+      }
+     },
+     "timestamp": "2020-08-22T08:57:41Z"
+    },
+    "rev": {
+     "page": 803591,
+     "parentid": 4822091,
+     "revid": 4822095,
+     "sha1": "83c0a58ab711e43585ff0e2cf5251da3fd8acb3f",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "83c0a58ab711e43585ff0e2cf5251da3fd8acb3f"
+      }
+     },
+     "timestamp": "2020-08-22T08:57:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 805035,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "φραγκο-",
+    "rid": 4502523,
+    "sha1_attr": "e58yy1d7r3j3p6ruvsrz0ucg497kg61",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9",
+    "title": "φραγκό-",
+    "ts": "2020-03-08T19:08:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 4502523,
+     "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9"
+      }
+     },
+     "timestamp": "2020-03-08T19:08:28Z"
+    },
+    "rev": {
+     "page": 805035,
+     "parentid": 0,
+     "revid": 4502523,
+     "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9"
+      }
+     },
+     "timestamp": "2020-03-08T19:08:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 805091,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κλεο-",
+    "rid": 4503014,
+    "sha1_attr": "m4bepadbzzzmd6jxm58nff6uxa83xkf",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "bd5d5f8c5954913b11057532314c0fe598d8ccaf",
+    "title": "κλεό-",
+    "ts": "2020-03-11T06:08:29Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 4503014,
+     "sha1": "bd5d5f8c5954913b11057532314c0fe598d8ccaf",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "bd5d5f8c5954913b11057532314c0fe598d8ccaf"
+      }
+     },
+     "timestamp": "2020-03-11T06:08:29Z"
+    },
+    "rev": {
+     "page": 805091,
+     "parentid": 0,
+     "revid": 4503014,
+     "sha1": "bd5d5f8c5954913b11057532314c0fe598d8ccaf",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "bd5d5f8c5954913b11057532314c0fe598d8ccaf"
+      }
+     },
+     "timestamp": "2020-03-11T06:08:29Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 829203,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξενο-",
+    "rid": 4597898,
+    "sha1_attr": "mzd4zco2wgl3c01a05jldse5kmw6mne",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a",
+    "title": "ξενό-",
+    "ts": "2020-04-05T08:29:07Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 4597898,
+     "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a"
+      }
+     },
+     "timestamp": "2020-04-05T08:29:07Z"
+    },
+    "rev": {
+     "page": 829203,
+     "parentid": 0,
+     "revid": 4597898,
+     "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a"
+      }
+     },
+     "timestamp": "2020-04-05T08:29:07Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 841043,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "καρπο-",
+    "rid": 4625316,
+    "sha1_attr": "e54hnhjq5elmf0c1607ya4u5t6oi3az",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "7911fabe391dd27d498bfa5559179515295de13b",
+    "title": "καρπό-",
+    "ts": "2020-04-24T10:47:44Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 4625316,
+     "sha1": "7911fabe391dd27d498bfa5559179515295de13b",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "7911fabe391dd27d498bfa5559179515295de13b"
+      }
+     },
+     "timestamp": "2020-04-24T10:47:44Z"
+    },
+    "rev": {
+     "page": 841043,
+     "parentid": 0,
+     "revid": 4625316,
+     "sha1": "7911fabe391dd27d498bfa5559179515295de13b",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "7911fabe391dd27d498bfa5559179515295de13b"
+      }
+     },
+     "timestamp": "2020-04-24T10:47:44Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 847470,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ουρανο-",
+    "rid": 4643119,
+    "sha1_attr": "2g5r2m02m4rbcwuzwdokdgvl0zhzbjq",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "14f6e6d174167c17232bbbb927ef62401a1b8236",
+    "title": "ουρανό-",
+    "ts": "2020-05-19T08:30:27Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 4643119,
+     "sha1": "14f6e6d174167c17232bbbb927ef62401a1b8236",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "14f6e6d174167c17232bbbb927ef62401a1b8236"
+      }
+     },
+     "timestamp": "2020-05-19T08:30:27Z"
+    },
+    "rev": {
+     "page": 847470,
+     "parentid": 0,
+     "revid": 4643119,
+     "sha1": "14f6e6d174167c17232bbbb927ef62401a1b8236",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "14f6e6d174167c17232bbbb927ef62401a1b8236"
+      }
+     },
+     "timestamp": "2020-05-19T08:30:27Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 847475,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "οὐρανο-",
+    "rid": 4643125,
+    "sha1_attr": "6qwv2rzswpjn1sl3z7xzhxasi7e1rjh",
+    "tdel": null,
+    "text_len": 28,
+    "text_sha1": "39c3cdaca4bdff0df2ba4a9d3eb73f9cfe5eabad",
+    "title": "οὐρανό-",
+    "ts": "2020-05-19T08:35:13Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 4643125,
+     "sha1": "39c3cdaca4bdff0df2ba4a9d3eb73f9cfe5eabad",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "39c3cdaca4bdff0df2ba4a9d3eb73f9cfe5eabad"
+      }
+     },
+     "timestamp": "2020-05-19T08:35:13Z"
+    },
+    "rev": {
+     "page": 847475,
+     "parentid": 0,
+     "revid": 4643125,
+     "sha1": "39c3cdaca4bdff0df2ba4a9d3eb73f9cfe5eabad",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "39c3cdaca4bdff0df2ba4a9d3eb73f9cfe5eabad"
+      }
+     },
+     "timestamp": "2020-05-19T08:35:13Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262978,
+    "sha1_attr": "cv9c0w85bu5udcouxv28q3n4chzi2a5",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Μεσαιωνικοί ελληνικοί όροι μέσης περιόδου",
+    "ts": "2025-09-20T04:54:18Z"
+   },
+   "key": 848893,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262978,
+    "sha1_attr": "cv9c0w85bu5udcouxv28q3n4chzi2a5",
+    "tdel": null,
+    "text_len": 418,
+    "text_sha1": "6e29d431392c351c93438bfcc6b41a49a323830d",
+    "title": "Κατηγορία:Μεσαιωνικοί ελληνικοί όροι μέσης περιόδου",
+    "ts": "2025-09-20T04:54:18Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4669852,
+     "revid": 7262978,
+     "sha1": "6e29d431392c351c93438bfcc6b41a49a323830d",
+     "size": 418,
+     "slots": {
+      "main": {
+       "sha1": "6e29d431392c351c93438bfcc6b41a49a323830d"
+      }
+     },
+     "timestamp": "2025-09-20T04:54:18Z"
+    },
+    "rev": {
+     "page": 848893,
+     "parentid": 4669852,
+     "revid": 7262978,
+     "sha1": "6e29d431392c351c93438bfcc6b41a49a323830d",
+     "size": 418,
+     "slots": {
+      "main": {
+       "sha1": "6e29d431392c351c93438bfcc6b41a49a323830d"
+      }
+     },
+     "timestamp": "2025-09-20T04:54:18Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 11,
+    "redirect": null,
+    "rid": 7272327,
+    "sha1_attr": "hmq5k0vm3c34qumiobblprhh1shec55",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Συζήτηση προτύπου:R:tr:Nishanyan",
+    "ts": "2025-11-02T17:41:09Z"
+   },
+   "key": 849864,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 11,
+    "redirect": null,
+    "rid": 7272327,
+    "sha1_attr": "hmq5k0vm3c34qumiobblprhh1shec55",
+    "tdel": null,
+    "text_len": 676,
+    "text_sha1": "96f03cb8dd9a61bc01bcf0a4d6a6532df81625f9",
+    "title": "Συζήτηση προτύπου:R:tr:Nishanyan",
+    "ts": "2025-11-02T17:41:09Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4669041,
+     "revid": 7272327,
+     "sha1": "96f03cb8dd9a61bc01bcf0a4d6a6532df81625f9",
+     "size": 676,
+     "slots": {
+      "main": {
+       "sha1": "96f03cb8dd9a61bc01bcf0a4d6a6532df81625f9"
+      }
+     },
+     "timestamp": "2025-11-02T17:41:09Z"
+    },
+    "rev": {
+     "page": 849864,
+     "parentid": 4669041,
+     "revid": 7272327,
+     "sha1": "96f03cb8dd9a61bc01bcf0a4d6a6532df81625f9",
+     "size": 676,
+     "slots": {
+      "main": {
+       "sha1": "96f03cb8dd9a61bc01bcf0a4d6a6532df81625f9"
+      }
+     },
+     "timestamp": "2025-11-02T17:41:09Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262974,
+    "sha1_attr": "mxgiou0rpky090o3tk1fvz2x45okq9f",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Ελληνιστικοί όροι μετακλασικής περιόδου",
+    "ts": "2025-09-20T04:50:44Z"
+   },
+   "key": 849983,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262974,
+    "sha1_attr": "mxgiou0rpky090o3tk1fvz2x45okq9f",
+    "tdel": null,
+    "text_len": 392,
+    "text_sha1": "c44b72c2a3b6859c71113d70f3894366603b8df3",
+    "title": "Κατηγορία:Ελληνιστικοί όροι μετακλασικής περιόδου",
+    "ts": "2025-09-20T04:50:44Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4833392,
+     "revid": 7262974,
+     "sha1": "c44b72c2a3b6859c71113d70f3894366603b8df3",
+     "size": 392,
+     "slots": {
+      "main": {
+       "sha1": "c44b72c2a3b6859c71113d70f3894366603b8df3"
+      }
+     },
+     "timestamp": "2025-09-20T04:50:44Z"
+    },
+    "rev": {
+     "page": 849983,
+     "parentid": 4833392,
+     "revid": 7262974,
+     "sha1": "c44b72c2a3b6859c71113d70f3894366603b8df3",
+     "size": 392,
+     "slots": {
+      "main": {
+       "sha1": "c44b72c2a3b6859c71113d70f3894366603b8df3"
+      }
+     },
+     "timestamp": "2025-09-20T04:50:44Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262977,
+    "sha1_attr": "7wwsk257x8el8rfhkx2qtczzbv0ywe0",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Μεσαιωνικοί ελληνικοί όροι πρώιμης περιόδου",
+    "ts": "2025-09-20T04:53:20Z"
+   },
+   "key": 849984,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262977,
+    "sha1_attr": "7wwsk257x8el8rfhkx2qtczzbv0ywe0",
+    "tdel": null,
+    "text_len": 418,
+    "text_sha1": "43c084bb44c699834e6cee36b856b20c464e2478",
+    "title": "Κατηγορία:Μεσαιωνικοί ελληνικοί όροι πρώιμης περιόδου",
+    "ts": "2025-09-20T04:53:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4669853,
+     "revid": 7262977,
+     "sha1": "43c084bb44c699834e6cee36b856b20c464e2478",
+     "size": 418,
+     "slots": {
+      "main": {
+       "sha1": "43c084bb44c699834e6cee36b856b20c464e2478"
+      }
+     },
+     "timestamp": "2025-09-20T04:53:20Z"
+    },
+    "rev": {
+     "page": 849984,
+     "parentid": 4669853,
+     "revid": 7262977,
+     "sha1": "43c084bb44c699834e6cee36b856b20c464e2478",
+     "size": 418,
+     "slots": {
+      "main": {
+       "sha1": "43c084bb44c699834e6cee36b856b20c464e2478"
+      }
+     },
+     "timestamp": "2025-09-20T04:53:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262975,
+    "sha1_attr": "13s6ze5twjbyfhrcv5bx9fsxesy73b9",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Ελληνιστικοί όροι αλεξανδρινής περιόδου",
+    "ts": "2025-09-20T04:51:21Z"
+   },
+   "key": 854026,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262975,
+    "sha1_attr": "13s6ze5twjbyfhrcv5bx9fsxesy73b9",
+    "tdel": null,
+    "text_len": 404,
+    "text_sha1": "0975e117658857bcfc8d9de36c50020652777e85",
+    "title": "Κατηγορία:Ελληνιστικοί όροι αλεξανδρινής περιόδου",
+    "ts": "2025-09-20T04:51:21Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4833396,
+     "revid": 7262975,
+     "sha1": "0975e117658857bcfc8d9de36c50020652777e85",
+     "size": 404,
+     "slots": {
+      "main": {
+       "sha1": "0975e117658857bcfc8d9de36c50020652777e85"
+      }
+     },
+     "timestamp": "2025-09-20T04:51:21Z"
+    },
+    "rev": {
+     "page": 854026,
+     "parentid": 4833396,
+     "revid": 7262975,
+     "sha1": "0975e117658857bcfc8d9de36c50020652777e85",
+     "size": 404,
+     "slots": {
+      "main": {
+       "sha1": "0975e117658857bcfc8d9de36c50020652777e85"
+      }
+     },
+     "timestamp": "2025-09-20T04:51:21Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262976,
+    "sha1_attr": "th9pitkjob7q3es6psyqh5nqe0ev8qy",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Ελληνιστικοί όροι όψιμης περιόδου",
+    "ts": "2025-09-20T04:52:20Z"
+   },
+   "key": 864799,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262976,
+    "sha1_attr": "th9pitkjob7q3es6psyqh5nqe0ev8qy",
+    "tdel": null,
+    "text_len": 381,
+    "text_sha1": "fc5ee6a0a53fc7fe3b6385360092b97ffb9d6c0a",
+    "title": "Κατηγορία:Ελληνιστικοί όροι όψιμης περιόδου",
+    "ts": "2025-09-20T04:52:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4986154,
+     "revid": 7262976,
+     "sha1": "fc5ee6a0a53fc7fe3b6385360092b97ffb9d6c0a",
+     "size": 381,
+     "slots": {
+      "main": {
+       "sha1": "fc5ee6a0a53fc7fe3b6385360092b97ffb9d6c0a"
+      }
+     },
+     "timestamp": "2025-09-20T04:52:20Z"
+    },
+    "rev": {
+     "page": 864799,
+     "parentid": 4986154,
+     "revid": 7262976,
+     "sha1": "fc5ee6a0a53fc7fe3b6385360092b97ffb9d6c0a",
+     "size": 381,
+     "slots": {
+      "main": {
+       "sha1": "fc5ee6a0a53fc7fe3b6385360092b97ffb9d6c0a"
+      }
+     },
+     "timestamp": "2025-09-20T04:52:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262970,
+    "sha1_attr": "hhm5csxz2z9lqadli3d83dqo23vzol9",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Αρχαίοι ελληνικοί όροι προκλασικής περιόδου",
+    "ts": "2025-09-20T04:47:35Z"
+   },
+   "key": 871061,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262970,
+    "sha1_attr": "hhm5csxz2z9lqadli3d83dqo23vzol9",
+    "tdel": null,
+    "text_len": 202,
+    "text_sha1": "95b91427c974db0403fa46efa2dc61056bf5f23d",
+    "title": "Κατηγορία:Αρχαίοι ελληνικοί όροι προκλασικής περιόδου",
+    "ts": "2025-09-20T04:47:35Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5174383,
+     "revid": 7262970,
+     "sha1": "95b91427c974db0403fa46efa2dc61056bf5f23d",
+     "size": 202,
+     "slots": {
+      "main": {
+       "sha1": "95b91427c974db0403fa46efa2dc61056bf5f23d"
+      }
+     },
+     "timestamp": "2025-09-20T04:47:35Z"
+    },
+    "rev": {
+     "page": 871061,
+     "parentid": 5174383,
+     "revid": 7262970,
+     "sha1": "95b91427c974db0403fa46efa2dc61056bf5f23d",
+     "size": 202,
+     "slots": {
+      "main": {
+       "sha1": "95b91427c974db0403fa46efa2dc61056bf5f23d"
+      }
+     },
+     "timestamp": "2025-09-20T04:47:35Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262969,
+    "sha1_attr": "fra2snv6uhqff8subjblinnrvir6fr4",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Αρχαίοι ελληνικοί όροι ομηρικής περιόδου",
+    "ts": "2025-09-20T04:46:20Z"
+   },
+   "key": 871062,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7262969,
+    "sha1_attr": "fra2snv6uhqff8subjblinnrvir6fr4",
+    "tdel": null,
+    "text_len": 202,
+    "text_sha1": "86e64b02a87d8afd53f73860f4346fe1b59ec840",
+    "title": "Κατηγορία:Αρχαίοι ελληνικοί όροι ομηρικής περιόδου",
+    "ts": "2025-09-20T04:46:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5174392,
+     "revid": 7262969,
+     "sha1": "86e64b02a87d8afd53f73860f4346fe1b59ec840",
+     "size": 202,
+     "slots": {
+      "main": {
+       "sha1": "86e64b02a87d8afd53f73860f4346fe1b59ec840"
+      }
+     },
+     "timestamp": "2025-09-20T04:46:20Z"
+    },
+    "rev": {
+     "page": 871062,
+     "parentid": 5174392,
+     "revid": 7262969,
+     "sha1": "86e64b02a87d8afd53f73860f4346fe1b59ec840",
+     "size": 202,
+     "slots": {
+      "main": {
+       "sha1": "86e64b02a87d8afd53f73860f4346fe1b59ec840"
+      }
+     },
+     "timestamp": "2025-09-20T04:46:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 873157,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "φραγκο-",
+    "rid": 5283411,
+    "sha1_attr": "e58yy1d7r3j3p6ruvsrz0ucg497kg61",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9",
+    "title": "φραγκ-",
+    "ts": "2021-09-29T12:00:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5283411,
+     "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9"
+      }
+     },
+     "timestamp": "2021-09-29T12:00:45Z"
+    },
+    "rev": {
+     "page": 873157,
+     "parentid": 0,
+     "revid": 5283411,
+     "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "79198e4e4509a9b14f897e1314737e8a3d15f9d9"
+      }
+     },
+     "timestamp": "2021-09-29T12:00:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 874051,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "φτωχο-",
+    "rid": 5321888,
+    "sha1_attr": "0clwszqwx92n6cikmy8qzq6t8hcg76b",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "02ff938da5a0c88ed872b5562521d2739c87b853",
+    "title": "φτωχό-",
+    "ts": "2021-10-07T03:54:31Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5321888,
+     "sha1": "02ff938da5a0c88ed872b5562521d2739c87b853",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "02ff938da5a0c88ed872b5562521d2739c87b853"
+      }
+     },
+     "timestamp": "2021-10-07T03:54:31Z"
+    },
+    "rev": {
+     "page": 874051,
+     "parentid": 0,
+     "revid": 5321888,
+     "sha1": "02ff938da5a0c88ed872b5562521d2739c87b853",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "02ff938da5a0c88ed872b5562521d2739c87b853"
+      }
+     },
+     "timestamp": "2021-10-07T03:54:31Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 875200,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πλαγιο-",
+    "rid": 5718954,
+    "sha1_attr": "1ztopsax4xpmzljfhrdhkfzvh7t6ldk",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8",
+    "title": "πλαγιό-",
+    "ts": "2023-08-05T19:55:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5330268,
+     "revid": 5718954,
+     "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8"
+      }
+     },
+     "timestamp": "2023-08-05T19:55:51Z"
+    },
+    "rev": {
+     "page": 875200,
+     "parentid": 5330268,
+     "revid": 5718954,
+     "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8"
+      }
+     },
+     "timestamp": "2023-08-05T19:55:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 875202,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πλαγιο-",
+    "rid": 5330271,
+    "sha1_attr": "1ztopsax4xpmzljfhrdhkfzvh7t6ldk",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8",
+    "title": "πλαγί-",
+    "ts": "2021-10-30T05:41:13Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5330271,
+     "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8"
+      }
+     },
+     "timestamp": "2021-10-30T05:41:13Z"
+    },
+    "rev": {
+     "page": 875202,
+     "parentid": 0,
+     "revid": 5330271,
+     "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "11147782c8b1b7d47630d63f242b173d3a3f3ab8"
+      }
+     },
+     "timestamp": "2021-10-30T05:41:13Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 875292,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀνθο-",
+    "rid": 5718534,
+    "sha1_attr": "65cxvalc1qj6i1bljvcvg364m4qw42a",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "34a3b28282b9d3e330a4f05842cc983638b22692",
+    "title": "ἀνθό-",
+    "ts": "2023-08-05T15:10:32Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5332129,
+     "revid": 5718534,
+     "sha1": "34a3b28282b9d3e330a4f05842cc983638b22692",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "34a3b28282b9d3e330a4f05842cc983638b22692"
+      }
+     },
+     "timestamp": "2023-08-05T15:10:32Z"
+    },
+    "rev": {
+     "page": 875292,
+     "parentid": 5332129,
+     "revid": 5718534,
+     "sha1": "34a3b28282b9d3e330a4f05842cc983638b22692",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "34a3b28282b9d3e330a4f05842cc983638b22692"
+      }
+     },
+     "timestamp": "2023-08-05T15:10:32Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 875293,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀγγελο-",
+    "rid": 5332124,
+    "sha1_attr": "n85n4d9k06rhf3itsawrlyrorezl9pt",
+    "tdel": null,
+    "text_len": 109,
+    "text_sha1": "c6d6b3b5ef8fd2cd2b4dfb6b0ee161180bb4cf71",
+    "title": "ἀγγελό-",
+    "ts": "2021-11-01T22:24:29Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5332123,
+     "revid": 5332124,
+     "sha1": "c6d6b3b5ef8fd2cd2b4dfb6b0ee161180bb4cf71",
+     "size": 109,
+     "slots": {
+      "main": {
+       "sha1": "c6d6b3b5ef8fd2cd2b4dfb6b0ee161180bb4cf71"
+      }
+     },
+     "timestamp": "2021-11-01T22:24:29Z"
+    },
+    "rev": {
+     "page": 875293,
+     "parentid": 5332123,
+     "revid": 5332124,
+     "sha1": "c6d6b3b5ef8fd2cd2b4dfb6b0ee161180bb4cf71",
+     "size": 109,
+     "slots": {
+      "main": {
+       "sha1": "c6d6b3b5ef8fd2cd2b4dfb6b0ee161180bb4cf71"
+      }
+     },
+     "timestamp": "2021-11-01T22:24:29Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 875295,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀκρο-",
+    "rid": 5718489,
+    "sha1_attr": "cuonyriueho36w7btkgewrwl42wg4nm",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "6e06e0d17963a8f05b1279446548605c56186392",
+    "title": "ἀκρό-",
+    "ts": "2023-08-05T14:36:47Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5332128,
+     "revid": 5718489,
+     "sha1": "6e06e0d17963a8f05b1279446548605c56186392",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "6e06e0d17963a8f05b1279446548605c56186392"
+      }
+     },
+     "timestamp": "2023-08-05T14:36:47Z"
+    },
+    "rev": {
+     "page": 875295,
+     "parentid": 5332128,
+     "revid": 5718489,
+     "sha1": "6e06e0d17963a8f05b1279446548605c56186392",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "6e06e0d17963a8f05b1279446548605c56186392"
+      }
+     },
+     "timestamp": "2023-08-05T14:36:47Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 875296,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀμμο-",
+    "rid": 5718506,
+    "sha1_attr": "k77u6sps208927er65sxuyvg4bbgvqa",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "aceed311fc178fe8e94ba6e16ef6f91bcb723ba2",
+    "title": "ἀμμό-",
+    "ts": "2023-08-05T14:49:00Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5332130,
+     "revid": 5718506,
+     "sha1": "aceed311fc178fe8e94ba6e16ef6f91bcb723ba2",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "aceed311fc178fe8e94ba6e16ef6f91bcb723ba2"
+      }
+     },
+     "timestamp": "2023-08-05T14:49:00Z"
+    },
+    "rev": {
+     "page": 875296,
+     "parentid": 5332130,
+     "revid": 5718506,
+     "sha1": "aceed311fc178fe8e94ba6e16ef6f91bcb723ba2",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "aceed311fc178fe8e94ba6e16ef6f91bcb723ba2"
+      }
+     },
+     "timestamp": "2023-08-05T14:49:00Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 876413,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ολιγο-",
+    "rid": 5718733,
+    "sha1_attr": "24bk9nizf8hp4nqn1z9eixgknmqfeys",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "1226344f6e961db5530f40f7e3fe1d14c0cadb84",
+    "title": "ολιγό-",
+    "ts": "2023-08-05T16:57:09Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5345238,
+     "revid": 5718733,
+     "sha1": "1226344f6e961db5530f40f7e3fe1d14c0cadb84",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "1226344f6e961db5530f40f7e3fe1d14c0cadb84"
+      }
+     },
+     "timestamp": "2023-08-05T16:57:09Z"
+    },
+    "rev": {
+     "page": 876413,
+     "parentid": 5345238,
+     "revid": 5718733,
+     "sha1": "1226344f6e961db5530f40f7e3fe1d14c0cadb84",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "1226344f6e961db5530f40f7e3fe1d14c0cadb84"
+      }
+     },
+     "timestamp": "2023-08-05T16:57:09Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 876543,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πετρο-",
+    "rid": 6512724,
+    "sha1_attr": "0ql7nifzshqjwd137env49cx6rqx6l7",
+    "tdel": null,
+    "text_len": 101,
+    "text_sha1": "0652ac3724ff867f88c351b80f1d7bde1371e59b",
+    "title": "πετρό-",
+    "ts": "2023-11-29T16:31:08Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5346146,
+     "revid": 6512724,
+     "sha1": "0652ac3724ff867f88c351b80f1d7bde1371e59b",
+     "size": 101,
+     "slots": {
+      "main": {
+       "sha1": "0652ac3724ff867f88c351b80f1d7bde1371e59b"
+      }
+     },
+     "timestamp": "2023-11-29T16:31:08Z"
+    },
+    "rev": {
+     "page": 876543,
+     "parentid": 5346146,
+     "revid": 6512724,
+     "sha1": "0652ac3724ff867f88c351b80f1d7bde1371e59b",
+     "size": 101,
+     "slots": {
+      "main": {
+       "sha1": "0652ac3724ff867f88c351b80f1d7bde1371e59b"
+      }
+     },
+     "timestamp": "2023-11-29T16:31:08Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 877302,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "φωνο-",
+    "rid": 5377241,
+    "sha1_attr": "1jo353thakizmpd5vbigdnam7ceg6e9",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "0d3cf76c9a57bfe7b5d760e014b64e6f969af261",
+    "title": "φωνό-",
+    "ts": "2021-12-11T13:17:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5377241,
+     "sha1": "0d3cf76c9a57bfe7b5d760e014b64e6f969af261",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "0d3cf76c9a57bfe7b5d760e014b64e6f969af261"
+      }
+     },
+     "timestamp": "2021-12-11T13:17:20Z"
+    },
+    "rev": {
+     "page": 877302,
+     "parentid": 0,
+     "revid": 5377241,
+     "sha1": "0d3cf76c9a57bfe7b5d760e014b64e6f969af261",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "0d3cf76c9a57bfe7b5d760e014b64e6f969af261"
+      }
+     },
+     "timestamp": "2021-12-11T13:17:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 877332,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λεπτο-",
+    "rid": 5718694,
+    "sha1_attr": "7cwpk7scy8wyosgagiec9jel59xnrse",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e",
+    "title": "λεπτό-",
+    "ts": "2023-08-05T16:43:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5377561,
+     "revid": 5718694,
+     "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e"
+      }
+     },
+     "timestamp": "2023-08-05T16:43:51Z"
+    },
+    "rev": {
+     "page": 877332,
+     "parentid": 5377561,
+     "revid": 5718694,
+     "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e"
+      }
+     },
+     "timestamp": "2023-08-05T16:43:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 878172,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἱερο-",
+    "rid": 5718652,
+    "sha1_attr": "fo4e92myk6ancpxzg30wy6u3g4d83qb",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "86260dd2f582279bc851443012828a10c8df41e3",
+    "title": "ἱερό-",
+    "ts": "2023-08-05T16:20:47Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5380937,
+     "revid": 5718652,
+     "sha1": "86260dd2f582279bc851443012828a10c8df41e3",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "86260dd2f582279bc851443012828a10c8df41e3"
+      }
+     },
+     "timestamp": "2023-08-05T16:20:47Z"
+    },
+    "rev": {
+     "page": 878172,
+     "parentid": 5380937,
+     "revid": 5718652,
+     "sha1": "86260dd2f582279bc851443012828a10c8df41e3",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "86260dd2f582279bc851443012828a10c8df41e3"
+      }
+     },
+     "timestamp": "2023-08-05T16:20:47Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 879697,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "χαρτο-",
+    "rid": 5393764,
+    "sha1_attr": "m50nvmsyq42q9wyejnv2j86cecsoxkb",
+    "tdel": null,
+    "text_len": 60,
+    "text_sha1": "bd8814780c3797e37313e9a9ab75d334e152ebeb",
+    "title": "χαρτό-",
+    "ts": "2022-01-03T09:18:04Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5393764,
+     "sha1": "bd8814780c3797e37313e9a9ab75d334e152ebeb",
+     "size": 60,
+     "slots": {
+      "main": {
+       "sha1": "bd8814780c3797e37313e9a9ab75d334e152ebeb"
+      }
+     },
+     "timestamp": "2022-01-03T09:18:04Z"
+    },
+    "rev": {
+     "page": 879697,
+     "parentid": 0,
+     "revid": 5393764,
+     "sha1": "bd8814780c3797e37313e9a9ab75d334e152ebeb",
+     "size": 60,
+     "slots": {
+      "main": {
+       "sha1": "bd8814780c3797e37313e9a9ab75d334e152ebeb"
+      }
+     },
+     "timestamp": "2022-01-03T09:18:04Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 879771,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "αγγλο-",
+    "rid": 5394418,
+    "sha1_attr": "337rtd8ugdyl0vzm68ray5k36pw9ydf",
+    "tdel": null,
+    "text_len": 60,
+    "text_sha1": "1a727d423d39918ff624022a96a176f0dcd25a43",
+    "title": "αγγλό-",
+    "ts": "2022-01-04T15:12:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5394417,
+     "revid": 5394418,
+     "sha1": "1a727d423d39918ff624022a96a176f0dcd25a43",
+     "size": 60,
+     "slots": {
+      "main": {
+       "sha1": "1a727d423d39918ff624022a96a176f0dcd25a43"
+      }
+     },
+     "timestamp": "2022-01-04T15:12:24Z"
+    },
+    "rev": {
+     "page": 879771,
+     "parentid": 5394417,
+     "revid": 5394418,
+     "sha1": "1a727d423d39918ff624022a96a176f0dcd25a43",
+     "size": 60,
+     "slots": {
+      "main": {
+       "sha1": "1a727d423d39918ff624022a96a176f0dcd25a43"
+      }
+     },
+     "timestamp": "2022-01-04T15:12:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 15,
+    "redirect": null,
+    "rid": 7197189,
+    "sha1_attr": "bq2fpj3m8c2gwmxhu10ko59dbtk5nql",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Συζήτηση κατηγορίας:Τοπικές ποικιλίες γλώσσας (νέα ελληνικά)",
+    "ts": "2025-08-01T19:30:44Z"
+   },
+   "key": 879878,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 15,
+    "redirect": null,
+    "rid": 7197189,
+    "sha1_attr": "bq2fpj3m8c2gwmxhu10ko59dbtk5nql",
+    "tdel": null,
+    "text_len": 944,
+    "text_sha1": "645e355302bde9fe40f0b12a09c80c2ab4851f6d",
+    "title": "Συζήτηση κατηγορίας:Τοπικές ποικιλίες γλώσσας (νέα ελληνικά)",
+    "ts": "2025-08-01T19:30:44Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5395426,
+     "revid": 7197189,
+     "sha1": "645e355302bde9fe40f0b12a09c80c2ab4851f6d",
+     "size": 944,
+     "slots": {
+      "main": {
+       "sha1": "645e355302bde9fe40f0b12a09c80c2ab4851f6d"
+      }
+     },
+     "timestamp": "2025-08-01T19:30:44Z"
+    },
+    "rev": {
+     "page": 879878,
+     "parentid": 5395426,
+     "revid": 7197189,
+     "sha1": "645e355302bde9fe40f0b12a09c80c2ab4851f6d",
+     "size": 944,
+     "slots": {
+      "main": {
+       "sha1": "645e355302bde9fe40f0b12a09c80c2ab4851f6d"
+      }
+     },
+     "timestamp": "2025-08-01T19:30:44Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 880078,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πλατυ-",
+    "rid": 5397160,
+    "sha1_attr": "a6aumv5123jg46cwzsap07mpcyrjnq3",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "571b538dff53c726bede9428f674d1399fc6c1db",
+    "title": "πλατύ-",
+    "ts": "2022-01-09T19:57:33Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5397160,
+     "sha1": "571b538dff53c726bede9428f674d1399fc6c1db",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "571b538dff53c726bede9428f674d1399fc6c1db"
+      }
+     },
+     "timestamp": "2022-01-09T19:57:33Z"
+    },
+    "rev": {
+     "page": 880078,
+     "parentid": 0,
+     "revid": 5397160,
+     "sha1": "571b538dff53c726bede9428f674d1399fc6c1db",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "571b538dff53c726bede9428f674d1399fc6c1db"
+      }
+     },
+     "timestamp": "2022-01-09T19:57:33Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 880149,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πατρο-",
+    "rid": 5397831,
+    "sha1_attr": "ceuzeshthtgpwsledqqrh4ze4atgyyk",
+    "tdel": null,
+    "text_len": 102,
+    "text_sha1": "6a4387ba8f21fa14aa8642ed1c644e91e56479fc",
+    "title": "πατρό-",
+    "ts": "2022-01-11T13:54:27Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5397831,
+     "sha1": "6a4387ba8f21fa14aa8642ed1c644e91e56479fc",
+     "size": 102,
+     "slots": {
+      "main": {
+       "sha1": "6a4387ba8f21fa14aa8642ed1c644e91e56479fc"
+      }
+     },
+     "timestamp": "2022-01-11T13:54:27Z"
+    },
+    "rev": {
+     "page": 880149,
+     "parentid": 0,
+     "revid": 5397831,
+     "sha1": "6a4387ba8f21fa14aa8642ed1c644e91e56479fc",
+     "size": 102,
+     "slots": {
+      "main": {
+       "sha1": "6a4387ba8f21fa14aa8642ed1c644e91e56479fc"
+      }
+     },
+     "timestamp": "2022-01-11T13:54:27Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 880264,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "χημειο-",
+    "rid": 5398756,
+    "sha1_attr": "t1f0kymmxzj63j98gakiaqojtqydxo9",
+    "tdel": null,
+    "text_len": 64,
+    "text_sha1": "f899d7ff19f784991458f39576a89574992985b9",
+    "title": "χημειό-",
+    "ts": "2022-01-13T18:06:18Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5398756,
+     "sha1": "f899d7ff19f784991458f39576a89574992985b9",
+     "size": 64,
+     "slots": {
+      "main": {
+       "sha1": "f899d7ff19f784991458f39576a89574992985b9"
+      }
+     },
+     "timestamp": "2022-01-13T18:06:18Z"
+    },
+    "rev": {
+     "page": 880264,
+     "parentid": 0,
+     "revid": 5398756,
+     "sha1": "f899d7ff19f784991458f39576a89574992985b9",
+     "size": 64,
+     "slots": {
+      "main": {
+       "sha1": "f899d7ff19f784991458f39576a89574992985b9"
+      }
+     },
+     "timestamp": "2022-01-13T18:06:18Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 883095,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κουφο-",
+    "rid": 5541146,
+    "sha1_attr": "lc4go1ao12kmf8pex4xd9wz6dzz7xo3",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "b6a9129e8924df7cceecb69245c5d75997c76533",
+    "title": "κουφ-",
+    "ts": "2022-03-05T16:46:08Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5541146,
+     "sha1": "b6a9129e8924df7cceecb69245c5d75997c76533",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "b6a9129e8924df7cceecb69245c5d75997c76533"
+      }
+     },
+     "timestamp": "2022-03-05T16:46:08Z"
+    },
+    "rev": {
+     "page": 883095,
+     "parentid": 0,
+     "revid": 5541146,
+     "sha1": "b6a9129e8924df7cceecb69245c5d75997c76533",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "b6a9129e8924df7cceecb69245c5d75997c76533"
+      }
+     },
+     "timestamp": "2022-03-05T16:46:08Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 883097,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κουφο-",
+    "rid": 5541152,
+    "sha1_attr": "s1jc58oipc0kmajeo2756nxf65x52sa",
+    "tdel": null,
+    "text_len": 100,
+    "text_sha1": "f01194599c8667238bb958ac1d614bb2a913b25a",
+    "title": "κουφό-",
+    "ts": "2022-03-05T16:55:00Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5541152,
+     "sha1": "f01194599c8667238bb958ac1d614bb2a913b25a",
+     "size": 100,
+     "slots": {
+      "main": {
+       "sha1": "f01194599c8667238bb958ac1d614bb2a913b25a"
+      }
+     },
+     "timestamp": "2022-03-05T16:55:00Z"
+    },
+    "rev": {
+     "page": 883097,
+     "parentid": 0,
+     "revid": 5541152,
+     "sha1": "f01194599c8667238bb958ac1d614bb2a913b25a",
+     "size": 100,
+     "slots": {
+      "main": {
+       "sha1": "f01194599c8667238bb958ac1d614bb2a913b25a"
+      }
+     },
+     "timestamp": "2022-03-05T16:55:00Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 883147,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἡλιο-",
+    "rid": 5541230,
+    "sha1_attr": "fqe6c6vxpgjua2wfobp9cjx4egw5w0z",
+    "tdel": null,
+    "text_len": 137,
+    "text_sha1": "86b058b6522d48c2c43302e03d8a1b4f5bdb7163",
+    "title": "ἡλιό-",
+    "ts": "2022-03-05T17:57:25Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5541230,
+     "sha1": "86b058b6522d48c2c43302e03d8a1b4f5bdb7163",
+     "size": 137,
+     "slots": {
+      "main": {
+       "sha1": "86b058b6522d48c2c43302e03d8a1b4f5bdb7163"
+      }
+     },
+     "timestamp": "2022-03-05T17:57:25Z"
+    },
+    "rev": {
+     "page": 883147,
+     "parentid": 0,
+     "revid": 5541230,
+     "sha1": "86b058b6522d48c2c43302e03d8a1b4f5bdb7163",
+     "size": 137,
+     "slots": {
+      "main": {
+       "sha1": "86b058b6522d48c2c43302e03d8a1b4f5bdb7163"
+      }
+     },
+     "timestamp": "2022-03-05T17:57:25Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 883582,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λεπτο-",
+    "rid": 5542784,
+    "sha1_attr": "7cwpk7scy8wyosgagiec9jel59xnrse",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e",
+    "title": "λεπτ-",
+    "ts": "2022-03-08T08:52:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5542784,
+     "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e"
+      }
+     },
+     "timestamp": "2022-03-08T08:52:51Z"
+    },
+    "rev": {
+     "page": 883582,
+     "parentid": 0,
+     "revid": 5542784,
+     "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "3efed6898f6aa1651d3c99ea9e584bb9de8f016e"
+      }
+     },
+     "timestamp": "2022-03-08T08:52:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 884309,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξινο-",
+    "rid": 5546106,
+    "sha1_attr": "1f3juir5wjcrsoagmxxfkhpj40qg10f",
+    "tdel": null,
+    "text_len": 92,
+    "text_sha1": "0c26bb513be7cf0d8a1aa79c20ed9603a8ddc31f",
+    "title": "ξινό-",
+    "ts": "2022-03-13T16:36:31Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5546106,
+     "sha1": "0c26bb513be7cf0d8a1aa79c20ed9603a8ddc31f",
+     "size": 92,
+     "slots": {
+      "main": {
+       "sha1": "0c26bb513be7cf0d8a1aa79c20ed9603a8ddc31f"
+      }
+     },
+     "timestamp": "2022-03-13T16:36:31Z"
+    },
+    "rev": {
+     "page": 884309,
+     "parentid": 0,
+     "revid": 5546106,
+     "sha1": "0c26bb513be7cf0d8a1aa79c20ed9603a8ddc31f",
+     "size": 92,
+     "slots": {
+      "main": {
+       "sha1": "0c26bb513be7cf0d8a1aa79c20ed9603a8ddc31f"
+      }
+     },
+     "timestamp": "2022-03-13T16:36:31Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7228251,
+    "sha1_attr": "5jykx3t6uosn6lxpqxywp93g6vmkbpq",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Ουσιαστικά που κλίνονται όπως το 'ἄστυ' προπερισπώμενα (ελληνιστική κοινή)",
+    "ts": "2025-08-25T15:05:09Z"
+   },
+   "key": 888387,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7228251,
+    "sha1_attr": "5jykx3t6uosn6lxpqxywp93g6vmkbpq",
+    "tdel": null,
+    "text_len": 635,
+    "text_sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e",
+    "title": "Κατηγορία:Ουσιαστικά που κλίνονται όπως το 'ἄστυ' προπερισπώμενα (ελληνιστική κοινή)",
+    "ts": "2025-08-25T15:05:09Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7184733,
+     "revid": 7228251,
+     "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e",
+     "size": 635,
+     "slots": {
+      "main": {
+       "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e"
+      }
+     },
+     "timestamp": "2025-08-25T15:05:09Z"
+    },
+    "rev": {
+     "page": 888387,
+     "parentid": 7184733,
+     "revid": 7228251,
+     "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e",
+     "size": 635,
+     "slots": {
+      "main": {
+       "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e"
+      }
+     },
+     "timestamp": "2025-08-25T15:05:09Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 890257,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἑξα-",
+    "rid": 5588853,
+    "sha1_attr": "pmxj4ln2em9if7xvcxtxiprn0vdh52q",
+    "tdel": null,
+    "text_len": 22,
+    "text_sha1": "db7948b58132ce131d330ee44dba9cae7dc9fcf2",
+    "title": "ἑξά-",
+    "ts": "2022-08-28T09:53:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5588853,
+     "sha1": "db7948b58132ce131d330ee44dba9cae7dc9fcf2",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "db7948b58132ce131d330ee44dba9cae7dc9fcf2"
+      }
+     },
+     "timestamp": "2022-08-28T09:53:36Z"
+    },
+    "rev": {
+     "page": 890257,
+     "parentid": 0,
+     "revid": 5588853,
+     "sha1": "db7948b58132ce131d330ee44dba9cae7dc9fcf2",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "db7948b58132ce131d330ee44dba9cae7dc9fcf2"
+      }
+     },
+     "timestamp": "2022-08-28T09:53:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7228250,
+    "sha1_attr": "5jykx3t6uosn6lxpqxywp93g6vmkbpq",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κατηγορία:Ουσιαστικά που κλίνονται όπως το 'ἄστυ' προπερισπώμενα (αρχαία ελληνικά)",
+    "ts": "2025-08-25T15:04:05Z"
+   },
+   "key": 890837,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 7228250,
+    "sha1_attr": "5jykx3t6uosn6lxpqxywp93g6vmkbpq",
+    "tdel": null,
+    "text_len": 635,
+    "text_sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e",
+    "title": "Κατηγορία:Ουσιαστικά που κλίνονται όπως το 'ἄστυ' προπερισπώμενα (αρχαία ελληνικά)",
+    "ts": "2025-08-25T15:04:05Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7184732,
+     "revid": 7228250,
+     "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e",
+     "size": 635,
+     "slots": {
+      "main": {
+       "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e"
+      }
+     },
+     "timestamp": "2025-08-25T15:04:05Z"
+    },
+    "rev": {
+     "page": 890837,
+     "parentid": 7184732,
+     "revid": 7228250,
+     "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e",
+     "size": 635,
+     "slots": {
+      "main": {
+       "sha1": "2f8cff777f907bb630324bc9fa8e14c11ef18a4e"
+      }
+     },
+     "timestamp": "2025-08-25T15:04:05Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 895276,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἐν-",
+    "rid": 5618488,
+    "sha1_attr": "k0oyfsq3is4e6bfjvwc0ml84uw9q4my",
+    "tdel": null,
+    "text_len": 20,
+    "text_sha1": "ab61a1f7dfdb2da57cd034163f434bb8ad86a2fa",
+    "title": "ἔν-",
+    "ts": "2022-10-28T11:42:18Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5618488,
+     "sha1": "ab61a1f7dfdb2da57cd034163f434bb8ad86a2fa",
+     "size": 20,
+     "slots": {
+      "main": {
+       "sha1": "ab61a1f7dfdb2da57cd034163f434bb8ad86a2fa"
+      }
+     },
+     "timestamp": "2022-10-28T11:42:18Z"
+    },
+    "rev": {
+     "page": 895276,
+     "parentid": 0,
+     "revid": 5618488,
+     "sha1": "ab61a1f7dfdb2da57cd034163f434bb8ad86a2fa",
+     "size": 20,
+     "slots": {
+      "main": {
+       "sha1": "ab61a1f7dfdb2da57cd034163f434bb8ad86a2fa"
+      }
+     },
+     "timestamp": "2022-10-28T11:42:18Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 895868,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀμπελο-",
+    "rid": 5621174,
+    "sha1_attr": "5l9phihxylk47m85bw18uozll2e8lxa",
+    "tdel": null,
+    "text_len": 99,
+    "text_sha1": "2fdcb0d363f73df4a9d1146641d69667f1acc6fe",
+    "title": "ἀμπελό-",
+    "ts": "2022-11-02T12:00:08Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5621174,
+     "sha1": "2fdcb0d363f73df4a9d1146641d69667f1acc6fe",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "2fdcb0d363f73df4a9d1146641d69667f1acc6fe"
+      }
+     },
+     "timestamp": "2022-11-02T12:00:08Z"
+    },
+    "rev": {
+     "page": 895868,
+     "parentid": 0,
+     "revid": 5621174,
+     "sha1": "2fdcb0d363f73df4a9d1146641d69667f1acc6fe",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "2fdcb0d363f73df4a9d1146641d69667f1acc6fe"
+      }
+     },
+     "timestamp": "2022-11-02T12:00:08Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 898028,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "-σιά",
+    "rid": 5632940,
+    "sha1_attr": "bik9y1rlnfxxlqc8nl4cd2pvqo7hlv8",
+    "tdel": null,
+    "text_len": 21,
+    "text_sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4",
+    "title": "-ψιά",
+    "ts": "2022-11-19T16:21:14Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5632940,
+     "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4",
+     "size": 21,
+     "slots": {
+      "main": {
+       "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4"
+      }
+     },
+     "timestamp": "2022-11-19T16:21:14Z"
+    },
+    "rev": {
+     "page": 898028,
+     "parentid": 0,
+     "revid": 5632940,
+     "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4",
+     "size": 21,
+     "slots": {
+      "main": {
+       "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4"
+      }
+     },
+     "timestamp": "2022-11-19T16:21:14Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 898029,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "-σιά",
+    "rid": 5632941,
+    "sha1_attr": "bik9y1rlnfxxlqc8nl4cd2pvqo7hlv8",
+    "tdel": null,
+    "text_len": 21,
+    "text_sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4",
+    "title": "-ξιά",
+    "ts": "2022-11-19T16:21:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5632941,
+     "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4",
+     "size": 21,
+     "slots": {
+      "main": {
+       "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4"
+      }
+     },
+     "timestamp": "2022-11-19T16:21:28Z"
+    },
+    "rev": {
+     "page": 898029,
+     "parentid": 0,
+     "revid": 5632941,
+     "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4",
+     "size": 21,
+     "slots": {
+      "main": {
+       "sha1": "62955c3478a1d9422c9ba16010ecd6cbca01aff4"
+      }
+     },
+     "timestamp": "2022-11-19T16:21:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 900414,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κοσμο-",
+    "rid": 5648963,
+    "sha1_attr": "9viwbg9e8gkgmm47iqki2lqch44zbkb",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "548b496c212fe231b7d6c3215db8b5742633494b",
+    "title": "κοσμ-",
+    "ts": "2023-01-10T23:27:40Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5648963,
+     "sha1": "548b496c212fe231b7d6c3215db8b5742633494b",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "548b496c212fe231b7d6c3215db8b5742633494b"
+      }
+     },
+     "timestamp": "2023-01-10T23:27:40Z"
+    },
+    "rev": {
+     "page": 900414,
+     "parentid": 0,
+     "revid": 5648963,
+     "sha1": "548b496c212fe231b7d6c3215db8b5742633494b",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "548b496c212fe231b7d6c3215db8b5742633494b"
+      }
+     },
+     "timestamp": "2023-01-10T23:27:40Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 900415,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κοσμο-",
+    "rid": 5719027,
+    "sha1_attr": "3uea99hbjfugox3mtc4y4f4vtc7mix0",
+    "tdel": null,
+    "text_len": 117,
+    "text_sha1": "20e92e2b4be9f1f12499900f0485685a2271b044",
+    "title": "κοσμό-",
+    "ts": "2023-08-05T20:52:10Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5648964,
+     "revid": 5719027,
+     "sha1": "20e92e2b4be9f1f12499900f0485685a2271b044",
+     "size": 117,
+     "slots": {
+      "main": {
+       "sha1": "20e92e2b4be9f1f12499900f0485685a2271b044"
+      }
+     },
+     "timestamp": "2023-08-05T20:52:10Z"
+    },
+    "rev": {
+     "page": 900415,
+     "parentid": 5648964,
+     "revid": 5719027,
+     "sha1": "20e92e2b4be9f1f12499900f0485685a2271b044",
+     "size": 117,
+     "slots": {
+      "main": {
+       "sha1": "20e92e2b4be9f1f12499900f0485685a2271b044"
+      }
+     },
+     "timestamp": "2023-08-05T20:52:10Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 901281,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σιτο-",
+    "rid": 5655224,
+    "sha1_attr": "op8w2tf7mzq2390b06e18t8n34g7jln",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "d376ad14cbb573f99911678e3e1ba3307f1aeefb",
+    "title": "σιτ-",
+    "ts": "2023-02-03T18:59:30Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5655224,
+     "sha1": "d376ad14cbb573f99911678e3e1ba3307f1aeefb",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "d376ad14cbb573f99911678e3e1ba3307f1aeefb"
+      }
+     },
+     "timestamp": "2023-02-03T18:59:30Z"
+    },
+    "rev": {
+     "page": 901281,
+     "parentid": 0,
+     "revid": 5655224,
+     "sha1": "d376ad14cbb573f99911678e3e1ba3307f1aeefb",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "d376ad14cbb573f99911678e3e1ba3307f1aeefb"
+      }
+     },
+     "timestamp": "2023-02-03T18:59:30Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 902927,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κρεο-",
+    "rid": 5664014,
+    "sha1_attr": "9uao2ndpt3pi58on1gnsqxx69zoobqe",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "54407e8c7f25e6adfff2a370ea138f73f42ee566",
+    "title": "κρε-",
+    "ts": "2023-03-05T02:50:43Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5664014,
+     "sha1": "54407e8c7f25e6adfff2a370ea138f73f42ee566",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "54407e8c7f25e6adfff2a370ea138f73f42ee566"
+      }
+     },
+     "timestamp": "2023-03-05T02:50:43Z"
+    },
+    "rev": {
+     "page": 902927,
+     "parentid": 0,
+     "revid": 5664014,
+     "sha1": "54407e8c7f25e6adfff2a370ea138f73f42ee566",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "54407e8c7f25e6adfff2a370ea138f73f42ee566"
+      }
+     },
+     "timestamp": "2023-03-05T02:50:43Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 902929,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κρεο-",
+    "rid": 5664017,
+    "sha1_attr": "gli1b6yzzz417uaxjt5c3h62340l6gx",
+    "tdel": null,
+    "text_len": 67,
+    "text_sha1": "8e160fa18e4f8da0a865bbb424a4a7ff938d5401",
+    "title": "κρεό-",
+    "ts": "2023-03-05T02:54:46Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5664017,
+     "sha1": "8e160fa18e4f8da0a865bbb424a4a7ff938d5401",
+     "size": 67,
+     "slots": {
+      "main": {
+       "sha1": "8e160fa18e4f8da0a865bbb424a4a7ff938d5401"
+      }
+     },
+     "timestamp": "2023-03-05T02:54:46Z"
+    },
+    "rev": {
+     "page": 902929,
+     "parentid": 0,
+     "revid": 5664017,
+     "sha1": "8e160fa18e4f8da0a865bbb424a4a7ff938d5401",
+     "size": 67,
+     "slots": {
+      "main": {
+       "sha1": "8e160fa18e4f8da0a865bbb424a4a7ff938d5401"
+      }
+     },
+     "timestamp": "2023-03-05T02:54:46Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 902957,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λαρυγγο-",
+    "rid": 5664282,
+    "sha1_attr": "6yazrgvohp95lorhdicgpspmzo4ex7h",
+    "tdel": null,
+    "text_len": 99,
+    "text_sha1": "3b85d63979e4fea3360036b03b6929fcab02339d",
+    "title": "λαρυγγό-",
+    "ts": "2023-03-05T11:37:12Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5664282,
+     "sha1": "3b85d63979e4fea3360036b03b6929fcab02339d",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "3b85d63979e4fea3360036b03b6929fcab02339d"
+      }
+     },
+     "timestamp": "2023-03-05T11:37:12Z"
+    },
+    "rev": {
+     "page": 902957,
+     "parentid": 0,
+     "revid": 5664282,
+     "sha1": "3b85d63979e4fea3360036b03b6929fcab02339d",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "3b85d63979e4fea3360036b03b6929fcab02339d"
+      }
+     },
+     "timestamp": "2023-03-05T11:37:12Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 902959,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λαρυγγο-",
+    "rid": 5664284,
+    "sha1_attr": "pyqjint0r8mw9pwwzpai9veani5jhg2",
+    "tdel": null,
+    "text_len": 29,
+    "text_sha1": "de47fd2feaa162458ffb173af52e302b73407c12",
+    "title": "λαρυγγ-",
+    "ts": "2023-03-05T11:37:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5664284,
+     "sha1": "de47fd2feaa162458ffb173af52e302b73407c12",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "de47fd2feaa162458ffb173af52e302b73407c12"
+      }
+     },
+     "timestamp": "2023-03-05T11:37:51Z"
+    },
+    "rev": {
+     "page": 902959,
+     "parentid": 0,
+     "revid": 5664284,
+     "sha1": "de47fd2feaa162458ffb173af52e302b73407c12",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "de47fd2feaa162458ffb173af52e302b73407c12"
+      }
+     },
+     "timestamp": "2023-03-05T11:37:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 904916,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κλεψι-",
+    "rid": 5676029,
+    "sha1_attr": "9nvhpv161ojka0dwtj4tcdcyb9j8sf3",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df",
+    "title": "κλεψί-",
+    "ts": "2023-04-10T23:19:42Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5676029,
+     "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df"
+      }
+     },
+     "timestamp": "2023-04-10T23:19:42Z"
+    },
+    "rev": {
+     "page": 904916,
+     "parentid": 0,
+     "revid": 5676029,
+     "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df"
+      }
+     },
+     "timestamp": "2023-04-10T23:19:42Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 904917,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κλεψι-",
+    "rid": 5676030,
+    "sha1_attr": "9nvhpv161ojka0dwtj4tcdcyb9j8sf3",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df",
+    "title": "κλεψ-",
+    "ts": "2023-04-10T23:19:55Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5676030,
+     "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df"
+      }
+     },
+     "timestamp": "2023-04-10T23:19:55Z"
+    },
+    "rev": {
+     "page": 904917,
+     "parentid": 0,
+     "revid": 5676030,
+     "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "52b99187c18a08fc63a105e6fefecd7b8af728df"
+      }
+     },
+     "timestamp": "2023-04-10T23:19:55Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 904956,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λινο-",
+    "rid": 5718763,
+    "sha1_attr": "0a8aw1fppo8teu7qw3ad3kt0i2r48fs",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8",
+    "title": "λινό-",
+    "ts": "2023-08-05T17:28:29Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5676207,
+     "revid": 5718763,
+     "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8"
+      }
+     },
+     "timestamp": "2023-08-05T17:28:29Z"
+    },
+    "rev": {
+     "page": 904956,
+     "parentid": 5676207,
+     "revid": 5718763,
+     "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8"
+      }
+     },
+     "timestamp": "2023-08-05T17:28:29Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 904957,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λινο-",
+    "rid": 5676208,
+    "sha1_attr": "0a8aw1fppo8teu7qw3ad3kt0i2r48fs",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8",
+    "title": "λιν-",
+    "ts": "2023-04-11T07:29:07Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5676208,
+     "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8"
+      }
+     },
+     "timestamp": "2023-04-11T07:29:07Z"
+    },
+    "rev": {
+     "page": 904957,
+     "parentid": 0,
+     "revid": 5676208,
+     "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "026ecf434d1343918a9f33bba8e61be5a4f866b8"
+      }
+     },
+     "timestamp": "2023-04-11T07:29:07Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 908751,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "μελισσο-",
+    "rid": 5694282,
+    "sha1_attr": "p7kicbiuwyzikch26g6jry1f0v7jm74",
+    "tdel": null,
+    "text_len": 121,
+    "text_sha1": "d7d21be506331b4a9018b6755258a31086f9fa20",
+    "title": "μελισσό-",
+    "ts": "2023-06-05T11:50:38Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5694282,
+     "sha1": "d7d21be506331b4a9018b6755258a31086f9fa20",
+     "size": 121,
+     "slots": {
+      "main": {
+       "sha1": "d7d21be506331b4a9018b6755258a31086f9fa20"
+      }
+     },
+     "timestamp": "2023-06-05T11:50:38Z"
+    },
+    "rev": {
+     "page": 908751,
+     "parentid": 0,
+     "revid": 5694282,
+     "sha1": "d7d21be506331b4a9018b6755258a31086f9fa20",
+     "size": 121,
+     "slots": {
+      "main": {
+       "sha1": "d7d21be506331b4a9018b6755258a31086f9fa20"
+      }
+     },
+     "timestamp": "2023-06-05T11:50:38Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 910629,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "κοπρο-",
+    "rid": 5718681,
+    "sha1_attr": "agjr488ekl25274hgcbj1kyw8i97mvg",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "598b2677959b0b451622f743f5c66e52f3ce208c",
+    "title": "κοπρό-",
+    "ts": "2023-08-05T16:31:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 5703959,
+     "revid": 5718681,
+     "sha1": "598b2677959b0b451622f743f5c66e52f3ce208c",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "598b2677959b0b451622f743f5c66e52f3ce208c"
+      }
+     },
+     "timestamp": "2023-08-05T16:31:28Z"
+    },
+    "rev": {
+     "page": 910629,
+     "parentid": 5703959,
+     "revid": 5718681,
+     "sha1": "598b2677959b0b451622f743f5c66e52f3ce208c",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "598b2677959b0b451622f743f5c66e52f3ce208c"
+      }
+     },
+     "timestamp": "2023-08-05T16:31:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 912626,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "στραβο-",
+    "rid": 5714257,
+    "sha1_attr": "p8n5tbmm5bxeke08c5oywgo23057em3",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "d81378773361f5933c87fa8576dda9f486571abb",
+    "title": "στραβό-",
+    "ts": "2023-07-25T12:00:39Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5714257,
+     "sha1": "d81378773361f5933c87fa8576dda9f486571abb",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "d81378773361f5933c87fa8576dda9f486571abb"
+      }
+     },
+     "timestamp": "2023-07-25T12:00:39Z"
+    },
+    "rev": {
+     "page": 912626,
+     "parentid": 0,
+     "revid": 5714257,
+     "sha1": "d81378773361f5933c87fa8576dda9f486571abb",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "d81378773361f5933c87fa8576dda9f486571abb"
+      }
+     },
+     "timestamp": "2023-07-25T12:00:39Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 912859,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σταυρο-",
+    "rid": 5715525,
+    "sha1_attr": "bnr7dukq2wusodqokd6h58jhv7hehtl",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "63d176457aa78548126606c96f0edd710260aeb9",
+    "title": "σταυρ-",
+    "ts": "2023-07-28T16:32:00Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5715525,
+     "sha1": "63d176457aa78548126606c96f0edd710260aeb9",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "63d176457aa78548126606c96f0edd710260aeb9"
+      }
+     },
+     "timestamp": "2023-07-28T16:32:00Z"
+    },
+    "rev": {
+     "page": 912859,
+     "parentid": 0,
+     "revid": 5715525,
+     "sha1": "63d176457aa78548126606c96f0edd710260aeb9",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "63d176457aa78548126606c96f0edd710260aeb9"
+      }
+     },
+     "timestamp": "2023-07-28T16:32:00Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 912860,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σταυρο-",
+    "rid": 5715526,
+    "sha1_attr": "g93q6s1osssze9h51f86vfejpumm3r7",
+    "tdel": null,
+    "text_len": 119,
+    "text_sha1": "8b235722b43de1831d344fa4ce54335419a41a83",
+    "title": "σταυρό-",
+    "ts": "2023-07-28T16:32:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5715526,
+     "sha1": "8b235722b43de1831d344fa4ce54335419a41a83",
+     "size": 119,
+     "slots": {
+      "main": {
+       "sha1": "8b235722b43de1831d344fa4ce54335419a41a83"
+      }
+     },
+     "timestamp": "2023-07-28T16:32:57Z"
+    },
+    "rev": {
+     "page": 912860,
+     "parentid": 0,
+     "revid": 5715526,
+     "sha1": "8b235722b43de1831d344fa4ce54335419a41a83",
+     "size": 119,
+     "slots": {
+      "main": {
+       "sha1": "8b235722b43de1831d344fa4ce54335419a41a83"
+      }
+     },
+     "timestamp": "2023-07-28T16:32:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913141,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξερο-",
+    "rid": 5716909,
+    "sha1_attr": "ntc7spn5x6qe8gnu5n58fuktz2iydfo",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284",
+    "title": "ξερ-",
+    "ts": "2023-08-01T19:57:52Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5716909,
+     "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284"
+      }
+     },
+     "timestamp": "2023-08-01T19:57:52Z"
+    },
+    "rev": {
+     "page": 913141,
+     "parentid": 0,
+     "revid": 5716909,
+     "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284"
+      }
+     },
+     "timestamp": "2023-08-01T19:57:52Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913142,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξερο-",
+    "rid": 5716910,
+    "sha1_attr": "ntc7spn5x6qe8gnu5n58fuktz2iydfo",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284",
+    "title": "ξερό-",
+    "ts": "2023-08-01T19:58:09Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5716910,
+     "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284"
+      }
+     },
+     "timestamp": "2023-08-01T19:58:09Z"
+    },
+    "rev": {
+     "page": 913142,
+     "parentid": 0,
+     "revid": 5716910,
+     "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "cbe03c711e927f761c23830e38d8b1dfcba38284"
+      }
+     },
+     "timestamp": "2023-08-01T19:58:09Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913143,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξηρο-",
+    "rid": 5716911,
+    "sha1_attr": "6klh1mp1kj0llbrfq9a9e5q3s569yld",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "384347f49942fcf9222ad8900deab6ea7b949161",
+    "title": "ξηρ-",
+    "ts": "2023-08-01T19:58:30Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5716911,
+     "sha1": "384347f49942fcf9222ad8900deab6ea7b949161",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "384347f49942fcf9222ad8900deab6ea7b949161"
+      }
+     },
+     "timestamp": "2023-08-01T19:58:30Z"
+    },
+    "rev": {
+     "page": 913143,
+     "parentid": 0,
+     "revid": 5716911,
+     "sha1": "384347f49942fcf9222ad8900deab6ea7b949161",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "384347f49942fcf9222ad8900deab6ea7b949161"
+      }
+     },
+     "timestamp": "2023-08-01T19:58:30Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913144,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξηρο-",
+    "rid": 5716912,
+    "sha1_attr": "6klh1mp1kj0llbrfq9a9e5q3s569yld",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "384347f49942fcf9222ad8900deab6ea7b949161",
+    "title": "ξηρό-",
+    "ts": "2023-08-01T19:58:48Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5716912,
+     "sha1": "384347f49942fcf9222ad8900deab6ea7b949161",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "384347f49942fcf9222ad8900deab6ea7b949161"
+      }
+     },
+     "timestamp": "2023-08-01T19:58:48Z"
+    },
+    "rev": {
+     "page": 913144,
+     "parentid": 0,
+     "revid": 5716912,
+     "sha1": "384347f49942fcf9222ad8900deab6ea7b949161",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "384347f49942fcf9222ad8900deab6ea7b949161"
+      }
+     },
+     "timestamp": "2023-08-01T19:58:48Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913449,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀκρο-",
+    "rid": 5718493,
+    "sha1_attr": "cuonyriueho36w7btkgewrwl42wg4nm",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "6e06e0d17963a8f05b1279446548605c56186392",
+    "title": "ἀκρ-",
+    "ts": "2023-08-05T14:38:08Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718493,
+     "sha1": "6e06e0d17963a8f05b1279446548605c56186392",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "6e06e0d17963a8f05b1279446548605c56186392"
+      }
+     },
+     "timestamp": "2023-08-05T14:38:08Z"
+    },
+    "rev": {
+     "page": 913449,
+     "parentid": 0,
+     "revid": 5718493,
+     "sha1": "6e06e0d17963a8f05b1279446548605c56186392",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "6e06e0d17963a8f05b1279446548605c56186392"
+      }
+     },
+     "timestamp": "2023-08-05T14:38:08Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913462,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "βαρο-",
+    "rid": 5718595,
+    "sha1_attr": "ohd22kojg8olt7rxr8w7120cdgy3g58",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "d196b4b1b603f5a1079c6a5bbcd7c9eb654ae67c",
+    "title": "βαρό-",
+    "ts": "2023-08-05T15:46:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718595,
+     "sha1": "d196b4b1b603f5a1079c6a5bbcd7c9eb654ae67c",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "d196b4b1b603f5a1079c6a5bbcd7c9eb654ae67c"
+      }
+     },
+     "timestamp": "2023-08-05T15:46:51Z"
+    },
+    "rev": {
+     "page": 913462,
+     "parentid": 0,
+     "revid": 5718595,
+     "sha1": "d196b4b1b603f5a1079c6a5bbcd7c9eb654ae67c",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "d196b4b1b603f5a1079c6a5bbcd7c9eb654ae67c"
+      }
+     },
+     "timestamp": "2023-08-05T15:46:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913467,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἐρυθρο-",
+    "rid": 5718616,
+    "sha1_attr": "4r92ucvl5z4nwostd1tk62yqz8recx0",
+    "tdel": null,
+    "text_len": 28,
+    "text_sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4",
+    "title": "ἐρυθρ-",
+    "ts": "2023-08-05T16:05:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718616,
+     "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4"
+      }
+     },
+     "timestamp": "2023-08-05T16:05:24Z"
+    },
+    "rev": {
+     "page": 913467,
+     "parentid": 0,
+     "revid": 5718616,
+     "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4"
+      }
+     },
+     "timestamp": "2023-08-05T16:05:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913468,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἐρυθρο-",
+    "rid": 5718617,
+    "sha1_attr": "4r92ucvl5z4nwostd1tk62yqz8recx0",
+    "tdel": null,
+    "text_len": 28,
+    "text_sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4",
+    "title": "ἐρυθρό-",
+    "ts": "2023-08-05T16:05:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718617,
+     "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4"
+      }
+     },
+     "timestamp": "2023-08-05T16:05:37Z"
+    },
+    "rev": {
+     "page": 913468,
+     "parentid": 0,
+     "revid": 5718617,
+     "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "28b9514839fd36366eb11c28bd2f730a648f03e4"
+      }
+     },
+     "timestamp": "2023-08-05T16:05:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913469,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ηπατο-",
+    "rid": 5718620,
+    "sha1_attr": "eznpxj5suq2hmawhlvaomk1tin10t4y",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "8054ceb6954404ef84ddd1609bd2b3d7830c5082",
+    "title": "ηπατ-",
+    "ts": "2023-08-05T16:07:39Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718620,
+     "sha1": "8054ceb6954404ef84ddd1609bd2b3d7830c5082",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "8054ceb6954404ef84ddd1609bd2b3d7830c5082"
+      }
+     },
+     "timestamp": "2023-08-05T16:07:39Z"
+    },
+    "rev": {
+     "page": 913469,
+     "parentid": 0,
+     "revid": 5718620,
+     "sha1": "8054ceb6954404ef84ddd1609bd2b3d7830c5082",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "8054ceb6954404ef84ddd1609bd2b3d7830c5082"
+      }
+     },
+     "timestamp": "2023-08-05T16:07:39Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913470,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ιδιο-",
+    "rid": 5718635,
+    "sha1_attr": "2tleuo20dodo7n9buqybyobxl4ig2zq",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "1828c8ec6f1d6c070b6db1aee1a2450b8da0e526",
+    "title": "ιδι-",
+    "ts": "2023-08-05T16:13:43Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718635,
+     "sha1": "1828c8ec6f1d6c070b6db1aee1a2450b8da0e526",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "1828c8ec6f1d6c070b6db1aee1a2450b8da0e526"
+      }
+     },
+     "timestamp": "2023-08-05T16:13:43Z"
+    },
+    "rev": {
+     "page": 913470,
+     "parentid": 0,
+     "revid": 5718635,
+     "sha1": "1828c8ec6f1d6c070b6db1aee1a2450b8da0e526",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "1828c8ec6f1d6c070b6db1aee1a2450b8da0e526"
+      }
+     },
+     "timestamp": "2023-08-05T16:13:43Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913479,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λογο-",
+    "rid": 5718775,
+    "sha1_attr": "dxlvfxnmhqmtxevh0ugfawo9tkalja3",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "77485bdaad624859586e30cc38aedfc024917edb",
+    "title": "λογό-",
+    "ts": "2023-08-05T17:36:22Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718775,
+     "sha1": "77485bdaad624859586e30cc38aedfc024917edb",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "77485bdaad624859586e30cc38aedfc024917edb"
+      }
+     },
+     "timestamp": "2023-08-05T17:36:22Z"
+    },
+    "rev": {
+     "page": 913479,
+     "parentid": 0,
+     "revid": 5718775,
+     "sha1": "77485bdaad624859586e30cc38aedfc024917edb",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "77485bdaad624859586e30cc38aedfc024917edb"
+      }
+     },
+     "timestamp": "2023-08-05T17:36:22Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913484,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ξενο-",
+    "rid": 5718883,
+    "sha1_attr": "mzd4zco2wgl3c01a05jldse5kmw6mne",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a",
+    "title": "ξεν-",
+    "ts": "2023-08-05T18:44:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718883,
+     "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a"
+      }
+     },
+     "timestamp": "2023-08-05T18:44:51Z"
+    },
+    "rev": {
+     "page": 913484,
+     "parentid": 0,
+     "revid": 5718883,
+     "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "c4bf7c3b04dd19e3393c08b03d0a55945555702a"
+      }
+     },
+     "timestamp": "2023-08-05T18:44:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913492,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "οπλο-",
+    "rid": 5718920,
+    "sha1_attr": "2ebkwlin43ifzit6acbcb4ttx3o29to",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c",
+    "title": "οπλό-",
+    "ts": "2023-08-05T19:30:55Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718920,
+     "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c"
+      }
+     },
+     "timestamp": "2023-08-05T19:30:55Z"
+    },
+    "rev": {
+     "page": 913492,
+     "parentid": 0,
+     "revid": 5718920,
+     "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c"
+      }
+     },
+     "timestamp": "2023-08-05T19:30:55Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913493,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "οπλο-",
+    "rid": 5718921,
+    "sha1_attr": "2ebkwlin43ifzit6acbcb4ttx3o29to",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c",
+    "title": "οπλ-",
+    "ts": "2023-08-05T19:32:11Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718921,
+     "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c"
+      }
+     },
+     "timestamp": "2023-08-05T19:32:11Z"
+    },
+    "rev": {
+     "page": 913493,
+     "parentid": 0,
+     "revid": 5718921,
+     "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "1487010f5a0e2b35c1f679dd258ff75516a3f23c"
+      }
+     },
+     "timestamp": "2023-08-05T19:32:11Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913497,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ὁπλο-",
+    "rid": 5718928,
+    "sha1_attr": "3rztlxbx737utpu0gxqod4gs8hr5vnl",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "2056f85021948594cdd970600e3cf48eb0b48e81",
+    "title": "ὁπλό-",
+    "ts": "2023-08-05T19:36:00Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718928,
+     "sha1": "2056f85021948594cdd970600e3cf48eb0b48e81",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "2056f85021948594cdd970600e3cf48eb0b48e81"
+      }
+     },
+     "timestamp": "2023-08-05T19:36:00Z"
+    },
+    "rev": {
+     "page": 913497,
+     "parentid": 0,
+     "revid": 5718928,
+     "sha1": "2056f85021948594cdd970600e3cf48eb0b48e81",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "2056f85021948594cdd970600e3cf48eb0b48e81"
+      }
+     },
+     "timestamp": "2023-08-05T19:36:00Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913501,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "υγρο-",
+    "rid": 5718980,
+    "sha1_attr": "m2i257aii1kvu9guvkcc42bfr8s5o19",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed",
+    "title": "υγρό-",
+    "ts": "2023-08-05T20:12:31Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718980,
+     "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed"
+      }
+     },
+     "timestamp": "2023-08-05T20:12:31Z"
+    },
+    "rev": {
+     "page": 913501,
+     "parentid": 0,
+     "revid": 5718980,
+     "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed"
+      }
+     },
+     "timestamp": "2023-08-05T20:12:31Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913502,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "υγρο-",
+    "rid": 5718982,
+    "sha1_attr": "m2i257aii1kvu9guvkcc42bfr8s5o19",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed",
+    "title": "υγρ-",
+    "ts": "2023-08-05T20:13:08Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718982,
+     "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed"
+      }
+     },
+     "timestamp": "2023-08-05T20:13:08Z"
+    },
+    "rev": {
+     "page": 913502,
+     "parentid": 0,
+     "revid": 5718982,
+     "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "bceeddd79096356dcb97bc1b483c7f76432634ed"
+      }
+     },
+     "timestamp": "2023-08-05T20:13:08Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913503,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ὑδρο-",
+    "rid": 5718989,
+    "sha1_attr": "g4jz9lzxkjqnpczgyp81ltlifqjtih3",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "8a0e703674637b60e419261737d0140f437c0dc7",
+    "title": "ὑδρό-",
+    "ts": "2023-08-05T20:17:12Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5718989,
+     "sha1": "8a0e703674637b60e419261737d0140f437c0dc7",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "8a0e703674637b60e419261737d0140f437c0dc7"
+      }
+     },
+     "timestamp": "2023-08-05T20:17:12Z"
+    },
+    "rev": {
+     "page": 913503,
+     "parentid": 0,
+     "revid": 5718989,
+     "sha1": "8a0e703674637b60e419261737d0140f437c0dc7",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "8a0e703674637b60e419261737d0140f437c0dc7"
+      }
+     },
+     "timestamp": "2023-08-05T20:17:12Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913508,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ποικιλο-",
+    "rid": 5719049,
+    "sha1_attr": "ck4e03tctvkdiq7t16em2dz74bla5dp",
+    "tdel": null,
+    "text_len": 29,
+    "text_sha1": "6b83d1de9adebabe9ba86d012f7433ca4b2d7abd",
+    "title": "ποικιλ-",
+    "ts": "2023-08-05T21:11:21Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5719049,
+     "sha1": "6b83d1de9adebabe9ba86d012f7433ca4b2d7abd",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "6b83d1de9adebabe9ba86d012f7433ca4b2d7abd"
+      }
+     },
+     "timestamp": "2023-08-05T21:11:21Z"
+    },
+    "rev": {
+     "page": 913508,
+     "parentid": 0,
+     "revid": 5719049,
+     "sha1": "6b83d1de9adebabe9ba86d012f7433ca4b2d7abd",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "6b83d1de9adebabe9ba86d012f7433ca4b2d7abd"
+      }
+     },
+     "timestamp": "2023-08-05T21:11:21Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913509,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ποικιλο-",
+    "rid": 5719050,
+    "sha1_attr": "mau1w0fkfzoyprhf4tac8aqpr9q4j1l",
+    "tdel": null,
+    "text_len": 99,
+    "text_sha1": "beea29ad44cce51a7c25d89ce509564df76a4769",
+    "title": "ποικιλό-",
+    "ts": "2023-08-05T21:12:19Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5719050,
+     "sha1": "beea29ad44cce51a7c25d89ce509564df76a4769",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "beea29ad44cce51a7c25d89ce509564df76a4769"
+      }
+     },
+     "timestamp": "2023-08-05T21:12:19Z"
+    },
+    "rev": {
+     "page": 913509,
+     "parentid": 0,
+     "revid": 5719050,
+     "sha1": "beea29ad44cce51a7c25d89ce509564df76a4769",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "beea29ad44cce51a7c25d89ce509564df76a4769"
+      }
+     },
+     "timestamp": "2023-08-05T21:12:19Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913512,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "νυκτο-",
+    "rid": 5719066,
+    "sha1_attr": "3rk4jvvl8ie7ujw1tycsu5m7h23wfev",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "203c6d7589dd96dacabe13276a96030ff9871107",
+    "title": "νυκτι-",
+    "ts": "2023-08-05T21:18:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5719066,
+     "sha1": "203c6d7589dd96dacabe13276a96030ff9871107",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "203c6d7589dd96dacabe13276a96030ff9871107"
+      }
+     },
+     "timestamp": "2023-08-05T21:18:37Z"
+    },
+    "rev": {
+     "page": 913512,
+     "parentid": 0,
+     "revid": 5719066,
+     "sha1": "203c6d7589dd96dacabe13276a96030ff9871107",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "203c6d7589dd96dacabe13276a96030ff9871107"
+      }
+     },
+     "timestamp": "2023-08-05T21:18:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913513,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "νυκτο-",
+    "rid": 5719067,
+    "sha1_attr": "3rk4jvvl8ie7ujw1tycsu5m7h23wfev",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "203c6d7589dd96dacabe13276a96030ff9871107",
+    "title": "νυκτί-",
+    "ts": "2023-08-05T21:18:53Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5719067,
+     "sha1": "203c6d7589dd96dacabe13276a96030ff9871107",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "203c6d7589dd96dacabe13276a96030ff9871107"
+      }
+     },
+     "timestamp": "2023-08-05T21:18:53Z"
+    },
+    "rev": {
+     "page": 913513,
+     "parentid": 0,
+     "revid": 5719067,
+     "sha1": "203c6d7589dd96dacabe13276a96030ff9871107",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "203c6d7589dd96dacabe13276a96030ff9871107"
+      }
+     },
+     "timestamp": "2023-08-05T21:18:53Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 913521,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "νυχτο-",
+    "rid": 5719076,
+    "sha1_attr": "7w20bis4ecrcnavc1s5ojd4zf5ipm6h",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "438c76163805f68b39e93777a0591a6bdd817289",
+    "title": "νυχτ-",
+    "ts": "2023-08-05T21:26:26Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5719076,
+     "sha1": "438c76163805f68b39e93777a0591a6bdd817289",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "438c76163805f68b39e93777a0591a6bdd817289"
+      }
+     },
+     "timestamp": "2023-08-05T21:26:26Z"
+    },
+    "rev": {
+     "page": 913521,
+     "parentid": 0,
+     "revid": 5719076,
+     "sha1": "438c76163805f68b39e93777a0591a6bdd817289",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "438c76163805f68b39e93777a0591a6bdd817289"
+      }
+     },
+     "timestamp": "2023-08-05T21:26:26Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 914278,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "οφθαλμο-",
+    "rid": 5720742,
+    "sha1_attr": "qxk3eatbk5r0fnqkqze65k1v09t2mgu",
+    "tdel": null,
+    "text_len": 29,
+    "text_sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e",
+    "title": "οφθαλμό-",
+    "ts": "2023-08-08T19:39:19Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5720742,
+     "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e"
+      }
+     },
+     "timestamp": "2023-08-08T19:39:19Z"
+    },
+    "rev": {
+     "page": 914278,
+     "parentid": 0,
+     "revid": 5720742,
+     "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e"
+      }
+     },
+     "timestamp": "2023-08-08T19:39:19Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 914279,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "οφθαλμο-",
+    "rid": 5720743,
+    "sha1_attr": "qxk3eatbk5r0fnqkqze65k1v09t2mgu",
+    "tdel": null,
+    "text_len": 29,
+    "text_sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e",
+    "title": "οφθαλμ-",
+    "ts": "2023-08-08T19:39:34Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5720743,
+     "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e"
+      }
+     },
+     "timestamp": "2023-08-08T19:39:34Z"
+    },
+    "rev": {
+     "page": 914279,
+     "parentid": 0,
+     "revid": 5720743,
+     "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "e68fc7b5f7de5a53a71c75f9e9da4d831b239f3e"
+      }
+     },
+     "timestamp": "2023-08-08T19:39:34Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1405029,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἡδυ-",
+    "rid": 6350129,
+    "sha1_attr": "75zyjyldtvlua8gw3x0fw32tm18dby3",
+    "tdel": null,
+    "text_len": 22,
+    "text_sha1": "3d5a31d3af37824c0126cfa6bb4c7b179bb7c9bb",
+    "title": "ἡδύ-",
+    "ts": "2023-10-03T05:37:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6350129,
+     "sha1": "3d5a31d3af37824c0126cfa6bb4c7b179bb7c9bb",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "3d5a31d3af37824c0126cfa6bb4c7b179bb7c9bb"
+      }
+     },
+     "timestamp": "2023-10-03T05:37:41Z"
+    },
+    "rev": {
+     "page": 1405029,
+     "parentid": 0,
+     "revid": 6350129,
+     "sha1": "3d5a31d3af37824c0126cfa6bb4c7b179bb7c9bb",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "3d5a31d3af37824c0126cfa6bb4c7b179bb7c9bb"
+      }
+     },
+     "timestamp": "2023-10-03T05:37:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1405031,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ηδυ-",
+    "rid": 6350131,
+    "sha1_attr": "kbblie31hvk02mpmk72dy2i2yhjyipo",
+    "tdel": null,
+    "text_len": 21,
+    "text_sha1": "ade8b05d08f1c62ba5c3ede89b49d039889b0a3c",
+    "title": "ηδύ-",
+    "ts": "2023-10-03T05:39:01Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6350131,
+     "sha1": "ade8b05d08f1c62ba5c3ede89b49d039889b0a3c",
+     "size": 21,
+     "slots": {
+      "main": {
+       "sha1": "ade8b05d08f1c62ba5c3ede89b49d039889b0a3c"
+      }
+     },
+     "timestamp": "2023-10-03T05:39:01Z"
+    },
+    "rev": {
+     "page": 1405031,
+     "parentid": 0,
+     "revid": 6350131,
+     "sha1": "ade8b05d08f1c62ba5c3ede89b49d039889b0a3c",
+     "size": 21,
+     "slots": {
+      "main": {
+       "sha1": "ade8b05d08f1c62ba5c3ede89b49d039889b0a3c"
+      }
+     },
+     "timestamp": "2023-10-03T05:39:01Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1427481,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σωματο-",
+    "rid": 6385708,
+    "sha1_attr": "4wg5mzf1k5b8oxs22wc878qjivfh7w1",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "29f5abc21a9f6b13a68f78ae64c291ea2e5e6d31",
+    "title": "σωματ-",
+    "ts": "2023-10-16T07:45:35Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6385708,
+     "sha1": "29f5abc21a9f6b13a68f78ae64c291ea2e5e6d31",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "29f5abc21a9f6b13a68f78ae64c291ea2e5e6d31"
+      }
+     },
+     "timestamp": "2023-10-16T07:45:35Z"
+    },
+    "rev": {
+     "page": 1427481,
+     "parentid": 0,
+     "revid": 6385708,
+     "sha1": "29f5abc21a9f6b13a68f78ae64c291ea2e5e6d31",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "29f5abc21a9f6b13a68f78ae64c291ea2e5e6d31"
+      }
+     },
+     "timestamp": "2023-10-16T07:45:35Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1427483,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σωματο-",
+    "rid": 6385713,
+    "sha1_attr": "s29zmp8e5srytsxr8ph7nwfmzfdjags",
+    "tdel": null,
+    "text_len": 49,
+    "text_sha1": "f03ea63ccadd99c625023e34a264c71a9e2234bc",
+    "title": "σωματό-",
+    "ts": "2023-10-16T07:47:55Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 6385712,
+     "revid": 6385713,
+     "sha1": "f03ea63ccadd99c625023e34a264c71a9e2234bc",
+     "size": 49,
+     "slots": {
+      "main": {
+       "sha1": "f03ea63ccadd99c625023e34a264c71a9e2234bc"
+      }
+     },
+     "timestamp": "2023-10-16T07:47:55Z"
+    },
+    "rev": {
+     "page": 1427483,
+     "parentid": 6385712,
+     "revid": 6385713,
+     "sha1": "f03ea63ccadd99c625023e34a264c71a9e2234bc",
+     "size": 49,
+     "slots": {
+      "main": {
+       "sha1": "f03ea63ccadd99c625023e34a264c71a9e2234bc"
+      }
+     },
+     "timestamp": "2023-10-16T07:47:55Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1427741,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "τριακοντα-",
+    "rid": 6386547,
+    "sha1_attr": "r9ihzaq2uwpxzx77h7hjblzr5jqc66z",
+    "tdel": null,
+    "text_len": 33,
+    "text_sha1": "e9679b5f5d6a0d59672d6f16eceaca2d3290405b",
+    "title": "τριακοντ-",
+    "ts": "2023-10-18T04:57:05Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6386547,
+     "sha1": "e9679b5f5d6a0d59672d6f16eceaca2d3290405b",
+     "size": 33,
+     "slots": {
+      "main": {
+       "sha1": "e9679b5f5d6a0d59672d6f16eceaca2d3290405b"
+      }
+     },
+     "timestamp": "2023-10-18T04:57:05Z"
+    },
+    "rev": {
+     "page": 1427741,
+     "parentid": 0,
+     "revid": 6386547,
+     "sha1": "e9679b5f5d6a0d59672d6f16eceaca2d3290405b",
+     "size": 33,
+     "slots": {
+      "main": {
+       "sha1": "e9679b5f5d6a0d59672d6f16eceaca2d3290405b"
+      }
+     },
+     "timestamp": "2023-10-18T04:57:05Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1432846,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "στρατο-",
+    "rid": 6395513,
+    "sha1_attr": "19a9iqy3znuesz54nvwyf5k3jkqy5ik",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c",
+    "title": "στρατ-",
+    "ts": "2023-10-27T14:44:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6395513,
+     "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c"
+      }
+     },
+     "timestamp": "2023-10-27T14:44:57Z"
+    },
+    "rev": {
+     "page": 1432846,
+     "parentid": 0,
+     "revid": 6395513,
+     "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c"
+      }
+     },
+     "timestamp": "2023-10-27T14:44:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1432847,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "στρατο-",
+    "rid": 6395514,
+    "sha1_attr": "19a9iqy3znuesz54nvwyf5k3jkqy5ik",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c",
+    "title": "στρατό-",
+    "ts": "2023-10-27T14:47:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6395514,
+     "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c"
+      }
+     },
+     "timestamp": "2023-10-27T14:47:20Z"
+    },
+    "rev": {
+     "page": 1432847,
+     "parentid": 0,
+     "revid": 6395514,
+     "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "0ac4d26763cde52a05ac60198b1361d0ebc86a6c"
+      }
+     },
+     "timestamp": "2023-10-27T14:47:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1432898,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "καινο-",
+    "rid": 6395663,
+    "sha1_attr": "dbmix7ur52zb3mgnyg99utmg1ynck83",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "720e2b040f97633d969d20fdd0f7aa29324d4063",
+    "title": "καινό-",
+    "ts": "2023-10-28T01:15:46Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6395663,
+     "sha1": "720e2b040f97633d969d20fdd0f7aa29324d4063",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "720e2b040f97633d969d20fdd0f7aa29324d4063"
+      }
+     },
+     "timestamp": "2023-10-28T01:15:46Z"
+    },
+    "rev": {
+     "page": 1432898,
+     "parentid": 0,
+     "revid": 6395663,
+     "sha1": "720e2b040f97633d969d20fdd0f7aa29324d4063",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "720e2b040f97633d969d20fdd0f7aa29324d4063"
+      }
+     },
+     "timestamp": "2023-10-28T01:15:46Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1448294,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πικρο-",
+    "rid": 6425881,
+    "sha1_attr": "irzpwyhdv438vh63be5i1ty7d9z4xy1",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9",
+    "title": "πικρ-",
+    "ts": "2023-10-28T22:10:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6425881,
+     "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9"
+      }
+     },
+     "timestamp": "2023-10-28T22:10:28Z"
+    },
+    "rev": {
+     "page": 1448294,
+     "parentid": 0,
+     "revid": 6425881,
+     "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9"
+      }
+     },
+     "timestamp": "2023-10-28T22:10:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1448295,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πικρο-",
+    "rid": 6425882,
+    "sha1_attr": "irzpwyhdv438vh63be5i1ty7d9z4xy1",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9",
+    "title": "πικρό-",
+    "ts": "2023-10-28T22:10:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6425882,
+     "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9"
+      }
+     },
+     "timestamp": "2023-10-28T22:10:57Z"
+    },
+    "rev": {
+     "page": 1448295,
+     "parentid": 0,
+     "revid": 6425882,
+     "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "a0c05e85b1578ce3e21234a7091a34fcd501dbd9"
+      }
+     },
+     "timestamp": "2023-10-28T22:10:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1510641,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "πετρο-",
+    "rid": 6512723,
+    "sha1_attr": "2xxa7dnfrodsfevjytquj895bnrb0vi",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "19305dea190df150d06f4b264650bb8aa346802e",
+    "title": "πετρ-",
+    "ts": "2023-11-29T16:30:27Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6512723,
+     "sha1": "19305dea190df150d06f4b264650bb8aa346802e",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "19305dea190df150d06f4b264650bb8aa346802e"
+      }
+     },
+     "timestamp": "2023-11-29T16:30:27Z"
+    },
+    "rev": {
+     "page": 1510641,
+     "parentid": 0,
+     "revid": 6512723,
+     "sha1": "19305dea190df150d06f4b264650bb8aa346802e",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "19305dea190df150d06f4b264650bb8aa346802e"
+      }
+     },
+     "timestamp": "2023-11-29T16:30:27Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1511011,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ὀδοντο-",
+    "rid": 6513197,
+    "sha1_attr": "7v2c0vn236v7aa8ce2u4ibaw4pxxxim",
+    "tdel": null,
+    "text_len": 28,
+    "text_sha1": "43502253000783d0711b1d590754e186437a2cee",
+    "title": "ὀδοντ-",
+    "ts": "2023-11-30T08:30:54Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6513197,
+     "sha1": "43502253000783d0711b1d590754e186437a2cee",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "43502253000783d0711b1d590754e186437a2cee"
+      }
+     },
+     "timestamp": "2023-11-30T08:30:54Z"
+    },
+    "rev": {
+     "page": 1511011,
+     "parentid": 0,
+     "revid": 6513197,
+     "sha1": "43502253000783d0711b1d590754e186437a2cee",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "43502253000783d0711b1d590754e186437a2cee"
+      }
+     },
+     "timestamp": "2023-11-30T08:30:54Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1511012,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ὀδοντο-",
+    "rid": 6513198,
+    "sha1_attr": "jfqnmwhzit89hjets0ncg3hl8z0s35j",
+    "tdel": null,
+    "text_len": 99,
+    "text_sha1": "a6661731173b555d632241ead5be81b9e2292af7",
+    "title": "ὀδοντό-",
+    "ts": "2023-11-30T08:31:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6513198,
+     "sha1": "a6661731173b555d632241ead5be81b9e2292af7",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "a6661731173b555d632241ead5be81b9e2292af7"
+      }
+     },
+     "timestamp": "2023-11-30T08:31:58Z"
+    },
+    "rev": {
+     "page": 1511012,
+     "parentid": 0,
+     "revid": 6513198,
+     "sha1": "a6661731173b555d632241ead5be81b9e2292af7",
+     "size": 99,
+     "slots": {
+      "main": {
+       "sha1": "a6661731173b555d632241ead5be81b9e2292af7"
+      }
+     },
+     "timestamp": "2023-11-30T08:31:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1513470,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "αἰγο-",
+    "rid": 6517585,
+    "sha1_attr": "kj2j3h5migwk3nasrsrl4yxz7vnltm0",
+    "tdel": null,
+    "text_len": 73,
+    "text_sha1": "afc05f45cdc6db09e5bcc85e8aee786e475c0c28",
+    "title": "αἰγό-",
+    "ts": "2023-12-03T10:36:06Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6517585,
+     "sha1": "afc05f45cdc6db09e5bcc85e8aee786e475c0c28",
+     "size": 73,
+     "slots": {
+      "main": {
+       "sha1": "afc05f45cdc6db09e5bcc85e8aee786e475c0c28"
+      }
+     },
+     "timestamp": "2023-12-03T10:36:06Z"
+    },
+    "rev": {
+     "page": 1513470,
+     "parentid": 0,
+     "revid": 6517585,
+     "sha1": "afc05f45cdc6db09e5bcc85e8aee786e475c0c28",
+     "size": 73,
+     "slots": {
+      "main": {
+       "sha1": "afc05f45cdc6db09e5bcc85e8aee786e475c0c28"
+      }
+     },
+     "timestamp": "2023-12-03T10:36:06Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1540692,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "χρωματο-",
+    "rid": 6553366,
+    "sha1_attr": "1jbvu3ixf9vzc6bfjrjismjc13srxib",
+    "tdel": null,
+    "text_len": 51,
+    "text_sha1": "0d2854bc437f28f7b861eaf6ed4755940a067a63",
+    "title": "χρωματό-",
+    "ts": "2024-01-03T20:31:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6553366,
+     "sha1": "0d2854bc437f28f7b861eaf6ed4755940a067a63",
+     "size": 51,
+     "slots": {
+      "main": {
+       "sha1": "0d2854bc437f28f7b861eaf6ed4755940a067a63"
+      }
+     },
+     "timestamp": "2024-01-03T20:31:41Z"
+    },
+    "rev": {
+     "page": 1540692,
+     "parentid": 0,
+     "revid": 6553366,
+     "sha1": "0d2854bc437f28f7b861eaf6ed4755940a067a63",
+     "size": 51,
+     "slots": {
+      "main": {
+       "sha1": "0d2854bc437f28f7b861eaf6ed4755940a067a63"
+      }
+     },
+     "timestamp": "2024-01-03T20:31:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1540693,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "χρωματο-",
+    "rid": 6553368,
+    "sha1_attr": "fczh16bc1azejsmq26xedyfvkzlxxw4",
+    "tdel": null,
+    "text_len": 29,
+    "text_sha1": "83801526e342d131e8f49c87d58ef91e4214cad4",
+    "title": "χρωματ-",
+    "ts": "2024-01-03T20:32:02Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6553368,
+     "sha1": "83801526e342d131e8f49c87d58ef91e4214cad4",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "83801526e342d131e8f49c87d58ef91e4214cad4"
+      }
+     },
+     "timestamp": "2024-01-03T20:32:02Z"
+    },
+    "rev": {
+     "page": 1540693,
+     "parentid": 0,
+     "revid": 6553368,
+     "sha1": "83801526e342d131e8f49c87d58ef91e4214cad4",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "83801526e342d131e8f49c87d58ef91e4214cad4"
+      }
+     },
+     "timestamp": "2024-01-03T20:32:02Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7229149,
+    "sha1_attr": "2hfystuh33qlhra02p2zz6ko7u9vrcu",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Σαβοργινάκης",
+    "ts": "2025-08-27T18:45:38Z"
+   },
+   "key": 1545640,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7229149,
+    "sha1_attr": "2hfystuh33qlhra02p2zz6ko7u9vrcu",
+    "tdel": null,
+    "text_len": 299,
+    "text_sha1": "15450d4a40f0dc84d2601fcc5f2f4c2c5c07ed3e",
+    "title": "Σαβοργινάκης",
+    "ts": "2025-08-27T18:45:38Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 6771214,
+     "revid": 7229149,
+     "sha1": "15450d4a40f0dc84d2601fcc5f2f4c2c5c07ed3e",
+     "size": 299,
+     "slots": {
+      "main": {
+       "sha1": "15450d4a40f0dc84d2601fcc5f2f4c2c5c07ed3e"
+      }
+     },
+     "timestamp": "2025-08-27T18:45:38Z"
+    },
+    "rev": {
+     "page": 1545640,
+     "parentid": 6771214,
+     "revid": 7229149,
+     "sha1": "15450d4a40f0dc84d2601fcc5f2f4c2c5c07ed3e",
+     "size": 299,
+     "slots": {
+      "main": {
+       "sha1": "15450d4a40f0dc84d2601fcc5f2f4c2c5c07ed3e"
+      }
+     },
+     "timestamp": "2025-08-27T18:45:38Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1566510,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἁλι-",
+    "rid": 6581270,
+    "sha1_attr": "4h0r5833hla72xfuykn12izfj5if917",
+    "tdel": null,
+    "text_len": 22,
+    "text_sha1": "264a784d1df0082f703f66b9ddc0a1a6cddc517b",
+    "title": "ἁλί-",
+    "ts": "2024-01-14T00:11:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6581270,
+     "sha1": "264a784d1df0082f703f66b9ddc0a1a6cddc517b",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "264a784d1df0082f703f66b9ddc0a1a6cddc517b"
+      }
+     },
+     "timestamp": "2024-01-14T00:11:36Z"
+    },
+    "rev": {
+     "page": 1566510,
+     "parentid": 0,
+     "revid": 6581270,
+     "sha1": "264a784d1df0082f703f66b9ddc0a1a6cddc517b",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "264a784d1df0082f703f66b9ddc0a1a6cddc517b"
+      }
+     },
+     "timestamp": "2024-01-14T00:11:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1566538,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀλεξι-",
+    "rid": 6581437,
+    "sha1_attr": "kz7hw94mby1inw7yx68alpr6vzcmyxa",
+    "tdel": null,
+    "text_len": 26,
+    "text_sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e",
+    "title": "ἀλεξ-",
+    "ts": "2024-01-14T15:05:17Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6581437,
+     "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e",
+     "size": 26,
+     "slots": {
+      "main": {
+       "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e"
+      }
+     },
+     "timestamp": "2024-01-14T15:05:17Z"
+    },
+    "rev": {
+     "page": 1566538,
+     "parentid": 0,
+     "revid": 6581437,
+     "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e",
+     "size": 26,
+     "slots": {
+      "main": {
+       "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e"
+      }
+     },
+     "timestamp": "2024-01-14T15:05:17Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1566539,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀλεξι-",
+    "rid": 6581438,
+    "sha1_attr": "kz7hw94mby1inw7yx68alpr6vzcmyxa",
+    "tdel": null,
+    "text_len": 26,
+    "text_sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e",
+    "title": "ἀλεξί-",
+    "ts": "2024-01-14T15:05:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6581438,
+     "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e",
+     "size": 26,
+     "slots": {
+      "main": {
+       "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e"
+      }
+     },
+     "timestamp": "2024-01-14T15:05:41Z"
+    },
+    "rev": {
+     "page": 1566539,
+     "parentid": 0,
+     "revid": 6581438,
+     "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e",
+     "size": 26,
+     "slots": {
+      "main": {
+       "sha1": "b396cd7cab68e2f4aa3a03573e92affeffefc24e"
+      }
+     },
+     "timestamp": "2024-01-14T15:05:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7254539,
+    "sha1_attr": "kno056ixrahwqxxrbecjblxby1qjux6",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Κουτσογούλας",
+    "ts": "2025-09-02T20:48:36Z"
+   },
+   "key": 1583460,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7254539,
+    "sha1_attr": "kno056ixrahwqxxrbecjblxby1qjux6",
+    "tdel": null,
+    "text_len": 419,
+    "text_sha1": "b0d831441f9099fc3367389a13c9038bbef5014a",
+    "title": "Κουτσογούλας",
+    "ts": "2025-09-02T20:48:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7042061,
+     "revid": 7254539,
+     "sha1": "b0d831441f9099fc3367389a13c9038bbef5014a",
+     "size": 419,
+     "slots": {
+      "main": {
+       "sha1": "b0d831441f9099fc3367389a13c9038bbef5014a"
+      }
+     },
+     "timestamp": "2025-09-02T20:48:36Z"
+    },
+    "rev": {
+     "page": 1583460,
+     "parentid": 7042061,
+     "revid": 7254539,
+     "sha1": "b0d831441f9099fc3367389a13c9038bbef5014a",
+     "size": 419,
+     "slots": {
+      "main": {
+       "sha1": "b0d831441f9099fc3367389a13c9038bbef5014a"
+      }
+     },
+     "timestamp": "2025-09-02T20:48:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1623838,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "δαμο-",
+    "rid": 6734039,
+    "sha1_attr": "s4c40hajfahw6ngw5py2m5lj6cr7t4v",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f",
+    "title": "δαμό-",
+    "ts": "2024-06-17T16:33:56Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6734039,
+     "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f"
+      }
+     },
+     "timestamp": "2024-06-17T16:33:56Z"
+    },
+    "rev": {
+     "page": 1623838,
+     "parentid": 0,
+     "revid": 6734039,
+     "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f"
+      }
+     },
+     "timestamp": "2024-06-17T16:33:56Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1623839,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "δαμο-",
+    "rid": 6734040,
+    "sha1_attr": "s4c40hajfahw6ngw5py2m5lj6cr7t4v",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f",
+    "title": "δαμ-",
+    "ts": "2024-06-17T16:34:18Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6734040,
+     "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f"
+      }
+     },
+     "timestamp": "2024-06-17T16:34:18Z"
+    },
+    "rev": {
+     "page": 1623839,
+     "parentid": 0,
+     "revid": 6734040,
+     "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "f0bbfdc38288b10f1693d6af75814bf10edb5a3f"
+      }
+     },
+     "timestamp": "2024-06-17T16:34:18Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1624706,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "alo-",
+    "rid": 6735463,
+    "sha1_attr": "du3i73c35dh6hy034svfu9h7oijiabo",
+    "tdel": null,
+    "text_len": 18,
+    "text_sha1": "7672aacb69185f187577592c99460dd91b05bfc4",
+    "title": "aló-",
+    "ts": "2024-06-21T09:01:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6735463,
+     "sha1": "7672aacb69185f187577592c99460dd91b05bfc4",
+     "size": 18,
+     "slots": {
+      "main": {
+       "sha1": "7672aacb69185f187577592c99460dd91b05bfc4"
+      }
+     },
+     "timestamp": "2024-06-21T09:01:36Z"
+    },
+    "rev": {
+     "page": 1624706,
+     "parentid": 0,
+     "revid": 6735463,
+     "sha1": "7672aacb69185f187577592c99460dd91b05bfc4",
+     "size": 18,
+     "slots": {
+      "main": {
+       "sha1": "7672aacb69185f187577592c99460dd91b05bfc4"
+      }
+     },
+     "timestamp": "2024-06-21T09:01:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1624838,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "δυναμο-",
+    "rid": 6736092,
+    "sha1_attr": "i9owg8kql33plnwk7ps39xyjdl7l349",
+    "tdel": null,
+    "text_len": 119,
+    "text_sha1": "9c664a06904005620f95f460b031c82cb23a6e09",
+    "title": "δυναμό-",
+    "ts": "2024-06-22T19:26:42Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 6736091,
+     "revid": 6736092,
+     "sha1": "9c664a06904005620f95f460b031c82cb23a6e09",
+     "size": 119,
+     "slots": {
+      "main": {
+       "sha1": "9c664a06904005620f95f460b031c82cb23a6e09"
+      }
+     },
+     "timestamp": "2024-06-22T19:26:42Z"
+    },
+    "rev": {
+     "page": 1624838,
+     "parentid": 6736091,
+     "revid": 6736092,
+     "sha1": "9c664a06904005620f95f460b031c82cb23a6e09",
+     "size": 119,
+     "slots": {
+      "main": {
+       "sha1": "9c664a06904005620f95f460b031c82cb23a6e09"
+      }
+     },
+     "timestamp": "2024-06-22T19:26:42Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1629481,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ὁλο-",
+    "rid": 6922106,
+    "sha1_attr": "oau0yz4c2itphh7f548y0rdmds89cc5",
+    "tdel": null,
+    "text_len": 22,
+    "text_sha1": "d00943421df3a7ce76765d52cf304e971923eeb5",
+    "title": "ὁλ-",
+    "ts": "2024-08-17T19:14:32Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6922106,
+     "sha1": "d00943421df3a7ce76765d52cf304e971923eeb5",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "d00943421df3a7ce76765d52cf304e971923eeb5"
+      }
+     },
+     "timestamp": "2024-08-17T19:14:32Z"
+    },
+    "rev": {
+     "page": 1629481,
+     "parentid": 0,
+     "revid": 6922106,
+     "sha1": "d00943421df3a7ce76765d52cf304e971923eeb5",
+     "size": 22,
+     "slots": {
+      "main": {
+       "sha1": "d00943421df3a7ce76765d52cf304e971923eeb5"
+      }
+     },
+     "timestamp": "2024-08-17T19:14:32Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1634695,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σαρκο-",
+    "rid": 6939647,
+    "sha1_attr": "ph5y5h8sosfpmbt49ys3x0bdk8ecfgv",
+    "tdel": null,
+    "text_len": 117,
+    "text_sha1": "da1a418d1df663be289c8c4e2d6a219d9416474f",
+    "title": "σαρκό-",
+    "ts": "2024-09-28T20:49:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6939647,
+     "sha1": "da1a418d1df663be289c8c4e2d6a219d9416474f",
+     "size": 117,
+     "slots": {
+      "main": {
+       "sha1": "da1a418d1df663be289c8c4e2d6a219d9416474f"
+      }
+     },
+     "timestamp": "2024-09-28T20:49:24Z"
+    },
+    "rev": {
+     "page": 1634695,
+     "parentid": 0,
+     "revid": 6939647,
+     "sha1": "da1a418d1df663be289c8c4e2d6a219d9416474f",
+     "size": 117,
+     "slots": {
+      "main": {
+       "sha1": "da1a418d1df663be289c8c4e2d6a219d9416474f"
+      }
+     },
+     "timestamp": "2024-09-28T20:49:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1636038,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λαμπρο-",
+    "rid": 6944622,
+    "sha1_attr": "b7jn05qbtpbdlh8v1whv4e9htnydvvh",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "5ff6a2bd1a42e85806b4fb81c7d18fd275fe109d",
+    "title": "λαμπρό-",
+    "ts": "2024-10-07T06:05:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6944622,
+     "sha1": "5ff6a2bd1a42e85806b4fb81c7d18fd275fe109d",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "5ff6a2bd1a42e85806b4fb81c7d18fd275fe109d"
+      }
+     },
+     "timestamp": "2024-10-07T06:05:58Z"
+    },
+    "rev": {
+     "page": 1636038,
+     "parentid": 0,
+     "revid": 6944622,
+     "sha1": "5ff6a2bd1a42e85806b4fb81c7d18fd275fe109d",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "5ff6a2bd1a42e85806b4fb81c7d18fd275fe109d"
+      }
+     },
+     "timestamp": "2024-10-07T06:05:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 7272642,
+    "sha1_attr": "ke2te6c5aohzb5n9mmdb21f5tgbreps",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-11-03T13:58:21Z"
+   },
+   "key": 1638805,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 7272642,
+    "sha1_attr": "ke2te6c5aohzb5n9mmdb21f5tgbreps",
+    "tdel": null,
+    "text_len": 4420,
+    "text_sha1": "ae90788dfca54cf644809d0a9c558b0ce5a6be40",
+    "title": null,
+    "ts": "2025-11-03T13:58:21Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 6958006,
+     "revid": 7272642,
+     "sha1": "ae90788dfca54cf644809d0a9c558b0ce5a6be40",
+     "size": 4420,
+     "slots": {
+      "main": {
+       "sha1": "ae90788dfca54cf644809d0a9c558b0ce5a6be40"
+      }
+     },
+     "timestamp": "2025-11-03T13:58:21Z"
+    },
+    "rev": {
+     "page": 1638805,
+     "parentid": 6958006,
+     "revid": 7272642,
+     "sha1": "ae90788dfca54cf644809d0a9c558b0ce5a6be40",
+     "size": 4420,
+     "slots": {
+      "main": {
+       "sha1": "ae90788dfca54cf644809d0a9c558b0ce5a6be40"
+      }
+     },
+     "timestamp": "2025-11-03T13:58:21Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1643057,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σκληρο-",
+    "rid": 6970359,
+    "sha1_attr": "0fii2ta9a0x3962jooilrzrws7hlruz",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "03b0714627097cc05da3918e041228dec9626d4b",
+    "title": "σκληρό-",
+    "ts": "2024-12-05T23:47:22Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6970359,
+     "sha1": "03b0714627097cc05da3918e041228dec9626d4b",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "03b0714627097cc05da3918e041228dec9626d4b"
+      }
+     },
+     "timestamp": "2024-12-05T23:47:22Z"
+    },
+    "rev": {
+     "page": 1643057,
+     "parentid": 0,
+     "revid": 6970359,
+     "sha1": "03b0714627097cc05da3918e041228dec9626d4b",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "03b0714627097cc05da3918e041228dec9626d4b"
+      }
+     },
+     "timestamp": "2024-12-05T23:47:22Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1643059,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "σκληρο-",
+    "rid": 6970361,
+    "sha1_attr": "0fii2ta9a0x3962jooilrzrws7hlruz",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "03b0714627097cc05da3918e041228dec9626d4b",
+    "title": "σκληρ-",
+    "ts": "2024-12-05T23:48:00Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6970361,
+     "sha1": "03b0714627097cc05da3918e041228dec9626d4b",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "03b0714627097cc05da3918e041228dec9626d4b"
+      }
+     },
+     "timestamp": "2024-12-05T23:48:00Z"
+    },
+    "rev": {
+     "page": 1643059,
+     "parentid": 0,
+     "revid": 6970361,
+     "sha1": "03b0714627097cc05da3918e041228dec9626d4b",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "03b0714627097cc05da3918e041228dec9626d4b"
+      }
+     },
+     "timestamp": "2024-12-05T23:48:00Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1644035,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "γλυκυ-",
+    "rid": 6977102,
+    "sha1_attr": "phfqaat5i6vr7br1s3jg9e429jlmq44",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "da2acbfdbd6e104e8d72f4c0409ba196fda49eb4",
+    "title": "γλυκύ-",
+    "ts": "2024-12-16T22:43:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 6977102,
+     "sha1": "da2acbfdbd6e104e8d72f4c0409ba196fda49eb4",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "da2acbfdbd6e104e8d72f4c0409ba196fda49eb4"
+      }
+     },
+     "timestamp": "2024-12-16T22:43:28Z"
+    },
+    "rev": {
+     "page": 1644035,
+     "parentid": 0,
+     "revid": 6977102,
+     "sha1": "da2acbfdbd6e104e8d72f4c0409ba196fda49eb4",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "da2acbfdbd6e104e8d72f4c0409ba196fda49eb4"
+      }
+     },
+     "timestamp": "2024-12-16T22:43:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1648754,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λυκο-",
+    "rid": 7016189,
+    "sha1_attr": "rfu2rgsxlnpx3pr2k7ae3g3d6pnbhm9",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1",
+    "title": "λυκό-",
+    "ts": "2025-02-09T02:37:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7016189,
+     "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1"
+      }
+     },
+     "timestamp": "2025-02-09T02:37:41Z"
+    },
+    "rev": {
+     "page": 1648754,
+     "parentid": 0,
+     "revid": 7016189,
+     "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1"
+      }
+     },
+     "timestamp": "2025-02-09T02:37:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1648755,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λυκο-",
+    "rid": 7016190,
+    "sha1_attr": "rfu2rgsxlnpx3pr2k7ae3g3d6pnbhm9",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1",
+    "title": "λυκ-",
+    "ts": "2025-02-09T02:38:13Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7016190,
+     "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1"
+      }
+     },
+     "timestamp": "2025-02-09T02:38:13Z"
+    },
+    "rev": {
+     "page": 1648755,
+     "parentid": 0,
+     "revid": 7016190,
+     "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "eae872449bb3cf5d128926222b6a5fcff8e648f1"
+      }
+     },
+     "timestamp": "2025-02-09T02:38:13Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1659109,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "γλαυκο-",
+    "rid": 7175310,
+    "sha1_attr": "9wwa6v99zvd8k8vkica4e7dnzh6b83f",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb",
+    "title": "γλαυκό-",
+    "ts": "2025-06-13T12:45:13Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7175310,
+     "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb"
+      }
+     },
+     "timestamp": "2025-06-13T12:45:13Z"
+    },
+    "rev": {
+     "page": 1659109,
+     "parentid": 0,
+     "revid": 7175310,
+     "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb"
+      }
+     },
+     "timestamp": "2025-06-13T12:45:13Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1659110,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "γλαυκο-",
+    "rid": 7175311,
+    "sha1_attr": "9wwa6v99zvd8k8vkica4e7dnzh6b83f",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb",
+    "title": "γλαυκ-",
+    "ts": "2025-06-13T12:45:31Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7175311,
+     "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb"
+      }
+     },
+     "timestamp": "2025-06-13T12:45:31Z"
+    },
+    "rev": {
+     "page": 1659110,
+     "parentid": 0,
+     "revid": 7175311,
+     "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "54decc7d859e7e049cc4e07a03034d1c452697bb"
+      }
+     },
+     "timestamp": "2025-06-13T12:45:31Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1659167,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "συχνο-",
+    "rid": 7175541,
+    "sha1_attr": "rop2wa9fr9gpncop3dxz3ezhis1t76k",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c",
+    "title": "συχν-",
+    "ts": "2025-06-14T11:10:02Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7175541,
+     "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c"
+      }
+     },
+     "timestamp": "2025-06-14T11:10:02Z"
+    },
+    "rev": {
+     "page": 1659167,
+     "parentid": 0,
+     "revid": 7175541,
+     "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c"
+      }
+     },
+     "timestamp": "2025-06-14T11:10:02Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1659169,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "συχνο-",
+    "rid": 7175544,
+    "sha1_attr": "rop2wa9fr9gpncop3dxz3ezhis1t76k",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c",
+    "title": "συχνό-",
+    "ts": "2025-06-14T11:11:12Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7175544,
+     "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c"
+      }
+     },
+     "timestamp": "2025-06-14T11:11:12Z"
+    },
+    "rev": {
+     "page": 1659169,
+     "parentid": 0,
+     "revid": 7175544,
+     "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "ed03e3f07ff12e1ca28f75a306a0921ab214ba9c"
+      }
+     },
+     "timestamp": "2025-06-14T11:11:12Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1661775,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "στρογγυλο-",
+    "rid": 7192867,
+    "sha1_attr": "a4k9qsh32jxj5lbv28fg9cpusmb1zn0",
+    "tdel": null,
+    "text_len": 33,
+    "text_sha1": "56b1805a32de1862560ca9b5bce461d336efadac",
+    "title": "στρογγυλό-",
+    "ts": "2025-07-22T09:12:15Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7192867,
+     "sha1": "56b1805a32de1862560ca9b5bce461d336efadac",
+     "size": 33,
+     "slots": {
+      "main": {
+       "sha1": "56b1805a32de1862560ca9b5bce461d336efadac"
+      }
+     },
+     "timestamp": "2025-07-22T09:12:15Z"
+    },
+    "rev": {
+     "page": 1661775,
+     "parentid": 0,
+     "revid": 7192867,
+     "sha1": "56b1805a32de1862560ca9b5bce461d336efadac",
+     "size": 33,
+     "slots": {
+      "main": {
+       "sha1": "56b1805a32de1862560ca9b5bce461d336efadac"
+      }
+     },
+     "timestamp": "2025-07-22T09:12:15Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1663176,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ἀρτο-",
+    "rid": 7196979,
+    "sha1_attr": "3fp4aqoel4carn6cje8hk1cidfe0i5x",
+    "tdel": null,
+    "text_len": 24,
+    "text_sha1": "1d6a58d12250686861b7a9a5e445b521a57b15f5",
+    "title": "ἀρτό-",
+    "ts": "2025-07-31T21:54:35Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7196979,
+     "sha1": "1d6a58d12250686861b7a9a5e445b521a57b15f5",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "1d6a58d12250686861b7a9a5e445b521a57b15f5"
+      }
+     },
+     "timestamp": "2025-07-31T21:54:35Z"
+    },
+    "rev": {
+     "page": 1663176,
+     "parentid": 0,
+     "revid": 7196979,
+     "sha1": "1d6a58d12250686861b7a9a5e445b521a57b15f5",
+     "size": 24,
+     "slots": {
+      "main": {
+       "sha1": "1d6a58d12250686861b7a9a5e445b521a57b15f5"
+      }
+     },
+     "timestamp": "2025-07-31T21:54:35Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1665706,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "ιδεο-",
+    "rid": 7228146,
+    "sha1_attr": "bk7tavb108yer1k3ovl9bvoyvyqgjcl",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "62fa0a3def19a5d0b8bfc4e48f38a957d73b57f5",
+    "title": "ιδεό-",
+    "ts": "2025-08-25T09:14:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7228146,
+     "sha1": "62fa0a3def19a5d0b8bfc4e48f38a957d73b57f5",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "62fa0a3def19a5d0b8bfc4e48f38a957d73b57f5"
+      }
+     },
+     "timestamp": "2025-08-25T09:14:28Z"
+    },
+    "rev": {
+     "page": 1665706,
+     "parentid": 0,
+     "revid": 7228146,
+     "sha1": "62fa0a3def19a5d0b8bfc4e48f38a957d73b57f5",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "62fa0a3def19a5d0b8bfc4e48f38a957d73b57f5"
+      }
+     },
+     "timestamp": "2025-08-25T09:14:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1665714,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λευκο-",
+    "rid": 7228254,
+    "sha1_attr": "qhxlbn9vmdedv1xlyvlo7b1kb0pholg",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4",
+    "title": "λευκ-",
+    "ts": "2025-08-25T15:11:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7228254,
+     "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4"
+      }
+     },
+     "timestamp": "2025-08-25T15:11:41Z"
+    },
+    "rev": {
+     "page": 1665714,
+     "parentid": 0,
+     "revid": 7228254,
+     "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4"
+      }
+     },
+     "timestamp": "2025-08-25T15:11:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1665715,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "λευκο-",
+    "rid": 7228255,
+    "sha1_attr": "qhxlbn9vmdedv1xlyvlo7b1kb0pholg",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4",
+    "title": "λευκό-",
+    "ts": "2025-08-25T15:12:23Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7228255,
+     "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4"
+      }
+     },
+     "timestamp": "2025-08-25T15:12:23Z"
+    },
+    "rev": {
+     "page": 1665715,
+     "parentid": 0,
+     "revid": 7228255,
+     "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "e2d892e0c60bee36ece22f9b9a05b0d4a55cffc4"
+      }
+     },
+     "timestamp": "2025-08-25T15:12:23Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "elwiktionary-2026-10-01-p1p1786021.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7233128,
+    "sha1_attr": "sk11k4t80tuyn53kchp5b2eqy7abozm",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Paris Agreement",
+    "ts": "2025-08-29T21:02:26Z"
+   },
+   "key": 1666009,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7233128,
+    "sha1_attr": "sk11k4t80tuyn53kchp5b2eqy7abozm",
+    "tdel": null,
+    "text_len": 153,
+    "text_sha1": "f4774e7504e4995bea8d481509c7e6cdb7fbb942",
+    "title": "Paris Agreement",
+    "ts": "2025-08-29T21:02:26Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7233125,
+     "revid": 7233128,
+     "sha1": "f4774e7504e4995bea8d481509c7e6cdb7fbb942",
+     "size": 153,
+     "slots": {
+      "main": {
+       "sha1": "f4774e7504e4995bea8d481509c7e6cdb7fbb942"
+      }
+     },
+     "timestamp": "2025-08-29T21:02:26Z"
+    },
+    "rev": {
+     "page": 1666009,
+     "parentid": 7233125,
+     "revid": 7233128,
+     "sha1": "f4774e7504e4995bea8d481509c7e6cdb7fbb942",
+     "size": 153,
+     "slots": {
+      "main": {
+       "sha1": "f4774e7504e4995bea8d481509c7e6cdb7fbb942"
+      }
+     },
+     "timestamp": "2025-08-29T21:02:26Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 1667418,
+   "legacy": {
+    "file": "elwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "τελεσι-",
+    "rid": 7260293,
+    "sha1_attr": "b1nxffhuu8ol9kbu6zrr8biiwcvqv0j",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "5e90a0a6b87f4fca08f29a7987e600e9654dce83",
+    "title": "τελεσί-",
+    "ts": "2025-09-13T10:39:12Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7260293,
+     "sha1": "5e90a0a6b87f4fca08f29a7987e600e9654dce83",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "5e90a0a6b87f4fca08f29a7987e600e9654dce83"
+      }
+     },
+     "timestamp": "2025-09-13T10:39:12Z"
+    },
+    "rev": {
+     "page": 1667418,
+     "parentid": 0,
+     "revid": 7260293,
+     "sha1": "5e90a0a6b87f4fca08f29a7987e600e9654dce83",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "5e90a0a6b87f4fca08f29a7987e600e9654dce83"
+      }
+     },
+     "timestamp": "2025-09-13T10:39:12Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 68,
+  "MISSING_EXPORT|TIMING": 10,
+  "MISSING_EXPORT|UNEXPLAINED": 118,
+  "REV_DIFF|TIMING": 56,
+  "TEXT_DIFF|UNEXPLAINED": 15
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 133,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|MISSING_EXPORT": 118,
+  "0|TEXT_DIFF": 3,
+  "11|TEXT_DIFF": 1,
+  "14|TEXT_DIFF": 9,
+  "15|TEXT_DIFF": 1,
+  "3|TEXT_DIFF": 1
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 6,
+   "no_text_not_deleted": 143,
+   "sha1_attr_mismatch": 6
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 6,
+   "no_text_not_deleted": 128,
+   "sha1_attr_mismatch": 6
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 133
+ },
+ "live_checked": 133,
+ "max_ts": {
+  "export": "2026-09-30T21:10:07Z",
+  "legacy": "2026-10-01T11:57:43Z"
+ },
+ "n_diffs": 267,
+ "n_export": 1740581,
+ "n_legacy": 1740709,
+ "rc_covers_window": true,
+ "rc_rows": 79938,
+ "unexplained_primary": 133,
+ "wiki": "elwiktionary"
+}

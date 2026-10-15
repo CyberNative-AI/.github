@@ -1,0 +1,36 @@
+{
+ "arm": "history",
+ "checked": [],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 9,
+  "MISSING_EXPORT|TIMING": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 10
+  },
+  "legacy": {
+   "no_text_not_deleted": 10
+  }
+ },
+ "live": {},
+ "live_checked": 0,
+ "max_ts": {
+  "export": "2026-09-25T12:48:34Z",
+  "legacy": "2026-10-01T12:42:44Z"
+ },
+ "n_diffs": 10,
+ "n_export": 5922,
+ "n_legacy": 5923,
+ "rc_covers_window": true,
+ "rc_rows": 1,
+ "unexplained_primary": 0,
+ "wiki": "lnwiktionary"
+}

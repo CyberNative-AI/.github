@@ -1,0 +1,1826 @@
+{
+ "arms_with_any_export_defect": [
+  "current:afwikibooks",
+  "current:dawikiquote",
+  "current:shywiktionary",
+  "current:tnwiktionary",
+  "current:bclwikiquote",
+  "current:nowikiquote",
+  "current:svwikibooks",
+  "current:bgwikisource",
+  "current:cawikiquote",
+  "current:ruewiki",
+  "current:scwiki",
+  "current:cywikisource",
+  "current:elwiktionary",
+  "current:fawikisource",
+  "current:fiwiktionary",
+  "current:itwikiquote",
+  "current:jawikibooks",
+  "current:sourceswiki",
+  "history:afwikibooks",
+  "history:dawikiquote",
+  "history:shywiktionary",
+  "history:tnwiktionary",
+  "history:bclwikiquote",
+  "history:nowikiquote",
+  "history:bgwikisource",
+  "history:cawikiquote",
+  "history:ruewiki",
+  "history:scwiki",
+  "history:cywikisource",
+  "history:fawikisource"
+ ],
+ "arms_with_confirmed_legacy_defect": [
+  "current:mlwikiquote"
+ ],
+ "arms_with_ge100_export_defects": [
+  "current:cywikisource",
+  "current:elwiktionary",
+  "current:fawikisource",
+  "current:sourceswiki",
+  "history:cywikisource",
+  "history:fawikisource"
+ ],
+ "control_pass": true,
+ "coverage": {
+  "closed": 134
+ },
+ "coverage_missing_n": 134,
+ "history_arm_valid": true,
+ "history_wikis_with_confirmed_export_defect": [
+  "afwikibooks",
+  "dawikiquote",
+  "shywiktionary",
+  "tnwiktionary",
+  "bclwikiquote",
+  "nowikiquote",
+  "bgwikisource",
+  "cawikiquote",
+  "ruewiki",
+  "scwiki",
+  "cywikisource",
+  "fawikisource"
+ ],
+ "rows": {
+  "current:acewiki": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 3
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 118,
+     "no_text_not_deleted": 99
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 118,
+     "no_text_not_deleted": 99
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-28T10:46:41Z",
+    "legacy": "2026-09-28T10:46:41Z"
+   },
+   "n_export": 28374,
+   "n_legacy": 28374,
+   "unexplained_primary": 0
+  },
+  "current:afwikibooks": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 3,
+    "MISSING_EXPORT|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "3|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 8
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 8
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-25T11:46:30Z",
+    "legacy": "2026-09-25T11:46:30Z"
+   },
+   "n_export": 1150,
+   "n_legacy": 1151,
+   "unexplained_primary": 1
+  },
+  "current:bclwikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1,
+    "TEXT_DIFF|UNEXPLAINED": 32
+   },
+   "est_export_wrong": 32,
+   "est_legacy_wrong": 0,
+   "export_wrong": 32,
+   "export_wrong_by_ns_type": {
+    "4|TEXT_DIFF": 32
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 38
+    },
+    "legacy": {
+     "no_text_not_deleted": 6
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 32
+   },
+   "live_checked": 32,
+   "max_ts": {
+    "export": "2026-09-25T11:51:46Z",
+    "legacy": "2026-09-25T11:51:46Z"
+   },
+   "n_export": 2387,
+   "n_legacy": 2387,
+   "unexplained_primary": 32
+  },
+  "current:bgwikisource": {
+   "counts": {
+    "MISSING_EXPORT|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 18,
+     "no_text_not_deleted": 60
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 18,
+     "no_text_not_deleted": 60
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-25T12:18:36Z",
+    "legacy": "2026-09-25T12:18:36Z"
+   },
+   "n_export": 4049,
+   "n_legacy": 4050,
+   "unexplained_primary": 1
+  },
+  "current:bowiki": {
+   "counts": {
+    "META_DIFF|TIMING": 1,
+    "META_DIFF|UNEXPLAINED": 4337
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 58,
+     "sha1_attr_mismatch": 1
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 58,
+     "sha1_attr_mismatch": 1
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-30T11:09:52Z",
+    "legacy": "2026-09-30T11:09:52Z"
+   },
+   "n_export": 22816,
+   "n_legacy": 22816,
+   "unexplained_primary": 0
+  },
+  "current:cawikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 8,
+    "MISSING_EXPORT|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 2098,
+     "no_text_not_deleted": 26
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 2098,
+     "no_text_not_deleted": 26
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-29T23:34:55Z",
+    "legacy": "2026-09-29T23:34:55Z"
+   },
+   "n_export": 14250,
+   "n_legacy": 14251,
+   "unexplained_primary": 1
+  },
+  "current:cywikisource": {
+   "counts": {
+    "REV_DIFF|TIMING": 4,
+    "TEXT_DIFF|UNEXPLAINED": 192
+   },
+   "est_export_wrong": 192,
+   "est_legacy_wrong": 0,
+   "export_wrong": 192,
+   "export_wrong_by_ns_type": {
+    "104|TEXT_DIFF": 192
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 65559,
+     "no_text_not_deleted": 618
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 65751,
+     "no_text_not_deleted": 426
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 192
+   },
+   "live_checked": 192,
+   "max_ts": {
+    "export": "2026-09-30T16:17:02Z",
+    "legacy": "2026-10-01T05:20:39Z"
+   },
+   "n_export": 85258,
+   "n_legacy": 85258,
+   "unexplained_primary": 192
+  },
+  "current:dawikiquote": {
+   "counts": {
+    "MISSING_EXPORT|UNEXPLAINED": 2
+   },
+   "est_export_wrong": 2,
+   "est_legacy_wrong": 0,
+   "export_wrong": 2,
+   "export_wrong_by_ns_type": {
+    "2|MISSING_EXPORT": 1,
+    "4|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 15
+    },
+    "legacy": {
+     "no_text_not_deleted": 15
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 2
+   },
+   "live_checked": 2,
+   "max_ts": {
+    "export": "2026-09-29T19:55:56Z",
+    "legacy": "2026-09-29T19:55:56Z"
+   },
+   "n_export": 2364,
+   "n_legacy": 2366,
+   "unexplained_primary": 2
+  },
+  "current:elwiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 68,
+    "MISSING_EXPORT|TIMING": 10,
+    "MISSING_EXPORT|UNEXPLAINED": 118,
+    "REV_DIFF|TIMING": 56,
+    "TEXT_DIFF|UNEXPLAINED": 15
+   },
+   "est_export_wrong": 133,
+   "est_legacy_wrong": 0,
+   "export_wrong": 133,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 118,
+    "0|TEXT_DIFF": 3,
+    "11|TEXT_DIFF": 1,
+    "14|TEXT_DIFF": 9,
+    "15|TEXT_DIFF": 1,
+    "3|TEXT_DIFF": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 6,
+     "no_text_not_deleted": 143,
+     "sha1_attr_mismatch": 6
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 6,
+     "no_text_not_deleted": 128,
+     "sha1_attr_mismatch": 6
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 133
+   },
+   "live_checked": 133,
+   "max_ts": {
+    "export": "2026-09-30T21:10:07Z",
+    "legacy": "2026-10-01T11:57:43Z"
+   },
+   "n_export": 1740581,
+   "n_legacy": 1740709,
+   "unexplained_primary": 133
+  },
+  "current:fawikisource": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1165,
+    "MISSING_EXPORT|TIMING": 123,
+    "REV_DIFF|TIMING": 21,
+    "TEXT_DIFF|TIMING": 4,
+    "TEXT_DIFF|UNEXPLAINED": 1420
+   },
+   "est_export_wrong": 1413,
+   "est_legacy_wrong": 0,
+   "export_wrong": 199,
+   "export_wrong_by_ns_type": {
+    "104|TEXT_DIFF": 199
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 39885,
+     "no_text_not_deleted": 1516
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 41309,
+     "no_text_not_deleted": 92
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 199,
+    "METHOD_SUSPECT": 1
+   },
+   "live_checked": 200,
+   "max_ts": {
+    "export": "2026-09-30T20:33:06Z",
+    "legacy": "2026-10-01T14:40:49Z"
+   },
+   "n_export": 86546,
+   "n_legacy": 86669,
+   "unexplained_primary": 1420
+  },
+  "current:fiwiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 565,
+    "MISSING_EXPORT|TIMING": 61,
+    "REV_DIFF|TIMING": 725,
+    "TEXT_DIFF|UNEXPLAINED": 2
+   },
+   "est_export_wrong": 2,
+   "est_legacy_wrong": 0,
+   "export_wrong": 2,
+   "export_wrong_by_ns_type": {
+    "0|TEXT_DIFF": 2
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 83,
+     "sha1_attr_mismatch": 1
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 81,
+     "sha1_attr_mismatch": 1
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 2
+   },
+   "live_checked": 2,
+   "max_ts": {
+    "export": "2026-09-30T23:59:53Z",
+    "legacy": "2026-10-01T14:27:29Z"
+   },
+   "n_export": 823244,
+   "n_legacy": 823305,
+   "unexplained_primary": 2
+  },
+  "current:hrwikisource": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1,
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 1979,
+     "no_text_not_deleted": 45
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 1979,
+     "no_text_not_deleted": 45
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T12:18:36Z",
+    "legacy": "2026-10-01T12:42:38Z"
+   },
+   "n_export": 15779,
+   "n_legacy": 15779,
+   "unexplained_primary": 0
+  },
+  "current:itwikiquote": {
+   "counts": {
+    "META_DIFF|TIMING": 1,
+    "META_DIFF|UNEXPLAINED": 6,
+    "MISSING_EXPORT|TIMING": 12,
+    "REV_DIFF|TIMING": 40,
+    "TEXT_DIFF|UNEXPLAINED": 20
+   },
+   "est_export_wrong": 20,
+   "est_legacy_wrong": 0,
+   "export_wrong": 20,
+   "export_wrong_by_ns_type": {
+    "3|TEXT_DIFF": 19,
+    "5|TEXT_DIFF": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 8,
+     "no_text_not_deleted": 180
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 8,
+     "no_text_not_deleted": 160
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 20
+   },
+   "live_checked": 20,
+   "max_ts": {
+    "export": "2026-09-30T23:48:50Z",
+    "legacy": "2026-10-01T16:38:56Z"
+   },
+   "n_export": 211092,
+   "n_legacy": 211104,
+   "unexplained_primary": 20
+  },
+  "current:jawikibooks": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 84,
+    "REV_DIFF|TIMING": 8,
+    "TEXT_DIFF|UNEXPLAINED": 6
+   },
+   "est_export_wrong": 6,
+   "est_legacy_wrong": 0,
+   "export_wrong": 6,
+   "export_wrong_by_ns_type": {
+    "0|TEXT_DIFF": 5,
+    "14|TEXT_DIFF": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 3,
+     "no_text_not_deleted": 178
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 3,
+     "no_text_not_deleted": 172
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 6
+   },
+   "live_checked": 6,
+   "max_ts": {
+    "export": "2026-09-30T23:26:21Z",
+    "legacy": "2026-10-01T15:55:56Z"
+   },
+   "n_export": 34009,
+   "n_legacy": 34009,
+   "unexplained_primary": 6
+  },
+  "current:lnwiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1,
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 5
+    },
+    "legacy": {
+     "no_text_not_deleted": 5
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T12:48:34Z",
+    "legacy": "2026-10-01T12:42:44Z"
+   },
+   "n_export": 1507,
+   "n_legacy": 1507,
+   "unexplained_primary": 0
+  },
+  "current:ltwikiquote": {
+   "counts": {
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 17
+    },
+    "legacy": {
+     "no_text_not_deleted": 17
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T11:51:46Z",
+    "legacy": "2026-10-01T12:42:45Z"
+   },
+   "n_export": 6404,
+   "n_legacy": 6404,
+   "unexplained_primary": 0
+  },
+  "current:minwikibooks": {
+   "counts": {
+    "MISSING_EXPORT|TIMING": 2
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 4
+    },
+    "legacy": {
+     "no_text_not_deleted": 4
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-30T10:08:34Z",
+    "legacy": "2026-10-01T10:05:47Z"
+   },
+   "n_export": 2607,
+   "n_legacy": 2609,
+   "unexplained_primary": 0
+  },
+  "current:mlwikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1,
+    "MISSING_EXPORT|TIMING": 7,
+    "MISSING_LEGACY|TIMING": 2,
+    "REV_DIFF|TIMING": 24,
+    "TEXT_DIFF|UNEXPLAINED": 143
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 143,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 139,
+     "no_text_not_deleted": 17,
+     "sha1_attr_mismatch": 139
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 282,
+     "no_text_not_deleted": 17,
+     "sha1_attr_mismatch": 282
+    }
+   },
+   "legacy_wrong": 143,
+   "live": {
+    "LEGACY_WRONG": 143
+   },
+   "live_checked": 143,
+   "max_ts": {
+    "export": "2026-09-30T17:02:12Z",
+    "legacy": "2026-10-01T16:31:33Z"
+   },
+   "n_export": 3836,
+   "n_legacy": 3841,
+   "unexplained_primary": 143
+  },
+  "current:mswikibooks": {
+   "counts": {
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 32
+    },
+    "legacy": {
+     "no_text_not_deleted": 32
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-29T09:37:48Z",
+    "legacy": "2026-10-01T12:42:46Z"
+   },
+   "n_export": 3678,
+   "n_legacy": 3678,
+   "unexplained_primary": 0
+  },
+  "current:nahwiki": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 14,
+    "MISSING_EXPORT|UNEXPLAINED": 1,
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 6,
+     "no_text_not_deleted": 57,
+     "sha1_attr_mismatch": 6
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 6,
+     "no_text_not_deleted": 57,
+     "sha1_attr_mismatch": 6
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "UNCONFIRMED": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-30T23:59:11Z",
+    "legacy": "2026-10-01T00:05:56Z"
+   },
+   "n_export": 8474,
+   "n_legacy": 8475,
+   "unexplained_primary": 1
+  },
+  "current:nowikiquote": {
+   "counts": {
+    "MISSING_EXPORT|UNEXPLAINED": 3,
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 3,
+   "est_legacy_wrong": 0,
+   "export_wrong": 3,
+   "export_wrong_by_ns_type": {
+    "2|MISSING_EXPORT": 3
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 18
+    },
+    "legacy": {
+     "no_text_not_deleted": 18
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 3
+   },
+   "live_checked": 3,
+   "max_ts": {
+    "export": "2026-09-28T06:48:15Z",
+    "legacy": "2026-10-01T12:42:49Z"
+   },
+   "n_export": 3114,
+   "n_legacy": 3117,
+   "unexplained_primary": 3
+  },
+  "current:pcdwiki": {
+   "counts": {
+    "REV_DIFF|TIMING": 3
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 38
+    },
+    "legacy": {
+     "no_text_not_deleted": 38
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-30T23:26:05Z",
+    "legacy": "2026-10-01T17:47:41Z"
+   },
+   "n_export": 12230,
+   "n_legacy": 12230,
+   "unexplained_primary": 0
+  },
+  "current:ruewiki": {
+   "counts": {
+    "META_DIFF|TIMING": 4,
+    "META_DIFF|UNEXPLAINED": 37,
+    "MISSING_EXPORT|TIMING": 1,
+    "REV_DIFF|TIMING": 19,
+    "TEXT_DIFF|UNEXPLAINED": 6
+   },
+   "est_export_wrong": 6,
+   "est_legacy_wrong": 0,
+   "export_wrong": 6,
+   "export_wrong_by_ns_type": {
+    "0|TEXT_DIFF": 1,
+    "1|TEXT_DIFF": 1,
+    "2|TEXT_DIFF": 3,
+    "3|TEXT_DIFF": 1
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 65
+    },
+    "legacy": {
+     "no_text_not_deleted": 59
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 6
+   },
+   "live_checked": 6,
+   "max_ts": {
+    "export": "2026-09-30T21:51:51Z",
+    "legacy": "2026-10-01T19:07:03Z"
+   },
+   "n_export": 23634,
+   "n_legacy": 23635,
+   "unexplained_primary": 6
+  },
+  "current:scwiki": {
+   "counts": {
+    "MISSING_EXPORT|TIMING": 4,
+    "MISSING_EXPORT|UNEXPLAINED": 1,
+    "REV_DIFF|TIMING": 7
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "6|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 44
+    },
+    "legacy": {
+     "no_text_not_deleted": 44
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-29T12:41:30Z",
+    "legacy": "2026-10-01T20:16:16Z"
+   },
+   "n_export": 17835,
+   "n_legacy": 17840,
+   "unexplained_primary": 1
+  },
+  "current:shywiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1,
+    "MISSING_EXPORT|UNEXPLAINED": 1,
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 2
+    },
+    "legacy": {
+     "no_text_not_deleted": 2
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-25T12:48:39Z",
+    "legacy": "2026-10-01T12:42:54Z"
+   },
+   "n_export": 4302,
+   "n_legacy": 4303,
+   "unexplained_primary": 1
+  },
+  "current:sourceswiki": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 15,
+    "MISSING_EXPORT|TIMING": 6,
+    "REV_DIFF|TIMING": 4,
+    "REV_DIFF|UNEXPLAINED": 3,
+    "TEXT_DIFF|TIMING": 5,
+    "TEXT_DIFF|UNEXPLAINED": 4961
+   },
+   "est_export_wrong": 4939,
+   "est_legacy_wrong": 0,
+   "export_wrong": 199,
+   "export_wrong_by_ns_type": {
+    "104|TEXT_DIFF": 199
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 143240,
+     "no_text_not_deleted": 5764,
+     "sha1_attr_mismatch": 67
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 148208,
+     "no_text_not_deleted": 799,
+     "sha1_attr_mismatch": 67
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 199,
+    "METHOD_SUSPECT": 1
+   },
+   "live_checked": 200,
+   "max_ts": {
+    "export": "2026-09-30T23:16:02Z",
+    "legacy": "2026-10-01T17:52:34Z"
+   },
+   "n_export": 261062,
+   "n_legacy": 261068,
+   "unexplained_primary": 4964
+  },
+  "current:svwikibooks": {
+   "counts": {
+    "REV_DIFF|TIMING": 1,
+    "REV_DIFF|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "6|REV_DIFF": 1
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 63
+    },
+    "legacy": {
+     "no_text_not_deleted": 63
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-25T11:46:33Z",
+    "legacy": "2026-10-01T12:42:56Z"
+   },
+   "n_export": 6328,
+   "n_legacy": 6328,
+   "unexplained_primary": 1
+  },
+  "current:tnwiktionary": {
+   "counts": {
+    "MISSING_EXPORT|UNEXPLAINED": 28,
+    "REV_DIFF|TIMING": 2
+   },
+   "est_export_wrong": 28,
+   "est_legacy_wrong": 0,
+   "export_wrong": 28,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 4,
+    "10|MISSING_EXPORT": 3,
+    "2|MISSING_EXPORT": 14,
+    "3|MISSING_EXPORT": 7
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 13
+    },
+    "legacy": {
+     "no_text_not_deleted": 13
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 28
+   },
+   "live_checked": 28,
+   "max_ts": {
+    "export": "2026-09-25T12:48:41Z",
+    "legacy": "2026-10-01T12:42:58Z"
+   },
+   "n_export": 1090,
+   "n_legacy": 1118,
+   "unexplained_primary": 28
+  },
+  "current:vecwikisource": {
+   "counts": {
+    "REV_DIFF|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 12973,
+     "no_text_not_deleted": 3
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 12973,
+     "no_text_not_deleted": 3
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T12:18:37Z",
+    "legacy": "2026-10-01T12:43:00Z"
+   },
+   "n_export": 19381,
+   "n_legacy": 19381,
+   "unexplained_primary": 0
+  },
+  "history:acewiki": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 388
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 219,
+     "no_text_not_deleted": 311
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 219,
+     "no_text_not_deleted": 311
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-28T10:46:41Z",
+    "legacy": "2026-09-28T10:46:41Z"
+   },
+   "n_export": 145287,
+   "n_legacy": 145287,
+   "unexplained_primary": 0
+  },
+  "history:afwikibooks": {
+   "counts": {
+    "META_DIFF|TIMING": 1,
+    "META_DIFF|UNEXPLAINED": 4,
+    "MISSING_EXPORT|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "3|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 17
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 1,
+     "no_text_not_deleted": 17
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-25T11:46:30Z",
+    "legacy": "2026-09-25T11:46:30Z"
+   },
+   "n_export": 3400,
+   "n_legacy": 3401,
+   "unexplained_primary": 1
+  },
+  "history:bclwikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 1,
+    "TEXT_DIFF|UNEXPLAINED": 39
+   },
+   "est_export_wrong": 39,
+   "est_legacy_wrong": 0,
+   "export_wrong": 39,
+   "export_wrong_by_ns_type": {
+    "4|TEXT_DIFF": 39
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 51
+    },
+    "legacy": {
+     "no_text_not_deleted": 12
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 39
+   },
+   "live_checked": 39,
+   "max_ts": {
+    "export": "2026-09-25T11:51:46Z",
+    "legacy": "2026-09-25T11:51:46Z"
+   },
+   "n_export": 20280,
+   "n_legacy": 20280,
+   "unexplained_primary": 39
+  },
+  "history:bgwikisource": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 13,
+    "MISSING_EXPORT|UNEXPLAINED": 14
+   },
+   "est_export_wrong": 14,
+   "est_legacy_wrong": 0,
+   "export_wrong": 14,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 14
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 28,
+     "no_text_not_deleted": 127
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 28,
+     "no_text_not_deleted": 127
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 14
+   },
+   "live_checked": 14,
+   "max_ts": {
+    "export": "2026-09-25T12:18:36Z",
+    "legacy": "2026-09-25T12:18:36Z"
+   },
+   "n_export": 15032,
+   "n_legacy": 15046,
+   "unexplained_primary": 14
+  },
+  "history:bowiki": {
+   "counts": {
+    "META_DIFF|TIMING": 12,
+    "META_DIFF|UNEXPLAINED": 28459
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 20,
+     "no_text_not_deleted": 424,
+     "sha1_attr_mismatch": 21
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 20,
+     "no_text_not_deleted": 424,
+     "sha1_attr_mismatch": 21
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-30T11:09:52Z",
+    "legacy": "2026-09-30T11:09:52Z"
+   },
+   "n_export": 149172,
+   "n_legacy": 149172,
+   "unexplained_primary": 0
+  },
+  "history:cawikiquote": {
+   "counts": {
+    "META_DIFF|TIMING": 1,
+    "META_DIFF|UNEXPLAINED": 1800,
+    "MISSING_EXPORT|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 3532,
+     "no_text_not_deleted": 150
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 3532,
+     "no_text_not_deleted": 150
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-29T23:34:55Z",
+    "legacy": "2026-09-29T23:34:55Z"
+   },
+   "n_export": 132495,
+   "n_legacy": 132496,
+   "unexplained_primary": 1
+  },
+  "history:cywikisource": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 17,
+    "MISSING_EXPORT|TIMING": 4,
+    "TEXT_DIFF|UNEXPLAINED": 414
+   },
+   "est_export_wrong": 414,
+   "est_legacy_wrong": 0,
+   "export_wrong": 200,
+   "export_wrong_by_ns_type": {
+    "104|TEXT_DIFF": 200
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 128239,
+     "no_text_not_deleted": 1296
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 128657,
+     "no_text_not_deleted": 882
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 200
+   },
+   "live_checked": 200,
+   "max_ts": {
+    "export": "2026-09-30T16:17:02Z",
+    "legacy": "2026-10-01T05:20:39Z"
+   },
+   "n_export": 166035,
+   "n_legacy": 166039,
+   "unexplained_primary": 414
+  },
+  "history:dawikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 35,
+    "MISSING_EXPORT|UNEXPLAINED": 4
+   },
+   "est_export_wrong": 4,
+   "est_legacy_wrong": 0,
+   "export_wrong": 4,
+   "export_wrong_by_ns_type": {
+    "2|MISSING_EXPORT": 1,
+    "4|MISSING_EXPORT": 3
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 49
+    },
+    "legacy": {
+     "no_text_not_deleted": 49
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 4
+   },
+   "live_checked": 4,
+   "max_ts": {
+    "export": "2026-09-29T19:55:56Z",
+    "legacy": "2026-09-29T19:55:56Z"
+   },
+   "n_export": 14523,
+   "n_legacy": 14527,
+   "unexplained_primary": 4
+  },
+  "history:fawikisource": {
+   "counts": {
+    "META_DIFF|TIMING": 303,
+    "META_DIFF|UNEXPLAINED": 1667,
+    "MISSING_EXPORT|TIMING": 165,
+    "MISSING_EXPORT|UNEXPLAINED": 71,
+    "MISSING_LEGACY|UNEXPLAINED": 71,
+    "TEXT_DIFF|TIMING": 14,
+    "TEXT_DIFF|UNEXPLAINED": 1606
+   },
+   "est_export_wrong": 1626,
+   "est_legacy_wrong": 0,
+   "export_wrong": 186,
+   "export_wrong_by_ns_type": {
+    "104|TEXT_DIFF": 177,
+    "106|TEXT_DIFF": 1,
+    "10|MISSING_EXPORT": 8
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 126321,
+     "no_text_not_deleted": 1826
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 127949,
+     "no_text_not_deleted": 206
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 186,
+    "UNCONFIRMED": 14
+   },
+   "live_checked": 200,
+   "max_ts": {
+    "export": "2026-09-30T20:33:06Z",
+    "legacy": "2026-10-01T14:40:49Z"
+   },
+   "n_export": 274285,
+   "n_legacy": 274450,
+   "unexplained_primary": 1748
+  },
+  "history:hrwikisource": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 145,
+    "MISSING_EXPORT|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 3351,
+     "no_text_not_deleted": 132
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 3351,
+     "no_text_not_deleted": 132
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T12:18:36Z",
+    "legacy": "2026-10-01T12:42:38Z"
+   },
+   "n_export": 55043,
+   "n_legacy": 55044,
+   "unexplained_primary": 0
+  },
+  "history:lnwiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 9,
+    "MISSING_EXPORT|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 10
+    },
+    "legacy": {
+     "no_text_not_deleted": 10
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T12:48:34Z",
+    "legacy": "2026-10-01T12:42:44Z"
+   },
+   "n_export": 5922,
+   "n_legacy": 5923,
+   "unexplained_primary": 0
+  },
+  "history:ltwikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 6,
+    "MISSING_EXPORT|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 56
+    },
+    "legacy": {
+     "no_text_not_deleted": 56
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T11:51:46Z",
+    "legacy": "2026-10-01T12:42:45Z"
+   },
+   "n_export": 77659,
+   "n_legacy": 77660,
+   "unexplained_primary": 0
+  },
+  "history:minwikibooks": {
+   "counts": {
+    "META_DIFF|TIMING": 4,
+    "META_DIFF|UNEXPLAINED": 5,
+    "MISSING_EXPORT|TIMING": 2
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 17
+    },
+    "legacy": {
+     "no_text_not_deleted": 17
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-30T10:08:34Z",
+    "legacy": "2026-10-01T10:05:47Z"
+   },
+   "n_export": 10528,
+   "n_legacy": 10530,
+   "unexplained_primary": 0
+  },
+  "history:mlwikiquote": {
+   "counts": {
+    "META_DIFF|TIMING": 75,
+    "META_DIFF|UNEXPLAINED": 988,
+    "MISSING_EXPORT|TIMING": 65,
+    "MISSING_EXPORT|UNEXPLAINED": 414,
+    "MISSING_LEGACY|TIMING": 2
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 523,
+     "no_text_not_deleted": 45,
+     "sha1_attr_mismatch": 523
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 523,
+     "no_text_not_deleted": 45,
+     "sha1_attr_mismatch": 523
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "METHOD_SUSPECT": 200
+   },
+   "live_checked": 200,
+   "max_ts": {
+    "export": "2026-09-30T17:02:12Z",
+    "legacy": "2026-10-01T16:31:33Z"
+   },
+   "n_export": 19777,
+   "n_legacy": 20254,
+   "unexplained_primary": 414
+  },
+  "history:mswikibooks": {
+   "counts": {
+    "META_DIFF|TIMING": 2,
+    "META_DIFF|UNEXPLAINED": 3,
+    "MISSING_EXPORT|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 136
+    },
+    "legacy": {
+     "no_text_not_deleted": 136
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-29T09:37:48Z",
+    "legacy": "2026-10-01T12:42:46Z"
+   },
+   "n_export": 11090,
+   "n_legacy": 11091,
+   "unexplained_primary": 0
+  },
+  "history:nowikiquote": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 6,
+    "MISSING_EXPORT|TIMING": 1,
+    "MISSING_EXPORT|UNEXPLAINED": 4
+   },
+   "est_export_wrong": 4,
+   "est_legacy_wrong": 0,
+   "export_wrong": 4,
+   "export_wrong_by_ns_type": {
+    "2|MISSING_EXPORT": 4
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 2,
+     "no_text_not_deleted": 142
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 2,
+     "no_text_not_deleted": 142
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 4
+   },
+   "live_checked": 4,
+   "max_ts": {
+    "export": "2026-09-28T06:48:15Z",
+    "legacy": "2026-10-01T12:42:49Z"
+   },
+   "n_export": 22805,
+   "n_legacy": 22810,
+   "unexplained_primary": 4
+  },
+  "history:pcdwiki": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 40,
+    "MISSING_EXPORT|TIMING": 3
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 290
+    },
+    "legacy": {
+     "no_text_not_deleted": 290
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-30T23:26:05Z",
+    "legacy": "2026-10-01T17:47:41Z"
+   },
+   "n_export": 75922,
+   "n_legacy": 75925,
+   "unexplained_primary": 0
+  },
+  "history:ruewiki": {
+   "counts": {
+    "META_DIFF|TIMING": 89,
+    "META_DIFF|UNEXPLAINED": 591,
+    "MISSING_EXPORT|TIMING": 21,
+    "TEXT_DIFF|TIMING": 2,
+    "TEXT_DIFF|UNEXPLAINED": 13
+   },
+   "est_export_wrong": 13,
+   "est_legacy_wrong": 0,
+   "export_wrong": 13,
+   "export_wrong_by_ns_type": {
+    "0|TEXT_DIFF": 5,
+    "1|TEXT_DIFF": 1,
+    "2|TEXT_DIFF": 5,
+    "3|TEXT_DIFF": 2
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 2,
+     "no_text_not_deleted": 379
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 2,
+     "no_text_not_deleted": 364
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 13
+   },
+   "live_checked": 13,
+   "max_ts": {
+    "export": "2026-09-30T21:51:51Z",
+    "legacy": "2026-10-01T19:07:03Z"
+   },
+   "n_export": 165654,
+   "n_legacy": 165675,
+   "unexplained_primary": 13
+  },
+  "history:scwiki": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 164,
+    "MISSING_EXPORT|TIMING": 12,
+    "MISSING_EXPORT|UNEXPLAINED": 3,
+    "TEXT_DIFF|UNEXPLAINED": 3
+   },
+   "est_export_wrong": 3,
+   "est_legacy_wrong": 0,
+   "export_wrong": 3,
+   "export_wrong_by_ns_type": {
+    "6|MISSING_EXPORT": 3
+   },
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 21,
+     "no_text_not_deleted": 451,
+     "sha1_attr_mismatch": 20
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 18,
+     "no_text_not_deleted": 454,
+     "sha1_attr_mismatch": 17
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "BOTH_WRONG": 3,
+    "EXPORT_WRONG": 3
+   },
+   "live_checked": 6,
+   "max_ts": {
+    "export": "2026-09-29T12:41:30Z",
+    "legacy": "2026-10-01T20:16:16Z"
+   },
+   "n_export": 177134,
+   "n_legacy": 177149,
+   "unexplained_primary": 6
+  },
+  "history:shywiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 268,
+    "MISSING_EXPORT|TIMING": 1,
+    "MISSING_EXPORT|UNEXPLAINED": 1
+   },
+   "est_export_wrong": 1,
+   "est_legacy_wrong": 0,
+   "export_wrong": 1,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 1
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 5
+    },
+    "legacy": {
+     "no_text_not_deleted": 5
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 1
+   },
+   "live_checked": 1,
+   "max_ts": {
+    "export": "2026-09-25T12:48:39Z",
+    "legacy": "2026-10-01T12:42:54Z"
+   },
+   "n_export": 18903,
+   "n_legacy": 18905,
+   "unexplained_primary": 1
+  },
+  "history:svwikibooks": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 6,
+    "MISSING_EXPORT|TIMING": 1,
+    "TEXT_DIFF|UNEXPLAINED": 2
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 4,
+     "no_text_not_deleted": 113,
+     "sha1_attr_mismatch": 2
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 2,
+     "no_text_not_deleted": 115
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "BOTH_WRONG": 2
+   },
+   "live_checked": 2,
+   "max_ts": {
+    "export": "2026-09-25T11:46:33Z",
+    "legacy": "2026-10-01T12:42:56Z"
+   },
+   "n_export": 47419,
+   "n_legacy": 47420,
+   "unexplained_primary": 2
+  },
+  "history:tnwiktionary": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 4,
+    "MISSING_EXPORT|TIMING": 2,
+    "MISSING_EXPORT|UNEXPLAINED": 66
+   },
+   "est_export_wrong": 66,
+   "est_legacy_wrong": 0,
+   "export_wrong": 66,
+   "export_wrong_by_ns_type": {
+    "0|MISSING_EXPORT": 27,
+    "10|MISSING_EXPORT": 11,
+    "2|MISSING_EXPORT": 16,
+    "3|MISSING_EXPORT": 12
+   },
+   "integrity": {
+    "export": {
+     "no_text_not_deleted": 15
+    },
+    "legacy": {
+     "no_text_not_deleted": 15
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {
+    "EXPORT_WRONG": 66
+   },
+   "live_checked": 66,
+   "max_ts": {
+    "export": "2026-09-25T12:48:41Z",
+    "legacy": "2026-10-01T12:42:58Z"
+   },
+   "n_export": 3454,
+   "n_legacy": 3522,
+   "unexplained_primary": 66
+  },
+  "history:vecwikisource": {
+   "counts": {
+    "META_DIFF|UNEXPLAINED": 85,
+    "MISSING_EXPORT|TIMING": 1
+   },
+   "est_export_wrong": 0,
+   "est_legacy_wrong": 0,
+   "export_wrong": 0,
+   "export_wrong_by_ns_type": {},
+   "integrity": {
+    "export": {
+     "bytes_attr_mismatch": 22548,
+     "no_text_not_deleted": 26
+    },
+    "legacy": {
+     "bytes_attr_mismatch": 22548,
+     "no_text_not_deleted": 26
+    }
+   },
+   "legacy_wrong": 0,
+   "live": {},
+   "live_checked": 0,
+   "max_ts": {
+    "export": "2026-09-25T12:18:37Z",
+    "legacy": "2026-10-01T12:43:00Z"
+   },
+   "n_export": 80474,
+   "n_legacy": 80475,
+   "unexplained_primary": 0
+  }
+ },
+ "sample_wikis_with_confirmed_export_defect": [
+  "afwikibooks",
+  "dawikiquote",
+  "shywiktionary",
+  "tnwiktionary",
+  "bclwikiquote",
+  "nowikiquote",
+  "svwikibooks",
+  "bgwikisource",
+  "cawikiquote",
+  "ruewiki",
+  "scwiki",
+  "cywikisource",
+  "elwiktionary",
+  "fawikisource",
+  "fiwiktionary",
+  "itwikiquote",
+  "jawikibooks",
+  "sourceswiki"
+ ],
+ "unusable": [
+  "current:crwiki:no-compare",
+  "current:shnwikinews:no-compare",
+  "current:hewikinews:no-compare",
+  "current:enwiktionary:no-compare",
+  "current:mgwiktionary:no-compare",
+  "history:crwiki:no-compare",
+  "history:shnwikinews:no-compare",
+  "history:hewikinews:no-compare"
+ ],
+ "verdict": "CONTINUE"
+}

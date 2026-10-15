@@ -1,0 +1,1207 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1388459,
+    "sha1_attr": "j9acl14x029ipptjo2i4axmd2movjwm",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-10T16:48:12Z"
+   },
+   "key": 75094,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1388459,
+    "sha1_attr": "j9acl14x029ipptjo2i4axmd2movjwm",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "a4dd40ca8a0dc6d70474e5a74b6a4a799d690686",
+    "title": null,
+    "ts": "2025-09-10T16:48:12Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 492906,
+     "revid": 1388459,
+     "sha1": "a4dd40ca8a0dc6d70474e5a74b6a4a799d690686",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "a4dd40ca8a0dc6d70474e5a74b6a4a799d690686"
+      }
+     },
+     "timestamp": "2025-09-10T16:48:12Z"
+    },
+    "rev": {
+     "page": 75094,
+     "parentid": 492906,
+     "revid": 1388459,
+     "sha1": "a4dd40ca8a0dc6d70474e5a74b6a4a799d690686",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "a4dd40ca8a0dc6d70474e5a74b6a4a799d690686"
+      }
+     },
+     "timestamp": "2025-09-10T16:48:12Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390322,
+    "sha1_attr": "lspgp7ix69lbtruhkyk641gl6jonweg",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-28T00:09:33Z"
+   },
+   "key": 116046,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390322,
+    "sha1_attr": "lspgp7ix69lbtruhkyk641gl6jonweg",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "ba9a9e1c88c247206a6c8208dc1b2b58189be7c8",
+    "title": null,
+    "ts": "2025-09-28T00:09:33Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 803305,
+     "revid": 1390322,
+     "sha1": "ba9a9e1c88c247206a6c8208dc1b2b58189be7c8",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "ba9a9e1c88c247206a6c8208dc1b2b58189be7c8"
+      }
+     },
+     "timestamp": "2025-09-28T00:09:33Z"
+    },
+    "rev": {
+     "page": 116046,
+     "parentid": 803305,
+     "revid": 1390322,
+     "sha1": "ba9a9e1c88c247206a6c8208dc1b2b58189be7c8",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "ba9a9e1c88c247206a6c8208dc1b2b58189be7c8"
+      }
+     },
+     "timestamp": "2025-09-28T00:09:33Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1386931,
+    "sha1_attr": "ovoe4pphkuscjlp0rfrrt7nug3bq3wx",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-08-25T10:12:14Z"
+   },
+   "key": 122558,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1386931,
+    "sha1_attr": "ovoe4pphkuscjlp0rfrrt7nug3bq3wx",
+    "tdel": null,
+    "text_len": 127,
+    "text_sha1": "d4fe26c350f8da2292ebd61a2b04c499675bed51",
+    "title": null,
+    "ts": "2025-08-25T10:12:14Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 787044,
+     "revid": 1386931,
+     "sha1": "d4fe26c350f8da2292ebd61a2b04c499675bed51",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "d4fe26c350f8da2292ebd61a2b04c499675bed51"
+      }
+     },
+     "timestamp": "2025-08-25T10:12:14Z"
+    },
+    "rev": {
+     "page": 122558,
+     "parentid": 787044,
+     "revid": 1386931,
+     "sha1": "d4fe26c350f8da2292ebd61a2b04c499675bed51",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "d4fe26c350f8da2292ebd61a2b04c499675bed51"
+      }
+     },
+     "timestamp": "2025-08-25T10:12:14Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389411,
+    "sha1_attr": "cfvrhp1jkd959v9urrl1o8zototanxm",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-18T18:03:30Z"
+   },
+   "key": 122946,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389411,
+    "sha1_attr": "cfvrhp1jkd959v9urrl1o8zototanxm",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "6a81b9e8e31eab56348eb9cd241031cfd8ac04aa",
+    "title": null,
+    "ts": "2025-09-18T18:03:30Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 789120,
+     "revid": 1389411,
+     "sha1": "6a81b9e8e31eab56348eb9cd241031cfd8ac04aa",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "6a81b9e8e31eab56348eb9cd241031cfd8ac04aa"
+      }
+     },
+     "timestamp": "2025-09-18T18:03:30Z"
+    },
+    "rev": {
+     "page": 122946,
+     "parentid": 789120,
+     "revid": 1389411,
+     "sha1": "6a81b9e8e31eab56348eb9cd241031cfd8ac04aa",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "6a81b9e8e31eab56348eb9cd241031cfd8ac04aa"
+      }
+     },
+     "timestamp": "2025-09-18T18:03:30Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1391226,
+    "sha1_attr": "puo6zrtfl9m4h2ojlgzn2uca0hf1ccs",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-10-07T14:33:28Z"
+   },
+   "key": 127522,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1391226,
+    "sha1_attr": "puo6zrtfl9m4h2ojlgzn2uca0hf1ccs",
+    "tdel": null,
+    "text_len": 107,
+    "text_sha1": "dd5082bc8d3dd735cc25110967e990b2f998c7cc",
+    "title": null,
+    "ts": "2025-10-07T14:33:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 815312,
+     "revid": 1391226,
+     "sha1": "dd5082bc8d3dd735cc25110967e990b2f998c7cc",
+     "size": 107,
+     "slots": {
+      "main": {
+       "sha1": "dd5082bc8d3dd735cc25110967e990b2f998c7cc"
+      }
+     },
+     "timestamp": "2025-10-07T14:33:28Z"
+    },
+    "rev": {
+     "page": 127522,
+     "parentid": 815312,
+     "revid": 1391226,
+     "sha1": "dd5082bc8d3dd735cc25110967e990b2f998c7cc",
+     "size": 107,
+     "slots": {
+      "main": {
+       "sha1": "dd5082bc8d3dd735cc25110967e990b2f998c7cc"
+      }
+     },
+     "timestamp": "2025-10-07T14:33:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1387355,
+    "sha1_attr": "jncmur29mhh3e0m706l3gfncps4lofi",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-08-31T16:58:46Z"
+   },
+   "key": 142920,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1387355,
+    "sha1_attr": "jncmur29mhh3e0m706l3gfncps4lofi",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "a8356536fae1af9164763e08d99f4969182672ee",
+    "title": null,
+    "ts": "2025-08-31T16:58:46Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 909748,
+     "revid": 1387355,
+     "sha1": "a8356536fae1af9164763e08d99f4969182672ee",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "a8356536fae1af9164763e08d99f4969182672ee"
+      }
+     },
+     "timestamp": "2025-08-31T16:58:46Z"
+    },
+    "rev": {
+     "page": 142920,
+     "parentid": 909748,
+     "revid": 1387355,
+     "sha1": "a8356536fae1af9164763e08d99f4969182672ee",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "a8356536fae1af9164763e08d99f4969182672ee"
+      }
+     },
+     "timestamp": "2025-08-31T16:58:46Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390951,
+    "sha1_attr": "712yd9fokpo1nmy547gkq5xbdulot7z",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-10-04T10:50:06Z"
+   },
+   "key": 145036,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390951,
+    "sha1_attr": "712yd9fokpo1nmy547gkq5xbdulot7z",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "3c2edfc168b63b0152d5be23af5518012640a6ef",
+    "title": null,
+    "ts": "2025-10-04T10:50:06Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1202132,
+     "revid": 1390951,
+     "sha1": "3c2edfc168b63b0152d5be23af5518012640a6ef",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "3c2edfc168b63b0152d5be23af5518012640a6ef"
+      }
+     },
+     "timestamp": "2025-10-04T10:50:06Z"
+    },
+    "rev": {
+     "page": 145036,
+     "parentid": 1202132,
+     "revid": 1390951,
+     "sha1": "3c2edfc168b63b0152d5be23af5518012640a6ef",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "3c2edfc168b63b0152d5be23af5518012640a6ef"
+      }
+     },
+     "timestamp": "2025-10-04T10:50:06Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390170,
+    "sha1_attr": "n89qaiclm7pw7w072nz8fup9zp5zry0",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-25T21:39:01Z"
+   },
+   "key": 161702,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390170,
+    "sha1_attr": "n89qaiclm7pw7w072nz8fup9zp5zry0",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "c6dd9d730932a40a49e67c7937302809d6241138",
+    "title": null,
+    "ts": "2025-09-25T21:39:01Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1009651,
+     "revid": 1390170,
+     "sha1": "c6dd9d730932a40a49e67c7937302809d6241138",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "c6dd9d730932a40a49e67c7937302809d6241138"
+      }
+     },
+     "timestamp": "2025-09-25T21:39:01Z"
+    },
+    "rev": {
+     "page": 161702,
+     "parentid": 1009651,
+     "revid": 1390170,
+     "sha1": "c6dd9d730932a40a49e67c7937302809d6241138",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "c6dd9d730932a40a49e67c7937302809d6241138"
+      }
+     },
+     "timestamp": "2025-09-25T21:39:01Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390742,
+    "sha1_attr": "c6ot7vaeidd2n8pfp18oi5k93gktusg",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-10-01T20:55:10Z"
+   },
+   "key": 168415,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390742,
+    "sha1_attr": "c6ot7vaeidd2n8pfp18oi5k93gktusg",
+    "tdel": null,
+    "text_len": 127,
+    "text_sha1": "685213c7839a38ba37e9100b2c936f1fb6b58520",
+    "title": null,
+    "ts": "2025-10-01T20:55:10Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1052471,
+     "revid": 1390742,
+     "sha1": "685213c7839a38ba37e9100b2c936f1fb6b58520",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "685213c7839a38ba37e9100b2c936f1fb6b58520"
+      }
+     },
+     "timestamp": "2025-10-01T20:55:10Z"
+    },
+    "rev": {
+     "page": 168415,
+     "parentid": 1052471,
+     "revid": 1390742,
+     "sha1": "685213c7839a38ba37e9100b2c936f1fb6b58520",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "685213c7839a38ba37e9100b2c936f1fb6b58520"
+      }
+     },
+     "timestamp": "2025-10-01T20:55:10Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1386777,
+    "sha1_attr": "t9mbe3rlee60ziuc15dsesul0xfo8ww",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-08-23T10:39:45Z"
+   },
+   "key": 172831,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1386777,
+    "sha1_attr": "t9mbe3rlee60ziuc15dsesul0xfo8ww",
+    "tdel": null,
+    "text_len": 127,
+    "text_sha1": "fa8d345f1a26f30b0fdc1a2b6ea13f7ee92a1620",
+    "title": null,
+    "ts": "2025-08-23T10:39:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1085354,
+     "revid": 1386777,
+     "sha1": "fa8d345f1a26f30b0fdc1a2b6ea13f7ee92a1620",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "fa8d345f1a26f30b0fdc1a2b6ea13f7ee92a1620"
+      }
+     },
+     "timestamp": "2025-08-23T10:39:45Z"
+    },
+    "rev": {
+     "page": 172831,
+     "parentid": 1085354,
+     "revid": 1386777,
+     "sha1": "fa8d345f1a26f30b0fdc1a2b6ea13f7ee92a1620",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "fa8d345f1a26f30b0fdc1a2b6ea13f7ee92a1620"
+      }
+     },
+     "timestamp": "2025-08-23T10:39:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1392810,
+    "sha1_attr": "6td7lb85hm1uyzs3g6vm7c3d4fkqgkr",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-10-25T05:45:49Z"
+   },
+   "key": 174690,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1392810,
+    "sha1_attr": "6td7lb85hm1uyzs3g6vm7c3d4fkqgkr",
+    "tdel": null,
+    "text_len": 127,
+    "text_sha1": "3a5933a1bb07ce854c3235d1556576f2a3cb866b",
+    "title": null,
+    "ts": "2025-10-25T05:45:49Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1100949,
+     "revid": 1392810,
+     "sha1": "3a5933a1bb07ce854c3235d1556576f2a3cb866b",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "3a5933a1bb07ce854c3235d1556576f2a3cb866b"
+      }
+     },
+     "timestamp": "2025-10-25T05:45:49Z"
+    },
+    "rev": {
+     "page": 174690,
+     "parentid": 1100949,
+     "revid": 1392810,
+     "sha1": "3a5933a1bb07ce854c3235d1556576f2a3cb866b",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "3a5933a1bb07ce854c3235d1556576f2a3cb866b"
+      }
+     },
+     "timestamp": "2025-10-25T05:45:49Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1391595,
+    "sha1_attr": "q79hw5w1ufh43d9qlxgtkdjhj09o1qf",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-10-12T12:20:04Z"
+   },
+   "key": 178942,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1391595,
+    "sha1_attr": "q79hw5w1ufh43d9qlxgtkdjhj09o1qf",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "e04f0edf7d233be535dbe63ef7052ca47a0f37c7",
+    "title": null,
+    "ts": "2025-10-12T12:20:04Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1215999,
+     "revid": 1391595,
+     "sha1": "e04f0edf7d233be535dbe63ef7052ca47a0f37c7",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "e04f0edf7d233be535dbe63ef7052ca47a0f37c7"
+      }
+     },
+     "timestamp": "2025-10-12T12:20:04Z"
+    },
+    "rev": {
+     "page": 178942,
+     "parentid": 1215999,
+     "revid": 1391595,
+     "sha1": "e04f0edf7d233be535dbe63ef7052ca47a0f37c7",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "e04f0edf7d233be535dbe63ef7052ca47a0f37c7"
+      }
+     },
+     "timestamp": "2025-10-12T12:20:04Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389537,
+    "sha1_attr": "f99jybenopzr7gstkdwccl4w6gob9a7",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-20T08:10:44Z"
+   },
+   "key": 197406,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389537,
+    "sha1_attr": "f99jybenopzr7gstkdwccl4w6gob9a7",
+    "tdel": null,
+    "text_len": 127,
+    "text_sha1": "829d9f44a9d9a25f17f8385803e355251713bbbf",
+    "title": null,
+    "ts": "2025-09-20T08:10:44Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1233062,
+     "revid": 1389537,
+     "sha1": "829d9f44a9d9a25f17f8385803e355251713bbbf",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "829d9f44a9d9a25f17f8385803e355251713bbbf"
+      }
+     },
+     "timestamp": "2025-09-20T08:10:44Z"
+    },
+    "rev": {
+     "page": 197406,
+     "parentid": 1233062,
+     "revid": 1389537,
+     "sha1": "829d9f44a9d9a25f17f8385803e355251713bbbf",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "829d9f44a9d9a25f17f8385803e355251713bbbf"
+      }
+     },
+     "timestamp": "2025-09-20T08:10:44Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389423,
+    "sha1_attr": "c1zdsk2abp7qijdikf5q340ivqkmc26",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-18T22:05:39Z"
+   },
+   "key": 197975,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389423,
+    "sha1_attr": "c1zdsk2abp7qijdikf5q340ivqkmc26",
+    "tdel": null,
+    "text_len": 125,
+    "text_sha1": "673391adc86ea087e8b2b531d6727c9124c8928e",
+    "title": null,
+    "ts": "2025-09-18T22:05:39Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1235891,
+     "revid": 1389423,
+     "sha1": "673391adc86ea087e8b2b531d6727c9124c8928e",
+     "size": 125,
+     "slots": {
+      "main": {
+       "sha1": "673391adc86ea087e8b2b531d6727c9124c8928e"
+      }
+     },
+     "timestamp": "2025-09-18T22:05:39Z"
+    },
+    "rev": {
+     "page": 197975,
+     "parentid": 1235891,
+     "revid": 1389423,
+     "sha1": "673391adc86ea087e8b2b531d6727c9124c8928e",
+     "size": 125,
+     "slots": {
+      "main": {
+       "sha1": "673391adc86ea087e8b2b531d6727c9124c8928e"
+      }
+     },
+     "timestamp": "2025-09-18T22:05:39Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389348,
+    "sha1_attr": "264zzcdqjhd22do1gcpxzm0flbgxp55",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-18T10:21:42Z"
+   },
+   "key": 206121,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1389348,
+    "sha1_attr": "264zzcdqjhd22do1gcpxzm0flbgxp55",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "1294dbf6c391aaa7391bb798d2da212672912989",
+    "title": null,
+    "ts": "2025-09-18T10:21:42Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1290059,
+     "revid": 1389348,
+     "sha1": "1294dbf6c391aaa7391bb798d2da212672912989",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "1294dbf6c391aaa7391bb798d2da212672912989"
+      }
+     },
+     "timestamp": "2025-09-18T10:21:42Z"
+    },
+    "rev": {
+     "page": 206121,
+     "parentid": 1290059,
+     "revid": 1389348,
+     "sha1": "1294dbf6c391aaa7391bb798d2da212672912989",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "1294dbf6c391aaa7391bb798d2da212672912989"
+      }
+     },
+     "timestamp": "2025-09-18T10:21:42Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390042,
+    "sha1_attr": "olpr0l6vh9xzpy8y7xm4t6b0spjfwh9",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-25T02:09:53Z"
+   },
+   "key": 206415,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1390042,
+    "sha1_attr": "olpr0l6vh9xzpy8y7xm4t6b0spjfwh9",
+    "tdel": null,
+    "text_len": 127,
+    "text_sha1": "d29fad87445cac49b00d654821661aa8e565092d",
+    "title": null,
+    "ts": "2025-09-25T02:09:53Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1292639,
+     "revid": 1390042,
+     "sha1": "d29fad87445cac49b00d654821661aa8e565092d",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "d29fad87445cac49b00d654821661aa8e565092d"
+      }
+     },
+     "timestamp": "2025-09-25T02:09:53Z"
+    },
+    "rev": {
+     "page": 206415,
+     "parentid": 1292639,
+     "revid": 1390042,
+     "sha1": "d29fad87445cac49b00d654821661aa8e565092d",
+     "size": 127,
+     "slots": {
+      "main": {
+       "sha1": "d29fad87445cac49b00d654821661aa8e565092d"
+      }
+     },
+     "timestamp": "2025-09-25T02:09:53Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1385593,
+    "sha1_attr": "8sjs9qa0vx19mpyae3fvdkht5ceapty",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-08-07T15:47:46Z"
+   },
+   "key": 208638,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1385593,
+    "sha1_attr": "8sjs9qa0vx19mpyae3fvdkht5ceapty",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "4b4695d0e2739c0af48fdc1b31239d1c2947af46",
+    "title": null,
+    "ts": "2025-08-07T15:47:46Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1307958,
+     "revid": 1385593,
+     "sha1": "4b4695d0e2739c0af48fdc1b31239d1c2947af46",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "4b4695d0e2739c0af48fdc1b31239d1c2947af46"
+      }
+     },
+     "timestamp": "2025-08-07T15:47:46Z"
+    },
+    "rev": {
+     "page": 208638,
+     "parentid": 1307958,
+     "revid": 1385593,
+     "sha1": "4b4695d0e2739c0af48fdc1b31239d1c2947af46",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "4b4695d0e2739c0af48fdc1b31239d1c2947af46"
+      }
+     },
+     "timestamp": "2025-08-07T15:47:46Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1391332,
+    "sha1_attr": "1jmn2u2brgnln4hsd8fu2d5hu306jkb",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-10-08T21:08:28Z"
+   },
+   "key": 215336,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1391332,
+    "sha1_attr": "1jmn2u2brgnln4hsd8fu2d5hu306jkb",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "0d3a855c7eab7d701785db358b068fb56fb3b48b",
+    "title": null,
+    "ts": "2025-10-08T21:08:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1351709,
+     "revid": 1391332,
+     "sha1": "0d3a855c7eab7d701785db358b068fb56fb3b48b",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "0d3a855c7eab7d701785db358b068fb56fb3b48b"
+      }
+     },
+     "timestamp": "2025-10-08T21:08:28Z"
+    },
+    "rev": {
+     "page": 215336,
+     "parentid": 1351709,
+     "revid": 1391332,
+     "sha1": "0d3a855c7eab7d701785db358b068fb56fb3b48b",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "0d3a855c7eab7d701785db358b068fb56fb3b48b"
+      }
+     },
+     "timestamp": "2025-10-08T21:08:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1387363,
+    "sha1_attr": "gon2fcjox5s4pq6u0lu8yq164m5rz3p",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-08-31T19:59:37Z"
+   },
+   "key": 218109,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 1387363,
+    "sha1_attr": "gon2fcjox5s4pq6u0lu8yq164m5rz3p",
+    "tdel": null,
+    "text_len": 126,
+    "text_sha1": "8ed53315b40a2b4edbaf2e2ff4c5888ac518e775",
+    "title": null,
+    "ts": "2025-08-31T19:59:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1370150,
+     "revid": 1387363,
+     "sha1": "8ed53315b40a2b4edbaf2e2ff4c5888ac518e775",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "8ed53315b40a2b4edbaf2e2ff4c5888ac518e775"
+      }
+     },
+     "timestamp": "2025-08-31T19:59:37Z"
+    },
+    "rev": {
+     "page": 218109,
+     "parentid": 1370150,
+     "revid": 1387363,
+     "sha1": "8ed53315b40a2b4edbaf2e2ff4c5888ac518e775",
+     "size": 126,
+     "slots": {
+      "main": {
+       "sha1": "8ed53315b40a2b4edbaf2e2ff4c5888ac518e775"
+      }
+     },
+     "timestamp": "2025-08-31T19:59:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "itwikiquote-2026-10-01-p2p227042.xml.bz2",
+    "ns": 5,
+    "redirect": null,
+    "rid": 1389880,
+    "sha1_attr": "0j5jfx1nzfn0tud0nukpiv61p4kudbg",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Discussioni Wikiquote:GLAM/Mappe letterarie Libervie/Voci",
+    "ts": "2025-09-23T14:05:20Z"
+   },
+   "key": 219245,
+   "legacy": {
+    "file": "itwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 5,
+    "redirect": null,
+    "rid": 1389880,
+    "sha1_attr": "0j5jfx1nzfn0tud0nukpiv61p4kudbg",
+    "tdel": null,
+    "text_len": 792,
+    "text_sha1": "048e07f8b1a4208975124044a340e46e414992ec",
+    "title": "Discussioni Wikiquote:GLAM/Mappe letterarie Libervie/Voci",
+    "ts": "2025-09-23T14:05:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 1377740,
+     "revid": 1389880,
+     "sha1": "048e07f8b1a4208975124044a340e46e414992ec",
+     "size": 792,
+     "slots": {
+      "main": {
+       "sha1": "048e07f8b1a4208975124044a340e46e414992ec"
+      }
+     },
+     "timestamp": "2025-09-23T14:05:20Z"
+    },
+    "rev": {
+     "page": 219245,
+     "parentid": 1377740,
+     "revid": 1389880,
+     "sha1": "048e07f8b1a4208975124044a340e46e414992ec",
+     "size": 792,
+     "slots": {
+      "main": {
+       "sha1": "048e07f8b1a4208975124044a340e46e414992ec"
+      }
+     },
+     "timestamp": "2025-09-23T14:05:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  }
+ ],
+ "counts": {
+  "META_DIFF|TIMING": 1,
+  "META_DIFF|UNEXPLAINED": 6,
+  "MISSING_EXPORT|TIMING": 12,
+  "REV_DIFF|TIMING": 40,
+  "TEXT_DIFF|UNEXPLAINED": 20
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 20,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "3|TEXT_DIFF": 19,
+  "5|TEXT_DIFF": 1
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 8,
+   "no_text_not_deleted": 180
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 8,
+   "no_text_not_deleted": 160
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 20
+ },
+ "live_checked": 20,
+ "max_ts": {
+  "export": "2026-09-30T23:48:50Z",
+  "legacy": "2026-10-01T16:38:56Z"
+ },
+ "n_diffs": 79,
+ "n_export": 211092,
+ "n_legacy": 211104,
+ "rc_covers_window": true,
+ "rc_rows": 1069,
+ "unexplained_primary": 20,
+ "wiki": "itwikiquote"
+}

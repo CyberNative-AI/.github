@@ -1,0 +1,135 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 4465,
+   "legacy": {
+    "file": "dawikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 17893,
+    "sha1_attr": "tv8bn4ydd6dcrx1gnre5ulxj4tgqa90",
+    "tdel": null,
+    "text_len": 30,
+    "text_sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64",
+    "title": null,
+    "ts": "2019-09-26T06:52:40Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 17893,
+     "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64"
+      }
+     },
+     "timestamp": "2019-09-26T06:52:40Z"
+    },
+    "rev": {
+     "page": 4465,
+     "parentid": 0,
+     "revid": 17893,
+     "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64"
+      }
+     },
+     "timestamp": "2019-09-26T06:52:40Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 4466,
+   "legacy": {
+    "file": "dawikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 17901,
+    "sha1_attr": "97rmqhloslbipnof7u3kc853f2x2ec4",
+    "tdel": null,
+    "text_len": 709,
+    "text_sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+    "title": "Wikiquote:Anmodning om administratorstatus/SimmeD 3",
+    "ts": "2019-10-06T04:52:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 17896,
+     "revid": 17901,
+     "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+     "size": 709,
+     "slots": {
+      "main": {
+       "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14"
+      }
+     },
+     "timestamp": "2019-10-06T04:52:24Z"
+    },
+    "rev": {
+     "page": 4466,
+     "parentid": 17896,
+     "revid": 17901,
+     "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+     "size": 709,
+     "slots": {
+      "main": {
+       "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14"
+      }
+     },
+     "timestamp": "2019-10-06T04:52:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "MISSING_EXPORT|UNEXPLAINED": 2
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 2,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "2|MISSING_EXPORT": 1,
+  "4|MISSING_EXPORT": 1
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 15
+  },
+  "legacy": {
+   "no_text_not_deleted": 15
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 2
+ },
+ "live_checked": 2,
+ "max_ts": {
+  "export": "2026-09-29T19:55:56Z",
+  "legacy": "2026-09-29T19:55:56Z"
+ },
+ "n_diffs": 2,
+ "n_export": 2364,
+ "n_legacy": 2366,
+ "rc_covers_window": true,
+ "rc_rows": 4,
+ "unexplained_primary": 2,
+ "wiki": "dawikiquote"
+}

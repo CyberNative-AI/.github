@@ -1,0 +1,163 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "fiwiktionary-2026-10-01-p9p914357.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 5039973,
+    "sha1_attr": "rf0iyzf7et933siep0wsqhdrth33bet",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "океанійський",
+    "ts": "2025-10-16T07:58:37Z"
+   },
+   "key": 716776,
+   "legacy": {
+    "file": "fiwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 5039973,
+    "sha1_attr": "rf0iyzf7et933siep0wsqhdrth33bet",
+    "tdel": null,
+    "text_len": 152,
+    "text_sha1": "eab67a16ff960decdfa4e7a36723bd60c1fab385",
+    "title": "океанійський",
+    "ts": "2025-10-16T07:58:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4729862,
+     "revid": 5039973,
+     "sha1": "eab67a16ff960decdfa4e7a36723bd60c1fab385",
+     "size": 152,
+     "slots": {
+      "main": {
+       "sha1": "eab67a16ff960decdfa4e7a36723bd60c1fab385"
+      }
+     },
+     "timestamp": "2025-10-16T07:58:37Z"
+    },
+    "rev": {
+     "page": 716776,
+     "parentid": 4729862,
+     "revid": 5039973,
+     "sha1": "eab67a16ff960decdfa4e7a36723bd60c1fab385",
+     "size": 152,
+     "slots": {
+      "main": {
+       "sha1": "eab67a16ff960decdfa4e7a36723bd60c1fab385"
+      }
+     },
+     "timestamp": "2025-10-16T07:58:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "fiwiktionary-2026-10-01-p9p914357.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 5039970,
+    "sha1_attr": "8ynvbi7iurn4w0f9e5justx1g0f5pco",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "океанійські мови",
+    "ts": "2025-10-16T07:56:59Z"
+   },
+   "key": 716784,
+   "legacy": {
+    "file": "fiwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 5039970,
+    "sha1_attr": "8ynvbi7iurn4w0f9e5justx1g0f5pco",
+    "tdel": null,
+    "text_len": 177,
+    "text_sha1": "4cbac125d8d5657a332f6965799ec619f108be98",
+    "title": "океанійські мови",
+    "ts": "2025-10-16T07:56:59Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 4729872,
+     "revid": 5039970,
+     "sha1": "4cbac125d8d5657a332f6965799ec619f108be98",
+     "size": 177,
+     "slots": {
+      "main": {
+       "sha1": "4cbac125d8d5657a332f6965799ec619f108be98"
+      }
+     },
+     "timestamp": "2025-10-16T07:56:59Z"
+    },
+    "rev": {
+     "page": 716784,
+     "parentid": 4729872,
+     "revid": 5039970,
+     "sha1": "4cbac125d8d5657a332f6965799ec619f108be98",
+     "size": 177,
+     "slots": {
+      "main": {
+       "sha1": "4cbac125d8d5657a332f6965799ec619f108be98"
+      }
+     },
+     "timestamp": "2025-10-16T07:56:59Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 565,
+  "MISSING_EXPORT|TIMING": 61,
+  "REV_DIFF|TIMING": 725,
+  "TEXT_DIFF|UNEXPLAINED": 2
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 2,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|TEXT_DIFF": 2
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 1,
+   "no_text_not_deleted": 83,
+   "sha1_attr_mismatch": 1
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 1,
+   "no_text_not_deleted": 81,
+   "sha1_attr_mismatch": 1
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 2
+ },
+ "live_checked": 2,
+ "max_ts": {
+  "export": "2026-09-30T23:59:53Z",
+  "legacy": "2026-10-01T14:27:29Z"
+ },
+ "n_diffs": 1353,
+ "n_export": 823244,
+ "n_legacy": 823305,
+ "rc_covers_window": true,
+ "rc_rows": 13198,
+ "unexplained_primary": 2,
+ "wiki": "fiwiktionary"
+}

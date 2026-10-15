@@ -1,0 +1,842 @@
+{
+ "arm": "history",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161368,
+    "sha1_attr": "sh08egjd4248f4k2aun59dsjtbfzswk",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:58Z"
+   },
+   "key": [
+    18917,
+    161368
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161368,
+    "sha1_attr": "sh08egjd4248f4k2aun59dsjtbfzswk",
+    "tdel": null,
+    "text_len": 2258,
+    "text_sha1": "f3bf4e4f00d614c162a9857573306c90c4228814",
+    "title": null,
+    "ts": "2025-09-26T18:26:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 161368,
+     "revid": 165069,
+     "sha1": "c2d6dfb99e20e85f068f7bd05f4cd01188e28024",
+     "size": 2224,
+     "slots": {
+      "main": {
+       "sha1": "c2d6dfb99e20e85f068f7bd05f4cd01188e28024"
+      }
+     },
+     "timestamp": "2026-05-04T13:52:42Z"
+    },
+    "rev": {
+     "page": 18917,
+     "parentid": 161118,
+     "revid": 161368,
+     "sha1": "f3bf4e4f00d614c162a9857573306c90c4228814",
+     "size": 2258,
+     "slots": {
+      "main": {
+       "sha1": "f3bf4e4f00d614c162a9857573306c90c4228814"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 161366,
+    "sha1_attr": "5iu2tbpcbtplkzvco4hjgfo5neqzyoh",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:57Z"
+   },
+   "key": [
+    19150,
+    161366
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 161366,
+    "sha1_attr": "5iu2tbpcbtplkzvco4hjgfo5neqzyoh",
+    "tdel": null,
+    "text_len": 14811,
+    "text_sha1": "2f4881a1bbd7ceaae572eb919beeaa7c5b9e9c51",
+    "title": null,
+    "ts": "2025-09-26T18:26:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 161366,
+     "revid": 163687,
+     "sha1": "c277f677d291a0e24a74b2945448e48d77c733f4",
+     "size": 15260,
+     "slots": {
+      "main": {
+       "sha1": "c277f677d291a0e24a74b2945448e48d77c733f4"
+      }
+     },
+     "timestamp": "2026-02-06T02:31:30Z"
+    },
+    "rev": {
+     "page": 19150,
+     "parentid": 151730,
+     "revid": 161366,
+     "sha1": "2f4881a1bbd7ceaae572eb919beeaa7c5b9e9c51",
+     "size": 14811,
+     "slots": {
+      "main": {
+       "sha1": "2f4881a1bbd7ceaae572eb919beeaa7c5b9e9c51"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 160857,
+    "sha1_attr": "tuuoxud7zernv5vu7lbw9cdx4dvini3",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Апшиця (ріка)",
+    "ts": "2025-08-16T23:37:06Z"
+   },
+   "key": [
+    19312,
+    160857
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 160857,
+    "sha1_attr": "tuuoxud7zernv5vu7lbw9cdx4dvini3",
+    "tdel": null,
+    "text_len": 3087,
+    "text_sha1": "ff99c931e7a05ac31d978d41bf755230d8319a7b",
+    "title": "Апшиця (ріка)",
+    "ts": "2025-08-16T23:37:06Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 160857,
+     "revid": 160892,
+     "sha1": "c556cd1ed66f68b3b876430b7edfcf75f5be0e0b",
+     "size": 3120,
+     "slots": {
+      "main": {
+       "sha1": "c556cd1ed66f68b3b876430b7edfcf75f5be0e0b"
+      }
+     },
+     "timestamp": "2025-08-19T19:50:28Z"
+    },
+    "rev": {
+     "page": 19312,
+     "parentid": 135354,
+     "revid": 160857,
+     "sha1": "ff99c931e7a05ac31d978d41bf755230d8319a7b",
+     "size": 3087,
+     "slots": {
+      "main": {
+       "sha1": "ff99c931e7a05ac31d978d41bf755230d8319a7b"
+      }
+     },
+     "timestamp": "2025-08-16T23:37:06Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 161192,
+    "sha1_attr": "3kjgk6q10swzewfn5yhttmmpker6t6w",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Тиверці",
+    "ts": "2025-09-07T11:17:58Z"
+   },
+   "key": [
+    21109,
+    161192
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 161192,
+    "sha1_attr": "3kjgk6q10swzewfn5yhttmmpker6t6w",
+    "tdel": null,
+    "text_len": 1901,
+    "text_sha1": "1e912965d6bf57560d436589404624a8618d4c48",
+    "title": "Тиверці",
+    "ts": "2025-09-07T11:17:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 161192,
+     "revid": 164221,
+     "sha1": "67e27f63ae407524003fc222952786f7d06cb7c2",
+     "size": 1944,
+     "slots": {
+      "main": {
+       "sha1": "67e27f63ae407524003fc222952786f7d06cb7c2"
+      }
+     },
+     "timestamp": "2026-03-03T03:54:13Z"
+    },
+    "rev": {
+     "page": 21109,
+     "parentid": 161191,
+     "revid": 161192,
+     "sha1": "1e912965d6bf57560d436589404624a8618d4c48",
+     "size": 1901,
+     "slots": {
+      "main": {
+       "sha1": "1e912965d6bf57560d436589404624a8618d4c48"
+      }
+     },
+     "timestamp": "2025-09-07T11:17:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 161196,
+    "sha1_attr": "erfrkjkoyc2utn8i91zcg525in5xi5h",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Серґей Скорвід",
+    "ts": "2025-09-07T17:01:47Z"
+   },
+   "key": [
+    21178,
+    161196
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 161196,
+    "sha1_attr": "erfrkjkoyc2utn8i91zcg525in5xi5h",
+    "tdel": null,
+    "text_len": 7053,
+    "text_sha1": "7e605721d75c69b8bd4577ccae156a0808791b25",
+    "title": "Серґей Скорвід",
+    "ts": "2025-09-07T17:01:47Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 161195,
+     "revid": 161196,
+     "sha1": "7e605721d75c69b8bd4577ccae156a0808791b25",
+     "size": 7053,
+     "slots": {
+      "main": {
+       "sha1": "7e605721d75c69b8bd4577ccae156a0808791b25"
+      }
+     },
+     "timestamp": "2025-09-07T17:01:47Z"
+    },
+    "rev": {
+     "page": 21178,
+     "parentid": 161195,
+     "revid": 161196,
+     "sha1": "7e605721d75c69b8bd4577ccae156a0808791b25",
+     "size": 7053,
+     "slots": {
+      "main": {
+       "sha1": "7e605721d75c69b8bd4577ccae156a0808791b25"
+      }
+     },
+     "timestamp": "2025-09-07T17:01:47Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 160861,
+    "sha1_attr": "elb7dpf049tkivu9mhetbpz7db0t4vj",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Бребоя",
+    "ts": "2025-08-16T23:42:25Z"
+   },
+   "key": [
+    21295,
+    160861
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 160861,
+    "sha1_attr": "elb7dpf049tkivu9mhetbpz7db0t4vj",
+    "tdel": null,
+    "text_len": 1686,
+    "text_sha1": "7ceb5daedd594539852ad928a26cc2961fd859ef",
+    "title": "Бребоя",
+    "ts": "2025-08-16T23:42:25Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 165207,
+     "revid": 165208,
+     "sha1": "4899f0bd884833ddafa0db7aba3e670207e533bf",
+     "size": 1696,
+     "slots": {
+      "main": {
+       "sha1": "4899f0bd884833ddafa0db7aba3e670207e533bf"
+      }
+     },
+     "timestamp": "2026-05-10T21:24:48Z"
+    },
+    "rev": {
+     "page": 21295,
+     "parentid": 160860,
+     "revid": 160861,
+     "sha1": "7ceb5daedd594539852ad928a26cc2961fd859ef",
+     "size": 1686,
+     "slots": {
+      "main": {
+       "sha1": "7ceb5daedd594539852ad928a26cc2961fd859ef"
+      }
+     },
+     "timestamp": "2025-08-16T23:42:25Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 160838,
+    "sha1_attr": "dq3lrvg5drfobxnsehqlsv2sgl1a32j",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Хмелево",
+    "ts": "2025-08-16T22:02:54Z"
+   },
+   "key": [
+    21405,
+    160838
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 160838,
+    "sha1_attr": "dq3lrvg5drfobxnsehqlsv2sgl1a32j",
+    "tdel": null,
+    "text_len": 1818,
+    "text_sha1": "757f53c6eaa78c4f758c47c0afd41ddfb4ee430b",
+    "title": "Хмелево",
+    "ts": "2025-08-16T22:02:54Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 160846,
+     "revid": 165212,
+     "sha1": "12fde906ce65d1ae702ba2dea2f6752860e951ef",
+     "size": 1892,
+     "slots": {
+      "main": {
+       "sha1": "12fde906ce65d1ae702ba2dea2f6752860e951ef"
+      }
+     },
+     "timestamp": "2026-05-10T21:28:57Z"
+    },
+    "rev": {
+     "page": 21405,
+     "parentid": 160837,
+     "revid": 160838,
+     "sha1": "757f53c6eaa78c4f758c47c0afd41ddfb4ee430b",
+     "size": 1818,
+     "slots": {
+      "main": {
+       "sha1": "757f53c6eaa78c4f758c47c0afd41ddfb4ee430b"
+      }
+     },
+     "timestamp": "2025-08-16T22:02:54Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161367,
+    "sha1_attr": "1jzmyoyt8tr51wke6alwpajumnyg40h",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:58Z"
+   },
+   "key": [
+    21439,
+    161367
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161367,
+    "sha1_attr": "1jzmyoyt8tr51wke6alwpajumnyg40h",
+    "tdel": null,
+    "text_len": 5333,
+    "text_sha1": "0d507fb7935ac0906e0f6d1f5ee7190e1f997651",
+    "title": null,
+    "ts": "2025-09-26T18:26:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 161367,
+     "revid": 164883,
+     "sha1": "a9e9258534d5240776af99f1ef824866b1ecb9ab",
+     "size": 5333,
+     "slots": {
+      "main": {
+       "sha1": "a9e9258534d5240776af99f1ef824866b1ecb9ab"
+      }
+     },
+     "timestamp": "2026-04-26T10:27:35Z"
+    },
+    "rev": {
+     "page": 21439,
+     "parentid": 154897,
+     "revid": 161367,
+     "sha1": "0d507fb7935ac0906e0f6d1f5ee7190e1f997651",
+     "size": 5333,
+     "slots": {
+      "main": {
+       "sha1": "0d507fb7935ac0906e0f6d1f5ee7190e1f997651"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 1,
+    "redirect": null,
+    "rid": 160862,
+    "sha1_attr": "hy40dry6m1buoc0ee1w0pek6gmlxv6b",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Діскузія:Бребоя",
+    "ts": "2025-08-16T23:42:25Z"
+   },
+   "key": [
+    21605,
+    160862
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 1,
+    "redirect": null,
+    "rid": 160862,
+    "sha1_attr": "hy40dry6m1buoc0ee1w0pek6gmlxv6b",
+    "tdel": null,
+    "text_len": 507,
+    "text_sha1": "99a550bf010c487ab1f525cee99eb0f7b63ee913",
+    "title": "Діскузія:Бребоя",
+    "ts": "2025-08-16T23:42:25Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 147104,
+     "revid": 160862,
+     "sha1": "99a550bf010c487ab1f525cee99eb0f7b63ee913",
+     "size": 507,
+     "slots": {
+      "main": {
+       "sha1": "99a550bf010c487ab1f525cee99eb0f7b63ee913"
+      }
+     },
+     "timestamp": "2025-08-16T23:42:25Z"
+    },
+    "rev": {
+     "page": 21605,
+     "parentid": 147104,
+     "revid": 160862,
+     "sha1": "99a550bf010c487ab1f525cee99eb0f7b63ee913",
+     "size": 507,
+     "slots": {
+      "main": {
+       "sha1": "99a550bf010c487ab1f525cee99eb0f7b63ee913"
+      }
+     },
+     "timestamp": "2025-08-16T23:42:25Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161364,
+    "sha1_attr": "6iznaauyvyr0i1ym3m3k5ga09s99asi",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:57Z"
+   },
+   "key": [
+    23225,
+    161364
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161364,
+    "sha1_attr": "6iznaauyvyr0i1ym3m3k5ga09s99asi",
+    "tdel": null,
+    "text_len": 5649,
+    "text_sha1": "37e17ea0a4a6ec86faa3fd4e610f920e35a8c7e2",
+    "title": null,
+    "ts": "2025-09-26T18:26:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 160946,
+     "revid": 161364,
+     "sha1": "37e17ea0a4a6ec86faa3fd4e610f920e35a8c7e2",
+     "size": 5649,
+     "slots": {
+      "main": {
+       "sha1": "37e17ea0a4a6ec86faa3fd4e610f920e35a8c7e2"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:57Z"
+    },
+    "rev": {
+     "page": 23225,
+     "parentid": 160946,
+     "revid": 161364,
+     "sha1": "37e17ea0a4a6ec86faa3fd4e610f920e35a8c7e2",
+     "size": 5649,
+     "slots": {
+      "main": {
+       "sha1": "37e17ea0a4a6ec86faa3fd4e610f920e35a8c7e2"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 161362,
+    "sha1_attr": "ew58eouth0kd4e8nmxb3n7h8ov67mrp",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:56Z"
+   },
+   "key": [
+    23318,
+    161362
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 161362,
+    "sha1_attr": "ew58eouth0kd4e8nmxb3n7h8ov67mrp",
+    "tdel": null,
+    "text_len": 1280,
+    "text_sha1": "7f7eea368cd08e4ba2509b1e25a3f1e362b19105",
+    "title": null,
+    "ts": "2025-09-26T18:26:56Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 157505,
+     "revid": 161362,
+     "sha1": "7f7eea368cd08e4ba2509b1e25a3f1e362b19105",
+     "size": 1280,
+     "slots": {
+      "main": {
+       "sha1": "7f7eea368cd08e4ba2509b1e25a3f1e362b19105"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:56Z"
+    },
+    "rev": {
+     "page": 23318,
+     "parentid": 157505,
+     "revid": 161362,
+     "sha1": "7f7eea368cd08e4ba2509b1e25a3f1e362b19105",
+     "size": 1280,
+     "slots": {
+      "main": {
+       "sha1": "7f7eea368cd08e4ba2509b1e25a3f1e362b19105"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:56Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161365,
+    "sha1_attr": "335dwkvm8fhc1l34y5uhgj18eh2256b",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:57Z"
+   },
+   "key": [
+    23726,
+    161365
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161365,
+    "sha1_attr": "335dwkvm8fhc1l34y5uhgj18eh2256b",
+    "tdel": null,
+    "text_len": 418,
+    "text_sha1": "1a6e742ca8e956eefa13447d04ca8f93f30b8cb3",
+    "title": null,
+    "ts": "2025-09-26T18:26:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 160791,
+     "revid": 161365,
+     "sha1": "1a6e742ca8e956eefa13447d04ca8f93f30b8cb3",
+     "size": 418,
+     "slots": {
+      "main": {
+       "sha1": "1a6e742ca8e956eefa13447d04ca8f93f30b8cb3"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:57Z"
+    },
+    "rev": {
+     "page": 23726,
+     "parentid": 160791,
+     "revid": 161365,
+     "sha1": "1a6e742ca8e956eefa13447d04ca8f93f30b8cb3",
+     "size": 418,
+     "slots": {
+      "main": {
+       "sha1": "1a6e742ca8e956eefa13447d04ca8f93f30b8cb3"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "ruewiki-2026-10-01-p1p25311.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161363,
+    "sha1_attr": "nqik18xh3a041x2am94iv0orb6ixqbr",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": null,
+    "ts": "2025-09-26T18:26:56Z"
+   },
+   "key": [
+    23734,
+    161363
+   ],
+   "legacy": {
+    "file": "ruewiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 161363,
+    "sha1_attr": "nqik18xh3a041x2am94iv0orb6ixqbr",
+    "tdel": null,
+    "text_len": 54419,
+    "text_sha1": "cb34537c896c8651bf10cda58de90c207bb39d87",
+    "title": null,
+    "ts": "2025-09-26T18:26:56Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 159874,
+     "revid": 161363,
+     "sha1": "cb34537c896c8651bf10cda58de90c207bb39d87",
+     "size": 54419,
+     "slots": {
+      "main": {
+       "sha1": "cb34537c896c8651bf10cda58de90c207bb39d87"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:56Z"
+    },
+    "rev": {
+     "page": 23734,
+     "parentid": 159874,
+     "revid": 161363,
+     "sha1": "cb34537c896c8651bf10cda58de90c207bb39d87",
+     "size": 54419,
+     "slots": {
+      "main": {
+       "sha1": "cb34537c896c8651bf10cda58de90c207bb39d87"
+      }
+     },
+     "timestamp": "2025-09-26T18:26:56Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  }
+ ],
+ "counts": {
+  "META_DIFF|TIMING": 89,
+  "META_DIFF|UNEXPLAINED": 591,
+  "MISSING_EXPORT|TIMING": 21,
+  "TEXT_DIFF|TIMING": 2,
+  "TEXT_DIFF|UNEXPLAINED": 13
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 13,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|TEXT_DIFF": 5,
+  "1|TEXT_DIFF": 1,
+  "2|TEXT_DIFF": 5,
+  "3|TEXT_DIFF": 2
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 2,
+   "no_text_not_deleted": 379
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 2,
+   "no_text_not_deleted": 364
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 13
+ },
+ "live_checked": 13,
+ "max_ts": {
+  "export": "2026-09-30T21:51:51Z",
+  "legacy": "2026-10-01T19:07:03Z"
+ },
+ "n_diffs": 716,
+ "n_export": 165654,
+ "n_legacy": 165675,
+ "rc_covers_window": true,
+ "rc_rows": 764,
+ "unexplained_primary": 13,
+ "wiki": "ruewiki"
+}

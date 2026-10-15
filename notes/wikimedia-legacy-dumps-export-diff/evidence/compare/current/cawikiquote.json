@@ -1,0 +1,90 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 14838,
+   "legacy": {
+    "file": "cawikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": "Montserrat (Ribera Alta)",
+    "rid": 127181,
+    "sha1_attr": "dz0qa0u53b0zsd88cmk4sa7yirctcpw",
+    "tdel": null,
+    "text_len": 41,
+    "text_sha1": "779e5bced40b7b3d19853ff969552fdf347a5da4",
+    "title": "Montserrat d'Alcalà",
+    "ts": "2020-05-07T16:37:27Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 127181,
+     "sha1": "779e5bced40b7b3d19853ff969552fdf347a5da4",
+     "size": 41,
+     "slots": {
+      "main": {
+       "sha1": "779e5bced40b7b3d19853ff969552fdf347a5da4"
+      }
+     },
+     "timestamp": "2020-05-07T16:37:27Z"
+    },
+    "rev": {
+     "page": 14838,
+     "parentid": 0,
+     "revid": 127181,
+     "sha1": "779e5bced40b7b3d19853ff969552fdf347a5da4",
+     "size": 41,
+     "slots": {
+      "main": {
+       "sha1": "779e5bced40b7b3d19853ff969552fdf347a5da4"
+      }
+     },
+     "timestamp": "2020-05-07T16:37:27Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 8,
+  "MISSING_EXPORT|UNEXPLAINED": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 1,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|MISSING_EXPORT": 1
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 2098,
+   "no_text_not_deleted": 26
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 2098,
+   "no_text_not_deleted": 26
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 1
+ },
+ "live_checked": 1,
+ "max_ts": {
+  "export": "2026-09-29T23:34:55Z",
+  "legacy": "2026-09-29T23:34:55Z"
+ },
+ "n_diffs": 9,
+ "n_export": 14250,
+ "n_legacy": 14251,
+ "rc_covers_window": true,
+ "rc_rows": 43,
+ "unexplained_primary": 1,
+ "wiki": "cawikiquote"
+}

@@ -1,0 +1,743 @@
+{
+ "arm": "history",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16034
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16034,
+    "sha1_attr": "741a750mwne20fem65kky8josluoyo7",
+    "tdel": null,
+    "text_len": 9033,
+    "text_sha1": "3ce2adbb2299833a61828aec923b72cf4090d787",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2019-09-23T15:13:42Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 0,
+     "revid": 16034,
+     "sha1": "3ce2adbb2299833a61828aec923b72cf4090d787",
+     "size": 9033,
+     "slots": {
+      "main": {
+       "sha1": "3ce2adbb2299833a61828aec923b72cf4090d787"
+      }
+     },
+     "timestamp": "2019-09-23T15:13:42Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16035
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16035,
+    "sha1_attr": "esnr518lueqktd3x2ltitbzgoic0zuo",
+    "tdel": null,
+    "text_len": 8907,
+    "text_sha1": "7eaab9af2e47ddea9976488fb7d0e1c678a04980",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2019-09-23T20:27:57Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16034,
+     "revid": 16035,
+     "sha1": "7eaab9af2e47ddea9976488fb7d0e1c678a04980",
+     "size": 8907,
+     "slots": {
+      "main": {
+       "sha1": "7eaab9af2e47ddea9976488fb7d0e1c678a04980"
+      }
+     },
+     "timestamp": "2019-09-23T20:27:57Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16037
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16037,
+    "sha1_attr": "5k938uflk1ndpg4oqy7sr5evtdv2vm3",
+    "tdel": null,
+    "text_len": 8931,
+    "text_sha1": "2f9ec4deab90a04b9292fa9eafa41bda63776f8b",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2019-09-30T14:53:50Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16035,
+     "revid": 16037,
+     "sha1": "2f9ec4deab90a04b9292fa9eafa41bda63776f8b",
+     "size": 8931,
+     "slots": {
+      "main": {
+       "sha1": "2f9ec4deab90a04b9292fa9eafa41bda63776f8b"
+      }
+     },
+     "timestamp": "2019-09-30T14:53:50Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16039
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16039,
+    "sha1_attr": "5k938uflk1ndpg4oqy7sr5evtdv2vm3",
+    "tdel": null,
+    "text_len": 8931,
+    "text_sha1": "2f9ec4deab90a04b9292fa9eafa41bda63776f8b",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2019-09-30T14:55:17Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16037,
+     "revid": 16039,
+     "sha1": "2f9ec4deab90a04b9292fa9eafa41bda63776f8b",
+     "size": 8931,
+     "slots": {
+      "main": {
+       "sha1": "2f9ec4deab90a04b9292fa9eafa41bda63776f8b"
+      }
+     },
+     "timestamp": "2019-09-30T14:55:17Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16042
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16042,
+    "sha1_attr": "9rstvoq0x9rnnxxh3yg1ey7ltdu59zk",
+    "tdel": null,
+    "text_len": 8928,
+    "text_sha1": "53a8931a2661a4ffcbb4c036e9389fc18b6e03d0",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2019-09-30T14:57:16Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16039,
+     "revid": 16042,
+     "sha1": "53a8931a2661a4ffcbb4c036e9389fc18b6e03d0",
+     "size": 8928,
+     "slots": {
+      "main": {
+       "sha1": "53a8931a2661a4ffcbb4c036e9389fc18b6e03d0"
+      }
+     },
+     "timestamp": "2019-09-30T14:57:16Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16316
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16316,
+    "sha1_attr": "oifx69ks85qr9p6lv2ndtgo8k08yt5x",
+    "tdel": null,
+    "text_len": 16163,
+    "text_sha1": "d1d86d04fb8b056b56c177d5836a1a5c922d1025",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2020-06-08T15:46:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16042,
+     "revid": 16316,
+     "sha1": "d1d86d04fb8b056b56c177d5836a1a5c922d1025",
+     "size": 16163,
+     "slots": {
+      "main": {
+       "sha1": "d1d86d04fb8b056b56c177d5836a1a5c922d1025"
+      }
+     },
+     "timestamp": "2020-06-08T15:46:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16343
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16343,
+    "sha1_attr": "oifx69ks85qr9p6lv2ndtgo8k08yt5x",
+    "tdel": null,
+    "text_len": 16163,
+    "text_sha1": "d1d86d04fb8b056b56c177d5836a1a5c922d1025",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2020-06-19T15:38:54Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16316,
+     "revid": 16343,
+     "sha1": "d1d86d04fb8b056b56c177d5836a1a5c922d1025",
+     "size": 16163,
+     "slots": {
+      "main": {
+       "sha1": "d1d86d04fb8b056b56c177d5836a1a5c922d1025"
+      }
+     },
+     "timestamp": "2020-06-19T15:38:54Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16345
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16345,
+    "sha1_attr": "4uieics0vsbr4kujbcbaazigdrdx6o2",
+    "tdel": null,
+    "text_len": 16163,
+    "text_sha1": "297fb73a0891f216fe29371a0478f7f6c1e9e902",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2020-06-19T15:39:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16343,
+     "revid": 16345,
+     "sha1": "297fb73a0891f216fe29371a0478f7f6c1e9e902",
+     "size": 16163,
+     "slots": {
+      "main": {
+       "sha1": "297fb73a0891f216fe29371a0478f7f6c1e9e902"
+      }
+     },
+     "timestamp": "2020-06-19T15:39:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16503
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16503,
+    "sha1_attr": "s5ee7npok9xb6q10q4ghym0ipp7jwq7",
+    "tdel": null,
+    "text_len": 35815,
+    "text_sha1": "f0fcbaba1801cb07e224f18c8619d5cda19ca76f",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2020-11-19T18:17:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16345,
+     "revid": 16503,
+     "sha1": "f0fcbaba1801cb07e224f18c8619d5cda19ca76f",
+     "size": 35815,
+     "slots": {
+      "main": {
+       "sha1": "f0fcbaba1801cb07e224f18c8619d5cda19ca76f"
+      }
+     },
+     "timestamp": "2020-11-19T18:17:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16504
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16504,
+    "sha1_attr": "4zqpxj6tydqo2kv3gjjk0apnvjuzj8q",
+    "tdel": null,
+    "text_len": 35754,
+    "text_sha1": "2abe2a56e97293cfd9743f889758ba5c7870062a",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2020-11-19T20:09:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16503,
+     "revid": 16504,
+     "sha1": "2abe2a56e97293cfd9743f889758ba5c7870062a",
+     "size": 35754,
+     "slots": {
+      "main": {
+       "sha1": "2abe2a56e97293cfd9743f889758ba5c7870062a"
+      }
+     },
+     "timestamp": "2020-11-19T20:09:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16542
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16542,
+    "sha1_attr": "29j1fwsvod0ehc2e8q43j7qjwturnuq",
+    "tdel": null,
+    "text_len": 35851,
+    "text_sha1": "13633bb0dd15111609964c0091414b8c097fe382",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2020-12-04T13:36:02Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16504,
+     "revid": 16542,
+     "sha1": "13633bb0dd15111609964c0091414b8c097fe382",
+     "size": 35851,
+     "slots": {
+      "main": {
+       "sha1": "13633bb0dd15111609964c0091414b8c097fe382"
+      }
+     },
+     "timestamp": "2020-12-04T13:36:02Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16735
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16735,
+    "sha1_attr": "9mlxdgofuzp9jd81ck1ls5hz4rs6wsk",
+    "tdel": null,
+    "text_len": 35816,
+    "text_sha1": "526c84405a1289c3795c36fcdca194ce1a85d384",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2021-01-04T10:34:31Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16542,
+     "revid": 16735,
+     "sha1": "526c84405a1289c3795c36fcdca194ce1a85d384",
+     "size": 35816,
+     "slots": {
+      "main": {
+       "sha1": "526c84405a1289c3795c36fcdca194ce1a85d384"
+      }
+     },
+     "timestamp": "2021-01-04T10:34:31Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    16790
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 16790,
+    "sha1_attr": "6777rhs5ofk4wvfvxq4hzoq0pyep35s",
+    "tdel": null,
+    "text_len": 35803,
+    "text_sha1": "3513c5171bc1e7e75f7d8645abe0106833150240",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2021-01-15T17:21:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16735,
+     "revid": 16790,
+     "sha1": "3513c5171bc1e7e75f7d8645abe0106833150240",
+     "size": 35803,
+     "slots": {
+      "main": {
+       "sha1": "3513c5171bc1e7e75f7d8645abe0106833150240"
+      }
+     },
+     "timestamp": "2021-01-15T17:21:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5900,
+    18408
+   ],
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 18408,
+    "sha1_attr": "ahcrrvkdnx585pqw1zclb8gaqzwecof",
+    "tdel": null,
+    "text_len": 36231,
+    "text_sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2025-03-16T13:38:39Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 13,
+  "MISSING_EXPORT|UNEXPLAINED": 14
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 14,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|MISSING_EXPORT": 14
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 28,
+   "no_text_not_deleted": 127
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 28,
+   "no_text_not_deleted": 127
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 14
+ },
+ "live_checked": 14,
+ "max_ts": {
+  "export": "2026-09-25T12:18:36Z",
+  "legacy": "2026-09-25T12:18:36Z"
+ },
+ "n_diffs": 27,
+ "n_export": 15032,
+ "n_legacy": 15046,
+ "rc_covers_window": true,
+ "rc_rows": 1,
+ "unexplained_primary": 14,
+ "wiki": "bgwikisource"
+}

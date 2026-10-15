@@ -1,0 +1,142 @@
+{
+ "correct": 12,
+ "detail": {
+  "15679": {
+   "expect": [
+    "MISSING_EXPORT",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "MISSING_EXPORT",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "18338": {
+   "expect": [
+    "TEXT_DIFF",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "TEXT_DIFF",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "3853": {
+   "expect": [
+    "TEXT_DIFF",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "TEXT_DIFF",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "41118": {
+   "expect": [
+    "TEXT_DIFF",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "TEXT_DIFF",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "43282": {
+   "expect": [
+    "MISSING_LEGACY",
+    "LEGACY_WRONG"
+   ],
+   "got": [
+    "MISSING_LEGACY",
+    "UNEXPLAINED",
+    "LEGACY_WRONG"
+   ]
+  },
+  "44001": {
+   "expect": [
+    "MISSING_EXPORT",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "MISSING_EXPORT",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "59316": {
+   "expect": [
+    "TEXT_DIFF",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "TEXT_DIFF",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "60130": {
+   "expect": [
+    "MISSING_EXPORT",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "MISSING_EXPORT",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "67596": {
+   "expect": [
+    "TEXT_DIFF",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "TEXT_DIFF",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "74646": {
+   "expect": [
+    "MISSING_LEGACY",
+    "LEGACY_WRONG"
+   ],
+   "got": [
+    "MISSING_LEGACY",
+    "UNEXPLAINED",
+    "LEGACY_WRONG"
+   ]
+  },
+  "78015": {
+   "expect": [
+    "MISSING_EXPORT",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "MISSING_EXPORT",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  },
+  "82991": {
+   "expect": [
+    "MISSING_EXPORT",
+    "EXPORT_WRONG"
+   ],
+   "got": [
+    "MISSING_EXPORT",
+    "UNEXPLAINED",
+    "EXPORT_WRONG"
+   ]
+  }
+ },
+ "extra_diffs": [],
+ "pass": true,
+ "planted": 12,
+ "pool": 84197,
+ "wiki": "cywikisource"
+}

@@ -1,0 +1,99 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "svwikibooks-2026-10-01-p2p11398.xml.bz2",
+    "ns": 6,
+    "redirect": null,
+    "rid": 14346,
+    "sha1_attr": "5t6d8izbtyrrb2pfhzmgihzfiagai66",
+    "tdel": null,
+    "text_len": 46,
+    "text_sha1": "31be0ee1e5dae45a7fb10c9b2eb76babf287d27e",
+    "title": "Fil:Rak vinkel.png",
+    "ts": "2007-07-03T11:19:11Z"
+   },
+   "key": 2151,
+   "legacy": {
+    "file": "svwikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 6,
+    "redirect": null,
+    "rid": 5785,
+    "sha1_attr": "5t6d8izbtyrrb2pfhzmgihzfiagai66",
+    "tdel": null,
+    "text_len": 46,
+    "text_sha1": "31be0ee1e5dae45a7fb10c9b2eb76babf287d27e",
+    "title": "Fil:Rak vinkel.png",
+    "ts": "2005-08-28T18:53:59Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 5785,
+     "sha1": "31be0ee1e5dae45a7fb10c9b2eb76babf287d27e",
+     "size": 46,
+     "slots": {
+      "main": {
+       "sha1": "31be0ee1e5dae45a7fb10c9b2eb76babf287d27e"
+      }
+     },
+     "timestamp": "2005-08-28T18:53:59Z"
+    },
+    "rev": {
+     "page": 2151,
+     "parentid": 0,
+     "revid": 5785,
+     "sha1": "31be0ee1e5dae45a7fb10c9b2eb76babf287d27e",
+     "size": 46,
+     "slots": {
+      "main": {
+       "sha1": "31be0ee1e5dae45a7fb10c9b2eb76babf287d27e"
+      }
+     },
+     "timestamp": "2005-08-28T18:53:59Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "REV_DIFF"
+  }
+ ],
+ "counts": {
+  "REV_DIFF|TIMING": 1,
+  "REV_DIFF|UNEXPLAINED": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 1,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "6|REV_DIFF": 1
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 63
+  },
+  "legacy": {
+   "no_text_not_deleted": 63
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 1
+ },
+ "live_checked": 1,
+ "max_ts": {
+  "export": "2026-09-25T11:46:33Z",
+  "legacy": "2026-10-01T12:42:56Z"
+ },
+ "n_diffs": 2,
+ "n_export": 6328,
+ "n_legacy": 6328,
+ "rc_covers_window": true,
+ "rc_rows": 17,
+ "unexplained_primary": 1,
+ "wiki": "svwikibooks"
+}

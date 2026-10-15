@@ -1,0 +1,90 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 14002,
+   "legacy": {
+    "file": "nahwiki-20261001-pages-meta-current.xml.bz2",
+    "ns": 10,
+    "redirect": null,
+    "rid": 528626,
+    "sha1_attr": "sm1pgwpisfc0wa2n0i57wjvqsf7zawg",
+    "tdel": null,
+    "text_len": 4869,
+    "text_sha1": "f4f22effbc9364880b4dae5f2cf80782f79f64f0",
+    "title": "Nemachiyōtīlli:Macuilpohualxihuitl 1",
+    "ts": "2026-08-10T21:06:31Z"
+   },
+   "live": {
+    "latest": {
+     "parentid": 528626,
+     "revid": 533093,
+     "sha1": "6e2ed31cd09a9133b81c6fd26b121d916a954614",
+     "size": 4905,
+     "slots": {
+      "main": {
+       "sha1": "6e2ed31cd09a9133b81c6fd26b121d916a954614"
+      }
+     },
+     "timestamp": "2026-10-12T20:51:30Z"
+    },
+    "rev": {
+     "page": 14002,
+     "parentid": 528605,
+     "revid": 528626,
+     "sha1": "f4f22effbc9364880b4dae5f2cf80782f79f64f0",
+     "size": 4869,
+     "slots": {
+      "main": {
+       "sha1": "f4f22effbc9364880b4dae5f2cf80782f79f64f0"
+      }
+     },
+     "timestamp": "2026-08-10T21:06:31Z"
+    },
+    "verdict": "UNCONFIRMED"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 14,
+  "MISSING_EXPORT|UNEXPLAINED": 1,
+  "REV_DIFF|TIMING": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 6,
+   "no_text_not_deleted": 57,
+   "sha1_attr_mismatch": 6
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 6,
+   "no_text_not_deleted": 57,
+   "sha1_attr_mismatch": 6
+  }
+ },
+ "live": {
+  "UNCONFIRMED": 1
+ },
+ "live_checked": 1,
+ "max_ts": {
+  "export": "2026-09-30T23:59:11Z",
+  "legacy": "2026-10-01T00:05:56Z"
+ },
+ "n_diffs": 16,
+ "n_export": 8474,
+ "n_legacy": 8475,
+ "rc_covers_window": true,
+ "rc_rows": 554,
+ "unexplained_primary": 1,
+ "wiki": "nahwiki"
+}

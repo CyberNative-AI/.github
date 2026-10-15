@@ -1,0 +1,38 @@
+{
+ "arm": "current",
+ "checked": [],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 1,
+  "REV_DIFF|TIMING": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 1979,
+   "no_text_not_deleted": 45
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 1979,
+   "no_text_not_deleted": 45
+  }
+ },
+ "live": {},
+ "live_checked": 0,
+ "max_ts": {
+  "export": "2026-09-25T12:18:36Z",
+  "legacy": "2026-10-01T12:42:38Z"
+ },
+ "n_diffs": 2,
+ "n_export": 15779,
+ "n_legacy": 15779,
+ "rc_covers_window": true,
+ "rc_rows": 3,
+ "unexplained_primary": 0,
+ "wiki": "hrwikisource"
+}

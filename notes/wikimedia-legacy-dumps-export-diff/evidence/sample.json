@@ -1,0 +1,359 @@
+{
+ "bins": [
+  [
+   0,
+   1150000
+  ],
+  [
+   1150000,
+   5000000
+  ],
+  [
+   5000000,
+   25000000
+  ],
+  [
+   25000000,
+   300000000
+  ]
+ ],
+ "coverage": {
+  "frame": 1028,
+  "missing_by_status": {
+   "closed": 134
+  },
+  "missing_current_export": [
+   "aawiki",
+   "aawikibooks",
+   "aawiktionary",
+   "abwiktionary",
+   "advisorywiki",
+   "akwiki",
+   "akwikibooks",
+   "akwiktionary",
+   "amwikiquote",
+   "angwikibooks",
+   "angwikiquote",
+   "angwikisource",
+   "astwikibooks",
+   "astwikiquote",
+   "aswikibooks",
+   "aswiktionary",
+   "avwiktionary",
+   "aywikibooks",
+   "bgwikinews",
+   "bhwiktionary",
+   "biwikibooks",
+   "biwiktionary",
+   "bmwikibooks",
+   "bmwikiquote",
+   "bmwiktionary",
+   "bowikibooks",
+   "bowiktionary",
+   "chowiki",
+   "chwikibooks",
+   "chwiktionary",
+   "cnwikimedia",
+   "cowikibooks",
+   "cowikiquote",
+   "crwikiquote",
+   "crwiktionary",
+   "dzwiktionary",
+   "gawikibooks",
+   "gawikiquote",
+   "gnwikibooks",
+   "gotwikibooks",
+   "guwikibooks",
+   "howiki",
+   "htwikisource",
+   "huwikinews",
+   "hzwiki",
+   "iewikibooks",
+   "iiwiki",
+   "ikwiktionary",
+   "kjwiki",
+   "kkwikiquote",
+   "knwikibooks",
+   "krwiki",
+   "krwikiquote",
+   "kswikibooks",
+   "kswikiquote",
+   "kwwikiquote",
+   "lbwikibooks",
+   "lbwikiquote",
+   "lnwikibooks",
+   "lrcwiki",
+   "lvwikibooks",
+   "mhwiki",
+   "mhwiktionary",
+   "miwikibooks",
+   "mnwikibooks",
+   "muswiki",
+   "mywikibooks",
+   "nahwikibooks",
+   "nawiki",
+   "nawikibooks",
+   "nawikiquote",
+   "ndswikibooks",
+   "ndswikiquote",
+   "ngwiki",
+   "nzwikimedia",
+   "pa_uswikimedia",
+   "pihwiki",
+   "piwiktionary",
+   "pswikibooks",
+   "qualitywiki",
+   "quwikibooks",
+   "quwikiquote",
+   "rmwikibooks",
+   "rmwiktionary",
+   "rnwiktionary",
+   "scwiktionary",
+   "sdwikinews",
+   "sewikibooks",
+   "simplewikibooks",
+   "simplewikiquote",
+   "snwiktionary",
+   "strategywiki",
+   "suwikibooks",
+   "swwikibooks",
+   "tenwiki",
+   "thwikinews",
+   "tkwikibooks",
+   "tkwikiquote",
+   "towiktionary",
+   "trwikinews",
+   "ttwikiquote",
+   "twwiktionary",
+   "ugwikibooks",
+   "ugwikiquote",
+   "usabilitywiki",
+   "uzwikibooks",
+   "vowikibooks",
+   "vowikiquote",
+   "wawikibooks",
+   "wikimania2005wiki",
+   "wikimania2006wiki",
+   "wikimania2007wiki",
+   "wikimania2008wiki",
+   "wikimania2009wiki",
+   "wikimania2010wiki",
+   "wikimania2011wiki",
+   "wikimania2012wiki",
+   "wikimania2013wiki",
+   "wikimania2014wiki",
+   "wikimania2015wiki",
+   "wikimania2016wiki",
+   "wikimania2017wiki",
+   "wikimania2018wiki",
+   "wowikiquote",
+   "xhwikibooks",
+   "xhwiktionary",
+   "yowikibooks",
+   "yowiktionary",
+   "zawikibooks",
+   "zawikiquote",
+   "zawiktionary",
+   "zh_min_nanwikibooks",
+   "zh_min_nanwikiquote",
+   "zuwikibooks"
+  ]
+ },
+ "history_arm": [
+  "afwikibooks",
+  "crwiki",
+  "dawikiquote",
+  "lnwiktionary",
+  "minwikibooks",
+  "shnwikinews",
+  "shywiktionary",
+  "tnwiktionary",
+  "bclwikiquote",
+  "hewikinews",
+  "ltwikiquote",
+  "mlwikiquote",
+  "mswikibooks",
+  "nowikiquote",
+  "svwikibooks",
+  "acewiki",
+  "bgwikisource",
+  "bowiki",
+  "cawikiquote",
+  "pcdwiki",
+  "ruewiki",
+  "scwiki",
+  "vecwikisource",
+  "cywikisource",
+  "fawikisource",
+  "hrwikisource"
+ ],
+ "large_pool": 55,
+ "per_bin": 8,
+ "sample": [
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "afwikibooks"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "crwiki"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "dawikiquote"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "lnwiktionary"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "minwikibooks"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "shnwikinews"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "shywiktionary"
+  },
+  {
+   "bin": "0-1150000",
+   "pool": 137,
+   "wiki": "tnwiktionary"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "bclwikiquote"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "hewikinews"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "ltwikiquote"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "mlwikiquote"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "mswikibooks"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "nahwiki"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "nowikiquote"
+  },
+  {
+   "bin": "1150000-5000000",
+   "pool": 244,
+   "wiki": "svwikibooks"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "acewiki"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "bgwikisource"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "bowiki"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "cawikiquote"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "pcdwiki"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "ruewiki"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "scwiki"
+  },
+  {
+   "bin": "5000000-25000000",
+   "pool": 256,
+   "wiki": "vecwikisource"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "cywikisource"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "elwiktionary"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "fawikisource"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "fiwiktionary"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "hrwikisource"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "itwikiquote"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "jawikibooks"
+  },
+  {
+   "bin": "25000000-300000000",
+   "pool": 181,
+   "wiki": "sourceswiki"
+  }
+ ],
+ "seed": 13793,
+ "targeted": [
+  "enwiktionary",
+  "mgwiktionary"
+ ]
+}

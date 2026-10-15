@@ -1,0 +1,393 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "jawikibooks-2026-10-01-p1p48943.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 279876,
+    "sha1_attr": "4l5s3krc385dg26mv7ild1fy7dx4h8a",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "商法第595条",
+    "ts": "2025-08-10T04:45:22Z"
+   },
+   "key": 6533,
+   "legacy": {
+    "file": "jawikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 279876,
+    "sha1_attr": "4l5s3krc385dg26mv7ild1fy7dx4h8a",
+    "tdel": null,
+    "text_len": 1530,
+    "text_sha1": "27467a533f6c4308a9dd352d3672f3aba0ec353a",
+    "title": "商法第595条",
+    "ts": "2025-08-10T04:45:22Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 279875,
+     "revid": 279876,
+     "sha1": "27467a533f6c4308a9dd352d3672f3aba0ec353a",
+     "size": 1530,
+     "slots": {
+      "main": {
+       "sha1": "27467a533f6c4308a9dd352d3672f3aba0ec353a"
+      }
+     },
+     "timestamp": "2025-08-10T04:45:22Z"
+    },
+    "rev": {
+     "page": 6533,
+     "parentid": 279875,
+     "revid": 279876,
+     "sha1": "27467a533f6c4308a9dd352d3672f3aba0ec353a",
+     "size": 1530,
+     "slots": {
+      "main": {
+       "sha1": "27467a533f6c4308a9dd352d3672f3aba0ec353a"
+      }
+     },
+     "timestamp": "2025-08-10T04:45:22Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "jawikibooks-2026-10-01-p1p48943.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 282308,
+    "sha1_attr": "t7ikgly5tmi7upo60whozok2qcnyfa9",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "国民年金法施行規則第1条の4",
+    "ts": "2025-09-07T17:10:37Z"
+   },
+   "key": 13222,
+   "legacy": {
+    "file": "jawikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 282308,
+    "sha1_attr": "t7ikgly5tmi7upo60whozok2qcnyfa9",
+    "tdel": null,
+    "text_len": 5469,
+    "text_sha1": "fa0d1cce08f2ab9c8ac99b5382274eb2f96dc8e1",
+    "title": "国民年金法施行規則第1条の4",
+    "ts": "2025-09-07T17:10:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 282307,
+     "revid": 282308,
+     "sha1": "fa0d1cce08f2ab9c8ac99b5382274eb2f96dc8e1",
+     "size": 5469,
+     "slots": {
+      "main": {
+       "sha1": "fa0d1cce08f2ab9c8ac99b5382274eb2f96dc8e1"
+      }
+     },
+     "timestamp": "2025-09-07T17:10:37Z"
+    },
+    "rev": {
+     "page": 13222,
+     "parentid": 282307,
+     "revid": 282308,
+     "sha1": "fa0d1cce08f2ab9c8ac99b5382274eb2f96dc8e1",
+     "size": 5469,
+     "slots": {
+      "main": {
+       "sha1": "fa0d1cce08f2ab9c8ac99b5382274eb2f96dc8e1"
+      }
+     },
+     "timestamp": "2025-09-07T17:10:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "jawikibooks-2026-10-01-p1p48943.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 284967,
+    "sha1_attr": "01oks65yllredzem8y7zvll0n2eruz1",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "建築基準法施行規則第11条の3",
+    "ts": "2025-10-26T20:44:22Z"
+   },
+   "key": 16467,
+   "legacy": {
+    "file": "jawikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 284967,
+    "sha1_attr": "01oks65yllredzem8y7zvll0n2eruz1",
+    "tdel": null,
+    "text_len": 2165,
+    "text_sha1": "00667017b8fb421996f9bd131f93f6f737d35b8d",
+    "title": "建築基準法施行規則第11条の3",
+    "ts": "2025-10-26T20:44:22Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 284966,
+     "revid": 284967,
+     "sha1": "00667017b8fb421996f9bd131f93f6f737d35b8d",
+     "size": 2165,
+     "slots": {
+      "main": {
+       "sha1": "00667017b8fb421996f9bd131f93f6f737d35b8d"
+      }
+     },
+     "timestamp": "2025-10-26T20:44:22Z"
+    },
+    "rev": {
+     "page": 16467,
+     "parentid": 284966,
+     "revid": 284967,
+     "sha1": "00667017b8fb421996f9bd131f93f6f737d35b8d",
+     "size": 2165,
+     "slots": {
+      "main": {
+       "sha1": "00667017b8fb421996f9bd131f93f6f737d35b8d"
+      }
+     },
+     "timestamp": "2025-10-26T20:44:22Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "jawikibooks-2026-10-01-p1p48943.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 279238,
+    "sha1_attr": "crfpmiyevj0t8jwjku8pvlw1gya90fg",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "労働安全衛生法第58条",
+    "ts": "2025-08-03T06:30:02Z"
+   },
+   "key": 18547,
+   "legacy": {
+    "file": "jawikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 279238,
+    "sha1_attr": "crfpmiyevj0t8jwjku8pvlw1gya90fg",
+    "tdel": null,
+    "text_len": 1498,
+    "text_sha1": "6d411b20b35fc56306de6f4fe32874a9afa3bc6c",
+    "title": "労働安全衛生法第58条",
+    "ts": "2025-08-03T06:30:02Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 279237,
+     "revid": 279238,
+     "sha1": "6d411b20b35fc56306de6f4fe32874a9afa3bc6c",
+     "size": 1498,
+     "slots": {
+      "main": {
+       "sha1": "6d411b20b35fc56306de6f4fe32874a9afa3bc6c"
+      }
+     },
+     "timestamp": "2025-08-03T06:30:02Z"
+    },
+    "rev": {
+     "page": 18547,
+     "parentid": 279237,
+     "revid": 279238,
+     "sha1": "6d411b20b35fc56306de6f4fe32874a9afa3bc6c",
+     "size": 1498,
+     "slots": {
+      "main": {
+       "sha1": "6d411b20b35fc56306de6f4fe32874a9afa3bc6c"
+      }
+     },
+     "timestamp": "2025-08-03T06:30:02Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "jawikibooks-2026-10-01-p1p48943.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 279241,
+    "sha1_attr": "ma74uaex81o4je39wjdm8hsu426qfpb",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "労働安全衛生法第57条の5",
+    "ts": "2025-08-03T09:50:28Z"
+   },
+   "key": 21874,
+   "legacy": {
+    "file": "jawikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 279241,
+    "sha1_attr": "ma74uaex81o4je39wjdm8hsu426qfpb",
+    "tdel": null,
+    "text_len": 6087,
+    "text_sha1": "bec36868439daf3c7721bdc2048e51abba699fff",
+    "title": "労働安全衛生法第57条の5",
+    "ts": "2025-08-03T09:50:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 279240,
+     "revid": 279241,
+     "sha1": "bec36868439daf3c7721bdc2048e51abba699fff",
+     "size": 6087,
+     "slots": {
+      "main": {
+       "sha1": "bec36868439daf3c7721bdc2048e51abba699fff"
+      }
+     },
+     "timestamp": "2025-08-03T09:50:28Z"
+    },
+    "rev": {
+     "page": 21874,
+     "parentid": 279240,
+     "revid": 279241,
+     "sha1": "bec36868439daf3c7721bdc2048e51abba699fff",
+     "size": 6087,
+     "slots": {
+      "main": {
+       "sha1": "bec36868439daf3c7721bdc2048e51abba699fff"
+      }
+     },
+     "timestamp": "2025-08-03T09:50:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "jawikibooks-2026-10-01-p1p48943.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 283876,
+    "sha1_attr": "ddj6ejp0ne1gvhpk0jhw8zze1yk5cgu",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "カテゴリ:短時間労働者及び有期雇用労働者の雇用管理の改善等に関する法律",
+    "ts": "2025-10-01T18:51:20Z"
+   },
+   "key": 38048,
+   "legacy": {
+    "file": "jawikibooks-20261001-pages-meta-current.xml.bz2",
+    "ns": 14,
+    "redirect": null,
+    "rid": 283876,
+    "sha1_attr": "ddj6ejp0ne1gvhpk0jhw8zze1yk5cgu",
+    "tdel": null,
+    "text_len": 164,
+    "text_sha1": "728242c9467a09ce006e23ecae5e3849fdc3ba5e",
+    "title": "カテゴリ:短時間労働者及び有期雇用労働者の雇用管理の改善等に関する法律",
+    "ts": "2025-10-01T18:51:20Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 275057,
+     "revid": 283876,
+     "sha1": "728242c9467a09ce006e23ecae5e3849fdc3ba5e",
+     "size": 164,
+     "slots": {
+      "main": {
+       "sha1": "728242c9467a09ce006e23ecae5e3849fdc3ba5e"
+      }
+     },
+     "timestamp": "2025-10-01T18:51:20Z"
+    },
+    "rev": {
+     "page": 38048,
+     "parentid": 275057,
+     "revid": 283876,
+     "sha1": "728242c9467a09ce006e23ecae5e3849fdc3ba5e",
+     "size": 164,
+     "slots": {
+      "main": {
+       "sha1": "728242c9467a09ce006e23ecae5e3849fdc3ba5e"
+      }
+     },
+     "timestamp": "2025-10-01T18:51:20Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 84,
+  "REV_DIFF|TIMING": 8,
+  "TEXT_DIFF|UNEXPLAINED": 6
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 6,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|TEXT_DIFF": 5,
+  "14|TEXT_DIFF": 1
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 3,
+   "no_text_not_deleted": 178
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 3,
+   "no_text_not_deleted": 172
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 6
+ },
+ "live_checked": 6,
+ "max_ts": {
+  "export": "2026-09-30T23:26:21Z",
+  "legacy": "2026-10-01T15:55:56Z"
+ },
+ "n_diffs": 98,
+ "n_export": 34009,
+ "n_legacy": 34009,
+ "rc_covers_window": true,
+ "rc_rows": 323,
+ "unexplained_primary": 6,
+ "wiki": "jawikibooks"
+}

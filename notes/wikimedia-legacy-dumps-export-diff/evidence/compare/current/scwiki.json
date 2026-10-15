@@ -1,0 +1,89 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 19023,
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-current.xml.bz2",
+    "ns": 6,
+    "redirect": null,
+    "rid": 162055,
+    "sha1_attr": "ryqsfnvim0cilx9vkjrqhmnrofgs2pe",
+    "tdel": null,
+    "text_len": 549,
+    "text_sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+    "title": "File:Logotipu Istitutu Camillo Bellieni.jpg",
+    "ts": "2019-11-26T10:05:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 162050,
+     "revid": 162055,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T10:05:45Z"
+    },
+    "rev": {
+     "page": 19023,
+     "parentid": 162050,
+     "revid": 162055,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T10:05:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "MISSING_EXPORT|TIMING": 4,
+  "MISSING_EXPORT|UNEXPLAINED": 1,
+  "REV_DIFF|TIMING": 7
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 1,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "6|MISSING_EXPORT": 1
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 44
+  },
+  "legacy": {
+   "no_text_not_deleted": 44
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 1
+ },
+ "live_checked": 1,
+ "max_ts": {
+  "export": "2026-09-29T12:41:30Z",
+  "legacy": "2026-10-01T20:16:16Z"
+ },
+ "n_diffs": 12,
+ "n_export": 17835,
+ "n_legacy": 17840,
+ "rc_covers_window": true,
+ "rc_rows": 34,
+ "unexplained_primary": 1,
+ "wiki": "scwiki"
+}

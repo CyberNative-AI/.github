@@ -1,0 +1,244 @@
+{
+ "arm": "history",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    4971,
+    23088
+   ],
+   "legacy": {
+    "file": "nowikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 23088,
+    "sha1_attr": "p622rjoio5uhv33un7xhm442v9cerkc",
+    "tdel": null,
+    "text_len": 30,
+    "text_sha1": "d7760fd10b4fd737983d0c78d911a5e885c1430c",
+    "title": null,
+    "ts": "2016-04-26T18:33:55Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 23088,
+     "revid": 26484,
+     "sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff",
+     "size": 42,
+     "slots": {
+      "main": {
+       "sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff"
+      }
+     },
+     "timestamp": "2022-02-21T01:06:03Z"
+    },
+    "rev": {
+     "page": 4971,
+     "parentid": 0,
+     "revid": 23088,
+     "sha1": "d7760fd10b4fd737983d0c78d911a5e885c1430c",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "d7760fd10b4fd737983d0c78d911a5e885c1430c"
+      }
+     },
+     "timestamp": "2016-04-26T18:33:55Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    4971,
+    26484
+   ],
+   "legacy": {
+    "file": "nowikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 26484,
+    "sha1_attr": "hyjd7zfmrwc3vzm97l6uk0o0xgxunsv",
+    "tdel": null,
+    "text_len": 42,
+    "text_sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff",
+    "title": null,
+    "ts": "2022-02-21T01:06:03Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 23088,
+     "revid": 26484,
+     "sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff",
+     "size": 42,
+     "slots": {
+      "main": {
+       "sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff"
+      }
+     },
+     "timestamp": "2022-02-21T01:06:03Z"
+    },
+    "rev": {
+     "page": 4971,
+     "parentid": 23088,
+     "revid": 26484,
+     "sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff",
+     "size": 42,
+     "slots": {
+      "main": {
+       "sha1": "99bf48aec578a251317391d6aa38cf51bf86e4ff"
+      }
+     },
+     "timestamp": "2022-02-21T01:06:03Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5167,
+    25002
+   ],
+   "legacy": {
+    "file": "nowikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 25002,
+    "sha1_attr": "0nzb19mczsfpeutkq7g2yvjk4b3b65u",
+    "tdel": null,
+    "text_len": 12,
+    "text_sha1": "05b3e0007228947dd30bac648aa5719d3e2222f2",
+    "title": null,
+    "ts": "2019-09-29T08:55:26Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 25002,
+     "sha1": "05b3e0007228947dd30bac648aa5719d3e2222f2",
+     "size": 12,
+     "slots": {
+      "main": {
+       "sha1": "05b3e0007228947dd30bac648aa5719d3e2222f2"
+      }
+     },
+     "timestamp": "2019-09-29T08:55:26Z"
+    },
+    "rev": {
+     "page": 5167,
+     "parentid": 0,
+     "revid": 25002,
+     "sha1": "05b3e0007228947dd30bac648aa5719d3e2222f2",
+     "size": 12,
+     "slots": {
+      "main": {
+       "sha1": "05b3e0007228947dd30bac648aa5719d3e2222f2"
+      }
+     },
+     "timestamp": "2019-09-29T08:55:26Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    5198,
+    25271
+   ],
+   "legacy": {
+    "file": "nowikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 25271,
+    "sha1_attr": "b6ib6fkatj0zqbarnhcr366lp6izwgu",
+    "tdel": null,
+    "text_len": 23,
+    "text_sha1": "5fb7831f1b4bb73fb82628dd18ce4bc809b8891e",
+    "title": null,
+    "ts": "2020-11-28T23:02:11Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 25271,
+     "sha1": "5fb7831f1b4bb73fb82628dd18ce4bc809b8891e",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "5fb7831f1b4bb73fb82628dd18ce4bc809b8891e"
+      }
+     },
+     "timestamp": "2020-11-28T23:02:11Z"
+    },
+    "rev": {
+     "page": 5198,
+     "parentid": 0,
+     "revid": 25271,
+     "sha1": "5fb7831f1b4bb73fb82628dd18ce4bc809b8891e",
+     "size": 23,
+     "slots": {
+      "main": {
+       "sha1": "5fb7831f1b4bb73fb82628dd18ce4bc809b8891e"
+      }
+     },
+     "timestamp": "2020-11-28T23:02:11Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 6,
+  "MISSING_EXPORT|TIMING": 1,
+  "MISSING_EXPORT|UNEXPLAINED": 4
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 4,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "2|MISSING_EXPORT": 4
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 2,
+   "no_text_not_deleted": 142
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 2,
+   "no_text_not_deleted": 142
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 4
+ },
+ "live_checked": 4,
+ "max_ts": {
+  "export": "2026-09-28T06:48:15Z",
+  "legacy": "2026-10-01T12:42:49Z"
+ },
+ "n_diffs": 11,
+ "n_export": 22805,
+ "n_legacy": 22810,
+ "rc_covers_window": true,
+ "rc_rows": 4,
+ "unexplained_primary": 4,
+ "wiki": "nowikiquote"
+}

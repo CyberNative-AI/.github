@@ -1,0 +1,40 @@
+{
+ "arm": "current",
+ "checked": [],
+ "counts": {
+  "META_DIFF|TIMING": 1,
+  "META_DIFF|UNEXPLAINED": 4337
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 1,
+   "no_text_not_deleted": 58,
+   "sha1_attr_mismatch": 1
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 1,
+   "no_text_not_deleted": 58,
+   "sha1_attr_mismatch": 1
+  }
+ },
+ "live": {},
+ "live_checked": 0,
+ "max_ts": {
+  "export": "2026-09-30T11:09:52Z",
+  "legacy": "2026-09-30T11:09:52Z"
+ },
+ "n_diffs": 4338,
+ "n_export": 22816,
+ "n_legacy": 22816,
+ "rc_covers_window": true,
+ "rc_rows": 50,
+ "unexplained_primary": 0,
+ "wiki": "bowiki"
+}

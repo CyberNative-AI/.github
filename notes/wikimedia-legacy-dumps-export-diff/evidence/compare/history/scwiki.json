@@ -1,0 +1,378 @@
+{
+ "arm": "history",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "scwiki-2026-10-01-p2p23611.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 32,
+    "sha1_attr": "he0lkat81yabsktxddb1gqtbq072shh",
+    "tdel": null,
+    "text_len": 5670,
+    "text_sha1": "522f00a98b6e5ffd8b5779d01c790622f00d7c38",
+    "title": "Pàgina printzipale",
+    "ts": "2004-05-11T20:33:02Z"
+   },
+   "key": [
+    3,
+    32
+   ],
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 32,
+    "sha1_attr": "he0lkat81yabsktxddb1gqtbq072shh",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Pàgina printzipale",
+    "ts": "2004-05-11T20:33:02Z"
+   },
+   "live": {
+    "latest": {
+     "parentid": 179751,
+     "revid": 182850,
+     "sha1": "fe12589c9317413dd1c496c00c3450cee62f7dce",
+     "size": 13234,
+     "slots": {
+      "main": {
+       "sha1": "fe12589c9317413dd1c496c00c3450cee62f7dce"
+      }
+     },
+     "timestamp": "2024-01-12T21:42:21Z"
+    },
+    "rev": {
+     "page": 3,
+     "parentid": 31,
+     "revid": 32,
+     "sha1": "94de01ab316ad9cdb2992206cb882b52efeec3b5",
+     "size": 5817,
+     "slots": {
+      "main": {
+       "sha1": "94de01ab316ad9cdb2992206cb882b52efeec3b5"
+      }
+     },
+     "timestamp": "2004-05-11T20:33:02Z"
+    },
+    "verdict": "BOTH_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "scwiki-2026-10-01-p2p23611.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 33,
+    "sha1_attr": "66xno5z15l62hktj1kssg6a94powzi3",
+    "tdel": null,
+    "text_len": 5673,
+    "text_sha1": "ea99ebca99a4ce33675ca008d9aa0fc6bf2628f7",
+    "title": "Pàgina printzipale",
+    "ts": "2004-05-11T20:33:21Z"
+   },
+   "key": [
+    3,
+    33
+   ],
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 33,
+    "sha1_attr": "66xno5z15l62hktj1kssg6a94powzi3",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Pàgina printzipale",
+    "ts": "2004-05-11T20:33:21Z"
+   },
+   "live": {
+    "latest": {
+     "parentid": 179751,
+     "revid": 182850,
+     "sha1": "fe12589c9317413dd1c496c00c3450cee62f7dce",
+     "size": 13234,
+     "slots": {
+      "main": {
+       "sha1": "fe12589c9317413dd1c496c00c3450cee62f7dce"
+      }
+     },
+     "timestamp": "2024-01-12T21:42:21Z"
+    },
+    "rev": {
+     "page": 3,
+     "parentid": 32,
+     "revid": 33,
+     "sha1": "35039b598bc64aa1f15901ad12bff0f91cc717bb",
+     "size": 5820,
+     "slots": {
+      "main": {
+       "sha1": "35039b598bc64aa1f15901ad12bff0f91cc717bb"
+      }
+     },
+     "timestamp": "2004-05-11T20:33:21Z"
+    },
+    "verdict": "BOTH_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "scwiki-2026-10-01-p2p23611.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 34,
+    "sha1_attr": "ehseanw7molxms7lnl520jzcgyh8fvm",
+    "tdel": null,
+    "text_len": 5672,
+    "text_sha1": "eda955d6ea810e650ae454a25e99e2578d277048",
+    "title": "Pàgina printzipale",
+    "ts": "2004-05-11T20:33:37Z"
+   },
+   "key": [
+    3,
+    34
+   ],
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 34,
+    "sha1_attr": "ehseanw7molxms7lnl520jzcgyh8fvm",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Pàgina printzipale",
+    "ts": "2004-05-11T20:33:37Z"
+   },
+   "live": {
+    "latest": {
+     "parentid": 179751,
+     "revid": 182850,
+     "sha1": "fe12589c9317413dd1c496c00c3450cee62f7dce",
+     "size": 13234,
+     "slots": {
+      "main": {
+       "sha1": "fe12589c9317413dd1c496c00c3450cee62f7dce"
+      }
+     },
+     "timestamp": "2024-01-12T21:42:21Z"
+    },
+    "rev": {
+     "page": 3,
+     "parentid": 33,
+     "revid": 34,
+     "sha1": "7c14ee28d1b125627fed253c3d97a679afae7b62",
+     "size": 5818,
+     "slots": {
+      "main": {
+       "sha1": "7c14ee28d1b125627fed253c3d97a679afae7b62"
+      }
+     },
+     "timestamp": "2004-05-11T20:33:37Z"
+    },
+    "verdict": "BOTH_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    19023,
+    162049
+   ],
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 6,
+    "redirect": null,
+    "rid": 162049,
+    "sha1_attr": "m735o2r2rqfnzn9b04lqadc90auxwpz",
+    "tdel": null,
+    "text_len": 48,
+    "text_sha1": "be060d382645a7e72821c072ad14c7f098f3a9e7",
+    "title": "File:Logotipu Istitutu Camillo Bellieni.jpg",
+    "ts": "2019-11-26T09:42:03Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 162050,
+     "revid": 162055,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T10:05:45Z"
+    },
+    "rev": {
+     "page": 19023,
+     "parentid": 0,
+     "revid": 162049,
+     "sha1": "be060d382645a7e72821c072ad14c7f098f3a9e7",
+     "size": 48,
+     "slots": {
+      "main": {
+       "sha1": "be060d382645a7e72821c072ad14c7f098f3a9e7"
+      }
+     },
+     "timestamp": "2019-11-26T09:42:03Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    19023,
+    162050
+   ],
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 6,
+    "redirect": null,
+    "rid": 162050,
+    "sha1_attr": "ryqsfnvim0cilx9vkjrqhmnrofgs2pe",
+    "tdel": null,
+    "text_len": 549,
+    "text_sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+    "title": "File:Logotipu Istitutu Camillo Bellieni.jpg",
+    "ts": "2019-11-26T09:49:10Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 162050,
+     "revid": 162055,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T10:05:45Z"
+    },
+    "rev": {
+     "page": 19023,
+     "parentid": 162049,
+     "revid": 162050,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T09:49:10Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    19023,
+    162055
+   ],
+   "legacy": {
+    "file": "scwiki-20261001-pages-meta-history.xml.bz2",
+    "ns": 6,
+    "redirect": null,
+    "rid": 162055,
+    "sha1_attr": "ryqsfnvim0cilx9vkjrqhmnrofgs2pe",
+    "tdel": null,
+    "text_len": 549,
+    "text_sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+    "title": "File:Logotipu Istitutu Camillo Bellieni.jpg",
+    "ts": "2019-11-26T10:05:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 162050,
+     "revid": 162055,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T10:05:45Z"
+    },
+    "rev": {
+     "page": 19023,
+     "parentid": 162050,
+     "revid": 162055,
+     "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2",
+     "size": 549,
+     "slots": {
+      "main": {
+       "sha1": "ef678d0730ac93e18171a4d29319b2cd1e96e8b2"
+      }
+     },
+     "timestamp": "2019-11-26T10:05:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 164,
+  "MISSING_EXPORT|TIMING": 12,
+  "MISSING_EXPORT|UNEXPLAINED": 3,
+  "TEXT_DIFF|UNEXPLAINED": 3
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 3,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "6|MISSING_EXPORT": 3
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 21,
+   "no_text_not_deleted": 451,
+   "sha1_attr_mismatch": 20
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 18,
+   "no_text_not_deleted": 454,
+   "sha1_attr_mismatch": 17
+  }
+ },
+ "live": {
+  "BOTH_WRONG": 3,
+  "EXPORT_WRONG": 3
+ },
+ "live_checked": 6,
+ "max_ts": {
+  "export": "2026-09-29T12:41:30Z",
+  "legacy": "2026-10-01T20:16:16Z"
+ },
+ "n_diffs": 182,
+ "n_export": 177134,
+ "n_legacy": 177149,
+ "rc_covers_window": true,
+ "rc_rows": 34,
+ "unexplained_primary": 6,
+ "wiki": "scwiki"
+}

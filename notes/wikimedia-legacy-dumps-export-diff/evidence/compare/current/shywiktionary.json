@@ -1,0 +1,89 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 4308,
+   "legacy": {
+    "file": "shywiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 7143,
+    "sha1_attr": "k3olos7rwsx2f7uq9xu4v2a75w7m323",
+    "tdel": null,
+    "text_len": 5,
+    "text_sha1": "ac17aa2b5e8405061a817af066612e3bbba8affb",
+    "title": "Jesus",
+    "ts": "2020-05-11T15:05:17Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7143,
+     "sha1": "ac17aa2b5e8405061a817af066612e3bbba8affb",
+     "size": 5,
+     "slots": {
+      "main": {
+       "sha1": "ac17aa2b5e8405061a817af066612e3bbba8affb"
+      }
+     },
+     "timestamp": "2020-05-11T15:05:17Z"
+    },
+    "rev": {
+     "page": 4308,
+     "parentid": 0,
+     "revid": 7143,
+     "sha1": "ac17aa2b5e8405061a817af066612e3bbba8affb",
+     "size": 5,
+     "slots": {
+      "main": {
+       "sha1": "ac17aa2b5e8405061a817af066612e3bbba8affb"
+      }
+     },
+     "timestamp": "2020-05-11T15:05:17Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 1,
+  "MISSING_EXPORT|UNEXPLAINED": 1,
+  "REV_DIFF|TIMING": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 1,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|MISSING_EXPORT": 1
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 2
+  },
+  "legacy": {
+   "no_text_not_deleted": 2
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 1
+ },
+ "live_checked": 1,
+ "max_ts": {
+  "export": "2026-09-25T12:48:39Z",
+  "legacy": "2026-10-01T12:42:54Z"
+ },
+ "n_diffs": 3,
+ "n_export": 4302,
+ "n_legacy": 4303,
+ "rc_covers_window": true,
+ "rc_rows": 1,
+ "unexplained_primary": 1,
+ "wiki": "shywiktionary"
+}

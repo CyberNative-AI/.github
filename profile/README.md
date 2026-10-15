@@ -25,6 +25,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[Switching from Wikimedia's legacy XML dumps? Diff one edition first](https://github.com/CyberNative-AI/.github/tree/main/notes/wikimedia-legacy-dumps-export-diff) — On 14 of 29 randomly drawn wikis, the 1 October MediaWiki Content File Export is missing pages or has empty text that the legacy dump and the live wiki both have, mostly after page moves and on old redirects. Includes a four-step check for your own wiki before the last legacy edition in December.
+
 [A 10-item LLM README review against 80 user-reported documentation problems: 45% named, about 3 in 4 when visible in the text](https://github.com/CyberNative-AI/.github/tree/main/notes/llm-readme-top10-user-reported) — Given each README as it stood before the fix, an LLM's ten-item list named the reported problem in 45% of 80 cases: 73% when the problem was visible in the text, 26% when it needed outside facts such as dead links or stale versions. Includes the prompt, the 80 linked case records, the match verdicts and the scripts.
 
 [Asking an LLM to simulate your README's users: most mechanical defects found, several newcomer questions missed](https://github.com/CyberNative-AI/.github/tree/main/notes/llm-simulated-readme-testers) — On a README that paid think-aloud testers had already reviewed, an LLM simulating five varied users raised about 60% of their findings per run. It flagged the broken key-tool link and the missing cURL requirement in 8 of 8 runs and stopped once they were fixed, but never raised that the README did not say what the software does (0 of 8). Includes all 28 model outputs, the match verdicts and the scripts.

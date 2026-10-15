@@ -1,0 +1,37 @@
+{
+ "arm": "history",
+ "checked": [],
+ "counts": {
+  "META_DIFF|TIMING": 4,
+  "META_DIFF|UNEXPLAINED": 5,
+  "MISSING_EXPORT|TIMING": 2
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 17
+  },
+  "legacy": {
+   "no_text_not_deleted": 17
+  }
+ },
+ "live": {},
+ "live_checked": 0,
+ "max_ts": {
+  "export": "2026-09-30T10:08:34Z",
+  "legacy": "2026-10-01T10:05:47Z"
+ },
+ "n_diffs": 11,
+ "n_export": 10528,
+ "n_legacy": 10530,
+ "rc_covers_window": true,
+ "rc_rows": 12,
+ "unexplained_primary": 0,
+ "wiki": "minwikibooks"
+}

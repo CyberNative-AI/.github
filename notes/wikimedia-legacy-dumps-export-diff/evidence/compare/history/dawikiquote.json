@@ -1,0 +1,242 @@
+{
+ "arm": "history",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    4465,
+    17893
+   ],
+   "legacy": {
+    "file": "dawikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 17893,
+    "sha1_attr": "tv8bn4ydd6dcrx1gnre5ulxj4tgqa90",
+    "tdel": null,
+    "text_len": 30,
+    "text_sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64",
+    "title": null,
+    "ts": "2019-09-26T06:52:40Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 17893,
+     "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64"
+      }
+     },
+     "timestamp": "2019-09-26T06:52:40Z"
+    },
+    "rev": {
+     "page": 4465,
+     "parentid": 0,
+     "revid": 17893,
+     "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "ffb0d5ef5aa6869f635f4f48e248f15060215a64"
+      }
+     },
+     "timestamp": "2019-09-26T06:52:40Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    4466,
+    17895
+   ],
+   "legacy": {
+    "file": "dawikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 17895,
+    "sha1_attr": "tasqkvtt95ca9wvrlph9o7q1ivheaw1",
+    "tdel": null,
+    "text_len": 385,
+    "text_sha1": "fad4f0f05fbc7fc60a3679e7c19ac0fb271b1ba1",
+    "title": "Wikiquote:Anmodning om administratorstatus/SimmeD 3",
+    "ts": "2019-09-27T06:36:43Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 17896,
+     "revid": 17901,
+     "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+     "size": 709,
+     "slots": {
+      "main": {
+       "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14"
+      }
+     },
+     "timestamp": "2019-10-06T04:52:24Z"
+    },
+    "rev": {
+     "page": 4466,
+     "parentid": 0,
+     "revid": 17895,
+     "sha1": "fad4f0f05fbc7fc60a3679e7c19ac0fb271b1ba1",
+     "size": 385,
+     "slots": {
+      "main": {
+       "sha1": "fad4f0f05fbc7fc60a3679e7c19ac0fb271b1ba1"
+      }
+     },
+     "timestamp": "2019-09-27T06:36:43Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    4466,
+    17896
+   ],
+   "legacy": {
+    "file": "dawikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 17896,
+    "sha1_attr": "iy9yflf7ppnofx2i7moym18zfjrjzor",
+    "tdel": null,
+    "text_len": 575,
+    "text_sha1": "a23ef107a37ced39ca354d114bf4ee1754dd126b",
+    "title": "Wikiquote:Anmodning om administratorstatus/SimmeD 3",
+    "ts": "2019-09-28T09:17:55Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 17896,
+     "revid": 17901,
+     "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+     "size": 709,
+     "slots": {
+      "main": {
+       "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14"
+      }
+     },
+     "timestamp": "2019-10-06T04:52:24Z"
+    },
+    "rev": {
+     "page": 4466,
+     "parentid": 17895,
+     "revid": 17896,
+     "sha1": "a23ef107a37ced39ca354d114bf4ee1754dd126b",
+     "size": 575,
+     "slots": {
+      "main": {
+       "sha1": "a23ef107a37ced39ca354d114bf4ee1754dd126b"
+      }
+     },
+     "timestamp": "2019-09-28T09:17:55Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": [
+    4466,
+    17901
+   ],
+   "legacy": {
+    "file": "dawikiquote-20261001-pages-meta-history.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 17901,
+    "sha1_attr": "97rmqhloslbipnof7u3kc853f2x2ec4",
+    "tdel": null,
+    "text_len": 709,
+    "text_sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+    "title": "Wikiquote:Anmodning om administratorstatus/SimmeD 3",
+    "ts": "2019-10-06T04:52:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 17896,
+     "revid": 17901,
+     "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+     "size": 709,
+     "slots": {
+      "main": {
+       "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14"
+      }
+     },
+     "timestamp": "2019-10-06T04:52:24Z"
+    },
+    "rev": {
+     "page": 4466,
+     "parentid": 17896,
+     "revid": 17901,
+     "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14",
+     "size": 709,
+     "slots": {
+      "main": {
+       "sha1": "4ee5021db554d4a261ccf364cdba11d0f3766e14"
+      }
+     },
+     "timestamp": "2019-10-06T04:52:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 35,
+  "MISSING_EXPORT|UNEXPLAINED": 4
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 4,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "2|MISSING_EXPORT": 1,
+  "4|MISSING_EXPORT": 3
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 49
+  },
+  "legacy": {
+   "no_text_not_deleted": 49
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 4
+ },
+ "live_checked": 4,
+ "max_ts": {
+  "export": "2026-09-29T19:55:56Z",
+  "legacy": "2026-09-29T19:55:56Z"
+ },
+ "n_diffs": 39,
+ "n_export": 14523,
+ "n_legacy": 14527,
+ "rc_covers_window": true,
+ "rc_rows": 4,
+ "unexplained_primary": 4,
+ "wiki": "dawikiquote"
+}

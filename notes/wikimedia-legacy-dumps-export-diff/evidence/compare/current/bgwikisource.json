@@ -1,0 +1,89 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 5900,
+   "legacy": {
+    "file": "bgwikisource-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 18408,
+    "sha1_attr": "ahcrrvkdnx585pqw1zclb8gaqzwecof",
+    "tdel": null,
+    "text_len": 36231,
+    "text_sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+    "title": "За македонцките работи/Предговор",
+    "ts": "2025-03-16T13:38:39Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "rev": {
+     "page": 5900,
+     "parentid": 16790,
+     "revid": 18408,
+     "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af",
+     "size": 36231,
+     "slots": {
+      "main": {
+       "sha1": "59bc388dc3b95fc39352a90035ee1bf43f98e3af"
+      }
+     },
+     "timestamp": "2025-03-16T13:38:39Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "MISSING_EXPORT|UNEXPLAINED": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 1,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|MISSING_EXPORT": 1
+ },
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 18,
+   "no_text_not_deleted": 60
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 18,
+   "no_text_not_deleted": 60
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 1
+ },
+ "live_checked": 1,
+ "max_ts": {
+  "export": "2026-09-25T12:18:36Z",
+  "legacy": "2026-09-25T12:18:36Z"
+ },
+ "n_diffs": 1,
+ "n_export": 4049,
+ "n_legacy": 4050,
+ "rc_covers_window": true,
+ "rc_rows": 1,
+ "unexplained_primary": 1,
+ "wiki": "bgwikisource"
+}

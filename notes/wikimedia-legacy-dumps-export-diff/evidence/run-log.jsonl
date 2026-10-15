@@ -1,0 +1,165 @@
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:22Z", "wiki": "acewiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 1150}, "legacy": {"files": 1, "revisions": 1151}}, "t": "2026-10-14T23:43:22Z", "wiki": "afwikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:25Z", "wiki": "afwikibooks"}
+{"arm": "current", "step": "fetch", "t": "2026-10-14T23:43:25Z", "unusable": ["SHA256SUMS HTTP 404"], "wiki": "crwiki"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:27Z", "wiki": "bclwikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 2364}, "legacy": {"files": 1, "revisions": 2366}}, "t": "2026-10-14T23:43:27Z", "wiki": "dawikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 1507}, "legacy": {"files": 1, "revisions": 1507}}, "t": "2026-10-14T23:43:30Z", "wiki": "lnwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:30Z", "wiki": "bgwikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 2607}, "legacy": {"files": 1, "revisions": 2609}}, "t": "2026-10-14T23:43:33Z", "wiki": "minwikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:33Z", "wiki": "bowiki"}
+{"arm": "current", "step": "fetch", "t": "2026-10-14T23:43:34Z", "unusable": ["SHA256SUMS HTTP 404"], "wiki": "shnwikinews"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:35Z", "wiki": "cawikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 4302}, "legacy": {"files": 1, "revisions": 4303}}, "t": "2026-10-14T23:43:36Z", "wiki": "shywiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:38Z", "wiki": "crwiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 1090}, "legacy": {"files": 1, "revisions": 1118}}, "t": "2026-10-14T23:43:38Z", "wiki": "tnwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:40Z", "wiki": "cywikisource"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:43:43Z", "wiki": "dawikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 2387}, "legacy": {"files": 1, "revisions": 2387}}, "t": "2026-10-14T23:43:44Z", "wiki": "bclwikiquote"}
+{"arm": "current", "step": "fetch", "t": "2026-10-14T23:43:45Z", "unusable": ["SHA256SUMS HTTP 404"], "wiki": "hewikinews"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 6404}, "legacy": {"files": 1, "revisions": 6404}}, "t": "2026-10-14T23:43:54Z", "wiki": "ltwikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 3836}, "legacy": {"files": 1, "revisions": 3841}}, "t": "2026-10-14T23:43:58Z", "wiki": "mlwikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 3678}, "legacy": {"files": 1, "revisions": 3678}}, "t": "2026-10-14T23:44:02Z", "wiki": "mswikibooks"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 8474}, "legacy": {"files": 1, "revisions": 8475}}, "t": "2026-10-14T23:44:08Z", "wiki": "nahwiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 3114}, "legacy": {"files": 1, "revisions": 3117}}, "t": "2026-10-14T23:44:10Z", "wiki": "nowikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 6328}, "legacy": {"files": 1, "revisions": 6328}}, "t": "2026-10-14T23:44:17Z", "wiki": "svwikibooks"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 28374}, "legacy": {"files": 1, "revisions": 28374}}, "t": "2026-10-14T23:44:27Z", "wiki": "acewiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 4049}, "legacy": {"files": 1, "revisions": 4050}}, "t": "2026-10-14T23:44:39Z", "wiki": "bgwikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 22816}, "legacy": {"files": 1, "revisions": 22816}}, "t": "2026-10-14T23:45:04Z", "wiki": "bowiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 14250}, "legacy": {"files": 1, "revisions": 14251}}, "t": "2026-10-14T23:45:17Z", "wiki": "cawikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 12230}, "legacy": {"files": 1, "revisions": 12230}}, "t": "2026-10-14T23:45:25Z", "wiki": "pcdwiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 23634}, "legacy": {"files": 1, "revisions": 23635}}, "t": "2026-10-14T23:45:47Z", "wiki": "ruewiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 17835}, "legacy": {"files": 1, "revisions": 17840}}, "t": "2026-10-14T23:45:59Z", "wiki": "scwiki"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 19381}, "legacy": {"files": 1, "revisions": 19381}}, "t": "2026-10-14T23:46:09Z", "wiki": "vecwikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 85258}, "legacy": {"files": 1, "revisions": 85258}}, "t": "2026-10-14T23:46:52Z", "wiki": "cywikisource"}
+{"ok": true, "step": "rc", "t": "2026-10-14T23:47:23Z", "wiki": "elwiktionary"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 1740581}, "legacy": {"files": 1, "revisions": 1740709}}, "t": "2026-10-14T23:54:04Z", "wiki": "elwiktionary"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 86546}, "legacy": {"files": 1, "revisions": 86669}}, "t": "2026-10-14T23:55:01Z", "wiki": "fawikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 823244}, "legacy": {"files": 1, "revisions": 823305}}, "t": "2026-10-14T23:58:51Z", "wiki": "fiwiktionary"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 15779}, "legacy": {"files": 1, "revisions": 15779}}, "t": "2026-10-14T23:59:20Z", "wiki": "hrwikisource"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:00:13Z", "wiki": "afwikibooks"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:00:17Z", "wiki": "dawikiquote"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:17Z", "wiki": "lnwiktionary"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:17Z", "wiki": "minwikibooks"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:18Z", "wiki": "shywiktionary"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:18Z", "wiki": "tnwiktionary"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:00:57Z", "wiki": "bclwikiquote"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:57Z", "wiki": "ltwikiquote"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:57Z", "wiki": "mlwikiquote"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:58Z", "wiki": "mswikibooks"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:58Z", "wiki": "nahwiki"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:58Z", "wiki": "nowikiquote"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:00:58Z", "wiki": "svwikibooks"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:00:58Z", "wiki": "acewiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:01:02Z", "wiki": "bgwikisource"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:01:03Z", "wiki": "bowiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:01:07Z", "wiki": "cawikiquote"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:01:07Z", "wiki": "pcdwiki"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:01:07Z", "wiki": "ruewiki"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:01:08Z", "wiki": "scwiki"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:01:08Z", "wiki": "vecwikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 211092}, "legacy": {"files": 1, "revisions": 211104}}, "t": "2026-10-15T00:01:18Z", "wiki": "itwikiquote"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 34009}, "legacy": {"files": 1, "revisions": 34009}}, "t": "2026-10-15T00:01:52Z", "wiki": "jawikibooks"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:05:10Z", "wiki": "cywikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 261062}, "legacy": {"files": 1, "revisions": 261068}}, "t": "2026-10-15T00:05:31Z", "wiki": "sourceswiki"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 3400}, "legacy": {"files": 1, "revisions": 3401}}, "t": "2026-10-15T00:05:35Z", "wiki": "afwikibooks"}
+{"arm": "history", "step": "fetch", "t": "2026-10-15T00:05:36Z", "unusable": ["SHA256SUMS HTTP 404"], "wiki": "crwiki"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 14523}, "legacy": {"files": 1, "revisions": 14527}}, "t": "2026-10-15T00:06:01Z", "wiki": "dawikiquote"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 5922}, "legacy": {"files": 1, "revisions": 5923}}, "t": "2026-10-15T00:06:17Z", "wiki": "lnwiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 10528}, "legacy": {"files": 1, "revisions": 10530}}, "t": "2026-10-15T00:06:22Z", "wiki": "minwikibooks"}
+{"arm": "history", "step": "fetch", "t": "2026-10-15T00:06:24Z", "unusable": ["SHA256SUMS HTTP 404"], "wiki": "shnwikinews"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 18903}, "legacy": {"files": 1, "revisions": 18905}}, "t": "2026-10-15T00:06:30Z", "wiki": "shywiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 3454}, "legacy": {"files": 1, "revisions": 3522}}, "t": "2026-10-15T00:06:34Z", "wiki": "tnwiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 20280}, "legacy": {"files": 1, "revisions": 20280}}, "t": "2026-10-15T00:06:42Z", "wiki": "bclwikiquote"}
+{"arm": "history", "step": "fetch", "t": "2026-10-15T00:06:45Z", "unusable": ["SHA256SUMS HTTP 404"], "wiki": "hewikinews"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 77659}, "legacy": {"files": 1, "revisions": 77660}}, "t": "2026-10-15T00:07:53Z", "wiki": "ltwikiquote"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 19777}, "legacy": {"files": 1, "revisions": 20254}}, "t": "2026-10-15T00:08:48Z", "wiki": "mlwikiquote"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:08:50Z", "wiki": "elwiktionary"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:08:52Z", "wiki": "fawikisource"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 11090}, "legacy": {"files": 1, "revisions": 11091}}, "t": "2026-10-15T00:09:03Z", "wiki": "mswikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:09:13Z", "wiki": "enwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:09:19Z", "wiki": "fawikisource"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 22805}, "legacy": {"files": 1, "revisions": 22810}}, "t": "2026-10-15T00:09:31Z", "wiki": "nowikiquote"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:09:56Z", "wiki": "fiwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:09:59Z", "wiki": "hewikinews"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:10:01Z", "wiki": "hrwikisource"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:10:06Z", "wiki": "itwikiquote"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:10:09Z", "wiki": "jawikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:10:11Z", "wiki": "lnwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:10:14Z", "wiki": "ltwikiquote"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 47419}, "legacy": {"files": 1, "revisions": 47420}}, "t": "2026-10-15T00:11:43Z", "wiki": "svwikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:34Z", "wiki": "mgwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:36Z", "wiki": "minwikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:39Z", "wiki": "mlwikiquote"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:41Z", "wiki": "mswikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:45Z", "wiki": "nahwiki"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:47Z", "wiki": "nowikiquote"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:50Z", "wiki": "pcdwiki"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:54Z", "wiki": "ruewiki"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:56Z", "wiki": "scwiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:12:58Z", "wiki": "lnwiktionary"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:12:58Z", "wiki": "minwikibooks"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:12:58Z", "wiki": "shywiktionary"}
+{"arm": "current", "error": "FileNotFoundError(2, 'No such file or directory')", "step": "compare", "t": "2026-10-15T00:12:58Z", "wiki": "tnwiktionary"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:12:58Z", "wiki": "ltwikiquote"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:12:59Z", "wiki": "shnwikinews"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:13:01Z", "wiki": "shywiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 145287}, "legacy": {"files": 1, "revisions": 145287}}, "t": "2026-10-15T00:13:02Z", "wiki": "acewiki"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:13:05Z", "wiki": "sourceswiki"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:13:08Z", "wiki": "svwikibooks"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:13:10Z", "wiki": "tnwiktionary"}
+{"ok": true, "step": "rc", "t": "2026-10-15T00:13:12Z", "wiki": "vecwikisource"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 15032}, "legacy": {"files": 1, "revisions": 15046}}, "t": "2026-10-15T00:13:54Z", "wiki": "bgwikisource"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:15:53Z", "wiki": "mlwikiquote"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:15:53Z", "wiki": "mswikibooks"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:15:56Z", "wiki": "nahwiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:16:02Z", "wiki": "nowikiquote"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:16:05Z", "wiki": "svwikibooks"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:16:06Z", "wiki": "pcdwiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:16:17Z", "wiki": "ruewiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:16:21Z", "wiki": "scwiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:16:21Z", "wiki": "vecwikisource"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 149172}, "legacy": {"files": 1, "revisions": 149172}}, "t": "2026-10-15T00:16:34Z", "wiki": "bowiki"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 132495}, "legacy": {"files": 1, "revisions": 132496}}, "t": "2026-10-15T00:17:50Z", "wiki": "cawikiquote"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 75922}, "legacy": {"files": 1, "revisions": 75925}}, "t": "2026-10-15T00:18:35Z", "wiki": "pcdwiki"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 165654}, "legacy": {"files": 1, "revisions": 165675}}, "t": "2026-10-15T00:20:10Z", "wiki": "ruewiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:20:28Z", "wiki": "fawikisource"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:20:52Z", "wiki": "fiwiktionary"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:20:53Z", "wiki": "hrwikisource"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:21:23Z", "wiki": "itwikiquote"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:21:34Z", "wiki": "jawikibooks"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:22:07Z", "wiki": "shywiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 177134}, "legacy": {"files": 1, "revisions": 177149}}, "t": "2026-10-15T00:22:11Z", "wiki": "scwiki"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:22:42Z", "wiki": "tnwiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 80474}, "legacy": {"files": 1, "revisions": 80475}}, "t": "2026-10-15T00:22:46Z", "wiki": "vecwikisource"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 166035}, "legacy": {"files": 1, "revisions": 166039}}, "t": "2026-10-15T00:24:16Z", "wiki": "cywikisource"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T00:26:56Z", "wiki": "sourceswiki"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:27:00Z", "wiki": "afwikibooks"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:27:07Z", "wiki": "dawikiquote"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:27:07Z", "wiki": "lnwiktionary"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:27:08Z", "wiki": "minwikibooks"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:27:12Z", "wiki": "shywiktionary"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:28:32Z", "wiki": "tnwiktionary"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 274285}, "legacy": {"files": 1, "revisions": 274450}}, "t": "2026-10-15T00:28:32Z", "wiki": "fawikisource"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:29:23Z", "wiki": "bclwikiquote"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:29:25Z", "wiki": "ltwikiquote"}
+{"arm": "history", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 55043}, "legacy": {"files": 1, "revisions": 55044}}, "t": "2026-10-15T00:30:27Z", "wiki": "hrwikisource"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:09Z", "wiki": "mlwikiquote"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:10Z", "wiki": "mswikibooks"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:17Z", "wiki": "nowikiquote"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:21Z", "wiki": "svwikibooks"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:25Z", "wiki": "acewiki"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:44Z", "wiki": "bgwikisource"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:50Z", "wiki": "bowiki"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:57Z", "wiki": "cawikiquote"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:35:59Z", "wiki": "pcdwiki"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:36:23Z", "wiki": "ruewiki"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:36:33Z", "wiki": "scwiki"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:36:35Z", "wiki": "vecwikisource"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:44:21Z", "wiki": "cywikisource"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:48:17Z", "wiki": "fawikisource"}
+{"arm": "history", "ok": true, "step": "compare", "t": "2026-10-15T00:48:19Z", "wiki": "hrwikisource"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 11321023}, "legacy": {"files": 9, "revisions": 11321683}}, "t": "2026-10-15T01:13:46Z", "wiki": "enwiktionary"}
+{"arm": "current", "ok": true, "step": "data", "summary": {"export": {"files": 1, "revisions": 6201817}, "legacy": {"files": 9, "revisions": 6202318}}, "t": "2026-10-15T01:32:38Z", "wiki": "mgwiktionary"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T02:05:46Z", "wiki": "enwiktionary"}
+{"arm": "current", "ok": true, "step": "compare", "t": "2026-10-15T02:10:15Z", "wiki": "mgwiktionary"}

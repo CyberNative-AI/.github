@@ -1,0 +1,38 @@
+{
+ "arm": "history",
+ "checked": [],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 85,
+  "MISSING_EXPORT|TIMING": 1
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 0,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {},
+ "integrity": {
+  "export": {
+   "bytes_attr_mismatch": 22548,
+   "no_text_not_deleted": 26
+  },
+  "legacy": {
+   "bytes_attr_mismatch": 22548,
+   "no_text_not_deleted": 26
+  }
+ },
+ "live": {},
+ "live_checked": 0,
+ "max_ts": {
+  "export": "2026-09-25T12:18:37Z",
+  "legacy": "2026-10-01T12:43:00Z"
+ },
+ "n_diffs": 86,
+ "n_export": 80474,
+ "n_legacy": 80475,
+ "rc_covers_window": true,
+ "rc_rows": 7,
+ "unexplained_primary": 0,
+ "wiki": "vecwikisource"
+}

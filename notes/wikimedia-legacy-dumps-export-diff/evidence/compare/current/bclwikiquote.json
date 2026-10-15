@@ -1,0 +1,1897 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19499,
+    "sha1_attr": "nsq8i293kpbld691ys8c71zf1geitbu",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 1, 2025",
+    "ts": "2025-08-08T07:34:46Z"
+   },
+   "key": 2024,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19499,
+    "sha1_attr": "nsq8i293kpbld691ys8c71zf1geitbu",
+    "tdel": null,
+    "text_len": 802,
+    "text_sha1": "cbbb110b143cc0feeb914482cfea6896d15a42fa",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 1, 2025",
+    "ts": "2025-08-08T07:34:46Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19497,
+     "revid": 19499,
+     "sha1": "cbbb110b143cc0feeb914482cfea6896d15a42fa",
+     "size": 802,
+     "slots": {
+      "main": {
+       "sha1": "cbbb110b143cc0feeb914482cfea6896d15a42fa"
+      }
+     },
+     "timestamp": "2025-08-08T07:34:46Z"
+    },
+    "rev": {
+     "page": 2024,
+     "parentid": 19497,
+     "revid": 19499,
+     "sha1": "cbbb110b143cc0feeb914482cfea6896d15a42fa",
+     "size": 802,
+     "slots": {
+      "main": {
+       "sha1": "cbbb110b143cc0feeb914482cfea6896d15a42fa"
+      }
+     },
+     "timestamp": "2025-08-08T07:34:46Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19522,
+    "sha1_attr": "rdsmxt7reu3dr9jaj9sg5zxu4gfzlkf",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 1, 2025",
+    "ts": "2025-08-08T08:01:51Z"
+   },
+   "key": 2025,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19522,
+    "sha1_attr": "rdsmxt7reu3dr9jaj9sg5zxu4gfzlkf",
+    "tdel": null,
+    "text_len": 902,
+    "text_sha1": "ea6c4210dc60d977b3f9b0c858f2fcb2e4e8c6ef",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 1, 2025",
+    "ts": "2025-08-08T08:01:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19429,
+     "revid": 19522,
+     "sha1": "ea6c4210dc60d977b3f9b0c858f2fcb2e4e8c6ef",
+     "size": 902,
+     "slots": {
+      "main": {
+       "sha1": "ea6c4210dc60d977b3f9b0c858f2fcb2e4e8c6ef"
+      }
+     },
+     "timestamp": "2025-08-08T08:01:51Z"
+    },
+    "rev": {
+     "page": 2025,
+     "parentid": 19429,
+     "revid": 19522,
+     "sha1": "ea6c4210dc60d977b3f9b0c858f2fcb2e4e8c6ef",
+     "size": 902,
+     "slots": {
+      "main": {
+       "sha1": "ea6c4210dc60d977b3f9b0c858f2fcb2e4e8c6ef"
+      }
+     },
+     "timestamp": "2025-08-08T08:01:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19500,
+    "sha1_attr": "6pcfwg87c8lq8jhf31fm5p2zwbtfdfq",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 8, 2025",
+    "ts": "2025-08-08T07:40:36Z"
+   },
+   "key": 2027,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19500,
+    "sha1_attr": "6pcfwg87c8lq8jhf31fm5p2zwbtfdfq",
+    "tdel": null,
+    "text_len": 754,
+    "text_sha1": "3964649dab5f7f0aa7b78d9aad945f2353b1fac6",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 8, 2025",
+    "ts": "2025-08-08T07:40:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19433,
+     "revid": 19500,
+     "sha1": "3964649dab5f7f0aa7b78d9aad945f2353b1fac6",
+     "size": 754,
+     "slots": {
+      "main": {
+       "sha1": "3964649dab5f7f0aa7b78d9aad945f2353b1fac6"
+      }
+     },
+     "timestamp": "2025-08-08T07:40:36Z"
+    },
+    "rev": {
+     "page": 2027,
+     "parentid": 19433,
+     "revid": 19500,
+     "sha1": "3964649dab5f7f0aa7b78d9aad945f2353b1fac6",
+     "size": 754,
+     "slots": {
+      "main": {
+       "sha1": "3964649dab5f7f0aa7b78d9aad945f2353b1fac6"
+      }
+     },
+     "timestamp": "2025-08-08T07:40:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19501,
+    "sha1_attr": "k7mcsjtybb0d9evncj71kup4m7qs4rp",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 9, 2025",
+    "ts": "2025-08-08T07:41:23Z"
+   },
+   "key": 2028,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19501,
+    "sha1_attr": "k7mcsjtybb0d9evncj71kup4m7qs4rp",
+    "tdel": null,
+    "text_len": 852,
+    "text_sha1": "ad075f6e2247884b860bd9157ced28e0abde3d25",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 9, 2025",
+    "ts": "2025-08-08T07:41:23Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19435,
+     "revid": 19501,
+     "sha1": "ad075f6e2247884b860bd9157ced28e0abde3d25",
+     "size": 852,
+     "slots": {
+      "main": {
+       "sha1": "ad075f6e2247884b860bd9157ced28e0abde3d25"
+      }
+     },
+     "timestamp": "2025-08-08T07:41:23Z"
+    },
+    "rev": {
+     "page": 2028,
+     "parentid": 19435,
+     "revid": 19501,
+     "sha1": "ad075f6e2247884b860bd9157ced28e0abde3d25",
+     "size": 852,
+     "slots": {
+      "main": {
+       "sha1": "ad075f6e2247884b860bd9157ced28e0abde3d25"
+      }
+     },
+     "timestamp": "2025-08-08T07:41:23Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19530,
+    "sha1_attr": "cesh5gpfvjaq7hiclxe66xl2if9f298",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 2, 2025",
+    "ts": "2025-08-08T08:22:09Z"
+   },
+   "key": 2029,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19530,
+    "sha1_attr": "cesh5gpfvjaq7hiclxe66xl2if9f298",
+    "tdel": null,
+    "text_len": 697,
+    "text_sha1": "6a3f4a5b05d06f587c3b622a83de3fc6a4059e2c",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 2, 2025",
+    "ts": "2025-08-08T08:22:09Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19437,
+     "revid": 19530,
+     "sha1": "6a3f4a5b05d06f587c3b622a83de3fc6a4059e2c",
+     "size": 697,
+     "slots": {
+      "main": {
+       "sha1": "6a3f4a5b05d06f587c3b622a83de3fc6a4059e2c"
+      }
+     },
+     "timestamp": "2025-08-08T08:22:09Z"
+    },
+    "rev": {
+     "page": 2029,
+     "parentid": 19437,
+     "revid": 19530,
+     "sha1": "6a3f4a5b05d06f587c3b622a83de3fc6a4059e2c",
+     "size": 697,
+     "slots": {
+      "main": {
+       "sha1": "6a3f4a5b05d06f587c3b622a83de3fc6a4059e2c"
+      }
+     },
+     "timestamp": "2025-08-08T08:22:09Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19531,
+    "sha1_attr": "bzxvz5xk169n6ho90sp6pmzqyk30u0p",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 3, 2025",
+    "ts": "2025-08-08T08:22:29Z"
+   },
+   "key": 2030,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19531,
+    "sha1_attr": "bzxvz5xk169n6ho90sp6pmzqyk30u0p",
+    "tdel": null,
+    "text_len": 822,
+    "text_sha1": "66b74983a7cbb6d4f464f54cdc5cd3f2a65feaf9",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 3, 2025",
+    "ts": "2025-08-08T08:22:29Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19438,
+     "revid": 19531,
+     "sha1": "66b74983a7cbb6d4f464f54cdc5cd3f2a65feaf9",
+     "size": 822,
+     "slots": {
+      "main": {
+       "sha1": "66b74983a7cbb6d4f464f54cdc5cd3f2a65feaf9"
+      }
+     },
+     "timestamp": "2025-08-08T08:22:29Z"
+    },
+    "rev": {
+     "page": 2030,
+     "parentid": 19438,
+     "revid": 19531,
+     "sha1": "66b74983a7cbb6d4f464f54cdc5cd3f2a65feaf9",
+     "size": 822,
+     "slots": {
+      "main": {
+       "sha1": "66b74983a7cbb6d4f464f54cdc5cd3f2a65feaf9"
+      }
+     },
+     "timestamp": "2025-08-08T08:22:29Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19532,
+    "sha1_attr": "9pey64srh6l39w0nhbw58se7pj24x8p",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 4, 2025",
+    "ts": "2025-08-08T08:22:50Z"
+   },
+   "key": 2031,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19532,
+    "sha1_attr": "9pey64srh6l39w0nhbw58se7pj24x8p",
+    "tdel": null,
+    "text_len": 849,
+    "text_sha1": "5317590858806ccde8bfbe421a22d73fe1ab3f49",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 4, 2025",
+    "ts": "2025-08-08T08:22:50Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19439,
+     "revid": 19532,
+     "sha1": "5317590858806ccde8bfbe421a22d73fe1ab3f49",
+     "size": 849,
+     "slots": {
+      "main": {
+       "sha1": "5317590858806ccde8bfbe421a22d73fe1ab3f49"
+      }
+     },
+     "timestamp": "2025-08-08T08:22:50Z"
+    },
+    "rev": {
+     "page": 2031,
+     "parentid": 19439,
+     "revid": 19532,
+     "sha1": "5317590858806ccde8bfbe421a22d73fe1ab3f49",
+     "size": 849,
+     "slots": {
+      "main": {
+       "sha1": "5317590858806ccde8bfbe421a22d73fe1ab3f49"
+      }
+     },
+     "timestamp": "2025-08-08T08:22:50Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19502,
+    "sha1_attr": "t3vvom9iiwyvcm4jbixn00ylovsoneg",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 10, 2025",
+    "ts": "2025-08-08T07:41:51Z"
+   },
+   "key": 2032,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19502,
+    "sha1_attr": "t3vvom9iiwyvcm4jbixn00ylovsoneg",
+    "tdel": null,
+    "text_len": 728,
+    "text_sha1": "f9301d75faeee78ef7d6ea9172777fa5e41fc478",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 10, 2025",
+    "ts": "2025-08-08T07:41:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19440,
+     "revid": 19502,
+     "sha1": "f9301d75faeee78ef7d6ea9172777fa5e41fc478",
+     "size": 728,
+     "slots": {
+      "main": {
+       "sha1": "f9301d75faeee78ef7d6ea9172777fa5e41fc478"
+      }
+     },
+     "timestamp": "2025-08-08T07:41:51Z"
+    },
+    "rev": {
+     "page": 2032,
+     "parentid": 19440,
+     "revid": 19502,
+     "sha1": "f9301d75faeee78ef7d6ea9172777fa5e41fc478",
+     "size": 728,
+     "slots": {
+      "main": {
+       "sha1": "f9301d75faeee78ef7d6ea9172777fa5e41fc478"
+      }
+     },
+     "timestamp": "2025-08-08T07:41:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19503,
+    "sha1_attr": "a0twwobez2ti1lok5xu1ocnygvutjss",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 11, 2025",
+    "ts": "2025-08-08T07:42:48Z"
+   },
+   "key": 2033,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19503,
+    "sha1_attr": "a0twwobez2ti1lok5xu1ocnygvutjss",
+    "tdel": null,
+    "text_len": 751,
+    "text_sha1": "55ce4cfcdd8a49110868a8ced9bd9be1ae8c437c",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 11, 2025",
+    "ts": "2025-08-08T07:42:48Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19441,
+     "revid": 19503,
+     "sha1": "55ce4cfcdd8a49110868a8ced9bd9be1ae8c437c",
+     "size": 751,
+     "slots": {
+      "main": {
+       "sha1": "55ce4cfcdd8a49110868a8ced9bd9be1ae8c437c"
+      }
+     },
+     "timestamp": "2025-08-08T07:42:48Z"
+    },
+    "rev": {
+     "page": 2033,
+     "parentid": 19441,
+     "revid": 19503,
+     "sha1": "55ce4cfcdd8a49110868a8ced9bd9be1ae8c437c",
+     "size": 751,
+     "slots": {
+      "main": {
+       "sha1": "55ce4cfcdd8a49110868a8ced9bd9be1ae8c437c"
+      }
+     },
+     "timestamp": "2025-08-08T07:42:48Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19504,
+    "sha1_attr": "gt0vo9f8mh70h0lc0yi39f91fk1s7tm",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 12, 2025",
+    "ts": "2025-08-08T07:44:12Z"
+   },
+   "key": 2034,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19504,
+    "sha1_attr": "gt0vo9f8mh70h0lc0yi39f91fk1s7tm",
+    "tdel": null,
+    "text_len": 668,
+    "text_sha1": "8fe010901dccd8c3165f8d46fdda8c84ee07b79a",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 12, 2025",
+    "ts": "2025-08-08T07:44:12Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19445,
+     "revid": 19504,
+     "sha1": "8fe010901dccd8c3165f8d46fdda8c84ee07b79a",
+     "size": 668,
+     "slots": {
+      "main": {
+       "sha1": "8fe010901dccd8c3165f8d46fdda8c84ee07b79a"
+      }
+     },
+     "timestamp": "2025-08-08T07:44:12Z"
+    },
+    "rev": {
+     "page": 2034,
+     "parentid": 19445,
+     "revid": 19504,
+     "sha1": "8fe010901dccd8c3165f8d46fdda8c84ee07b79a",
+     "size": 668,
+     "slots": {
+      "main": {
+       "sha1": "8fe010901dccd8c3165f8d46fdda8c84ee07b79a"
+      }
+     },
+     "timestamp": "2025-08-08T07:44:12Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19505,
+    "sha1_attr": "2xwynzup9c6jcxq208k30346pdqg5fp",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 13, 2025",
+    "ts": "2025-08-08T07:44:56Z"
+   },
+   "key": 2035,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19505,
+    "sha1_attr": "2xwynzup9c6jcxq208k30346pdqg5fp",
+    "tdel": null,
+    "text_len": 745,
+    "text_sha1": "192fd329f6d9a2d9c13a844b61f6f39bc98e3d85",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 13, 2025",
+    "ts": "2025-08-08T07:44:56Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19446,
+     "revid": 19505,
+     "sha1": "192fd329f6d9a2d9c13a844b61f6f39bc98e3d85",
+     "size": 745,
+     "slots": {
+      "main": {
+       "sha1": "192fd329f6d9a2d9c13a844b61f6f39bc98e3d85"
+      }
+     },
+     "timestamp": "2025-08-08T07:44:56Z"
+    },
+    "rev": {
+     "page": 2035,
+     "parentid": 19446,
+     "revid": 19505,
+     "sha1": "192fd329f6d9a2d9c13a844b61f6f39bc98e3d85",
+     "size": 745,
+     "slots": {
+      "main": {
+       "sha1": "192fd329f6d9a2d9c13a844b61f6f39bc98e3d85"
+      }
+     },
+     "timestamp": "2025-08-08T07:44:56Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19546,
+    "sha1_attr": "q4oxzerfzv6fjvvq0nzjtvvoi8hf1ep",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 14, 2025",
+    "ts": "2025-08-08T08:30:49Z"
+   },
+   "key": 2037,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19546,
+    "sha1_attr": "q4oxzerfzv6fjvvq0nzjtvvoi8hf1ep",
+    "tdel": null,
+    "text_len": 898,
+    "text_sha1": "dfb28c60d813195744ef1ae4bfb0849bffa3a5e1",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 14, 2025",
+    "ts": "2025-08-08T08:30:49Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19449,
+     "revid": 19546,
+     "sha1": "dfb28c60d813195744ef1ae4bfb0849bffa3a5e1",
+     "size": 898,
+     "slots": {
+      "main": {
+       "sha1": "dfb28c60d813195744ef1ae4bfb0849bffa3a5e1"
+      }
+     },
+     "timestamp": "2025-08-08T08:30:49Z"
+    },
+    "rev": {
+     "page": 2037,
+     "parentid": 19449,
+     "revid": 19546,
+     "sha1": "dfb28c60d813195744ef1ae4bfb0849bffa3a5e1",
+     "size": 898,
+     "slots": {
+      "main": {
+       "sha1": "dfb28c60d813195744ef1ae4bfb0849bffa3a5e1"
+      }
+     },
+     "timestamp": "2025-08-08T08:30:49Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19506,
+    "sha1_attr": "dez3f62pkn5zhs0t6y4agxuxtwhsmkj",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 14, 2025",
+    "ts": "2025-08-08T07:45:42Z"
+   },
+   "key": 2038,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19506,
+    "sha1_attr": "dez3f62pkn5zhs0t6y4agxuxtwhsmkj",
+    "tdel": null,
+    "text_len": 824,
+    "text_sha1": "72da0de01db8a7c6b46de0b0aa8757982129a243",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 14, 2025",
+    "ts": "2025-08-08T07:45:42Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19450,
+     "revid": 19506,
+     "sha1": "72da0de01db8a7c6b46de0b0aa8757982129a243",
+     "size": 824,
+     "slots": {
+      "main": {
+       "sha1": "72da0de01db8a7c6b46de0b0aa8757982129a243"
+      }
+     },
+     "timestamp": "2025-08-08T07:45:42Z"
+    },
+    "rev": {
+     "page": 2038,
+     "parentid": 19450,
+     "revid": 19506,
+     "sha1": "72da0de01db8a7c6b46de0b0aa8757982129a243",
+     "size": 824,
+     "slots": {
+      "main": {
+       "sha1": "72da0de01db8a7c6b46de0b0aa8757982129a243"
+      }
+     },
+     "timestamp": "2025-08-08T07:45:42Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19533,
+    "sha1_attr": "lyc42wdufyenag2tqbugpelfk58m3iz",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 5, 2025",
+    "ts": "2025-08-08T08:23:41Z"
+   },
+   "key": 2039,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19533,
+    "sha1_attr": "lyc42wdufyenag2tqbugpelfk58m3iz",
+    "tdel": null,
+    "text_len": 706,
+    "text_sha1": "bbf14dabac887618d7dc6389c37040a615b1f75b",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 5, 2025",
+    "ts": "2025-08-08T08:23:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19451,
+     "revid": 19533,
+     "sha1": "bbf14dabac887618d7dc6389c37040a615b1f75b",
+     "size": 706,
+     "slots": {
+      "main": {
+       "sha1": "bbf14dabac887618d7dc6389c37040a615b1f75b"
+      }
+     },
+     "timestamp": "2025-08-08T08:23:41Z"
+    },
+    "rev": {
+     "page": 2039,
+     "parentid": 19451,
+     "revid": 19533,
+     "sha1": "bbf14dabac887618d7dc6389c37040a615b1f75b",
+     "size": 706,
+     "slots": {
+      "main": {
+       "sha1": "bbf14dabac887618d7dc6389c37040a615b1f75b"
+      }
+     },
+     "timestamp": "2025-08-08T08:23:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19534,
+    "sha1_attr": "p06wils5qeu08jhlatls3jwll467ry2",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 6, 2025",
+    "ts": "2025-08-08T08:23:59Z"
+   },
+   "key": 2040,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19534,
+    "sha1_attr": "p06wils5qeu08jhlatls3jwll467ry2",
+    "tdel": null,
+    "text_len": 748,
+    "text_sha1": "d610f6249b5888feec0b173fe03a2558a8ed6f3a",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 6, 2025",
+    "ts": "2025-08-08T08:23:59Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19452,
+     "revid": 19534,
+     "sha1": "d610f6249b5888feec0b173fe03a2558a8ed6f3a",
+     "size": 748,
+     "slots": {
+      "main": {
+       "sha1": "d610f6249b5888feec0b173fe03a2558a8ed6f3a"
+      }
+     },
+     "timestamp": "2025-08-08T08:23:59Z"
+    },
+    "rev": {
+     "page": 2040,
+     "parentid": 19452,
+     "revid": 19534,
+     "sha1": "d610f6249b5888feec0b173fe03a2558a8ed6f3a",
+     "size": 748,
+     "slots": {
+      "main": {
+       "sha1": "d610f6249b5888feec0b173fe03a2558a8ed6f3a"
+      }
+     },
+     "timestamp": "2025-08-08T08:23:59Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19507,
+    "sha1_attr": "771rvy4j6wg39bf5mq2ndxd4n8envwz",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 15, 2025",
+    "ts": "2025-08-08T07:46:40Z"
+   },
+   "key": 2041,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19507,
+    "sha1_attr": "771rvy4j6wg39bf5mq2ndxd4n8envwz",
+    "tdel": null,
+    "text_len": 754,
+    "text_sha1": "3d9a23f84ca24a65079bc4074f592b5d99715f53",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 15, 2025",
+    "ts": "2025-08-08T07:46:40Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19454,
+     "revid": 19507,
+     "sha1": "3d9a23f84ca24a65079bc4074f592b5d99715f53",
+     "size": 754,
+     "slots": {
+      "main": {
+       "sha1": "3d9a23f84ca24a65079bc4074f592b5d99715f53"
+      }
+     },
+     "timestamp": "2025-08-08T07:46:40Z"
+    },
+    "rev": {
+     "page": 2041,
+     "parentid": 19454,
+     "revid": 19507,
+     "sha1": "3d9a23f84ca24a65079bc4074f592b5d99715f53",
+     "size": 754,
+     "slots": {
+      "main": {
+       "sha1": "3d9a23f84ca24a65079bc4074f592b5d99715f53"
+      }
+     },
+     "timestamp": "2025-08-08T07:46:40Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19535,
+    "sha1_attr": "ds3kxb6sl6okfzp94vdqv32zr4ppyzs",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 7, 2025",
+    "ts": "2025-08-08T08:24:37Z"
+   },
+   "key": 2042,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19535,
+    "sha1_attr": "ds3kxb6sl6okfzp94vdqv32zr4ppyzs",
+    "tdel": null,
+    "text_len": 782,
+    "text_sha1": "75f90a95d38dce3360f29752f5a0b944aae53668",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 7, 2025",
+    "ts": "2025-08-08T08:24:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19455,
+     "revid": 19535,
+     "sha1": "75f90a95d38dce3360f29752f5a0b944aae53668",
+     "size": 782,
+     "slots": {
+      "main": {
+       "sha1": "75f90a95d38dce3360f29752f5a0b944aae53668"
+      }
+     },
+     "timestamp": "2025-08-08T08:24:37Z"
+    },
+    "rev": {
+     "page": 2042,
+     "parentid": 19455,
+     "revid": 19535,
+     "sha1": "75f90a95d38dce3360f29752f5a0b944aae53668",
+     "size": 782,
+     "slots": {
+      "main": {
+       "sha1": "75f90a95d38dce3360f29752f5a0b944aae53668"
+      }
+     },
+     "timestamp": "2025-08-08T08:24:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19508,
+    "sha1_attr": "nwdzn8a7of1fh1y1heprp6g5ml73j8s",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 16, 2025",
+    "ts": "2025-08-08T07:47:25Z"
+   },
+   "key": 2043,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19508,
+    "sha1_attr": "nwdzn8a7of1fh1y1heprp6g5ml73j8s",
+    "tdel": null,
+    "text_len": 944,
+    "text_sha1": "cc99ddbde01b1396ee6ae583b513e410bc5fff2c",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 16, 2025",
+    "ts": "2025-08-08T07:47:25Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19456,
+     "revid": 19508,
+     "sha1": "cc99ddbde01b1396ee6ae583b513e410bc5fff2c",
+     "size": 944,
+     "slots": {
+      "main": {
+       "sha1": "cc99ddbde01b1396ee6ae583b513e410bc5fff2c"
+      }
+     },
+     "timestamp": "2025-08-08T07:47:25Z"
+    },
+    "rev": {
+     "page": 2043,
+     "parentid": 19456,
+     "revid": 19508,
+     "sha1": "cc99ddbde01b1396ee6ae583b513e410bc5fff2c",
+     "size": 944,
+     "slots": {
+      "main": {
+       "sha1": "cc99ddbde01b1396ee6ae583b513e410bc5fff2c"
+      }
+     },
+     "timestamp": "2025-08-08T07:47:25Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19536,
+    "sha1_attr": "854u4h9pejph7myjj49goxzvv42ji15",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 8, 2025",
+    "ts": "2025-08-08T08:24:58Z"
+   },
+   "key": 2044,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19536,
+    "sha1_attr": "854u4h9pejph7myjj49goxzvv42ji15",
+    "tdel": null,
+    "text_len": 776,
+    "text_sha1": "45b522dec3e1ec137b2b53069e465c24dfbf6409",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 8, 2025",
+    "ts": "2025-08-08T08:24:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19457,
+     "revid": 19536,
+     "sha1": "45b522dec3e1ec137b2b53069e465c24dfbf6409",
+     "size": 776,
+     "slots": {
+      "main": {
+       "sha1": "45b522dec3e1ec137b2b53069e465c24dfbf6409"
+      }
+     },
+     "timestamp": "2025-08-08T08:24:58Z"
+    },
+    "rev": {
+     "page": 2044,
+     "parentid": 19457,
+     "revid": 19536,
+     "sha1": "45b522dec3e1ec137b2b53069e465c24dfbf6409",
+     "size": 776,
+     "slots": {
+      "main": {
+       "sha1": "45b522dec3e1ec137b2b53069e465c24dfbf6409"
+      }
+     },
+     "timestamp": "2025-08-08T08:24:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19509,
+    "sha1_attr": "45bnzzab8a087feghuab10n5ekt55hl",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 17, 2025",
+    "ts": "2025-08-08T07:48:10Z"
+   },
+   "key": 2045,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19509,
+    "sha1_attr": "45bnzzab8a087feghuab10n5ekt55hl",
+    "tdel": null,
+    "text_len": 702,
+    "text_sha1": "2382664df9cef753bff25464fe43a8220470d809",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 17, 2025",
+    "ts": "2025-08-08T07:48:10Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19460,
+     "revid": 19509,
+     "sha1": "2382664df9cef753bff25464fe43a8220470d809",
+     "size": 702,
+     "slots": {
+      "main": {
+       "sha1": "2382664df9cef753bff25464fe43a8220470d809"
+      }
+     },
+     "timestamp": "2025-08-08T07:48:10Z"
+    },
+    "rev": {
+     "page": 2045,
+     "parentid": 19460,
+     "revid": 19509,
+     "sha1": "2382664df9cef753bff25464fe43a8220470d809",
+     "size": 702,
+     "slots": {
+      "main": {
+       "sha1": "2382664df9cef753bff25464fe43a8220470d809"
+      }
+     },
+     "timestamp": "2025-08-08T07:48:10Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19511,
+    "sha1_attr": "cv0zsiu7v9txk086dbj8gyms9idfanh",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 18, 2025",
+    "ts": "2025-08-08T07:51:45Z"
+   },
+   "key": 2046,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19511,
+    "sha1_attr": "cv0zsiu7v9txk086dbj8gyms9idfanh",
+    "tdel": null,
+    "text_len": 705,
+    "text_sha1": "6e1bb9dee5dfcdcae53517df4dd691b1329c28ad",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 18, 2025",
+    "ts": "2025-08-08T07:51:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19461,
+     "revid": 19511,
+     "sha1": "6e1bb9dee5dfcdcae53517df4dd691b1329c28ad",
+     "size": 705,
+     "slots": {
+      "main": {
+       "sha1": "6e1bb9dee5dfcdcae53517df4dd691b1329c28ad"
+      }
+     },
+     "timestamp": "2025-08-08T07:51:45Z"
+    },
+    "rev": {
+     "page": 2046,
+     "parentid": 19461,
+     "revid": 19511,
+     "sha1": "6e1bb9dee5dfcdcae53517df4dd691b1329c28ad",
+     "size": 705,
+     "slots": {
+      "main": {
+       "sha1": "6e1bb9dee5dfcdcae53517df4dd691b1329c28ad"
+      }
+     },
+     "timestamp": "2025-08-08T07:51:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19512,
+    "sha1_attr": "jvn2fs8w0k6h5941ma9latd0kf0rdna",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 19, 2025",
+    "ts": "2025-08-08T07:52:24Z"
+   },
+   "key": 2047,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19512,
+    "sha1_attr": "jvn2fs8w0k6h5941ma9latd0kf0rdna",
+    "tdel": null,
+    "text_len": 943,
+    "text_sha1": "aa2e0db71e6ee88fe8e4073311a5dd20cb5159d6",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 19, 2025",
+    "ts": "2025-08-08T07:52:24Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19463,
+     "revid": 19512,
+     "sha1": "aa2e0db71e6ee88fe8e4073311a5dd20cb5159d6",
+     "size": 943,
+     "slots": {
+      "main": {
+       "sha1": "aa2e0db71e6ee88fe8e4073311a5dd20cb5159d6"
+      }
+     },
+     "timestamp": "2025-08-08T07:52:24Z"
+    },
+    "rev": {
+     "page": 2047,
+     "parentid": 19463,
+     "revid": 19512,
+     "sha1": "aa2e0db71e6ee88fe8e4073311a5dd20cb5159d6",
+     "size": 943,
+     "slots": {
+      "main": {
+       "sha1": "aa2e0db71e6ee88fe8e4073311a5dd20cb5159d6"
+      }
+     },
+     "timestamp": "2025-08-08T07:52:24Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19514,
+    "sha1_attr": "md7g68zpdigjfxnfjbltmkyb6iu2508",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 20, 2025",
+    "ts": "2025-08-08T07:54:43Z"
+   },
+   "key": 2048,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19514,
+    "sha1_attr": "md7g68zpdigjfxnfjbltmkyb6iu2508",
+    "tdel": null,
+    "text_len": 950,
+    "text_sha1": "bf7a92343cfa78c649ac098042a906e40cfb0bd8",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 20, 2025",
+    "ts": "2025-08-08T07:54:43Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19464,
+     "revid": 19514,
+     "sha1": "bf7a92343cfa78c649ac098042a906e40cfb0bd8",
+     "size": 950,
+     "slots": {
+      "main": {
+       "sha1": "bf7a92343cfa78c649ac098042a906e40cfb0bd8"
+      }
+     },
+     "timestamp": "2025-08-08T07:54:43Z"
+    },
+    "rev": {
+     "page": 2048,
+     "parentid": 19464,
+     "revid": 19514,
+     "sha1": "bf7a92343cfa78c649ac098042a906e40cfb0bd8",
+     "size": 950,
+     "slots": {
+      "main": {
+       "sha1": "bf7a92343cfa78c649ac098042a906e40cfb0bd8"
+      }
+     },
+     "timestamp": "2025-08-08T07:54:43Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19515,
+    "sha1_attr": "0ltwug2zzrg35jsr3d2wzvt8wltgx8x",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 21, 2025",
+    "ts": "2025-08-08T07:55:14Z"
+   },
+   "key": 2049,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19515,
+    "sha1_attr": "0ltwug2zzrg35jsr3d2wzvt8wltgx8x",
+    "tdel": null,
+    "text_len": 745,
+    "text_sha1": "0530ffd7119a32346261ca2e7716ab315a5fbd51",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 21, 2025",
+    "ts": "2025-08-08T07:55:14Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19466,
+     "revid": 19515,
+     "sha1": "0530ffd7119a32346261ca2e7716ab315a5fbd51",
+     "size": 745,
+     "slots": {
+      "main": {
+       "sha1": "0530ffd7119a32346261ca2e7716ab315a5fbd51"
+      }
+     },
+     "timestamp": "2025-08-08T07:55:14Z"
+    },
+    "rev": {
+     "page": 2049,
+     "parentid": 19466,
+     "revid": 19515,
+     "sha1": "0530ffd7119a32346261ca2e7716ab315a5fbd51",
+     "size": 745,
+     "slots": {
+      "main": {
+       "sha1": "0530ffd7119a32346261ca2e7716ab315a5fbd51"
+      }
+     },
+     "timestamp": "2025-08-08T07:55:14Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19516,
+    "sha1_attr": "2uxd2dltth1kx5jfjf0mmtznwv1yj5p",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 22, 2025",
+    "ts": "2025-08-08T07:56:26Z"
+   },
+   "key": 2050,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19516,
+    "sha1_attr": "2uxd2dltth1kx5jfjf0mmtznwv1yj5p",
+    "tdel": null,
+    "text_len": 681,
+    "text_sha1": "1879decb1ece01417573e7b2f9e8223b8d9cd27d",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 22, 2025",
+    "ts": "2025-08-08T07:56:26Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19469,
+     "revid": 19516,
+     "sha1": "1879decb1ece01417573e7b2f9e8223b8d9cd27d",
+     "size": 681,
+     "slots": {
+      "main": {
+       "sha1": "1879decb1ece01417573e7b2f9e8223b8d9cd27d"
+      }
+     },
+     "timestamp": "2025-08-08T07:56:26Z"
+    },
+    "rev": {
+     "page": 2050,
+     "parentid": 19469,
+     "revid": 19516,
+     "sha1": "1879decb1ece01417573e7b2f9e8223b8d9cd27d",
+     "size": 681,
+     "slots": {
+      "main": {
+       "sha1": "1879decb1ece01417573e7b2f9e8223b8d9cd27d"
+      }
+     },
+     "timestamp": "2025-08-08T07:56:26Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19517,
+    "sha1_attr": "d5xxgy6etq1qpwq80cbqmu9hna7h4t8",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 23, 2025",
+    "ts": "2025-08-08T07:56:47Z"
+   },
+   "key": 2051,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19517,
+    "sha1_attr": "d5xxgy6etq1qpwq80cbqmu9hna7h4t8",
+    "tdel": null,
+    "text_len": 827,
+    "text_sha1": "70b430d6f2f6d038ada4f0585c876c618a17b19c",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 23, 2025",
+    "ts": "2025-08-08T07:56:47Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19472,
+     "revid": 19517,
+     "sha1": "70b430d6f2f6d038ada4f0585c876c618a17b19c",
+     "size": 827,
+     "slots": {
+      "main": {
+       "sha1": "70b430d6f2f6d038ada4f0585c876c618a17b19c"
+      }
+     },
+     "timestamp": "2025-08-08T07:56:47Z"
+    },
+    "rev": {
+     "page": 2051,
+     "parentid": 19472,
+     "revid": 19517,
+     "sha1": "70b430d6f2f6d038ada4f0585c876c618a17b19c",
+     "size": 827,
+     "slots": {
+      "main": {
+       "sha1": "70b430d6f2f6d038ada4f0585c876c618a17b19c"
+      }
+     },
+     "timestamp": "2025-08-08T07:56:47Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19518,
+    "sha1_attr": "5hdkd1da6t5skqsha9gz7dgdjttdfud",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 24, 2025",
+    "ts": "2025-08-08T07:57:09Z"
+   },
+   "key": 2052,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19518,
+    "sha1_attr": "5hdkd1da6t5skqsha9gz7dgdjttdfud",
+    "tdel": null,
+    "text_len": 1006,
+    "text_sha1": "2eefb4c8778a846b2c037c39f6f96834d300d275",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 24, 2025",
+    "ts": "2025-08-08T07:57:09Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19473,
+     "revid": 19518,
+     "sha1": "2eefb4c8778a846b2c037c39f6f96834d300d275",
+     "size": 1006,
+     "slots": {
+      "main": {
+       "sha1": "2eefb4c8778a846b2c037c39f6f96834d300d275"
+      }
+     },
+     "timestamp": "2025-08-08T07:57:09Z"
+    },
+    "rev": {
+     "page": 2052,
+     "parentid": 19473,
+     "revid": 19518,
+     "sha1": "2eefb4c8778a846b2c037c39f6f96834d300d275",
+     "size": 1006,
+     "slots": {
+      "main": {
+       "sha1": "2eefb4c8778a846b2c037c39f6f96834d300d275"
+      }
+     },
+     "timestamp": "2025-08-08T07:57:09Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19519,
+    "sha1_attr": "k3lawuoo8bg1zedoy9pliv97yvcbahw",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 25, 2025",
+    "ts": "2025-08-08T07:57:29Z"
+   },
+   "key": 2053,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19519,
+    "sha1_attr": "k3lawuoo8bg1zedoy9pliv97yvcbahw",
+    "tdel": null,
+    "text_len": 718,
+    "text_sha1": "ac1215e12d306495a827052d4daadc66b86e51e4",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 25, 2025",
+    "ts": "2025-08-08T07:57:29Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19488,
+     "revid": 19519,
+     "sha1": "ac1215e12d306495a827052d4daadc66b86e51e4",
+     "size": 718,
+     "slots": {
+      "main": {
+       "sha1": "ac1215e12d306495a827052d4daadc66b86e51e4"
+      }
+     },
+     "timestamp": "2025-08-08T07:57:29Z"
+    },
+    "rev": {
+     "page": 2053,
+     "parentid": 19488,
+     "revid": 19519,
+     "sha1": "ac1215e12d306495a827052d4daadc66b86e51e4",
+     "size": 718,
+     "slots": {
+      "main": {
+       "sha1": "ac1215e12d306495a827052d4daadc66b86e51e4"
+      }
+     },
+     "timestamp": "2025-08-08T07:57:29Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19537,
+    "sha1_attr": "tthe5x2tunyzq51r9jvuak82jfqthqx",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 9, 2025",
+    "ts": "2025-08-08T08:25:50Z"
+   },
+   "key": 2055,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19537,
+    "sha1_attr": "tthe5x2tunyzq51r9jvuak82jfqthqx",
+    "tdel": null,
+    "text_len": 642,
+    "text_sha1": "ff466b5e5fd25fe895095af08cf37a4629a1a519",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 9, 2025",
+    "ts": "2025-08-08T08:25:50Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19494,
+     "revid": 19537,
+     "sha1": "ff466b5e5fd25fe895095af08cf37a4629a1a519",
+     "size": 642,
+     "slots": {
+      "main": {
+       "sha1": "ff466b5e5fd25fe895095af08cf37a4629a1a519"
+      }
+     },
+     "timestamp": "2025-08-08T08:25:50Z"
+    },
+    "rev": {
+     "page": 2055,
+     "parentid": 19494,
+     "revid": 19537,
+     "sha1": "ff466b5e5fd25fe895095af08cf37a4629a1a519",
+     "size": 642,
+     "slots": {
+      "main": {
+       "sha1": "ff466b5e5fd25fe895095af08cf37a4629a1a519"
+      }
+     },
+     "timestamp": "2025-08-08T08:25:50Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19538,
+    "sha1_attr": "3l4m8tjin3mt4zx57ksbj5z26trvwzj",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 10, 2025",
+    "ts": "2025-08-08T08:26:27Z"
+   },
+   "key": 2056,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19538,
+    "sha1_attr": "3l4m8tjin3mt4zx57ksbj5z26trvwzj",
+    "tdel": null,
+    "text_len": 720,
+    "text_sha1": "1eb4f0b70acb6e51c17e84b2bc9e6d22d80d27bf",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 10, 2025",
+    "ts": "2025-08-08T08:26:27Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19496,
+     "revid": 19538,
+     "sha1": "1eb4f0b70acb6e51c17e84b2bc9e6d22d80d27bf",
+     "size": 720,
+     "slots": {
+      "main": {
+       "sha1": "1eb4f0b70acb6e51c17e84b2bc9e6d22d80d27bf"
+      }
+     },
+     "timestamp": "2025-08-08T08:26:27Z"
+    },
+    "rev": {
+     "page": 2056,
+     "parentid": 19496,
+     "revid": 19538,
+     "sha1": "1eb4f0b70acb6e51c17e84b2bc9e6d22d80d27bf",
+     "size": 720,
+     "slots": {
+      "main": {
+       "sha1": "1eb4f0b70acb6e51c17e84b2bc9e6d22d80d27bf"
+      }
+     },
+     "timestamp": "2025-08-08T08:26:27Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19520,
+    "sha1_attr": "g7x9jw7fo75146ktgfchqhgpjq3mmfw",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 26, 2025",
+    "ts": "2025-08-08T07:57:50Z"
+   },
+   "key": 2058,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19520,
+    "sha1_attr": "g7x9jw7fo75146ktgfchqhgpjq3mmfw",
+    "tdel": null,
+    "text_len": 716,
+    "text_sha1": "8adb8929d90406881217035cf227da6ccc48161c",
+    "title": "Wikisambit:Sambit kan aldaw/Setyembre 26, 2025",
+    "ts": "2025-08-08T07:57:50Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19510,
+     "revid": 19520,
+     "sha1": "8adb8929d90406881217035cf227da6ccc48161c",
+     "size": 716,
+     "slots": {
+      "main": {
+       "sha1": "8adb8929d90406881217035cf227da6ccc48161c"
+      }
+     },
+     "timestamp": "2025-08-08T07:57:50Z"
+    },
+    "rev": {
+     "page": 2058,
+     "parentid": 19510,
+     "revid": 19520,
+     "sha1": "8adb8929d90406881217035cf227da6ccc48161c",
+     "size": 716,
+     "slots": {
+      "main": {
+       "sha1": "8adb8929d90406881217035cf227da6ccc48161c"
+      }
+     },
+     "timestamp": "2025-08-08T07:57:50Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": {
+    "file": "bclwikiquote-2026-10-01-p1p2443.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19564,
+    "sha1_attr": "m3rvaac1ng1vrfg2u033mpqppyb2ie7",
+    "tdel": null,
+    "text_len": null,
+    "text_sha1": null,
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 20, 2025",
+    "ts": "2025-08-08T08:47:02Z"
+   },
+   "key": 2066,
+   "legacy": {
+    "file": "bclwikiquote-20261001-pages-meta-current.xml.bz2",
+    "ns": 4,
+    "redirect": null,
+    "rid": 19564,
+    "sha1_attr": "m3rvaac1ng1vrfg2u033mpqppyb2ie7",
+    "tdel": null,
+    "text_len": 735,
+    "text_sha1": "bd3c54e7501040cd90a4f9d86e3969bee5404c9f",
+    "title": "Wikisambit:Sambit kan aldaw/Oktubre 20, 2025",
+    "ts": "2025-08-08T08:47:02Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 19549,
+     "revid": 19564,
+     "sha1": "bd3c54e7501040cd90a4f9d86e3969bee5404c9f",
+     "size": 735,
+     "slots": {
+      "main": {
+       "sha1": "bd3c54e7501040cd90a4f9d86e3969bee5404c9f"
+      }
+     },
+     "timestamp": "2025-08-08T08:47:02Z"
+    },
+    "rev": {
+     "page": 2066,
+     "parentid": 19549,
+     "revid": 19564,
+     "sha1": "bd3c54e7501040cd90a4f9d86e3969bee5404c9f",
+     "size": 735,
+     "slots": {
+      "main": {
+       "sha1": "bd3c54e7501040cd90a4f9d86e3969bee5404c9f"
+      }
+     },
+     "timestamp": "2025-08-08T08:47:02Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "TEXT_DIFF"
+  }
+ ],
+ "counts": {
+  "META_DIFF|UNEXPLAINED": 1,
+  "TEXT_DIFF|UNEXPLAINED": 32
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 32,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "4|TEXT_DIFF": 32
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 38
+  },
+  "legacy": {
+   "no_text_not_deleted": 6
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 32
+ },
+ "live_checked": 32,
+ "max_ts": {
+  "export": "2026-09-25T11:51:46Z",
+  "legacy": "2026-09-25T11:51:46Z"
+ },
+ "n_diffs": 33,
+ "n_export": 2387,
+ "n_legacy": 2387,
+ "rc_covers_window": true,
+ "rc_rows": 2,
+ "unexplained_primary": 32,
+ "wiki": "bclwikiquote"
+}

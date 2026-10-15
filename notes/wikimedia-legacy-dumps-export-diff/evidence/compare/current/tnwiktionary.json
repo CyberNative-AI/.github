@@ -1,0 +1,1360 @@
+{
+ "arm": "current",
+ "checked": [
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2821,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 10,
+    "redirect": null,
+    "rid": 7862,
+    "sha1_attr": "3on5r8f3w0aebu31i9qlfkefsa3zeu1",
+    "tdel": null,
+    "text_len": 134,
+    "text_sha1": "1f8aed1f45c6faa1037130f27ce4284d89ea00d9",
+    "title": "Tempolete:NOINDEX",
+    "ts": "2019-02-27T14:23:31Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7861,
+     "revid": 7862,
+     "sha1": "1f8aed1f45c6faa1037130f27ce4284d89ea00d9",
+     "size": 134,
+     "slots": {
+      "main": {
+       "sha1": "1f8aed1f45c6faa1037130f27ce4284d89ea00d9"
+      }
+     },
+     "timestamp": "2019-02-27T14:23:31Z"
+    },
+    "rev": {
+     "page": 2821,
+     "parentid": 7861,
+     "revid": 7862,
+     "sha1": "1f8aed1f45c6faa1037130f27ce4284d89ea00d9",
+     "size": 134,
+     "slots": {
+      "main": {
+       "sha1": "1f8aed1f45c6faa1037130f27ce4284d89ea00d9"
+      }
+     },
+     "timestamp": "2019-02-27T14:23:31Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2822,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7864,
+    "sha1_attr": "fowwbjb8p4a0gw5mdpetsvo3mm7zshi",
+    "tdel": null,
+    "text_len": 30,
+    "text_sha1": "86564061fdf7b7ed61511841f0db13e1559119f6",
+    "title": null,
+    "ts": "2019-03-02T22:16:11Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7864,
+     "sha1": "86564061fdf7b7ed61511841f0db13e1559119f6",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "86564061fdf7b7ed61511841f0db13e1559119f6"
+      }
+     },
+     "timestamp": "2019-03-02T22:16:11Z"
+    },
+    "rev": {
+     "page": 2822,
+     "parentid": 0,
+     "revid": 7864,
+     "sha1": "86564061fdf7b7ed61511841f0db13e1559119f6",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "86564061fdf7b7ed61511841f0db13e1559119f6"
+      }
+     },
+     "timestamp": "2019-03-02T22:16:11Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2823,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 8550,
+    "sha1_attr": "2229pjupj4oxyrzx6wq7rucquxcn3pt",
+    "tdel": null,
+    "text_len": 102,
+    "text_sha1": "119cbc3352a932c8b38c1584f62c8493eadd8291",
+    "title": null,
+    "ts": "2023-01-08T04:23:16Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7870,
+     "revid": 8550,
+     "sha1": "119cbc3352a932c8b38c1584f62c8493eadd8291",
+     "size": 102,
+     "slots": {
+      "main": {
+       "sha1": "119cbc3352a932c8b38c1584f62c8493eadd8291"
+      }
+     },
+     "timestamp": "2023-01-08T04:23:16Z"
+    },
+    "rev": {
+     "page": 2823,
+     "parentid": 7870,
+     "revid": 8550,
+     "sha1": "119cbc3352a932c8b38c1584f62c8493eadd8291",
+     "size": 102,
+     "slots": {
+      "main": {
+       "sha1": "119cbc3352a932c8b38c1584f62c8493eadd8291"
+      }
+     },
+     "timestamp": "2023-01-08T04:23:16Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2824,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7867,
+    "sha1_attr": "k284q7jldpltzdws49dzonocorbqxe3",
+    "tdel": null,
+    "text_len": 29,
+    "text_sha1": "abbeef432e761e409d97b359d34c10378864e28b",
+    "title": null,
+    "ts": "2019-07-01T10:45:43Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7867,
+     "sha1": "abbeef432e761e409d97b359d34c10378864e28b",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "abbeef432e761e409d97b359d34c10378864e28b"
+      }
+     },
+     "timestamp": "2019-07-01T10:45:43Z"
+    },
+    "rev": {
+     "page": 2824,
+     "parentid": 0,
+     "revid": 7867,
+     "sha1": "abbeef432e761e409d97b359d34c10378864e28b",
+     "size": 29,
+     "slots": {
+      "main": {
+       "sha1": "abbeef432e761e409d97b359d34c10378864e28b"
+      }
+     },
+     "timestamp": "2019-07-01T10:45:43Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2825,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7868,
+    "sha1_attr": "jpmcha1jgpe2b70kb7f5yx4h1ngdb91",
+    "tdel": null,
+    "text_len": 123,
+    "text_sha1": "a8bf9282ca2d12d6ae1b56bac4bae59f58119635",
+    "title": null,
+    "ts": "2019-08-04T21:29:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7868,
+     "sha1": "a8bf9282ca2d12d6ae1b56bac4bae59f58119635",
+     "size": 123,
+     "slots": {
+      "main": {
+       "sha1": "a8bf9282ca2d12d6ae1b56bac4bae59f58119635"
+      }
+     },
+     "timestamp": "2019-08-04T21:29:51Z"
+    },
+    "rev": {
+     "page": 2825,
+     "parentid": 0,
+     "revid": 7868,
+     "sha1": "a8bf9282ca2d12d6ae1b56bac4bae59f58119635",
+     "size": 123,
+     "slots": {
+      "main": {
+       "sha1": "a8bf9282ca2d12d6ae1b56bac4bae59f58119635"
+      }
+     },
+     "timestamp": "2019-08-04T21:29:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2826,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7895,
+    "sha1_attr": "to91va09kln5vco63egs1h2acqeuc5v",
+    "tdel": null,
+    "text_len": 148,
+    "text_sha1": "fe07edbf0f719c978e4c1fdb0305c19b4eca4f13",
+    "title": null,
+    "ts": "2020-07-11T04:23:23Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7869,
+     "revid": 7895,
+     "sha1": "fe07edbf0f719c978e4c1fdb0305c19b4eca4f13",
+     "size": 148,
+     "slots": {
+      "main": {
+       "sha1": "fe07edbf0f719c978e4c1fdb0305c19b4eca4f13"
+      }
+     },
+     "timestamp": "2020-07-11T04:23:23Z"
+    },
+    "rev": {
+     "page": 2826,
+     "parentid": 7869,
+     "revid": 7895,
+     "sha1": "fe07edbf0f719c978e4c1fdb0305c19b4eca4f13",
+     "size": 148,
+     "slots": {
+      "main": {
+       "sha1": "fe07edbf0f719c978e4c1fdb0305c19b4eca4f13"
+      }
+     },
+     "timestamp": "2020-07-11T04:23:23Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2827,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7871,
+    "sha1_attr": "f6232v4vtktebjkkrjaopmzo2dg26nc",
+    "tdel": null,
+    "text_len": 35,
+    "text_sha1": "81da5c83a04b0b9bb239ce0193825b3bc6551228",
+    "title": null,
+    "ts": "2019-12-17T07:42:44Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7871,
+     "sha1": "81da5c83a04b0b9bb239ce0193825b3bc6551228",
+     "size": 35,
+     "slots": {
+      "main": {
+       "sha1": "81da5c83a04b0b9bb239ce0193825b3bc6551228"
+      }
+     },
+     "timestamp": "2019-12-17T07:42:44Z"
+    },
+    "rev": {
+     "page": 2827,
+     "parentid": 0,
+     "revid": 7871,
+     "sha1": "81da5c83a04b0b9bb239ce0193825b3bc6551228",
+     "size": 35,
+     "slots": {
+      "main": {
+       "sha1": "81da5c83a04b0b9bb239ce0193825b3bc6551228"
+      }
+     },
+     "timestamp": "2019-12-17T07:42:44Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2828,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7872,
+    "sha1_attr": "jxr0i4uppk1hrtb9t3ml1teg34o7lzp",
+    "tdel": null,
+    "text_len": 128,
+    "text_sha1": "aaae7b1450eddddd8350c5452e75fcb1acea4315",
+    "title": null,
+    "ts": "2020-01-05T16:47:03Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7872,
+     "sha1": "aaae7b1450eddddd8350c5452e75fcb1acea4315",
+     "size": 128,
+     "slots": {
+      "main": {
+       "sha1": "aaae7b1450eddddd8350c5452e75fcb1acea4315"
+      }
+     },
+     "timestamp": "2020-01-05T16:47:03Z"
+    },
+    "rev": {
+     "page": 2828,
+     "parentid": 0,
+     "revid": 7872,
+     "sha1": "aaae7b1450eddddd8350c5452e75fcb1acea4315",
+     "size": 128,
+     "slots": {
+      "main": {
+       "sha1": "aaae7b1450eddddd8350c5452e75fcb1acea4315"
+      }
+     },
+     "timestamp": "2020-01-05T16:47:03Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2832,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7881,
+    "sha1_attr": "kwv1jlcsnajcc0mc6l6o6xfk3wfi4dh",
+    "tdel": null,
+    "text_len": 25,
+    "text_sha1": "b307fd00de64268f5e21741d7ed2e76e704f05a5",
+    "title": null,
+    "ts": "2020-04-17T05:22:16Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7881,
+     "sha1": "b307fd00de64268f5e21741d7ed2e76e704f05a5",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "b307fd00de64268f5e21741d7ed2e76e704f05a5"
+      }
+     },
+     "timestamp": "2020-04-17T05:22:16Z"
+    },
+    "rev": {
+     "page": 2832,
+     "parentid": 0,
+     "revid": 7881,
+     "sha1": "b307fd00de64268f5e21741d7ed2e76e704f05a5",
+     "size": 25,
+     "slots": {
+      "main": {
+       "sha1": "b307fd00de64268f5e21741d7ed2e76e704f05a5"
+      }
+     },
+     "timestamp": "2020-04-17T05:22:16Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2834,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7893,
+    "sha1_attr": "aje1p072vbu4ycbg8irudw8wityb1lf",
+    "tdel": null,
+    "text_len": 27,
+    "text_sha1": "5a3821c3ffedc2064c319f2fcb37228caa02f2d3",
+    "title": null,
+    "ts": "2020-06-26T10:25:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7893,
+     "sha1": "5a3821c3ffedc2064c319f2fcb37228caa02f2d3",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "5a3821c3ffedc2064c319f2fcb37228caa02f2d3"
+      }
+     },
+     "timestamp": "2020-06-26T10:25:41Z"
+    },
+    "rev": {
+     "page": 2834,
+     "parentid": 0,
+     "revid": 7893,
+     "sha1": "5a3821c3ffedc2064c319f2fcb37228caa02f2d3",
+     "size": 27,
+     "slots": {
+      "main": {
+       "sha1": "5a3821c3ffedc2064c319f2fcb37228caa02f2d3"
+      }
+     },
+     "timestamp": "2020-06-26T10:25:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2835,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": "[user-namespace title removed]",
+    "rid": 8741,
+    "sha1_attr": "eps9qsdq4y5agwqe6nnzqdi732eh7ch",
+    "tdel": null,
+    "text_len": 34,
+    "text_sha1": "7dfbbb7d1858900c3e452ba95755a28964bf4571",
+    "title": null,
+    "ts": "2026-03-06T16:52:35Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7894,
+     "revid": 8741,
+     "sha1": "7dfbbb7d1858900c3e452ba95755a28964bf4571",
+     "size": 34,
+     "slots": {
+      "main": {
+       "sha1": "7dfbbb7d1858900c3e452ba95755a28964bf4571"
+      }
+     },
+     "timestamp": "2026-03-06T16:52:35Z"
+    },
+    "rev": {
+     "page": 2835,
+     "parentid": 7894,
+     "revid": 8741,
+     "sha1": "7dfbbb7d1858900c3e452ba95755a28964bf4571",
+     "size": 34,
+     "slots": {
+      "main": {
+       "sha1": "7dfbbb7d1858900c3e452ba95755a28964bf4571"
+      }
+     },
+     "timestamp": "2026-03-06T16:52:35Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2836,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7896,
+    "sha1_attr": "a6pwkixy5qea1ucfvipug75for091wh",
+    "tdel": null,
+    "text_len": 145,
+    "text_sha1": "5734c85e6d09181cfc2125a6c152e2e6d005fde1",
+    "title": null,
+    "ts": "2020-07-11T04:23:23Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7896,
+     "sha1": "5734c85e6d09181cfc2125a6c152e2e6d005fde1",
+     "size": 145,
+     "slots": {
+      "main": {
+       "sha1": "5734c85e6d09181cfc2125a6c152e2e6d005fde1"
+      }
+     },
+     "timestamp": "2020-07-11T04:23:23Z"
+    },
+    "rev": {
+     "page": 2836,
+     "parentid": 0,
+     "revid": 7896,
+     "sha1": "5734c85e6d09181cfc2125a6c152e2e6d005fde1",
+     "size": 145,
+     "slots": {
+      "main": {
+       "sha1": "5734c85e6d09181cfc2125a6c152e2e6d005fde1"
+      }
+     },
+     "timestamp": "2020-07-11T04:23:23Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2837,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7897,
+    "sha1_attr": "0tg6e3xg4pwb5em3dy2by1gsae5booy",
+    "tdel": null,
+    "text_len": 32,
+    "text_sha1": "0700ca0f5b46702faeb32c63ec3a423ad0d70ec2",
+    "title": null,
+    "ts": "2020-07-24T00:03:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7897,
+     "sha1": "0700ca0f5b46702faeb32c63ec3a423ad0d70ec2",
+     "size": 32,
+     "slots": {
+      "main": {
+       "sha1": "0700ca0f5b46702faeb32c63ec3a423ad0d70ec2"
+      }
+     },
+     "timestamp": "2020-07-24T00:03:45Z"
+    },
+    "rev": {
+     "page": 2837,
+     "parentid": 0,
+     "revid": 7897,
+     "sha1": "0700ca0f5b46702faeb32c63ec3a423ad0d70ec2",
+     "size": 32,
+     "slots": {
+      "main": {
+       "sha1": "0700ca0f5b46702faeb32c63ec3a423ad0d70ec2"
+      }
+     },
+     "timestamp": "2020-07-24T00:03:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2839,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7916,
+    "sha1_attr": "03sxbnz80jmfj5fffd33rkbkdffbbhv",
+    "tdel": null,
+    "text_len": 26,
+    "text_sha1": "00e78b88e2ea0377863414083967daff9cb3e9f3",
+    "title": null,
+    "ts": "2020-11-29T09:30:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7916,
+     "sha1": "00e78b88e2ea0377863414083967daff9cb3e9f3",
+     "size": 26,
+     "slots": {
+      "main": {
+       "sha1": "00e78b88e2ea0377863414083967daff9cb3e9f3"
+      }
+     },
+     "timestamp": "2020-11-29T09:30:51Z"
+    },
+    "rev": {
+     "page": 2839,
+     "parentid": 0,
+     "revid": 7916,
+     "sha1": "00e78b88e2ea0377863414083967daff9cb3e9f3",
+     "size": 26,
+     "slots": {
+      "main": {
+       "sha1": "00e78b88e2ea0377863414083967daff9cb3e9f3"
+      }
+     },
+     "timestamp": "2020-11-29T09:30:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2840,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7917,
+    "sha1_attr": "dfkuzrfxb3fokiyj65jf5r4fqfl3qbp",
+    "tdel": null,
+    "text_len": 187,
+    "text_sha1": "72fedc6518608f91b6fd6f8a32c15d00be79d905",
+    "title": null,
+    "ts": "2021-01-05T05:09:44Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7917,
+     "sha1": "72fedc6518608f91b6fd6f8a32c15d00be79d905",
+     "size": 187,
+     "slots": {
+      "main": {
+       "sha1": "72fedc6518608f91b6fd6f8a32c15d00be79d905"
+      }
+     },
+     "timestamp": "2021-01-05T05:09:44Z"
+    },
+    "rev": {
+     "page": 2840,
+     "parentid": 0,
+     "revid": 7917,
+     "sha1": "72fedc6518608f91b6fd6f8a32c15d00be79d905",
+     "size": 187,
+     "slots": {
+      "main": {
+       "sha1": "72fedc6518608f91b6fd6f8a32c15d00be79d905"
+      }
+     },
+     "timestamp": "2021-01-05T05:09:44Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2841,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7955,
+    "sha1_attr": "ihe6s1lbzqd8gasxnoewu85gshqim7x",
+    "tdel": null,
+    "text_len": 46,
+    "text_sha1": "9e3b305afa2d4e635c32d8e7340906d191fb3efd",
+    "title": null,
+    "ts": "2021-06-16T02:55:27Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7953,
+     "revid": 7955,
+     "sha1": "9e3b305afa2d4e635c32d8e7340906d191fb3efd",
+     "size": 46,
+     "slots": {
+      "main": {
+       "sha1": "9e3b305afa2d4e635c32d8e7340906d191fb3efd"
+      }
+     },
+     "timestamp": "2021-06-16T02:55:27Z"
+    },
+    "rev": {
+     "page": 2841,
+     "parentid": 7953,
+     "revid": 7955,
+     "sha1": "9e3b305afa2d4e635c32d8e7340906d191fb3efd",
+     "size": 46,
+     "slots": {
+      "main": {
+       "sha1": "9e3b305afa2d4e635c32d8e7340906d191fb3efd"
+      }
+     },
+     "timestamp": "2021-06-16T02:55:27Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2842,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7954,
+    "sha1_attr": "1ud4suvkeq8qtlm36a2g10cfg17vxfa",
+    "tdel": null,
+    "text_len": 120,
+    "text_sha1": "0fc8170b4a009814ca750b69ab257a0b4d7785f6",
+    "title": null,
+    "ts": "2021-05-01T18:28:41Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7954,
+     "sha1": "0fc8170b4a009814ca750b69ab257a0b4d7785f6",
+     "size": 120,
+     "slots": {
+      "main": {
+       "sha1": "0fc8170b4a009814ca750b69ab257a0b4d7785f6"
+      }
+     },
+     "timestamp": "2021-05-01T18:28:41Z"
+    },
+    "rev": {
+     "page": 2842,
+     "parentid": 0,
+     "revid": 7954,
+     "sha1": "0fc8170b4a009814ca750b69ab257a0b4d7785f6",
+     "size": 120,
+     "slots": {
+      "main": {
+       "sha1": "0fc8170b4a009814ca750b69ab257a0b4d7785f6"
+      }
+     },
+     "timestamp": "2021-05-01T18:28:41Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2844,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 7963,
+    "sha1_attr": "c4ypm7wbt5rvjqqxzie5ujk3hmhcrrp",
+    "tdel": null,
+    "text_len": 273,
+    "text_sha1": "67e9107c473064ef22ee480baf235872b331b095",
+    "title": null,
+    "ts": "2021-09-05T19:18:58Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7963,
+     "sha1": "67e9107c473064ef22ee480baf235872b331b095",
+     "size": 273,
+     "slots": {
+      "main": {
+       "sha1": "67e9107c473064ef22ee480baf235872b331b095"
+      }
+     },
+     "timestamp": "2021-09-05T19:18:58Z"
+    },
+    "rev": {
+     "page": 2844,
+     "parentid": 0,
+     "revid": 7963,
+     "sha1": "67e9107c473064ef22ee480baf235872b331b095",
+     "size": 273,
+     "slots": {
+      "main": {
+       "sha1": "67e9107c473064ef22ee480baf235872b331b095"
+      }
+     },
+     "timestamp": "2021-09-05T19:18:58Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2845,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 7967,
+    "sha1_attr": "hvw8p21tb0yn07r3mxyl6o9hwlytgag",
+    "tdel": null,
+    "text_len": 28,
+    "text_sha1": "991e6c793c8380e865fd12665badab1cc0190db8",
+    "title": null,
+    "ts": "2021-10-06T20:55:10Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7966,
+     "revid": 7967,
+     "sha1": "991e6c793c8380e865fd12665badab1cc0190db8",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "991e6c793c8380e865fd12665badab1cc0190db8"
+      }
+     },
+     "timestamp": "2021-10-06T20:55:10Z"
+    },
+    "rev": {
+     "page": 2845,
+     "parentid": 7966,
+     "revid": 7967,
+     "sha1": "991e6c793c8380e865fd12665badab1cc0190db8",
+     "size": 28,
+     "slots": {
+      "main": {
+       "sha1": "991e6c793c8380e865fd12665badab1cc0190db8"
+      }
+     },
+     "timestamp": "2021-10-06T20:55:10Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2848,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 3,
+    "redirect": null,
+    "rid": 7971,
+    "sha1_attr": "f5cnlglkr1nxbag6hq0yod0bfqkrkuz",
+    "tdel": null,
+    "text_len": 2040,
+    "text_sha1": "81af5bbfc6d68ea695816ac327b6d898965b8e5b",
+    "title": null,
+    "ts": "2022-01-04T18:20:28Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7971,
+     "sha1": "81af5bbfc6d68ea695816ac327b6d898965b8e5b",
+     "size": 2040,
+     "slots": {
+      "main": {
+       "sha1": "81af5bbfc6d68ea695816ac327b6d898965b8e5b"
+      }
+     },
+     "timestamp": "2022-01-04T18:20:28Z"
+    },
+    "rev": {
+     "page": 2848,
+     "parentid": 0,
+     "revid": 7971,
+     "sha1": "81af5bbfc6d68ea695816ac327b6d898965b8e5b",
+     "size": 2040,
+     "slots": {
+      "main": {
+       "sha1": "81af5bbfc6d68ea695816ac327b6d898965b8e5b"
+      }
+     },
+     "timestamp": "2022-01-04T18:20:28Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2849,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": "[user-namespace title removed]",
+    "rid": 7991,
+    "sha1_attr": "bovix30yjct5txav5jifqqhmrg0poya",
+    "tdel": null,
+    "text_len": 30,
+    "text_sha1": "6415a517caaa2046fc45aa74074c172fd855ba92",
+    "title": null,
+    "ts": "2022-02-21T04:43:19Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 7973,
+     "revid": 7991,
+     "sha1": "6415a517caaa2046fc45aa74074c172fd855ba92",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "6415a517caaa2046fc45aa74074c172fd855ba92"
+      }
+     },
+     "timestamp": "2022-02-21T04:43:19Z"
+    },
+    "rev": {
+     "page": 2849,
+     "parentid": 7973,
+     "revid": 7991,
+     "sha1": "6415a517caaa2046fc45aa74074c172fd855ba92",
+     "size": 30,
+     "slots": {
+      "main": {
+       "sha1": "6415a517caaa2046fc45aa74074c172fd855ba92"
+      }
+     },
+     "timestamp": "2022-02-21T04:43:19Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2851,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 2,
+    "redirect": null,
+    "rid": 7987,
+    "sha1_attr": "9nzhwp19ie1vevrzeuqt2jpfbfho7il",
+    "tdel": null,
+    "text_len": 67,
+    "text_sha1": "52c0576cc7c8479a3aecc27673b940b67a74f90d",
+    "title": null,
+    "ts": "2022-02-18T10:27:45Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 0,
+     "revid": 7987,
+     "sha1": "52c0576cc7c8479a3aecc27673b940b67a74f90d",
+     "size": 67,
+     "slots": {
+      "main": {
+       "sha1": "52c0576cc7c8479a3aecc27673b940b67a74f90d"
+      }
+     },
+     "timestamp": "2022-02-18T10:27:45Z"
+    },
+    "rev": {
+     "page": 2851,
+     "parentid": 0,
+     "revid": 7987,
+     "sha1": "52c0576cc7c8479a3aecc27673b940b67a74f90d",
+     "size": 67,
+     "slots": {
+      "main": {
+       "sha1": "52c0576cc7c8479a3aecc27673b940b67a74f90d"
+      }
+     },
+     "timestamp": "2022-02-18T10:27:45Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2852,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 10,
+    "redirect": null,
+    "rid": 8577,
+    "sha1_attr": "r5bgwo2d5xvyl7tehzfb80q0ugbjrxg",
+    "tdel": null,
+    "text_len": 1758,
+    "text_sha1": "e868361d1fe92897f6a36f9299263e5a84101f24",
+    "title": "Tempolete:dipolanete",
+    "ts": "2023-12-15T04:43:36Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 8564,
+     "revid": 8577,
+     "sha1": "e868361d1fe92897f6a36f9299263e5a84101f24",
+     "size": 1758,
+     "slots": {
+      "main": {
+       "sha1": "e868361d1fe92897f6a36f9299263e5a84101f24"
+      }
+     },
+     "timestamp": "2023-12-15T04:43:36Z"
+    },
+    "rev": {
+     "page": 2852,
+     "parentid": 8564,
+     "revid": 8577,
+     "sha1": "e868361d1fe92897f6a36f9299263e5a84101f24",
+     "size": 1758,
+     "slots": {
+      "main": {
+       "sha1": "e868361d1fe92897f6a36f9299263e5a84101f24"
+      }
+     },
+     "timestamp": "2023-12-15T04:43:36Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2853,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 8086,
+    "sha1_attr": "kzpqr4fozh1360b3hoyotugfnvvdljo",
+    "tdel": null,
+    "text_len": 340,
+    "text_sha1": "b3b5a840dab0944e9be69d048eeb6358f7263954",
+    "title": "☉",
+    "ts": "2022-06-14T20:51:39Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 8070,
+     "revid": 8086,
+     "sha1": "b3b5a840dab0944e9be69d048eeb6358f7263954",
+     "size": 340,
+     "slots": {
+      "main": {
+       "sha1": "b3b5a840dab0944e9be69d048eeb6358f7263954"
+      }
+     },
+     "timestamp": "2022-06-14T20:51:39Z"
+    },
+    "rev": {
+     "page": 2853,
+     "parentid": 8070,
+     "revid": 8086,
+     "sha1": "b3b5a840dab0944e9be69d048eeb6358f7263954",
+     "size": 340,
+     "slots": {
+      "main": {
+       "sha1": "b3b5a840dab0944e9be69d048eeb6358f7263954"
+      }
+     },
+     "timestamp": "2022-06-14T20:51:39Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2854,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 8055,
+    "sha1_attr": "08c3x9hev1tstm3365694xr80vcbqf5",
+    "tdel": null,
+    "text_len": 228,
+    "text_sha1": "01fb7e1747d7c879bb6dfb25a7438830bbe6c281",
+    "title": "☿",
+    "ts": "2022-06-08T09:47:22Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 8008,
+     "revid": 8055,
+     "sha1": "01fb7e1747d7c879bb6dfb25a7438830bbe6c281",
+     "size": 228,
+     "slots": {
+      "main": {
+       "sha1": "01fb7e1747d7c879bb6dfb25a7438830bbe6c281"
+      }
+     },
+     "timestamp": "2022-06-08T09:47:22Z"
+    },
+    "rev": {
+     "page": 2854,
+     "parentid": 8008,
+     "revid": 8055,
+     "sha1": "01fb7e1747d7c879bb6dfb25a7438830bbe6c281",
+     "size": 228,
+     "slots": {
+      "main": {
+       "sha1": "01fb7e1747d7c879bb6dfb25a7438830bbe6c281"
+      }
+     },
+     "timestamp": "2022-06-08T09:47:22Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2855,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 8101,
+    "sha1_attr": "in57m6ylsto00d28ojgq3fw0isas472",
+    "tdel": null,
+    "text_len": 340,
+    "text_sha1": "9f994559afdda5b899122eeef0d3525504595e3e",
+    "title": "♀",
+    "ts": "2022-06-14T20:54:03Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 8085,
+     "revid": 8101,
+     "sha1": "9f994559afdda5b899122eeef0d3525504595e3e",
+     "size": 340,
+     "slots": {
+      "main": {
+       "sha1": "9f994559afdda5b899122eeef0d3525504595e3e"
+      }
+     },
+     "timestamp": "2022-06-14T20:54:03Z"
+    },
+    "rev": {
+     "page": 2855,
+     "parentid": 8085,
+     "revid": 8101,
+     "sha1": "9f994559afdda5b899122eeef0d3525504595e3e",
+     "size": 340,
+     "slots": {
+      "main": {
+       "sha1": "9f994559afdda5b899122eeef0d3525504595e3e"
+      }
+     },
+     "timestamp": "2022-06-14T20:54:03Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2856,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 0,
+    "redirect": null,
+    "rid": 8096,
+    "sha1_attr": "axxhrfiakfcj3icl2wilvub1gkwro4i",
+    "tdel": null,
+    "text_len": 333,
+    "text_sha1": "5dad4b4118f4d613d737d2acdccd49959e5ee2e2",
+    "title": "♂",
+    "ts": "2022-06-14T20:53:37Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 8080,
+     "revid": 8096,
+     "sha1": "5dad4b4118f4d613d737d2acdccd49959e5ee2e2",
+     "size": 333,
+     "slots": {
+      "main": {
+       "sha1": "5dad4b4118f4d613d737d2acdccd49959e5ee2e2"
+      }
+     },
+     "timestamp": "2022-06-14T20:53:37Z"
+    },
+    "rev": {
+     "page": 2856,
+     "parentid": 8080,
+     "revid": 8096,
+     "sha1": "5dad4b4118f4d613d737d2acdccd49959e5ee2e2",
+     "size": 333,
+     "slots": {
+      "main": {
+       "sha1": "5dad4b4118f4d613d737d2acdccd49959e5ee2e2"
+      }
+     },
+     "timestamp": "2022-06-14T20:53:37Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  },
+  {
+   "class": "UNEXPLAINED",
+   "export": null,
+   "key": 2857,
+   "legacy": {
+    "file": "tnwiktionary-20261001-pages-meta-current.xml.bz2",
+    "ns": 10,
+    "redirect": null,
+    "rid": 8054,
+    "sha1_attr": "jy1tyls0g8ffz2e6m7t39nnri0f6yof",
+    "tdel": null,
+    "text_len": 89,
+    "text_sha1": "aac0c656a5d05e41a97d3e1ad19a78a8bcc8440f",
+    "title": "Tempolete:=mul=",
+    "ts": "2022-06-08T09:46:51Z"
+   },
+   "live": {
+    "adj_events": [],
+    "latest": {
+     "parentid": 8007,
+     "revid": 8054,
+     "sha1": "aac0c656a5d05e41a97d3e1ad19a78a8bcc8440f",
+     "size": 89,
+     "slots": {
+      "main": {
+       "sha1": "aac0c656a5d05e41a97d3e1ad19a78a8bcc8440f"
+      }
+     },
+     "timestamp": "2022-06-08T09:46:51Z"
+    },
+    "rev": {
+     "page": 2857,
+     "parentid": 8007,
+     "revid": 8054,
+     "sha1": "aac0c656a5d05e41a97d3e1ad19a78a8bcc8440f",
+     "size": 89,
+     "slots": {
+      "main": {
+       "sha1": "aac0c656a5d05e41a97d3e1ad19a78a8bcc8440f"
+      }
+     },
+     "timestamp": "2022-06-08T09:46:51Z"
+    },
+    "verdict": "EXPORT_WRONG"
+   },
+   "type": "MISSING_EXPORT"
+  }
+ ],
+ "counts": {
+  "MISSING_EXPORT|UNEXPLAINED": 28,
+  "REV_DIFF|TIMING": 2
+ },
+ "dup_keys": {
+  "export": 0,
+  "legacy": 0
+ },
+ "est_export_wrong": 28,
+ "est_legacy_wrong": 0,
+ "export_wrong_by_ns_type": {
+  "0|MISSING_EXPORT": 4,
+  "10|MISSING_EXPORT": 3,
+  "2|MISSING_EXPORT": 14,
+  "3|MISSING_EXPORT": 7
+ },
+ "integrity": {
+  "export": {
+   "no_text_not_deleted": 13
+  },
+  "legacy": {
+   "no_text_not_deleted": 13
+  }
+ },
+ "live": {
+  "EXPORT_WRONG": 28
+ },
+ "live_checked": 28,
+ "max_ts": {
+  "export": "2026-09-25T12:48:41Z",
+  "legacy": "2026-10-01T12:42:58Z"
+ },
+ "n_diffs": 30,
+ "n_export": 1090,
+ "n_legacy": 1118,
+ "rc_covers_window": true,
+ "rc_rows": 3,
+ "unexplained_primary": 28,
+ "wiki": "tnwiktionary"
+}
