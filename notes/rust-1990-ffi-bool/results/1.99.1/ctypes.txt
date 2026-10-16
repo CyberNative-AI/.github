@@ -1,0 +1,9 @@
+restype = c_bool
+  is_flag_set(0x10) -> False  ok
+  is_odd(0x10) -> False  ok
+  is_even(0x3) -> False  ok
+restype = c_uint8, then test bit 0
+  is_flag_set(0x10) -> raw 0x00, bool(raw & 1) = False
+  is_odd(0x10) -> raw 0x00, bool(raw & 1) = False
+  is_even(0x3) -> raw 0x00, bool(raw & 1) = False
+  is_odd(0x11) -> raw 0x01, bool(raw & 1) = True
