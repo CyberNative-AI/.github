@@ -1,0 +1,164 @@
+{
+ "rdkit": "2025.03.6",
+ "CHEMBL1290711_frozen_perms": [
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1"
+ ],
+ "CHEMBL1290711": {
+  "distinct": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": 505
+  },
+  "ikeys": [
+   "JMGGAQQEALYVBC-JSNWSPKXSA-N"
+  ],
+  "fixpoints": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": true
+  }
+ },
+ "CHEMBL1289158_frozen_perms": [
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1"
+ ],
+ "CHEMBL1289158": {
+  "distinct": {
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": 505
+  },
+  "ikeys": [
+   "FRBIXYDBNZWFJJ-KWMPQKOASA-N"
+  ],
+  "fixpoints": {
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": true
+  }
+ }
+}
+{
+ "rdkit": "2025.09.6",
+ "CHEMBL1290711_frozen_perms": [
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1"
+ ],
+ "CHEMBL1290711": {
+  "distinct": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": 505
+  },
+  "ikeys": [
+   "JMGGAQQEALYVBC-JSNWSPKXSA-N"
+  ],
+  "fixpoints": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": true
+  }
+ },
+ "CHEMBL1289158_frozen_perms": [
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1"
+ ],
+ "CHEMBL1289158": {
+  "distinct": {
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": 505
+  },
+  "ikeys": [
+   "FRBIXYDBNZWFJJ-KWMPQKOASA-N"
+  ],
+  "fixpoints": {
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": true
+  }
+ }
+}
+{
+ "rdkit": "2026.03.6",
+ "CHEMBL1290711_frozen_perms": [
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1"
+ ],
+ "CHEMBL1290711": {
+  "distinct": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": 340,
+   "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": 165
+  },
+  "ikeys": [
+   "JMGGAQQEALYVBC-JSNWSPKXSA-N"
+  ],
+  "fixpoints": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": false,
+   "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": true
+  }
+ },
+ "CHEMBL1289158_frozen_perms": [
+  "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1"
+ ],
+ "CHEMBL1289158": {
+  "distinct": {
+   "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": 171,
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": 334
+  },
+  "ikeys": [
+   "FRBIXYDBNZWFJJ-KWMPQKOASA-N"
+  ],
+  "fixpoints": {
+   "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": true,
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": false
+  }
+ }
+}
+{
+ "rdkit": "2026.09.1",
+ "CHEMBL1290711_frozen_perms": [
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1",
+  "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1"
+ ],
+ "CHEMBL1290711": {
+  "distinct": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": 340,
+   "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": 165
+  },
+  "ikeys": [
+   "JMGGAQQEALYVBC-JSNWSPKXSA-N"
+  ],
+  "fixpoints": {
+   "COc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": false,
+   "COc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)cc1": true
+  }
+ },
+ "CHEMBL1289158_frozen_perms": [
+  "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1",
+  "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1"
+ ],
+ "CHEMBL1289158": {
+  "distinct": {
+   "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": 171,
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": 334
+  },
+  "ikeys": [
+   "FRBIXYDBNZWFJJ-KWMPQKOASA-N"
+  ],
+  "fixpoints": {
+   "Cc1ccc(C(=O)/C=C/C2=CC(=C/NC(C)C)/C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": true,
+   "Cc1ccc(C(=O)/C=C/C2=C/C(=C/NC(C)C)C(=O)c3ccc4c(C)cc(=O)oc4c32)c(C)c1": false
+  }
+ }
+}
