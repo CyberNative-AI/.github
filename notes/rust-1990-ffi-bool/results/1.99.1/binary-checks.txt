@@ -1,0 +1,64 @@
+## default/release/libflagcheck.so
+readelf -p .comment:
+  GCC: (Debian 14.2.0-19) 14.2.0
+  rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  .comment: rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  std commit: 58cf8f9c35b3
+  -> ok
+## strip/release/libflagcheck.so
+readelf -p .comment:
+  GCC: (Debian 14.2.0-19) 14.2.0
+  rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  .comment: rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  std commit: 58cf8f9c35b3
+  -> ok
+## lto/release/libflagcheck.so
+readelf -p .comment:
+  GCC: (Debian 14.2.0-19) 14.2.0
+  rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  .comment: rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  std commit: 58cf8f9c35b3
+  -> ok
+## default/release/libflagcheck.a
+readelf -p .comment:
+  rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  .comment: rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  std commit: 58cf8f9c35b3
+  -> ok
+## caller_static
+readelf -p .comment:
+  GCC: (Debian 14.2.0-19) 14.2.0
+  rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  .comment: rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  std commit: none
+  -> ok
+## caller_static_stripped
+readelf -p .comment:
+  GCC: (Debian 14.2.0-19) 14.2.0
+  rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  .comment: rustc version 1.99.1 (58cf8f9c3 2026-10-13)
+  std commit: none
+  -> ok
+## no-comment.so
+readelf -p .comment:
+  .comment: none
+  std commit: 58cf8f9c35b3
+  -> ok
+## the stripped static C program and the LTO+strip lib still misbehave?
+WRONG=0
+WRONG=0
+## exported functions nm -D still lists after strip = true
+19
+## objdump of two exported functions (release lib before strip)
+0000000000012c78 <is_flag_set>:
+   12c78:	mov    %edi,%eax
+   12c7a:	and    $0x1,%al
+   12c7c:	ret
+
+Disassembly of section .plt:
+0000000000012c80 <is_odd>:
+   12c80:	mov    %edi,%eax
+   12c82:	and    $0x1,%al
+   12c84:	ret
+
+Disassembly of section .plt:

@@ -1,0 +1,63 @@
+== release lib, C caller gcc -O0
+is_flag_set(0x10)          expect=0 raw=0x00 ok
+low_bit_ne0_u8(0x10)       expect=0 raw=0x00 ok
+low_bit_ne0_u32(0x10)      expect=0 raw=0x00 ok
+low_bit_eq1_u64(0x10)      expect=0 raw=0x00 ok
+is_odd(16)                 expect=0 raw=0x00 ok
+is_odd_i32(16)             expect=0 raw=0x00 ok
+bit3_shift(0x30)           expect=0 raw=0x00 ok
+bit3_mask(0x30)            expect=0 raw=0x00 ok
+is_even(3)                 expect=0 raw=0x00 ok
+passthrough(false)         expect=0 raw=0x00 ok
+not_b(true)                expect=0 raw=0x00 ok
+and_b(true,false)          expect=0 raw=0x00 ok
+opts_verbose(&o)           expect=0 raw=0x00 ok
+opts_flag0(&o)             expect=0 raw=0x00 ok
+is_zero(16)                expect=0 raw=0x00 ok
+gt(1,2)                    expect=0 raw=0x00 ok
+get_bit_u8(0x12,0)         expect=0 raw=0x00 ok
+sys_low_bit(0x10)          expect=0 raw=0x00 ok
+get_callback()(0x10)       expect=0 raw=0x00 ok
+WRONG=0
+== release lib, C caller gcc -O2
+is_flag_set(0x10)          expect=0 raw=0x00 ok
+low_bit_ne0_u8(0x10)       expect=0 raw=0x00 ok
+low_bit_ne0_u32(0x10)      expect=0 raw=0x00 ok
+low_bit_eq1_u64(0x10)      expect=0 raw=0x00 ok
+is_odd(16)                 expect=0 raw=0x00 ok
+is_odd_i32(16)             expect=0 raw=0x00 ok
+bit3_shift(0x30)           expect=0 raw=0x00 ok
+bit3_mask(0x30)            expect=0 raw=0x00 ok
+is_even(3)                 expect=0 raw=0x00 ok
+passthrough(false)         expect=0 raw=0x00 ok
+not_b(true)                expect=0 raw=0x00 ok
+and_b(true,false)          expect=0 raw=0x00 ok
+opts_verbose(&o)           expect=0 raw=0x00 ok
+opts_flag0(&o)             expect=0 raw=0x00 ok
+is_zero(16)                expect=0 raw=0x00 ok
+gt(1,2)                    expect=0 raw=0x00 ok
+get_bit_u8(0x12,0)         expect=0 raw=0x00 ok
+sys_low_bit(0x10)          expect=0 raw=0x00 ok
+get_callback()(0x10)       expect=0 raw=0x00 ok
+WRONG=0
+== debug lib, C caller gcc -O2
+is_flag_set(0x10)          expect=0 raw=0x00 ok
+low_bit_ne0_u8(0x10)       expect=0 raw=0x00 ok
+low_bit_ne0_u32(0x10)      expect=0 raw=0x00 ok
+low_bit_eq1_u64(0x10)      expect=0 raw=0x00 ok
+is_odd(16)                 expect=0 raw=0x00 ok
+is_odd_i32(16)             expect=0 raw=0x00 ok
+bit3_shift(0x30)           expect=0 raw=0x00 ok
+bit3_mask(0x30)            expect=0 raw=0x00 ok
+is_even(3)                 expect=0 raw=0x00 ok
+passthrough(false)         expect=0 raw=0x00 ok
+not_b(true)                expect=0 raw=0x00 ok
+and_b(true,false)          expect=0 raw=0x00 ok
+opts_verbose(&o)           expect=0 raw=0x00 ok
+opts_flag0(&o)             expect=0 raw=0x00 ok
+is_zero(16)                expect=0 raw=0x00 ok
+gt(1,2)                    expect=0 raw=0x00 ok
+get_bit_u8(0x12,0)         expect=0 raw=0x00 ok
+sys_low_bit(0x10)          expect=0 raw=0x00 ok
+get_callback()(0x10)       expect=0 raw=0x00 ok
+WRONG=0

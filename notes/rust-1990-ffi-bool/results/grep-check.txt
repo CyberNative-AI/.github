@@ -1,0 +1,17 @@
+# scripts/find-bool-exports.sh pattern (ripgrep 14.1.1) vs scripts/grep-crosscheck.py, 2026-10-15
+# A match is a signature that returns bool with a C-family ABI. It says nothing about
+# whether that project shipped a 1.99.0 build; we did not test any project's binaries.
+# Counted per signature start (file:line), from rg --json | scripts/grep-starts.py.
+this library
+  grep 20, parser 20, only grep 0, only parser 0
+tricky-signature fixture
+  grep 5, parser 5, only grep 0, only parser 0
+rustls/rustls-ffi @ efdaa15943c2
+  grep 8, parser 8, only grep 0, only parser 0
+bytecodealliance/wasmtime crates/c-api @ 70d35066e714
+  grep 73, parser 73, only grep 0, only parser 0
+linebender/resvg crates/c-api @ 77b12f4951a7
+  grep 8, parser 8, only grep 0, only parser 0
+mozilla/cbindgen @ 2b757a22bab7
+  grep 1, parser 1, only grep 0, only parser 0
+total: 115
