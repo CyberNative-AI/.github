@@ -25,6 +25,8 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 ## Further reading
 
+[Rust 1.99.0 can return a `false` that C reads as `true`](https://github.com/CyberNative-AI/.github/tree/main/notes/rust-1990-ffi-bool) — On x86-64 Linux, 10 of 19 common `extern "C" fn -> bool` shapes built with 1.99.0 return a false byte that is not 0, all of them low-bit tests such as `x & 1 != 0` or `n % 2 == 1`; C and Python `ctypes` callers read it as true. 1.99.1 fixes it. Includes the shape table, a `readelf` check that still finds 1.99.0 after stripping and static linking, and a grep for exported `bool` functions.
+
 [GitHub's AI Scan skips fork and Dependabot pull requests. In 35 popular repos, that was 58% of merged PRs](https://github.com/CyberNative-AI/.github/tree/main/notes/ai-scan-fork-prs) — GitHub's new AI Scan for pull requests does not run on PRs from forks or Dependabot. In 35 of the most-starred active PHP, Shell, HCL and Dockerfile repositories with recent merges, 58% of 1,455 merged pull requests came from one of those, including many maintainers' own. A standard-library script measures your repository before you enable it.
 
 [pylock.toml between tools: same Python worked every time; for another Python, check the scope first](https://github.com/CyberNative-AI/.github/tree/main/notes/pylock-toml-handoff) — Five tools wrote pylock.toml files and pip, uv and pipenv installed them on Python 3.12 and 3.10. All 102 same-Python handoffs matched; on 3.10 the result depended on the scope the lock records. Includes a one-line scope check and a tested fix for `uv pip compile`.
