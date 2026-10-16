@@ -1,0 +1,1834 @@
+{
+ "A": {
+  "M2_restored": {
+   "changed": 202,
+   "rate": 0.0,
+   "restored": 0
+  },
+  "churn_V1_V2_flat": {
+   "changed": 0,
+   "n": 2897802,
+   "rate": 0.0
+  },
+  "churn_V1_V2_iso": {
+   "changed": 717,
+   "n": 2897802,
+   "rate": 0.0002474289133626107
+  },
+  "churn_V1_V2_nri": {
+   "changed": 0,
+   "n": 2897802,
+   "rate": 0.0
+  },
+  "churn_V1_V2_nsymm": {
+   "changed": 0,
+   "n": 2897802,
+   "rate": 0.0
+  },
+  "churn_V2_V3_flat": {
+   "changed": 205,
+   "n": 2897802,
+   "rate": 7.074327369502816e-05
+  },
+  "churn_V2_V3_iso": {
+   "changed": 3454,
+   "n": 2897802,
+   "rate": 0.0011919378894762306
+  },
+  "churn_V2_V3_nri": {
+   "changed": 0,
+   "n": 2897802,
+   "rate": 0.0
+  },
+  "churn_V2_V3_nsymm": {
+   "changed": 0,
+   "n": 2897802,
+   "rate": 0.0
+  },
+  "churn_V3_V4L_flat": {
+   "changed": 202,
+   "n": 2897804,
+   "rate": 6.970795816418226e-05
+  },
+  "churn_V3_V4L_iso": {
+   "changed": 202,
+   "n": 2897804,
+   "rate": 6.970795816418226e-05
+  },
+  "churn_V3_V4L_nri": {
+   "changed": 290,
+   "n": 2897804,
+   "rate": 0.00010007578152283591
+  },
+  "churn_V3_V4L_nsymm": {
+   "changed": 290,
+   "n": 2897804,
+   "rate": 0.00010007578152283591
+  },
+  "churn_V3_V4_flat": {
+   "changed": 202,
+   "n": 2897804,
+   "rate": 6.970795816418226e-05
+  },
+  "churn_V3_V4_iso": {
+   "changed": 202,
+   "n": 2897804,
+   "rate": 6.970795816418226e-05
+  },
+  "churn_V3_V4_nri": {
+   "changed": 1252,
+   "n": 2897804,
+   "rate": 0.00043205130505720885
+  },
+  "churn_V3_V4_nsymm": {
+   "changed": 1252,
+   "n": 2897804,
+   "rate": 0.00043205130505720885
+  },
+  "churn_V4_V4L_flat": {
+   "changed": 0,
+   "n": 2897804,
+   "rate": 0.0
+  },
+  "churn_V4_V4L_iso": {
+   "changed": 0,
+   "n": 2897804,
+   "rate": 0.0
+  },
+  "churn_V4_V4L_nri": {
+   "changed": 976,
+   "n": 2897804,
+   "rate": 0.00033680676815961327
+  },
+  "churn_V4_V4L_nsymm": {
+   "changed": 976,
+   "n": 2897804,
+   "rate": 0.00033680676815961327
+  },
+  "health": {
+   "V1": {
+    "errors": {
+     "parse": 17
+    },
+    "ms_max": 78.54,
+    "ms_p50": 0.61,
+    "ms_p99": 2.39,
+    "ms_sum_s": 2116.5,
+    "rows": 2897819
+   },
+   "V2": {
+    "errors": {
+     "parse": 17
+    },
+    "ms_max": 88.41,
+    "ms_p50": 0.61,
+    "ms_p99": 2.48,
+    "ms_sum_s": 2128.2,
+    "rows": 2897819
+   },
+   "V3": {
+    "errors": {
+     "parse": 15
+    },
+    "ms_max": 27.24,
+    "ms_p50": 0.52,
+    "ms_p99": 1.78,
+    "ms_sum_s": 1693.0,
+    "rows": 2897819
+   },
+   "V4": {
+    "errors": {
+     "parse": 15
+    },
+    "ms_max": 29.52,
+    "ms_p50": 0.56,
+    "ms_p99": 1.85,
+    "ms_sum_s": 1798.1,
+    "rows": 2897819
+   },
+   "V4L": {
+    "errors": {
+     "parse": 15
+    },
+    "ms_max": 66.04,
+    "ms_p50": 0.81,
+    "ms_p99": 2.65,
+    "ms_sum_s": 2613.5,
+    "rows": 2897819
+   }
+  },
+  "not_idem_full": {
+   "V1": 19,
+   "V2": 19,
+   "V3": 6,
+   "V4": 0,
+   "V4L": 0
+  }
+ },
+ "B": {
+  "churn_V1_V2_fp": {
+   "changed": 0,
+   "n": 99999,
+   "rate": 0.0
+  },
+  "churn_V1_V2_ikey": {
+   "changed": 0,
+   "n": 99999,
+   "rate": 0.0
+  },
+  "churn_V1_V2_iso_new": {
+   "changed": 898,
+   "n": 99999,
+   "rate": 0.00898008980089801
+  },
+  "churn_V2_V3_fp": {
+   "changed": 7,
+   "n": 99999,
+   "rate": 7.000070000700007e-05
+  },
+  "churn_V2_V3_ikey": {
+   "changed": 0,
+   "n": 99999,
+   "rate": 0.0
+  },
+  "churn_V2_V3_iso_new": {
+   "changed": 143,
+   "n": 99999,
+   "rate": 0.0014300143001430014
+  },
+  "churn_V3_V4L_fp": {
+   "changed": 6,
+   "n": 99999,
+   "rate": 6.000060000600006e-05
+  },
+  "churn_V3_V4L_ikey": {
+   "changed": 0,
+   "n": 99999,
+   "rate": 0.0
+  },
+  "churn_V3_V4L_iso_new": {
+   "changed": 6,
+   "n": 99999,
+   "rate": 6.000060000600006e-05
+  },
+  "churn_V3_V4_fp": {
+   "changed": 6,
+   "n": 99999,
+   "rate": 6.000060000600006e-05
+  },
+  "churn_V3_V4_ikey": {
+   "changed": 0,
+   "n": 99999,
+   "rate": 0.0
+  },
+  "churn_V3_V4_iso_new": {
+   "changed": 6,
+   "n": 99999,
+   "rate": 6.000060000600006e-05
+  },
+  "contract_legacy": {
+   "V1": {
+    "ikey_roundtrip_changed": 0,
+    "n": 99999,
+    "not_idem": 0,
+    "renumber_variant": 0
+   },
+   "V2": {
+    "ikey_roundtrip_changed": 0,
+    "n": 99999,
+    "not_idem": 0,
+    "renumber_variant": 0
+   },
+   "V3": {
+    "ikey_roundtrip_changed": 0,
+    "n": 99999,
+    "not_idem": 0,
+    "renumber_variant": 2
+   },
+   "V4": {
+    "ikey_roundtrip_changed": 0,
+    "n": 99999,
+    "not_idem": 0,
+    "renumber_variant": 2
+   },
+   "V4L": {
+    "ikey_roundtrip_changed": 0,
+    "n": 99999,
+    "not_idem": 0,
+    "renumber_variant": 2
+   }
+  },
+  "contract_new": {
+   "V1": {
+    "ikey_roundtrip_changed": 0,
+    "n": 99999,
+    "not_idem": 27,
+    "renumber_variant": 26
+   },
+   "V2": {
+    "ikey_roundtrip_changed": 2,
+    "n": 99999,
+    "not_idem": 16,
+    "renumber_variant": 0
+   },
+   "V3": {
+    "ikey_roundtrip_changed": 2,
+    "n": 99999,
+    "not_idem": 16,
+    "renumber_variant": 0
+   },
+   "V4": {
+    "ikey_roundtrip_changed": 2,
+    "n": 99999,
+    "not_idem": 16,
+    "renumber_variant": 0
+   },
+   "V4L": {
+    "ikey_roundtrip_changed": 2,
+    "n": 99999,
+    "not_idem": 16,
+    "renumber_variant": 0
+   }
+  },
+  "health": {
+   "V1": {
+    "errors": {
+     "parse": 1
+    },
+    "ms_max": 521.29,
+    "ms_p50": 4.76,
+    "ms_p99": 16.9,
+    "ms_sum_s": 538.8,
+    "rows": 100000
+   },
+   "V2": {
+    "errors": {
+     "parse": 1
+    },
+    "ms_max": 516.22,
+    "ms_p50": 4.68,
+    "ms_p99": 16.79,
+    "ms_sum_s": 530.5,
+    "rows": 100000
+   },
+   "V3": {
+    "errors": {
+     "parse": 1
+    },
+    "ms_max": 428.96,
+    "ms_p50": 4.33,
+    "ms_p99": 15.35,
+    "ms_sum_s": 489.5,
+    "rows": 100000
+   },
+   "V4": {
+    "errors": {
+     "parse": 1
+    },
+    "ms_max": 404.99,
+    "ms_p50": 4.65,
+    "ms_p99": 15.7,
+    "ms_sum_s": 522.6,
+    "rows": 100000
+   },
+   "V4L": {
+    "errors": {
+     "parse": 1
+    },
+    "ms_max": 443.54,
+    "ms_p50": 6.44,
+    "ms_p99": 21.49,
+    "ms_sum_s": 718.1,
+    "rows": 100000
+   }
+  }
+ },
+ "T": {
+  "churn_V3_V4L_taut": {
+   "changed": 3,
+   "n": 20000,
+   "rate": 0.00015
+  },
+  "churn_V3_V4_taut": {
+   "changed": 3,
+   "n": 20000,
+   "rate": 0.00015
+  },
+  "health": {
+   "V3": {
+    "errors": {},
+    "ms_max": 4498.08,
+    "ms_p50": 1.97,
+    "ms_p99": 854.74,
+    "ms_sum_s": 734.9,
+    "rows": 20000
+   },
+   "V4": {
+    "errors": {},
+    "ms_max": 15717.67,
+    "ms_p50": 1.98,
+    "ms_p99": 840.52,
+    "ms_sum_s": 721.4,
+    "rows": 20000
+   },
+   "V4L": {
+    "errors": {},
+    "ms_max": 5228.95,
+    "ms_p50": 2.55,
+    "ms_p99": 1031.85,
+    "ms_sum_s": 866.3,
+    "rows": 20000
+   }
+  }
+ },
+ "controls": {
+  "C1_ikey_churn": {
+   "churn_V1_V2_ikey": {
+    "changed": 0,
+    "n": 99999,
+    "rate": 0.0
+   },
+   "churn_V2_V3_ikey": {
+    "changed": 0,
+    "n": 99999,
+    "rate": 0.0
+   },
+   "churn_V3_V4L_ikey": {
+    "changed": 0,
+    "n": 99999,
+    "rate": 0.0
+   },
+   "churn_V3_V4_ikey": {
+    "changed": 0,
+    "n": 99999,
+    "rate": 0.0
+   }
+  },
+  "C2_nondeterministic_fields": {
+   "err": 0,
+   "flat": 0,
+   "fp": 0,
+   "idem": 0,
+   "idem_new": 0,
+   "ikey": 0,
+   "ikey_new": 0,
+   "ikey_rt": 0,
+   "ikey_rt_new": 0,
+   "iso": 0,
+   "iso_new": 0,
+   "n_legacy": 0,
+   "n_new": 0,
+   "nri": 0,
+   "nsymm": 0
+  }
+ },
+ "decisions": {
+  "H1": "STOP_DROP_IN",
+  "H2": {
+   "A_not_idem": "NO_CHANGE",
+   "B_ikey_roundtrip_changed": "NO_CHANGE",
+   "B_not_idem": "NO_CHANGE",
+   "B_renumber_variant": "NO_CHANGE"
+  },
+  "H3": "BETWEEN",
+  "H3_rate": 0.00016000160001600016,
+  "M1": 6.970795816418226e-05,
+  "M2": 0.0,
+  "comparator_max": 0.0011919378894762306
+ },
+ "examples": {
+  "A_not_idem": {
+   "V1": [
+    [
+     "CHEMBL6134069",
+     "C=Cc1c(C)/c2[nH]/c1=C\\C1=N/C(=C\\C3=N/C(=C\\C4=NC(=C5C=CC(C(=O)OC)=C(C(=O)OC)[C@@]45C)\\C=2)C(C)=C3CCC(=O)OC)C(CCC(=O)O)=C1C"
+    ],
+    [
+     "CHEMBL1991321",
+     "c1ccc2/c3[nH]/c(c2c1)=N\\c1ccc(cc1)-c1nc2cc(ccc2o1)/N=c1/[nH]/c(c2ccccc12)=N/c1ccc2nc(oc2c1)-c1ccc(cc1)\\N=3"
+    ],
+    [
+     "CHEMBL1985278",
+     "c1ccc2/c3[nH]/c(c2c1)=N\\c1ccc(cc1)-c1nc2ccc(cc2o1)/N=c1/[nH]/c(c2ccccc12)=N/c1ccc2nc(oc2c1)-c1ccc(cc1)\\N=3"
+    ],
+    [
+     "CHEMBL2448514",
+     "CC1=C\\[C@@H](C)C[C@]2(C)CC[C@H](O2)[C@]23CC[C@](C)(C[C@H](O2)[C@@H]2O[C@@](C)(CC2=O)[C@@H](O)[C@H]2CC[C@@]4(CCC[C@@H](O4)[C@H](C)C(=O)O[C@H]4C[C@H]([C@]5(O)OCC[C@H](C)[C@@H]5O)O[C@H]4\\C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL2448515",
+     "CC1=C\\[C@@H](C)C[C@]2(C)CC[C@H](O2)[C@]23CC[C@](C(=O)O)(C[C@H](O2)[C@@H]2O[C@@](C)(CC2=O)[C@@H](O)[C@H]2CC[C@@]4(CCC[C@@H](O4)[C@H](C)C(=O)O[C@H]4C[C@H]([C@]5(O)OCC[C@H](C)[C@@H]5O)O[C@H]4\\C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL2448517",
+     "CC1=C\\[C@@H](C)C[C@]2(C)CC[C@H](O2)[C@]23CC[C@](CO)(C[C@H](O2)[C@@H]2O[C@@](C)(CC2=O)[C@@H](O)[C@H]2CC[C@@]4(CCC[C@@H](O4)[C@H](C)C(=O)O[C@H]4C[C@H]([C@]5(O)OCC[C@H](C)[C@@H]5O)O[C@H]4\\C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL3099446",
+     "COC(=O)C1=C\\c2cc3c(cc2-c2c(cc(OC)c(OC)c2OC)\\C=C/1C(=O)OC)OCO3"
+    ],
+    [
+     "CHEMBL265275",
+     "COC1=N/C2=CC(=O)c3c(c(O)c(C)c4c3C(=O)C(C)(O/C=C/C(OC)C(C)C(OC(C)=O)C(C)C(O)C(C)C(O)C(C)/C=C\\C=C/1C)O4)C2=O"
+    ],
+    [
+     "CHEMBL409259",
+     "CC1C2c3cc4/c5c6c7c8c9c%10c6c4c4c3C3=C6c%11c%12c%13c%14c%15c(c9c9c%16c8c(c8/c(c%17c%18c%19c(c(c%11c%11c%19c%19c%17c8c%16c(c%149)c%19c%13%11)C62)C1C%181C[N+](C)(C)C1)=C\\C/C=5)C7)C%10C4C31C[N+](C)(C)CC%12%151.[I-].[I-]"
+    ],
+    [
+     "CHEMBL443608",
+     "CC1=C/[C@H](C)C[C@@]2(C)CC[C@@H](O2)[C@@]23CC[C@@](C)(C[C@@H](O2)[C@H]2O[C@](C)(CC2=O)[C@@H](O)[C@@H]2CC[C@@]4(CCC[C@H](O4)[C@@H](C)C(=O)O[C@@H]4C[C@@H]([C@@]5(O)OCC[C@@H](C)[C@H]5O)O[C@@H]4/C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL446810",
+     "CC1=C\\[C@H]2O[C@@H](C/C=C/C=C/C(=O)O[C@@H]3C[C@@H](/C=C/C/C=C/1)O[C@@H](C/C=C\\CCO)[C@]3(C)CO)C[C@H](O)[C@H]2C"
+    ],
+    [
+     "CHEMBL517926",
+     "CC(=O)OCC1=C/CC/C(C)=C/CC[C@@]2(C)CC[C@@](C(C)C)(/C=C/1)O2"
+    ],
+    [
+     "CHEMBL557826",
+     "CC1=C/C/C=C(\\C)CC[C@H]2C(C)(C)[C@@H](\\C=C/1)CC[C@]2(C)O"
+    ],
+    [
+     "CHEMBL4744102",
+     "CC(=O)OCC1=C\\[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@]3(CC[C@H](OC(C)=O)[C@]2(C)[C@@H](OC(=O)COC(=O)CC(C)C)\\C=C/1)CO3"
+    ],
+    [
+     "CHEMBL4744613",
+     "CC(=O)OCC1=C\\[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@]3(CC[C@H](OC(C)=O)[C@]2(C)[C@@H](OC(C)=O)\\C=C/1)CO3"
+    ],
+    [
+     "CHEMBL4799323",
+     "C=Cc1c(C)/c2[nH]/c1=C\\C1=N/C(=C\\C3=C(C)C4C(=O)N(Cc5cccc(C#Cc6cccc(Nc7ncnc8cc(OCCOC)c(OCCOC)cc78)c6)c5)C(=O)/C(=C5/N=C(\\C=2)[C@@H](C)[C@@H]5CCC(=O)OC)C4N3)C(CC)=C1C"
+    ],
+    [
+     "CHEMBL1185357",
+     "CC1C2c3cc4/c5c6c7c8c9c%10c6c4c4c3C3=C6c%11c%12c%13c%14c%15c(c9c9c%16c8c(c8/c(c%17c%18c%19c(c(c%11c%11c%19c%19c%17c8c%16c(c%149)c%19c%13%11)C62)C1C%181C[N+](C)(C)C1)=C\\C/C=5)C7)C%10C4C31C[N+](C)(C)CC%12%151"
+    ],
+    [
+     "CHEMBL5201593",
+     "CC1=C/C[C@H](O)/C=C/C(C)=C/[C@@H](NC(=O)[C@H](C)O)[C@]2(C)C(=O)O[C@H](C[C@H](O)/C=C/1)[C@@H](C)C2=O"
+    ],
+    [
+     "CHEMBL444952",
+     "CC1=C\\[C@H]2O[C@@H](C/C=C/C=C/C(=O)O[C@@H]3C[C@@H](/C=C/C/C=C/1)O[C@@H](C/C=C\\C[C@@H](O)C(=O)O)[C@]3(C)CO)C[C@H](O)[C@H]2C"
+    ]
+   ],
+   "V2": [
+    [
+     "CHEMBL6134069",
+     "C=Cc1c(C)/c2[nH]/c1=C\\C1=N/C(=C\\C3=N/C(=C\\C4=NC(=C5C=CC(C(=O)OC)=C(C(=O)OC)[C@@]45C)\\C=2)C(C)=C3CCC(=O)OC)C(CCC(=O)O)=C1C"
+    ],
+    [
+     "CHEMBL1991321",
+     "c1ccc2/c3[nH]/c(c2c1)=N\\c1ccc(cc1)-c1nc2cc(ccc2o1)/N=c1/[nH]/c(c2ccccc12)=N/c1ccc2nc(oc2c1)-c1ccc(cc1)\\N=3"
+    ],
+    [
+     "CHEMBL1985278",
+     "c1ccc2/c3[nH]/c(c2c1)=N\\c1ccc(cc1)-c1nc2ccc(cc2o1)/N=c1/[nH]/c(c2ccccc12)=N/c1ccc2nc(oc2c1)-c1ccc(cc1)\\N=3"
+    ],
+    [
+     "CHEMBL2448514",
+     "CC1=C\\[C@@H](C)C[C@]2(C)CC[C@H](O2)[C@]23CC[C@](C)(C[C@H](O2)[C@@H]2O[C@@](C)(CC2=O)[C@@H](O)[C@H]2CC[C@@]4(CCC[C@@H](O4)[C@H](C)C(=O)O[C@H]4C[C@H]([C@]5(O)OCC[C@H](C)[C@@H]5O)O[C@H]4\\C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL2448515",
+     "CC1=C\\[C@@H](C)C[C@]2(C)CC[C@H](O2)[C@]23CC[C@](C(=O)O)(C[C@H](O2)[C@@H]2O[C@@](C)(CC2=O)[C@@H](O)[C@H]2CC[C@@]4(CCC[C@@H](O4)[C@H](C)C(=O)O[C@H]4C[C@H]([C@]5(O)OCC[C@H](C)[C@@H]5O)O[C@H]4\\C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL2448517",
+     "CC1=C\\[C@@H](C)C[C@]2(C)CC[C@H](O2)[C@]23CC[C@](CO)(C[C@H](O2)[C@@H]2O[C@@](C)(CC2=O)[C@@H](O)[C@H]2CC[C@@]4(CCC[C@@H](O4)[C@H](C)C(=O)O[C@H]4C[C@H]([C@]5(O)OCC[C@H](C)[C@@H]5O)O[C@H]4\\C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL3099446",
+     "COC(=O)C1=C\\c2cc3c(cc2-c2c(cc(OC)c(OC)c2OC)\\C=C/1C(=O)OC)OCO3"
+    ],
+    [
+     "CHEMBL265275",
+     "COC1=N/C2=CC(=O)c3c(c(O)c(C)c4c3C(=O)C(C)(O/C=C/C(OC)C(C)C(OC(C)=O)C(C)C(O)C(C)C(O)C(C)/C=C\\C=C/1C)O4)C2=O"
+    ],
+    [
+     "CHEMBL409259",
+     "CC1C2c3cc4/c5c6c7c8c9c%10c6c4c4c3C3=C6c%11c%12c%13c%14c%15c(c9c9c%16c8c(c8/c(c%17c%18c%19c(c(c%11c%11c%19c%19c%17c8c%16c(c%149)c%19c%13%11)C62)C1C%181C[N+](C)(C)C1)=C\\C/C=5)C7)C%10C4C31C[N+](C)(C)CC%12%151.[I-].[I-]"
+    ],
+    [
+     "CHEMBL443608",
+     "CC1=C/[C@H](C)C[C@@]2(C)CC[C@@H](O2)[C@@]23CC[C@@](C)(C[C@@H](O2)[C@H]2O[C@](C)(CC2=O)[C@@H](O)[C@@H]2CC[C@@]4(CCC[C@H](O4)[C@@H](C)C(=O)O[C@@H]4C[C@@H]([C@@]5(O)OCC[C@@H](C)[C@H]5O)O[C@@H]4/C=C/1)O2)O3"
+    ],
+    [
+     "CHEMBL446810",
+     "CC1=C\\[C@H]2O[C@@H](C/C=C/C=C/C(=O)O[C@@H]3C[C@@H](/C=C/C/C=C/1)O[C@@H](C/C=C\\CCO)[C@]3(C)CO)C[C@H](O)[C@H]2C"
+    ],
+    [
+     "CHEMBL517926",
+     "CC(=O)OCC1=C/CC/C(C)=C/CC[C@@]2(C)CC[C@@](C(C)C)(/C=C/1)O2"
+    ],
+    [
+     "CHEMBL557826",
+     "CC1=C/C/C=C(\\C)CC[C@H]2C(C)(C)[C@@H](\\C=C/1)CC[C@]2(C)O"
+    ],
+    [
+     "CHEMBL4744102",
+     "CC(=O)OCC1=C\\[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@]3(CC[C@H](OC(C)=O)[C@]2(C)[C@@H](OC(=O)COC(=O)CC(C)C)\\C=C/1)CO3"
+    ],
+    [
+     "CHEMBL4744613",
+     "CC(=O)OCC1=C\\[C@@H]2OC(=O)[C@H](C)[C@@]2(O)[C@@H](OC(C)=O)[C@H]2[C@]3(CC[C@H](OC(C)=O)[C@]2(C)[C@@H](OC(C)=O)\\C=C/1)CO3"
+    ],
+    [
+     "CHEMBL4799323",
+     "C=Cc1c(C)/c2[nH]/c1=C\\C1=N/C(=C\\C3=C(C)C4C(=O)N(Cc5cccc(C#Cc6cccc(Nc7ncnc8cc(OCCOC)c(OCCOC)cc78)c6)c5)C(=O)/C(=C5/N=C(\\C=2)[C@@H](C)[C@@H]5CCC(=O)OC)C4N3)C(CC)=C1C"
+    ],
+    [
+     "CHEMBL1185357",
+     "CC1C2c3cc4/c5c6c7c8c9c%10c6c4c4c3C3=C6c%11c%12c%13c%14c%15c(c9c9c%16c8c(c8/c(c%17c%18c%19c(c(c%11c%11c%19c%19c%17c8c%16c(c%149)c%19c%13%11)C62)C1C%181C[N+](C)(C)C1)=C\\C/C=5)C7)C%10C4C31C[N+](C)(C)CC%12%151"
+    ],
+    [
+     "CHEMBL5201593",
+     "CC1=C/C[C@H](O)/C=C/C(C)=C/[C@@H](NC(=O)[C@H](C)O)[C@]2(C)C(=O)O[C@H](C[C@H](O)/C=C/1)[C@@H](C)C2=O"
+    ],
+    [
+     "CHEMBL444952",
+     "CC1=C\\[C@H]2O[C@@H](C/C=C/C=C/C(=O)O[C@@H]3C[C@@H](/C=C/C/C=C/1)O[C@@H](C/C=C\\C[C@@H](O)C(=O)O)[C@]3(C)CO)C[C@H](O)[C@H]2C"
+    ]
+   ],
+   "V3": [
+    [
+     "CHEMBL2035048",
+     "C1=C2COC/C=C/COCc3cccc(c3)Nc3nccc(n3)C(=C1)O2"
+    ],
+    [
+     "CHEMBL2035185",
+     "C1=C2COC/C=C/COCc3cc(ccc3OCCN3CCCC3)Nc3nccc(n3)C(=C1)O2"
+    ],
+    [
+     "CHEMBL2035183",
+     "C1=C2COC/C=C/COCc3cc(ccc3OCCN3CCCC3)Nc3nccc(n3)C(=C1)S2"
+    ],
+    [
+     "CHEMBL447077",
+     "O=C1OC[C@H]2OC(O)[C@H](O)[C@@H](O)[C@@H]2OC(=O)c2cc(O)c(O)c(O)c2-c2c(O)c(O)c3oc(=O)c4cc(O)c(c5c4c3c2C(=O)O5)Oc2c1cc(O)c(O)c2O"
+    ],
+    [
+     "CHEMBL4228766",
+     "C1=C2OC/C=C/COCc3cc(ccc3OCCN3CCCC3)Nc3nccc(n3)C(=C1)O2"
+    ],
+    [
+     "CHEMBL508570",
+     "O=C1OC[C@H]2OC(O)[C@@H]3OC(=O)c4cc(O)c(O)c(O)c4-c4c(cc(O)c(O)c4O)C(=O)O[C@H]3[C@@H]2OC(=O)c2cc(O)c(O)c(O)c2-c2c(O)c(O)c3oc(=O)c4cc(O)c(c5c4c3c2C(=O)O5)Oc2c1cc(O)c(O)c2O"
+    ]
+   ],
+   "V4": [],
+   "V4L": []
+  },
+  "B_not_idem_new": {
+   "V1": [
+    [
+     "CHEMBL4435787",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/CCCNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N/C(C)=C\\C=C\\C=C\\C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL1241752",
+     "CC(C)=CCC/C(C)=C/COc1c(-c2ccc(O)cc2)oc2cc(OC/C=C(\\C)CCC=C(C)C)cc(O)c2c1=O"
+    ],
+    [
+     "CHEMBL4584991",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/C=C/CNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N/C(C)=C\\C=C\\C=C\\C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL5172548",
+     "C/C(=C\\CC/C(C)=C/CC/C(C)=C\\CC/C(C)=C\\CO)CC/C=C(\\C)CNS(=O)(=O)c1ccc(N=Nc2ccc(N(C)C)cc2)cc1"
+    ],
+    [
+     "CHEMBL5080229",
+     "C[C@@H]1CC[C@@H](Cn2c(N3CCOC[C@H]3c3ccccc3)nc3nc(-c4n[nH]c(=O)o4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL402408",
+     "COC(=O)/C(=C/CC/C(=C\\CCc1ccoc1)C(=O)OC)CC[C@@H](O)C(C)(C)O"
+    ],
+    [
+     "CHEMBL5272025",
+     "CC(C)=CCC/C(C)=C/C(C/C=C(\\C)CCC=C(C)C)(P(=O)(O)O)P(=O)(O)O"
+    ],
+    [
+     "CHEMBL5573269",
+     "C[C@H]1C[C@@](c2cccc(-c3cc(C(F)(F)F)cn(CC4CCN(C)CC4)c3=O)c2)(c2nncn2C)C1"
+    ],
+    [
+     "CHEMBL5865560",
+     "C[C@@H]1CC[C@@H](Cn2c(C3(c4ccccc4F)CC3)nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL5868236",
+     "C[C@@H]1CC[C@@H](Cn2c(C(F)c3ccccc3)nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL5876648",
+     "C[C@@H]1CC[C@@H](Cn2c(C3(O)CCCCC3)nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL5901238",
+     "C[C@@H]1CC[C@@H](Cn2c(N3CCO[C@@H](C)[C@H]3c3ccccc3)nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL5903832",
+     "C[C@@H]1CC[C@@H](Cn2c(N3CCOC4CCCC43)nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL5960958",
+     "C[C@@H]1CC[C@@H](Cn2c(N3CCOC[C@H]3C)nc3nc(-c4noc(=O)[nH]4)nc(-c4cccc(Cl)c4)c32)CC1"
+    ],
+    [
+     "CHEMBL5973649",
+     "CN(c1ncnc2[nH]ccc12)[C@H]1C[C@@H](CS(=O)(=O)N(C)Cc2cccnc2)C1"
+    ],
+    [
+     "CHEMBL6003671",
+     "C[C@@H]1CC[C@@H](Cn2c(N3CCOC4CCCC43)nc3nc(-c4n[nH]c(=O)o4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL6018869",
+     "C[C@@H]1CC[C@@H](Cn2c(N3CCC(C)(O)C3)nc3nc(-c4noc(=O)[nH]4)nc(N[C@H](C)C4CCC4)c32)CC1"
+    ],
+    [
+     "CHEMBL1994118",
+     "CCOC(=O)/C=C(/OCC)[C@H]1C(C(=O)c2ccc(Cl)cc2)[C@H]1/C(=C\\C(=O)OCC)OCC"
+    ],
+    [
+     "CHEMBL1180293",
+     "C=CC[N+]12CC[C@]34c5ccccc5N5/C=C6/[C@H]7C[C@H]8[C@@]9(CC[N@@+]8(CC=C)C/C7=C/CO)c7ccccc7N(/C=C(\\[C@H]53)[C@@H](C[C@@H]41)/C(=C\\CO)C2)[C@@H]69"
+    ],
+    [
+     "CHEMBL3217132",
+     "CO/N=C(/N)c1ccc(-c2ncc(-c3ccc(/C(N)=N\\OC)cc3)s2)cc1.Cl.Cl"
+    ]
+   ],
+   "V2": [
+    [
+     "CHEMBL4435787",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/CCCNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N/C(C)=C\\C=C\\C=C\\C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL1241752",
+     "CC(C)=CCC/C(C)=C/COc1c(-c2ccc(O)cc2)oc2cc(OC/C=C(\\C)CCC=C(C)C)cc(O)c2c1=O"
+    ],
+    [
+     "CHEMBL4584991",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/C=C/CNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N/C(C)=C\\C=C\\C=C\\C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL5172548",
+     "C/C(=C\\CC/C(C)=C/CC/C(C)=C\\CC/C(C)=C\\CO)CC/C=C(\\C)CNS(=O)(=O)c1ccc(N=Nc2ccc(N(C)C)cc2)cc1"
+    ],
+    [
+     "CHEMBL402408",
+     "COC(=O)/C(=C/CC/C(=C\\CCc1ccoc1)C(=O)OC)CC[C@@H](O)C(C)(C)O"
+    ],
+    [
+     "CHEMBL5272025",
+     "CC(C)=CCC/C(C)=C/C(C/C=C(\\C)CCC=C(C)C)(P(=O)(O)O)P(=O)(O)O"
+    ],
+    [
+     "CHEMBL1994118",
+     "CCOC(=O)/C=C(/OCC)[C@H]1C(C(=O)c2ccc(Cl)cc2)[C@H]1/C(=C\\C(=O)OCC)OCC"
+    ],
+    [
+     "CHEMBL1180293",
+     "C=CC[N+]12CC[C@]34c5ccccc5N5/C=C6/[C@H]7C[C@H]8[C@@]9(CC[N@@+]8(CC=C)C/C7=C/CO)c7ccccc7N(/C=C(\\[C@H]53)[C@@H](C[C@@H]41)/C(=C\\CO)C2)[C@@H]69"
+    ],
+    [
+     "CHEMBL2326031",
+     "CCCCCCCC(=O)N(Cc1ccc(N(CC)CC)cc1)[C@]12C[C@@H]3C[C@@H](C[C@H](C3)C1)C2"
+    ],
+    [
+     "CHEMBL2326311",
+     "CCN(CC)c1ccc(CN([C@]23C[C@@H]4C[C@@H](C[C@H](C4)C2)C3)S(=O)(=O)c2cccc(C)c2)cc1"
+    ],
+    [
+     "CHEMBL3217132",
+     "CO/N=C(/N)c1ccc(-c2ncc(-c3ccc(/C(N)=N\\OC)cc3)s2)cc1.Cl.Cl"
+    ],
+    [
+     "CHEMBL3759032",
+     "COc1ccc2c(c1)/C(=N/NC(=O)c1c(C)[nH]c(C(=O)N/N=C3\\C(=O)Nc4ccc(OC)cc43)c1C)C(=O)N2"
+    ],
+    [
+     "CHEMBL3792852",
+     "O=C1/C(=C/c2ccccc2-c2ccc(/C=C3\\Oc4cc(O)cc(O)c4C3=O)cc2)Oc2cc(O)cc(O)c21"
+    ],
+    [
+     "CHEMBL3921752",
+     "CC(C)=CCC/C(C)=C/CCc1c(C(=O)c2cc(O)ccc2O)c2cc(O)c(C/C=C(\\CO)CC/C=C(\\C)CCC=C(C)C)cc2oc1=O"
+    ],
+    [
+     "CHEMBL4173077",
+     "O=C1/C(=C/c2ccccc2F)CN(S(=O)(=O)c2ccc(F)cc2)C/C1=C\\c1cccc([N+](=O)[O-])c1"
+    ],
+    [
+     "CHEMBL4205275",
+     "O=C1/C(=C/c2ccccc2Br)CCC/C1=C\\c1ccccc1"
+    ]
+   ],
+   "V3": [
+    [
+     "CHEMBL4435787",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/CCCNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N\\C(C)=C/C=C/C=C/C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL1241752",
+     "CC(C)=CCC/C(C)=C/COc1c(-c2ccc(O)cc2)oc2cc(OC/C=C(\\C)CCC=C(C)C)cc(O)c2c1=O"
+    ],
+    [
+     "CHEMBL4584991",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/C=C/CNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N\\C(C)=C/C=C/C=C/C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL5172548",
+     "C/C(=C\\CC/C(C)=C/CC/C(C)=C\\CC/C(C)=C\\CO)CC/C=C(\\C)CNS(=O)(=O)c1ccc(N=Nc2ccc(N(C)C)cc2)cc1"
+    ],
+    [
+     "CHEMBL402408",
+     "COC(=O)/C(=C/CC/C(=C\\CCc1ccoc1)C(=O)OC)CC[C@@H](O)C(C)(C)O"
+    ],
+    [
+     "CHEMBL5272025",
+     "CC(C)=CCC/C(C)=C/C(C/C=C(\\C)CCC=C(C)C)(P(=O)(O)O)P(=O)(O)O"
+    ],
+    [
+     "CHEMBL1994118",
+     "CCOC(=O)/C=C(/OCC)[C@H]1C(C(=O)c2ccc(Cl)cc2)[C@H]1/C(=C\\C(=O)OCC)OCC"
+    ],
+    [
+     "CHEMBL1180293",
+     "C=CC[N+]12CC[C@]34c5ccccc5N5/C=C6/[C@H]7C[C@H]8[C@@]9(CC[N@@+]8(CC=C)C/C7=C/CO)c7ccccc7N(/C=C(\\[C@H]53)[C@@H](C[C@@H]41)/C(=C\\CO)C2)[C@@H]69"
+    ],
+    [
+     "CHEMBL2326031",
+     "CCCCCCCC(=O)N(Cc1ccc(N(CC)CC)cc1)[C@]12C[C@@H]3C[C@@H](C[C@H](C3)C1)C2"
+    ],
+    [
+     "CHEMBL2326311",
+     "CCN(CC)c1ccc(CN([C@]23C[C@@H]4C[C@@H](C[C@H](C4)C2)C3)S(=O)(=O)c2cccc(C)c2)cc1"
+    ],
+    [
+     "CHEMBL3217132",
+     "CO/N=C(/N)c1ccc(-c2ncc(-c3ccc(/C(N)=N\\OC)cc3)s2)cc1.Cl.Cl"
+    ],
+    [
+     "CHEMBL3759032",
+     "COc1ccc2c(c1)/C(=N/NC(=O)c1c(C)[nH]c(C(=O)N/N=C3\\C(=O)Nc4ccc(OC)cc43)c1C)C(=O)N2"
+    ],
+    [
+     "CHEMBL3792852",
+     "O=C1/C(=C/c2ccccc2-c2ccc(/C=C3\\Oc4cc(O)cc(O)c4C3=O)cc2)Oc2cc(O)cc(O)c21"
+    ],
+    [
+     "CHEMBL3921752",
+     "CC(C)=CCC/C(C)=C/CCc1c(C(=O)c2cc(O)ccc2O)c2cc(O)c(C/C=C(\\CO)CC/C=C(\\C)CCC=C(C)C)cc2oc1=O"
+    ],
+    [
+     "CHEMBL4173077",
+     "O=C1/C(=C/c2ccccc2F)CN(S(=O)(=O)c2ccc(F)cc2)C/C1=C\\c1cccc([N+](=O)[O-])c1"
+    ],
+    [
+     "CHEMBL4205275",
+     "O=C1/C(=C/c2ccccc2Br)CCC/C1=C\\c1ccccc1"
+    ]
+   ],
+   "V4": [
+    [
+     "CHEMBL4435787",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/CCCNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N\\C(C)=C/C=C/C=C/C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL1241752",
+     "CC(C)=CCC/C(C)=C/COc1c(-c2ccc(O)cc2)oc2cc(OC/C=C(\\C)CCC=C(C)C)cc(O)c2c1=O"
+    ],
+    [
+     "CHEMBL4584991",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/C=C/CNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N\\C(C)=C/C=C/C=C/C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL5172548",
+     "C/C(=C\\CC/C(C)=C/CC/C(C)=C\\CC/C(C)=C\\CO)CC/C=C(\\C)CNS(=O)(=O)c1ccc(N=Nc2ccc(N(C)C)cc2)cc1"
+    ],
+    [
+     "CHEMBL402408",
+     "COC(=O)/C(=C/CC/C(=C\\CCc1ccoc1)C(=O)OC)CC[C@@H](O)C(C)(C)O"
+    ],
+    [
+     "CHEMBL5272025",
+     "CC(C)=CCC/C(C)=C/C(C/C=C(\\C)CCC=C(C)C)(P(=O)(O)O)P(=O)(O)O"
+    ],
+    [
+     "CHEMBL1994118",
+     "CCOC(=O)/C=C(/OCC)[C@H]1C(C(=O)c2ccc(Cl)cc2)[C@H]1/C(=C\\C(=O)OCC)OCC"
+    ],
+    [
+     "CHEMBL1180293",
+     "C=CC[N+]12CC[C@]34c5ccccc5N5/C=C6/[C@H]7C[C@H]8[C@@]9(CC[N@@+]8(CC=C)C/C7=C/CO)c7ccccc7N(/C=C(\\[C@H]53)[C@@H](C[C@@H]41)/C(=C\\CO)C2)[C@@H]69"
+    ],
+    [
+     "CHEMBL2326031",
+     "CCCCCCCC(=O)N(Cc1ccc(N(CC)CC)cc1)[C@]12C[C@@H]3C[C@@H](C[C@H](C3)C1)C2"
+    ],
+    [
+     "CHEMBL2326311",
+     "CCN(CC)c1ccc(CN([C@]23C[C@@H]4C[C@@H](C[C@H](C4)C2)C3)S(=O)(=O)c2cccc(C)c2)cc1"
+    ],
+    [
+     "CHEMBL3217132",
+     "CO/N=C(/N)c1ccc(-c2ncc(-c3ccc(/C(N)=N\\OC)cc3)s2)cc1.Cl.Cl"
+    ],
+    [
+     "CHEMBL3759032",
+     "COc1ccc2c(c1)/C(=N/NC(=O)c1c(C)[nH]c(C(=O)N/N=C3\\C(=O)Nc4ccc(OC)cc43)c1C)C(=O)N2"
+    ],
+    [
+     "CHEMBL3792852",
+     "O=C1/C(=C/c2ccccc2-c2ccc(/C=C3\\Oc4cc(O)cc(O)c4C3=O)cc2)Oc2cc(O)cc(O)c21"
+    ],
+    [
+     "CHEMBL3921752",
+     "CC(C)=CCC/C(C)=C/CCc1c(C(=O)c2cc(O)ccc2O)c2cc(O)c(C/C=C(\\CO)CC/C=C(\\C)CCC=C(C)C)cc2oc1=O"
+    ],
+    [
+     "CHEMBL4173077",
+     "O=C1/C(=C/c2ccccc2F)CN(S(=O)(=O)c2ccc(F)cc2)C/C1=C\\c1cccc([N+](=O)[O-])c1"
+    ],
+    [
+     "CHEMBL4205275",
+     "O=C1/C(=C/c2ccccc2Br)CCC/C1=C\\c1ccccc1"
+    ]
+   ],
+   "V4L": [
+    [
+     "CHEMBL4435787",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/CCCNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N\\C(C)=C/C=C/C=C/C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL1241752",
+     "CC(C)=CCC/C(C)=C/COc1c(-c2ccc(O)cc2)oc2cc(OC/C=C(\\C)CCC=C(C)C)cc(O)c2c1=O"
+    ],
+    [
+     "CHEMBL4584991",
+     "C/C(=C/C=C\\C=C(C)\\C=C\\C=C/C=C/CNC(=O)C(CC(C)C)O[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(O)CC(=O)N\\C(C)=C/C=C/C=C/C(C)C(=O)O"
+    ],
+    [
+     "CHEMBL5172548",
+     "C/C(=C\\CC/C(C)=C/CC/C(C)=C\\CC/C(C)=C\\CO)CC/C=C(\\C)CNS(=O)(=O)c1ccc(N=Nc2ccc(N(C)C)cc2)cc1"
+    ],
+    [
+     "CHEMBL402408",
+     "COC(=O)/C(=C/CC/C(=C\\CCc1ccoc1)C(=O)OC)CC[C@@H](O)C(C)(C)O"
+    ],
+    [
+     "CHEMBL5272025",
+     "CC(C)=CCC/C(C)=C/C(C/C=C(\\C)CCC=C(C)C)(P(=O)(O)O)P(=O)(O)O"
+    ],
+    [
+     "CHEMBL1994118",
+     "CCOC(=O)/C=C(/OCC)[C@H]1C(C(=O)c2ccc(Cl)cc2)[C@H]1/C(=C\\C(=O)OCC)OCC"
+    ],
+    [
+     "CHEMBL1180293",
+     "C=CC[N+]12CC[C@]34c5ccccc5N5/C=C6/[C@H]7C[C@H]8[C@@]9(CC[N@@+]8(CC=C)C/C7=C/CO)c7ccccc7N(/C=C(\\[C@H]53)[C@@H](C[C@@H]41)/C(=C\\CO)C2)[C@@H]69"
+    ],
+    [
+     "CHEMBL2326031",
+     "CCCCCCCC(=O)N(Cc1ccc(N(CC)CC)cc1)[C@]12C[C@@H]3C[C@@H](C[C@H](C3)C1)C2"
+    ],
+    [
+     "CHEMBL2326311",
+     "CCN(CC)c1ccc(CN([C@]23C[C@@H]4C[C@@H](C[C@H](C4)C2)C3)S(=O)(=O)c2cccc(C)c2)cc1"
+    ],
+    [
+     "CHEMBL3217132",
+     "CO/N=C(/N)c1ccc(-c2ncc(-c3ccc(/C(N)=N\\OC)cc3)s2)cc1.Cl.Cl"
+    ],
+    [
+     "CHEMBL3759032",
+     "COc1ccc2c(c1)/C(=N/NC(=O)c1c(C)[nH]c(C(=O)N/N=C3\\C(=O)Nc4ccc(OC)cc43)c1C)C(=O)N2"
+    ],
+    [
+     "CHEMBL3792852",
+     "O=C1/C(=C/c2ccccc2-c2ccc(/C=C3\\Oc4cc(O)cc(O)c4C3=O)cc2)Oc2cc(O)cc(O)c21"
+    ],
+    [
+     "CHEMBL3921752",
+     "CC(C)=CCC/C(C)=C/CCc1c(C(=O)c2cc(O)ccc2O)c2cc(O)c(C/C=C(\\CO)CC/C=C(\\C)CCC=C(C)C)cc2oc1=O"
+    ],
+    [
+     "CHEMBL4173077",
+     "O=C1/C(=C/c2ccccc2F)CN(S(=O)(=O)c2ccc(F)cc2)C/C1=C\\c1cccc([N+](=O)[O-])c1"
+    ],
+    [
+     "CHEMBL4205275",
+     "O=C1/C(=C/c2ccccc2Br)CCC/C1=C\\c1ccccc1"
+    ]
+   ]
+  },
+  "B_renumber_variant_legacy": {
+   "V1": [],
+   "V2": [],
+   "V3": [
+    "CHEMBL1290711",
+    "CHEMBL1289158"
+   ],
+   "V4": [
+    "CHEMBL1290711",
+    "CHEMBL1289158"
+   ],
+   "V4L": [
+    "CHEMBL1290711",
+    "CHEMBL1289158"
+   ]
+  },
+  "T_V3_V4": [
+   [
+    "CHEMBL299513",
+    "C=C(C=O)[C@@H]1CC2=C(C(=O)OC)C=C(O2)[C@@H]2O[C@@]2(C)C[C@H]2OC(=O)[C@@]3(O[C@H]23)[C@@H](OC(C)=O)C1",
+    "C=C(C=O)[C@@H]1Cc2oc(cc2C(=O)OC)[C@@H]2O[C@@]2(C)C[C@H]2OC(=O)[C@@]3(O[C@H]23)[C@@H](OC(C)=O)C1"
+   ],
+   [
+    "CHEMBL4446458",
+    "CC[C@H](C)C(NC(=O)C(CCCN=C(N)N)NC(C)=O)C(=O)NC(CCCCNC(=O)Cc1ccc(N=Nc2ccc(O)cc2)cc1)C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(N)=O",
+    "CC[C@H](C)C(NC(=O)C(CCCNC(=N)N)NC(C)=O)C(=O)NC(CCCCNC(=O)Cc1ccc(/N=N/c2ccc(O)cc2)cc1)C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(N)=O"
+   ],
+   [
+    "CHEMBL262798",
+    "CCCCS/N=C(\\NC#N)NCCCCC(NC(=O)C(CCCCNC(=NC#N)NSCCCC)NC(=O)C(CO)NC(=O)C(Cc1c[nH]c2ccccc12)NC(=O)C(Cc1c[nH]cn1)NC(=O)C1CCC(=O)N1)C(=O)NC(CC(C)C)C(=O)NC(CCCCNC(C)C)C(=O)N1CCCC1C(=O)NC(C)C(N)=O",
+    "CCCCS/N=C(\\NC#N)NCCCC[C@H](NC(=O)[C@H](CO)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@@H]1CCC(=O)N1)C(=O)N[C@H](CCCCN/C(=N/SCCCC)NC#N)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCCNC(C)C)C(=O)N1CCC[C@H]1C(=O)N[C@H](C)C(N)=O"
+   ]
+  ],
+  "T_V3_V4L": [
+   [
+    "CHEMBL299513",
+    "C=C(C=O)[C@@H]1CC2=C(C(=O)OC)C=C(O2)[C@@H]2O[C@@]2(C)C[C@H]2OC(=O)[C@@]3(O[C@H]23)[C@@H](OC(C)=O)C1",
+    "C=C(C=O)[C@@H]1Cc2oc(cc2C(=O)OC)[C@@H]2O[C@@]2(C)C[C@H]2OC(=O)[C@@]3(O[C@H]23)[C@@H](OC(C)=O)C1"
+   ],
+   [
+    "CHEMBL4446458",
+    "CC[C@H](C)C(NC(=O)C(CCCN=C(N)N)NC(C)=O)C(=O)NC(CCCCNC(=O)Cc1ccc(N=Nc2ccc(O)cc2)cc1)C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(N)=O",
+    "CC[C@H](C)C(NC(=O)C(CCCNC(=N)N)NC(C)=O)C(=O)NC(CCCCNC(=O)Cc1ccc(/N=N/c2ccc(O)cc2)cc1)C(=O)NC(CCCNC(=N)N)C(=O)NC(Cc1ccc(O)cc1)C(N)=O"
+   ],
+   [
+    "CHEMBL262798",
+    "CCCCS/N=C(\\NC#N)NCCCCC(NC(=O)C(CCCCNC(=NC#N)NSCCCC)NC(=O)C(CO)NC(=O)C(Cc1c[nH]c2ccccc12)NC(=O)C(Cc1c[nH]cn1)NC(=O)C1CCC(=O)N1)C(=O)NC(CC(C)C)C(=O)NC(CCCCNC(C)C)C(=O)N1CCCC1C(=O)NC(C)C(N)=O",
+    "CCCCS/N=C(\\NC#N)NCCCC[C@H](NC(=O)[C@H](CO)NC(=O)[C@H](Cc1c[nH]c2ccccc12)NC(=O)[C@H](Cc1c[nH]cn1)NC(=O)[C@@H]1CCC(=O)N1)C(=O)N[C@H](CCCCN/C(=N/SCCCC)NC#N)C(=O)N[C@@H](CC(C)C)C(=O)N[C@@H](CCCCNC(C)C)C(=O)N1CCC[C@H]1C(=O)N[C@H](C)C(N)=O"
+   ]
+  ],
+  "V1_V2": [
+   [
+    "CHEMBL1163207",
+    "CN(C)CCN(C)C(=O)c1ccc2c(c1)/C(=C1/Nc3ccccc3/C1=N\\OCCO[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(=O)N2",
+    "CN(C)CCN(C)C(=O)c1ccc2c(c1)/C(=C1Nc3ccccc3C/1=N\\OCCO[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(=O)N2"
+   ],
+   [
+    "CHEMBL18519",
+    "CC(/N=c1\\c(O)c(O)\\c1=N/c1ccncc1)C(C)(C)C",
+    "CC(/N=c1c(O)c(O)c\\1=N/c1ccncc1)C(C)(C)C"
+   ],
+   [
+    "CHEMBL18491",
+    "CC(/N=c1\\c(O)c(O)\\c1=N/c1ccc(C#N)cc1)c1ccc(F)cc1",
+    "CC(/N=c1c(O)c(O)c\\1=N/c1ccc(C#N)cc1)c1ccc(F)cc1"
+   ],
+   [
+    "CHEMBL18680",
+    "CC(/N=c1\\c(O)c(O)\\c1=N/c1ccccc1C#N)C(C)(C)C",
+    "CC(/N=c1c(O)c(O)c\\1=N/c1ccccc1C#N)C(C)(C)C"
+   ],
+   [
+    "CHEMBL1364560",
+    "Cc1ccc2c(c1)/C(=C1/Nc3ccc(Br)cc3/C1=N\\OCCN1CCNCC1)C(=O)N2.Cl.Cl",
+    "Cc1ccc2c(c1)/C(=C1Nc3ccc(Br)cc3C/1=N\\OCCN1CCNCC1)C(=O)N2.Cl.Cl"
+   ],
+   [
+    "CHEMBL1315255",
+    "Cc1cccc2c1NC(=O)/C2=C1\\Nc2ccccc2\\C1=N/OCCN1CCNCC1.Cl.Cl",
+    "Cc1cccc2c1NC(=O)/C2=C1Nc2ccccc2C\\1=N/OCCN1CCNCC1.Cl.Cl"
+   ],
+   [
+    "CHEMBL1314295",
+    "Cl.Cl.O=C1Nc2ccccc2/C1=C1/Nc2ccc(Br)cc2/C1=N\\OCCN1CCNCC1",
+    "Cl.Cl.O=C1Nc2ccccc2/C1=C1Nc2ccc(Br)cc2C/1=N\\OCCN1CCNCC1"
+   ],
+   [
+    "CHEMBL1288283",
+    "c1ccc(/N=C2\\SC(=NNc3ccccc3)S\\C2=N/c2ccccc2)cc1",
+    "c1ccc(/N=C2SC(=NNc3ccccc3)SC\\2=N/c2ccccc2)cc1"
+   ],
+   [
+    "CHEMBL5202919",
+    "c1ccc(/N=c2\\sc3ccccc3s\\c2=N\\c2ccccc2)cc1",
+    "c1ccc(/N=c2sc3ccccc3sc\\2=N\\c2ccccc2)cc1"
+   ],
+   [
+    "CHEMBL5221833",
+    "O=C1Nc2ccc(Cl)cc2/C1=C1/Nc2ccccc2/C1=N\\OCC(=O)N1CCNCC1",
+    "O=C1Nc2ccc(Cl)cc2/C1=C1Nc2ccccc2C/1=N\\OCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222916",
+    "O=C1Nc2ccc(Br)cc2/C1=C1/Nc2ccccc2/C1=N\\OCC(=O)N1CCNCC1",
+    "O=C1Nc2ccc(Br)cc2/C1=C1Nc2ccccc2C/1=N\\OCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222819",
+    "O=C1Nc2ccccc2/C1=C1/Nc2ccccc2/C1=N\\OCS(=O)(=O)N1CCNCC1",
+    "O=C1Nc2ccccc2/C1=C1Nc2ccccc2C/1=N\\OCS(=O)(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222441",
+    "O=C1Nc2ccc(F)cc2/C1=C1/Nc2ccccc2/C1=N\\OCCS(=O)(=O)N1CCNCC1",
+    "O=C1Nc2ccc(F)cc2/C1=C1Nc2ccccc2C/1=N\\OCCS(=O)(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5207101",
+    "Cl.O=C1Nc2ccccc2/C1=C1/Nc2ccccc2/C1=N\\OCS(=O)(=O)N1CCNCC1",
+    "Cl.O=C1Nc2ccccc2/C1=C1Nc2ccccc2C/1=N\\OCS(=O)(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222018",
+    "O=C1Nc2ccc(F)cc2/C1=C1/Nc2ccccc2/C1=N\\OCCC(=O)N1CCNCC1",
+    "O=C1Nc2ccc(F)cc2/C1=C1Nc2ccccc2C/1=N\\OCCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222025",
+    "O=C1Nc2ccccc2/C1=C1/Nc2ccccc2/C1=N\\OCCC(=O)N1CCNCC1",
+    "O=C1Nc2ccccc2/C1=C1Nc2ccccc2C/1=N\\OCCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5268110",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2cc(F)c(F)cc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2cc(F)c(F)cc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5222324",
+    "O=C1Nc2ccccc2/C1=C1/Nc2ccccc2/C1=N\\OCC(=O)N1CCNCC1",
+    "O=C1Nc2ccccc2/C1=C1Nc2ccccc2C/1=N\\OCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5268647",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2c(Br)cccc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2c(Br)cccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5209537",
+    "Cl.O=C1Nc2ccc(Br)cc2/C1=C1/Nc2ccccc2/C1=N\\OCC(=O)N1CCNCC1",
+    "Cl.O=C1Nc2ccc(Br)cc2/C1=C1Nc2ccccc2C/1=N\\OCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222505",
+    "O=C1Nc2ccc(OC(F)(F)F)cc2/C1=C1/Nc2ccccc2/C1=N\\OCC(=O)N1CCNCC1",
+    "O=C1Nc2ccc(OC(F)(F)F)cc2/C1=C1Nc2ccccc2C/1=N\\OCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222507",
+    "O=C1Nc2ccc(F)cc2/C1=C1/Nc2ccccc2/C1=N\\OCC(=O)N1CCNCC1",
+    "O=C1Nc2ccc(F)cc2/C1=C1Nc2ccccc2C/1=N\\OCC(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5222508",
+    "O=C1Nc2ccc(F)cc2/C1=C1/Nc2ccccc2/C1=N\\OCS(=O)(=O)N1CCNCC1",
+    "O=C1Nc2ccc(F)cc2/C1=C1Nc2ccccc2C/1=N\\OCS(=O)(=O)N1CCNCC1"
+   ],
+   [
+    "CHEMBL5268972",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2c(F)cccc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2c(F)cccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5285192",
+    "COc1cc(/C=C2\\CC(C)c3ccccc3\\C2=N\\O)c(Br)c(OC)c1OC",
+    "COc1cc(/C=C2CC(C)c3ccccc3C\\2=N\\O)c(Br)c(OC)c1OC"
+   ],
+   [
+    "CHEMBL5283985",
+    "O=C1Nc2ccccc2/C1=C1/Nc2c(Cl)cccc2/C1=N\\O",
+    "O=C1Nc2ccccc2/C1=C1Nc2c(Cl)cccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5287870",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2ccc(-c3ccccc3)cc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2ccc(-c3ccccc3)cc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5286853",
+    "COc1cc(/C=C2\\CCc3c(O)cccc3\\C2=N\\O)c(Br)c(OC)c1OC",
+    "COc1cc(/C=C2CCc3c(O)cccc3C\\2=N\\O)c(Br)c(OC)c1OC"
+   ],
+   [
+    "CHEMBL141318",
+    "C/N=c1\\c(O)c(O)\\c1=N/CCC(=O)[O-].[Na+]",
+    "C/N=c1c(O)c(O)c\\1=N/CCC(=O)[O-].[Na+]"
+   ],
+   [
+    "CHEMBL5273616",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2cc(Cl)ccc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2cc(Cl)ccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5273624",
+    "O=C1Nc2cc(C(F)(F)F)ccc2/C1=C1/Nc2ccccc2/C1=N\\O",
+    "O=C1Nc2cc(C(F)(F)F)ccc2/C1=C1Nc2ccccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5288571",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2cc(F)ccc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2cc(F)ccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5266026",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2c(Cl)cc(Cl)cc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2c(Cl)cc(Cl)cc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5291253",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2ccc(Cl)cc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2ccc(Cl)cc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5410800",
+    "O=C1Nc2cc(Br)ccc2/C1=C1\\Nc2ccccc2\\C1=N/O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2ccccc2C\\1=N/O"
+   ],
+   [
+    "CHEMBL5281118",
+    "COc1cc(/C=C2\\CCc3ccc([N+](=O)[O-])cc3\\C2=N\\O)c(Br)c(OC)c1OC",
+    "COc1cc(/C=C2CCc3ccc([N+](=O)[O-])cc3C\\2=N\\O)c(Br)c(OC)c1OC"
+   ],
+   [
+    "CHEMBL5279541",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2cc(Cl)c(Cl)cc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2cc(Cl)c(Cl)cc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5277500",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2ccc(C(F)(F)F)cc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2ccc(C(F)(F)F)cc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5275272",
+    "O=C1Nc2cc(Br)ccc2/C1=C1/Nc2c(Cl)cccc2/C1=N\\O",
+    "O=C1Nc2cc(Br)ccc2/C1=C1Nc2c(Cl)cccc2C/1=N\\O"
+   ],
+   [
+    "CHEMBL5281589",
+    "COc1ccc(/C=C2\\CCc3ccc([N+](=O)[O-])cc3\\C2=N\\O)c(Cl)c1OC",
+    "COc1ccc(/C=C2CCc3ccc([N+](=O)[O-])cc3C\\2=N\\O)c(Cl)c1OC"
+   ]
+  ],
+  "V2_V3": [
+   [
+    "CHEMBL4116094",
+    "CCN1/C(=C/C2=C(NC)/C(=C/c3sc4ccccc4[n+]3CC)C2=O)Sc2ccccc21",
+    "CCN1/C(=C/C2=C(NC)C(=C/c3sc4ccccc4[n+]3CC)/C2=O)Sc2ccccc21"
+   ],
+   [
+    "CHEMBL1163207",
+    "CN(C)CCN(C)C(=O)c1ccc2c(c1)/C(=C1Nc3ccccc3C/1=N\\OCCO[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(=O)N2",
+    "CN(C)CCN(C)C(=O)c1ccc2c(c1)/C(=C1/Nc3ccccc3/C1=N\\OCCO[C@@H]1O[C@H](CO)[C@@H](O)[C@H](O)[C@H]1O)C(=O)N2"
+   ],
+   [
+    "CHEMBL1186245",
+    "C(=C/c1ccccc1)\\CN1CCN(CCCCCCn2c3ccccc3c3ccccc32)CC1",
+    "C(=C\\c1ccccc1)/CN1CCN(CCCCCCn2c3ccccc3c3ccccc32)CC1"
+   ],
+   [
+    "CHEMBL1160293",
+    "COc1ccc2c(c1)Oc1cc(O)ccc1/C2=C1\\C=C/C(=N/c2nc(O)nc(NCCCC[C@H](NC(=O)CC[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](C)OC3C(O)C(CO)OC(O)C3NC(C)=O)C(N)=O)C(=O)O)n2)C=C1C(=O)O",
+    "COc1ccc2c(c1)Oc1cc(O)ccc1/C2=C1C=C/C(=N/c2nc(O)nc(NCCCC[C@H](NC(=O)CC[C@@H](NC(=O)[C@H](C)NC(=O)[C@@H](C)OC3C(O)C(CO)OC(O)C3NC(C)=O)C(N)=O)C(=O)O)n2)C=C\\1C(=O)O"
+   ],
+   [
+    "CHEMBL13967",
+    "CCNC(=O)/C(C(=O)OCC)=C(C)\\C=C\\C=C(C)\\C=C\\C1=C(C)CCCC1(C)C",
+    "CCNC(=O)\\C(C(=O)OCC)=C(C)/C=C/C=C(C)/C=C/C1=C(C)CCCC1(C)C"
+   ],
+   [
+    "CHEMBL14287",
+    "CCNC(=O)/C(C(=O)O)=C(C)\\C=C\\C=C(C)\\C=C\\C1=C(C)CCCC1(C)C",
+    "CCNC(=O)\\C(C(=O)O)=C(C)/C=C/C=C(C)/C=C/C1=C(C)CCCC1(C)C"
+   ],
+   [
+    "CHEMBL14660",
+    "C(=C/COc1ccc(C2=NCCN2)cc1)\\COc1ccc(C2=NCCN2)cc1",
+    "C(=C\\COc1ccc(C2=NCCN2)cc1)/COc1ccc(C2=NCCN2)cc1"
+   ],
+   [
+    "CHEMBL17118",
+    "C[C@@](O)(/C=C/[C@H]1CC=CC(=O)O1)[C@H](O)C[C@@H](O)/C=C\\C=C/C=C/CO",
+    "C[C@@](O)(/C=C/[C@H]1CC=CC(=O)O1)[C@H](O)C[C@@H](O)\\C=C/C=C\\C=C\\CO"
+   ],
+   [
+    "CHEMBL17377",
+    "C[C@@](O)(/C=C/[C@H]1CC=CC(=O)O1)[C@@H](C[C@@H](O)/C=C\\C=C/C=C/CO)OP(=O)(O)O",
+    "C[C@@](O)(/C=C/[C@H]1CC=CC(=O)O1)[C@@H](C[C@@H](O)\\C=C/C=C\\C=C\\CO)OP(=O)(O)O"
+   ],
+   [
+    "CHEMBL18054",
+    "CCCCC/C=C\\C/C=C\\C/C=C\\C=C\\C(CCCC(=O)O)=N\\O",
+    "CCCCC/C=C\\C/C=C\\C\\C=C/C=C/C(CCCC(=O)O)=N/O"
+   ],
+   [
+    "CHEMBL18519",
+    "CC(/N=c1c(O)c(O)c\\1=N/c1ccncc1)C(C)(C)C",
+    "CC(/N=c1\\c(O)c(O)\\c1=N/c1ccncc1)C(C)(C)C"
+   ],
+   [
+    "CHEMBL18201",
+    "CCCCC/C=C\\C/C=C\\C/C=C\\C=C\\C(CCCC(=O)O)=N\\NC(N)=O",
+    "CCCCC/C=C\\C/C=C\\C\\C=C/C=C/C(CCCC(=O)O)=N/NC(N)=O"
+   ],
+   [
+    "CHEMBL18491",
+    "CC(/N=c1c(O)c(O)c\\1=N/c1ccc(C#N)cc1)c1ccc(F)cc1",
+    "CC(/N=c1\\c(O)c(O)\\c1=N/c1ccc(C#N)cc1)c1ccc(F)cc1"
+   ],
+   [
+    "CHEMBL18680",
+    "CC(/N=c1c(O)c(O)c\\1=N/c1ccccc1C#N)C(C)(C)C",
+    "CC(/N=c1\\c(O)c(O)\\c1=N/c1ccccc1C#N)C(C)(C)C"
+   ],
+   [
+    "CHEMBL113028",
+    "C(=C/c1ccccc1)\\c1ccccc1",
+    "C(=C\\c1ccccc1)/c1ccccc1"
+   ],
+   [
+    "CHEMBL115506",
+    "C(=C/c1ccccc1)\\CN(c1ccccc1)C1CCN(Cc2ccccc2)CC1.O=C(O)/C=C/C(=O)O",
+    "C(=C\\c1ccccc1)/CN(c1ccccc1)C1CCN(Cc2ccccc2)CC1.O=C(O)/C=C/C(=O)O"
+   ],
+   [
+    "CHEMBL4300251",
+    "CC1(C)C(/C=C/C2=C(Oc3ccc(S(=O)(=O)O)cc3)/C(=C/C=C3/N(CCCCS(=O)(=O)O)c4ccc(S(=O)(=O)O)cc4C3(C)C)CCC2)=[N+](CCCCCC(=O)NCCCCCC(=O)NC23CC4(CCC(=O)O)CC(CCC(=O)O)(CC(CCC(=O)O)(C4)C2)C3)c2ccc(S(=O)(=O)[O-])cc21",
+    "CC1(C)C(/C=C/C2=C(Oc3ccc(S(=O)(=O)O)cc3)C(=C/C=C3/N(CCCCS(=O)(=O)O)c4ccc(S(=O)(=O)O)cc4C3(C)C)/CCC2)=[N+](CCCCCC(=O)NCCCCCC(=O)NC23CC4(CCC(=O)O)CC(CCC(=O)O)(CC(CCC(=O)O)(C4)C2)C3)c2ccc(S(=O)(=O)[O-])cc21"
+   ],
+   [
+    "CHEMBL396090",
+    "CNC(=O)O[C@@H](CC(C)C)c1nc([C@H]2OC(=O)/C(C)=C/C/C(C)=C/[C@@H](O)[C@@H](C)/C=C(C)\\C=C(C)/C=C/C(=O)[C@H](C)[C@H](OC)/C(C)=C/C=C/[C@@H]2C)cs1",
+    "CNC(=O)O[C@@H](CC(C)C)c1nc([C@H]2OC(=O)/C(C)=C/C/C(C)=C/[C@@H](O)[C@@H](C)\\C=C(C)/C=C(C)\\C=C\\C(=O)[C@H](C)[C@H](OC)/C(C)=C/C=C/[C@@H]2C)cs1"
+   ],
+   [
+    "CHEMBL1299606",
+    "CCN1C(=O)/C(=C\\C=C\\C=C\\Nc2ccccc2)SC1=S",
+    "CCN1C(=O)\\C(=C/C=C/C=C/Nc2ccccc2)SC1=S"
+   ],
+   [
+    "CHEMBL398800",
+    "C=C1CC[C@@H]2[C@](C)(CO)[C@H](O)CC[C@@]2(C)[C@@H]1/C=C/C1=C/C(=C/c2ccc3c(c2)OCO3)OC1=O",
+    "C=C1CC[C@@H]2[C@](C)(CO)[C@H](O)CC[C@@]2(C)[C@@H]1/C=C/C1=CC(=C/c2ccc3c(c2)OCO3)/OC1=O"
+   ],
+   [
+    "CHEMBL1354648",
+    "C(=N\\Nc1nnc2c(n1)[nH]c1ccccc12)\\c1cccnc1",
+    "C(=N/Nc1nnc2c(n1)[nH]c1ccccc12)/c1cccnc1"
+   ],
+   [
+    "CHEMBL4928243",
+    "C(=C/c1cnc2nn[nH]c2c1)\\c1ccccc1",
+    "C(=C\\c1cnc2nn[nH]c2c1)/c1ccccc1"
+   ],
+   [
+    "CHEMBL1188410",
+    "C(=N/NC1=NCCN1)\\c1ccc(/C=N/NC2=NCCN2)cc1",
+    "C(=N\\NC1=NCCN1)/c1ccc(/C=N/NC2=NCCN2)cc1"
+   ],
+   [
+    "CHEMBL4931643",
+    "Cc1ccc(/N=C2C(=N\\c3ccc(C)cc3)/N(c3ccccc3)CCCN/2c2ccccc2)cc1",
+    "Cc1ccc(/N=C2/C(=N\\c3ccc(C)cc3)N(c3ccccc3)CCCN2c2ccccc2)cc1"
+   ],
+   [
+    "CHEMBL1876421",
+    "C(=C/c1ccccc1)\\CN1CCN(C(c2nnnn2C2CCCC2)C2CC2)CC1",
+    "C(=C\\c1ccccc1)/CN1CCN(C(c2nnnn2C2CCCC2)C2CC2)CC1"
+   ],
+   [
+    "CHEMBL377520",
+    "C=C1CC[C@@H]2[C@](C)(CO)[C@H](O)CC[C@@]2(C)[C@@H]1/C=C/C1=C/C(=C/c2ccc(OC)cc2)OC1=O",
+    "C=C1CC[C@@H]2[C@](C)(CO)[C@H](O)CC[C@@]2(C)[C@@H]1/C=C/C1=CC(=C/c2ccc(OC)cc2)/OC1=O"
+   ],
+   [
+    "CHEMBL518705",
+    "C/C=C/C=C/C(=O)[C@]12C(=O)C(C)=C(O)[C@@](C)(O)[C@H]1[C@H]1/C(=C(O)\\C=C\\C=C\\C)C(=O)[C@]2(C)C(=O)[C@@]1(C)O",
+    "C/C=C/C=C/C(=O)[C@]12C(=O)C(C)=C(O)[C@@](C)(O)[C@H]1[C@H]1\\C(=C(O)/C=C/C=C/C)C(=O)[C@]2(C)C(=O)[C@@]1(C)O"
+   ],
+   [
+    "CHEMBL517057",
+    "C(=C1\\CN2CCC1CC2)\\c1ccc2ccccc2c1",
+    "C(=C1/CN2CCC1CC2)/c1ccc2ccccc2c1"
+   ],
+   [
+    "CHEMBL1159780",
+    "C[C@@](O)(/C=C/[C@@H]1OC(=O)C=CC1O)[C@@H](C[C@@H](O)/C=C\\C=C/C=C/CO)OP(=O)(O)O",
+    "C[C@@](O)(/C=C/[C@@H]1OC(=O)C=CC1O)[C@@H](C[C@@H](O)\\C=C/C=C\\C=C\\CO)OP(=O)(O)O"
+   ],
+   [
+    "CHEMBL1160292",
+    "COc1ccc2c(c1)Oc1cc(O)ccc1/C2=C1\\C=C/C(=N/c2nc(O)nc(NCCCC[C@H](NC(=O)[C@@H](C)OC3C(O)C(CO)OC(O)C3NC(C)=O)C(=O)N[C@H](CCC(=O)O)C(N)=O)n2)C=C1C(=O)O",
+    "COc1ccc2c(c1)Oc1cc(O)ccc1/C2=C1C=C/C(=N/c2nc(O)nc(NCCCC[C@H](NC(=O)[C@@H](C)OC3C(O)C(CO)OC(O)C3NC(C)=O)C(=O)N[C@H](CCC(=O)O)C(N)=O)n2)C=C\\1C(=O)O"
+   ],
+   [
+    "CHEMBL385089",
+    "C(=C/c1ccccc1)\\Cn1ccc2nc(-c3ccccc3)nc-2c1",
+    "C(=C\\c1ccccc1)/Cn1ccc2nc(-c3ccccc3)nc-2c1"
+   ],
+   [
+    "CHEMBL119485",
+    "C(=C/c1ccccc1)\\CN1C2CCC1c1c([nH]c3ccccc13)C2",
+    "C(=C\\c1ccccc1)/CN1C2CCC1c1c([nH]c3ccccc13)C2"
+   ],
+   [
+    "CHEMBL4300552",
+    "C(=C/c1ccc(OCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc1)\\c1ccccc1",
+    "C(=C\\c1ccc(OCCCC[P+](c2ccccc2)(c2ccccc2)c2ccccc2)cc1)/c1ccccc1"
+   ],
+   [
+    "CHEMBL4300755",
+    "CC1(C)C(/C=C/C2=C(Cl)/C(=C/C=C3/N(CCCCS(=O)(=O)O)c4cc(I)cc(I)c4C3(C)C)CCC2)=[N+](CCCCS(=O)(=O)O)c2cc(I)cc(I)c21",
+    "CC1(C)C(/C=C/C2=C(Cl)C(=C/C=C3/N(CCCCS(=O)(=O)O)c4cc(I)cc(I)c4C3(C)C)/CCC2)=[N+](CCCCS(=O)(=O)O)c2cc(I)cc(I)c21"
+   ],
+   [
+    "CHEMBL118959",
+    "C(=C/c1nc(Nc2ccccc2)c2ccccc2n1)\\c1ccccc1",
+    "C(=C\\c1nc(Nc2ccccc2)c2ccccc2n1)/c1ccccc1"
+   ],
+   [
+    "CHEMBL4300632",
+    "C(=C/c1ccc(Oc2ccccc2)cc1)\\CCCCCCCCCOC[C@@H]1CCCN1",
+    "C(=C\\c1ccc(Oc2ccccc2)cc1)/CCCCCCCCCOC[C@@H]1CCCN1"
+   ],
+   [
+    "CHEMBL4300412",
+    "C(=C/c1ccc(-c2ccccc2)cc1)\\CCCCCCOC[C@@H]1CCCN1",
+    "C(=C\\c1ccc(-c2ccccc2)cc1)/CCCCCCOC[C@@H]1CCCN1"
+   ],
+   [
+    "CHEMBL4300746",
+    "CC1(C)C(/C=C/C2=C(Cl)/C(=C/C=C3/N(CCCCS(=O)(=O)O)c4ccc(I)cc4C3(C)C)CCC2)=[N+](CCCCS(=O)(=O)O)c2ccc(I)cc21",
+    "CC1(C)C(/C=C/C2=C(Cl)C(=C/C=C3/N(CCCCS(=O)(=O)O)c4ccc(I)cc4C3(C)C)/CCC2)=[N+](CCCCS(=O)(=O)O)c2ccc(I)cc21"
+   ],
+   [
+    "CHEMBL4300910",
+    "C(=C/c1ccc(Oc2ccccc2)cc1)\\CCCCCCCCOC[C@@H]1CCCN1",
+    "C(=C\\c1ccc(Oc2ccccc2)cc1)/CCCCCCCCOC[C@@H]1CCCN1"
+   ],
+   [
+    "CHEMBL4301174",
+    "CC1(C)C(/C=C/C2=C(Oc3ccc(S(=O)(=O)O)cc3)/C(=C/C=C3/N(CCCCS(=O)(=O)O)c4ccc(S(=O)(=O)O)cc4C3(C)C)CCC2)=[N+](CCCCCC(=O)O)c2ccc(S(=O)(=O)[O-])cc21",
+    "CC1(C)C(/C=C/C2=C(Oc3ccc(S(=O)(=O)O)cc3)C(=C/C=C3/N(CCCCS(=O)(=O)O)c4ccc(S(=O)(=O)O)cc4C3(C)C)/CCC2)=[N+](CCCCCC(=O)O)c2ccc(S(=O)(=O)[O-])cc21"
+   ]
+  ],
+  "V3_V4": [
+   [
+    "CHEMBL5270918",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5284150",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5275271",
+    "O=C1Cc2cccc(c2)OCCOCCOCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5275641",
+    "O=C1Cc2cccc(c2)OCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5277153",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5566878",
+    "CC(C)C[C@H]1C(=O)NCC2=CC=C(CN[C@@H](Cc3ccccc3)C(=O)N[C@@H](C)C(=O)N1C)O2",
+    "CC(C)C[C@H]1C(=O)NCc2ccc(o2)CN[C@@H](Cc2ccccc2)C(=O)N[C@@H](C)C(=O)N1C"
+   ],
+   [
+    "CHEMBL5567719",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)CC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)Cc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5561783",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5565644",
+    "CC(C)(C)OC(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)C2=C(c3nc(C#N)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)(C)OC(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)c2oc(nc2-c2nc(C#N)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5542976",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C#N)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C#N)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5561687",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2cccc(c2)[C@]2(C(=O)Nc3ccc(F)cc32)C2=C(c3nc(CO)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2cccc(c2)[C@]2(C(=O)Nc3ccc(F)cc32)c2oc(nc2-c2nc(CO)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5561798",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(=O)N(C)C)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(=O)N(C)C)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5752836",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(O3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OCC)n4CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(o3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OCC)n4CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL5542108",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)C2=C(c3nc(C(=O)O)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)c2oc(nc2-c2nc(C(=O)O)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5532175",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)C2=C(c3nc(C(=O)OCc4ccccc4)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)c2oc(nc2-c2nc(C(=O)OCc3ccccc3)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5564650",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)CC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)Cc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5566358",
+    "CC(C)C[C@H]1C(=O)N(C)CC2=CC=C(CN[C@@H](Cc3ccccc3)C(=O)N[C@@H](C)C(=O)N1C)O2",
+    "CC(C)C[C@H]1C(=O)N(C)Cc2ccc(o2)CN[C@@H](Cc2ccccc2)C(=O)N[C@@H](C)C(=O)N1C"
+   ],
+   [
+    "CHEMBL5559138",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5555727",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(CO)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(CO)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5555790",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(=O)O)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(=O)O)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5542829",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5555440",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(=O)OCc4ccccc4)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(=O)OCc3ccccc3)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5560839",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5558937",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(N)=O)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(N)=O)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5559994",
+    "CC[C@]12C(=O)N(C)c3ccc(cc31)C[C@H](NC(=O)[C@@H](O)C(C)C)C(=O)N[C@@H](C(C)(C)C)C1=NC(c3nc(C(=O)OC)co3)=C2O1",
+    "CC[C@]12C(=O)N(C)c3ccc(cc31)C[C@H](NC(=O)[C@@H](O)C(C)C)C(=O)N[C@@H](C(C)(C)C)c1nc(-c3nc(C(=O)OC)co3)c2o1"
+   ],
+   [
+    "CHEMBL5757897",
+    "CC1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)C2=CN=C1S2",
+    "CC1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)c2cnc1s2"
+   ],
+   [
+    "CHEMBL5560363",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5560656",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5809398",
+    "C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)C2=CN=C1S2",
+    "C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)c2cnc1s2"
+   ],
+   [
+    "CHEMBL5811744",
+    "Cn1cc2c(n1)C(=O)NCCOCCOc1cc(ccn1)C1=CC=C(S1)C(=O)N2",
+    "Cn1cc2c(n1)C(=O)NCCOCCOc1cc(ccn1)-c1ccc(s1)C(=O)N2"
+   ],
+   [
+    "CHEMBL5831641",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](Cc1cnc[nH]1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)C1=CC=C(CNC(=O)CCSCc3cccc(c3)CSC[C@@H](C(N)=O)NC2=O)O1",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](Cc1cnc[nH]1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)c1ccc(o1)CNC(=O)CCSCc1cccc(c1)CSC[C@@H](C(N)=O)NC2=O"
+   ],
+   [
+    "CHEMBL5851729",
+    "C[C@H]1NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)C2=CC=C(CNC(=O)[C@H](Cc3c[nH]c4ccc(F)cc34)NC(=O)[C@H](Cc3c[nH]c4ccc(F)cc34)NC1=O)O2",
+    "C[C@H]1NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)c2ccc(o2)CNC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC1=O"
+   ],
+   [
+    "CHEMBL5853843",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CCc1cccc3c1Oc1c(cccc1-3)CCNC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)CCSCc1cccc(c1)CSC[C@H](C(N)=O)NC2=O",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CCc1cccc3c1oc1c(cccc13)CCNC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)CCSCc1cccc(c1)CSC[C@H](C(N)=O)NC2=O"
+   ],
+   [
+    "CHEMBL5844019",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(S3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(s3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL5864151",
+    "CC1NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)C2=CN=C1S2",
+    "CC1NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)c2cnc1s2"
+   ],
+   [
+    "CHEMBL5882080",
+    "CC(=O)c1nn(CC(=O)N2[C@H]3C[C@@]4(/C=C\\CCC5=NN=C(Cc6ccc(Br)nc6NC3=O)O5)C[C@@H]24)c2cnc(-c3cnc(C)nc3)cc12",
+    "CC(=O)c1nn(CC(=O)N2[C@H]3C[C@@]4(/C=C\\CCc5nnc(o5)Cc5ccc(Br)nc5NC3=O)C[C@@H]24)c2cnc(-c3cnc(C)nc3)cc12"
+   ],
+   [
+    "CHEMBL5962626",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NC=C(O3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3ncc(o3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL5978676",
+    "C=CC(=O)N1CCO[C@H]2CN(C(=O)N(C)[C@H](C(=O)N[C@H]3CC4=NN=C(O4)c4ccc5c(c4)c(c(-c4cccnc4[C@H](C)OC)n5CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]4CCCN(N4)C3=O)C(C)C)C[C@H]21",
+    "C=CC(=O)N1CCO[C@H]2CN(C(=O)N(C)[C@H](C(=O)N[C@H]3Cc4nnc(o4)-c4ccc5c(c4)c(c(-c4cccnc4[C@H](C)OC)n5CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]4CCCN(N4)C3=O)C(C)C)C[C@H]21"
+   ],
+   [
+    "CHEMBL5979815",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(O3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(o3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL6018493",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(S3)c3ccc4c(c3)c(c(-c3cccnc3COC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(s3)-c3ccc4c(c3)c(c(-c3cccnc3COC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ]
+  ],
+  "V3_V4L": [
+   [
+    "CHEMBL5270918",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5284150",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5275271",
+    "O=C1Cc2cccc(c2)OCCOCCOCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5275641",
+    "O=C1Cc2cccc(c2)OCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5277153",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)NC2=NN=C(CCCCC3=NN=C(N1)S3)S2",
+    "O=C1Cc2cccc(c2)OCCOCCOc2cccc(c2)CC(=O)Nc2nnc(s2)CCCCc2nnc(s2)N1"
+   ],
+   [
+    "CHEMBL5566878",
+    "CC(C)C[C@H]1C(=O)NCC2=CC=C(CN[C@@H](Cc3ccccc3)C(=O)N[C@@H](C)C(=O)N1C)O2",
+    "CC(C)C[C@H]1C(=O)NCc2ccc(o2)CN[C@@H](Cc2ccccc2)C(=O)N[C@@H](C)C(=O)N1C"
+   ],
+   [
+    "CHEMBL5567719",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)CC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)Cc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5561783",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5565644",
+    "CC(C)(C)OC(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)C2=C(c3nc(C#N)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)(C)OC(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)c2oc(nc2-c2nc(C#N)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5542976",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C#N)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C#N)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5561687",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2cccc(c2)[C@]2(C(=O)Nc3ccc(F)cc32)C2=C(c3nc(CO)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2cccc(c2)[C@]2(C(=O)Nc3ccc(F)cc32)c2oc(nc2-c2nc(CO)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5561798",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(=O)N(C)C)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(=O)N(C)C)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5752836",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(O3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OCC)n4CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(o3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OCC)n4CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL5542108",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)C2=C(c3nc(C(=O)O)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)c2oc(nc2-c2nc(C(=O)O)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5532175",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)C2=C(c3nc(C(=O)OCc4ccccc4)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](C)(C(=O)N3)c2oc(nc2-c2nc(C(=O)OCc3ccccc3)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5564650",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)CC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)N(C)Cc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5566358",
+    "CC(C)C[C@H]1C(=O)N(C)CC2=CC=C(CN[C@@H](Cc3ccccc3)C(=O)N[C@@H](C)C(=O)N1C)O2",
+    "CC(C)C[C@H]1C(=O)N(C)Cc2ccc(o2)CN[C@@H](Cc2ccccc2)C(=O)N[C@@H](C)C(=O)N1C"
+   ],
+   [
+    "CHEMBL5559138",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5555727",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(CO)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(CO)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5555790",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(=O)O)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(=O)O)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5542829",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)N(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5555440",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(=O)OCc4ccccc4)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(=O)OCc3ccccc3)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5560839",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)CN(C)C(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5558937",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)C2=C(c3nc(C(N)=O)co3)N=C(O2)[C@H](C(C)(C)C)NC1=O",
+    "CC(C)[C@H](O)C(=O)N[C@H]1Cc2ccc3c(c2)[C@](c2ccccc2)(C(=O)N3)c2oc(nc2-c2nc(C(N)=O)co2)[C@H](C(C)(C)C)NC1=O"
+   ],
+   [
+    "CHEMBL5559994",
+    "CC[C@]12C(=O)N(C)c3ccc(cc31)C[C@H](NC(=O)[C@@H](O)C(C)C)C(=O)N[C@@H](C(C)(C)C)C1=NC(c3nc(C(=O)OC)co3)=C2O1",
+    "CC[C@]12C(=O)N(C)c3ccc(cc31)C[C@H](NC(=O)[C@@H](O)C(C)C)C(=O)N[C@@H](C(C)(C)C)c1nc(-c3nc(C(=O)OC)co3)c2o1"
+   ],
+   [
+    "CHEMBL5757897",
+    "CC1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)C2=CN=C1S2",
+    "CC1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)c2cnc1s2"
+   ],
+   [
+    "CHEMBL5560363",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CN(C)C1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CN(C)C1=O"
+   ],
+   [
+    "CHEMBL5560656",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCC2=CC=C(CNC1=O)O2",
+    "CC(C)C[C@@H]1NC(=O)[C@H](C)NC(=O)[C@H](Cc2ccccc2)NCc2ccc(o2)CNC1=O"
+   ],
+   [
+    "CHEMBL5809398",
+    "C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)C2=CN=C1S2",
+    "C[C@@H]1NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@@H](C)NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)c2cnc1s2"
+   ],
+   [
+    "CHEMBL5811744",
+    "Cn1cc2c(n1)C(=O)NCCOCCOc1cc(ccn1)C1=CC=C(S1)C(=O)N2",
+    "Cn1cc2c(n1)C(=O)NCCOCCOc1cc(ccn1)-c1ccc(s1)C(=O)N2"
+   ],
+   [
+    "CHEMBL5831641",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](Cc1cnc[nH]1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)C1=CC=C(CNC(=O)CCSCc3cccc(c3)CSC[C@@H](C(N)=O)NC2=O)O1",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)[C@H](Cc1cnc[nH]1)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)c1ccc(o1)CNC(=O)CCSCc1cccc(c1)CSC[C@@H](C(N)=O)NC2=O"
+   ],
+   [
+    "CHEMBL5851729",
+    "C[C@H]1NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)C2=CC=C(CNC(=O)[C@H](Cc3c[nH]c4ccc(F)cc34)NC(=O)[C@H](Cc3c[nH]c4ccc(F)cc34)NC1=O)O2",
+    "C[C@H]1NC(=O)[C@H](CCCCN)NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)c2ccc(o2)CNC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC1=O"
+   ],
+   [
+    "CHEMBL5853843",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CCc1cccc3c1Oc1c(cccc1-3)CCNC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)CCSCc1cccc(c1)CSC[C@H](C(N)=O)NC2=O",
+    "C[C@@]12CCCN1C(=O)[C@H](Cc1ccc(O)cc1)NC(=O)CCc1cccc3c1oc1c(cccc13)CCNC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)[C@H](Cc1c[nH]c3ccc(F)cc13)NC(=O)CNC(=O)[C@H](CCCCN)NC(=O)CCSCc1cccc(c1)CSC[C@H](C(N)=O)NC2=O"
+   ],
+   [
+    "CHEMBL5844019",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(S3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(s3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL5864151",
+    "CC1NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)C2=CN=C1S2",
+    "CC1NC(=O)CCSCc2cccc(c2)CSC[C@@H](C(N)=O)NC(=O)[C@]2(C)CCCN2C(=O)[C@H](Cc2ccc(O)cc2)NC(=O)[C@H](Cc2cnc[nH]2)NC(=O)[C@H](CC(=O)O)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)[C@H](Cc2c[nH]c3ccc(F)cc23)NC(=O)c2cnc1s2"
+   ],
+   [
+    "CHEMBL5882080",
+    "CC(=O)c1nn(CC(=O)N2[C@H]3C[C@@]4(/C=C\\CCC5=NN=C(Cc6ccc(Br)nc6NC3=O)O5)C[C@@H]24)c2cnc(-c3cnc(C)nc3)cc12",
+    "CC(=O)c1nn(CC(=O)N2[C@H]3C[C@@]4(/C=C\\CCc5nnc(o5)Cc5ccc(Br)nc5NC3=O)C[C@@H]24)c2cnc(-c3cnc(C)nc3)cc12"
+   ],
+   [
+    "CHEMBL5962626",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NC=C(O3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3ncc(o3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL5978676",
+    "C=CC(=O)N1CCO[C@H]2CN(C(=O)N(C)[C@H](C(=O)N[C@H]3CC4=NN=C(O4)c4ccc5c(c4)c(c(-c4cccnc4[C@H](C)OC)n5CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]4CCCN(N4)C3=O)C(C)C)C[C@H]21",
+    "C=CC(=O)N1CCO[C@H]2CN(C(=O)N(C)[C@H](C(=O)N[C@H]3Cc4nnc(o4)-c4ccc5c(c4)c(c(-c4cccnc4[C@H](C)OC)n5CC(F)(F)F)CC(C)(C)COC(=O)[C@@H]4CCCN(N4)C3=O)C(C)C)C[C@H]21"
+   ],
+   [
+    "CHEMBL5979815",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(O3)c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(o3)-c3ccc4c(c3)c(c(-c3cccnc3[C@H](C)OC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ],
+   [
+    "CHEMBL6018493",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2CC3=NN=C(S3)c3ccc4c(c3)c(c(-c3cccnc3COC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1",
+    "C=CC(=O)N1CC[C@H](C(=O)N(C)[C@H](C(=O)N[C@H]2Cc3nnc(s3)-c3ccc4c(c3)c(c(-c3cccnc3COC)n4CC)CC(C)(C)COC(=O)[C@@H]3CCCN(N3)C2=O)C(C)C)C1"
+   ]
+  ],
+  "V4_V4L": []
+ }
+}
