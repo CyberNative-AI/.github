@@ -1,0 +1,52 @@
+repo	entries	no_license	actions	unresolved	exact	no_license_anywhere_in_graph
+krahets/hello-algo	26	14	12	2	0	2
+iluwatar/java-design-patterns	125	44	6	34	4	11
+NationalSecurityAgency/ghidra	138	38	5	11	22	33
+macrozheng/mall	54	38	0	34	4	25
+spring-projects/spring-boot	307	42	12	20	10	29
+doocs/advanced-java	168	8	8	0	0	0
+elastic/elasticsearch	107	9	9	0	0	0
+MisterBooo/LeetCodeAnimation	3	3	2	1	0	1
+TheAlgorithms/Java	26	13	12	1	0	1
+rails/rails	1083	71	9	62	0	6
+jekyll/jekyll	78	78	11	67	0	67
+mastodon/mastodon	1785	22	18	0	4	4
+huginn/huginn	387	14	13	0	1	1
+Homebrew/brew	182	28	27	0	1	1
+discourse/discourse	2200	55	10	40	5	8
+fastlane/fastlane	225	73	15	58	0	1
+freeCodeCamp/devdocs	ERROR Not Found
+rapid7/metasploit-framework	400	112	12	99	1	2
+affaan-m/ECC	847	44	12	32	0	32
+react/react	22175	116	18	83	15	16
+trekhleb/javascript-algorithms	630	3	3	0	0	0
+DietrichGebert/ponytail	ERROR Not Found
+Snailclimb/JavaGuide	679	3	3	0	0	0
+airbnb/javascript	35	14	6	8	0	8
+vercel/next.js	7714	1034	22	1006	6	133
+Chalarangelo/30-seconds-of-code	531	5	5	0	0	0
+nodejs/node	787	28	24	2	2	4
+public-apis/public-apis	7	3	2	1	0	1
+EbookFoundation/free-programming-books	12	12	12	0	0	0
+donnemartin/system-design-primer	0	0	0	0	0	0
+vinta/awesome-python	27	7	6	0	1	1
+practical-tutorials/project-based-learning	2	2	2	0	0	0
+NousResearch/hermes-agent	3439	67	23	29	15	38
+TheAlgorithms/Python	87	8	7	0	1	1
+yt-dlp/yt-dlp	75	14	14	0	0	0
+microsoft/markitdown	81	20	2	18	0	7
+avelino/awesome-go	15	5	5	0	0	0
+ollama/ollama	968	15	15	0	0	0
+golang/go	78	0	0	0	0	0
+kubernetes/kubernetes	1884	0	0	0	0	0
+JuliusBrussee/caveman	733	31	12	19	0	18
+microsoft/TypeScript	314	20	13	3	4	6
+fatedier/frp	711	24	10	12	2	2
+infiniflow/ragflow	2419	38	11	17	10	17
+gohugoio/hugo	201	14	12	1	1	2
+
+42 repositories with at least one dependency entry
+action: 420 of 420 entries have no license (100.0%)
+unresolved: 1660 of 3351 entries have no license (49.5%)
+exact: 109 of 47974 entries have no license (0.2%)
+non-action entries with no license: 1769; same package licensed elsewhere in the graph: 1291; nowhere: 478
