@@ -1,6 +1,6 @@
 """Classify the latest release of top PyPI projects by what CPython 3.15 (Linux x86_64) can install without a build.
 usage: python3 -I cp315_wheels.py TOP_JSON OUT_TSV [N]
-Classes: pure (py3/py2.py3 none-any), abi3 (cp3X-abi3 manylinux x86_64, X<=15), cp315 (cp315 manylinux x86_64),
+Classes: pure (py3/py3X none-any), abi3 (cp3X-abi3 manylinux x86_64, X<=15), cp315 (cp315 manylinux x86_64),
  older_only (only cpXY<315 binary wheels => sdist build or failure on 3.15), sdist_only, no_files, error."""
 import json,sys,re,urllib.request,concurrent.futures as cf
 top=json.load(open(sys.argv[1])); rows=top['rows'] if 'rows' in top else top
@@ -12,14 +12,16 @@ def cls(name):
     v=d['info']['version']; files=d.get('urls',[]); rp=d['info'].get('requires_python') or ''
     if not files: return name,v,'no_files','',rp
     whl=[f['filename'] for f in files if f['filename'].endswith('.whl')]
-    if any(w.endswith('-none-any.whl') for w in whl): return name,v,'pure','',rp
-    tags=set()
+    py3=lambda py: any(re.fullmatch(r'py3(\d*)',t) and int(t[3:] or 0)<=15 for t in py.split('.'))  # py3, py310..py315; not py2 or pp
+    tags=set(); anytags=set()
     for w in whl:
         m=re.match(r'.+-(?P<py>[^-]+)-(?P<abi>[^-]+)-(?P<plat>[^-]+)\.whl$',w)
-        if m and 'x86_64' in m['plat'] and ('linux' in m['plat']): tags.add((m['py'],m['abi']))
+        if m and m['plat']=='any': anytags.add((m['py'],m['abi']))
+        if m and any(p.startswith('manylinux') and p.endswith('_x86_64') for p in m['plat'].split('.')): tags.add((m['py'],m['abi']))  # glibc, not musllinux
+    if any(abi=='none' and (py3(py) or 'cp315' in py.split('.')) for py,abi in anytags): return name,v,'pure','',rp
     if any(py=='cp315' and abi in ('cp315','none') for py,abi in tags): return name,v,'cp315','',rp
     if any(abi=='abi3' for py,abi in tags): return name,v,'abi3','',rp
-    if any(abi=='none' and py.startswith('py3') for py,abi in tags): return name,v,'pure','platform',rp
+    if any(abi=='none' and py3(py) for py,abi in tags): return name,v,'pure','platform',rp
     if tags: return name,v,'older_only',' '.join(sorted(p for p,a in tags))[-60:],rp
     if whl: return name,v,'no_linux_x86_wheel',whl[0][-60:],rp
     return name,v,'sdist_only','',rp
