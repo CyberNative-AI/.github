@@ -1,0 +1,14 @@
+// microsoft/vscode 1.142.0 (d956e8a6ac5d904486557eea07e1d6bd62a4d36f)
+// src/vs/workbench/contrib/chat/browser/widget/input/chatInputPart.ts lines 1417-1428
+	public switchModelByQualifiedName(qualifiedModelNames: readonly string[]): boolean {
+		const models = this.getModels();
+		for (const qualifiedModelName of qualifiedModelNames) {
+			const model = models.find(m => ILanguageModelChatMetadata.matchesQualifiedName(qualifiedModelName, m.metadata));
+			if (model) {
+				this._applyProgrammaticLanguageModel(model);
+				return true;
+			}
+		}
+		this.logService.warn(`[chat] Node of the models "${qualifiedModelNames.join(', ')}" not found. Use format "<name> (<vendor>)", e.g. "GPT-4o (copilot)".`);
+		return false;
+	}

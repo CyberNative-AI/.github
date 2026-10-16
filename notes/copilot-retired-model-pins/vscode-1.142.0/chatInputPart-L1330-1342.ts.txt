@@ -1,0 +1,15 @@
+// microsoft/vscode 1.142.0 (d956e8a6ac5d904486557eea07e1d6bd62a4d36f)
+// src/vs/workbench/contrib/chat/browser/widget/input/chatInputPart.ts lines 1330-1342
+		}));
+		this._register(autorun(r => {
+			const mode = this._currentModeObservable.read(r);
+			this.chatModeKindKey.set(mode.kind);
+			this.chatModeNameKey.set(mode.name.read(r));
+			if (this.options.suppressModePreferredModel) {
+				return;
+			}
+			const models = mode.model?.read(r);
+			if (models) {
+				this.switchModelByQualifiedName(models);
+			}
+		}));

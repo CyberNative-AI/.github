@@ -1,0 +1,13 @@
+c7bb5ea21bf5897ef2436a0149447285215d9640a285642420f5a0d2020d7914  ./LICENSE
+2dde26937d4968a1adb1289f09ecf5f5f93de275c9ed2969427182804c94488b  ./README.md
+cd55bb625bf29dbd8f0cf503726d1c0105d928ee46cd68a55b86f4b1ac7e6cf0  ./results/git-grep-3-repos.txt
+0cbb443c16cda9b1f2b5dd1d2990d916966b756118b4cddfa320e2d737ac5ffb  ./results/grep-check.json
+468fdd6ffbd210010c6092d95d6f51ab3fb0bceddfafa9e7376ff0d995ccaa3b  ./results/summary.json
+0ab1e38347c33b7dac6d08d7bc9142b6a19cf79b9a53a3f01f45af4eb21c62ba  ./scripts/count.py
+d12232d573623be30999ebc6fecd255e7ea8aac0f282173b2acd7e7339d021c3  ./scripts/grep_check.py
+9480271317925265e806a9a196aaa33410a962fa9d4d1e248a4a5187bc8c9df9  ./vscode-1.142.0/LICENSE.txt
+3e57238f6df2981fbf076215829324e4752e512a6b82ef74d3bea0fc6189332b  ./vscode-1.142.0/chatInputPart-L1330-1342.ts.txt
+7f6ceb3444b5e241d4c6a49b1bff5a5221a93a75867d33b98f973f9bf1296da0  ./vscode-1.142.0/chatInputPart-L1417-1428.ts.txt
+4ed2e82ceaba98206a6f395daec83d32703743f1c0d2012ea24f50a27963f7ba  ./vscode-1.142.0/promptValidator-L424-433.ts.txt
+e2559c7a68be11f934ba569f27e250a0c0edcca60e8429cf09689b00415c4fd5  ./vscode-1.142.0/runSubagentTool-L586-610.ts.txt
+c828d808d7556a076f02684e2505527eec32ea2c074b27d622c3bf4d6d9ee4d9  ./vscode-1.142.0/runSubagentTool.test-L927-949.ts.txt

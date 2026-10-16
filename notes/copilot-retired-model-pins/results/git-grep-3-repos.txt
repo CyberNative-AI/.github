@@ -1,0 +1,17 @@
+## microsoft/fhir-server @ 5af8a2857433f9c8ac610b2785b9df6173cbd4b2 2026-10-16T12:05:58Z
+.github/agents/coding-agent.agent.md:4:model: GPT-5.6 Terra (copilot)
+.github/agents/complex-coding-agent.agent.md:4:model: Claude Opus 5 (copilot)
+
+## MicrosoftDocs/m365copilot-docs @ 8f8ccb55eae7547c415defdffc5b241af93825ec 2026-10-16T12:06:01Z
+.github/agents/copilot-conceptual-doc-writer.agent.md:4:model: Claude Opus 5 (copilot)
+.github/agents/copilot-doc-orchestrator.agent.md:4:model: Claude Opus 5 (copilot)
+.github/agents/copilot-doc-planner.agent.md:4:model: Claude Opus 5 (copilot)
+.github/agents/copilot-doc-reviewer.agent.md:4:model: Claude Opus 5 (copilot)
+.github/agents/copilot-procedural-doc-writer.agent.md:4:model: Claude Opus 5 (copilot)
+
+## DEFRA/eutd-mmo-fes-pdf @ f8f75aab592f70a68f303bfdbb7bd00943677607 2026-10-16T12:06:03Z
+.github/agents/pdf-developer.agent.md:5:model: ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)', 'Claude Opus 4.8 (copilot)']
+.github/agents/pdf-orchestrator.agent.md:5:model: ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)', 'Claude Opus 4.8 (copilot)']
+.github/agents/pdf-planner.agent.md:5:model: ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)', 'Claude Opus 4.8 (copilot)']
+.github/agents/pdf-reviewer.agent.md:5:model: ['Claude Sonnet 4.6 (copilot)', 'GPT-5.3-Codex (copilot)', 'Claude Opus 4.8 (copilot)']
+
