@@ -1,0 +1,719 @@
+{
+ "summary": {
+  "D1": {
+   "n": 100,
+   "vendor_nonempty": 95,
+   "ours_nonempty": 95,
+   "identical": 100
+  },
+  "D2": {
+   "n": 50,
+   "nonempty": 50,
+   "wer": 0.0376
+  }
+ },
+ "D1_rows": [
+  {
+   "id": "1-12654-A-15.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-17295-A-29.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-208757-A-2.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-26222-A-10.wav",
+   "vendor_path": "",
+   "our_loader": ""
+  },
+  {
+   "id": "1-27165-A-35.wav",
+   "vendor_path": "",
+   "our_loader": ""
+  },
+  {
+   "id": "1-36400-A-23.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-36929-A-47.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-46274-A-18.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-49409-A-8.wav",
+   "vendor_path": "No, no, no.",
+   "our_loader": "No, no, no."
+  },
+  {
+   "id": "1-54752-A-18.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-58792-A-24.wav",
+   "vendor_path": "Break sweat! Break sweat!",
+   "our_loader": "Break sweat! Break sweat!"
+  },
+  {
+   "id": "1-72195-A-37.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-77160-A-3.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-79236-A-36.wav",
+   "vendor_path": "Three.",
+   "our_loader": "Three."
+  },
+  {
+   "id": "1-84536-A-39.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "1-84705-A-39.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-102567-A-35.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-103424-A-3.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-114609-B-28.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-117615-A-48.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-117616-A-48.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-120218-B-30.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-122104-A-0.wav",
+   "vendor_path": "What? What",
+   "our_loader": "What? What"
+  },
+  {
+   "id": "2-122820-B-36.wav",
+   "vendor_path": "",
+   "our_loader": ""
+  },
+  {
+   "id": "2-135860-A-49.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-137162-A-11.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-141584-A-38.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-144031-A-34.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-188822-B-40.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-188822-C-40.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-205966-A-16.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-32834-A-4.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-50667-B-41.wav",
+   "vendor_path": "Oh my god!",
+   "our_loader": "Oh my god!"
+  },
+  {
+   "id": "2-65750-A-1.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-66205-A-23.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-72547-D-14.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-81970-C-7.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-87780-A-33.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-87795-A-24.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-94807-A-29.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "2-95035-A-1.wav",
+   "vendor_path": "I'm telling you crazy.",
+   "our_loader": "I'm telling you crazy."
+  },
+  {
+   "id": "2-96033-A-13.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-103051-B-19.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-103401-D-33.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-104761-A-7.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-119120-B-48.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-119120-C-48.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-126358-B-3.wav",
+   "vendor_path": "I don't know.",
+   "our_loader": "I don't know."
+  },
+  {
+   "id": "3-127890-A-9.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-134802-A-13.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-144891-A-19.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-149189-A-1.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-152020-A-36.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-152039-A-3.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-154439-A-17.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-155570-A-32.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-160993-A-3.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-163288-A-1.wav",
+   "vendor_path": "I'm not gonna-",
+   "our_loader": "I'm not gonna-"
+  },
+  {
+   "id": "3-164216-A-6.wav",
+   "vendor_path": "Hey!",
+   "our_loader": "Hey!"
+  },
+  {
+   "id": "3-164593-A-15.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-166324-A-15.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-170002-A-34.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-171281-A-6.wav",
+   "vendor_path": "I'm sorry!",
+   "our_loader": "I'm sorry!"
+  },
+  {
+   "id": "3-188390-A-6.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "3-203374-A-39.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-133674-A-26.wav",
+   "vendor_path": "you can get this, that",
+   "our_loader": "you can get this, that"
+  },
+  {
+   "id": "4-164064-B-1.wav",
+   "vendor_path": "I'm sorry.",
+   "our_loader": "I'm sorry."
+  },
+  {
+   "id": "4-167077-C-20.wav",
+   "vendor_path": "Hey, hey",
+   "our_loader": "Hey, hey"
+  },
+  {
+   "id": "4-169127-B-41.wav",
+   "vendor_path": "Oh my god!",
+   "our_loader": "Oh my god!"
+  },
+  {
+   "id": "4-171519-A-21.wav",
+   "vendor_path": "Hit my...",
+   "our_loader": "Hit my..."
+  },
+  {
+   "id": "4-172736-A-36.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-173865-B-9.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-182839-A-17.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-183992-A-0.wav",
+   "vendor_path": "I don't know. I don't know.",
+   "our_loader": "I don't know. I don't know."
+  },
+  {
+   "id": "4-191246-B-7.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-191327-A-38.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-198962-B-25.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-208021-A-1.wav",
+   "vendor_path": "I'm sorry.",
+   "our_loader": "I'm sorry."
+  },
+  {
+   "id": "4-218199-H-35.wav",
+   "vendor_path": "",
+   "our_loader": ""
+  },
+  {
+   "id": "4-232495-A-6.wav",
+   "vendor_path": "I'm sorry.",
+   "our_loader": "I'm sorry."
+  },
+  {
+   "id": "4-234644-A-2.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "4-250869-C-2.wav",
+   "vendor_path": "Alright, alright, alright.",
+   "our_loader": "Alright, alright, alright."
+  },
+  {
+   "id": "4-99644-C-4.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-117118-A-42.wav",
+   "vendor_path": "I'm sorry.",
+   "our_loader": "I'm sorry."
+  },
+  {
+   "id": "5-160551-A-42.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-160614-C-48.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-182007-A-36.wav",
+   "vendor_path": "",
+   "our_loader": ""
+  },
+  {
+   "id": "5-182012-A-36.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-195710-A-10.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-202540-A-18.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-203128-B-0.wav",
+   "vendor_path": "That's what we're doing! That's what we're doing!",
+   "our_loader": "That's what we're doing! That's what we're doing!"
+  },
+  {
+   "id": "5-204352-B-13.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-207836-A-29.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-216213-A-13.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-237499-A-4.wav",
+   "vendor_path": "I don't know.",
+   "our_loader": "I don't know."
+  },
+  {
+   "id": "5-243773-A-44.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-250258-A-49.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-253094-B-49.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-259514-A-26.wav",
+   "vendor_path": "Thank you.",
+   "our_loader": "Thank you."
+  },
+  {
+   "id": "5-263775-A-26.wav",
+   "vendor_path": "What? What?",
+   "our_loader": "What? What?"
+  }
+ ],
+ "D2_rows": [
+  {
+   "id": "1188-133604-0012",
+   "text": "It may be that a great colorless will use his utmost force of color as a singer his full power of voice. But, loud or low, the virtue is in both cases always in refinement, never in loudness."
+  },
+  {
+   "id": "1188-133604-0039",
+   "text": "It has no beauty whatsoever, no specialty of picturesqueness, and all its lines are cramped and poor."
+  },
+  {
+   "id": "1221-135767-0002",
+   "text": "At that epoch of pristine simplicity, however, matters of even slighter public interest and of far less intrinsic weight than the welfare of Hester and her child were strangely mixed up with the deliberations of legislators and acts of state."
+  },
+  {
+   "id": "1284-1180-0001",
+   "text": "His hat had a peaked crown in a flat brim, and around the brim was a row of tiny golden bells that tinkled when he moved."
+  },
+  {
+   "id": "1580-141083-0001",
+   "text": "I had always known him to be restless in his manner, but on this particular occasion he was in such a state of uncontrolled agitation that it was clear something very unusual had occurred."
+  },
+  {
+   "id": "1580-141083-0019",
+   "text": "Above were three students one on each story."
+  },
+  {
+   "id": "1580-141084-0007",
+   "text": "To morrow was the examination."
+  },
+  {
+   "id": "1580-141084-0049",
+   "text": "It was simple enough, sir. If you only had known but with all your cleverness it was impossible that you could know."
+  },
+  {
+   "id": "1995-1837-0014",
+   "text": "He stood a moment bewildered, then turned and rushed upon the island, a great sheet of dazzling sunlight swept the place, and beneath lay a mighty mass of olive green, thick, tall, wet, and willowy."
+  },
+  {
+   "id": "2094-142345-0009",
+   "text": "For the great barn doors are thrown wide open, and men are busy there, mending the harness, under the superintendents of Mr. Gobie, the Whitaux, otherwise saddler, who entertains them with a latest Trettelston Gossip."
+  },
+  {
+   "id": "2094-142345-0013",
+   "text": "Her tongue was not less keen than her eye, and whenever a damsel came within a year's shot seemed to take up an unfinished lecture, as a barrel organ takes up a tune precisely at the point where it had left off."
+  },
+  {
+   "id": "2094-142345-0017",
+   "text": "I never knew your equals for gallowsness."
+  },
+  {
+   "id": "2830-3980-0070",
+   "text": "But we are careless. We make light of sin."
+  },
+  {
+   "id": "2961-961-0010",
+   "text": "But in Egypt the traditions of our own and other lands are by us registered for ever in our temples."
+  },
+  {
+   "id": "3575-170457-0025",
+   "text": "Again I thank you. This incident, I suppose, will be renewed no more. If I live to be an old woman I shall remember at thirty years' hence as a bright dream.\""
+  },
+  {
+   "id": "3729-6852-0004",
+   "text": "Her face was an enigma, for it inspired every one with the warmest sympathy; and yet, if you examined it attentively, there was not one beautiful feature. She could not be called handsome, but no one could have thought her ugly."
+  },
+  {
+   "id": "4077-13751-0000",
+   "text": "On the 6th of April, 1830, the Church of Jesus Christ of Latter-day Saints was formerly organized and thus took on a legal existence."
+  },
+  {
+   "id": "4077-13754-0009",
+   "text": "At the inception of bureau marriage among the latter day saints, there was no law, national or state against its practice."
+  },
+  {
+   "id": "4446-2275-0012",
+   "text": "She looked at his heavy shoulders and big, determined head, thrust forward like a catapult in lish."
+  },
+  {
+   "id": "4446-2275-0039",
+   "text": "I must know about you."
+  },
+  {
+   "id": "4507-16021-0047",
+   "text": "Yesterday you were trembling for a health that is dear to you. To day you fear for your own. To morrow it will be anxiety about money, the day after, to morrow, the day a tribe of a slanderer, the day after that, the misfortune of some friend, then the prevailing weather, then something that has been broken or lost, then a pleasure with which your conscience and your veritable Column reproached you. Again, the course of public affairs."
+  },
+  {
+   "id": "4970-29095-0032",
+   "text": "But Philip is honest, and he has talent enough, if he will stop scribbling, to make his way."
+  },
+  {
+   "id": "4992-41806-0002",
+   "text": "They began with the one in the family sitting room. Colonel Wheeler, Ralph Thurston, Mr. and Mrs. Bill Harmon with Naddy and Roughis, Mr. and Mrs. Popham with Digby and Lally Joy, all standing in admiring groups and thrilling with the delight at the order of events."
+  },
+  {
+   "id": "5105-28233-0002",
+   "text": "It must be owned, and no one was more ready to confess it than himself, that his literary attainments were by no means of a high order."
+  },
+  {
+   "id": "5142-33396-0011",
+   "text": "There she sat on the rollers as fair a ship as I ever saw."
+  },
+  {
+   "id": "5142-36377-0001",
+   "text": "In five minutes I was in a new world, and my melancholy room was full of the liveliest French company."
+  },
+  {
+   "id": "5142-36377-0003",
+   "text": "Ambrose met me at the bottom of the stairs and showed me the way to the supper room."
+  },
+  {
+   "id": "5683-32865-0014",
+   "text": "\"He's not a man for country quarters."
+  },
+  {
+   "id": "61-70968-0015",
+   "text": "\"Nay, we refused their request most politely, most noble,\" said the little stroller."
+  },
+  {
+   "id": "61-70970-0020",
+   "text": "\"Will,\" whispered Robin, opening his door as he spoke, \"are you ready?\""
+  },
+  {
+   "id": "672-122797-0005",
+   "text": "Oh, that made him so angry!"
+  },
+  {
+   "id": "672-122797-0008",
+   "text": "This happened every year, and the young fir tree that had now grown to a very comely size trembled at the sight, for the magnificent great trees fell to the earth with noise and cracking, the branches were locked off, and the trees looked long and bare. They were hardly to be recognised, and then they were laid in carts, and the horses dragged them out of the wood."
+  },
+  {
+   "id": "672-122797-0023",
+   "text": "He well knew that he should never see his dear old comrades, the little bushes and flowers around him any more, perhaps not even the birds."
+  },
+  {
+   "id": "6829-68769-0037",
+   "text": "I've seen lots of that kind in my day."
+  },
+  {
+   "id": "6930-76324-0008",
+   "text": "I thought we were stumped again when I first saw that picture, but it spin of some use, after all."
+  },
+  {
+   "id": "7021-85628-0013",
+   "text": "The princess certainly was beautiful, and he would have dearly liked to be kissed by her, but the cap which his mother had made, he would not give up on any condition."
+  },
+  {
+   "id": "7127-75946-0011",
+   "text": "You will take them from my private treasure."
+  },
+  {
+   "id": "7127-75946-0020",
+   "text": "Far from its sire, your majesty, having given no directions about it, the musicians have retained it."
+  },
+  {
+   "id": "7127-75947-0010",
+   "text": "When she perceived the young man, she rose, like a woman surprised in amidst of ideas she was desirous of concealing from herself."
+  },
+  {
+   "id": "7127-75947-0019",
+   "text": "\"Did not the dancing amuse you?\" \"No.\""
+  },
+  {
+   "id": "7176-92135-0015",
+   "text": "\"And so, one, till you get to the end when Ophelia might say, 'Ah, yes,' or something non committal of that sort."
+  },
+  {
+   "id": "7176-92135-0016",
+   "text": "This would be an easy way of doing it, but it would not be the best way, for the reason that it is too easy to call attention to itself."
+  },
+  {
+   "id": "7176-92135-0023",
+   "text": "You gave me double five. I won't double nine.\" \"Hello! Is that you, Horatio?\" Hamlet speaking."
+  },
+  {
+   "id": "8230-279154-0026",
+   "text": "This distinction is vital to the understanding of memory, but it is not so easy to carry out in practice as it is to draw in theory."
+  },
+  {
+   "id": "8455-210777-0014",
+   "text": "\"Sir Kennington Oval is a very fine player,\" said my wife."
+  },
+  {
+   "id": "8455-210777-0050",
+   "text": "One of us always remains on board while the other is on shore."
+  },
+  {
+   "id": "8455-210777-0070",
+   "text": "And this plan was adopted, too, in order to extract from me a promise that I would depart in peace."
+  },
+  {
+   "id": "8463-294825-0000",
+   "text": "It's almost beyond conjecture."
+  },
+  {
+   "id": "8463-294825-0014",
+   "text": "FATHOM SIX FEET."
+  },
+  {
+   "id": "908-157963-0012",
+   "text": "But thou is like a faint cloud, kindled at the rising sun. I vanish from my early throne, and who shall find my place?"
+  }
+ ]
+}

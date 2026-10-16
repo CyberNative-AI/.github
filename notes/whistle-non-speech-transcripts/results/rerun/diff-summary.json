@@ -1,0 +1,119 @@
+{
+ "arms": {
+  "W_en": {
+   "frozen_n": 2312,
+   "rerun_n": 2312,
+   "ids_only_frozen": 0,
+   "ids_only_rerun": 0,
+   "identical": 2312,
+   "differ": 0,
+   "differ_by_set": {},
+   "examples": [],
+   "rerun_errors": 0
+  },
+  "VAD": {
+   "frozen_n": 2312,
+   "rerun_n": 2312,
+   "ids_only_frozen": 0,
+   "ids_only_rerun": 0,
+   "identical": 2312,
+   "differ": 0,
+   "differ_by_set": {},
+   "examples": [],
+   "rerun_errors": 0
+  },
+  "T_tiny": {
+   "frozen_n": 2312,
+   "rerun_n": 2312,
+   "ids_only_frozen": 0,
+   "ids_only_rerun": 0,
+   "identical": 2312,
+   "differ": 0,
+   "differ_by_set": {},
+   "examples": [],
+   "rerun_errors": 0
+  }
+ },
+ "primary": {
+  "frozen": {
+   "false_W": 1945,
+   "ftr_W": 0.9725,
+   "ftr_WV": 0.0435,
+   "ftr_W_ci95": [
+    0.96438,
+    0.97881
+   ],
+   "ref_V_only_vs_W": 0,
+   "ref_W_only_vs_V": 1903,
+   "ref_ftr_V": 0.021,
+   "ref_mcnemar_p": 0.0,
+   "removed_by_vad_R": 1858,
+   "sens_drop_errors": {
+    "false_W": 1945,
+    "n": 2000
+   }
+  },
+  "rerun": {
+   "false_W": 1945,
+   "ftr_W": 0.9725,
+   "ftr_WV": 0.0435,
+   "ftr_W_ci95": [
+    0.96438,
+    0.97881
+   ],
+   "ref_V_only_vs_W": 0,
+   "ref_W_only_vs_V": 1903,
+   "ref_ftr_V": 0.021,
+   "ref_mcnemar_p": 0.0,
+   "removed_by_vad_R": 1858,
+   "sens_drop_errors": {
+    "false_W": 1945,
+    "n": 2000
+   }
+  },
+  "d_ftr_W_pp": 0.0,
+  "d_ftr_WV_pp": 0.0
+ },
+ "gates": {
+  "frozen": {
+   "T_tiny": {
+    "speech_n": 300,
+    "speech_nonempty": 300,
+    "wer": 0.078
+   },
+   "VAD": {
+    "speech_n": 300,
+    "speech_with_segment": 300
+   },
+   "W_en": {
+    "speech_n": 300,
+    "speech_nonempty": 300,
+    "wer": 0.0416
+   }
+  },
+  "rerun": {
+   "T_tiny": {
+    "speech_n": 300,
+    "speech_nonempty": 300,
+    "wer": 0.078
+   },
+   "VAD": {
+    "speech_n": 300,
+    "speech_with_segment": 300
+   },
+   "W_en": {
+    "speech_n": 300,
+    "speech_nonempty": 300,
+    "wer": 0.0416
+   }
+  },
+  "rerun_gates_ok": true
+ },
+ "verdict": {
+  "frozen": "CHANGE",
+  "rerun": "CHANGE (repeat gate pending)"
+ },
+ "all_rows_identical": true,
+ "within_tolerance": true,
+ "rerun_pass": true
+}

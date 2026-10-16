@@ -1,0 +1,12 @@
+{"id": "zeros_1s", "set": "synth", "path": "synth:/out/synth/zeros_1s.npy"}
+{"id": "zeros_5s", "set": "synth", "path": "synth:/out/synth/zeros_5s.npy"}
+{"id": "zeros_30s", "set": "synth", "path": "synth:/out/synth/zeros_30s.npy"}
+{"id": "white_-90dB_5s", "set": "synth", "path": "synth:/out/synth/white_-90dB_5s.npy"}
+{"id": "white_-60dB_5s", "set": "synth", "path": "synth:/out/synth/white_-60dB_5s.npy"}
+{"id": "white_-40dB_5s", "set": "synth", "path": "synth:/out/synth/white_-40dB_5s.npy"}
+{"id": "white_-20dB_5s", "set": "synth", "path": "synth:/out/synth/white_-20dB_5s.npy"}
+{"id": "pink_-40dB_5s", "set": "synth", "path": "synth:/out/synth/pink_-40dB_5s.npy"}
+{"id": "pink_-20dB_5s", "set": "synth", "path": "synth:/out/synth/pink_-20dB_5s.npy"}
+{"id": "hum60_-30dB_5s", "set": "synth", "path": "synth:/out/synth/hum60_-30dB_5s.npy"}
+{"id": "hum50_-30dB_5s", "set": "synth", "path": "synth:/out/synth/hum50_-30dB_5s.npy"}
+{"id": "pink_-40dB_30s", "set": "synth", "path": "synth:/out/synth/pink_-40dB_30s.npy"}
