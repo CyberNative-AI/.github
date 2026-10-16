@@ -1,0 +1,9 @@
+GBIF occurrence API, dataset 50c9509d-22c7-4a22-a47d-8c48425ef4a7, read 2026-10-16 20:29 UTC
+Clock time 00:00-00:19 as written in eventDate; 'days around' = same year, 1-7 days either side.
+date        records  at 00:00-00:19   days around: records  at 00:00-00:19   expected genuine
+1980-01-01     3138    2757 (87.9%)                    157       4 ( 2.5%)                 80
+2000-01-01     3280    2402 (73.2%)                    785      24 ( 3.1%)                100
+Both dates, clock 00:00-00:19: 5159 records; about 180 (3.5%) expected genuine at the days-around rate.
+Unix dates, commonest clock hours as written:
+1969-12-31     1086 records, 1085 with a time: 19h 589, 18h 225, 16h 117, 17h 70
+1970-01-01     1240 records, 1231 with a time: 01h 678, 02h 260, 08h 58, 05h 52

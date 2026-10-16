@@ -1,0 +1,16 @@
+GBIF occurrence API, dataset 50c9509d-22c7-4a22-a47d-8c48425ef4a7, read 2026-10-16 20:03 UTC
+date        records  nearby  other-yrs  ratio  excess  date-flagged  source
+1899-11-30       67       0          0     67      67*            0  day 0 of month 0
+1899-12-30        0       0          0      0       0             0  Excel/Access zero date (OLE)
+1899-12-31        2       0          0      2       2             0  Excel 1900 system, day 0
+1900-01-01       91       0          1     91      90*            0  Excel 1900 system, day 1
+1904-01-01        5       0        0.5      5     4.5             0  Mac/Excel 1904 system
+1969-12-31     1086       1          0   1086    1085*            0  Unix time 0, west of UTC
+1970-01-01     1240       1         10    124    1230*            0  Unix time 0, UTC and east
+1980-01-01     3138       6         65     48    3073*            0  DOS/FAT timestamp zero
+1980-01-06        9       5        2.5      2       4             0  GPS week 0
+2000-01-01     3280      43        158     21    3122*            0  common camera clock reset
+2000-12-31      129      19       84.5      2    44.5             0  Apple reference date, west of UTC
+2001-01-01      153      21        240      1     -87             0  Apple reference date, UTC and east
+* = at least 5x both baselines and 20 records above them. Excess on those days: 8667
+date-flagged is an upper bound: a record with two date issues is counted twice.
