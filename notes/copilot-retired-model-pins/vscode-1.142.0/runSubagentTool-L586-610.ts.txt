@@ -1,0 +1,27 @@
+// microsoft/vscode 1.142.0 (d956e8a6ac5d904486557eea07e1d6bd62a4d36f)
+// src/vs/workbench/contrib/chat/common/tools/builtinTools/runSubagentTool.ts lines 586-610
+
+		if (subagent && !explicitModelResolved) {
+			const modeModelQualifiedNames = subagent.model;
+			if (modeModelQualifiedNames) {
+				// When the main model is BYOK (flagged via `metadata.isBYOK`), skip Copilot/CAPI fallback models
+				// for built-in agents (e.g. Explore), whose model list is a curated convenience fallback. A
+				// user-authored agent's model list is a deliberate choice and is always honored as-is.
+				const mainModelIsByok = !!mainModelMetadata && isByokModel(mainModelMetadata);
+				const skipCopilotFallbacks = mainModelIsByok && isBuiltinAgent(subagent.source, subagent.uri, this.productService);
+				// Find the actual model identifier from the qualified name(s)
+				for (const qualifiedName of modeModelQualifiedNames) {
+					const lmByQualifiedName = this.languageModelsService.lookupLanguageModelByQualifiedName(qualifiedName);
+					if (lmByQualifiedName?.identifier) {
+						if (skipCopilotFallbacks && lmByQualifiedName.metadata.vendor === COPILOT_VENDOR_ID) {
+							continue;
+						}
+						modeModelId = lmByQualifiedName.identifier;
+						selectionSource = 'agentModel';
+						break;
+					}
+				}
+			}
+		}
+
+		if (
