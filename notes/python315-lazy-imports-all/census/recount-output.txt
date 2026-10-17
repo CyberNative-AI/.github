@@ -1,0 +1,8 @@
+projects 303 Counter({'OK': 259, 'BREAK_REIFY': 17, 'EXCLUDED_NO_IMPORT': 10, 'BREAK_IMPORT': 8, 'EXCLUDED_INSTALL': 7, 'EXCLUDED_NO_NAMES': 2})
+eligible non-calibration 277 BREAK 22 Counter({'BREAK_REIFY': 14, 'BREAK_IMPORT': 8})
+BREAK_IMPORT ['ctl-s1', 'google-cloud-aiplatform', 'httpcore', 'httpcore2', 'matplotlib', 'mpmath', 'sympy', 'truststore']
+BREAK_REIFY ['alembic', 'anthropic', 'azure-storage-blob', 'ctl-s3', 'docker', 'google-cloud-bigquery', 'google-cloud-core', 'jsonschema', 'mcp', 'openai', 'opentelemetry-sdk', 'rapidfuzz', 'structlog', 'uvicorn']
+calibration [('google-cloud-storage', 'BREAK_REIFY'), ('numpy', 'OK'), ('orjson', 'OK'), ('pandas', 'BREAK_REIFY'), ('pydantic', 'OK'), ('six', 'OK'), ('sqlalchemy', 'BREAK_REIFY')]
+deny fixed 15 ['anthropic', 'ctl-s1', 'ctl-s3', 'docker', 'httpcore', 'jsonschema', 'matplotlib', 'mpmath', 'openai', 'opentelemetry-sdk', 'rapidfuzz', 'sqlalchemy', 'structlog', 'truststore', 'uvicorn']
+deny not fixed 10 [('alembic', 2), ('azure-storage-blob', 2), ('google-cloud-aiplatform', 7), ('google-cloud-bigquery', 2), ('google-cloud-core', 3), ('google-cloud-storage', 2), ('httpcore2', 1), ('mcp', 1), ('pandas', 1), ('sympy', 16)]
+deny new breaks among OK under all 0 []

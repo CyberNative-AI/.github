@@ -1,0 +1,84 @@
+sympy	normal	-	1	OK x**3/3
+sympy	normal	-	2	OK x**3/3
+sympy	all	-	1	EXC AttributeError: 'FPContext' object has no attribute 'zetazero' || ROOT AttributeError: 'FPContext' object has no attribute 'zetazero'
+sympy	all	-	2	EXC AttributeError: 'FPContext' object has no attribute 'zetazero' || ROOT AttributeError: 'FPContext' object has no attribute 'zetazero'
+sympy	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK x**3/3
+sympy	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK x**3/3
+mpmath	normal	-	1	OK 3.14159265358979323846264338328
+mpmath	normal	-	2	OK 3.14159265358979323846264338328
+mpmath	all	-	1	EXC AttributeError: 'FPContext' object has no attribute 'zetazero' || ROOT AttributeError: 'FPContext' object has no attribute 'zetazero'
+mpmath	all	-	2	EXC AttributeError: 'FPContext' object has no attribute 'zetazero' || ROOT AttributeError: 'FPContext' object has no attribute 'zetazero'
+mpmath	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK 3.14159265358979323846264338328
+mpmath	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK 3.14159265358979323846264338328
+httpx	normal	-	1	OK ConnectError (expected: nothing listens on port 9)
+httpx	normal	-	2	OK ConnectError (expected: nothing listens on port 9)
+httpx	all	-	1	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+httpx	all	-	2	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+httpx	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK ConnectError (expected: nothing listens on port 9)
+httpx	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK ConnectError (expected: nothing listens on port 9)
+openai	normal	-	1	OK OpenAI
+openai	normal	-	2	OK OpenAI
+openai	all	-	1	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+openai	all	-	2	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+openai	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK OpenAI
+openai	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK OpenAI
+anthropic	normal	-	1	OK Anthropic
+anthropic	normal	-	2	OK Anthropic
+anthropic	all	-	1	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+anthropic	all	-	2	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+anthropic	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK Anthropic
+anthropic	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK Anthropic
+truststore	normal	-	1	OK injected
+truststore	normal	-	2	OK injected
+truststore	all	-	1	EXC NameError: name '_api' is not defined || ROOT NameError: name '_api' is not defined
+truststore	all	-	2	EXC NameError: name '_api' is not defined || ROOT NameError: name '_api' is not defined
+truststore	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK injected
+truststore	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK injected
+sqlalchemy	normal	-	1	OK created
+sqlalchemy	normal	-	2	OK created
+sqlalchemy	all	-	1	EXC AttributeError: 'Table' object has no attribute 'dispatch' || ROOT AttributeError: 'Table' object has no attribute 'dispatch'
+sqlalchemy	all	-	2	EXC AttributeError: 'Table' object has no attribute 'dispatch' || ROOT AttributeError: 'Table' object has no attribute 'dispatch'
+sqlalchemy	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK created
+sqlalchemy	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK created
+alembic	normal	-	1	OK None
+alembic	normal	-	2	OK None
+alembic	all	-	1	EXC InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x7dfe90a4e660>' || ROOT InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x7dfe90a4e660>'
+alembic	all	-	2	EXC InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x7c9438676660>' || ROOT InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x7c9438676660>'
+alembic	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK None
+alembic	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK None
+pandas	normal	-	1	OK {'a': 3}
+pandas	normal	-	2	OK {'a': 3}
+pandas	all	-	1	EXC TypeError: 'lazy_import' object is not subscriptable || ROOT ImportError: lazy import of 'pandas._typing.NDFrameT' raised an exception during resolution
+pandas	all	-	2	EXC TypeError: 'lazy_import' object is not subscriptable || ROOT ImportError: lazy import of 'pandas._typing.NDFrameT' raised an exception during resolution
+pandas	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK {'a': 3}
+pandas	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK {'a': 3}
+matplotlib	normal	-	1	OK saved
+matplotlib	normal	-	2	OK saved
+matplotlib	all	-	1	EXC KeyError: 'Axes:kwdoc' || ROOT ValueError: not enough values to unpack (expected 1, got 0)
+matplotlib	all	-	2	EXC KeyError: 'Axes:kwdoc' || ROOT ValueError: not enough values to unpack (expected 1, got 0)
+matplotlib	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK saved
+matplotlib	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK saved
+otel	normal	-	1	OK True
+otel	normal	-	2	OK True
+otel	all	-	1	EXC ImportError: cannot import name 'AggregationTemporality' from partially initialized module 'opentelemetry.sdk.metrics._internal.aggre || ROOT ImportError: lazy import of 'opentelemetry.sdk.metrics._internal.aggregation.AggregationTemporality' raised an exception during resol
+otel	all	-	2	EXC ImportError: cannot import name 'AggregationTemporality' from partially initialized module 'opentelemetry.sdk.metrics._internal.aggre || ROOT ImportError: lazy import of 'opentelemetry.sdk.metrics._internal.aggregation.AggregationTemporality' raised an exception during resol
+otel	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK True
+otel	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK True
+protobuf	normal	-	1	OK code: 3 message: "x" 
+protobuf	normal	-	2	OK code: 3 message: "x" 
+protobuf	all	-	1	EXC TypeError: Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded || ROOT TypeError: Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded
+protobuf	all	-	2	EXC TypeError: Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded || ROOT TypeError: Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded
+protobuf	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK code: 3 message: "x" 
+protobuf	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK code: 3 message: "x" 
+rapidfuzz	normal	-	1	OK Editop(tag='replace', src_pos=0, dest_pos=0)
+rapidfuzz	normal	-	2	OK Editop(tag='replace', src_pos=0, dest_pos=0)
+rapidfuzz	all	-	1	EXC ModuleNotFoundError: No module named 'rapidfuzz.distance._initialize_cpp_avx2' || ROOT ImportError: lazy import of 'rapidfuzz.distance._initialize_cpp_avx2.Editop' raised an exception during resolution
+rapidfuzz	all	-	2	EXC ModuleNotFoundError: No module named 'rapidfuzz.distance._initialize_cpp_avx2' || ROOT ImportError: lazy import of 'rapidfuzz.distance._initialize_cpp_avx2.Editop' raised an exception during resolution
+rapidfuzz	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK Editop(tag='replace', src_pos=0, dest_pos=0)
+rapidfuzz	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK Editop(tag='replace', src_pos=0, dest_pos=0)
+uvicorn	normal	-	1	OK ChangeReload = StatReload
+uvicorn	normal	-	2	OK ChangeReload = StatReload
+uvicorn	all	-	1	OK ChangeReload = WatchFilesReload
+uvicorn	all	-	2	OK ChangeReload = WatchFilesReload
+uvicorn	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	1	OK ChangeReload = StatReload
+uvicorn	filter	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn	2	OK ChangeReload = StatReload

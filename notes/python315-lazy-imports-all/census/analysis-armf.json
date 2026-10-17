@@ -1,0 +1,1451 @@
+[
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "1.20.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "alembic"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/alembic/lib/python3.15/site-packages/sqlalchemy/event/api.py",
+    "key": [
+     "import",
+     "alembic",
+     "InvalidRequestError"
+    ],
+    "msg": "No such event '_sa_event_column_added_to_pk_constraint' for target '<class 'sqlalchemy.sql.schema.PrimaryKeyConstraint'>'"
+   },
+   {
+    "frame": "/w/envs/alembic/lib/python3.15/site-packages/sqlalchemy/event/api.py",
+    "key": [
+     "walk",
+     "sqlalchemy.schema",
+     "conv",
+     "InvalidRequestError"
+    ],
+    "msg": "No such event '_sa_event_column_added_to_pk_constraint' for target '<class 'sqlalchemy.sql.schema.PrimaryKeyConstraint'>'"
+   }
+  ],
+  "modules_only_normal": [
+   "_zoneinfo",
+   "alembic",
+   "alembic.autogenerate",
+   "alembic.autogenerate.api",
+   "alembic.autogenerate.compare",
+   "alembic.autogenerate.compare.comments",
+   "alembic.autogenerate.compare.constraints",
+   "alembic.autogenerate.compare.schema",
+   "alembic.autogenerate.compare.server_defaults",
+   "alembic.autogenerate.compare.tables",
+   "alembic.autogenerate.compare.types",
+   "alembic.autogenerate.compare.util",
+   "alembic.autogenerate.render",
+   "alembic.autogenerate.rewriter",
+   "alembic.context",
+   "alembic.ddl",
+   "alembic.ddl._autogen",
+   "alembic.ddl.base",
+   "alembic.ddl.impl",
+   "alembic.ddl.mssql",
+   "alembic.ddl.mysql",
+   "alembic.ddl.oracle",
+   "alembic.ddl.postgresql",
+   "alembic.ddl.sqlite",
+   "alembic.ext",
+   "alembic.ext.checkconstraint_byname",
+   "alembic.op",
+   "alembic.operations",
+   "alembic.operations.base",
+   "alembic.operations.batch",
+   "alembic.operations.ops",
+   "alembic.operations.schemaobj",
+   "alembic.operations.toimpl",
+   "alembic.runtime.environment",
+   "alembic.runtime.migration",
+   "alembic.runtime.plugins",
+   "alembic.script",
+   "alembic.script.base",
+   "alembic.script.revision",
+   "alembic.script.write_hooks"
+  ],
+  "n_extra": 2,
+  "n_modules_only_normal": 76,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "alembic"
+  ],
+  "owners": {
+   "sqlalchemy": 2
+  },
+  "project": "alembic",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.15.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "anthropic"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_hmac",
+   "email.base64mime",
+   "hmac",
+   "pydantic._internal._dataclasses",
+   "secrets"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 5,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "anthropic"
+  ],
+  "owners": {},
+  "project": "anthropic",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "CPYTHON",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "12.31.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "azure.storage.blob"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "azure.core.pipeline.transport._aiohttp",
+     "CIMultiDict",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'multidict'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "azure.core.pipeline.transport._aiohttp",
+     "aiohttp",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 2,
+  "n_modules_only_normal": 29,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "azure.storage.blob"
+  ],
+  "owners": {
+   "cpython": 2
+  },
+  "project": "azure-storage-blob",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": null,
+  "dropped_names": [],
+  "eligible_names": [
+   "s1"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "s1"
+  ],
+  "owners": {},
+  "project": "ctl-s1",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": null,
+  "dropped_names": [],
+  "eligible_names": [
+   "s3"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "s3"
+  ],
+  "owners": {},
+  "project": "ctl-s3",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "7.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "docker"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.retry",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 30,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "docker"
+  ],
+  "owners": {},
+  "project": "docker",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "2.5.0",
+  "dropped_names": [
+   "vertex_ray"
+  ],
+  "eligible_names": [
+   "agentplatform",
+   "google.cloud.aiplatform",
+   "google.cloud.aiplatform_v1",
+   "google.cloud.aiplatform_v1beta1",
+   "vertexai"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-aiplatform/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "import",
+     "agentplatform",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-aiplatform/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "import",
+     "google.cloud.aiplatform",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-aiplatform/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "import",
+     "google.cloud.aiplatform_v1",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-aiplatform/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "import",
+     "google.cloud.aiplatform_v1beta1",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-aiplatform/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "import",
+     "vertexai",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "_csv",
+   "_decimal",
+   "_elementtree",
+   "agentplatform",
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "csv",
+   "dateutil",
+   "dateutil._common",
+   "dateutil._version",
+   "dateutil.relativedelta",
+   "decimal",
+   "email.base64mime",
+   "email.generator",
+   "email.mime",
+   "email.mime.application",
+   "email.mime.base",
+   "email.mime.multipart",
+   "email.mime.nonmultipart",
+   "encodings.idna",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.api",
+   "google.api.annotations_pb2"
+  ],
+  "n_extra": 7,
+  "n_modules_only_normal": 1500,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "agentplatform",
+   "google.cloud.aiplatform",
+   "google.cloud.aiplatform_v1",
+   "google.cloud.aiplatform_v1beta1",
+   "vertex_ray",
+   "vertexai"
+  ],
+  "owners": {
+   "googleapis-common-protos": 7
+  },
+  "project": "google-cloud-aiplatform",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "3.46.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "google.cloud.bigquery",
+   "google.cloud.bigquery_v2"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-bigquery/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "walk",
+     "grpc_status._async",
+     "status_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-bigquery/lib/python3.15/site-packages/google/rpc/status_pb2.py",
+    "key": [
+     "walk",
+     "grpc_status.rpc_status",
+     "status_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "email.base64mime",
+   "encodings.idna",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.protobuf.any_pb2",
+   "google.rpc.status_pb2",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request"
+  ],
+  "n_extra": 2,
+  "n_modules_only_normal": 49,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "google.cloud.bigquery",
+   "google.cloud.bigquery_v2"
+  ],
+  "owners": {
+   "googleapis-common-protos": 2
+  },
+  "project": "google-cloud-bigquery",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "2.8.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "google.cloud._helpers",
+   "google.cloud._http",
+   "google.cloud._testing",
+   "google.cloud.client",
+   "google.cloud.environment_vars",
+   "google.cloud.exceptions",
+   "google.cloud.obsolete",
+   "google.cloud.operation"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-core/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "import",
+     "google.cloud.operation",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-core/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "walk",
+     "google.longrunning.operations_pb2_grpc",
+     "google_dot_longrunning_dot_operations__pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "google.longrunning.operations_pb2_grpc",
+     "grpc",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'grpc'"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.api",
+   "google.api.annotations_pb2",
+   "google.api.client_pb2",
+   "google.api.field_behavior_pb2",
+   "google.api.http_pb2",
+   "google.api.launch_stage_pb2",
+   "google.cloud.operation",
+   "google.longrunning.operations_pb2",
+   "google.longrunning.operations_proto_pb2",
+   "google.protobuf.any_pb2",
+   "google.protobuf.descriptor_pb2",
+   "google.protobuf.json_format",
+   "google.rpc.status_pb2"
+  ],
+  "n_extra": 3,
+  "n_modules_only_normal": 36,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "google.cloud._helpers",
+   "google.cloud._http",
+   "google.cloud._testing",
+   "google.cloud.client",
+   "google.cloud.environment_vars",
+   "google.cloud.exceptions",
+   "google.cloud.obsolete",
+   "google.cloud.operation"
+  ],
+  "owners": {
+   "cpython": 1,
+   "googleapis-common-protos": 2
+  },
+  "project": "google-cloud-core",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": true,
+  "class": "BREAK_IMPORT",
+  "dist_version": "3.17.1",
+  "dropped_names": [
+   "google.cloud._storage"
+  ],
+  "eligible_names": [
+   "google.cloud._storage_v2",
+   "google.cloud.storage"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-storage/lib/python3.15/site-packages/google/cloud/_storage_v2/services/storage/async_client.py",
+    "key": [
+     "import",
+     "google.cloud._storage_v2",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'google.iam'"
+   },
+   {
+    "frame": "/w/envs/google-cloud-storage/lib/python3.15/site-packages/google/rpc/error_details_pb2.py",
+    "key": [
+     "walk",
+     "google.api_core.exceptions",
+     "error_details_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/duration.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "email._header_value_parser",
+   "email.base64mime",
+   "email.contentmanager",
+   "email.headerregistry",
+   "email.policy",
+   "encodings.idna",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.cloud._storage_v2",
+   "google.cloud._storage_v2.types",
+   "google.cloud._storage_v2.types.storage",
+   "google.protobuf.any_pb2",
+   "google.protobuf.descriptor_pb2",
+   "google.protobuf.field_mask_pb2",
+   "google.protobuf.json_format",
+   "google.protobuf.struct_pb2",
+   "google.protobuf.wrappers_pb2",
+   "google.rpc.error_details_pb2",
+   "google.rpc.status_pb2",
+   "google.type",
+   "google.type.date_pb2",
+   "proto"
+  ],
+  "n_extra": 2,
+  "n_modules_only_normal": 86,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "google.cloud._storage",
+   "google.cloud._storage_v2",
+   "google.cloud.storage"
+  ],
+  "owners": {
+   "google-cloud-storage": 1,
+   "googleapis-common-protos": 1
+  },
+  "project": "google-cloud-storage",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.0.9",
+  "dropped_names": [],
+  "eligible_names": [
+   "httpcore"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "httpcore"
+  ],
+  "owners": {},
+  "project": "httpcore",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "2.13.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "httpcore2"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/httpcore2/lib/python3.15/site-packages/truststore/__init__.py",
+    "key": [
+     "import",
+     "httpcore2",
+     "NameError"
+    ],
+    "msg": "name '_api' is not defined"
+   }
+  ],
+  "modules_only_normal": [
+   "_datetime",
+   "_struct",
+   "datetime",
+   "email._encoded_words",
+   "email._header_value_parser",
+   "email._parseaddr",
+   "email._policybase",
+   "email.base64mime",
+   "email.charset",
+   "email.contentmanager",
+   "email.encoders",
+   "email.errors",
+   "email.feedparser",
+   "email.header",
+   "email.headerregistry",
+   "email.iterators",
+   "email.message",
+   "email.parser",
+   "email.policy",
+   "email.quoprimime",
+   "email.utils",
+   "encodings.ascii",
+   "h11",
+   "h11._abnf",
+   "h11._connection",
+   "h11._events",
+   "h11._headers",
+   "h11._readers",
+   "h11._receivebuffer",
+   "h11._state",
+   "h11._util",
+   "h11._version",
+   "h11._writers",
+   "httpcore2",
+   "httpcore2._api",
+   "httpcore2._async",
+   "httpcore2._async.connection",
+   "httpcore2._async.connection_pool",
+   "httpcore2._async.http11",
+   "httpcore2._async.http_proxy"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 65,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "httpcore2"
+  ],
+  "owners": {
+   "truststore": 1
+  },
+  "project": "httpcore2",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.26.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "jsonschema"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "jsonschema"
+  ],
+  "owners": {},
+  "project": "jsonschema",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.11.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "matplotlib",
+   "mpl_toolkits.axes_grid1",
+   "mpl_toolkits.axisartist",
+   "mpl_toolkits.mplot3d",
+   "pylab"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "__mp_main__",
+   "_interpqueues",
+   "_interpreters",
+   "_multiprocessing",
+   "_queue",
+   "concurrent.futures",
+   "concurrent.futures._base",
+   "concurrent.futures.interpreter",
+   "concurrent.futures.process",
+   "concurrent.futures.thread",
+   "concurrent.interpreters",
+   "concurrent.interpreters._crossinterp",
+   "concurrent.interpreters._queues",
+   "email.base64mime",
+   "multiprocessing",
+   "multiprocessing.connection",
+   "multiprocessing.context",
+   "multiprocessing.process",
+   "multiprocessing.queues",
+   "multiprocessing.reduction",
+   "multiprocessing.util",
+   "queue"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 22,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "matplotlib",
+   "mpl_toolkits.axes_grid1",
+   "mpl_toolkits.axisartist",
+   "mpl_toolkits.mplot3d",
+   "pylab"
+  ],
+  "owners": {},
+  "project": "matplotlib",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "CPYTHON",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "2.3.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "mcp"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "uvicorn.supervisors.watchfilesreload",
+     "watch",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'watchfiles'"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.decrepit.ciphers.algorithms",
+   "cryptography.hazmat.primitives.ciphers.algorithms",
+   "email.base64mime",
+   "logging.config",
+   "logging.handlers",
+   "pydantic._internal._dataclasses",
+   "socketserver",
+   "uvicorn.supervisors.statreload"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 8,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mcp"
+  ],
+  "owners": {
+   "cpython": 1
+  },
+  "project": "mcp",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "mpmath"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mpmath"
+  ],
+  "owners": {},
+  "project": "mpmath",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.32.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "openai"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_hmac",
+   "email.base64mime",
+   "hmac",
+   "pydantic._internal._dataclasses",
+   "secrets"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 5,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "openai"
+  ],
+  "owners": {},
+  "project": "openai",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.45.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "opentelemetry.sdk._configuration",
+   "opentelemetry.sdk._logs",
+   "opentelemetry.sdk._shared_internal",
+   "opentelemetry.sdk.environment_variables",
+   "opentelemetry.sdk.error_handler",
+   "opentelemetry.sdk.metrics",
+   "opentelemetry.sdk.resources",
+   "opentelemetry.sdk.trace",
+   "opentelemetry.sdk.util",
+   "opentelemetry.sdk.version"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "logging.handlers"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "opentelemetry.sdk._configuration",
+   "opentelemetry.sdk._logs",
+   "opentelemetry.sdk._shared_internal",
+   "opentelemetry.sdk.environment_variables",
+   "opentelemetry.sdk.error_handler",
+   "opentelemetry.sdk.metrics",
+   "opentelemetry.sdk.resources",
+   "opentelemetry.sdk.trace",
+   "opentelemetry.sdk.util",
+   "opentelemetry.sdk.version"
+  ],
+  "owners": {},
+  "project": "opentelemetry-sdk",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": true,
+  "class": "BREAK_IMPORT",
+  "dist_version": "3.0.6",
+  "dropped_names": [],
+  "eligible_names": [
+   "pandas"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/pandas/lib/python3.15/site-packages/pandas/_typing.py",
+    "key": [
+     "import",
+     "pandas",
+     "TypeError"
+    ],
+    "msg": "'lazy_import' object is not subscriptable"
+   }
+  ],
+  "modules_only_normal": [
+   "__mp_main__",
+   "_csv",
+   "_cyutility",
+   "_decimal",
+   "_interpqueues",
+   "_interpreters",
+   "_locale",
+   "_multiprocessing",
+   "_posixsubprocess",
+   "_queue",
+   "_socket",
+   "_string",
+   "_strptime",
+   "_uuid",
+   "_zoneinfo",
+   "array",
+   "atexit",
+   "calendar",
+   "cmath",
+   "concurrent",
+   "concurrent.futures",
+   "concurrent.futures._base",
+   "concurrent.futures.interpreter",
+   "concurrent.futures.process",
+   "concurrent.futures.thread",
+   "concurrent.interpreters",
+   "concurrent.interpreters._crossinterp",
+   "concurrent.interpreters._queues",
+   "csv",
+   "dateutil._common",
+   "dateutil.easter",
+   "dateutil.parser",
+   "dateutil.parser._parser",
+   "dateutil.parser.isoparser",
+   "dateutil.relativedelta",
+   "dateutil.tz",
+   "dateutil.tz._common",
+   "dateutil.tz._factories",
+   "dateutil.tz.tz",
+   "decimal"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 366,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pandas"
+  ],
+  "owners": {
+   "pandas": 1
+  },
+  "project": "pandas",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.14.6",
+  "dropped_names": [],
+  "eligible_names": [
+   "rapidfuzz"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "rapidfuzz"
+  ],
+  "owners": {},
+  "project": "rapidfuzz",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": true,
+  "class": "OK",
+  "dist_version": "2.1.5",
+  "dropped_names": [],
+  "eligible_names": [
+   "sqlalchemy"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "sqlalchemy"
+  ],
+  "owners": {},
+  "project": "sqlalchemy",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "26.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "structlog"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "structlog"
+  ],
+  "owners": {},
+  "project": "structlog",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "1.14.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "isympy",
+   "sympy"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/sympy/lib/python3.15/site-packages/mpmath/functions/functions.py",
+    "key": [
+     "import",
+     "sympy",
+     "AttributeError"
+    ],
+    "msg": "'FPContext' object has no attribute 'zetazero'"
+   },
+   {
+    "frame": "/w/envs/sympy/lib/python3.15/site-packages/mpmath/functions/functions.py",
+    "key": [
+     "walk",
+     "mpmath.calculus",
+     "approximation",
+     "AttributeError"
+    ],
+    "msg": "'FPContext' object has no attribute 'zetazero'"
+   },
+   {
+    "frame": "/w/envs/sympy/lib/python3.15/site-packages/mpmath/functions/functions.py",
+    "key": [
+     "walk",
+     "mpmath.calculus",
+     "differentiation",
+     "AttributeError"
+    ],
+    "msg": "'FPContext' object has no attribute 'zetazero'"
+   },
+   {
+    "frame": "/w/envs/sympy/lib/python3.15/site-packages/mpmath/functions/functions.py",
+    "key": [
+     "walk",
+     "mpmath.calculus",
+     "extrapolation",
+     "AttributeError"
+    ],
+    "msg": "'FPContext' object has no attribute 'zetazero'"
+   },
+   {
+    "frame": "/w/envs/sympy/lib/python3.15/site-packages/mpmath/functions/functions.py",
+    "key": [
+     "walk",
+     "mpmath.calculus",
+     "polynomials",
+     "AttributeError"
+    ],
+    "msg": "'FPContext' object has no attribute 'zetazero'"
+   }
+  ],
+  "modules_only_normal": [
+   "_ctypes",
+   "_decimal",
+   "_locale",
+   "_posixsubprocess",
+   "_random",
+   "_string",
+   "_struct",
+   "array",
+   "ctypes",
+   "ctypes._endian",
+   "decimal",
+   "fractions",
+   "gc",
+   "importlib.machinery",
+   "locale",
+   "random",
+   "select",
+   "selectors",
+   "signal",
+   "string",
+   "struct",
+   "subprocess",
+   "sympy",
+   "sympy.algebras",
+   "sympy.algebras.quaternion",
+   "sympy.assumptions",
+   "sympy.assumptions.ask",
+   "sympy.assumptions.ask_generated",
+   "sympy.assumptions.assume",
+   "sympy.assumptions.cnf",
+   "sympy.assumptions.refine",
+   "sympy.assumptions.relation",
+   "sympy.assumptions.relation.binrel",
+   "sympy.assumptions.relation.equality",
+   "sympy.calculus",
+   "sympy.calculus.accumulationbounds",
+   "sympy.calculus.euler",
+   "sympy.calculus.finite_diff",
+   "sympy.calculus.singularities",
+   "sympy.calculus.util"
+  ],
+  "n_extra": 16,
+  "n_modules_only_normal": 446,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "isympy",
+   "sympy"
+  ],
+  "owners": {
+   "mpmath": 16
+  },
+  "project": "sympy",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.10.5",
+  "dropped_names": [],
+  "eligible_names": [
+   "truststore"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "truststore"
+  ],
+  "owners": {},
+  "project": "truststore",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.54.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "uvicorn"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery",
+   "logging.handlers",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "uvicorn"
+  ],
+  "owners": {},
+  "project": "uvicorn",
+  "status": {
+   "deny1": "OK",
+   "deny2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ }
+]

@@ -1,0 +1,8 @@
+projects 203 Counter({'OK': 154, 'EXCLUDED_INSTALL': 17, 'BREAK_REIFY': 14, 'EXCLUDED_NO_NAMES': 8, 'EXCLUDED_NO_IMPORT': 7, 'BREAK_IMPORT': 3})
+eligible non-calibration 171 BREAK 17 Counter({'BREAK_REIFY': 14, 'BREAK_IMPORT': 3})
+BREAK_IMPORT ['ctl-s1', 'modal', 'requests-aws4auth']
+BREAK_REIFY ['antlr4-python3-runtime', 'ctl-s3', 'google-cloud-pubsub', 'google-cloud-resource-manager', 'google-cloud-secret-manager', 'hypothesis', 'nbclient', 'nbconvert', 'nbformat', 'opensearch-py', 'poetry', 'polars', 'slack-sdk', 'toolz']
+calibration []
+eco fixed 8 ['google-cloud-pubsub', 'google-cloud-resource-manager', 'google-cloud-secret-manager', 'nbclient', 'nbconvert', 'nbformat', 'poetry', 'polars']
+eco not fixed 9 [('antlr4-python3-runtime', 1), ('ctl-s1', 1), ('ctl-s3', 1), ('hypothesis', 2), ('modal', 89), ('opensearch-py', 8), ('requests-aws4auth', 1), ('slack-sdk', 13), ('toolz', 1)]
+eco new breaks among OK under all 0 []

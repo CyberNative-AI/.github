@@ -1,0 +1,30 @@
+sympy	normal	-	1	OK x**3/3
+sympy	normal	-	2	OK x**3/3
+sympy	all	-	1	EXC AttributeError: 'FPContext' object has no attribute 'zetazero' || ROOT AttributeError: 'FPContext' object has no attribute 'zetazero'
+sympy	all	-	2	EXC AttributeError: 'FPContext' object has no attribute 'zetazero' || ROOT AttributeError: 'FPContext' object has no attribute 'zetazero'
+sympy	filter	mpmath,sympy	1	OK x**3/3
+sympy	filter	mpmath,sympy	2	OK x**3/3
+openai	normal	-	1	OK OpenAI
+openai	normal	-	2	OK OpenAI
+openai	all	-	1	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+openai	all	-	2	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+openai	filter	httpcore2,truststore	1	OK OpenAI
+openai	filter	httpcore2,truststore	2	OK OpenAI
+anthropic	normal	-	1	OK Anthropic
+anthropic	normal	-	2	OK Anthropic
+anthropic	all	-	1	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+anthropic	all	-	2	EXC AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes || ROOT AttributeError: 'lazy_import' object has no attribute '__module__' and no __dict__ for setting new attributes
+anthropic	filter	httpcore2,truststore	1	OK Anthropic
+anthropic	filter	httpcore2,truststore	2	OK Anthropic
+alembic	normal	-	1	OK None
+alembic	normal	-	2	OK None
+alembic	all	-	1	EXC InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x74dcde346660>' || ROOT InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x74dcde346660>'
+alembic	all	-	2	EXC InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x79c3bbdd2660>' || ROOT InvalidRequestError: No such event 'connect' for target '<sqlalchemy.pool.impl.SingletonThreadPool object at 0x79c3bbdd2660>'
+alembic	filter	sqlalchemy,alembic	1	OK None
+alembic	filter	sqlalchemy,alembic	2	OK None
+pandas	normal	-	1	OK {'a': 3}
+pandas	normal	-	2	OK {'a': 3}
+pandas	all	-	1	EXC TypeError: 'lazy_import' object is not subscriptable || ROOT ImportError: lazy import of 'pandas._typing.NDFrameT' raised an exception during resolution
+pandas	all	-	2	EXC TypeError: 'lazy_import' object is not subscriptable || ROOT ImportError: lazy import of 'pandas._typing.NDFrameT' raised an exception during resolution
+pandas	filter	pandas,numpy	1	OK {'a': 3}
+pandas	filter	pandas,numpy	2	OK {'a': 3}

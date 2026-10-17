@@ -1,0 +1,15 @@
+# case	venv (pip install, binary wheels, --exclude-newer 2026-10-17T00:00:00Z)	names kept eager for the filter run
+sympy	sympy==1.14.0	mpmath
+mpmath	mpmath==1.4.1	mpmath
+httpx	httpx==0.28.1	httpcore
+openai	openai==3.32.0	httpcore2
+anthropic	anthropic==1.15.0	httpcore2
+truststore	truststore==0.10.5	truststore
+sqlalchemy	sqlalchemy==2.1.5	sqlalchemy
+alembic	alembic==1.20.0	sqlalchemy
+pandas	pandas==3.0.6	pandas
+matplotlib	matplotlib==3.11.2	matplotlib
+otel	opentelemetry-sdk==1.45.1	opentelemetry
+protobuf	google-cloud-bigquery==3.46.2	google
+rapidfuzz	rapidfuzz==3.14.6	rapidfuzz
+uvicorn	uvicorn==0.54.0	uvicorn

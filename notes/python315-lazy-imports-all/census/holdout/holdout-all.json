@@ -1,0 +1,6724 @@
+[
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.5.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "absl"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "absl"
+  ],
+  "owners": {},
+  "project": "absl-py",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.12.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "aiofile"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "ipaddress",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "aiofile"
+  ],
+  "owners": {},
+  "project": "aiofile",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.22.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "aiosqlite"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "aiosqlite"
+  ],
+  "owners": {},
+  "project": "aiosqlite",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "amqp"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "amqp"
+  ],
+  "owners": {},
+  "project": "amqp",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "4.13.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "antlr4"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/antlr4-python3-runtime/lib/python3.15/site-packages/antlr4/atn/Transition.py",
+    "key": [
+     "walk",
+     "antlr4",
+     "ATNDeserializer",
+     "ImportCycleError"
+    ],
+    "msg": "cannot import name 'antlr4.atn.Transition.Transition' (most likely due to a circular import)"
+   }
+  ],
+  "modules_only_normal": [],
+  "n_extra": 1,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 1,
+  "n_unstable": 0,
+  "names": [
+   "antlr4"
+  ],
+  "owners": {
+   "antlr4-python3-runtime": 1
+  },
+  "project": "antlr4-python3-runtime",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "ATNDeserializer"
+  ]
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.7.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "argcomplete"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "argcomplete"
+  ],
+  "owners": {},
+  "project": "argcomplete",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "25.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "argon2"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "argon2"
+  ],
+  "owners": {},
+  "project": "argon2-cffi",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "26.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "_argon2_cffi_bindings"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "_argon2_cffi_bindings"
+  ],
+  "owners": {},
+  "project": "argon2-cffi-bindings",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.4.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "arrow"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "arrow"
+  ],
+  "owners": {},
+  "project": "arrow",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.13.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "ast_serialize"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ast_serialize"
+  ],
+  "owners": {},
+  "project": "ast-serialize",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.3.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "astroid"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "astroid"
+  ],
+  "owners": {},
+  "project": "astroid",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.11.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "azure.keyvault.secrets"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 4,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "azure.keyvault.secrets"
+  ],
+  "owners": {},
+  "project": "azure-keyvault-secrets",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "backports"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "backports"
+  ],
+  "owners": {},
+  "project": "backports-tarfile",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "backports-zstd"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.23.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "beartype"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "beartype"
+  ],
+  "owners": {},
+  "project": "beartype",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.3.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "billiard"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "billiard"
+  ],
+  "owners": {},
+  "project": "billiard",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "6.4.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "bleach"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_blake2",
+   "_bz2",
+   "_hashlib",
+   "_lzma",
+   "_random",
+   "_zstd",
+   "bz2",
+   "compression",
+   "compression._common",
+   "compression._common._streams",
+   "compression.zstd",
+   "compression.zstd._zstdfile",
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "fnmatch",
+   "hashlib",
+   "lzma",
+   "random",
+   "shutil",
+   "tempfile",
+   "urllib.error",
+   "urllib.request",
+   "urllib.response",
+   "zlib"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 25,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "bleach"
+  ],
+  "owners": {},
+  "project": "bleach",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "botocore-stubs"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "bracex"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "bracex"
+  ],
+  "owners": {},
+  "project": "bracex",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.19.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "bytecode"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "bytecode"
+  ],
+  "owners": {},
+  "project": "bytecode",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.14.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "cachecontrol"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.retry",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 28,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "cachecontrol"
+  ],
+  "owners": {},
+  "project": "cachecontrol",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.12.9",
+  "dropped_names": [],
+  "eligible_names": [
+   "caio"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "ipaddress",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "caio"
+  ],
+  "owners": {},
+  "project": "caio",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "6.1.5",
+  "dropped_names": [],
+  "eligible_names": [
+   "cbor2"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "cbor2"
+  ],
+  "owners": {},
+  "project": "cbor2",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.6.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "celery"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "celery"
+  ],
+  "owners": {},
+  "project": "celery",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "cleo"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "cleo"
+  ],
+  "owners": {},
+  "project": "cleo",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.3.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "click_didyoumean"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "click_didyoumean"
+  ],
+  "owners": {},
+  "project": "click-didyoumean",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.1.1.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "click_plugins"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "click_plugins"
+  ],
+  "owners": {},
+  "project": "click-plugins",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "click_repl"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery",
+   "wcwidth.align",
+   "wcwidth.wcwidth"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "click_repl"
+  ],
+  "owners": {},
+  "project": "click-repl",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "6.12.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "colorlog"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "colorlog.escape_codes"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "colorlog"
+  ],
+  "owners": {},
+  "project": "colorlog",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.2.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "comm"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "comm"
+  ],
+  "owners": {},
+  "project": "comm",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "confluent-kafka"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "crashtest"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "crashtest"
+  ],
+  "owners": {},
+  "project": "crashtest",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "6.2.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "croniter"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "croniter"
+  ],
+  "owners": {},
+  "project": "croniter",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.10.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "cssselect2"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "cssselect2"
+  ],
+  "owners": {},
+  "project": "cssselect2",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": null,
+  "dropped_names": [],
+  "eligible_names": [
+   "s0"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "s0"
+  ],
+  "owners": {},
+  "project": "ctl-s0",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": null,
+  "dropped_names": [],
+  "eligible_names": [
+   "s1"
+  ],
+  "examples": [
+   {
+    "frame": "/ctl/s1/__init__.py",
+    "key": [
+     "import",
+     "s1",
+     "RuntimeError"
+    ],
+    "msg": "plugin not registered"
+   }
+  ],
+  "modules_only_normal": [
+   "s1",
+   "s1.plugin_a"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 2,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "s1"
+  ],
+  "owners": {
+   "ctl": 1
+  },
+  "project": "ctl-s1",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": null,
+  "dropped_names": [],
+  "eligible_names": [
+   "s3"
+  ],
+  "examples": [
+   {
+    "frame": "/ctl/s3/impl.py",
+    "key": [
+     "walk",
+     "s3",
+     "impl",
+     "RuntimeError"
+    ],
+    "msg": "registration closed"
+   }
+  ],
+  "modules_only_normal": [
+   "s3.impl"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 1,
+  "n_unstable": 0,
+  "names": [
+   "s3"
+  ],
+  "owners": {
+   "ctl": 1
+  },
+  "project": "ctl-s3",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "impl"
+  ]
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "cyclopts"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "cyclopts"
+  ],
+  "owners": {},
+  "project": "cyclopts",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.3.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "Cython",
+   "cython",
+   "pyximport"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "Cython",
+   "cython",
+   "pyximport"
+  ],
+  "owners": {},
+  "project": "cython",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.153.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "databricks"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "databricks"
+  ],
+  "owners": {},
+  "project": "databricks-sdk",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.6.7",
+  "dropped_names": [],
+  "eligible_names": [
+   "dataclasses_json"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.abc",
+   "importlib.machinery",
+   "importlib.metadata",
+   "importlib.metadata._collections",
+   "importlib.metadata._context",
+   "importlib.metadata._functools",
+   "importlib.metadata._itertools",
+   "importlib.metadata._meta",
+   "importlib.metadata._typing",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 10,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "dataclasses_json"
+  ],
+  "owners": {},
+  "project": "dataclasses-json",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.55.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "datadog"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.retry",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 30,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "datadog"
+  ],
+  "owners": {},
+  "project": "datadog",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "1.13.1",
+  "dropped_names": [
+   "datasets"
+  ],
+  "eligible_names": [],
+  "names": [
+   "datasets"
+  ],
+  "project": "datasets",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "4.13.1",
+  "dropped_names": [
+   "ddtrace"
+  ],
+  "eligible_names": [],
+  "names": [
+   "ddtrace"
+  ],
+  "project": "ddtrace",
+  "status": {
+   "all1": "FAIL",
+   "all2": "FAIL",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.8.22",
+  "dropped_names": [],
+  "eligible_names": [
+   "debugpy"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "debugpy"
+  ],
+  "owners": {},
+  "project": "debugpy",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "9.0.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "deepdiff"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "deepdiff"
+  ],
+  "owners": {},
+  "project": "deepdiff",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "deprecation"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "deprecation"
+  ],
+  "owners": {},
+  "project": "deprecation",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "6.1.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "django"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "django"
+  ],
+  "owners": {},
+  "project": "django",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.0.0.dev2610161340",
+  "dropped_names": [
+   "adbc_driver_duckdb"
+  ],
+  "eligible_names": [
+   "_duckdb",
+   "duckdb"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_math_integer",
+   "email.base64mime",
+   "ipaddress",
+   "math",
+   "math.integer",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "_duckdb",
+   "adbc_driver_duckdb",
+   "duckdb"
+  ],
+  "owners": {},
+  "project": "duckdb",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.2.17",
+  "dropped_names": [],
+  "eligible_names": [
+   "dulwich"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "dulwich"
+  ],
+  "owners": {},
+  "project": "dulwich",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.11",
+  "dropped_names": [],
+  "eligible_names": [
+   "durationpy"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "durationpy"
+  ],
+  "owners": {},
+  "project": "durationpy",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.19.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "ecdsa"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ecdsa"
+  ],
+  "owners": {},
+  "project": "ecdsa",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "40.43.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "faker"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "faker"
+  ],
+  "owners": {},
+  "project": "faker",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.0.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "fastapi_cli"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "fastapi_cli"
+  ],
+  "owners": {},
+  "project": "fastapi-cli",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "2.10.6",
+  "dropped_names": [
+   "fastmcp"
+  ],
+  "eligible_names": [],
+  "names": [
+   "fastmcp"
+  ],
+  "project": "fastmcp",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "fastmcp"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_hashlib",
+   "_hmac",
+   "email.base64mime",
+   "hmac",
+   "pydantic._internal._dataclasses",
+   "secrets",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 7,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "fastmcp"
+  ],
+  "owners": {},
+  "project": "fastmcp-slim",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "fastuuid"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "7.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "flake8"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "flake8"
+  ],
+  "owners": {},
+  "project": "flake8",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "6.0.5",
+  "dropped_names": [],
+  "eligible_names": [
+   "flask_cors"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "flask_cors"
+  ],
+  "owners": {},
+  "project": "flask-cors",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "25.12.19",
+  "dropped_names": [],
+  "eligible_names": [
+   "flatbuffers"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "flatbuffers"
+  ],
+  "owners": {},
+  "project": "flatbuffers",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.5.5",
+  "dropped_names": [],
+  "eligible_names": [
+   "freezegun"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "freezegun"
+  ],
+  "owners": {},
+  "project": "freezegun",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.0.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "future",
+   "libfuturize",
+   "libpasteurize",
+   "past"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "future",
+   "libfuturize",
+   "libpasteurize",
+   "past"
+  ],
+  "owners": {},
+  "project": "future",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "2.43.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "google.cloud.pubsub",
+   "google.cloud.pubsub_v1",
+   "google.pubsub",
+   "google.pubsub_v1"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-pubsub/lib/python3.15/site-packages/google/iam/v1/iam_policy_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.pubsub",
+     "types",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-pubsub/lib/python3.15/site-packages/google/iam/v1/iam_policy_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.pubsub_v1",
+     "types",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-pubsub/lib/python3.15/site-packages/google/iam/v1/iam_policy_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.pubsub_v1.publisher.client",
+     "FlowController",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-pubsub/lib/python3.15/site-packages/google/iam/v1/iam_policy_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.pubsub_v1.publisher.client",
+     "types",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-pubsub/lib/python3.15/site-packages/google/iam/v1/iam_policy_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.pubsub_v1.subscriber.client",
+     "streaming_pull_manager",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "email.base64mime",
+   "encodings.idna",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.api.annotations_pb2",
+   "google.api.client_pb2",
+   "google.api.field_behavior_pb2",
+   "google.api.launch_stage_pb2",
+   "google.api.resource_pb2",
+   "google.api_core.protobuf_helpers",
+   "google.cloud.pubsub_v1.open_telemetry.subscribe_opentelemetry",
+   "google.cloud.pubsub_v1.publisher.flow_controller",
+   "google.cloud.pubsub_v1.subscriber._protocol.dispatcher",
+   "google.cloud.pubsub_v1.subscriber._protocol.heartbeater",
+   "google.cloud.pubsub_v1.subscriber._protocol.helper_threads",
+   "google.cloud.pubsub_v1.subscriber._protocol.histogram",
+   "google.cloud.pubsub_v1.subscriber._protocol.leaser",
+   "google.cloud.pubsub_v1.subscriber._protocol.messages_on_hold",
+   "google.cloud.pubsub_v1.subscriber._protocol.requests",
+   "google.cloud.pubsub_v1.subscriber._protocol.streaming_pull_manager",
+   "google.cloud.pubsub_v1.subscriber.message",
+   "google.cloud.pubsub_v1.subscriber.scheduler"
+  ],
+  "n_extra": 50,
+  "n_modules_only_normal": 72,
+  "n_top_level_attrs_affected": 1,
+  "n_unstable": 0,
+  "names": [
+   "google.cloud.pubsub",
+   "google.cloud.pubsub_v1",
+   "google.pubsub",
+   "google.pubsub_v1"
+  ],
+  "owners": {
+   "googleapis-common-protos": 2,
+   "grpc-google-iam-v1": 48
+  },
+  "project": "google-cloud-pubsub",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "types"
+  ]
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "1.19.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "google.cloud.resourcemanager",
+   "google.cloud.resourcemanager_v3"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-resource-manager/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "walk",
+     "google.api_core.operation",
+     "operations_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-resource-manager/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "walk",
+     "google.api_core.operation_async",
+     "operations_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-resource-manager/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "walk",
+     "google.api_core.operations_v1.abstract_operations_client",
+     "operations_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-resource-manager/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "walk",
+     "google.api_core.operations_v1.operations_async_client",
+     "operations_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-resource-manager/lib/python3.15/site-packages/google/longrunning/operations_proto_pb2.py",
+    "key": [
+     "walk",
+     "google.api_core.operations_v1.operations_client",
+     "operations_pb2",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/annotations.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "email.base64mime",
+   "encodings.idna",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.api",
+   "google.api.annotations_pb2",
+   "google.api.client_pb2",
+   "google.api.field_behavior_pb2",
+   "google.api.http_pb2",
+   "google.api.launch_stage_pb2",
+   "google.api.resource_pb2",
+   "google.iam.v1.iam_policy_pb2",
+   "google.iam.v1.options_pb2",
+   "google.iam.v1.policy_pb2",
+   "google.longrunning.operations_grpc_pb2",
+   "google.longrunning.operations_pb2",
+   "google.longrunning.operations_proto_pb2",
+   "google.protobuf.any_pb2",
+   "google.rpc.status_pb2",
+   "google.type",
+   "google.type.expr_pb2",
+   "requests.packages.chardet.cd"
+  ],
+  "n_extra": 134,
+  "n_modules_only_normal": 61,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "google.cloud.resourcemanager",
+   "google.cloud.resourcemanager_v3"
+  ],
+  "owners": {
+   "googleapis-common-protos": 64,
+   "grpc-google-iam-v1": 70
+  },
+  "project": "google-cloud-resource-manager",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "DEP",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "2.31.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "google.cloud.secretmanager",
+   "google.cloud.secretmanager_v1",
+   "google.cloud.secretmanager_v1beta1",
+   "google.cloud.secretmanager_v1beta2"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/google-cloud-secret-manager/lib/python3.15/site-packages/google/iam/v1/resource_policy_member_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.secretmanager",
+     "AccessSecretVersionRequest",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/field_behavior.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-secret-manager/lib/python3.15/site-packages/google/iam/v1/resource_policy_member_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.secretmanager",
+     "AccessSecretVersionResponse",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/field_behavior.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-secret-manager/lib/python3.15/site-packages/google/iam/v1/resource_policy_member_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.secretmanager",
+     "AddSecretVersionRequest",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/field_behavior.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-secret-manager/lib/python3.15/site-packages/google/iam/v1/resource_policy_member_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.secretmanager",
+     "CreateSecretRequest",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/field_behavior.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/google-cloud-secret-manager/lib/python3.15/site-packages/google/iam/v1/resource_policy_member_pb2.py",
+    "key": [
+     "walk",
+     "google.cloud.secretmanager",
+     "CustomerManagedEncryption",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/api/field_behavior.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "cryptography.hazmat.primitives.asymmetric.dsa",
+   "cryptography.hazmat.primitives.asymmetric.ed25519",
+   "cryptography.hazmat.primitives.asymmetric.ed448",
+   "cryptography.hazmat.primitives.asymmetric.mldsa",
+   "cryptography.hazmat.primitives.asymmetric.mlkem",
+   "cryptography.hazmat.primitives.asymmetric.types",
+   "cryptography.hazmat.primitives.asymmetric.x25519",
+   "cryptography.hazmat.primitives.asymmetric.x448",
+   "cryptography.hazmat.primitives.constant_time",
+   "cryptography.hazmat.primitives.serialization.ssh",
+   "cryptography.x509",
+   "cryptography.x509.base",
+   "cryptography.x509.certificate_transparency",
+   "cryptography.x509.extensions",
+   "cryptography.x509.general_name",
+   "cryptography.x509.name",
+   "cryptography.x509.oid",
+   "cryptography.x509.verification",
+   "email.base64mime",
+   "encodings.idna",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.api",
+   "google.api.annotations_pb2",
+   "google.api.client_pb2",
+   "google.api.field_behavior_pb2",
+   "google.api.http_pb2",
+   "google.api.launch_stage_pb2",
+   "google.api.resource_pb2",
+   "google.cloud.location.locations_pb2",
+   "google.cloud.secretmanager_v1.types.resources",
+   "google.cloud.secretmanager_v1.types.service",
+   "google.iam.v1.iam_policy_pb2",
+   "google.iam.v1.options_pb2",
+   "google.iam.v1.policy_pb2",
+   "google.iam.v1.resource_policy_member_pb2",
+   "google.protobuf.any_pb2",
+   "google.rpc.status_pb2",
+   "google.type",
+   "google.type.expr_pb2"
+  ],
+  "n_extra": 161,
+  "n_modules_only_normal": 62,
+  "n_top_level_attrs_affected": 26,
+  "n_unstable": 0,
+  "names": [
+   "google.cloud.secretmanager",
+   "google.cloud.secretmanager_v1",
+   "google.cloud.secretmanager_v1beta1",
+   "google.cloud.secretmanager_v1beta2"
+  ],
+  "owners": {
+   "googleapis-common-protos": 23,
+   "grpc-google-iam-v1": 138
+  },
+  "project": "google-cloud-secret-manager",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "AccessSecretVersionRequest",
+   "AccessSecretVersionResponse",
+   "AddSecretVersionRequest",
+   "CreateSecretRequest",
+   "CustomerManagedEncryption",
+   "CustomerManagedEncryptionStatus",
+   "DeleteSecretRequest",
+   "DestroySecretVersionRequest",
+   "DisableSecretVersionRequest",
+   "EnableManagedRotationRequest",
+   "EnableSecretVersionRequest",
+   "GetSecretRequest",
+   "GetSecretVersionRequest",
+   "ListSecretVersionsRequest",
+   "ListSecretVersionsResponse",
+   "ListSecretsRequest",
+   "ListSecretsResponse",
+   "Replication",
+   "ReplicationStatus",
+   "RotateSecretRequest",
+   "Rotation",
+   "Secret",
+   "SecretPayload",
+   "SecretVersion",
+   "Topic",
+   "UpdateSecretRequest"
+  ]
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.3.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "graphql"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "graphql"
+  ],
+  "owners": {},
+  "project": "graphql-core",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.3.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "griffe"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "griffe"
+  ],
+  "owners": {},
+  "project": "griffelib",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.4.9",
+  "dropped_names": [],
+  "eligible_names": [
+   "grpclib"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "grpclib"
+  ],
+  "owners": {},
+  "project": "grpclib",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "10.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "humanfriendly"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_bz2",
+   "_datetime",
+   "_decimal",
+   "_lzma",
+   "_markupbase",
+   "_zstd",
+   "bz2",
+   "compression",
+   "compression._common",
+   "compression._common._streams",
+   "compression.zstd",
+   "compression.zstd._zstdfile",
+   "datetime",
+   "decimal",
+   "fnmatch",
+   "html",
+   "html.entities",
+   "html.parser",
+   "humanfriendly.compat",
+   "importlib.machinery",
+   "lzma",
+   "shutil",
+   "zlib"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 23,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "humanfriendly"
+  ],
+  "owners": {},
+  "project": "humanfriendly",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.16.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "humanize"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "humanize"
+  ],
+  "owners": {},
+  "project": "humanize",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "6.170.1",
+  "dropped_names": [
+   "_hypothesis_pytestplugin"
+  ],
+  "eligible_names": [
+   "_hypothesis_ftz_detector",
+   "_hypothesis_globals",
+   "hypothesis"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/hypothesis/lib/python3.15/site-packages/hypothesis/strategies/__init__.py",
+    "key": [
+     "walk",
+     "hypothesis.core",
+     "Ex",
+     "AssertionError"
+    ],
+    "msg": "(set(), {'timezones', 'just', 'fractions', 'deferred', 'fixed_dictionaries', 'floats', 'emails', 'data', 'recursive', 'datetimes', 'decimals', 'permutations', 'ip_addresses', 'slices', 'sampled_from',"
+   },
+   {
+    "frame": "/w/envs/hypothesis/lib/python3.15/site-packages/hypothesis/strategies/__init__.py",
+    "key": [
+     "walk",
+     "hypothesis.core",
+     "st",
+     "AssertionError"
+    ],
+    "msg": "(set(), {'timezones', 'fractions', 'deferred', 'fixed_dictionaries', 'floats', 'emails', 'data', 'recursive', 'datetimes', 'decimals', 'permutations', 'ip_addresses', 'slices', 'sampled_from', 'boolea"
+   }
+  ],
+  "modules_only_normal": [
+   "_uuid",
+   "_zoneinfo",
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "fractions",
+   "gzip",
+   "hypothesis.internal.charmap",
+   "hypothesis.internal.filtering",
+   "hypothesis.strategies",
+   "hypothesis.strategies._internal.collections",
+   "hypothesis.strategies._internal.core",
+   "hypothesis.strategies._internal.datetime",
+   "hypothesis.strategies._internal.deferred",
+   "hypothesis.strategies._internal.functions",
+   "hypothesis.strategies._internal.ipaddress",
+   "hypothesis.strategies._internal.lazy",
+   "hypothesis.strategies._internal.numbers",
+   "hypothesis.strategies._internal.recursive",
+   "hypothesis.strategies._internal.shared",
+   "hypothesis.strategies._internal.strings",
+   "importlib.resources",
+   "importlib.resources._common",
+   "importlib.resources._functional",
+   "importlib.resources.abc",
+   "uuid",
+   "zoneinfo",
+   "zoneinfo._common",
+   "zoneinfo._tzpath"
+  ],
+  "n_extra": 2,
+  "n_modules_only_normal": 29,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "_hypothesis_ftz_detector",
+   "_hypothesis_globals",
+   "_hypothesis_pytestplugin",
+   "hypothesis"
+  ],
+  "owners": {
+   "hypothesis": 2
+  },
+  "project": "hypothesis",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.6.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "ijson"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ijson"
+  ],
+  "owners": {},
+  "project": "ijson",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "7.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "importlib_resources"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "importlib_resources"
+  ],
+  "owners": {},
+  "project": "importlib-resources",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "installer"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "importlib.machinery",
+   "ipaddress",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 4,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "installer"
+  ],
+  "owners": {},
+  "project": "installer",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.0.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "invoke"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "ipaddress",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "invoke"
+  ],
+  "owners": {},
+  "project": "invoke",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "7.4.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "ipykernel",
+   "ipykernel_launcher"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "ipaddress",
+   "logging.handlers",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ipykernel",
+   "ipykernel_launcher"
+  ],
+  "owners": {},
+  "project": "ipykernel",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.1.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "ipython_pygments_lexers"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ipython_pygments_lexers"
+  ],
+  "owners": {},
+  "project": "ipython-pygments-lexers",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.17.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "json5"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "json5"
+  ],
+  "owners": {},
+  "project": "json5",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.11.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "jsonpath_ng"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery",
+   "jsonpath_ng._ply",
+   "jsonpath_ng._ply.lex",
+   "jsonpath_ng._ply.yacc"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 4,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "jsonpath_ng"
+  ],
+  "owners": {},
+  "project": "jsonpath-ng",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "jsonref",
+   "proxytypes"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "jsonref",
+   "proxytypes"
+  ],
+  "owners": {},
+  "project": "jsonref",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "jsonschema-path"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "8.10.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "jupyter_client"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "ipaddress",
+   "logging.handlers",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "jupyter_client"
+  ],
+  "owners": {},
+  "project": "jupyter-client",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.9.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "jupyter",
+   "jupyter_core"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "jupyter",
+   "jupyter_core"
+  ],
+  "owners": {},
+  "project": "jupyter-core",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "0.3.0",
+  "dropped_names": [
+   "jupyterlab_pygments"
+  ],
+  "eligible_names": [],
+  "names": [
+   "jupyterlab_pygments"
+  ],
+  "project": "jupyterlab-pygments",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.6.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "kombu"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "kombu"
+  ],
+  "owners": {},
+  "project": "kombu",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "kubernetes"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.0.19",
+  "dropped_names": [],
+  "eligible_names": [
+   "langchain_protocol"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "langchain_protocol"
+  ],
+  "owners": {},
+  "project": "langchain-protocol",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "langgraph"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "langgraph-checkpoint"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "langgraph-prebuilt"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "0.3.15",
+  "dropped_names": [
+   "langgraph_sdk"
+  ],
+  "eligible_names": [],
+  "names": [
+   "langgraph_sdk"
+  ],
+  "project": "langgraph-sdk",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.2.11",
+  "dropped_names": [],
+  "eligible_names": [
+   "langsmith"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_math_integer",
+   "email.base64mime",
+   "ipaddress",
+   "math",
+   "math.integer",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "langsmith"
+  ],
+  "owners": {},
+  "project": "langsmith",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.3.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "lark"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "lark"
+  ],
+  "owners": {},
+  "project": "lark",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "linkify_it"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "linkify_it"
+  ],
+  "owners": {},
+  "project": "linkify-it-py",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.50.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "llvmlite"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "llvmlite"
+  ],
+  "owners": {},
+  "project": "llvmlite",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.7.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "loguru"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "loguru"
+  ],
+  "owners": {},
+  "project": "loguru",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "lz4"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.2.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "markdownify"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "markdownify"
+  ],
+  "owners": {},
+  "project": "markdownify",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.7.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "mccabe"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mccabe"
+  ],
+  "owners": {},
+  "project": "mccabe",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.3.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "mcp_types"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_bisect",
+   "_hashlib",
+   "_hmac",
+   "_random",
+   "base64",
+   "bisect",
+   "hmac",
+   "random",
+   "secrets"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 9,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mcp_types"
+  ],
+  "owners": {},
+  "project": "mcp-types",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.6.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "mdit_py_plugins"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mdit_py_plugins"
+  ],
+  "owners": {},
+  "project": "mdit-py-plugins",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.3.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "mistune"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mistune"
+  ],
+  "owners": {},
+  "project": "mistune",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.3.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "mmh3"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "mmh3"
+  ],
+  "owners": {},
+  "project": "mmh3",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "1.6.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "modal",
+   "modal_docs",
+   "modal_proto",
+   "modal_version"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/modal/lib/python3.15/site-packages/modal_proto/api_pb2.py",
+    "key": [
+     "import",
+     "modal",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/modal/lib/python3.15/site-packages/modal_proto/api_pb2.py",
+    "key": [
+     "walk",
+     "modal._billing",
+     "_Client",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/modal/lib/python3.15/site-packages/modal_proto/api_pb2.py",
+    "key": [
+     "walk",
+     "modal._utils.async_utils",
+     "AsyncUsageWarning",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/modal/lib/python3.15/site-packages/modal_proto/api_pb2.py",
+    "key": [
+     "walk",
+     "modal._utils.async_utils",
+     "InvalidError",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   },
+   {
+    "frame": "/w/envs/modal/lib/python3.15/site-packages/modal_proto/api_pb2.py",
+    "key": [
+     "walk",
+     "modal._utils.async_utils",
+     "is_interactive_ipython",
+     "TypeError"
+    ],
+    "msg": "Couldn't build proto file into descriptor pool: Depends on file 'google/protobuf/any.proto', but it has not been loaded"
+   }
+  ],
+  "modules_only_normal": [
+   "_bisect",
+   "_blake2",
+   "_hashlib",
+   "_random",
+   "_sysconfigdata__linux_x86_64-linux-gnu",
+   "_uuid",
+   "_zoneinfo",
+   "bisect",
+   "cbor2",
+   "cbor2._cbor2",
+   "email",
+   "encodings.raw_unicode_escape",
+   "encodings.unicode_escape",
+   "google.protobuf.any_pb2",
+   "google.protobuf.empty_pb2",
+   "google.protobuf.internal.builder",
+   "google.protobuf.reflection",
+   "google.protobuf.runtime_version",
+   "google.protobuf.struct_pb2",
+   "google.protobuf.timestamp_pb2",
+   "google.protobuf.wrappers_pb2",
+   "grpclib",
+   "grpclib._compat",
+   "grpclib._registry",
+   "grpclib.client",
+   "grpclib.config",
+   "grpclib.const",
+   "grpclib.encoding",
+   "grpclib.encoding.base",
+   "grpclib.encoding.proto",
+   "grpclib.events",
+   "grpclib.exceptions",
+   "grpclib.metadata",
+   "grpclib.protocol",
+   "grpclib.stream",
+   "grpclib.utils",
+   "h2",
+   "h2.config",
+   "h2.connection",
+   "h2.errors"
+  ],
+  "n_extra": 36,
+  "n_modules_only_normal": 181,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "modal",
+   "modal_docs",
+   "modal_proto",
+   "modal_version"
+  ],
+  "owners": {
+   "modal": 36
+  },
+  "project": "modal",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.7.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "msrest"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 29,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "msrest"
+  ],
+  "owners": {},
+  "project": "msrest",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "CPYTHON",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "0.11.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "nbclient"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "FQDN",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'fqdn'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "idna",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'idna'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "isoduration",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'isoduration'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "jsonpointer",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'jsonpointer'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "uri_template",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'uri_template'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime",
+   "logging.handlers"
+  ],
+  "n_extra": 7,
+  "n_modules_only_normal": 2,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "nbclient"
+  ],
+  "owners": {
+   "cpython": 7
+  },
+  "project": "nbclient",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "CPYTHON",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "7.17.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "nbconvert"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "FQDN",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'fqdn'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "idna",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'idna'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "isoduration",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'isoduration'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "jsonpointer",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'jsonpointer'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "uri_template",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'uri_template'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime",
+   "http.cookies",
+   "logging.handlers",
+   "urllib.error",
+   "urllib.request",
+   "urllib.response"
+  ],
+  "n_extra": 7,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "nbconvert"
+  ],
+  "owners": {
+   "cpython": 7
+  },
+  "project": "nbconvert",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "CPYTHON",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "5.11.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "nbformat"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "FQDN",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'fqdn'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "idna",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'idna'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "isoduration",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'isoduration'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "jsonpointer",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'jsonpointer'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "jsonschema._format",
+     "uri_template",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'uri_template'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime"
+  ],
+  "n_extra": 7,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "nbformat"
+  ],
+  "owners": {
+   "cpython": 7
+  },
+  "project": "nbformat",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.6.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "nest_asyncio"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "nest_asyncio"
+  ],
+  "owners": {},
+  "project": "nest-asyncio",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.10.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "nltk"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "nltk"
+  ],
+  "owners": {},
+  "project": "nltk",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.68.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "numba"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "numba.np.ufunc.array_exprs",
+   "numba.typed"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 2,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "numba"
+  ],
+  "owners": {},
+  "project": "numba",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "onnxruntime"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.6.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "openapi_pydantic"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_bisect",
+   "_hashlib",
+   "_hmac",
+   "_random",
+   "base64",
+   "bisect",
+   "hmac",
+   "random",
+   "secrets"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 9,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "openapi_pydantic"
+  ],
+  "owners": {},
+  "project": "openapi-pydantic",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "3.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "opensearchpy"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/opensearch-py/lib/python3.15/site-packages/opensearchpy/helpers/signer.py",
+    "key": [
+     "walk",
+     "opensearchpy",
+     "AWSV4SignerAuth",
+     "AttributeError"
+    ],
+    "msg": "module 'requests' has no attribute 'auth'"
+   },
+   {
+    "frame": "/w/envs/opensearch-py/lib/python3.15/site-packages/opensearchpy/helpers/signer.py",
+    "key": [
+     "walk",
+     "opensearchpy",
+     "RequestsAWSV4SignerAuth",
+     "AttributeError"
+    ],
+    "msg": "module 'requests' has no attribute 'auth'"
+   },
+   {
+    "frame": "/w/envs/opensearch-py/lib/python3.15/site-packages/opensearchpy/helpers/signer.py",
+    "key": [
+     "walk",
+     "opensearchpy",
+     "Urllib3AWSV4SignerAuth",
+     "AttributeError"
+    ],
+    "msg": "module 'requests' has no attribute 'auth'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "opensearchpy._async._extra_imports",
+     "aiohttp",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "opensearchpy._async._extra_imports",
+     "aiohttp_exceptions",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "opensearchpy._async.compat",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 8,
+  "n_modules_only_normal": 30,
+  "n_top_level_attrs_affected": 3,
+  "n_unstable": 0,
+  "names": [
+   "opensearchpy"
+  ],
+  "owners": {
+   "cpython": 2,
+   "opensearch-py": 6
+  },
+  "project": "opensearch-py",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "AWSV4SignerAuth",
+   "RequestsAWSV4SignerAuth",
+   "Urllib3AWSV4SignerAuth"
+  ]
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.45.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "opentelemetry.exporter.otlp.version"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "opentelemetry.exporter.otlp.version"
+  ],
+  "owners": {},
+  "project": "opentelemetry-exporter-otlp",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.66b1",
+  "dropped_names": [],
+  "eligible_names": [
+   "opentelemetry.instrumentation.asgi"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email",
+   "importlib.abc",
+   "importlib.machinery",
+   "importlib.metadata",
+   "importlib.metadata._collections",
+   "importlib.metadata._context",
+   "importlib.metadata._functools",
+   "importlib.metadata._itertools",
+   "importlib.metadata._meta",
+   "importlib.metadata._typing",
+   "wrapt.wrappers"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 11,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "opentelemetry.instrumentation.asgi"
+  ],
+  "owners": {},
+  "project": "opentelemetry-instrumentation-asgi",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "0.66b1",
+  "dropped_names": [
+   "opentelemetry.instrumentation.fastapi"
+  ],
+  "eligible_names": [],
+  "names": [
+   "opentelemetry.instrumentation.fastapi"
+  ],
+  "project": "opentelemetry-instrumentation-fastapi",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.66b1",
+  "dropped_names": [],
+  "eligible_names": [
+   "opentelemetry.instrumentation.httpx"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "wrapt.wrappers"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "opentelemetry.instrumentation.httpx"
+  ],
+  "owners": {},
+  "project": "opentelemetry-instrumentation-httpx",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_IMPORT",
+  "dist_version": "0.66b1",
+  "dropped_names": [
+   "opentelemetry.instrumentation.requests"
+  ],
+  "eligible_names": [],
+  "names": [
+   "opentelemetry.instrumentation.requests"
+  ],
+  "project": "opentelemetry-instrumentation-requests",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  }
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.5.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "orderly_set"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "orderly_set"
+  ],
+  "owners": {},
+  "project": "orderly-set",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.13.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "ormsgpack"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ormsgpack"
+  ],
+  "owners": {},
+  "project": "ormsgpack",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.5.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "pandocfilters"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pandocfilters"
+  ],
+  "owners": {},
+  "project": "pandocfilters",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.6.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "pathable"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pathable"
+  ],
+  "owners": {},
+  "project": "pathable",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "20260107",
+  "dropped_names": [],
+  "eligible_names": [
+   "pdfminer"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_math_integer",
+   "email.base64mime",
+   "ipaddress",
+   "math",
+   "math.integer",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pdfminer"
+  ],
+  "owners": {},
+  "project": "pdfminer-six",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.11.10",
+  "dropped_names": [],
+  "eligible_names": [
+   "pdfplumber"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "ipaddress",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pdfplumber"
+  ],
+  "owners": {},
+  "project": "pdfplumber",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.5.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "peewee",
+   "playhouse",
+   "pwiz"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "peewee",
+   "playhouse",
+   "pwiz"
+  ],
+  "owners": {},
+  "project": "peewee",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.3.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "pendulum"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pendulum"
+  ],
+  "owners": {},
+  "project": "pendulum",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.31.5",
+  "dropped_names": [],
+  "eligible_names": [
+   "pg8000"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pg8000"
+  ],
+  "owners": {},
+  "project": "pg8000",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.13.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "pkginfo"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_math_integer",
+   "email.base64mime",
+   "ipaddress",
+   "math",
+   "math.integer",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pkginfo"
+  ],
+  "owners": {},
+  "project": "pkginfo",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "7.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "_plotly_utils",
+   "plotly"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_math_integer",
+   "email.base64mime",
+   "ipaddress",
+   "math",
+   "math.integer",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "_plotly_utils",
+   "plotly"
+  ],
+  "owners": {},
+  "project": "plotly",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "CPYTHON",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "2.5.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "poetry.config",
+   "poetry.console",
+   "poetry.inspection",
+   "poetry.installation",
+   "poetry.json",
+   "poetry.layouts",
+   "poetry.masonry",
+   "poetry.mixology",
+   "poetry.packages",
+   "poetry.plugins"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "rapidfuzz.distance",
+     "Editop",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'rapidfuzz.distance._initialize_cpp_avx2'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "rapidfuzz.distance",
+     "Editops",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'rapidfuzz.distance._initialize_cpp_avx2'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "rapidfuzz.distance",
+     "MatchingBlock",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'rapidfuzz.distance._initialize_cpp_avx2'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "rapidfuzz.distance",
+     "Opcode",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'rapidfuzz.distance._initialize_cpp_avx2'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "rapidfuzz.distance",
+     "Opcodes",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'rapidfuzz.distance._initialize_cpp_avx2'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime",
+   "encodings.idna",
+   "rapidfuzz.process_cpp",
+   "rapidfuzz.process_cpp_impl",
+   "rapidfuzz.process_py",
+   "rapidfuzz.utils_cpp",
+   "rapidfuzz.utils_py",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.retry",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 19,
+  "n_modules_only_normal": 32,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "poetry.config",
+   "poetry.console",
+   "poetry.inspection",
+   "poetry.installation",
+   "poetry.json",
+   "poetry.layouts",
+   "poetry.masonry",
+   "poetry.mixology",
+   "poetry.packages",
+   "poetry.plugins"
+  ],
+  "owners": {
+   "cpython": 19
+  },
+  "project": "poetry",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "2.0.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "polars"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/polars/lib/python3.15/site-packages/polars/__init__.py",
+    "key": [
+     "walk",
+     "polars",
+     "Any",
+     "ImportCycleError"
+    ],
+    "msg": "cannot import name 'polars.exceptions' (most likely due to a circular import)"
+   },
+   {
+    "frame": "/w/envs/polars/lib/python3.15/site-packages/polars/__init__.py",
+    "key": [
+     "walk",
+     "polars",
+     "Array",
+     "ImportCycleError"
+    ],
+    "msg": "cannot import name 'polars.exceptions' (most likely due to a circular import)"
+   },
+   {
+    "frame": "/w/envs/polars/lib/python3.15/site-packages/polars/__init__.py",
+    "key": [
+     "walk",
+     "polars",
+     "BaseExtension",
+     "ImportCycleError"
+    ],
+    "msg": "cannot import name 'polars.exceptions' (most likely due to a circular import)"
+   },
+   {
+    "frame": "/w/envs/polars/lib/python3.15/site-packages/polars/__init__.py",
+    "key": [
+     "walk",
+     "polars",
+     "Binary",
+     "ImportCycleError"
+    ],
+    "msg": "cannot import name 'polars.exceptions' (most likely due to a circular import)"
+   },
+   {
+    "frame": "/w/envs/polars/lib/python3.15/site-packages/polars/__init__.py",
+    "key": [
+     "walk",
+     "polars",
+     "Boolean",
+     "ImportCycleError"
+    ],
+    "msg": "cannot import name 'polars.exceptions' (most likely due to a circular import)"
+   }
+  ],
+  "modules_only_normal": [
+   "_blake2",
+   "_hashlib",
+   "_uuid",
+   "hashlib",
+   "importlib.machinery",
+   "polars._utils.cache",
+   "polars._utils.logging",
+   "polars.api",
+   "polars.catalog",
+   "polars.catalog.unity",
+   "polars.catalog.unity.client",
+   "polars.catalog.unity.models",
+   "polars.convert",
+   "polars.convert.general",
+   "polars.convert.normalize",
+   "polars.datatypes.extension",
+   "polars.io",
+   "polars.io._utils",
+   "polars.io.arrow_c_stream",
+   "polars.io.avro",
+   "polars.io.clipboard",
+   "polars.io.cloud",
+   "polars.io.cloud._utils",
+   "polars.io.cloud.credential_provider",
+   "polars.io.cloud.credential_provider._builder",
+   "polars.io.cloud.credential_provider._providers",
+   "polars.io.csv",
+   "polars.io.csv._utils",
+   "polars.io.csv.functions",
+   "polars.io.database",
+   "polars.io.database._arrow_registry",
+   "polars.io.database._cursor_proxies",
+   "polars.io.database._executor",
+   "polars.io.database._inference",
+   "polars.io.database._utils",
+   "polars.io.database.functions",
+   "polars.io.delta",
+   "polars.io.delta._dataset",
+   "polars.io.delta._utils",
+   "polars.io.delta.functions"
+  ],
+  "n_extra": 211,
+  "n_modules_only_normal": 76,
+  "n_top_level_attrs_affected": 211,
+  "n_unstable": 0,
+  "names": [
+   "polars"
+  ],
+  "owners": {
+   "polars": 211
+  },
+  "project": "polars",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "Any",
+   "Array",
+   "BaseExtension",
+   "Binary",
+   "Boolean",
+   "Catalog",
+   "Categorical",
+   "Categories",
+   "CompatLevel",
+   "Config",
+   "CredentialProvider",
+   "CredentialProviderAWS",
+   "CredentialProviderAzure",
+   "CredentialProviderFunction",
+   "CredentialProviderFunctionReturn",
+   "CredentialProviderGCP",
+   "DataFrame",
+   "DataType",
+   "DataTypeExpr",
+   "Date",
+   "Datetime",
+   "Decimal",
+   "Duration",
+   "Engine",
+   "Enum",
+   "Expr",
+   "Extension",
+   "Field",
+   "FileProviderArgs",
+   "Float16",
+   "Float32",
+   "Float64",
+   "GPUEngine",
+   "InMemoryEngine",
+   "Int128",
+   "Int16",
+   "Int32",
+   "Int64",
+   "Int8",
+   "LazyFrame",
+   "List",
+   "Map",
+   "Null",
+   "Object",
+   "PartitionBy",
+   "QueryOptFlags",
+   "RemoteEngine",
+   "SQLContext",
+   "ScanCastOptions",
+   "Schema"
+  ]
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.0.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "_polars_runtime_32"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "_polars_runtime_32"
+  ],
+  "owners": {},
+  "project": "polars-runtime-32",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "portalocker"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_uuid",
+   "email.base64mime",
+   "ipaddress",
+   "urllib.parse",
+   "uuid"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 5,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "portalocker"
+  ],
+  "owners": {},
+  "project": "portalocker",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "7.71.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "posthog"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 28,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "posthog"
+  ],
+  "owners": {},
+  "project": "posthog",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.18.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "prettytable"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "prettytable"
+  ],
+  "owners": {},
+  "project": "prettytable",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "psycopg2"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.11.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "py"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "py"
+  ],
+  "owners": {},
+  "project": "py",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.4.6",
+  "dropped_names": [],
+  "eligible_names": [
+   "key_value"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "key_value"
+  ],
+  "owners": {},
+  "project": "py-key-value-aio",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.10.9.9",
+  "dropped_names": [],
+  "eligible_names": [
+   "py4j"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "py4j"
+  ],
+  "owners": {},
+  "project": "py4j",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.15.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "pycodestyle"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pycodestyle"
+  ],
+  "owners": {},
+  "project": "pycodestyle",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.0.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "Crypto"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "Crypto"
+  ],
+  "owners": {},
+  "project": "pycryptodome",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.24.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "Cryptodome"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "Cryptodome"
+  ],
+  "owners": {},
+  "project": "pycryptodomex",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.11.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "pydantic_extra_types"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pydantic_extra_types"
+  ],
+  "owners": {},
+  "project": "pydantic-extra-types",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.0.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "pyflakes"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pyflakes"
+  ],
+  "owners": {},
+  "project": "pyflakes",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.10.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "github"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_sodium",
+   "_sodium.lib",
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "github.AccessToken",
+   "github.AdvisoryBase",
+   "github.AdvisoryCredit",
+   "github.AdvisoryCreditDetailed",
+   "github.AdvisoryVulnerability",
+   "github.AdvisoryVulnerabilityPackage",
+   "github.Artifact",
+   "github.AuthenticatedUser",
+   "github.Authorization",
+   "github.AuthorizationApplication",
+   "github.Autolink",
+   "github.Branch",
+   "github.BranchProtection",
+   "github.CVSS",
+   "github.CWE",
+   "github.CheckRun",
+   "github.CheckRunAnnotation",
+   "github.CheckRunOutput",
+   "github.CheckSuite",
+   "github.Clones",
+   "github.CodeScanAlert",
+   "github.CodeScanAlertInstance",
+   "github.CodeScanAlertInstanceLocation",
+   "github.CodeScanRule",
+   "github.CodeScanTool",
+   "github.CodeSecurityConfig",
+   "github.CodeSecurityConfigRepository",
+   "github.Commit",
+   "github.CommitCombinedStatus",
+   "github.CommitComment",
+   "github.CommitStats",
+   "github.CommitStatus",
+   "github.Comparison",
+   "github.ContentFile"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 195,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "github"
+  ],
+  "owners": {},
+  "project": "pygithub",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.19.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "bson",
+   "gridfs",
+   "pymongo"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "pymongo._asyncio_lock"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "bson",
+   "gridfs",
+   "pymongo"
+  ],
+  "owners": {},
+  "project": "pymongo",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.2.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "pymysql"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pymysql"
+  ],
+  "owners": {},
+  "project": "pymysql",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.14.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "pypdfium2",
+   "pypdfium2_cfg",
+   "pypdfium2_cli",
+   "pypdfium2_raw"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_bisect",
+   "_locale",
+   "_posixsubprocess",
+   "_random",
+   "bisect",
+   "ctypes.util",
+   "locale",
+   "pypdfium2._library_scope",
+   "random",
+   "select",
+   "selectors",
+   "signal",
+   "subprocess",
+   "tempfile"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 14,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pypdfium2",
+   "pypdfium2_cfg",
+   "pypdfium2_cli",
+   "pypdfium2_raw"
+  ],
+  "owners": {},
+  "project": "pypdfium2",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.11.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "pyperclip"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pyperclip"
+  ],
+  "owners": {},
+  "project": "pyperclip",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.1.414",
+  "dropped_names": [],
+  "eligible_names": [
+   "pyright"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 4,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pyright"
+  ],
+  "owners": {},
+  "project": "pyright",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.7.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "socks",
+   "sockshandler"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "socks",
+   "sockshandler"
+  ],
+  "owners": {},
+  "project": "pysocks",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "pyspark"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.0.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "pptx"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_bisect",
+   "_random",
+   "_socket",
+   "_ssl",
+   "_string",
+   "bisect",
+   "email",
+   "email._encoded_words",
+   "email._parseaddr",
+   "email._policybase",
+   "email.base64mime",
+   "email.charset",
+   "email.encoders",
+   "email.errors",
+   "email.feedparser",
+   "email.header",
+   "email.iterators",
+   "email.message",
+   "email.parser",
+   "email.quoprimime",
+   "email.utils",
+   "encodings.ascii",
+   "http",
+   "http.client",
+   "importlib.machinery",
+   "ipaddress",
+   "quopri",
+   "random",
+   "socket",
+   "ssl",
+   "string",
+   "tempfile",
+   "urllib.error",
+   "urllib.parse",
+   "urllib.request",
+   "urllib.response"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 36,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pptx"
+  ],
+  "owners": {},
+  "project": "python-pptx",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "9.1.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "slugify"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "slugify"
+  ],
+  "owners": {},
+  "project": "python-slugify",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "pytokens"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "pytokens"
+  ],
+  "owners": {},
+  "project": "pytokens",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "redshift_connector"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "botocore.configloader",
+   "botocore.errorfactory",
+   "botocore.handlers",
+   "botocore.loaders",
+   "botocore.monitoring",
+   "botocore.retryhandler",
+   "botocore.serialize",
+   "botocore.session",
+   "botocore.translate",
+   "botocore.validate",
+   "configparser",
+   "email.base64mime"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 12,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "redshift_connector"
+  ],
+  "owners": {},
+  "project": "redshift-connector",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.0.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "reportlab"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "reportlab"
+  ],
+  "owners": {},
+  "project": "reportlab",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_IMPORT",
+  "dist_version": "1.4.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "requests_aws4auth"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/requests-aws4auth/lib/python3.15/site-packages/requests_aws4auth/__init__.py",
+    "key": [
+     "import",
+     "requests_aws4auth",
+     "NameError"
+    ],
+    "msg": "name 'aws4auth' is not defined"
+   }
+  ],
+  "modules_only_normal": [
+   "_bisect",
+   "_blake2",
+   "_codecs_cn",
+   "_codecs_hk",
+   "_codecs_iso2022",
+   "_codecs_jp",
+   "_codecs_kr",
+   "_codecs_tw",
+   "_cython_3_3_0",
+   "_datetime",
+   "_hashlib",
+   "_hmac",
+   "_locale",
+   "_math_integer",
+   "_multibytecodec",
+   "_queue",
+   "_random",
+   "_socket",
+   "_ssl",
+   "_string",
+   "_struct",
+   "atexit",
+   "base64",
+   "binascii",
+   "bisect",
+   "calendar",
+   "certifi",
+   "certifi.core",
+   "charset_normalizer",
+   "charset_normalizer.api",
+   "charset_normalizer.cd",
+   "charset_normalizer.constant",
+   "charset_normalizer.legacy",
+   "charset_normalizer.md",
+   "charset_normalizer.models",
+   "charset_normalizer.utils",
+   "charset_normalizer.version",
+   "cython_runtime",
+   "datetime",
+   "email"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 212,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "requests_aws4auth"
+  ],
+  "owners": {
+   "requests-aws4auth": 1
+  },
+  "project": "requests-aws4auth",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.0.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "requests_file"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.md",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3._base_connection",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.response",
+   "requests.packages.urllib3.util.connection",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.response",
+   "requests.packages.urllib3.util.retry",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.url",
+   "requests.packages.urllib3.util.util",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 30,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "requests_file"
+  ],
+  "owners": {},
+  "project": "requests-file",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.22.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "responses"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "encodings.idna",
+   "requests.packages.chardet.api",
+   "requests.packages.chardet.cd",
+   "requests.packages.chardet.constant",
+   "requests.packages.chardet.legacy",
+   "requests.packages.chardet.md",
+   "requests.packages.chardet.models",
+   "requests.packages.chardet.utils",
+   "requests.packages.charset_normalizer.api",
+   "requests.packages.charset_normalizer.cd",
+   "requests.packages.charset_normalizer.constant",
+   "requests.packages.charset_normalizer.legacy",
+   "requests.packages.charset_normalizer.md",
+   "requests.packages.charset_normalizer.models",
+   "requests.packages.charset_normalizer.utils",
+   "requests.packages.idna.core",
+   "requests.packages.idna.idnadata",
+   "requests.packages.idna.intranges",
+   "requests.packages.idna.package_data",
+   "requests.packages.urllib3.fields",
+   "requests.packages.urllib3.filepost",
+   "requests.packages.urllib3.http2",
+   "requests.packages.urllib3.http2.probe",
+   "requests.packages.urllib3.util.proxy",
+   "requests.packages.urllib3.util.request",
+   "requests.packages.urllib3.util.ssl_",
+   "requests.packages.urllib3.util.ssl_match_hostname",
+   "requests.packages.urllib3.util.ssltransport",
+   "requests.packages.urllib3.util.wait",
+   "stringprep"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 33,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "responses"
+  ],
+  "owners": {},
+  "project": "responses",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.1.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "rfc3339_validator"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "rfc3339_validator"
+  ],
+  "owners": {},
+  "project": "rfc3339-validator",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "rich_rst"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "pprint",
+   "rich_rst._vendor.docutils.core",
+   "rich_rst._vendor.docutils.readers",
+   "rich_rst._vendor.docutils.readers.doctree",
+   "rich_rst._vendor.docutils.writers"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "rich_rst"
+  ],
+  "owners": {},
+  "project": "rich-rst",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.20.6",
+  "dropped_names": [],
+  "eligible_names": [
+   "rich_toolkit"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "rich_toolkit"
+  ],
+  "owners": {},
+  "project": "rich-toolkit",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "ruamel-yaml-clib"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.8.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "safetensors"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "safetensors"
+  ],
+  "owners": {},
+  "project": "safetensors",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.4.17",
+  "dropped_names": [],
+  "eligible_names": [
+   "scramp"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "scramp"
+  ],
+  "owners": {},
+  "project": "scramp",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.10.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "semantic_version"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "_math_integer",
+   "email.base64mime",
+   "ipaddress",
+   "math",
+   "math.integer",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 6,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "semantic_version"
+  ],
+  "owners": {},
+  "project": "semantic-version",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "semver"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "semver"
+  ],
+  "owners": {},
+  "project": "semver",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "10.3.4",
+  "dropped_names": [],
+  "eligible_names": [
+   "setuptools_scm"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "setuptools_scm"
+  ],
+  "owners": {},
+  "project": "setuptools-scm",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "shapely"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "shapely"
+  ],
+  "owners": {},
+  "project": "shapely",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "simplejson"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "simplejson"
+  ],
+  "owners": {},
+  "project": "simplejson",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "3.45.0",
+  "dropped_names": [
+   "slack"
+  ],
+  "eligible_names": [
+   "slack_sdk"
+  ],
+  "examples": [
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "slack_sdk.web.async_base_client",
+     "BasicAuth",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "slack_sdk.web.async_base_client",
+     "FormData",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "slack_sdk.web.async_base_client",
+     "aiohttp",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   },
+   {
+    "frame": "/w/envs/slack-sdk/lib/python3.15/site-packages/slack_sdk/http_retry/builtin_async_handlers.py",
+    "key": [
+     "walk",
+     "slack_sdk.web.async_base_client",
+     "async_default_handlers",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   },
+   {
+    "frame": "/src/walk.py",
+    "key": [
+     "walk",
+     "slack_sdk.web.async_internal_utils",
+     "ClientSession",
+     "ModuleNotFoundError"
+    ],
+    "msg": "No module named 'aiohttp'"
+   }
+  ],
+  "modules_only_normal": [
+   "email.base64mime",
+   "email.feedparser",
+   "email.parser",
+   "importlib.machinery"
+  ],
+  "n_extra": 13,
+  "n_modules_only_normal": 4,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "slack",
+   "slack_sdk"
+  ],
+  "owners": {
+   "cpython": 11,
+   "slack-sdk": 2
+  },
+  "project": "slack-sdk",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "8.0.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "smart_open"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "smart_open.concurrency",
+   "wrapt.wrappers"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "smart_open"
+  ],
+  "owners": {},
+  "project": "smart-open",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "30.23.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "sqlglot"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "sqlglot"
+  ],
+  "owners": {},
+  "project": "sqlglot",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.12.6",
+  "dropped_names": [],
+  "eligible_names": [
+   "synchronicity"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "synchronicity"
+  ],
+  "owners": {},
+  "project": "synchronicity",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "3.3.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "termcolor"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "termcolor"
+  ],
+  "owners": {},
+  "project": "termcolor",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.3",
+  "dropped_names": [],
+  "eligible_names": [
+   "text_unidecode"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "text_unidecode"
+  ],
+  "owners": {},
+  "project": "text-unidecode",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "8.2.8",
+  "dropped_names": [],
+  "eligible_names": [
+   "textual"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "textual"
+  ],
+  "owners": {},
+  "project": "textual",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "thrift"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "tomli_w"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "tomli_w"
+  ],
+  "owners": {},
+  "project": "tomli-w",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "attribution": "OWN",
+  "calibration": false,
+  "class": "BREAK_REIFY",
+  "dist_version": "1.2.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "tlz",
+   "toolz"
+  ],
+  "examples": [
+   {
+    "frame": "/w/envs/toolz/lib/python3.15/site-packages/toolz/curried/__init__.py",
+    "key": [
+     "walk",
+     "toolz",
+     "curried",
+     "NameError"
+    ],
+    "msg": "name 'exceptions' is not defined"
+   }
+  ],
+  "modules_only_normal": [
+   "toolz.curried",
+   "toolz.curried.exceptions",
+   "toolz.curried.operator"
+  ],
+  "n_extra": 1,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 1,
+  "n_unstable": 0,
+  "names": [
+   "tlz",
+   "toolz"
+  ],
+  "owners": {
+   "toolz": 1
+  },
+  "project": "toolz",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": [
+   "curried"
+  ]
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "torch"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "tree-sitter"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_INSTALL",
+  "install_rc": 1,
+  "project": "triton"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.0.89",
+  "dropped_names": [],
+  "eligible_names": [
+   "ty"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "ty"
+  ],
+  "owners": {},
+  "project": "ty",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "4.6.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "typeguard"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "email.base64mime",
+   "ipaddress",
+   "urllib.parse"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 3,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "typeguard"
+  ],
+  "owners": {},
+  "project": "typeguard",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-certifi"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-protobuf"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-python-dateutil"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-pyyaml"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-requests"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-s3transfer"
+ },
+ {
+  "calibration": false,
+  "class": "EXCLUDED_NO_NAMES",
+  "install_rc": 0,
+  "project": "types-toml"
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.9.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "typing_inspect"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "typing_inspect"
+  ],
+  "owners": {},
+  "project": "typing-inspect",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.4.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "uncalled_for"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "uncalled_for"
+  ],
+  "owners": {},
+  "project": "uncalled-for",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "0.14.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "uuid_utils"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "uuid_utils"
+  ],
+  "owners": {},
+  "project": "uuid-utils",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.6.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "vcs_versioning"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "vcs_versioning"
+  ],
+  "owners": {},
+  "project": "vcs-versioning",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "5.1.0",
+  "dropped_names": [],
+  "eligible_names": [
+   "vine"
+  ],
+  "examples": [],
+  "modules_only_normal": [
+   "importlib.machinery"
+  ],
+  "n_extra": 0,
+  "n_modules_only_normal": 1,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "vine"
+  ],
+  "owners": {},
+  "project": "vine",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "11.1",
+  "dropped_names": [],
+  "eligible_names": [
+   "wcmatch"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "wcmatch"
+  ],
+  "owners": {},
+  "project": "wcmatch",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "1.3.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "wsproto"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "wsproto"
+  ],
+  "owners": {},
+  "project": "wsproto",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "2.0.2",
+  "dropped_names": [],
+  "eligible_names": [
+   "xlrd"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "xlrd"
+  ],
+  "owners": {},
+  "project": "xlrd",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ },
+ {
+  "calibration": false,
+  "class": "OK",
+  "dist_version": "8.7",
+  "dropped_names": [],
+  "eligible_names": [
+   "zope.interface"
+  ],
+  "examples": [],
+  "modules_only_normal": [],
+  "n_extra": 0,
+  "n_modules_only_normal": 0,
+  "n_top_level_attrs_affected": 0,
+  "n_unstable": 0,
+  "names": [
+   "zope.interface"
+  ],
+  "owners": {},
+  "project": "zope-interface",
+  "status": {
+   "all1": "OK",
+   "all2": "OK",
+   "normal1": "OK",
+   "normal2": "OK"
+  },
+  "top_level_attrs_affected": []
+ }
+]

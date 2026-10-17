@@ -1,0 +1,15 @@
+# round 3: one union list on every use
+sympy	sympy==1.14.0	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+mpmath	mpmath==1.4.1	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+httpx	httpx==0.28.1	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+openai	openai==3.32.0	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+anthropic	anthropic==1.15.0	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+truststore	truststore==0.10.5	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+sqlalchemy	sqlalchemy==2.1.5	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+alembic	alembic==1.20.0	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+pandas	pandas==3.0.6	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+matplotlib	matplotlib==3.11.2	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+otel	opentelemetry-sdk==1.45.1	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+protobuf	google-cloud-bigquery==3.46.2	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+rapidfuzz	rapidfuzz==3.14.6	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
+uvicorn	uvicorn==0.54.0	mpmath,sympy,httpcore,httpcore2,truststore,sqlalchemy,alembic,pandas,numpy,matplotlib,opentelemetry,google,rapidfuzz,uvicorn
