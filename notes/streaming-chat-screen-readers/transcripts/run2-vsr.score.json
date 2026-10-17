@@ -1,0 +1,230 @@
+{
+ "oracle": "vsr",
+ "reply_words": 56,
+ "distinct": 51,
+ "units": {
+  "gate3-chatter": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "gate3-chatter-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 27.41,
+     "n_content": 53,
+     "n_other": 3,
+     "other": [
+      "Tell me about Lyon",
+      "Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-chatter-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 27.41,
+     "n_content": 53,
+     "n_other": 3,
+     "other": [
+      "Tell me about Lyon",
+      "Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-chatter-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 27.41,
+     "n_content": 53,
+     "n_other": 3,
+     "other": [
+      "Tell me about Lyon",
+      "Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-once": {
+   "unit": "ONCE",
+   "trials": [
+    {
+     "file": "gate3-once-t1.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 1,
+     "other": [
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-once-t2.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 1,
+     "other": [
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-once-t3.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 1,
+     "other": [
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-silent": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate3-silent-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "gate3-silent-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "gate3-silent-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    }
+   ]
+  },
+  "owui": {
+   "unit": "ONCE",
+   "trials": [
+    {
+     "file": "owui-t1.json",
+     "cls": "ONCE",
+     "C": 0.961,
+     "E": true,
+     "R": 0.96,
+     "n_content": 54,
+     "n_other": 4,
+     "other": [
+      "Lyon",
+      "about",
+      "Oct 17, 1:23 AM",
+      "Ask Explain"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "owui-t2.json",
+     "cls": "ONCE",
+     "C": 0.961,
+     "E": true,
+     "R": 0.96,
+     "n_content": 54,
+     "n_other": 4,
+     "other": [
+      "Lyon",
+      "about",
+      "Oct 17, 1:24 AM",
+      "Ask Explain"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "owui-t3.json",
+     "cls": "ONCE",
+     "C": 0.961,
+     "E": true,
+     "R": 0.96,
+     "n_content": 54,
+     "n_other": 4,
+     "other": [
+      "Lyon",
+      "about",
+      "Oct 17, 1:24 AM",
+      "Ask Explain"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "panel": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "panel-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "panel-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "panel-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "label": "owui",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:06:47.171Z",
+ "error": null,
+ "dismissed": false,
+ "sentAt": "2026-10-17T09:07:07.339Z",
+ "endSeen": true,
+ "endSeenMs": 4501,
+ "windowEnd": "2026-10-17T09:07:17.940Z",
+ "speech": [
+  {
+   "t": "09:07:07.760936",
+   "text": "Tell me about Lyon"
+  },
+  {
+   "t": "09:07:08.455883",
+   "text": "Send a Message."
+  },
+  {
+   "t": "09:07:09.469824",
+   "text": "Lyon"
+  },
+  {
+   "t": "09:07:09.569958",
+   "text": "Lyon sits where the Rhone meets the"
+  },
+  {
+   "t": "09:07:09.670197",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "09:07:09.856718",
+   "text": "Its old town is a protected"
+  },
+  {
+   "t": "09:07:10.064613",
+   "text": "Its old town is a protected heritage site, known for"
+  },
+  {
+   "t": "09:07:10.251985",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages"
+  },
+  {
+   "t": "09:07:10.462011",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages called traboules."
+  },
+  {
+   "t": "09:07:10.667968",
+   "text": "• Take the funicular up Fourviere"
+  },
+  {
+   "t": "09:07:10.945056",
+   "text": "• Eat"
+  },
+  {
+   "t": "09:07:11.150323",
+   "text": "• Eat at a traditional bouchon."
+  },
+  {
+   "t": "09:07:11.342291",
+   "text": "• Walk the Croix-Rousse"
+  },
+  {
+   "t": "09:07:11.535427",
+   "text": "• Walk the Croix-Rousse slopes."
+  },
+  {
+   "t": "09:07:11.767596",
+   "text": "Most visitors find two days enough to"
+  },
+  {
+   "t": "09:07:11.925612",
+   "text": "Most visitors find two days enough to see the centre ZETAEND"
+  }
+ ]
+}

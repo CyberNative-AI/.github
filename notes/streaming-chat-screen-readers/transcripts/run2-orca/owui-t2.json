@@ -1,0 +1,86 @@
+{
+ "label": "owui",
+ "trial": 2,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:25:28.778Z",
+ "error": null,
+ "dismissed": false,
+ "sentAt": "2026-10-17T08:25:48.743Z",
+ "endSeen": true,
+ "endSeenMs": 4361,
+ "windowEnd": "2026-10-17T08:25:59.225Z",
+ "speech": [
+  {
+   "t": "08:25:49.783617",
+   "text": "Send a Message."
+  },
+  {
+   "t": "08:25:49.822670",
+   "text": "Focus mode"
+  },
+  {
+   "t": "08:25:50.438478",
+   "text": "Lyon sits where the Rhone meets the"
+  },
+  {
+   "t": "08:25:50.720104",
+   "text": "Lyon sits where the Rhone meets the Saone, about"
+  },
+  {
+   "t": "08:25:50.820318",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres"
+  },
+  {
+   "t": "08:25:50.951155",
+   "text": "Its"
+  },
+  {
+   "t": "08:25:51.157232",
+   "text": "Its old town is"
+  },
+  {
+   "t": "08:25:51.434677",
+   "text": "Its old town is a protected heritage site,"
+  },
+  {
+   "t": "08:25:51.559120",
+   "text": "Its old town is a protected heritage site, known for narrow"
+  },
+  {
+   "t": "08:25:51.829016",
+   "text": "•"
+  },
+  {
+   "t": "08:25:51.959638",
+   "text": "• Take the funicular"
+  },
+  {
+   "t": "08:25:52.221199",
+   "text": "• Take the funicular up Fourviere hill."
+  },
+  {
+   "t": "08:25:52.349435",
+   "text": "• Eat at a traditional"
+  },
+  {
+   "t": "08:25:52.561879",
+   "text": "• Walk the"
+  },
+  {
+   "t": "08:25:52.831935",
+   "text": "• Walk the Croix-Rousse slopes."
+  },
+  {
+   "t": "08:25:52.952844",
+   "text": "Most visitors find two days"
+  },
+  {
+   "t": "08:25:53.138563",
+   "text": "Most visitors find two days enough to see"
+  },
+  {
+   "t": "08:25:53.319922",
+   "text": "Most visitors find two days enough to see the centre"
+  }
+ ]
+}

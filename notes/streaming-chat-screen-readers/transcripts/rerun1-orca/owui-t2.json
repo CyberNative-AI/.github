@@ -1,0 +1,94 @@
+{
+ "label": "owui",
+ "trial": 2,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:07:18.069Z",
+ "error": null,
+ "dismissed": false,
+ "sentAt": "2026-10-17T09:07:37.958Z",
+ "endSeen": true,
+ "endSeenMs": 4579,
+ "windowEnd": "2026-10-17T09:07:48.629Z",
+ "speech": [
+  {
+   "t": "09:07:38.273844",
+   "text": "Oct 17, 9:07 AM"
+  },
+  {
+   "t": "09:07:38.967091",
+   "text": "Send a Message."
+  },
+  {
+   "t": "09:07:38.977481",
+   "text": "Focus mode"
+  },
+  {
+   "t": "09:07:39.745156",
+   "text": "Lyon sits where the Rhone meets the"
+  },
+  {
+   "t": "09:07:39.852393",
+   "text": "Lyon sits where the"
+  },
+  {
+   "t": "09:07:39.952651",
+   "text": "Lyon sits where the Rhone meets the Saone, about four"
+  },
+  {
+   "t": "09:07:40.163927",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast"
+  },
+  {
+   "t": "09:07:40.326802",
+   "text": "Its old town"
+  },
+  {
+   "t": "09:07:40.469522",
+   "text": "Its old town is a protected"
+  },
+  {
+   "t": "09:07:40.739920",
+   "text": "Its old town is a protected heritage site, known for"
+  },
+  {
+   "t": "09:07:40.865729",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages"
+  },
+  {
+   "t": "09:07:41.152016",
+   "text": "• Take"
+  },
+  {
+   "t": "09:07:41.346197",
+   "text": "• Take the funicular up"
+  },
+  {
+   "t": "09:07:41.560843",
+   "text": "• Eat"
+  },
+  {
+   "t": "09:07:41.660981",
+   "text": "•"
+  },
+  {
+   "t": "09:07:41.859247",
+   "text": "• Walk the Croix-Rousse"
+  },
+  {
+   "t": "09:07:42.054057",
+   "text": "Most visitors find two"
+  },
+  {
+   "t": "09:07:42.268363",
+   "text": "Most visitors find two days enough to"
+  },
+  {
+   "t": "09:07:42.464340",
+   "text": "Most visitors find two days enough to see the centre"
+  },
+  {
+   "t": "09:07:42.762905",
+   "text": "Oct 17, 9:07 AM"
+  }
+ ]
+}

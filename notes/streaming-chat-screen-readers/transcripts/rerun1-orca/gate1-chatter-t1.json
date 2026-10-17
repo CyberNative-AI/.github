@@ -1,0 +1,113 @@
+{
+ "label": "gate1-chatter",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:47:35.789Z",
+ "error": null,
+ "sentAt": "2026-10-17T08:47:40.444Z",
+ "endSeen": true,
+ "endSeenMs": 3567,
+ "windowEnd": "2026-10-17T08:47:50.195Z",
+ "speech": [
+  {
+   "t": "08:47:40.599705",
+   "text": "Send button."
+  },
+  {
+   "t": "08:47:40.606520",
+   "text": "Browse mode"
+  },
+  {
+   "t": "08:47:40.773682",
+   "text": "Tell me about Lyon"
+  },
+  {
+   "t": "08:47:40.967002",
+   "text": "Lyon"
+  },
+  {
+   "t": "08:47:41.117384",
+   "text": "Lyon sits where"
+  },
+  {
+   "t": "08:47:41.280508",
+   "text": "Lyon sits where the Rhone meets"
+  },
+  {
+   "t": "08:47:41.434465",
+   "text": "Lyon sits where the Rhone meets the Saone,"
+  },
+  {
+   "t": "08:47:41.600781",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred"
+  },
+  {
+   "t": "08:47:41.757606",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of"
+  },
+  {
+   "t": "08:47:41.904998",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old"
+  },
+  {
+   "t": "08:47:42.053608",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a"
+  },
+  {
+   "t": "08:47:42.219796",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage"
+  },
+  {
+   "t": "08:47:42.359895",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for"
+  },
+  {
+   "t": "08:47:42.522649",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered"
+  },
+  {
+   "t": "08:47:42.688799",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. -"
+  },
+  {
+   "t": "08:47:42.848376",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular"
+  },
+  {
+   "t": "08:47:42.997810",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere"
+  },
+  {
+   "t": "08:47:43.145772",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at"
+  },
+  {
+   "t": "08:47:43.305817",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional"
+  },
+  {
+   "t": "08:47:43.476105",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the"
+  },
+  {
+   "t": "08:47:43.625165",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors"
+  },
+  {
+   "t": "08:47:43.777853",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors find two"
+  },
+  {
+   "t": "08:47:43.924663",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors find two days enough to"
+  },
+  {
+   "t": "08:47:44.084682",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors find two days enough to see the"
+  },
+  {
+   "t": "08:47:44.229614",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors find two days enough to see the centre ZETAEND"
+  }
+ ]
+}

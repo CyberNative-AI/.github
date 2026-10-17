@@ -1,0 +1,21 @@
+{
+ "label": "streamlit",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:06:50.559Z",
+ "error": null,
+ "sentAt": 1792224414643,
+ "endSeen": true,
+ "endSeenMs": 4292,
+ "vsr": [
+  "document",
+  "textbox, Ask something, placeholder Ask something"
+ ],
+ "struct": {
+  "regions": [],
+  "endInLive": null,
+  "liveMutations": 0,
+  "liveMutSample": [],
+  "shadowRoots": 1
+ }
+}

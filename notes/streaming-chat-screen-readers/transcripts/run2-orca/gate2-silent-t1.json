@@ -1,0 +1,21 @@
+{
+ "label": "gate2-silent",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:18:55.176Z",
+ "error": null,
+ "sentAt": "2026-10-17T08:18:59.888Z",
+ "endSeen": true,
+ "endSeenMs": 3546,
+ "windowEnd": "2026-10-17T08:19:09.629Z",
+ "speech": [
+  {
+   "t": "08:19:00.027646",
+   "text": "Send button."
+  },
+  {
+   "t": "08:19:00.035061",
+   "text": "Browse mode"
+  }
+ ]
+}

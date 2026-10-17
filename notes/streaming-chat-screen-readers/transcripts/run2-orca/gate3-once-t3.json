@@ -1,0 +1,25 @@
+{
+ "label": "gate3-once",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:30:47.726Z",
+ "error": null,
+ "sentAt": "2026-10-17T08:30:52.316Z",
+ "endSeen": true,
+ "endSeenMs": 3537,
+ "windowEnd": "2026-10-17T08:31:02.033Z",
+ "speech": [
+  {
+   "t": "08:30:52.463069",
+   "text": "Send button."
+  },
+  {
+   "t": "08:30:52.468964",
+   "text": "Browse mode"
+  },
+  {
+   "t": "08:30:56.080208",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors find two days enough to see the centre ZETAEND"
+  }
+ ]
+}

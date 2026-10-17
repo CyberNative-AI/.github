@@ -1,0 +1,21 @@
+{
+ "label": "chainlit",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:00:05.275Z",
+ "error": null,
+ "sentAt": "2026-10-17T09:00:11.434Z",
+ "endSeen": true,
+ "endSeenMs": 4385,
+ "windowEnd": "2026-10-17T09:00:21.908Z",
+ "speech": [
+  {
+   "t": "09:00:11.600855",
+   "text": "Type your message here... entry."
+  },
+  {
+   "t": "09:00:11.608549",
+   "text": "Focus mode"
+  }
+ ]
+}

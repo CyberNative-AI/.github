@@ -1,0 +1,98 @@
+{
+ "label": "owui",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:25:59.362Z",
+ "error": null,
+ "dismissed": false,
+ "sentAt": "2026-10-17T08:26:19.274Z",
+ "endSeen": true,
+ "endSeenMs": 4350,
+ "windowEnd": "2026-10-17T08:26:29.725Z",
+ "speech": [
+  {
+   "t": "08:26:20.119307",
+   "text": "Send a Message."
+  },
+  {
+   "t": "08:26:20.129049",
+   "text": "Focus mode"
+  },
+  {
+   "t": "08:26:20.145091",
+   "text": "mock-1"
+  },
+  {
+   "t": "08:26:20.631534",
+   "text": "Lyon"
+  },
+  {
+   "t": "08:26:20.770009",
+   "text": "Lyon sits where"
+  },
+  {
+   "t": "08:26:20.946585",
+   "text": "Lyon sits where the Rhone meets"
+  },
+  {
+   "t": "08:26:21.162236",
+   "text": "Lyon sits where the Rhone meets the Saone, about"
+  },
+  {
+   "t": "08:26:21.357865",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres"
+  },
+  {
+   "t": "08:26:21.458265",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "08:26:21.654719",
+   "text": "Its old town is"
+  },
+  {
+   "t": "08:26:21.864310",
+   "text": "Its old town is a protected"
+  },
+  {
+   "t": "08:26:22.120257",
+   "text": "Its old town is a protected heritage site, known for"
+  },
+  {
+   "t": "08:26:22.254401",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages"
+  },
+  {
+   "t": "08:26:22.543766",
+   "text": "• Take the"
+  },
+  {
+   "t": "08:26:22.827210",
+   "text": "• Take the funicular up Fourviere"
+  },
+  {
+   "t": "08:26:22.927141",
+   "text": "• Eat at a"
+  },
+  {
+   "t": "08:26:23.131248",
+   "text": "• Walk"
+  },
+  {
+   "t": "08:26:23.336021",
+   "text": "• Walk the Croix-Rousse slopes."
+  },
+  {
+   "t": "08:26:23.458889",
+   "text": "Most visitors find two"
+  },
+  {
+   "t": "08:26:23.659105",
+   "text": "Most visitors find two days enough to"
+  },
+  {
+   "t": "08:26:24.026655",
+   "text": "Most visitors find two days enough to see the centre ZETAEND"
+  }
+ ]
+}

@@ -1,0 +1,93 @@
+{
+ "label": "gradio",
+ "trial": 2,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:58:09.069Z",
+ "error": null,
+ "sentAt": "2026-10-17T08:58:14.143Z",
+ "endSeen": true,
+ "endSeenMs": 4622,
+ "windowEnd": "2026-10-17T08:58:24.769Z",
+ "speech": [
+  {
+   "t": "08:58:14.390520",
+   "text": "Loading"
+  },
+  {
+   "t": "08:58:14.547748",
+   "text": "Tell me about Lyon"
+  },
+  {
+   "t": "08:58:15.667963",
+   "text": "Lyon sits where the Rhone"
+  },
+  {
+   "t": "08:58:15.831940",
+   "text": "Lyon sits where the Rhone meets the Saone,"
+  },
+  {
+   "t": "08:58:15.999019",
+   "text": "Lyon sits where the Rhone meets the Saone, about four"
+  },
+  {
+   "t": "08:58:16.150744",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast"
+  },
+  {
+   "t": "08:58:16.328186",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "08:58:16.551456",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a"
+  },
+  {
+   "t": "08:58:16.676557",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "08:58:16.987695",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages"
+  },
+  {
+   "t": "08:58:17.225894",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages called traboules."
+  },
+  {
+   "t": "08:58:17.370404",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "08:58:17.673456",
+   "text": "◦ Eat at"
+  },
+  {
+   "t": "08:58:17.846852",
+   "text": "◦ Eat at a traditional bouchon."
+  },
+  {
+   "t": "08:58:17.984994",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages called traboules."
+  },
+  {
+   "t": "08:58:18.173889",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "08:58:18.333930",
+   "text": "◦ Walk the Croix-Rousse slopes."
+  },
+  {
+   "t": "08:58:18.732463",
+   "text": "◦ Eat at a traditional bouchon."
+  },
+  {
+   "t": "08:58:18.832551",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "08:58:19.295570",
+   "text": "common.complete"
+  }
+ ]
+}

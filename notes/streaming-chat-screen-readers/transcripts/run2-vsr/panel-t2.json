@@ -1,0 +1,20 @@
+{
+ "label": "panel",
+ "trial": 2,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:22:09.887Z",
+ "error": null,
+ "sentAt": 1792225333084,
+ "endSeen": true,
+ "endSeenMs": 4799,
+ "vsr": [
+  "document"
+ ],
+ "struct": {
+  "regions": [],
+  "endInLive": null,
+  "liveMutations": 0,
+  "liveMutSample": [],
+  "shadowRoots": 59
+ }
+}

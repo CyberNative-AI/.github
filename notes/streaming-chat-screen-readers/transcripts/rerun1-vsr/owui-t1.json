@@ -1,0 +1,123 @@
+{
+ "label": "owui",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:05:35.781Z",
+ "error": null,
+ "dismissed": true,
+ "sentAt": 1792227941661,
+ "endSeen": true,
+ "endSeenMs": 4621,
+ "vsr": [
+  "document",
+  "How can I help you today?",
+  "Send a Message",
+  "polite: Lyon",
+  "polite: sits",
+  "polite: where",
+  "polite: the",
+  "polite: Rhone",
+  "polite: meets",
+  "polite: the",
+  "polite: Saone,",
+  "polite: about",
+  "polite: four",
+  "polite: hundred",
+  "polite: kilometres",
+  "polite: southeast",
+  "polite: of",
+  "polite: Its",
+  "polite: Paris.",
+  "polite: old",
+  "polite: town",
+  "polite: is",
+  "polite: a",
+  "polite: protected",
+  "polite: heritage",
+  "polite: site,",
+  "polite: known",
+  "polite: for",
+  "polite: narrow",
+  "polite: covered",
+  "polite: passages",
+  "polite: called",
+  "polite: traboules.",
+  "polite: Take",
+  "polite: the",
+  "polite: funicular",
+  "polite: up",
+  "polite: Fourviere",
+  "polite: hill.",
+  "polite: Eat",
+  "polite: at",
+  "polite: a",
+  "polite: traditional",
+  "polite: bouchon.",
+  "polite: Walk",
+  "polite: the",
+  "polite: Croix-Rousse",
+  "polite: Most",
+  "polite: slopes.",
+  "polite: visitors",
+  "polite: find",
+  "polite: two",
+  "polite: days",
+  "polite: enough",
+  "polite: to",
+  "polite: see",
+  "polite: the",
+  "polite: centre",
+  "polite: ZETAEND",
+  "polite: Oct 17, 2:05 AM",
+  "polite: Ask Explain"
+ ],
+ "struct": {
+  "regions": [
+   {
+    "d": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+    "len": 460,
+    "hidden": null
+   },
+   {
+    "d": "div[role=null][aria-live=assertive][aria-relevant=null][aria-atomic=true][aria-busy=null]",
+    "len": 10,
+    "hidden": null
+   }
+  ],
+  "endInLive": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+  "liveMutations": 208,
+  "liveMutSample": [
+   {
+    "t": 1566,
+    "type": "childList",
+    "region": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+    "text": "      Tell me about Lyon Oct 17, 2:05 AM          mock-1               "
+   },
+   {
+    "t": 1569,
+    "type": "childList",
+    "region": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+    "text": "      Tell me about Lyon Oct 17, 2:05 AM          mock-1        Lyon         "
+   },
+   {
+    "t": 1569,
+    "type": "childList",
+    "region": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+    "text": "      Tell me about Lyon Oct 17, 2:05 AM          mock-1        Lyon         "
+   },
+   {
+    "t": 1569,
+    "type": "childList",
+    "region": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+    "text": "      Tell me about Lyon Oct 17, 2:05 AM          mock-1        Lyon         "
+   },
+   {
+    "t": 1569,
+    "type": "childList",
+    "region": "ul[role=log][aria-live=polite][aria-relevant=additions][aria-atomic=false][aria-busy=null]",
+    "text": "      Tell me about Lyon Oct 17, 2:05 AM          mock-1        Lyon         "
+   }
+  ],
+  "shadowRoots": 0
+ }
+}

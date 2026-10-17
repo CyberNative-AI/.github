@@ -1,0 +1,393 @@
+{
+ "oracle": "orca",
+ "reply_words": 56,
+ "distinct": 51,
+ "units": {
+  "gate2-chatter": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "gate2-chatter-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 10.98,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate2-chatter-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.27,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate2-chatter-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.04,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate2-once": {
+   "unit": "ONCE",
+   "trials": [
+    {
+     "file": "gate2-once-t1.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate2-once-t2.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate2-once-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate2-silent": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate2-silent-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate2-silent-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate2-silent-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-chatter": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "gate3-chatter-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.95,
+     "n_content": 22,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-chatter-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.2,
+     "n_content": 21,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-chatter-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.02,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-once": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate3-once-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-once-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-once-t3.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-silent": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate3-silent-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-silent-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-silent-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "owui": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "owui-t1.json",
+     "cls": "REPEATED",
+     "C": 0.941,
+     "E": true,
+     "R": 2.55,
+     "n_content": 19,
+     "n_other": 4,
+     "other": [
+      "Send a Message.",
+      "Oct 17, 8:25 AM",
+      "Lyon",
+      "\u2022"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "owui-t2.json",
+     "cls": "PARTIAL",
+     "C": 0.824,
+     "E": false,
+     "R": 1.68,
+     "n_content": 15,
+     "n_other": 3,
+     "other": [
+      "Send a Message.",
+      "Focus mode",
+      "\u2022"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "owui-t3.json",
+     "cls": "REPEATED",
+     "C": 0.902,
+     "E": true,
+     "R": 2.05,
+     "n_content": 17,
+     "n_other": 4,
+     "other": [
+      "Send a Message.",
+      "Focus mode",
+      "mock-1",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "panel": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "panel-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "panel-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "panel-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    }
+   ]
+  }
+ }
+}

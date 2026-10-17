@@ -1,0 +1,25 @@
+{
+ "label": "xtra-once-b",
+ "trial": 4,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:21:13.775Z",
+ "error": null,
+ "sentAt": "2026-10-17T09:21:18.408Z",
+ "endSeen": true,
+ "endSeenMs": 3539,
+ "windowEnd": "2026-10-17T09:21:28.124Z",
+ "speech": [
+  {
+   "t": "09:21:18.557969",
+   "text": "Send button."
+  },
+  {
+   "t": "09:21:18.565564",
+   "text": "Browse mode"
+  },
+  {
+   "t": "09:21:18.729873",
+   "text": "Tell me about Lyon"
+  }
+ ]
+}

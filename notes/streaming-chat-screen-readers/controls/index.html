@@ -1,0 +1,29 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>Control</title></head><body>
+<main><h1>Chat</h1><div id="host"></div>
+<form id="f"><label for="q">Message</label><textarea id="q"></textarea><button type="submit">Send</button></form></main>
+<script>
+// Control arms, chosen by ?arm=: silent | chatter | once | busy | atomic
+const ARM = new URLSearchParams(location.search).get('arm') || 'silent';
+let TOKENS = [], DELAY = 60;  // same frozen reply as the apps (generated from apps/stream_text.py)
+fetch('reply.json').then(r => r.json()).then(j => { TOKENS = j.tokens; DELAY = j.delay * 1000; });
+const host = document.getElementById('host');
+const log = document.createElement('div');
+if (ARM === 'chatter' || ARM === 'busy') log.setAttribute('aria-live','polite');
+if (ARM === 'atomic') { log.setAttribute('aria-live','polite'); log.setAttribute('aria-atomic','true'); }
+if (ARM === 'once') log.setAttribute('role','log');
+host.appendChild(log);
+document.getElementById('f').addEventListener('submit', async e => {
+  e.preventDefault();
+  const u = document.createElement('p'); u.textContent = document.getElementById('q').value; log.appendChild(u);
+  await new Promise(r=>setTimeout(r,300));
+  const p = document.createElement('p');
+  if (ARM === 'once') { // build off-DOM, insert complete reply once
+    let acc=''; for (const t of TOKENS){ acc+=t; await new Promise(r=>setTimeout(r,DELAY)); }
+    p.textContent = acc; log.appendChild(p); return;
+  }
+  if (ARM === 'busy') log.setAttribute('aria-busy','true');
+  log.appendChild(p);
+  for (const t of TOKENS){ p.textContent += t; await new Promise(r=>setTimeout(r,DELAY)); }
+  if (ARM === 'busy') log.setAttribute('aria-busy','false');
+});
+</script></body></html>

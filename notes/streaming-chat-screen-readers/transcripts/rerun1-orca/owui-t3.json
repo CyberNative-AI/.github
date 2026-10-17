@@ -1,0 +1,86 @@
+{
+ "label": "owui",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:07:48.767Z",
+ "error": null,
+ "dismissed": false,
+ "sentAt": "2026-10-17T09:08:08.657Z",
+ "endSeen": true,
+ "endSeenMs": 4653,
+ "windowEnd": "2026-10-17T09:08:19.431Z",
+ "speech": [
+  {
+   "t": "09:08:09.692470",
+   "text": "Send a Message."
+  },
+  {
+   "t": "09:08:09.732770",
+   "text": "Focus mode"
+  },
+  {
+   "t": "09:08:09.750595",
+   "text": "Tell me about Lyon"
+  },
+  {
+   "t": "09:08:10.552184",
+   "text": "Lyon"
+  },
+  {
+   "t": "09:08:10.664050",
+   "text": "Lyon sits where the Rhone meets the"
+  },
+  {
+   "t": "09:08:10.764244",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast"
+  },
+  {
+   "t": "09:08:10.967466",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris."
+  },
+  {
+   "t": "09:08:11.152094",
+   "text": "Its old town is a"
+  },
+  {
+   "t": "09:08:11.360131",
+   "text": "Its old town is a protected heritage site,"
+  },
+  {
+   "t": "09:08:11.566713",
+   "text": "Its old town is a protected heritage site, known for narrow covered"
+  },
+  {
+   "t": "09:08:11.757696",
+   "text": "•"
+  },
+  {
+   "t": "09:08:11.957539",
+   "text": "• Take the funicular"
+  },
+  {
+   "t": "09:08:12.157554",
+   "text": "• Eat"
+  },
+  {
+   "t": "09:08:12.360468",
+   "text": "• Eat at a traditional"
+  },
+  {
+   "t": "09:08:12.563214",
+   "text": "• Walk the"
+  },
+  {
+   "t": "09:08:12.760662",
+   "text": "Most visitors find"
+  },
+  {
+   "t": "09:08:12.967397",
+   "text": "Most visitors find two days enough"
+  },
+  {
+   "t": "09:08:13.272674",
+   "text": "Most visitors find two days enough to see the centre"
+  }
+ ]
+}

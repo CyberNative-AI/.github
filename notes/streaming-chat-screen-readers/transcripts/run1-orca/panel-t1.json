@@ -1,0 +1,12 @@
+{
+ "label": "panel",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:13:00.282Z",
+ "error": null,
+ "sentAt": "2026-10-17T08:13:06.055Z",
+ "endSeen": false,
+ "endSeenMs": 90109,
+ "windowEnd": "2026-10-17T08:14:42.171Z",
+ "speech": []
+}

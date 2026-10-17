@@ -1,0 +1,539 @@
+{
+ "oracle": "orca",
+ "reply_words": 56,
+ "distinct": 51,
+ "units": {
+  "chainlit": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "chainlit-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 1,
+     "other": [
+      "Type your message here... entry."
+     ],
+     "status_like": []
+    },
+    {
+     "file": "chainlit-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Type your message here... entry.",
+      "Focus mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "chainlit-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Type your message here... entry.",
+      "Focus mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate1-chatter": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "gate1-chatter-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.25,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate1-chatter-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.12,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate1-chatter-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.04,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate1-once": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate1-once-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate1-once-t2.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate1-once-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate1-silent": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate1-silent-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate1-silent-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate1-silent-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-chatter": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "gate3-chatter-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.02,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-chatter-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.09,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-chatter-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.11,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-once": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate3-once-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-once-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-once-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gate3-silent": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "gate3-silent-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-silent-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "gate3-silent-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "gradio": {
+   "unit": "PARTIAL",
+   "trials": [
+    {
+     "file": "gradio-t1.json",
+     "cls": "PARTIAL",
+     "C": 0.98,
+     "E": false,
+     "R": 4.82,
+     "n_content": 19,
+     "n_other": 3,
+     "other": [
+      "Loading",
+      "Tell me about Lyon",
+      "common.complete"
+     ],
+     "status_like": [
+      "Loading",
+      "common.complete"
+     ]
+    },
+    {
+     "file": "gradio-t2.json",
+     "cls": "PARTIAL",
+     "C": 0.706,
+     "E": false,
+     "R": 3.39,
+     "n_content": 17,
+     "n_other": 3,
+     "other": [
+      "Loading",
+      "Tell me about Lyon",
+      "common.complete"
+     ],
+     "status_like": [
+      "Loading",
+      "common.complete"
+     ]
+    },
+    {
+     "file": "gradio-t3.json",
+     "cls": "PARTIAL",
+     "C": 0.784,
+     "E": false,
+     "R": 4.61,
+     "n_content": 17,
+     "n_other": 3,
+     "other": [
+      "Loading",
+      "Tell me about Lyon",
+      "common.complete"
+     ],
+     "status_like": [
+      "Loading",
+      "common.complete"
+     ]
+    }
+   ]
+  },
+  "owui": {
+   "unit": "PARTIAL",
+   "trials": [
+    {
+     "file": "owui-t1.json",
+     "cls": "REPEATED",
+     "C": 0.98,
+     "E": true,
+     "R": 1.82,
+     "n_content": 13,
+     "n_other": 3,
+     "other": [
+      "Tell me about Lyon",
+      "Send a Message.",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "owui-t2.json",
+     "cls": "PARTIAL",
+     "C": 0.784,
+     "E": false,
+     "R": 1.71,
+     "n_content": 15,
+     "n_other": 5,
+     "other": [
+      "Oct 17, 9:07 AM",
+      "Send a Message.",
+      "Focus mode",
+      "\u2022",
+      "Oct 17, 9:07 AM"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "owui-t3.json",
+     "cls": "PARTIAL",
+     "C": 0.804,
+     "E": false,
+     "R": 1.59,
+     "n_content": 13,
+     "n_other": 5,
+     "other": [
+      "Send a Message.",
+      "Focus mode",
+      "Tell me about Lyon",
+      "Lyon",
+      "\u2022"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "panel": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "panel-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "panel-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "panel-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    }
+   ]
+  },
+  "streamlit": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "streamlit-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "streamlit-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    },
+    {
+     "file": "streamlit-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 0,
+     "other": [],
+     "status_like": []
+    }
+   ]
+  }
+ }
+}

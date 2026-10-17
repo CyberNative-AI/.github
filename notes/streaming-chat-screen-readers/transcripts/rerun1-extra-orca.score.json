@@ -1,0 +1,482 @@
+{
+ "oracle": "orca",
+ "reply_words": 56,
+ "distinct": 51,
+ "units": {
+  "xtra-chatter-a": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "xtra-chatter-a-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.25,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-a-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.07,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-a-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 10.98,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-a-t4.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.04,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-a-t5.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.25,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "xtra-chatter-b": {
+   "unit": "REPEATED",
+   "trials": [
+    {
+     "file": "xtra-chatter-b-t1.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.02,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-b-t2.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.07,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-b-t3.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 10.98,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-b-t4.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.02,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-chatter-b-t5.json",
+     "cls": "REPEATED",
+     "C": 1.0,
+     "E": true,
+     "R": 11.04,
+     "n_content": 21,
+     "n_other": 4,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon",
+      "Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "xtra-once-a": {
+   "unit": "ONCE",
+   "trials": [
+    {
+     "file": "xtra-once-a-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-a-t2.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-a-t3.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-a-t4.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-a-t5.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "xtra-once-b": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "xtra-once-b-t1.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-b-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-b-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-b-t4.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 3,
+     "other": [
+      "Send button.",
+      "Browse mode",
+      "Tell me about Lyon"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-once-b-t5.json",
+     "cls": "ONCE",
+     "C": 1.0,
+     "E": true,
+     "R": 1.0,
+     "n_content": 1,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "xtra-silent-a": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "xtra-silent-a-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-a-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-a-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-a-t4.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-a-t5.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  },
+  "xtra-silent-b": {
+   "unit": "NO_REPLY",
+   "trials": [
+    {
+     "file": "xtra-silent-b-t1.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-b-t2.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-b-t3.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-b-t4.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    },
+    {
+     "file": "xtra-silent-b-t5.json",
+     "cls": "NO_REPLY",
+     "C": 0.0,
+     "E": false,
+     "R": 0.0,
+     "n_content": 0,
+     "n_other": 2,
+     "other": [
+      "Send button.",
+      "Browse mode"
+     ],
+     "status_like": []
+    }
+   ]
+  }
+ }
+}

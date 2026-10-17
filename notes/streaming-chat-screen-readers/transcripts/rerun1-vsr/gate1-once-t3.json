@@ -1,0 +1,43 @@
+{
+ "label": "gate1-once",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:48:54.770Z",
+ "error": null,
+ "sentAt": 1792226937678,
+ "endSeen": true,
+ "endSeenMs": 3824,
+ "vsr": [
+  "document",
+  "textbox, Message",
+  "button, Send",
+  "polite: Tell me about Lyon",
+  "polite: Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of Paris. Its old town is a protected heritage site, known for narrow covered passages called traboules. - Take the funicular up Fourviere hill. - Eat at a traditional bouchon. - Walk the Croix-Rousse slopes. Most visitors find two days enough to see the centre ZETAEND"
+ ],
+ "struct": {
+  "regions": [
+   {
+    "d": "div[role=log][aria-live=null][aria-relevant=null][aria-atomic=null][aria-busy=null]",
+    "len": 373,
+    "hidden": null
+   }
+  ],
+  "endInLive": "div[role=log][aria-live=null][aria-relevant=null][aria-atomic=null][aria-busy=null]",
+  "liveMutations": 2,
+  "liveMutSample": [
+   {
+    "t": 279,
+    "type": "childList",
+    "region": "div[role=log][aria-live=null][aria-relevant=null][aria-atomic=null][aria-busy=null]",
+    "text": "Tell me about Lyon"
+   },
+   {
+    "t": 3829,
+    "type": "childList",
+    "region": "div[role=log][aria-live=null][aria-relevant=null][aria-atomic=null][aria-busy=null]",
+    "text": "oix-Rousse slopes.\n\nMost visitors find two days enough to see the centre ZETAEND"
+   }
+  ],
+  "shadowRoots": 0
+ }
+}

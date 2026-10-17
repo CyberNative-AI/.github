@@ -1,0 +1,12 @@
+{
+ "label": "streamlit",
+ "trial": 2,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:07:20.327Z",
+ "error": null,
+ "sentAt": "2026-10-17T08:07:26.201Z",
+ "endSeen": true,
+ "endSeenMs": 4307,
+ "windowEnd": "2026-10-17T08:07:36.518Z",
+ "speech": []
+}

@@ -1,0 +1,21 @@
+{
+ "label": "chainlit",
+ "trial": 3,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:05:06.640Z",
+ "error": null,
+ "sentAt": 1792224310139,
+ "endSeen": true,
+ "endSeenMs": 4342,
+ "vsr": [
+  "document",
+  "textbox, placeholder Type your message here..."
+ ],
+ "struct": {
+  "regions": [],
+  "endInLive": null,
+  "liveMutations": 0,
+  "liveMutSample": [],
+  "shadowRoots": 0
+ }
+}

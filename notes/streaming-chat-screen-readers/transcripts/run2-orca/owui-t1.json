@@ -1,0 +1,106 @@
+{
+ "label": "owui",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T08:24:58.189Z",
+ "error": null,
+ "dismissed": false,
+ "sentAt": "2026-10-17T08:25:18.123Z",
+ "endSeen": true,
+ "endSeenMs": 4405,
+ "windowEnd": "2026-10-17T08:25:28.665Z",
+ "speech": [
+  {
+   "t": "08:25:18.652096",
+   "text": "Send a Message."
+  },
+  {
+   "t": "08:25:18.819550",
+   "text": "Oct 17, 8:25 AM"
+  },
+  {
+   "t": "08:25:19.438471",
+   "text": "Lyon"
+  },
+  {
+   "t": "08:25:19.606571",
+   "text": "Lyon sits where"
+  },
+  {
+   "t": "08:25:19.776177",
+   "text": "Lyon sits where the Rhone meets"
+  },
+  {
+   "t": "08:25:19.931395",
+   "text": "Lyon sits where the Rhone meets the Saone, about"
+  },
+  {
+   "t": "08:25:20.096942",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred"
+  },
+  {
+   "t": "08:25:20.264878",
+   "text": "Lyon sits where the Rhone meets the Saone, about four hundred kilometres southeast of"
+  },
+  {
+   "t": "08:25:20.437711",
+   "text": "Its old town"
+  },
+  {
+   "t": "08:25:20.566162",
+   "text": "Its old town is a"
+  },
+  {
+   "t": "08:25:20.741809",
+   "text": "Its old town is a protected heritage site,"
+  },
+  {
+   "t": "08:25:20.897526",
+   "text": "Its old town is a protected heritage site, known for narrow"
+  },
+  {
+   "t": "08:25:21.058064",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages"
+  },
+  {
+   "t": "08:25:21.236477",
+   "text": "Its old town is a protected heritage site, known for narrow covered passages called traboules."
+  },
+  {
+   "t": "08:25:21.384605",
+   "text": "• Take the funicular up"
+  },
+  {
+   "t": "08:25:21.550888",
+   "text": "•"
+  },
+  {
+   "t": "08:25:21.738335",
+   "text": "• Eat at a"
+  },
+  {
+   "t": "08:25:21.886597",
+   "text": "• Eat at a traditional bouchon."
+  },
+  {
+   "t": "08:25:22.046590",
+   "text": "• Walk the Croix-Rousse slopes."
+  },
+  {
+   "t": "08:25:22.220486",
+   "text": "Most visitors find"
+  },
+  {
+   "t": "08:25:22.378048",
+   "text": "Most visitors find two days enough"
+  },
+  {
+   "t": "08:25:22.535130",
+   "text": "Most visitors find two days enough to see the"
+  },
+  {
+   "t": "08:25:22.733735",
+   "text": "Most visitors find two days enough to see the centre ZETAEND"
+  }
+ ]
+}

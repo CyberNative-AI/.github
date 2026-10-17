@@ -1,0 +1,22 @@
+{
+ "label": "gate3-silent",
+ "trial": 1,
+ "prompt": "Tell me about Lyon",
+ "startedAt": "2026-10-17T09:08:51.364Z",
+ "error": null,
+ "sentAt": 1792228134260,
+ "endSeen": true,
+ "endSeenMs": 3567,
+ "vsr": [
+  "document",
+  "textbox, Message",
+  "button, Send"
+ ],
+ "struct": {
+  "regions": [],
+  "endInLive": null,
+  "liveMutations": 0,
+  "liveMutSample": [],
+  "shadowRoots": 0
+ }
+}
