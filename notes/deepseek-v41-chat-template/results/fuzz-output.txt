@@ -1,0 +1,4 @@
+chat_template.jinja seed 1: conversations=3000 reference_errors=0 mismatches=0 by_kind={} first=[]
+chat_template.jinja seed 2: conversations=3000 reference_errors=0 mismatches=0 by_kind={} first=[]
+chat_template.jinja seed 3: conversations=3000 reference_errors=0 mismatches=0 by_kind={} first=[]
+work/pr68/chat_template.jinja seed 1: conversations=3000 reference_errors=0 mismatches=322 by_kind={'thinking, no tools': 322} first=[(9, 'thinking', False, 50), (12, 'thinking', False, None), (15, 'thinking', False, 'max')]

@@ -1,0 +1,13 @@
+1017 encoding.py identical to V4.1-Flash @314113f8: True
+PR #68 template  | encoder @2cba9e42 (10-01)  | dict args   | 50 passed in 1.73s
+PR #68 template  | encoder @2cba9e42 (10-01)  | string args | 9 failed, 41 passed in 1.87s
+PR #68 template  | encoder @314113f8 (10-16)  | dict args   | 4 failed, 51 passed in 1.87s
+PR #68 template  | encoder @314113f8 (10-16)  | string args | 13 failed, 42 passed in 1.89s
+PR #68 template  | 1017 encoder @1bae0e10     | dict args   | 4 failed, 51 passed in 1.82s
+PR #68 template  | 1017 encoder @1bae0e10     | string args | 13 failed, 42 passed in 1.82s
+synced template  | encoder @2cba9e42 (10-01)  | dict args   | 50 passed in 1.78s
+synced template  | encoder @2cba9e42 (10-01)  | string args | 9 failed, 41 passed in 1.82s
+synced template  | encoder @314113f8 (10-16)  | dict args   | 55 passed in 1.71s
+synced template  | encoder @314113f8 (10-16)  | string args | 9 failed, 46 passed in 1.79s
+synced template  | 1017 encoder @1bae0e10     | dict args   | 55 passed in 1.86s
+synced template  | 1017 encoder @1bae0e10     | string args | 9 failed, 46 passed in 2.07s

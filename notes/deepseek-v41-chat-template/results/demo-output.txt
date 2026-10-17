@@ -1,0 +1,13 @@
+== 1. thinking mode, no tools list, dict arguments
+   encoding.py:
+      '<｜Assistant｜><think>I should call get_weather.</think>\n\n<｜DSML｜ calls>\n<｜DSML｜ invoke name="get_weather">\n<｜DSML｜ parameter name="city" string="true">Paris</｜DSML｜ parameter>\n</｜DSML｜ invoke>\n</｜DSML｜ calls><｜end▁of▁sentence｜>'
+   PR #68 template: DIFFERENT
+      '<｜Assistant｜></think>\n\n<｜DSML｜ calls>\n<｜DSML｜ invoke name="get_weather">\n<｜DSML｜ parameter name="city" string="true">Paris</｜DSML｜ parameter>\n</｜DSML｜ invoke>\n</｜DSML｜ calls><｜end▁of▁sentence｜>'
+   synced template: same as encoding.py
+== 2. same, OpenAI-style JSON string arguments
+   encoding.py:
+      '<｜Assistant｜><think>I should call get_weather.</think>\n\n<｜DSML｜ calls>\n<｜DSML｜ invoke name="get_weather">\n<｜DSML｜ parameter name="city" string="true">Paris</｜DSML｜ parameter>\n</｜DSML｜ invoke>\n</｜DSML｜ calls><｜end▁of▁sentence｜>'
+   PR #68 template: DIFFERENT
+      '<｜Assistant｜></think>\n\n<｜DSML｜ calls>\n<｜DSML｜ invoke name="get_weather">\n<｜DSML｜ parameter name="arguments" string="true">{"city": "Paris"}</｜DSML｜ parameter>\n</｜DSML｜ invoke>\n</｜DSML｜ calls><｜end▁of▁sentence｜>'
+   synced template: DIFFERENT
+      '<｜Assistant｜><think>I should call get_weather.</think>\n\n<｜DSML｜ calls>\n<｜DSML｜ invoke name="get_weather">\n<｜DSML｜ parameter name="arguments" string="true">{"city": "Paris"}</｜DSML｜ parameter>\n</｜DSML｜ invoke>\n</｜DSML｜ calls><｜end▁of▁sentence｜>'
