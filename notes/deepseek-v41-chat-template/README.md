@@ -54,7 +54,8 @@ both templates   <｜DSML｜ parameter name="arguments" string="true">{"city": "
 ```
 
 A Jinja template cannot parse JSON text, so convert the arguments with `json.loads` before rendering. With string
-arguments, 9 of DeepSeek's tests fail with either template, and they already failed on 1 October.
+arguments, both templates fail 9 of 50 tests against the 1 October encoder. Against the 16 October and 1017 encoders,
+the original template fails 13 of 55 and the synced template fails 9 of 55.
 
 ## What to use
 
@@ -78,10 +79,11 @@ arguments, 9 of DeepSeek's tests fail with either template, and they already fai
   through transformers 5.20.1 with Jinja2 3.1.6, not in other template engines.
 - Either way, pass tool-call arguments as dicts.
 
-We have proposed the same edit to the DeepSeek-V4.1-Flash repository as a pull request; see its
-[Community tab](https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash/discussions).
-
 ## Check it yourself
+
+These commands download and execute DeepSeek's Python code on your machine: `run.py` runs the downloaded tests and
+imports the encoder; `fuzz.py` and `demo.py` also import that encoder. Review the pinned code first and use a disposable
+isolated environment without credentials or private data.
 
 ```sh
 python -m pip install "transformers==5.20.1" "pytest==9.*"
@@ -113,4 +115,5 @@ random conversations cover the shapes listed above, not every field the encoder 
 DeepSeek-V4.1-Flash, which is under the MIT License, Copyright (c) 2023 DeepSeek; see
 [`chat_template.LICENSE`](chat_template.LICENSE). Checked on 17 October 2026.
 
-Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai.
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. We publish dated corrections when errors are
+confirmed. Corrections: hello@cybernative.ai.
