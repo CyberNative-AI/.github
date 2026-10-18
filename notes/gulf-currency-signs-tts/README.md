@@ -44,7 +44,7 @@ Swap ⃁ for ⃀, ⃂, ⃃ or ⃄ to check the others. Use the `en` or `ar` fold
 
 The names come from the Unicode CLDR project, not from the screen readers. NVDA's `cldr.dic` and speech-dispatcher's `emojis.dic` both import CLDR's annotation files, and the line `₾	Georgian Lari` is copied straight from CLDR's `annotationsDerived`. CLDR derives those names from a 27-row table that maps a currency sign to its ISO code; each locale's currency name becomes the sign's spoken name. The table's newest sign is ₾ (Unicode 8.0, 2015; ₿ has its own hand-written annotation). ⃀ (Unicode 14.0, 2021), ⃁, ⃂, ⃃ and ⃄ were never added, so no locale gets a name, and nothing downstream has one to import.
 
-That makes the fix small: five rows in one CLDR data file, then the normal import into NVDA and speech-dispatcher.
+That makes the fix small: five rows in one CLDR data file, then the normal import into NVDA and speech-dispatcher. We asked CLDR to add the five rows in [CLDR-19870](https://unicode-org.atlassian.net/browse/CLDR-19870).
 
 ## Why now
 
