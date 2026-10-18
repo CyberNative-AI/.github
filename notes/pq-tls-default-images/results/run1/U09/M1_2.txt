@@ -1,0 +1,53 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:C=US, ST=California, L=San Francisco, O=Kong, OU=IT Department, CN=localhost
+   i:C=US, ST=California, L=San Francisco, O=Kong, OU=IT Department, CN=localhost
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Oct 18 00:30:22 2026 GMT; NotAfter: Oct 13 00:30:22 2046 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIICNzCCAdygAwIBAgIQZzLbczT+kj/laYRPxud73zAKBggqhkjOPQQDAjB1MQsw
+CQYDVQQGEwJVUzETMBEGA1UECAwKQ2FsaWZvcm5pYTEWMBQGA1UEBwwNU2FuIEZy
+YW5jaXNjbzENMAsGA1UECgwES29uZzEWMBQGA1UECwwNSVQgRGVwYXJ0bWVudDES
+MBAGA1UEAwwJbG9jYWxob3N0MB4XDTI2MTAxODAwMzAyMloXDTQ2MTAxMzAwMzAy
+MlowdTELMAkGA1UEBhMCVVMxEzARBgNVBAgMCkNhbGlmb3JuaWExFjAUBgNVBAcM
+DVNhbiBGcmFuY2lzY28xDTALBgNVBAoMBEtvbmcxFjAUBgNVBAsMDUlUIERlcGFy
+dG1lbnQxEjAQBgNVBAMMCWxvY2FsaG9zdDBZMBMGByqGSM49AgEGCCqGSM49AwEH
+A0IABHUpywwMF/jTMiuYGZeVTEIEFNbDiEHhYtsAnw87CZ0oGgxfV2lndOt40Vbb
+qjRjHAh/DR0x6pMRQyrC3UXCCYmjTjBMMAwGA1UdEwEB/wQCMAAwHQYDVR0lBBYw
+FAYIKwYBBQUHAwEGCCsGAQUFBwMCMB0GA1UdDgQWBBQq3GlkIJA/gwmnVJDb3zqo
+XlfyJzAKBggqhkjOPQQDAgNJADBGAiEAspbv/OzOmdt4f6wkRAWMN5YfOnHairVC
++HkxiY/cJTgCIQD19HrhRhFlt01/1qX+M6I0F3RU4oa/UZkWnOfnfLsYrQ==
+-----END CERTIFICATE-----
+subject=C=US, ST=California, L=San Francisco, O=Kong, OU=IT Department, CN=localhost
+issuer=C=US, ST=California, L=San Francisco, O=Kong, OU=IT Department, CN=localhost
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 2035 bytes and written 1632 bytes
+Verification error: self-signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_256_GCM_SHA384
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self-signed certificate)
+---
+
+--stderr--
+Connecting to 172.22.0.3
+depth=0 C=US, ST=California, L=San Francisco, O=Kong, OU=IT Department, CN=localhost
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 C=US, ST=California, L=San Francisco, O=Kong, OU=IT Department, CN=localhost
+verify return:1
+DONE

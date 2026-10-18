@@ -1,0 +1,1 @@
+<Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol" maxThreads="150" SSLEnabled="true"><SSLHostConfig><Certificate certificateFile="/certs/cert.pem" certificateKeyFile="/certs/key.pem" type="EC" /></SSLHostConfig></Connector>

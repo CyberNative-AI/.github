@@ -1,0 +1,78 @@
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=probe.test
+   i:CN=probe.test
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Oct 17 23:53:59 2026 GMT; NotAfter: Nov 16 23:53:59 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBnzCCAUSgAwIBAgIUL7lbbbA2g3DZQQXA221sbkEs0qowCgYIKoZIzj0EAwIw
+FTETMBEGA1UEAwwKcHJvYmUudGVzdDAeFw0yNjEwMTcyMzUzNTlaFw0yNjExMTYy
+MzUzNTlaMBUxEzARBgNVBAMMCnByb2JlLnRlc3QwWTATBgcqhkjOPQIBBggqhkjO
+PQMBBwNCAAT+v5TmcCZMNtjA9rYXq23JVCGyvrZtSOWsUJ+6uenOZbVrDK3aMv6/
+o0okSd25ay1U64JMY4Rj0i2w9IKFmyOxo3IwcDAdBgNVHQ4EFgQULaw5Y0mP2Oqv
+QzP+AaQwRxL/EDAwHwYDVR0jBBgwFoAULaw5Y0mP2OqvQzP+AaQwRxL/EDAwDwYD
+VR0TAQH/BAUwAwEB/zAdBgNVHREEFjAUggpwcm9iZS50ZXN0ggZ0YXJnZXQwCgYI
+KoZIzj0EAwIDSQAwRgIhAOwdPwYvmUGKqrJjQWoBLC1jk5xuhrUD577oD6NVohuG
+AiEA8qJNy3CREHeQfaM/5JKV3CA8SJBqzO43kS7FGnxaoiI=
+-----END CERTIFICATE-----
+subject=CN=probe.test
+issuer=CN=probe.test
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 1865 bytes and written 1558 bytes
+Verification error: self-signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self-signed certificate)
+---
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: BA97EBA72CCB9EE3DF5EC99E85AA56A4968F45A8966C3E8CB42A536BFED13838
+    Session-ID-ctx: 
+    Resumption PSK: FEE5B860523DA8C358DBF3A0B43F1DC73B532FFE415E1DB668AC9BD10373B331
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 604800 (seconds)
+    TLS session ticket:
+    0000 - ab df 65 ec 84 6e 27 3f-49 34 98 09 ee 82 2a d9   ..e..n'?I4....*.
+    0010 - cf 67 d6 19 9f f3 a5 73-90 a5 03 ba aa a2 6b 44   .g.....s......kD
+    0020 - dc 2e ce ce 31 7d fa 01-2b 8d a0 a5 83 62 9f 7c   ....1}..+....b.|
+    0030 - 7e 90 0b d6 a8 e9 94 7a-c9 4e 1d 86 fc 3b 7a 37   ~......z.N...;z7
+    0040 - b4 bf 48 b8 62 41 5c 5c-4b 82 e3 b3 f4 cb 4f 33   ..H.bA\\K.....O3
+    0050 - 26 c9 ff 5c 3e f5 4f 1a-15 d9 4a a6 dd d0 a0 65   &..\>.O...J....e
+    0060 - fa 07 a9 72 e3 8a 0f ef-40                        ...r....@
+
+    Start Time: 1792283276
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+
+--stderr--
+Connecting to 172.22.0.3
+depth=0 CN=probe.test
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 CN=probe.test
+verify return:1
+DONE

@@ -1,0 +1,77 @@
+Connecting to 172.22.0.3
+depth=0 CN=probe.test
+verify error:num=18:self-signed certificate
+verify return:1
+depth=0 CN=probe.test
+verify return:1
+CONNECTED(00000003)
+---
+Certificate chain
+ 0 s:CN=probe.test
+   i:CN=probe.test
+   a:PKEY: EC, (prime256v1); sigalg: ecdsa-with-SHA256
+   v:NotBefore: Oct 17 23:53:59 2026 GMT; NotAfter: Nov 16 23:53:59 2026 GMT
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIBnzCCAUSgAwIBAgIUL7lbbbA2g3DZQQXA221sbkEs0qowCgYIKoZIzj0EAwIw
+FTETMBEGA1UEAwwKcHJvYmUudGVzdDAeFw0yNjEwMTcyMzUzNTlaFw0yNjExMTYy
+MzUzNTlaMBUxEzARBgNVBAMMCnByb2JlLnRlc3QwWTATBgcqhkjOPQIBBggqhkjO
+PQMBBwNCAAT+v5TmcCZMNtjA9rYXq23JVCGyvrZtSOWsUJ+6uenOZbVrDK3aMv6/
+o0okSd25ay1U64JMY4Rj0i2w9IKFmyOxo3IwcDAdBgNVHQ4EFgQULaw5Y0mP2Oqv
+QzP+AaQwRxL/EDAwHwYDVR0jBBgwFoAULaw5Y0mP2OqvQzP+AaQwRxL/EDAwDwYD
+VR0TAQH/BAUwAwEB/zAdBgNVHREEFjAUggpwcm9iZS50ZXN0ggZ0YXJnZXQwCgYI
+KoZIzj0EAwIDSQAwRgIhAOwdPwYvmUGKqrJjQWoBLC1jk5xuhrUD577oD6NVohuG
+AiEA8qJNy3CREHeQfaM/5JKV3CA8SJBqzO43kS7FGnxaoiI=
+-----END CERTIFICATE-----
+subject=CN=probe.test
+issuer=CN=probe.test
+---
+No client certificate CA names sent
+Peer signing digest: SHA256
+Peer signature type: ecdsa_secp256r1_sha256
+Negotiated TLS1.3 group: X25519MLKEM768
+---
+SSL handshake has read 1867 bytes and written 1558 bytes
+Verification error: self-signed certificate
+---
+New, TLSv1.3, Cipher is TLS_AES_128_GCM_SHA256
+Protocol: TLSv1.3
+Server public key is 256 bit
+This TLS version forbids renegotiation.
+Compression: NONE
+Expansion: NONE
+No ALPN negotiated
+Early data was not sent
+Verify return code: 18 (self-signed certificate)
+---
+DONE
+---
+Post-Handshake New Session Ticket arrived:
+SSL-Session:
+    Protocol  : TLSv1.3
+    Cipher    : TLS_AES_128_GCM_SHA256
+    Session-ID: 8B8054EB3CFCA21A99F0BA9643C643B6B47A490769F1B02DE5059CA0CB8E7A7C
+    Session-ID-ctx: 
+    Resumption PSK: 64A966B3EC9C162BFD3E4196F9E1EC4019074BFB20AFB2EEF141B5D7CF39528F
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    TLS session ticket lifetime hint: 604800 (seconds)
+    TLS session ticket:
+    0000 - c8 a0 e7 f6 20 04 8a ba-0e 21 92 b3 2a fe f6 62   .... ....!..*..b
+    0010 - ec 5c 38 fa 9a e4 68 91-4a 69 69 8a 25 f3 4c bb   .\8...h.Jii.%.L.
+    0020 - 8a 71 30 fd 4a bb 0a 1e-a5 f8 aa f3 1e cf a5 80   .q0.J...........
+    0030 - a9 4b 09 29 6d 87 d4 54-d9 00 9c 20 99 30 eb 17   .K.)m..T... .0..
+    0040 - d5 c1 f6 e9 37 d4 f1 a9-79 0f fc 21 77 11 a3 6f   ....7...y..!w..o
+    0050 - 3d 1e ab 9c 8d 8a 7b c4-d2 9e 0a a5 81 01 e1 1e   =.....{.........
+    0060 - ae 32 95 3f 5e 9d b4 ce-dc                        .2.?^....
+
+    Start Time: 1792284398
+    Timeout   : 7200 (sec)
+    Verify return code: 18 (self-signed certificate)
+    Extended master secret: no
+    Max Early Data: 0
+---
+read R BLOCK
+RC=0

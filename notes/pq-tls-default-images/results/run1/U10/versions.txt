@@ -1,0 +1,41 @@
+Server version: Apache Tomcat/11.0.27
+Server built:   Oct 6 2026 18:12:07 UTC
+Server number:  11.0.27.0
+OS Name:        Linux
+OS Version:     6.8.0-147-generic
+Architecture:   amd64
+JVM Version:    25.0.4.1+1-LTS
+JVM Vendor:     Eclipse Adoptium
+APR loaded:     true
+APR Version:    1.7.6
+Tomcat Native:  2.0.16
+OpenSSL (APR):  OpenSSL 3.5.5 27 Jan 2026
+
+Third-party libraries:
+  ecj-4.41.jar:                          3.46.100.v20260826-1225
+  jakartaee-migration-1.0.13-shaded.jar: 1.0.13
+openjdk version "25.0.4.1" 2026-08-18 LTS
+OpenJDK Runtime Environment Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS)
+OpenJDK 64-Bit Server VM Temurin-25.0.4.1+1 (build 25.0.4.1+1-LTS, mixed mode, sharing)
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+OpenSSL 3.5.5 27 Jan 2026 (Library: OpenSSL 3.5.5 27 Jan 2026)
+total 900
+-rw-r--r-- 1 root root 570190 Oct 17 01:38 libtcnative-2.a
+-rwxr-xr-x 1 root root   1046 Oct 17 01:38 libtcnative-2.la
+lrwxrwxrwx 1 root root     23 Oct 17 01:38 libtcnative-2.so -> libtcnative-2.so.0.0.16
+lrwxrwxrwx 1 root root     23 Oct 17 01:38 libtcnative-2.so.0 -> libtcnative-2.so.0.0.16
+-rwxr-xr-x 1 root root 341792 Oct 17 01:38 libtcnative-2.so.0.0.16
+
+--stderr--

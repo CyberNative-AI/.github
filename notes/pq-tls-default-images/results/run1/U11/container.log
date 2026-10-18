@@ -1,0 +1,16 @@
+
+--stderr--
+{"level":"info","ts":1792283272.9038315,"msg":"maxprocs: Updating GOMAXPROCS=2: determined from CPU quota"}
+{"level":"info","ts":1792283272.9038696,"msg":"GOMEMLIMIT is updated","GOMEMLIMIT":1932735283,"previous":9223372036854775807}
+{"level":"info","ts":1792283272.9038727,"msg":"using config from file","file":"/etc/caddy/Caddyfile"}
+{"level":"info","ts":1792283272.903875,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"warn","ts":1792283272.9038782,"logger":"admin","msg":"admin endpoint disabled"}
+{"level":"info","ts":1792283272.90517,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x163110f16e00"}
+{"level":"info","ts":1792283272.9056234,"logger":"http.auto_https","msg":"skipping automatic certificate management because one or more matching certificates are already loaded","domain":"probe.test","server_name":"srv0"}
+{"level":"info","ts":1792283272.9056308,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv0"}
+{"level":"info","ts":1792283272.9081917,"logger":"http","msg":"enabling HTTP/3 listener","addr":":8443"}
+{"level":"info","ts":1792283272.9101646,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1792283272.9131343,"msg":"autosaved config (load with --resume flag)","file":"/config/caddy/autosave.json"}
+{"level":"info","ts":1792283272.9131413,"msg":"serving initial configuration"}
+{"level":"info","ts":1792283272.926744,"logger":"tls","msg":"cleaning storage unit","storage":"FileStorage:/data/caddy"}
+{"level":"info","ts":1792283272.9394393,"logger":"tls","msg":"finished cleaning storage units"}

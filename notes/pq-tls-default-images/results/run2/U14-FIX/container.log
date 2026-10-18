@@ -1,0 +1,9 @@
+2026/10/18 00:47:24 [warn] ulimit is currently set to "1024". For better performance set it to at least "4096" using "ulimit -n"
+2026/10/18 00:47:24 [warn] ulimit is currently set to "1024". For better performance set it to at least "4096" using "ulimit -n"
+Error: could not prepare Kong prefix at /usr/local/kong: nginx configuration is invalid (exit code 1):
+nginx: [warn] the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /usr/local/kong/nginx.conf:7
+nginx: [emerg] SSL_CTX_set1_curves_list("X25519MLKEM768:X25519") failed (SSL: error:0A080106:SSL routines::passed invalid argument:group 'X25519MLKEM768' cannot be set)
+nginx: configuration file /usr/local/kong/nginx.conf test failed
+
+
+  Run with --v (verbose) or --vv (debug) for more details

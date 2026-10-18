@@ -1,0 +1,2 @@
+pomerium version pomerium: 0.33.4+5cd94927f
+envoy: 20261001211751-8b998d0f6ff3

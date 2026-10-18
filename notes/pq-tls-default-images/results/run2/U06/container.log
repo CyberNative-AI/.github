@@ -1,0 +1,42 @@
+{"level":"info","service":"all","config":"local","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:39Z","message":"config: updated config"}
+{"level":"info","envoy-version":"20261001211751-8b998d0f6ff3","version":"0.33.4+5cd94927f","built":"2026-10-02T22:41:40Z","time":"2026-10-18T00:46:39Z","message":"cmd/pomerium"}
+{"level":"info","owner":"databroker-config","time":"2026-10-18T00:46:39Z","message":"creating outbound client connection"}
+{"level":"info","service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:39Z","message":"config: updated config"}
+{"level":"info","server-name":"all","owner":"mcp-extproc","time":"2026-10-18T00:46:39Z","message":"creating outbound client connection"}
+{"level":"info","time":"2026-10-18T00:46:39Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","time":"2026-10-18T00:46:39Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","grpc-port":"41603","http-port":"35719","outbound-port":"40481","metrics-port":"34287","debug-port":"46847","health-addr":"127.0.0.1:28080","acme-tls-alpn-port":"41043","time":"2026-10-18T00:46:39Z","message":"server started"}
+{"level":"info","owner":"authenticate","time":"2026-10-18T00:46:40Z","message":"creating outbound client connection"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"enabled authenticate service"}
+{"level":"info","owner":"authorize","time":"2026-10-18T00:46:40Z","message":"creating outbound client connection"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"enabled authorize service"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"re-using previous sync queriers"}
+{"level":"info","component":"databroker-clustered-server","time":"2026-10-18T00:46:40Z","message":"disabling leader election"}
+{"level":"info","component":"databroker-clustered-server","time":"2026-10-18T00:46:40Z","message":"node is not part of a cluster"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"enabled databroker service"}
+{"level":"info","owner":"registry","time":"2026-10-18T00:46:40Z","message":"creating outbound client connection"}
+{"level":"info","owner":"proxy","time":"2026-10-18T00:46:40Z","message":"creating outbound client connection"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"enabled proxy service"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"databroker/backend: initializing new in-memory store"}
+{"level":"info","service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:40Z","message":"config: updated config"}
+{"level":"info","component":"databroker.fastforward","syncer-id":"databroker","records":0,"service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:40Z","message":"config: updated config"}
+{"level":"info","component":"databroker.fastforward","syncer-id":"databroker","records":0,"time":"2026-10-18T00:46:40Z","message":"re-using previous sync queriers"}
+{"level":"info","component":"databroker.fastforward","syncer-id":"databroker","records":0,"service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:40Z","message":"config: updated config"}
+{"level":"info","service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:40Z","message":"config: updated config"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:40Z","message":"config: updated config"}
+{"level":"info","component":"databroker.fastforward","syncer-id":"databroker","records":0,"time":"2026-10-18T00:46:40Z","message":"re-using previous sync queriers"}
+{"level":"info","service":"all","config":"databroker","checksum":"41b24d46a77c2df0","time":"2026-10-18T00:46:40Z","message":"config: updated config"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"re-using previous sync queriers"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"re-using previous sync queriers"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"sd_notify notifications disabled, no socket available"}
+{"level":"info","time":"2026-10-18T00:46:40Z","message":"re-using previous sync queriers"}
+{"level":"info","record-type":"type.googleapis.com/session.Session","record-count":0,"latest-record-version":0,"time":"2026-10-18T00:46:41Z","message":"storage/sync-querier: synced latest records"}
+{"level":"info","record-type":"pomerium.io/DirectoryGroup","record-count":0,"latest-record-version":0,"time":"2026-10-18T00:46:41Z","message":"storage/sync-querier: synced latest records"}
+{"level":"info","record-type":"type.googleapis.com/user.User","record-count":0,"latest-record-version":0,"time":"2026-10-18T00:46:41Z","message":"storage/sync-querier: synced latest records"}
+{"level":"info","record-type":"pomerium.io/DirectoryUser","record-count":0,"latest-record-version":0,"time":"2026-10-18T00:46:41Z","message":"storage/sync-querier: synced latest records"}
+{"level":"info","record-type":"type.googleapis.com/user.ServiceAccount","record-count":0,"latest-record-version":0,"time":"2026-10-18T00:46:41Z","message":"storage/sync-querier: synced latest records"}

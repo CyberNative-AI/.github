@@ -1,0 +1,16 @@
+nginx version: nginx/1.31.7
+built by gcc 12.5.0 (GCC) 
+built with OpenSSL 3.5.9 29 Sep 2026
+TLS SNI support enabled
+configure arguments: --prefix=/opt/bitnami/nginx --with-http_stub_status_module --with-stream --with-http_gzip_static_module --with-mail --with-http_realip_module --with-http_stub_status_module --with-http_v2_module --with-http_ssl_module --with-mail_ssl_module --with-http_gunzip_module --with-threads --with-http_auth_request_module --with-http_sub_module --with-http_geoip_module --with-compat --with-stream_realip_module --with-stream_ssl_module --with-stream_ssl_preread_module --with-cc-opt=-Wno-stringop-overread --add-module=/bitnami/blacksmith-sandox/nginx-module-vts-0.2.7 --add-dynamic-module=/bitnami/blacksmith-sandox/nginx-module-geoip2-3.4.0 --add-module=/bitnami/blacksmith-sandox/nginx-module-substitutions-filter-0.20220124.0 --add-dynamic-module=/bitnami/blacksmith-sandox/nginx-module-brotli-0.20231009.0 --add-dynamic-module=/bitnami/blacksmith-sandox/nginx-module-http-dav-1.31.7 --add-dynamic-module=/bitnami/blacksmith-sandox/nginx-module-njs-0.9.9/nginx
+NAME="VMware Photon OS"
+VERSION="5.0"
+ID=photon
+VERSION_ID=5.0
+PRETTY_NAME="VMware Photon OS/Linux"
+ANSI_COLOR="1;34"
+HOME_URL="https://vmware.github.io/photon/"
+BUG_REPORT_URL="https://github.com/vmware/photon/issues"
+OpenSSL 3.5.9 29 Sep 2026 (Library: OpenSSL 3.5.9 29 Sep 2026)
+
+--stderr--

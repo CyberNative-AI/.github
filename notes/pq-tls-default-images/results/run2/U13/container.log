@@ -1,0 +1,12 @@
+
+[38;5;6mnginx [38;5;5m00:47:10.34 [0m[38;5;2mINFO [0m ==> 
+[38;5;6mnginx [38;5;5m00:47:10.34 [0m[38;5;2mINFO [0m ==> [1mWelcome to the Bitnami nginx container[0m
+[38;5;6mnginx [38;5;5m00:47:10.34 [0m[38;5;2mINFO [0m ==> 
+[38;5;6mnginx [38;5;5m00:47:10.36 [0m[38;5;2mINFO [0m ==> ** Starting NGINX setup **
+[38;5;6mnginx [38;5;5m00:47:10.38 [0m[38;5;2mINFO [0m ==> Validating settings in NGINX_* env vars
+[38;5;6mnginx [38;5;5m00:47:10.38 [0m[38;5;3mWARN [0m ==> The certificates directories '/opt/bitnami/nginx/conf/bitnami/certs' does not exist or is not writable, skipping sample HTTPS certificates generation
+[38;5;6mnginx [38;5;5m00:47:10.39 [0m[38;5;2mINFO [0m ==> No custom scripts in /docker-entrypoint-initdb.d
+[38;5;6mnginx [38;5;5m00:47:10.40 [0m[38;5;2mINFO [0m ==> Initializing NGINX
+realpath: /bitnami/nginx/conf/vhosts: No such file or directory
+[38;5;6mnginx [38;5;5m00:47:10.42 [0m[38;5;2mINFO [0m ==> ** NGINX setup finished! **
+[38;5;6mnginx [38;5;5m00:47:10.43 [0m[38;5;2mINFO [0m ==> ** Starting NGINX **

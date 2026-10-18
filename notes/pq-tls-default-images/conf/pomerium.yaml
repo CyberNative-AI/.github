@@ -1,0 +1,10 @@
+address: ":8443"
+certificate_file: /certs/cert.pem
+certificate_key_file: /certs/key.pem
+shared_secret: "dGVzdC1vbmx5LXNoYXJlZC1zZWNyZXQtMzJieXRlcyE="
+cookie_secret: "dGVzdC1vbmx5LWNvb2tpZS1zZWNyZXQtMzJieXRlcyE="
+authenticate_service_url: "https://authenticate.probe.test:8443"
+routes:
+  - from: "https://probe.test"
+    to: "http://127.0.0.1:9"
+    allow_public_unauthenticated_access: true

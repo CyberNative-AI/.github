@@ -1,0 +1,13 @@
+Version:      3.7.15
+Codename:     langres
+Go version:   go1.26.9
+Built:        2026-10-15T14:33:48Z
+OS/Arch:      linux/amd64
+NAME="Alpine Linux"
+ID=alpine
+VERSION_ID=3.24.2
+PRETTY_NAME="Alpine Linux v3.24"
+HOME_URL="https://alpinelinux.org/"
+BUG_REPORT_URL="https://gitlab.alpinelinux.org/alpine/aports/-/issues"
+
+--stderr--

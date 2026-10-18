@@ -1,0 +1,8 @@
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Oct 18 00:46:33.613546 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Oct 18 00:46:33.613885 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using 172.22.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Oct 18 00:46:33.617770 2026] [ssl:warn] [pid 1:tid 1] AH01906: www.example.com:443:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sun Oct 18 00:46:33.617782 2026] [ssl:warn] [pid 1:tid 1] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
+[Sun Oct 18 00:46:33.619800 2026] [mpm_event:notice] [pid 1:tid 1] AH00489: Apache/2.4.69 (Unix) OpenSSL/3.5.7 configured -- resuming normal operations
+[Sun Oct 18 00:46:33.619820 2026] [core:notice] [pid 1:tid 1] AH00094: Command line: 'httpd -D FOREGROUND'

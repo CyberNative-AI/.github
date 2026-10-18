@@ -1,0 +1,52 @@
+HAProxy version 3.4.7-8872a26 2026/10/14 - https://haproxy.org/
+Status: long-term supported branch - will stop receiving fixes around Q2 2031.
+Known bugs: http://www.haproxy.org/bugs/bugs-3.4.7.html
+Running on: Linux 6.8.0-147-generic #147-Ubuntu SMP PREEMPT_DYNAMIC Thu Sep 24 11:33:16 UTC 2026 x86_64
+Build options : 
+  TARGET  = linux-glibc
+  CC      = cc
+  CFLAGS  = -O2 -g -fwrapv -fvect-cost-model=very-cheap
+  OPTIONS = USE_PTHREAD_EMULATION=1 USE_GETADDRINFO=1 USE_OPENSSL=1 USE_LUA=1 USE_QUIC=1 USE_PROMEX=1 USE_PCRE2=1 USE_PCRE2_JIT=1
+  DEBUG   = 
+
+Feature list : -51DEGREES +ACCEPT4 +ACME +BACKTRACE -CLOSEFROM +CPU_AFFINITY +CRYPT_H -DEVICEATLAS +DL -ECH -ENGINE +EPOLL -EVPORTS +GETADDRINFO +HAVE_TCP_MD5SIG -KQUEUE +KTLS -LIBATOMIC +LIBCRYPT +LINUX_CAP +LINUX_SPLICE +LINUX_TPROXY +LUA +MATH -MEMORY_PROFILING +NETFILTER +NS -OBSOLETE_LINKER +OPENSSL -OPENSSL_AWSLC -OPENSSL_WOLFSSL -OT -PCRE +PCRE2 +PCRE2_JIT -PCRE_JIT +POLL +PRCTL -PROCCTL +PROMEX +PTHREAD_EMULATION +QUIC -QUIC_OPENSSL_COMPAT +RT +SHM_OPEN +SLZ +SSL -STATIC_PCRE -STATIC_PCRE2 +TFO +THREAD +THREAD_DUMP +TPROXY +TRACE -WURFL -ZLIB
+Detected feature list : +HAVE_WORKING_TCP_MD5SIG
+
+Default settings :
+  bufsize = 16384, maxrewrite = 1024, maxpollevents = 200
+
+Built with multi-threading support (MAX_TGROUPS=32, MAX_THREADS=1024, default=16).
+Built with SSL library version : OpenSSL 3.5.7 9 Jun 2026
+Running on SSL library version : OpenSSL 3.5.7 9 Jun 2026
+SSL library supports TLS extensions : yes
+SSL library supports SNI : yes
+SSL library default verify directory : /usr/lib/ssl/certs
+SSL library supports : TLSv1.0 TLSv1.1 TLSv1.2 TLSv1.3
+OpenSSL providers loaded : default
+QUIC: connection sock-per-conn mode support : yes
+QUIC: GSO emission support : yes
+Built with Lua version : Lua 5.4.7
+Built with the Prometheus exporter as a service
+Built with network namespace support.
+Built with libslz for stateless compression.
+Compression algorithms supported : identity("identity"), deflate("deflate"), raw-deflate("deflate"), gzip("gzip")
+Built with transparent proxy support using: IP_TRANSPARENT IPV6_TRANSPARENT IP_FREEBIND
+Built with PCRE2 version : 10.46 2025-08-27
+PCRE2 library supports JIT : yes
+Encrypted password support via crypt(3): yes
+Built with gcc compiler version 14.2.0
+
+Available polling systems :
+      epoll : pref=300,  test result OK
+PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+NAME="Debian GNU/Linux"
+VERSION_ID="13"
+VERSION="13 (trixie)"
+VERSION_CODENAME=trixie
+DEBIAN_VERSION_FULL=13.7
+ID=debian
+HOME_URL="https://www.debian.org/"
+SUPPORT_URL="https://www.debian.org/support"
+BUG_REPORT_URL="https://bugs.debian.org/"
+
+--stderr--

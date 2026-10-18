@@ -1,0 +1,144 @@
+
+--stderr--
+2026/10/18 00:30:22 [warn] ulimit is currently set to "1024". For better performance set it to at least "4096" using "ulimit -n"
+2026/10/18 00:30:22 [warn] ulimit is currently set to "1024". For better performance set it to at least "4096" using "ulimit -n"
+2026/10/18 00:30:22 [notice] 1#0: [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found
+2026/10/18 00:30:25 [notice] 1#0: [lua] init.lua:1089: init(): [request-debug] token for request debugging: 041ea180-3c92-4417-aa94-84ca5ecff095
+2026/10/18 00:30:25 [notice] 1#0: using the "epoll" event method
+2026/10/18 00:30:25 [notice] 1#0: openresty/1.29.2.5
+2026/10/18 00:30:25 [notice] 1#0: OS: Linux 6.8.0-147-generic
+2026/10/18 00:30:25 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1024:524288
+2026/10/18 00:30:25 [notice] 1#0: start worker processes
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2980
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2981
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2982
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2983
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2984
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2985
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2986
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2987
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2988
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2989
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2990
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2991
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2992
+2026/10/18 00:30:25 [notice] 2980#0: *1 [lua] broker.lua:215: init(): event broker is ready to accept connections on worker #0, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2983#0: *4 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2980#0: *1 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2982#0: *3 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2981#0: *2 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2993
+2026/10/18 00:30:25 [notice] 2984#0: *5 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2986#0: *7 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2987#0: *8 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2985#0: *6 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2994
+2026/10/18 00:30:25 [notice] 2989#0: *10 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2990#0: *11 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2988#0: *9 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 1#0: start worker process 2995
+2026/10/18 00:30:25 [notice] 2991#0: *12 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2992#0: *13 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2984#0: *5 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2986#0: *7 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2984#0: *5 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.002 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2984#0: *5 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.004 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2980#0: *1 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2980#0: *1 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.002 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2985#0: *6 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2981#0: *2 [lua] init.lua:284: purge(): [DB cache] purging (local) cache, context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2981#0: *2 [lua] init.lua:284: purge(): [DB cache] purging (local) cache, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2984#0: *5 [lua] globalpatches.lua:98: sleep(): executing a blocking 'sleep' (0.008 seconds), context: init_worker_by_lua*
+2026/10/18 00:30:25 [notice] 2981#0: *2 [kong] init.lua:739 declarative config loaded from /kong/kong.yml, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2985#0: *6 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2985#0: *6 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2986#0: *7 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2986#0: *7 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2990#0: *11 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2984#0: *5 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2990#0: *11 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2984#0: *5 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2987#0: *8 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2993#0: *14 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2987#0: *8 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2980#0: *1 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2980#0: *1 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2981#0: *2 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2981#0: *2 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2989#0: *10 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2983#0: *4 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2988#0: *9 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2983#0: *4 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2988#0: *9 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2989#0: *10 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2982#0: *3 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2982#0: *3 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2994#0: *15 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2991#0: *12 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2992#0: *13 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2991#0: *12 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2992#0: *13 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2993#0: *14 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2993#0: *14 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2995#0: *16 [lua] license_helpers.lua:210: read_license_info(): [license-helpers] could not decode license JSON: No license found, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2994#0: *15 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:26 [notice] 2994#0: *15 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:27 [notice] 2995#0: *16 [kong] events.lua:503 [ace] building initial operations router, context: init_worker_by_lua*
+2026/10/18 00:30:27 [notice] 2995#0: *16 [kong] events.lua:510 [ace] registering operations router events., context: init_worker_by_lua*
+2026/10/18 00:30:28 [warn] 2986#0: *45 [lua] license_helpers.lua:322: log_license_state(): Kong Gateway is running in READ ONLY mode. Add a valid license to enable all functionality. Configuration will not be loaded without a valid license in a future release., context: ngx.timer
+2026/10/18 00:30:28 [notice] 2987#0: *56 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2990#0: *58 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *59 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *59 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2987#0: *56 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2990#0: *58 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2986#0: *64 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2986#0: *64 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2984#0: *65 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2984#0: *65 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2989#0: *68 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2989#0: *68 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2983#0: *3671 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2983#0: *3671 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2987#0: *25 [lua] worker.lua:304: communicate(): worker #7 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *3705 [lua] broker.lua:263: run(): worker #7 connected to events broker (worker pid: 2987), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2980#0: *32 [lua] worker.lua:304: communicate(): worker #0 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *3708 [lua] broker.lua:263: run(): worker #0 connected to events broker (worker pid: 2980), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2984#0: *27 [lua] worker.lua:304: communicate(): worker #4 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *3704 [lua] broker.lua:263: run(): worker #4 connected to events broker (worker pid: 2984), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2990#0: *26 [lua] worker.lua:304: communicate(): worker #10 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *3706 [lua] broker.lua:263: run(): worker #10 connected to events broker (worker pid: 2990), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2986#0: *29 [lua] worker.lua:304: communicate(): worker #6 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *3703 [lua] broker.lua:263: run(): worker #6 connected to events broker (worker pid: 2986), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2980#0: *3707 [lua] broker.lua:263: run(): worker #3 connected to events broker (worker pid: 2983), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2983#0: *31 [lua] worker.lua:304: communicate(): worker #3 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2991#0: *4537 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2991#0: *4537 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2988#0: *4541 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2988#0: *4541 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2982#0: *4713 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2982#0: *4713 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2991#0: *4530 [lua] worker.lua:304: communicate(): worker #11 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *4547 [lua] broker.lua:263: run(): worker #2 connected to events broker (worker pid: 2982), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2980#0: *4534 [lua] broker.lua:263: run(): worker #11 connected to events broker (worker pid: 2991), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2982#0: *4536 [lua] worker.lua:304: communicate(): worker #2 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2988#0: *4522 [lua] worker.lua:304: communicate(): worker #8 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *4526 [lua] broker.lua:263: run(): worker #8 connected to events broker (worker pid: 2988), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:28 [notice] 2989#0: *28 [lua] worker.lua:304: communicate(): worker #9 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:28 [notice] 2980#0: *3709 [lua] broker.lua:263: run(): worker #9 connected to events broker (worker pid: 2989), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:29 [notice] 2993#0: *6468 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2993#0: *6468 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2992#0: *6918 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2992#0: *6918 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2993#0: *6463 [lua] worker.lua:304: communicate(): worker #13 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2980#0: *6467 [lua] broker.lua:263: run(): worker #13 connected to events broker (worker pid: 2993), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:29 [notice] 2992#0: *6560 [lua] worker.lua:304: communicate(): worker #12 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2980#0: *6648 [lua] broker.lua:263: run(): worker #12 connected to events broker (worker pid: 2992), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:29 [notice] 2994#0: *7758 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2994#0: *7758 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2994#0: *7754 [lua] worker.lua:304: communicate(): worker #14 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2980#0: *7757 [lua] broker.lua:263: run(): worker #14 connected to events broker (worker pid: 2994), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:30:29 [notice] 2985#0: *8404 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2985#0: *8404 [kong] setup.lua:209 finished warming up targets DNS entries and and initial identity tokens, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2985#0: *8400 [lua] worker.lua:304: communicate(): worker #5 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:30:29 [notice] 2980#0: *8402 [lua] broker.lua:263: run(): worker #5 connected to events broker (worker pid: 2985), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"

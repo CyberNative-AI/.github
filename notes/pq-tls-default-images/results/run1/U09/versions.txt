@@ -1,0 +1,20 @@
+Kong Enterprise 3.16.0.1
+nginx version: openresty/1.29.2.5
+built with OpenSSL 3.5.8 25 Aug 2026
+TLS SNI support enabled
+configure arguments: --prefix=/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.build_tmpdir/openresty/nginx --with-cc-opt='-O2 -I/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/pcre/include -I/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/luajit/include -I/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/openssl/include' --add-module=../ngx_devel_kit-0.3.4 --add-module=../echo-nginx-module-0.64 --add-module=../ngx_lua-0.10.31rc2 --add-module=../headers-more-nginx-module-0.39 --add-module=../ngx_stream_lua-0.0.19rc3 --with-ld-opt='-Wl,-rpath,/usr/local/openresty/luajit/lib -L/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/pcre/lib -L/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/luajit/lib -L/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/openssl/lib -L/github/home/.bazel/execroot/_main/bazel-out/k8-opt/bin/external/openresty/openresty.ext_build_deps/lib -Wl,-rpath,/usr/local/kong/lib -Wl,-rpath,/usr/local/openresty/lualib' --with-pcre-jit --with-http_ssl_module --with-http_sub_module --with-http_realip_module --with-http_stub_status_module --with-http_v2_module --with-stream_realip_module --with-stream_ssl_preread_module --add-module=/github/home/.bazel/execroot/_main/external/lua-kong-nginx-module --add-module=/github/home/.bazel/execroot/_main/external/lua-kong-nginx-module/stream --add-module=/github/home/.bazel/execroot/_main/external/lua-resty-lmdb --add-module=/github/home/.bazel/execroot/_main/external/lua-resty-events --add-module=/github/home/.bazel/execroot/_main/external/ngx_brotli --with-stream --with-stream_ssl_module
+PRETTY_NAME="Ubuntu 26.04.1 LTS"
+NAME="Ubuntu"
+VERSION_ID="26.04"
+VERSION="26.04.1 LTS (Resolute Raccoon)"
+VERSION_CODENAME=resolute
+ID=ubuntu
+ID_LIKE=debian
+HOME_URL="https://www.ubuntu.com/"
+SUPPORT_URL="https://help.ubuntu.com/"
+BUG_REPORT_URL="https://bugs.launchpad.net/ubuntu/"
+PRIVACY_POLICY_URL="https://www.ubuntu.com/legal/terms-and-policies/privacy-policy"
+UBUNTU_CODENAME=resolute
+LOGO=ubuntu-logo
+
+--stderr--

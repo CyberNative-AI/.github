@@ -1,0 +1,75 @@
+2026/10/18 00:47:15 [warn] ulimit is currently set to "1024". For better performance set it to at least "4096" using "ulimit -n"
+2026/10/18 00:47:15 [warn] ulimit is currently set to "1024". For better performance set it to at least "4096" using "ulimit -n"
+2026/10/18 00:47:15 [warn] 1#0: the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /usr/local/kong/nginx.conf:7
+nginx: [warn] the "user" directive makes sense only if the master process runs with super-user privileges, ignored in /usr/local/kong/nginx.conf:7
+2026/10/18 00:47:16 [notice] 1#0: [lua] init.lua:794: init(): [request-debug] token for request debugging: cd5f868f-86ce-4373-a4f4-fc4c0c0eb909
+2026/10/18 00:47:16 [notice] 1#0: using the "epoll" event method
+2026/10/18 00:47:16 [notice] 1#0: openresty/1.25.3.2
+2026/10/18 00:47:16 [notice] 1#0: OS: Linux 6.8.0-147-generic
+2026/10/18 00:47:16 [notice] 1#0: getrlimit(RLIMIT_NOFILE): 1024:524288
+2026/10/18 00:47:16 [notice] 1#0: start worker processes
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1405
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1406
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1407
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1408
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1409
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1410
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1411
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1412
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1413
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1414
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1415
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1416
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1417
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1418
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1419
+2026/10/18 00:47:16 [notice] 1405#0: *1 [lua] broker.lua:215: init(): event broker is ready to accept connections on worker #0, context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1#0: start worker process 1420
+2026/10/18 00:47:16 [notice] 1408#0: *4 [lua] init.lua:266: purge(): [DB cache] purging (local) cache, context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1407#0: *3 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1408#0: *4 [lua] init.lua:266: purge(): [DB cache] purging (local) cache, context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1408#0: *4 [kong] init.lua:590 declarative config loaded from /kong/kong.yml, context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1409#0: *5 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1405#0: *1 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1409#0: *5 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1418#0: *12 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1417#0: *10 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1409#0: *5 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.002 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1406#0: *2 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1407#0: *3 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.001 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1418#0: *12 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.002 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1417#0: *10 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.002 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1417#0: *10 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.004 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:16 [notice] 1406#0: *2 [lua] globalpatches.lua:75: sleep(): executing a blocking 'sleep' (0.002 seconds), context: init_worker_by_lua*
+2026/10/18 00:47:17 [notice] 1408#0: *18 [lua] worker.lua:304: communicate(): worker #3 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1413#0: *665 [lua] worker.lua:304: communicate(): worker #8 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1420#0: *660 [lua] worker.lua:304: communicate(): worker #15 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *1318 [lua] broker.lua:263: run(): worker #3 connected to events broker (worker pid: 1408), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1405#0: *1343 [lua] worker.lua:304: communicate(): worker #0 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *1323 [lua] broker.lua:263: run(): worker #8 connected to events broker (worker pid: 1413), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1405#0: *1321 [lua] broker.lua:263: run(): worker #15 connected to events broker (worker pid: 1420), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1405#0: *3337 [lua] broker.lua:263: run(): worker #0 connected to events broker (worker pid: 1405), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1410#0: *1542 [lua] worker.lua:304: communicate(): worker #5 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *3338 [lua] broker.lua:263: run(): worker #5 connected to events broker (worker pid: 1410), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1407#0: *2195 [lua] worker.lua:304: communicate(): worker #2 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *3340 [lua] broker.lua:263: run(): worker #2 connected to events broker (worker pid: 1407), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1416#0: *4135 [lua] worker.lua:304: communicate(): worker #11 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *4185 [lua] broker.lua:263: run(): worker #11 connected to events broker (worker pid: 1416), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1415#0: *1771 [lua] worker.lua:304: communicate(): worker #10 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *3339 [lua] broker.lua:263: run(): worker #10 connected to events broker (worker pid: 1415), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1412#0: *5162 [lua] worker.lua:304: communicate(): worker #7 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *5165 [lua] broker.lua:263: run(): worker #7 connected to events broker (worker pid: 1412), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1409#0: *5168 [lua] worker.lua:304: communicate(): worker #4 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *5176 [lua] broker.lua:263: run(): worker #4 connected to events broker (worker pid: 1409), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1418#0: *5173 [lua] worker.lua:304: communicate(): worker #13 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *5177 [lua] broker.lua:263: run(): worker #13 connected to events broker (worker pid: 1418), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1406#0: *5311 [lua] worker.lua:304: communicate(): worker #1 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *5359 [lua] broker.lua:263: run(): worker #1 connected to events broker (worker pid: 1406), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1419#0: *5673 [lua] worker.lua:304: communicate(): worker #14 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *5805 [lua] broker.lua:263: run(): worker #14 connected to events broker (worker pid: 1419), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1417#0: *6688 [lua] worker.lua:304: communicate(): worker #12 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *6799 [lua] broker.lua:263: run(): worker #12 connected to events broker (worker pid: 1417), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1411#0: *8815 [lua] worker.lua:304: communicate(): worker #6 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *9024 [lua] broker.lua:263: run(): worker #6 connected to events broker (worker pid: 1411), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
+2026/10/18 00:47:17 [notice] 1414#0: *9026 [lua] worker.lua:304: communicate(): worker #9 is ready to accept events from unix:/usr/local/kong/sockets/we, context: ngx.timer
+2026/10/18 00:47:17 [notice] 1405#0: *9029 [lua] broker.lua:263: run(): worker #9 connected to events broker (worker pid: 1414), client: unix:, server: kong_worker_events, request: "GET / HTTP/1.1", host: "localhost"
