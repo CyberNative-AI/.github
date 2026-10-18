@@ -1,0 +1,79 @@
+post,quote_1,quote_2,real_contradiction,source,material,kind,plain_request_found,reviewer_note
+1,"Thomas Richman was born on June 16, 1848",listing him at age 23 as a worker in a woolen mill,no,-,-,-,-,"record report (census age), not own-voice age"
+1,"Louisa (age 4), Elizabeth (age 3), and an infant named Ann",Elizabeth A. Richmond (age 5),no,-,-,-,-,record ages (ship list vs census)
+2,"was born on November 28, 1853","Henry Austin Carringer followed on November 30, 1946, at the age of 93 years and 4 days",yes,copied from notes,-,-,-,"the notes have birth 28 Nov 1853 and Bible 'Henry Austin Carringer, 93 yrs, 4 days'"
+3,Her grandsons,Betty would be Georgianna's only grandchild,yes,introduced,yes,relationship,yes,calls great-grandsons grandsons while stating Betty is the only grandchild; notes: great-grandmother
+4,fifteen-year-old Hannah was living at home with her parents,"Hannah Rich was born on April 16, 1824",yes,copied from notes,-,-,-,the notes have 1841 census 'Hannah Rich - age 15' and birth 16 April 1824
+4,"On September 4, 1845, twenty-year-old Hannah married James Richman","Hannah Rich was born on April 16, 1824",yes,copied from notes,-,-,-,the notes have marriage record 'Age: Full age; 20' and birth 16 April 1824
+4,"Their first son, Thomas, was born on June 10, 1848","James (7), Thomas (6)",yes,copied from notes,-,-,-,"own-voice 'James (7), Thomas (6)' vs Thomas b.1848 older; the notes have manifest ages and births"
+4,"Two more children were born in America: Hannah Rebecca in 1858 and John Henry in 1865, both in Rhode Island.","where their youngest child, Charles Edwin, was born in Grosvenor Dale, Windham County",no,-,-,-,-,'Two more children were born in America' reads as narrative sequence in the Rhode Island section; not an exclusive count
+4,had lived to see seven of her nine children reach adulthood,"Her daughter Louisa remained unmarried and lived on the family farm, caring for her aging parents.",yes,introduced,yes,count or span,yes,"'seven of her nine children reach adulthood' vs the biography's own account: Ann died 1853, seven married + Louisa unmarried = 8 adults; the notes have obituary 'leaves seven children' (survivors, not the same claim)"
+4,had been married to James for an remarkable 66 years,"On September 4, 1845, twenty-year-old Hannah married James Richman",no,-,-,-,-,66 years vs 65 y 11 m: imprecise
+4,"At age 85 in 1910, Hannah had been married for 64 years",had been married to James for an remarkable 66 years,no,-,-,-,-,64 in 1910 vs 66 at death: rounding within a year
+4,She was 86 years old,"Hannah Rich was born on April 16, 1824",yes,copied from notes,-,-,-,86 at death vs born 1824/died 1911; the notes hold both (fact-list birth + obituary age 86)
+5,Henry Arnold White was born around 1824,The 1880 census shows him at age 54,no,-,-,-,-,census age report
+6,Amy Frances Oatley was born in 1826 in South Kingstown,when she died at the young age of 36 in Norwich,yes,copied from notes,-,-,-,died at 36 vs born 1826; the notes hold both (index age 36 + 1826 birth)
+6,Her death left Henry to raise five children ranging in age from 5,Frederick J. White (April 1860 - ????),yes,copied from notes,-,-,-,five children ages 5 to 19 vs Frederick b. Apr 1860: same sentence in notes
+6,Their surviving children were:,"this baby girl lived only briefly, dying in infancy.",yes,introduced,yes,count or span,no,list headed surviving children includes a daughter who died in infancy
+6,only four would survive to adulthood,who all established their own families,no,-,-,-,-,not decidable from quotes
+7,"Harvey Edgar Carringer was born on May 6,","Carringer was born August 1852, age 47",no,-,-,-,-,census report
+7,"Harvey Edgar Carringer was born on May 6,","Harvey was 9, Henry was 7",yes,copied from notes,-,-,-,own-voice 'was 9' in 1860 vs b.1852; notes census age 9 + birth year
+7,"Effie Eva Carringer was born on November 24,","at just 15 years, 6 months, and 12 days of age",yes,introduced,no,age or date,yes,"the notes have the age and death date but birth year 1858 only, not 24 Nov 1858"
+7,"41, D.J. worked alongside his wife Rebecca (38) and their sons Harvey",was 72 and Rebecca was 71,no,-,-,-,-,census reports
+7,"Carringer was born on November 4, 1828, in","age 73 years, 2 months, and 17 days",yes,introduced,no,age or date,yes,73 y 2 m 17 d vs dates (16 d); not in blog notes
+8,"It was there that their daughter Effie Eva Carringer was born on November 24, 1858.","On June 8, 1874, their beloved daughter Effie died at just 15 years, 6 months, and 12 days old.",yes,copied from notes,-,-,-,Effie 15 y 6 m 12 d vs dates; same in notes
+9,Through her 87 years,"She was 86 years, 10 months, and 14 days old.",no,-,-,-,-,87 years vs 86 y 10 m: rounding
+10,leaving her a widow at the age of 48,"Census reveals that Elizabeth, then 58, shared her home with Lucy",no,-,-,-,-,census report
+10,Elizabeth retained a small plot of land with a home,her entire dower interest in her late husband's estate,no,-,-,-,-,"sequential: kept plot 1840, sold dower 1841; compatible"
+11,child among nine children,"her eight siblings: Silas (1784-1863), Martha (1787-1872), Pliny",yes,copied from notes,-,-,-,the notes have 'sixth child (of nine children)' and the same seven-name sibling list
+11,"Augustus Brigham, born 26 May 1820","widow with two young sons, aged 14 and 4",yes,introduced,no,age or date,yes,"Augustus b. 26 May 1820 was 13 on 5 May 1834, text says 14"
+11,"Sophia Newton, born 14 September 1834, Springfield, Windsor,","Newton and was born in Springfield, Windham County, Vermont",yes,introduced,yes,place,yes,Springfield in Windsor County vs Windham County
+11,"Sophia Buck entered the world on May 3, 1797","at the remarkable age of 86 years, 7 months, and 3 days",yes,introduced,yes,age or date,yes,"born 3 May 1797, died 6 Jan 1882 = 84, text says 86 y 7 m 3 d"
+14,heartbreak with the deaths of two infant sons both named John Rich,"The second son, William, was born before December 9, 1821",yes,introduced,yes,relationship,yes,"two infant sons both named John, then the second is William"
+14,"The first John was born before November 22, 1818",but died at age four before 1822,yes,copied from notes,-,-,-,"born 1818, died at four before 1822: same in notes"
+14,"13, 7, and 4 years old respectively","Hannah Rich (born April 16, 1824)",yes,introduced,no,age or date,yes,"ages 13/7/4 on 19 Feb 1837 vs stated births (12/6/3); one sentence, three ages"
+14,"13, 7, and 4 years old respectively","William Rich (born March 11, 1830)",yes,introduced,no,age or date,yes,"stated age 7 on 19 Feb 1837 vs born 11 Mar 1830 (6); one sentence, three ages"
+14,"13, 7, and 4 years old respectively","Samuel Rich (born February 28, 1833)",yes,introduced,no,age or date,yes,"stated age 4 on 19 Feb 1837 vs born 28 Feb 1833 (3); one sentence, three ages"
+14,likely born in late 1788,"Rebecca (listed as ""Rebecka"" and aged 55)",no,-,-,-,-,hedged birth + census age
+14,"Listed at age 75, she and John, now 70","Rebecca Rich died on March 7, 1862, at the remarkable age of 74",no,-,-,-,-,census age report
+14,the great emigrations that took three of her children to America,"emigrated to America, where she died in 1882 in Minonk, Illinois",yes,introduced,yes,count or span,yes,three children to America vs Ann also emigrated and died in Illinois (four)
+15,"In 1834, when Jonathan was 44 years old, he made the momentous","Killingly around May 1, 1834",no,-,-,-,-,"in 1834 when 44: he turned 44 in July 1834, imprecise"
+15,After thirty-one years of marriage,"were married on May 29, 1813, in Exeter, just months after their",yes,introduced,yes,count or span,yes,"thirty-one years of marriage vs married May 1813, wife died Feb 1865 (51)"
+15,"Joseph, now 55, had followed his",(1816-1898): Married Cynthia Taft in 1838,yes,copied from notes,-,-,-,"own-voice 'Joseph, now 55' vs b.1816; notes census 55 + birth"
+16,as she would spend her remaining years in this western Pennsylvania,"After Daniel's death, Elizabeth moved to Conneautville, Crawford",no,-,-,-,-,"'remaining years in this western Pennsylvania community': Conneautville, Crawford Co. is also western PA; compatible reading"
+17,"Together, they had six children, all born in Aurora between 1839 and 1854","moved from New York to Burnett township, Dodge County, Wisconsin, before 1854",yes,copied from notes,-,-,-,born in Aurora 1854 vs moved before 1854: same in notes (Amos)
+17,"Samuel Vaux was born on January 14, 1816","Samuel, now 51",yes,copied from notes,-,-,-,"own-voice 'Samuel, now 51' vs b. Jan 1816; notes census 51 + birth"
+17,their four young children,"Elizabeth B. Vaux (born August 1, 1849)",no,-,-,-,-,census household report
+17,made their final major move,"The 1880 census found them living with their daughter Abigail and her family in Blue Rapids township, Marshall County, Kansas",no,-,-,-,-,'final major move' is evaluative; moving in with a daughter in old age admits a compatible reading
+19,"thirty years old, the household included Alexander (listed as age 40,","Elizabeth Putman entered the world on January 1, 1820, in Wayne,",yes,copied from notes,-,-,-,the notes have 1851 census 'age 30' and birth 1 Jan 1820
+19,"and Rachel. The family's occupation was farming, and they identified",fifteen months old in September 1849.,no,-,-,-,-,census household report
+19,"farming alone. The household had grown to include Mary Jane (age 21),","Her first child, Mary Jane, was born December 29, 1840.",no,-,-,-,-,census age report
+19,"In 1881, Elizabeth was sixty years old (listed as 60 in the","Elizabeth Putman entered the world on January 1, 1820, in Wayne,",yes,copied from notes,-,-,-,the notes have 1881 census 'age 60' and birth 1 Jan 1820
+19,"By the 1891 census, Alexander was 76 and Elizabeth 72 (though the","Elizabeth Putman entered the world on January 1, 1820, in Wayne,",no,-,-,-,-,census age report
+20,Benjamin was one of twelve children,"Lucinda Seaver (b. May 23, 1780) - the",yes,introduced,yes,count or span,yes,one of twelve children vs twelve siblings listed
+20,"On August 19, 1783, just months after the Treaty of Paris","nineteen, she was seven years Benjamin's junior",yes,introduced,no,age or date,yes,"Martha b. 18 Sep 1764 was 18 at 19 Aug 1783 marriage, text says nineteen"
+21,The Shrewsbury Years (1760-1773),"In 1772, Norman returned to Westminster",no,-,-,-,-,section range vs 1772 return: imprecise
+22,Belcher around 1732 in Framingham,Jonathan Belcher would later become his son-in-law,yes,introduced,yes,sequence,yes,Belcher married the daughter c.1732 but would later become son-in-law after 1735 suit
+23,The couple welcomed six children over sixteen years:,"Robert Seaver was born on June 7, 1670, and",yes,introduced,yes,count or span,yes,six children over sixteen years vs births 1670-1684 (14)
+23,"She married Edmund Cole on March 29, 1705, in Roxbury, and",the couple received land from Shubael and Hannah as a wedding gift,yes,copied from notes,-,-,-,wedding gift 1700 vs marriage 1705: notes call Cole son-in-law in 1700 deed
+23,"She married Edmund Cole on March 29, 1705, in Roxbury, and",their son-in-law Edmund Cole for,yes,copied from notes,-,-,-,deed to son-in-law Cole in Sep 1700 vs marriage 1705: same in notes
+23,"range, comprising forty acres. By September 1715, his holdings had","land to Ichabod Holmes in May 1710 for thirty-five pounds, apparently",yes,introduced,yes,sequence,yes,Woodstock holdings grew by Sep 1715 but he eventually sold them in May 1710
+23,while his brother Nathaniel (born 1646) married in 1671 but died,their son Nathaniel in the conflict,yes,introduced,yes,relationship,yes,"Nathaniel killed in King Philips War is his brother in one place, his son in another"
+23,"In November 1734, Patrick Gregory (Hannah's husband) sold the","sister-in-law for four hundred pounds. Subsequently, in March 1734",no,-,-,-,-,Old Style dating: March 1734 can follow November 1734
+25,from heart disease at age 55.,"Paul Frederick Schaffner was born in August 1879 in San Francisco,",yes,copied from notes,-,-,-,"died at age 55 vs born Aug 1879, died 29 May 1934 (54); notes say at the age of 55 too"
+26,"entered the world on January 6, 1826, in the small town of Herbede in Westfalen, Prussia","John, listed as age 35, was working as a farmer",no,-,-,-,-,census age report
+26,"entered the world on January 6, 1826, in the small town of Herbede in Westfalen, Prussia","John, now 55, was still working as a farmer",yes,copied from notes,-,-,-,"own-voice 'John, now 55' vs b. 6 Jan 1826; notes census 55 + birth"
+26,"Catharine Brocke was born on January 1, 1851, in Wheeling, Ohio (now West Virginia)",their daughter Catherine (age 12),no,-,-,-,-,census age report
+26,John Nicholas Brocke arrived on the last day of 1853 -- December 31 -- in Michigan,sons Nickolas (age 9),no,-,-,-,-,census age report
+26,Franklin Joseph Brocke was born around 1857,Franklin (age 6),no,-,-,-,-,census age report
+26,"Catharine Brocke was born on January 1, 1851, in Wheeling, Ohio (now West Virginia)",Kathrina (17),no,-,-,-,-,census age report
+26,John Nicholas Brocke arrived on the last day of 1853 -- December 31 -- in Michigan,"J. Nicholas (15, working as a farm laborer)",no,-,-,-,-,census age report
+27,"They endured the loss of two children—young Mathias shortly after arriving in America, and their daughter Anna in adulthood.","After Sjur's death in 1889, she also lost her daughter Anna in 1892.",no,-,-,-,-,borderline: joint they endured; Brita survived Anna. not counted (conservative)
+28,"Amelia lived the longest of all the siblings, dying on April 1, 1953","Charles died in 1961 in Genesee, Latah County, Idaho",yes,introduced,yes,sequence,yes,"Amelia lived the longest (82, d. 1953) vs Charles b. 1876 d. 1961"
+29,"Together, Jeremiah and Allethia had six children over the course of fourteen years, from 1831 to about 1842.",Jeremiah and Allethia's six known children were born between 1831 and about 1842.,yes,introduced,yes,count or span,yes,"six children over fourteen years, 1831 to about 1842 (11)"
+29,Elijah Pickrell McKnew (29 March 1836 – 4 April 1912),"He died on 4 April 1912 in San Francisco, having lived nearly 76 years",no,-,-,-,-,nearly 76 vs just turned 76: imprecise
+29,He is the only one of the children to have remained in his birthplace throughout his life.,"By the time of the 1850 United States Federal Census, Jeremiah and Sarah had moved from Prince George's County to Washington, D.C.",no,-,-,-,-,depends on census household report
+29,Jeremiah McKnew was born around 1804 in Prince George's County,The 1850 census offers a poignant snapshot of Jeremiah's life in his early forties,no,-,-,-,-,hedged birth (around 1804)
+29,Jeremiah McKnew was born around 1804 in Prince George's County,"Jeremiah McNew – age 41, male, laborer, born Maryland",no,-,-,-,-,census age report
+30,his wife Hannah Colby (1750–1791),Hannah Colby was born on 14 February 1744/5 in Amesbury,yes,introduced (no matching notes),yes,age or date,yes,Hannah Colby (1750-1791) vs born 14 Feb 1744/5; notes are about another family
+30,"a farmer, a father of seven","Between 1770 and 1779, John and Hannah welcomed six children into their Chester home",yes,introduced (no matching notes),yes,count or span,yes,father of seven vs six children named; notes are about another family

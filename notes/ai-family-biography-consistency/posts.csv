@@ -1,0 +1,31 @@
+post,url,published,biography_model,notes_url,notes_match_post,biography_has_introduced,biography_has_introduced_material,notes_have_own_conflict
+1,https://www.geneamusings.com/2025/04/abc-biography-of-thomas-richmanrichmond.html,2025-04-20,Claude 3.7,https://www.geneamusings.com/2014/01/52-ancestors-friday-thomas.html,yes,no,no,yes
+2,https://www.geneamusings.com/2025/04/abc-biography-of-12-henry-austin.html,2025-04-27,Claude 3.7,https://www.geneamusings.com/2014/01/52-ancestors-friday-henry-austin.html,yes,no,no,yes
+3,https://www.geneamusings.com/2025/05/abc-biography-of-15-georgianna-kemp.html,2025-05-07,Claude 3.7,https://www.geneamusings.com/2014/02/52-ancestors-friday-15-georgianna-kemp.html,yes,yes,yes,yes
+4,https://www.geneamusings.com/2025/05/abc-biography-of-21-hannah-rich.html,2025-05-28,Claude Sonnet 4,https://www.geneamusings.com/2014/04/52-ancestors-week-14-21-hannah-rich.html,yes,yes,yes,yes
+5,https://www.geneamusings.com/2025/06/abc-biography-of-22-henry-arnold-white.html,2025-06-01,Claude Sonnet 4,https://www.geneamusings.com/2014/04/52-ancestors-week-15-22-henry-arnold.html,yes,no,no,yes
+6,https://www.geneamusings.com/2025/06/abc-biography-of-23-amy-frances-oatley.html,2025-06-04,Claude Sonnet 4,https://www.geneamusings.com/2014/04/52-ancestors-week-16-23-amy-frances.html,yes,yes,yes,yes
+7,https://www.geneamusings.com/2025/06/abc-biography-of-24-david-jackson-dj.html,2025-06-08,Claude Sonnet 4,https://www.geneamusings.com/2014/04/52-ancestors-week-17-24-david-jackson.html,yes,yes,no,yes
+8,https://www.geneamusings.com/2025/06/abc-biography-of-25-rebecca-spangler.html,2025-06-11,Claude Sonnet 4,https://www.geneamusings.com/2014/05/52-ancestors-week-18-25-rebecca.html,yes,no,no,yes
+9,https://www.geneamusings.com/2025/06/abc-biography-of-27-abigail-vaux-smith.html,2025-06-18,Claude Sonnet 4,https://www.geneamusings.com/2014/05/52-ancestors-week-20-27-abigail-vaux.html,yes,no,no,yes
+10,https://www.geneamusings.com/2025/07/abc-biography-of-35-elizabeth-horton.html,2025-07,Claude Sonnet 4,https://www.geneamusings.com/2014/07/52-ancestors-in-52-weeks-week-28-35.html,yes,no,no,no
+11,https://www.geneamusings.com/2025/07/abc-biography-of-39-sophia-buck-brigham.html,2025-07-23,Claude Sonnet 4,https://www.geneamusings.com/2014/08/52-ancestors-in-52-weeks-week-32-39.html,yes,yes,yes,yes
+12,https://www.geneamusings.com/2025/07/abc-biography-of-40-john-richman-1788.html,2025-07-26,Claude Sonnet 4,https://www.geneamusings.com/2014/08/52-ancestors-in-52-weeks-week-33-40.html,yes,no,no,yes
+13,https://www.geneamusings.com/2025/08/abc-biography-of-49-sarah-feather.html,2025-08,Claude Sonnet 4,https://www.geneamusings.com/2014/10/52-ancestors-in-52-weeks-week-42-sarah.html,yes,no,no,yes
+14,https://www.geneamusings.com/2025/08/abc-biography-of-43-rebecca-hill-rich.html,2025-08-06,Claude Sonnet 4,https://www.geneamusings.com/2014/09/52-ancestors-in-52-weeks-week-36-43.html,yes,yes,yes,yes
+15,https://www.geneamusings.com/2025/08/abc-biography-of-46-jonathan-oatley.html,2025-08-16,Claude Sonnet 4,https://www.geneamusings.com/2014/09/52-ancestors-in-52-weeks-week-39.html,yes,yes,yes,yes
+16,https://www.geneamusings.com/2025/09/abc-biography-of-51-elizabeth-king.html,2025-09,Claude Sonnet 4,https://www.geneamusings.com/2014/10/52-ancestors-in-52-weeks-week-44-51.html,yes,no,no,yes
+17,https://www.geneamusings.com/2025/09/abc-biography-of-54-samuel-vaux-1816.html,2025-09-06,Claude Sonnet 4,https://www.geneamusings.com/2014/11/52-ancestors-in-52-weeks-week-47-54.html,yes,no,no,yes
+18,https://www.geneamusings.com/2025/09/abc-biography-of-57-anna-row-auble-1787.html,2025-09-24,Claude Sonnet 4,https://www.geneamusings.com/2014/12/52-ancestors-in-52-weeks-week-50-57.html,yes,no,no,yes
+19,https://www.geneamusings.com/2025/10/abc-biography-of-63-elizabeth-putman.html,2025-10,Claude Sonnet 4.5,https://www.geneamusings.com/2015/01/52-ancestors-in-52-weeks-week-56-63.html,yes,no,no,yes
+20,https://www.geneamusings.com/2025/11/abc-biography-of-benjamin-seaver-1757.html,2025-11-01,Claude Sonnet 4.5,https://www.geneamusings.com/2015/01/52-ancestors-in-52-weeks-week-57-64.html,yes,yes,yes,yes
+21,https://www.geneamusings.com/2025/11/abc-biography-of-norman-seaver-1734.html,2025-11-05,Claude Sonnet 4.5,https://www.geneamusings.com/2016/01/52-ancestors-week-105-128-norman-seaver.html,yes,no,no,yes
+22,https://www.geneamusings.com/2025/11/abc-biography-of-joseph-seaver-1672.html,2025-11-12,Claude Sonnet 4.5,https://www.geneamusings.com/2019/10/52-ancestors-week-301-512-joseph-seaver.html,yes,yes,yes,yes
+23,https://www.geneamusings.com/2025/11/abc-biography-of-shubael-seaver-1640.html,2025-11-15,Claude Sonnet 4.5,https://www.geneamusings.com/2025/11/genealogical-sketch-of-shubael-seaver.html,yes,yes,yes,yes
+24,https://www.geneamusings.com/2025/11/abc-biography-of-robert-seaver-1608.html,2025-11-19,Claude Sonnet 4.5,https://www.geneamusings.com/2025/11/robert-seaver-1608-1683-and-elizabeth.html,yes,no,no,no
+25,https://www.geneamusings.com/2025/12/abc-biography-of-paul-frederick.html,2025-12,Claude Sonnet 4.5,https://www.geneamusings.com/2025/12/genealogical-sketch-of-paul-frederick.html,yes,no,no,yes
+26,https://www.geneamusings.com/2026/02/abc-biography-of-john-peter-brocke-1826.html,2026-02,Claude Sonnet 4.5,https://www.geneamusings.com/2026/02/genealogical-sketch-of-john-peter.html,yes,no,no,yes
+27,https://www.geneamusings.com/2026/02/abc-biography-of-sjur-torgersen-leland.html,2026-02-04,Claude Sonnet 4.5,https://www.geneamusings.com/2026/01/genealogical-sketch-for-sjur-torgersen.html,yes,no,no,yes
+28,https://www.geneamusings.com/2026/03/abc-biography-of-ignatius-grieser-1835.html,2026-03-14,Claude Sonnet 4.5,https://www.geneamusings.com/2026/03/genealogical-sketch-of-ignatius-grieser.html,yes,yes,yes,no
+29,https://www.geneamusings.com/2026/04/abc-biography-of-jeremiah-and-allethia.html,2026-04-25,Claude Sonnet 4.6,https://www.geneamusings.com/2026/04/genealogical-sketch-of-jeremiah-mcknew.html https://www.geneamusings.com/2026/04/genealogical-sketch-of-john-charles-and.html,partly,yes,yes,no
+30,https://www.geneamusings.com/2026/05/abc-biography-of-john-and-hannah-colby.html,2026-05-02,Claude Sonnet 4.6,https://www.geneamusings.com/2026/04/genealogical-sketch-of-john-charles-and.html,no,yes,yes,not judged

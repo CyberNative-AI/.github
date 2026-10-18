@@ -1,0 +1,13 @@
+posts 30
+biography has an introduced contradiction: 13/30 = 43% (95% Wilson CI 27-61%)
+... a material one: 12/30 = 40% (95% Wilson CI 25-58%)
+without the post whose notes match no part of it: 12/29
+flagged biography items 78: real 44 (introduced 24, copied from notes 20), not upheld 34
+checking-pass precision: 44/78 = 56%
+introduced, by kind: {'age or date': 9, 'count or span': 8, 'relationship': 3, 'sequence': 3, 'place': 1}
+plain request found: 23/24 items, 12/13 posts
+missed: ['Their surviving children were:']
+notes with their own conflict: 25/29 judged
+by model: {'Claude 3.7': '1/3', 'Claude Sonnet 4': '6/15', 'Claude Sonnet 4.5': '4/10', 'Claude Sonnet 4.6': '2/2'}
+not upheld that restate a census or passenger-list record: 20/34, most from one post: [('26', 6)]
+longest excerpt: 22 words
