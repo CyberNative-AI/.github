@@ -1,0 +1,44 @@
+Home Assistant 2026.10.2
+ok      from homeassistant.components.script import ATTR_LAST_TRIGGERED
+   fix  ok      from homeassistant.components.script.const import ATTR_LAST_TRIGGERED
+ok      from homeassistant.components.event import EventExtraStoredData
+   fix  raises  from homeassistant.components.event.entity import EventExtraStoredData: ModuleNotFoundError: No module named 'homeassistant.components.event.entity'
+ok      from homeassistant.components.text import RestoreEntity
+   fix  ok      from homeassistant.helpers.restore_state import RestoreEntity
+ok      from homeassistant.components.sensor import RestoreEntity
+   fix  ok      from homeassistant.helpers.restore_state import RestoreEntity
+ok      from homeassistant.components.input_boolean import RestoreEntity
+   fix  ok      from homeassistant.helpers.restore_state import RestoreEntity
+ok      from homeassistant.components.sensor import EntityCategory
+   fix  ok      from homeassistant.const import EntityCategory
+ok      from homeassistant.components.sensor import UnitOfTemperature
+   fix  ok      from homeassistant.const import UnitOfTemperature
+ok      from homeassistant.components.climate import UnitOfTemperature
+   fix  ok      from homeassistant.const import UnitOfTemperature
+ok      from homeassistant.components.sensor import CONF_UNIT_OF_MEASUREMENT
+   fix  ok      from homeassistant.const import CONF_UNIT_OF_MEASUREMENT
+ok      from homeassistant.components.sensor import StateType
+   fix  ok      from homeassistant.helpers.typing import StateType
+ok      from homeassistant.components.sensor import HomeAssistantError
+   fix  ok      from homeassistant.exceptions import HomeAssistantError
+ok      from homeassistant.components.sensor import Entity
+   fix  ok      from homeassistant.helpers.entity import Entity
+ok      from homeassistant.components.persistent_notification import async_dispatcher_send
+   fix  ok      from homeassistant.helpers.dispatcher import async_dispatcher_send
+ok      from homeassistant.components.time import time
+   fix  ok      from datetime import time
+ok      from homeassistant.components.sensor import datetime
+   fix  ok      from datetime import datetime
+ok      from homeassistant.components.sensor import dataclass
+   fix  ok      from dataclasses import dataclass
+ok      from homeassistant.components.sensor import cached_property
+   fix  ok      from propcache.api import cached_property
+ok      from homeassistant.components.camera import RTCIceCandidateInit
+   fix  ok      from webrtc_models import RTCIceCandidateInit
+ok      from homeassistant.components.wake_on_lan import SERVICE_SEND_MAGIC_PACKET
+   fix  raises  from homeassistant.components.wake_on_lan.services import SERVICE_SEND_MAGIC_PACKET: ModuleNotFoundError: No module named 'homeassistant.components.wake_on_lan.services'
+ok      from homeassistant.components.zone import DATA_ZONE_STORAGE_COLLECTION
+ok      from homeassistant.helpers.entity_registry import async_get_unprefixed_name
+ok      from homeassistant.helpers.event import async_track_state_change
+   fix  ok      from homeassistant.helpers.event import async_track_state_change_event
+ok      indieauth.verify_client_id(client_id): required keyword-only []
