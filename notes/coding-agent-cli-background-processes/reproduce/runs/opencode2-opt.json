@@ -1,0 +1,70 @@
+{
+  "command": [
+    "opencode"
+  ],
+  "configuration": "opt-out: opencode service set disabled true",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".config": {
+        "bytes": 23,
+        "files": 1
+      },
+      ".local": {
+        "bytes": 269307,
+        "files": 7
+      },
+      ".npm": {
+        "bytes": 1677,
+        "files": 3
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      }
+    }
+  },
+  "opt_out_readback": {
+    "command": "opencode service get disabled",
+    "output": "true\n"
+  },
+  "package": "@opencode/cli",
+  "processes": {
+    "10 s after window A closed": [],
+    "10 s after window B closed": [],
+    "180 s after window B closed": [],
+    "330 s after window B closed": [],
+    "60 s after window B closed": []
+  },
+  "run": "opencode2-opt",
+  "sessions": {
+    "A": {
+      "exit_status": 0,
+      "exited_before_close": true
+    },
+    "B": {
+      "exit_status": 0,
+      "exited_before_close": true
+    }
+  },
+  "tool": "OpenCode",
+  "version": "2.0.32"
+}

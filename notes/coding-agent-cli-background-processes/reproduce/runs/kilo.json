@@ -1,0 +1,66 @@
+{
+  "command": [
+    "kilo"
+  ],
+  "configuration": "default",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".config": {
+        "bytes": 157,
+        "files": 3
+      },
+      ".local": {
+        "bytes": 955181,
+        "files": 14
+      },
+      ".npm": {
+        "bytes": 1617,
+        "files": 3
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      }
+    }
+  },
+  "package": "@kilocode/cli",
+  "processes": {
+    "10 s after window A closed": [],
+    "10 s after window B closed": [],
+    "180 s after window B closed": [],
+    "330 s after window B closed": [],
+    "60 s after window B closed": []
+  },
+  "run": "kilo",
+  "sessions": {
+    "A": {
+      "exit_status": 0,
+      "exited_before_close": true
+    },
+    "B": {
+      "exit_status": 0,
+      "exited_before_close": true
+    }
+  },
+  "tool": "Kilo CLI",
+  "version": "7.8.12"
+}

@@ -1,0 +1,14 @@
+run,tool,version,configuration,after_A_10s,after_B_10s,after_B_330s,after_stop_330s,largest_home_entry,largest_home_entry_bytes
+codex,Codex CLI,0.163.0,default,/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon; /home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop,/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon; /home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop,/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon; /home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop,/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop,.codex,434395381
+codex-opt,Codex CLI,0.163.0,opt-out: [features] daemon_auto_start = false,nothing,nothing,nothing,,.codex,1459804
+opencode2,OpenCode,2.0.32,default,/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service,/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service,/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service,nothing,.local,270270
+opencode2-opt,OpenCode,2.0.32,opt-out: opencode service set disabled true,nothing,nothing,nothing,,.local,269307
+opencode1,OpenCode,1.19.3,default,nothing,nothing,nothing,,.local,852385
+claude,Claude Code,2.1.302,default,nothing,nothing,nothing,,.claude,785964
+gemini,Gemini CLI,0.64.0,default,node /usr/local/bin/gemini; /usr/local/bin/node --max-old-space-size=32113 /usr/local/bin/gemini,node /usr/local/bin/gemini; /usr/local/bin/node --max-old-space-size=32113 /usr/local/bin/gemini,nothing,,.gemini,5018
+qwen,Qwen Code,0.25.2,default,nothing,nothing,nothing,,.qwen,2908
+crush,Crush,0.98.1,default,nothing,nothing,nothing,,proj-a,359068
+kilo,Kilo CLI,7.8.12,default,nothing,nothing,nothing,,.local,955181
+copilot,GitHub Copilot CLI,1.0.98,default,nothing,nothing,nothing,,.cache,212126609
+ctl-daemon,control: stand-in that leaves a process,-,control,python3 /src/fake_agent.py --daemon,python3 /src/fake_agent.py --daemon,python3 /src/fake_agent.py --daemon,,.fake-agent,0
+ctl-plain,control: stand-in that leaves nothing,-,control,nothing,nothing,nothing,,,0

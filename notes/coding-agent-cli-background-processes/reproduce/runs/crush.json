@@ -1,0 +1,70 @@
+{
+  "command": [
+    "crush"
+  ],
+  "configuration": "default",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".config": {
+        "bytes": 83,
+        "files": 1
+      },
+      ".local": {
+        "bytes": 330,
+        "files": 1
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      },
+      "proj-a": {
+        "bytes": 359068,
+        "files": 5
+      },
+      "proj-b": {
+        "bytes": 359068,
+        "files": 5
+      }
+    }
+  },
+  "package": "@charmland/crush",
+  "processes": {
+    "10 s after window A closed": [],
+    "10 s after window B closed": [],
+    "180 s after window B closed": [],
+    "330 s after window B closed": [],
+    "60 s after window B closed": []
+  },
+  "run": "crush",
+  "sessions": {
+    "A": {
+      "exit_status": 1,
+      "exited_before_close": false
+    },
+    "B": {
+      "exit_status": 1,
+      "exited_before_close": false
+    }
+  },
+  "tool": "Crush",
+  "version": "0.98.1"
+}

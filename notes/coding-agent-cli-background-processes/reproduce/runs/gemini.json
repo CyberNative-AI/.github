@@ -1,0 +1,88 @@
+{
+  "command": [
+    "gemini"
+  ],
+  "configuration": "default",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".gemini": {
+        "bytes": 5018,
+        "files": 15
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      }
+    }
+  },
+  "package": "@google/gemini-cli",
+  "processes": {
+    "10 s after window A closed": [
+      {
+        "cmd": "node /usr/local/bin/gemini",
+        "pid": 9,
+        "ppid": 7,
+        "sid": 9,
+        "state": "S"
+      },
+      {
+        "cmd": "/usr/local/bin/node --max-old-space-size=32113 /usr/local/bin/gemini",
+        "pid": 17,
+        "ppid": 9,
+        "sid": 9,
+        "state": "S"
+      }
+    ],
+    "10 s after window B closed": [
+      {
+        "cmd": "node /usr/local/bin/gemini",
+        "pid": 75,
+        "ppid": 7,
+        "sid": 75,
+        "state": "S"
+      },
+      {
+        "cmd": "/usr/local/bin/node --max-old-space-size=32113 /usr/local/bin/gemini",
+        "pid": 83,
+        "ppid": 75,
+        "sid": 75,
+        "state": "S"
+      }
+    ],
+    "180 s after window B closed": [],
+    "330 s after window B closed": [],
+    "60 s after window B closed": []
+  },
+  "run": "gemini",
+  "sessions": {
+    "A": {
+      "exit_status": null,
+      "exited_before_close": false
+    },
+    "B": {
+      "exit_status": null,
+      "exited_before_close": false
+    }
+  },
+  "tool": "Gemini CLI",
+  "version": "0.64.0"
+}

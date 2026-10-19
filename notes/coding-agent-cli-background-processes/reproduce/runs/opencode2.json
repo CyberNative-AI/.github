@@ -1,0 +1,114 @@
+{
+  "command": [
+    "opencode"
+  ],
+  "configuration": "default",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".config": {
+        "bytes": 64,
+        "files": 1
+      },
+      ".local": {
+        "bytes": 270270,
+        "files": 7
+      },
+      ".npm": {
+        "bytes": 1677,
+        "files": 3
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      }
+    }
+  },
+  "package": "@opencode/cli",
+  "processes": {
+    "10 s after the stop command": [],
+    "10 s after window A closed": [
+      {
+        "cmd": "/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service",
+        "pid": 16,
+        "ppid": 1,
+        "sid": 16,
+        "state": "S"
+      }
+    ],
+    "10 s after window B closed": [
+      {
+        "cmd": "/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service",
+        "pid": 16,
+        "ppid": 1,
+        "sid": 16,
+        "state": "S"
+      }
+    ],
+    "180 s after window B closed": [
+      {
+        "cmd": "/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service",
+        "pid": 16,
+        "ppid": 1,
+        "sid": 16,
+        "state": "S"
+      }
+    ],
+    "330 s after the stop command": [],
+    "330 s after window B closed": [
+      {
+        "cmd": "/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service",
+        "pid": 16,
+        "ppid": 1,
+        "sid": 16,
+        "state": "S"
+      }
+    ],
+    "60 s after the stop command": [],
+    "60 s after window B closed": [
+      {
+        "cmd": "/usr/local/lib/node_modules/@opencode/cli/bin/opencode.exe serve --service",
+        "pid": 16,
+        "ppid": 1,
+        "sid": 16,
+        "state": "S"
+      }
+    ]
+  },
+  "run": "opencode2",
+  "sessions": {
+    "A": {
+      "exit_status": 0,
+      "exited_before_close": true
+    },
+    "B": {
+      "exit_status": 0,
+      "exited_before_close": true
+    }
+  },
+  "stop_command": {
+    "command": "opencode service stop",
+    "exit_code": 0,
+    "output": ""
+  },
+  "tool": "OpenCode",
+  "version": "2.0.32"
+}

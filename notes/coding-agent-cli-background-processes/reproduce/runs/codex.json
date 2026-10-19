@@ -1,0 +1,165 @@
+{
+  "command": [
+    "codex"
+  ],
+  "configuration": "default",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".codex": {
+        "bytes": 434395381,
+        "files": 142
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      }
+    }
+  },
+  "package": "@openai/codex",
+  "processes": {
+    "10 s after the stop command": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "10 s after window A closed": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon",
+        "pid": 52,
+        "ppid": 1,
+        "sid": 52,
+        "state": "S"
+      },
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "10 s after window B closed": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon",
+        "pid": 52,
+        "ppid": 1,
+        "sid": 52,
+        "state": "S"
+      },
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "180 s after window B closed": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon",
+        "pid": 52,
+        "ppid": 1,
+        "sid": 52,
+        "state": "S"
+      },
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "330 s after the stop command": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "330 s after window B closed": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon",
+        "pid": 52,
+        "ppid": 1,
+        "sid": 52,
+        "state": "S"
+      },
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "60 s after the stop command": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ],
+    "60 s after window B closed": [
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server --listen unix:// --analytics-default-enabled --managed-daemon",
+        "pid": 52,
+        "ppid": 1,
+        "sid": 52,
+        "state": "S"
+      },
+      {
+        "cmd": "/home/tester/.codex/packages/app-server-daemon/releases/0.163.0-x86_64-unknown-linux-musl/bin/codex app-server daemon pid-update-loop",
+        "pid": 87,
+        "ppid": 1,
+        "sid": 87,
+        "state": "S"
+      }
+    ]
+  },
+  "run": "codex",
+  "sessions": {
+    "A": {
+      "exit_status": 0,
+      "exited_before_close": true
+    },
+    "B": {
+      "exit_status": 0,
+      "exited_before_close": true
+    }
+  },
+  "stop_command": {
+    "command": "codex app-server daemon stop",
+    "exit_code": 0,
+    "output": "{\"status\":\"stopped\",\"backend\":\"pid\",\"managedCodexPath\":\"/home/tester/.codex/packages/app-server-daemon/current/bin/codex\",\"managedCodexVersion\":\"0.163.0\",\"socketPath\":\"/home/tester/.codex/app-server-control/app-server-control.sock\",\"cliVersion\":\"0.163.0\"}\n{\"timestampMs\":1792345127437,\"processPid\":305,\"event\":\"shutdown_requested\",\"details\":{\"pid\":52}}\n"
+  },
+  "tool": "Codex CLI",
+  "version": "0.163.0"
+}

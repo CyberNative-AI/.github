@@ -1,0 +1,98 @@
+{
+  "command": [
+    "stand-in"
+  ],
+  "configuration": "control",
+  "home_footprint": {
+    "autostart_paths": {
+      ".config/autostart": null,
+      ".config/systemd/user": null,
+      "Library/LaunchAgents": null
+    },
+    "shell_rc_bytes": {
+      ".bash_profile": null,
+      ".bashrc": 3526,
+      ".profile": 807,
+      ".zshrc": null
+    },
+    "top_level_dirs": {
+      ".bash_logout": {
+        "bytes": 220,
+        "files": 1
+      },
+      ".bashrc": {
+        "bytes": 3526,
+        "files": 1
+      },
+      ".fake-agent": {
+        "bytes": 0,
+        "files": 1
+      },
+      ".profile": {
+        "bytes": 807,
+        "files": 1
+      }
+    }
+  },
+  "package": "-",
+  "processes": {
+    "10 s after window A closed": [
+      {
+        "cmd": "python3 /src/fake_agent.py --daemon",
+        "pid": 11,
+        "ppid": 1,
+        "sid": 10,
+        "state": "S"
+      }
+    ],
+    "10 s after window B closed": [
+      {
+        "cmd": "python3 /src/fake_agent.py --daemon",
+        "pid": 11,
+        "ppid": 1,
+        "sid": 10,
+        "state": "S"
+      }
+    ],
+    "180 s after window B closed": [
+      {
+        "cmd": "python3 /src/fake_agent.py --daemon",
+        "pid": 11,
+        "ppid": 1,
+        "sid": 10,
+        "state": "S"
+      }
+    ],
+    "330 s after window B closed": [
+      {
+        "cmd": "python3 /src/fake_agent.py --daemon",
+        "pid": 11,
+        "ppid": 1,
+        "sid": 10,
+        "state": "S"
+      }
+    ],
+    "60 s after window B closed": [
+      {
+        "cmd": "python3 /src/fake_agent.py --daemon",
+        "pid": 11,
+        "ppid": 1,
+        "sid": 10,
+        "state": "S"
+      }
+    ]
+  },
+  "run": "ctl-daemon",
+  "sessions": {
+    "A": {
+      "exit_status": 0,
+      "exited_before_close": true
+    },
+    "B": {
+      "exit_status": 0,
+      "exited_before_close": true
+    }
+  },
+  "tool": "control: stand-in that leaves a process",
+  "version": "-"
+}
