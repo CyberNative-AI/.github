@@ -75,6 +75,8 @@ We opened an issue with each project: [ComplianceAsCode #15181](https://github.c
 
 **Update, October 13, 2026.** konstruktoid changed the role's default in [#1162](https://github.com/konstruktoid/ansible-role-hardening/pull/1162), which closed #1161. On the main branch, `sshd_kex_algorithms` now starts with `mlkem768x25519-sha256` and `sntrup761x25519-sha512`, as the collection's does. The latest tagged release, v4.6.0 from June 1, 2026, still has the list above.
 
+**Update, October 19, 2026.** ansible-lockdown fixed the commented entry from #198 in [#200](https://github.com/ansible-lockdown/UBUNTU24-CIS/pull/200), merged into the `devel` branch on October 16. The opt-in line now reads `sntrup761x25519-sha512@openssh.com`, the name OpenSSH 9.6p1 accepts, and is indented like the entries above it, so deleting the `# ` leaves a valid list item. The default list is unchanged. The latest release, 1.7.0 from September 10, 2026, still has the old entry. ComplianceAsCode closed [#15181](https://github.com/ComplianceAsCode/content/issues/15181) as not planned on October 15. The reply says "Those are algorithms defined by CIS" and that the issue was not checked before it was opened. It does not answer the PCI-DSS question.
+
 ## Two quieter cases
 
 - **Go clients.** `golang.org/x/crypto/ssh` v0.58.0 implements `mlkem768x25519-sha256` but not `sntrup761`. A server list that offers only sntrup761, such as dev-sec's, keeps OpenSSH clients on post-quantum key exchange but drops Go clients from `mlkem768x25519-sha256` to `curve25519-sha256` on the Debian 13 and Ubuntu 26.04 servers we tested (OpenSSH 10.0 and 10.2). On OpenSSH older than 9.9, stock sshd already gives Go clients classical key exchange, with or without hardening.
