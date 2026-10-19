@@ -1,0 +1,61 @@
+Unable to find image 'cgr.dev/chainguard/wolfi-base:latest' locally
+latest: Pulling from chainguard/wolfi-base
+7638d538c856: Pulling fs layer
+00cbbb71e8a6: Pulling fs layer
+80bd503ad813: Pulling fs layer
+82eb1b27bce6: Pulling fs layer
+f53829540a90: Pulling fs layer
+8e2d451c2147: Pulling fs layer
+7e77629aa519: Pulling fs layer
+b10d4a946640: Pulling fs layer
+0e0d95cd11d9: Pulling fs layer
+8153a0839d92: Pulling fs layer
+0cdd489672cd: Pulling fs layer
+82eb1b27bce6: Waiting
+7e77629aa519: Waiting
+0e0d95cd11d9: Waiting
+b10d4a946640: Waiting
+8e2d451c2147: Waiting
+f53829540a90: Waiting
+8153a0839d92: Waiting
+0cdd489672cd: Waiting
+80bd503ad813: Download complete
+7638d538c856: Verifying Checksum
+7638d538c856: Download complete
+00cbbb71e8a6: Verifying Checksum
+00cbbb71e8a6: Download complete
+7638d538c856: Pull complete
+00cbbb71e8a6: Pull complete
+82eb1b27bce6: Verifying Checksum
+82eb1b27bce6: Download complete
+8e2d451c2147: Verifying Checksum
+8e2d451c2147: Download complete
+80bd503ad813: Pull complete
+f53829540a90: Verifying Checksum
+f53829540a90: Download complete
+82eb1b27bce6: Pull complete
+f53829540a90: Pull complete
+8e2d451c2147: Pull complete
+b10d4a946640: Verifying Checksum
+b10d4a946640: Download complete
+7e77629aa519: Download complete
+0e0d95cd11d9: Verifying Checksum
+0e0d95cd11d9: Download complete
+7e77629aa519: Pull complete
+b10d4a946640: Pull complete
+0e0d95cd11d9: Pull complete
+0cdd489672cd: Verifying Checksum
+0cdd489672cd: Download complete
+8153a0839d92: Download complete
+8153a0839d92: Pull complete
+0cdd489672cd: Pull complete
+Digest: sha256:c2a4815b6ca49b9bbafd451b4bde690d567a86b2b6b54877faac8082a7bc4296
+Status: Downloaded newer image for cgr.dev/chainguard/wolfi-base:latest
+curl-8.23.0-r0
+libcurl-openssl4-8.23.0-r0
+PRETTY_NAME="Wolfi"
+===
+curl 8.23.0-DEV (x86_64-pc-linux-gnu) libcurl/8.23.0-DEV OpenSSL/4.0.3 zlib/1.3.2.1-motley brotli/1.2.0 libidn2/2.3.8 libpsl/0.23.3 nghttp2/1.70.0 ngtcp2/1.25.0 nghttp3/1.18.0 mit-krb5/1.22.2 OpenLDAP/2.6.14
+Release-Date: [unreleased]
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt mqtts pop3 pop3s rtsp smtp smtps telnet tftp ws wss
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTP3 HTTPS-proxy IDN IPv6 Kerberos Largefile libz PSL SPNEGO SSL threadsafe UnixSockets

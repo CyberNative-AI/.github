@@ -1,0 +1,13 @@
+TAG pkg cntlm=0.92.3-1.3 curl=8.14.1-2+deb13u7 squid=6.13-2+deb13u3 
+TAG posthoc-no-build
+TAG C+ curl 8.14.1 (x86_64-pc-linux-gnu) libcurl/8.14.1 OpenSSL/3.5.7 zlib/1.3.1 brotli/1.1.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.21.2 libssh2/1.11.1 nghttp2/1.64.0 nghttp3/1.8.0 librtmp/2.3 OpenLDAP/2.6.10 Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTP3 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe TLS-SRP UnixSockets zstd 
+TAG M-p0-plain-direct-no-auth rc=0 http=407 body=<!DOCTYPE html PUBLI err=
+TAG M-p1-plain-via-cntlm-ntlmv1 rc=0 http=200 body=OK-TARGET err=
+TAG squid-access 3 lines
+TAG access 1792410251.326      0 127.0.0.1 TCP_DENIED/407 3452 GET http://127.0.0.1:8000/ - HIER_NONE/- text/html
+TAG access 1792410251.361     18 127.0.0.1 TCP_DENIED/407 3521 GET http://127.0.0.1:8000/ - HIER_NONE/- text/html
+TAG access 1792410251.365      3 127.0.0.1 TCP_MISS/200 299 GET http://127.0.0.1:8000/ D\\u HIER_DIRECT/127.0.0.1 text/html
+TAG cntlm cntlm[4452]: Cntlm ready, staying in the foreground
+TAG cntlm cntlm[4452]: Using proxy 127.0.0.1:3128
+TAG cntlm cntlm[4452]: 127.0.0.1 GET http://127.0.0.1:8000/
+m2 rc=0

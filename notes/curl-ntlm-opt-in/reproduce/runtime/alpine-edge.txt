@@ -1,0 +1,16 @@
+Unable to find image 'alpine:edge' locally
+edge: Pulling from library/alpine
+173a115417ee: Pulling fs layer
+173a115417ee: Verifying Checksum
+173a115417ee: Download complete
+173a115417ee: Pull complete
+Digest: sha256:020dfcbaaf4cc1078bf2d9c7ba31a8466e334061dcd2f248001d68f79e52c000
+Status: Downloaded newer image for alpine:edge
+curl-8.23.0-r0
+libcurl-8.23.0-r0
+PRETTY_NAME="Alpine Linux edge"
+===
+curl 8.23.0 (x86_64-alpine-linux-musl) libcurl/8.23.0 OpenSSL/3.5.7 zlib/1.3.2 brotli/1.2.0 zstd/1.5.7 c-ares/1.34.8 libidn2/2.3.8 libpsl/0.21.5 nghttp2/1.70.0
+Release-Date: 2026-10-14
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns mqtt mqtts pop3 pop3s rtsp smtp smtps telnet tftp ws wss
+Features: alt-svc AsynchDNS brotli HSTS HTTP2 HTTPS-proxy IDN IPv6 Largefile libz PSL SSL threadsafe UnixSockets zstd

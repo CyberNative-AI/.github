@@ -1,0 +1,28 @@
+Unable to find image 'fedora:rawhide' locally
+rawhide: Pulling from library/fedora
+237d844a425e: Pulling fs layer
+237d844a425e: Verifying Checksum
+237d844a425e: Download complete
+237d844a425e: Pull complete
+Digest: sha256:a9bab18d01cf2c2cf62f3e79c72623405bce14ac062995cc6651a3073c802e41
+Status: Downloaded newer image for fedora:rawhide
+DEFAULT:
+curl-8.22.0~rc2-1.fc46.x86_64
+package curl-minimal is not installed
+libcurl-8.22.0~rc2-1.fc46.x86_64
+package libcurl-minimal is not installed
+curl 8.22.0-rc2 (x86_64-redhat-linux-gnu) libcurl/8.22.0-rc2 OpenSSL/4.0.1 zlib/1.3.1.zlib-ng brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.23.1 libssh/0.12.2/openssl/zlib nghttp2/1.69.0 ngtcp2/1.22.1 nghttp3/1.18.0 mit-krb5/1.22.2 OpenLDAP/2.6.14
+Release-Date: 2026-08-17
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt mqtts pop3 pop3s rtsp scp sftp smb smbs smtp smtps telnet tftp ws wss
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTP3 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe UnixSockets zstd
+FULL:
+curl-8.23.0-1.fc46.x86_64
+package curl-minimal is not installed
+libcurl-8.23.0-1.fc46.x86_64
+package libcurl-minimal is not installed
+PRETTY_NAME="Fedora Linux 46 (Container Image Prerelease)"
+===
+curl 8.23.0 (x86_64-redhat-linux-gnu) libcurl/8.23.0 OpenSSL/4.0.3 zlib/1.3.1.zlib-ng brotli/1.2.0 zstd/1.5.7 libidn2/2.3.8 libpsl/0.23.3 libssh/0.12.2/openssl/zlib nghttp2/1.69.0 ngtcp2/1.22.1 nghttp3/1.18.0 mit-krb5/1.22.2 OpenLDAP/2.6.14
+Release-Date: 2026-10-14
+Protocols: dict file ftp ftps gopher gophers http https imap imaps ipfs ipns ldap ldaps mqtt mqtts pop3 pop3s rtsp scp sftp smtp smtps telnet tftp ws wss
+Features: alt-svc AsynchDNS brotli GSS-API HSTS HTTP2 HTTP3 HTTPS-proxy IDN IPv6 Kerberos Largefile libz NTLM PSL SPNEGO SSL threadsafe UnixSockets zstd

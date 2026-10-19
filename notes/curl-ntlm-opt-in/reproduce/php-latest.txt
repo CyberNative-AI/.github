@@ -1,0 +1,9 @@
+Unable to find image 'php:latest' locally
+latest: Pulling from library/php
+Digest: sha256:01a109229f4465bc9ef042d9198f09a4d9da7775a825dbd8572dcdbd8756c4d3
+Status: Downloaded newer image for php:latest
+TAG os PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
+TAG php 8.5.11 libcurl 8.14.1 NTLM_bit=1
+TAG helper /usr/lib/squid/ntlm_fake_auth
+TAG php-NTLM setopt=true errno=0 http=200 body=OK-TARGET err=
+TAG php-ANY setopt=true errno=0 http=200 body=OK-TARGET err=

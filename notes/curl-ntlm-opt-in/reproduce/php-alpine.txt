@@ -1,0 +1,18 @@
+Unable to find image 'php:alpine' locally
+alpine: Pulling from library/php
+e2de96513ba9: Already exists
+c74954296e3d: Already exists
+406faa0b22ce: Already exists
+108ad594590c: Already exists
+88c97ededfa5: Already exists
+0bfa53ef0584: Already exists
+6361c0c16a9a: Already exists
+b7fa1c822b37: Already exists
+52bc90a67a58: Already exists
+Digest: sha256:93684051146ec037620855feb77f278090bde45ddc030801cd3f2a7685bc4deb
+Status: Downloaded newer image for php:alpine
+TAG os PRETTY_NAME="Alpine Linux v3.24"
+TAG php 8.5.11 libcurl 8.22.0 NTLM_bit=0
+TAG helper /usr/lib/squid/ntlm_fake_auth
+TAG php-NTLM setopt=false errno=0 http=407 body=<!DOCTYPE err=
+TAG php-ANY setopt=true errno=0 http=407 body=<!DOCTYPE err=
