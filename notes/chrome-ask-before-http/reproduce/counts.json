@@ -1,0 +1,150 @@
+{
+ "browsers": {
+  "a155": "Chrome for Testing 155.0.8059.84 linux64",
+  "a157": "Chrome for Testing 157.0.8103.6 linux64",
+  "flags": "--headless=new --disable-field-trial-config, fresh profile per origin, link transition"
+ },
+ "by_port": {
+  "default_port": {
+   "HTTP->BLOCKED": 566,
+   "HTTP->ERRPAGE_NOERR": 1,
+   "HTTP->HTTPS": 22,
+   "HTTPS->BLOCKED": 22,
+   "HTTPS->ERRPAGE_NOERR": 1,
+   "HTTPS->HTTPS": 159,
+   "NET_ERROR->BLOCKED": 98,
+   "NET_ERROR->NET_ERROR": 85
+  },
+  "nondefault_port": {
+   "HTTP->HTTP": 33,
+   "HTTPS->HTTPS": 2,
+   "NET_ERROR->NET_ERROR": 13
+  }
+ },
+ "by_rank_bucket_stopped_of_http_in_155": {
+  "1000": [
+   3,
+   3
+  ],
+  "10000": [
+   9,
+   10
+  ],
+  "100000": [
+   158,
+   174
+  ],
+  "1000000": [
+   162,
+   188
+  ],
+  "5000": [
+   7,
+   7
+  ],
+  "50000": [
+   101,
+   106
+  ],
+  "500000": [
+   126,
+   134
+  ]
+ },
+ "controls_run3": {
+  "http://example.com": {
+   "post_a155": "HTTPS",
+   "post_a157": "HTTPS",
+   "pre_a155": "HTTPS",
+   "pre_a157": "HTTPS"
+  },
+  "http://http.badssl.com": {
+   "post_a155": "HTTP",
+   "post_a157": "BLOCKED",
+   "pre_a155": "HTTP",
+   "pre_a157": "BLOCKED"
+  },
+  "http://httpforever.com": {
+   "post_a155": "HTTP",
+   "post_a157": "BLOCKED",
+   "pre_a155": "HTTP",
+   "pre_a157": "BLOCKED"
+  },
+  "http://neverssl.com": {
+   "post_a155": "NET_ERROR",
+   "post_a157": "BLOCKED",
+   "pre_a155": "HTTP",
+   "pre_a157": "BLOCKED"
+  }
+ },
+ "earlier_executions_void_by_control_rule": {
+  "run1": {
+   "estimate": 4729,
+   "stopped_of_http_in_155": [
+    587,
+    635
+   ]
+  },
+  "run2": {
+   "estimate": 4744,
+   "stopped_of_http_in_155": [
+    588,
+    629
+   ]
+  }
+ },
+ "fix_arm": {
+  "browser": "a157",
+  "cells": {
+   "ERRPAGE_NOERR": 1,
+   "HTTP": 29
+  },
+  "controls": {
+   "http://example.com": "HTTPS",
+   "http://http.badssl.com": "HTTP",
+   "http://neverssl.com": "NET_ERROR"
+  },
+  "policy": {
+   "HttpsOnlyMode": "disallowed"
+  },
+  "retested_stopped_origins": 30
+ },
+ "frame": {
+  "http_500k_1m_buckets": 7246,
+  "http_origins": 7748,
+  "http_top100k_buckets": 502,
+  "list": "zakird/crux-top-lists data/global/202609.csv.gz",
+  "origins": 1000000
+ },
+ "source": "run of 2026-10-20, aggregates only",
+ "strata": {
+  "rest": {
+   "cells": {
+    "HTTP->BLOCKED": 288,
+    "HTTP->ERRPAGE_NOERR": 1,
+    "HTTP->HTTP": 22,
+    "HTTP->HTTPS": 11,
+    "HTTPS->BLOCKED": 7,
+    "HTTPS->ERRPAGE_NOERR": 1,
+    "HTTPS->HTTPS": 67,
+    "NET_ERROR->BLOCKED": 58,
+    "NET_ERROR->NET_ERROR": 45
+   },
+   "frame_N": 7246,
+   "n": 500
+  },
+  "top": {
+   "cells": {
+    "HTTP->BLOCKED": 278,
+    "HTTP->HTTP": 11,
+    "HTTP->HTTPS": 11,
+    "HTTPS->BLOCKED": 15,
+    "HTTPS->HTTPS": 94,
+    "NET_ERROR->BLOCKED": 40,
+    "NET_ERROR->NET_ERROR": 53
+   },
+   "frame_N": 502,
+   "n": 502
+  }
+ }
+}
