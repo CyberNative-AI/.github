@@ -1,0 +1,44 @@
+{
+  "scanned": "2026-10-20",
+  "source": "GitHub code search, default branches, 75 queries (search-queries.txt)",
+  "hits": 5094,
+  "repositories": 2182,
+  "fetch_errors": 0,
+  "active_since": "2026-07-22",
+  "stored_prompts": {
+    "counted_codebases": 166,
+    "counted_files": 259,
+    "codebases_with_id_literal": 68,
+    "labelled_files": 52,
+    "labelled_yes": 17,
+    "labelled_no": 32,
+    "labelled_unclear": 3,
+    "estimate_yes_only": 42,
+    "estimate_yes_only_95_range": [22, 64],
+    "estimate_unclear_as_yes": 52,
+    "estimate_unclear_as_yes_95_range": [29, 75],
+    "estimate_script": "estimate.py"
+  },
+  "evals_runs_create": {
+    "counted_codebases": 152,
+    "counted_files": 493,
+    "files_with_azure_foundry_marker": 453,
+    "foundry_marker": "AIProjectClient|get_openai_client|services\\.ai\\.azure\\.com|foundry (case-insensitive)",
+    "labelled_files": 48,
+    "labelled_foundry": 44,
+    "labelled_other": 3,
+    "labelled_other_kinds": ["blog post", "SDK wrapper", "another product's evals API"],
+    "labelled_openai_endpoint": 1,
+    "openai_endpoint_file": "copy of an OpenAI cookbook notebook"
+  },
+  "hosted_chatkit_workflows": {
+    "counted_codebases": 6,
+    "apps_on_inspection_at_most": 3
+  },
+  "check_command_over_counted_files": {
+    "stored_prompt_pattern_matches_counted": "259/259",
+    "stored_prompt_pattern_matches_labelled_yes": "17/17",
+    "stored_prompt_pattern_matches_excluded_noncall": "229/265",
+    "evals_pattern_matches_counted": "493/493"
+  }
+}
