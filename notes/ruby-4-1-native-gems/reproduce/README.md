@@ -39,10 +39,10 @@ Each arm took about 30 minutes on 4 CPUs. Each `gem install` stops after 15 minu
 
 `score.py` decides each gem's outcome:
 
-- **ENV**: fails to install, or installs but does not load, on 4.0.7 (in our run, system libraries missing from the image).
+- **ENV**: fails to install, or installs but does not load, on 4.0.7. In our run the causes were mixed: system libraries missing from the image, gems that reject the Ruby version, and code that no longer compiles.
 - **TIMEOUT**: either install hit the 15-minute limit.
 - **BREAK**: works on 4.0.7, and on 4.1.0-preview1 fails to install, stops loading, or has a shared object with an undefined removed symbol (`data/removed.txt`: identifiers in 4.0.7's public headers that are gone from 4.1.0-preview1's).
-- **OK**: everything else. A gem none of whose three `require` names loads on either Ruby counts as OK if it installs on both.
+- **OK**: everything else, meaning no regression found by these checks. A gem none of whose three `require` names loads on either Ruby (NOREQ in `score.json`) counts as OK if it installs on both; for those 17 only the install is checked. The 7 NOREQ gems among the 22 BREAK broke at install.
 
 Causes were then checked by hand against `work/A41/res/<gem>/install.log`: thin and ruby-debug-ide fail because a dependency (eventmachine, debase) fails, and rinku fails only on preview builds (see the note).
 
@@ -70,8 +70,17 @@ for arm in A40 A41; do
 done
 ```
 
-Each `bundle install` stops after 15 minutes (20 in `fix_exec.sh`) and each smoke test after 5. Results are in `work/R-<arm>/<gem>/` and `work/FIX-<arm>/<case>/` (`install.rc`, `run.rc`, logs, `Gemfile.lock`). Two smoke tests in these scripts are wrong on both Rubies and do not change the results: thin's last statement, `Thin::VERSION::STRING`, raises a TypeError after `require "thin"` and `Thin::HttpParser.new` have succeeded, and the cocoapods probe never loads Molinillo.
+Each `bundle install` stops after 15 minutes (20 in `fix_exec.sh`) and each smoke test after 5. Results are in `work/R-<arm>/<gem>/` and `work/FIX-<arm>/<case>/` (`install.rc`, `run.rc`, logs, `Gemfile.lock`). Four smoke tests in these scripts are wrong:
+
+- thin's last statement, `Thin::VERSION::STRING`, raises a TypeError on both Rubies after `require "thin"` and `Thin::HttpParser.new` have succeeded. The note claims only that thin installs and its parser loads.
+- The cocoapods probe never loads Molinillo. molinillo has its own probe, which is the one the note uses.
+- The facter probe, after `require "facter"`, requires `facter/custom_facts/core/directed_graph`, a path that does not exist, and stops with a LoadError on 4.0.7.
+- The packwerk probe references the private constant `Packwerk::Graph` and stops with a NameError on 4.0.7.
+
+On 4.1.0-preview1, facter and packwerk fail with `cannot load such file -- tsort` before reaching those lines, and on 4.0.7 they print the tsort warning first. That supports the diagnosis, but neither has a complete passing run, so the note does not claim the `gem "tsort"` fix for them.
 
 ## Licence
 
-The files in this folder are MIT-licensed (see `LICENSE`). `data/frame.jsonl` holds public package metadata from ecosyste.ms and rubygems.org.
+The MIT licence in `LICENSE` covers the scripts, the control extensions and the documentation in this folder, which CyberNative AI LLC wrote. It does not cover the ecosyste.ms data below.
+
+`data/frame.jsonl` is adapted from the [ecosyste.ms](https://ecosyste.ms) packages API for rubygems.org, fetched 2026-10-21 and licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). From it come the fields `name`, `downloads`, `downloads_period` and `repo`, and the order behind `rank`. We changed the data: we kept the 3,000 gems with the most all-time downloads, numbered them in that order as `rank`, and added fields from the rubygems.org API (`latest`, `latest_date`, `platforms`, `ruby_platform`, `ext_hits`). We share the adapted `data/frame.jsonl` under CC BY-SA 4.0. The same applies to the `rank` column of `../results.csv` and the Rank column and "no repository listed" entries in the note, which come from it. Every other column of `results.csv` is our own measurement.

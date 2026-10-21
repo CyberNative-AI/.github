@@ -6,7 +6,7 @@ Run this in your app's directory:
 grep -E '^    (eventmachine|thin|kostya-sigar|yajl-ruby|hiredis|therubyracer|ffi-yajl|debase|cbor|timfel-krb5-auth|ruby-debug-ide|atomic|bson_ext|iconv|hpricot|rblineprof|zookeeper|numo-narray|ruby-stemmer|panko_serializer|algorithms) \(' Gemfile.lock
 ```
 
-Each gem it prints installed and loaded on Ruby 4.0.7, then failed on Ruby 4.1.0-preview1 at its latest release on rubygems.org (measured 2026-10-21, Linux x86_64). If it prints nothing, none of them are in your bundle. A gem you have already pinned to a git commit prints too; check its source in the lockfile.
+Each gem it prints installed on Ruby 4.0.7 and then, at its latest release on rubygems.org, broke on Ruby 4.1.0-preview1 (measured 2026-10-21, Linux x86_64): 18 fail to install, 2 install and fail at `require`, and 1 loads without its C extension. If it prints nothing, none of them are in your bundle. A gem you have already pinned to a git commit prints too; check its source in the lockfile.
 
 Ruby 4.1.0 has no announced release date. Ruby usually ships its new version on December 25.
 
@@ -16,33 +16,33 @@ Ruby 4.1 removes C APIs that have been deprecated for years: the untyped `Data_W
 
 ## The 21 gems
 
-Rank is all-time downloads among all gems. "Install" means `gem install` fails; "require" means it installs and then raises a `LoadError`.
+Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.ecosyste.ms/registries/rubygems.org) on 2026-10-21 (licence: see "Licence" in [`reproduce/`](reproduce/)). "Install" means `gem install` fails on 4.1.0-preview1; "require" means it installs and then raises a `LoadError`. A * means none of the three `require` names we tried loaded the gem on either Ruby, so we checked only its install on 4.0.7, not its load.
 
 | Gem (version tested) | Rank | Fails at | Fixed in the gem's repository? |
 |---|---|---|---|
 | eventmachine 1.2.7 | 163 | install | **yes, not released** |
 | thin 2.0.1 | 271 | install (eventmachine, and its own parser) | **yes, not released** |
-| kostya-sigar 2.0.11 | 496 | install | no |
-| yajl-ruby 1.4.3 | 503 | install | **yes, not released** |
+| kostya-sigar 2.0.11 | 496 | install* | no |
+| yajl-ruby 1.4.3 | 503 | install* | **yes, not released** |
 | hiredis 0.6.3 | 698 | install | no |
 | therubyracer 0.12.3 | 909 | install | no |
 | ffi-yajl 3.0.1 | 934 | install | no |
 | debase 0.2.9 | 1,006 | install (no 4.1 headers in debase-ruby_core_source 4.0.1) | no |
 | cbor 0.5.10.3 | 1,160 | install | no repository listed |
-| timfel-krb5-auth 0.8.3 | 1,305 | install | no repository listed |
-| ruby-debug-ide 0.7.5 | 1,372 | install (through debase) | depends on debase |
+| timfel-krb5-auth 0.8.3 | 1,305 | install* | no repository listed |
+| ruby-debug-ide 0.7.5 | 1,372 | install* (through debase) | depends on debase |
 | atomic 1.1.101 | 1,520 | loads, but silently uses its pure-Ruby fallback | no |
-| bson_ext 1.12.5 | 1,808 | install (`struct RRegexp` changed) | no repository listed |
+| bson_ext 1.12.5 | 1,808 | install* (`struct RRegexp` changed) | no repository listed |
 | iconv 1.1.1 | 1,927 | install | no |
 | hpricot 0.8.6 | 2,005 | install | no repository listed |
 | rblineprof 0.3.7 | 2,208 | **require** | no |
-| zookeeper 1.5.5 | 2,260 | install | no |
+| zookeeper 1.5.5 | 2,260 | install* | no |
 | numo-narray 0.9.2.1 | 2,753 | install (`rb_alloc_tmp_buffer` signature changed) | no |
-| ruby-stemmer 3.0.0 | 2,756 | install | no |
+| ruby-stemmer 3.0.0 | 2,756 | install* | no |
 | panko_serializer 0.8.5 | 2,923 | **require** | **yes, not released** |
 | algorithms 1.1.0 | 2,933 | install | no |
 
-"Fixed" means the default branch no longer uses the removed APIs, checked 2026-10-21. For the four marked yes, we also built and ran that branch on 4.1.0-preview1 (below).
+"Fixed" means the default branch no longer uses the removed APIs, checked 2026-10-21. For the four marked yes, we also built and ran that branch on 4.1.0-preview1 (below). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
 
 ## What to do
 
@@ -75,15 +75,15 @@ Our image's compiler is GCC 12, which accepts a call to a function that is no lo
 
 ## tsort
 
-Ruby 4.1 moves `tsort` from a default gem to a bundled gem, so under `bundle exec` it is only available if your bundle includes it. These gems require it without declaring it, and fail with `cannot load such file -- tsort` on 4.1.0-preview1:
+Ruby 4.1 moves `tsort` from a default gem to a bundled gem, so under `bundle exec` it is only available if your bundle includes it. These gems require it without declaring it: molinillo 0.8.0 (CocoaPods' dependency resolver), mobility 1.3.2, packwerk 3.3.1 and facter 2.5.7. On 4.1.0-preview1 each failed with `cannot load such file -- tsort`; on 4.0.7 each printed a warning that tsort is leaving the default gems.
 
-molinillo 0.8.0 (CocoaPods' dependency resolver), mobility 1.3.2, packwerk 3.3.1, facter 2.5.7
+We tested the fix only for molinillo 0.8.0 and mobility 1.3.2: with `gem "tsort"` added to the Gemfile, both loaded and ran on Ruby 4.0.7 and 4.1.0-preview1. We did not test it for packwerk 3.3.1 or facter 2.5.7. Our check script for those two had its own errors, so we have no complete passing run for either on any Ruby.
 
 ```sh
 grep -qE '^    tsort ' Gemfile.lock || grep -E '^    (molinillo|mobility|packwerk|facter) \(' Gemfile.lock
 ```
 
-If that prints a line, add `gem "tsort"` to your Gemfile. We tested that fix for molinillo and mobility. Ruby 4.0.7 already warns about these requires.
+If that prints molinillo or mobility, add `gem "tsort"` to your Gemfile. For packwerk or facter it is the likely fix, but untested.
 
 ## Ready-built binaries arrive later
 
@@ -93,23 +93,25 @@ Ruby 4.0 was the same. After its release on 2025-12-25, sqlite3 had 4.0-ready Li
 
 ## What we measured
 
-We took the 3,000 most-downloaded gems ([ecosyste.ms](https://packages.ecosyste.ms/registries/rubygems.org)), downloaded the latest release of each from rubygems.org and kept the 165 that build a native extension. Each one was installed with `gem install` and loaded with `require` on the official Docker images `ruby:4.0.7-bookworm` and `ruby:4.1.0-preview1-bookworm`, pinned by digest. Two small control extensions behaved as expected: one using the removed API broke on 4.1, one using the current API did not.
+We took the 3,000 most-downloaded gems ([ecosyste.ms](https://packages.ecosyste.ms/registries/rubygems.org)), downloaded the latest release of each from rubygems.org and kept the 165 that build a native extension. On each of the official Docker images `ruby:4.0.7-bookworm` and `ruby:4.1.0-preview1-bookworm`, pinned by digest, we ran `gem install` and then tried three `require` names: the gem's name, and the name with `-` changed to `/` or to `_`. Two small control extensions behaved as expected: one using the removed API broke on 4.1, one using the current API did not.
 
 | Result | Gems |
 |---|---|
-| Works on both | 118 |
-| Works on 4.0.7, fails on 4.1.0-preview1 | 22 |
-| Fails on 4.0.7 too (a system library missing from the image) | 21 |
+| No regression found by these checks | 118 |
+| Installs on 4.0.7; on 4.1.0-preview1 fails to install, fails to load, or loads without its extension | 22 |
+| Fails on 4.0.7 too (mixed causes, such as a missing system library, a Ruby version limit or code that no longer compiles) | 21 |
 | Did not finish building in 15 minutes (grpc, gpgme, karafka-rdkafka, libv8-node) | 4 |
 
 The 22 include rinku 2.0.6, which fails only because of a check that exists in preview builds: its `-fvisibility=hidden` hides the `ruby_abi_version` symbol that preview builds require. Ruby's `abi.h` says released versions do not define it, so we expect rinku to work on 4.1.0 and count 21. That part is our reading of the source, not a test on a release build.
 
-Searching gem source for the removed names does not replace the build. Of the 140 gems that worked on 4.0.7, the search flagged 34: 19 broke on 4.1 and 15 built and loaded anyway. It missed 3 that broke.
+17 of the 118 installed on both Rubies but loaded under none of the three names, so for them we know only that the install still works. Their `require` name differs from the gem name, as with yajl-ruby's `yajl`.
 
-Every gem and its result: [`results.csv`](results.csv). Scripts and commands: [`reproduce/`](reproduce/).
+Searching gem source for the removed names does not replace the build. Of the 140 gems that installed on 4.0.7 and were scored, the search flagged 34: 19 broke on 4.1, and 15 showed no regression in our checks (2 of those 15, rbtree3 and ruby-ll, only by install). It missed 3 that broke.
+
+Every gem and its result: [`results.csv`](results.csv) (its `rank` column is ecosyste.ms data; see "Licence" in [`reproduce/`](reproduce/)). Scripts and commands: [`reproduce/`](reproduce/).
 
 ## Limits
 
-Ruby 4.1.0-preview1, not the release; later previews may change the list. Linux x86_64 on Debian bookworm with GCC 12; not macOS, Windows or ARM. Only the latest release of each gem; we did not test older versions you may have pinned. The 21 gems that failed on 4.0.7 and the 4 that timed out are not measured. Download counts are all-time, not current use. One run on our own hardware; not reproduced by anyone else.
+Ruby 4.1.0-preview1, not the release; later previews may change the list. Linux x86_64 on Debian bookworm with GCC 12; not macOS, Windows or ARM. Only the latest release of each gem; we did not test older versions you may have pinned. The 21 gems that failed on 4.0.7 and the 4 that timed out are not measured. Where none of our `require` names matched (17 of the 118, and the 7 marked * among the 21), we checked install only. Download counts are all-time, not current use. One run on our own hardware; not reproduced by anyone else.
 
-Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai
+Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai. We publish dated corrections here.
