@@ -1,0 +1,42 @@
+{
+ "AT_RISK_onBackPressed_or_KEYCODE_BACK": 29,
+ "activity_onBackPressed_override_target_unreadable": 4,
+ "counts_onBackPressed_only": {
+  "AT_RISK": 25,
+  "AT_RISK_unresolved_head": 4,
+  "BK": 74,
+  "BP": 154,
+  "BP|BK": 192,
+  "ON_PLAY": 99,
+  "PLAY_UNKNOWN": 0,
+  "SCAN_ERROR": 8,
+  "SCAN_ERROR&NOT_PLAY": 7,
+  "SCAN_ERROR&ON_PLAY": 1,
+  "at_risk_any_store": 138,
+  "bumped_head": 43,
+  "frame": 759,
+  "fw:@capacitor/android": 24,
+  "fw:cordova-android": 3,
+  "fw:flutter": 29,
+  "fw:react-native": 14,
+  "fwrisk:cordova<=14": 1,
+  "fwrisk:cordova<=14&NOT_PLAY": 1,
+  "fwrisk:rn<0.80": 8,
+  "fwrisk:rn<0.80&NOT_PLAY": 6,
+  "fwrisk:rn<0.80&ON_PLAY": 2,
+  "optf": 14,
+  "optt": 70,
+  "scanned": 751,
+  "scanned&NOT_PLAY": 653,
+  "scanned&ON_PLAY": 98,
+  "unresolved_head": 93
+ },
+ "fdroid_index_sha256": "900242f55ff7397aca52ffb25439f21657fbfe8cff23f80528a2725da6ce5faf",
+ "fetched": "2026-10-21",
+ "on_play_scanned_target_36_or_more": 21,
+ "read_by_hand": {
+  "activity_KEYCODE_BACK_only": 2,
+  "activity_onBackPressed_override": 23,
+  "excluded_not_an_Android_back_handler": 4
+ }
+}

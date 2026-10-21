@@ -1,0 +1,48 @@
+{"api":35,"rep":1,"flavor":"t35","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{95438dc u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NA t8}"}
+{"api":35,"rep":1,"flavor":"t35","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{333608e u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NK t9}"}
+{"api":35,"rep":1,"flavor":"t35","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{26c958f u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.ND t10}"}
+{"api":35,"rep":1,"flavor":"t35","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{d1f8ec0 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t7}"}
+{"api":35,"rep":1,"flavor":"t35","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{b9f6922 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XA t12}"}
+{"api":35,"rep":1,"flavor":"t35","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{f71e995 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XK t13}"}
+{"api":35,"rep":1,"flavor":"t35","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{f7a5d4e u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t14}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{45127af u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.NA t15}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{ea550a3 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.NK t16}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{12500ff u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.ND t17}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{f7a5d4e u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t14}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{25cd253 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XA t19}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{3d17ced u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XK t20}"}
+{"api":35,"rep":1,"flavor":"t36","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{6d615fa u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t21}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{98053ca u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NA t22}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{f1652bc u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NK t23}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{ffcbc4a u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.ND t24}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{6d615fa u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t21}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{50f1a9e u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XA t26}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{be8542b u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XK t27}"}
+{"api":35,"rep":1,"flavor":"t36opt","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{789103e u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XD t28}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{5e5dfa5 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NA t29}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{16b1f2 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NK t30}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{1e670a4 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.ND t31}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{789103e u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XD t28}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{fea3be9 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XA t33}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{ffa0089 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XK t34}"}
+{"api":35,"rep":2,"flavor":"t35","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{49de717 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t35}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{606b0ee u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.NA t36}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{2d936c5 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.NK t37}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{6a1499f u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.ND t38}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{49de717 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t35}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{9062a2 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XA t40}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{721b658 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XK t41}"}
+{"api":35,"rep":2,"flavor":"t36","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{60c1ca8 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t42}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{350355 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NA t43}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{8a20d7e u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NK t44}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{8f61774 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.ND t45}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{60c1ca8 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t42}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{7510986 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XA t47}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{3bf25da u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XK t48}"}
+{"api":35,"rep":2,"flavor":"t36opt","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{dcbe7b0 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XD t49}"}
+{"api":35,"rep":1,"flavor":"f14t35","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":35,"rep":1,"flavor":"f14t36","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":35,"rep":1,"flavor":"f15t36","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":35,"rep":2,"flavor":"f14t35","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":35,"rep":2,"flavor":"f14t36","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":35,"rep":2,"flavor":"f15t36","arm":"CDV","ready":1,"marker":1,"still_top":1}

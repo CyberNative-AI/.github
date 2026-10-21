@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application android:label="backprobe" android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+    <activity android:name=".NA" android:exported="true"/>
+    <activity android:name=".NK" android:exported="true"/>
+    <activity android:name=".ND" android:exported="true"/>
+    <activity android:name=".NO" android:exported="true"/>
+    <activity android:name=".XA" android:exported="true"/>
+    <activity android:name=".XK" android:exported="true"/>
+    <activity android:name=".XD" android:exported="true"/>
+  </application>
+</manifest>

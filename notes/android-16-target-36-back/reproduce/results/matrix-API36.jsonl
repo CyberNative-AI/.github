@@ -1,0 +1,48 @@
+{"api":36,"rep":1,"flavor":"t35","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{149662044 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NA t7}"}
+{"api":36,"rep":1,"flavor":"t35","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{36189071 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NK t8}"}
+{"api":36,"rep":1,"flavor":"t35","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{20692622 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.ND t9}"}
+{"api":36,"rep":1,"flavor":"t35","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{111527531 u0 com.google.android.apps.nexuslauncher/.NexusLauncherActivity t3}"}
+{"api":36,"rep":1,"flavor":"t35","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{195232602 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XA t11}"}
+{"api":36,"rep":1,"flavor":"t35","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{138137830 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XK t12}"}
+{"api":36,"rep":1,"flavor":"t35","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{136981271 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t13}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"NA","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{136981271 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t13}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"NK","marker":1,"still_top":0,"top":"topResumedActivity=ActivityRecord{136981271 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t13}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{97906389 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.ND t16}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{136981271 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t13}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"XA","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{136981271 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t13}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"XK","marker":1,"still_top":0,"top":"topResumedActivity=ActivityRecord{136981271 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t13}"}
+{"api":36,"rep":1,"flavor":"t36","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{236531834 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t20}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{99256227 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NA t21}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{36042275 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NK t22}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{52746649 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.ND t23}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{236531834 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t20}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{241995557 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XA t25}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{230923875 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XK t26}"}
+{"api":36,"rep":1,"flavor":"t36opt","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{243880195 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XD t27}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{137832430 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NA t28}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{80160757 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.NK t29}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{77157310 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.ND t30}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{243880195 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XD t27}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{94275304 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XA t32}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{63540895 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XK t33}"}
+{"api":36,"rep":2,"flavor":"t35","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{261306284 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t34}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"NA","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{261306284 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t34}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"NK","marker":1,"still_top":0,"top":"topResumedActivity=ActivityRecord{261306284 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t34}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{199964268 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.ND t37}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{261306284 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t34}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"XA","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{261306284 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t34}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"XK","marker":1,"still_top":0,"top":"topResumedActivity=ActivityRecord{261306284 u0 ai.cybernative.backprobe.t35/ai.cybernative.backprobe.XD t34}"}
+{"api":36,"rep":2,"flavor":"t36","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{192377850 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t41}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"NA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{124016574 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NA t42}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"NK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{207396298 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.NK t43}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"ND","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{117372039 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.ND t44}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"NO","marker":0,"still_top":0,"top":"topResumedActivity=ActivityRecord{192377850 u0 ai.cybernative.backprobe.t36/ai.cybernative.backprobe.XD t41}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"XA","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{3489201 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XA t46}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"XK","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{181653310 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XK t47}"}
+{"api":36,"rep":2,"flavor":"t36opt","arm":"XD","marker":1,"still_top":1,"top":"topResumedActivity=ActivityRecord{49544505 u0 ai.cybernative.backprobe.t36opt/ai.cybernative.backprobe.XD t48}"}
+{"api":36,"rep":1,"flavor":"f14t35","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":36,"rep":1,"flavor":"f14t36","arm":"CDV","ready":1,"marker":1,"still_top":0}
+{"api":36,"rep":1,"flavor":"f15t36","arm":"CDV","ready":1,"marker":2,"still_top":1}
+{"api":36,"rep":2,"flavor":"f14t35","arm":"CDV","ready":1,"marker":1,"still_top":1}
+{"api":36,"rep":2,"flavor":"f14t36","arm":"CDV","ready":1,"marker":1,"still_top":0}
+{"api":36,"rep":2,"flavor":"f15t36","arm":"CDV","ready":1,"marker":2,"still_top":1}
