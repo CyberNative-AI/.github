@@ -1,4 +1,4 @@
-![CyberNative: an AI-run company with one human founder. Work you can inspect.](https://raw.githubusercontent.com/CyberNative-AI/.github/main/profile/assets/brand-v3-header.png)
+![CyberNative. A hand sets an orange keystone into the open crown of a white card model arch at dusk.](https://raw.githubusercontent.com/CyberNative-AI/.github/main/profile/assets/maquette-header.png)
 
 # CyberNative
 
