@@ -17,16 +17,19 @@ We tested what happens when Quad9 stops answering a default install:
 3. **A fallback server only partly helps.** `fallback_dns` rescues a restart, but on a running
    server it did not help when packets to Quad9 were dropped: lookups of new names timed out.
 
-The fix is one setting: in **Settings → DNS settings**, give AdGuard Home at least one
-non-Quad9 resolver that does not depend on Quad9 to be found (details below). It worked in every
-case we tested.
+To remove this dependency, use a non-Quad9 upstream by IP address, or a non-Quad9 upstream
+by hostname with non-Quad9 bootstrap servers (details below, in **Settings → DNS settings**).
+Both configurations worked in every case we tested.
 
 ## Check yours
 
 In the web interface, open **Settings → DNS settings** and look at **Upstream DNS servers** and
 **Bootstrap DNS servers**. Quad9 entries look like `dns10.quad9.net` (or another `quad9.net`
-name), `9.9.9.x`, `149.112.112.x` or `2620:fe::…`. You are affected if either list contains only
-Quad9 entries.
+name), `9.9.9.x`, `149.112.112.x` or `2620:fe::…`. The wizard default (Quad9-only upstream and
+bootstrap, empty fallback) failed in our outage tests. A non-Quad9 hostname upstream with
+Quad9-only bootstrap also failed after a restart. A non-Quad9 upstream by IP address did not
+need bootstrap and kept working even with the default bootstrap list. We did not test mixed
+lists, per-client or domain-specific overrides, or `upstream_dns_file` configurations.
 
 Or read the config file. The install script puts it at `/opt/AdGuardHome/AdGuardHome.yaml`; the
 official Docker image at `/opt/adguardhome/conf/AdGuardHome.yaml`:
@@ -58,12 +61,17 @@ Either of these resolved every name in every test below:
   you trust, written with its IP address instead of a hostname. We tested the DNS-over-HTTPS form
   `https://<IP>/dns-query`; it works only with providers whose certificate covers the IP address,
   so if yours does not, use the second option. Nothing then needs a bootstrap lookup.
-- **Upstream by hostname, with a non-Quad9 bootstrap.** Keep a hostname upstream, and in
-  **Bootstrap DNS servers** list plain IP addresses of a resolver other than Quad9.
+- **Non-Quad9 upstream by hostname, with a non-Quad9 bootstrap.** In **Upstream DNS servers**,
+  replace the Quad9 upstream with a non-Quad9 resolver you trust, given by hostname (or keep
+  your existing non-Quad9 hostname upstream). In **Bootstrap DNS servers**, list plain IP
+  addresses of a resolver other than Quad9. Changing only bootstrap does not replace a
+  Quad9 upstream.
 
-In `AdGuardHome.yaml` these are `upstream_dns` and `bootstrap_dns`. Then restart AdGuard Home once
-(a restart is when the default setup failed in our test) and look up a name through it, for
-example `dig @<AdGuard Home address> example.com` or `nslookup example.com <AdGuard Home address>`.
+In `AdGuardHome.yaml` these are `upstream_dns` and `bootstrap_dns`. If you edit the file,
+[stop AdGuard Home first](https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration#configuration-file),
+edit it while stopped, then start it; the running program can overwrite file edits. If you use
+the web interface, save the settings, then restart once. Look up a name through AdGuard Home,
+for example `dig @<AdGuard Home address> example.com` or `nslookup example.com <AdGuard Home address>`.
 
 We used Cloudflare's addresses (`1.1.1.1`, `1.0.0.1`) as the stand-in in the test. We did not
 compare providers, and this is not a recommendation for one. We also did not test lists that mix
@@ -109,8 +117,9 @@ got `REFUSED` from Quad9 passed `REFUSED` on to clients for 9 of 10 new names, i
 - **Builds that embed AdGuard Home**, such as router firmware, NAS packages or the Home Assistant
   add-on. They may ship different defaults.
 - **Other software pointed only at Quad9**, such as a router set to `9.9.9.9` or a phone whose
-  private DNS is `dns.quad9.net`. Quad9 says it will no longer serve users in France, so those
-  need a second resolver too, but we tested only AdGuard Home.
+  private DNS is `dns.quad9.net`. An exclusive dependency on Quad9 may need reconfiguration when
+  it withdraws; that is an inference from its announcement. We did not test those clients or
+  their failover settings.
 - One AdGuard Home version (v0.107.79) and 10 to 20 well-known names. We ran these tests
   ourselves; nobody outside our company has reproduced them yet.
 
@@ -121,12 +130,19 @@ d'AdGuard Home (v0.107.79) configure Quad9 comme seul serveur DNS upstream et se
 d'amorçage. Dans notre test, une installation par défaut démarrée sans accès à Quad9 n'a résolu
 aucun nom (SERVFAIL).
 
-À vérifier dans **Paramètres → Paramètres DNS** : si **Serveurs DNS upstream** ou
-**Serveurs DNS d'amorçage** ne contient que des entrées Quad9 (`dns10.quad9.net`, `9.9.9.x`,
-`149.112.112.x`, `2620:fe::…`), ajoutez un résolveur qui n'est pas Quad9 : soit un upstream
-donné par son adresse IP, soit un upstream par nom d'hôte avec des serveurs d'amorçage autres que
-Quad9. Redémarrez ensuite AdGuard Home une fois et testez une résolution. Changer seulement
-l'upstream ne suffit pas si l'amorçage reste sur Quad9 : la panne arrive au redémarrage suivant.
+À vérifier dans **Paramètres → Paramètres DNS** : les valeurs par défaut utilisent seulement
+Quad9 dans **Serveurs DNS upstream** et **Serveurs DNS d'amorçage**, sans serveur de secours.
+Cette configuration a échoué dans nos tests de coupure. Un upstream autre que Quad9 donné par
+nom d'hôte a aussi échoué au redémarrage lorsque l'amorçage utilisait seulement Quad9. Un
+upstream autre que Quad9 donné par adresse IP a fonctionné même avec l'amorçage par défaut.
+
+Remplacez l'upstream Quad9 par un résolveur autre que Quad9 auquel vous faites confiance : soit
+par son adresse IP, soit par son nom d'hôte avec des serveurs d'amorçage autres que Quad9.
+Changer seulement l'amorçage ne remplace pas un upstream Quad9. Pour DNS-over-HTTPS par adresse
+IP, le certificat du fournisseur doit couvrir cette adresse. Si vous modifiez le fichier YAML,
+arrêtez AdGuard Home avant de le modifier, puis démarrez-le. Dans l'interface web, enregistrez
+les paramètres puis redémarrez une fois et testez une résolution. Nous n'avons pas testé les
+listes mixtes, les exceptions par client ou domaine, ni les configurations `upstream_dns_file`.
 
 ## Reproduce
 
@@ -136,4 +152,4 @@ command to run it on any Linux machine with Docker.
 ---
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
-hello@cybernative.ai.
+hello@cybernative.ai. We will record dated corrections on this page.
