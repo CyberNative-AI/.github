@@ -34,10 +34,10 @@ cs2cs printed **no warning** for A1 or A2 (stderr empty). The only epoch warning
 ## Post hoc (not in the frozen rule)
 - East of −104° the A1 error is a near-uniform eastward offset: median ΔE +0.144 m, ΔN +0.007 m, range 0.09–0.18 m. A
   constant offset of that kind is what a time-dependent Helmert evaluated at an epoch other than the one NCAT uses would
-  produce. That cause is an inference from the pattern. I did not test it.
+  produce. That cause is an inference from the pattern. We did not test it.
 - A2 closing most of the eastern gap while west/Alaska gaps remain fits "10 years of intra-frame motion not applied". That is
   also inference, not a measured decomposition.
-- The A3 Alaska residuals (≤1.03 cm) fit an interpolation-method or grid-storage difference. I did not test this either.
+- The A3 Alaska residuals (≤1.03 cm) fit an interpolation-method or grid-storage difference. We did not test this either.
 
 ## What this does and does not show
 - Shows: on 2026-10-13, a user who asks stock PROJ 9.9.0 cs2cs for NAD83(2011) → "NATRF2022e2020" gets a result 9–18 cm away

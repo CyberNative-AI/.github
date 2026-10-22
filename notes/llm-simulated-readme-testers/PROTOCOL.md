@@ -31,8 +31,8 @@ The protocol assumed that the later post was absent from training. That exclusio
 - Scored unit: A2 = the PROBLEMS section only (primary); narration matches recorded separately (secondary). A1/A0 = the numbered list.
 - Each scored unit x each of the 21 items + R01 -> match yes/no with the supporting quote. Rule: a match requires the critique to assert the problem is present in the docs; mentioning the topic, praising it, or saying it is fine is not a match.
 - Adjudicator: a Claude Opus model in a fresh context, one call per batch of units; brief = item ids, short descriptions and match rules (no fixed_in_post, no arm/version labels); units under random ids (`random.Random(13683)`) with file names that identify the version (README_caddy) left as is (cannot be removed without altering content). Output JSON. Yes-rates by version are reported as a bias check.
-- Positive controls, scored in the same batches under random ids before results are read: PC1 (protocol author; clean paraphrase) raises H01, H03, H06, H09, C02, C07 plus 4 near-miss distractors (e.g. "the key generator link works but the page is ugly"); PC2 (protocol author) raises 8 distractors/near-misses and no item; PC3 (written by a separate model instance from a list of 6 planted items H02, H05, H08, H10, C04, C05 and told to write a messy think-aloud with 3 near-misses). Pass = in each PC, planted items found >= 5/6 and false-positive cells <= 1. A failure -> re-brief once (append-only note) and rescore all; second failure -> hand adjudication of all units by me.
-- Spot check: I judge 40 seeded cells (>= 15 adjudicator-yes) before looking at the adjudicator verdicts for them; Cohen's kappa >= 0.70 and positive agreement >= 0.75 -> adjudicator verdicts stand; else my judgments are used for all cells. If hand adjudication is required but I cannot complete it within the 2 h wall = INVALID.
+- Positive controls, scored in the same batches under random ids before results are read: PC1 (protocol author; clean paraphrase) raises H01, H03, H06, H09, C02, C07 plus 4 near-miss distractors (e.g. "the key generator link works but the page is ugly"); PC2 (protocol author) raises 8 distractors/near-misses and no item; PC3 (written by a separate model instance from a list of 6 planted items H02, H05, H08, H10, C04, C05 and told to write a messy think-aloud with 3 near-misses). Pass = in each PC, planted items found >= 5/6 and false-positive cells <= 1. A failure -> re-brief once (append-only note) and rescore all; second failure -> hand adjudication of all units by us.
+- Spot check: we judge 40 seeded cells (>= 15 adjudicator-yes) before looking at the adjudicator verdicts for them; Cohen's kappa >= 0.70 and positive agreement >= 0.75 -> adjudicator verdicts stand; else our judgments are used for all cells. If hand adjudication is required but we cannot complete it within the 2 h wall = INVALID.
 
 ## Metrics (computed by `src/analyze.py` from `adjudication/*.json`)
 
@@ -55,7 +55,7 @@ The protocol assumed that the later post was absent from training. That exclusio
 
 - One README, one project, one model family, 11 primary items: a case study, not a benchmark. No claim about READMEs in general or about all LLMs.
 - Ground truth is incomplete: humans may have found more than the author listed or fixed; LLM problems outside the list are NOT scored as false positives (unknown). Precision is not measured.
-- The author's list is coarse and paraphrased by him; the match rules are my operationalisation, frozen here.
+- The author's list is coarse and paraphrased by him; the match rules are our operationalisation, frozen here.
 - Sessions were iterative (later testers saw partly fixed docs); "pre" approximates what the first tester saw.
 - Static reading only: no arm executes the software (an executed follow-through would be a third-party code run needing a separate decision).
 - The author's stated policy is human-only contributions: there is no outside submission route; nothing here is sent to the project.
@@ -66,4 +66,4 @@ Public AGPL text; no execution of third-party code or outside contact. Recorded 
 
 ## Forecast (pre-freeze, blind separate model instance on v1; record not included here)
 
-P(CONTINUE/CHANGE/STOP/INVALID) = .12/.38/.42/.08; p_adv 0.54. My own prior: recall_H(A2 pre) ~0.45, ruling CHANGE most likely.
+P(CONTINUE/CHANGE/STOP/INVALID) = .12/.38/.42/.08; p_adv 0.54. Our own prior: recall_H(A2 pre) ~0.45, ruling CHANGE most likely.
