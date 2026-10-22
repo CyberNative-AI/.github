@@ -30,7 +30,7 @@ against the `lts` dates in
 ## Census
 
 `census-rules.py` holds the rules we used to decide which Dockerfile stages use a floating
-`node:lts*` tag and which of them break on Node 26. `census-summary.json` has the counts.
+`node:lts*` tag and which of them the rules flag as at risk on Node 26. `census-summary.json` has the counts.
 We do not publish the list of repositories.
 
-Third-party material and its license: [THIRD-PARTY.md](THIRD-PARTY.md).
+Third-party material and its licenses: [THIRD-PARTY.md](THIRD-PARTY.md).

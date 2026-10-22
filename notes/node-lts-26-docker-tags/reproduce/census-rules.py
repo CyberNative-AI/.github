@@ -1,4 +1,4 @@
-"""Dockerfile rules used for the census: floating official node:lts* stages and what breaks on Node 26 (fixed before the run)."""
+"""Dockerfile rules used for the census: floating official node:lts* stages and what is at risk on Node 26 (fixed before the run)."""
 import re
 
 OFFICIAL = {"node", "library/node", "docker.io/library/node", "index.docker.io/library/node",

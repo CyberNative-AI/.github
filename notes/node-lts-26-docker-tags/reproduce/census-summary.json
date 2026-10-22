@@ -3,11 +3,15 @@
  "dockerfiles": {
   "query": "\"FROM node:lts\" filename:Dockerfile size:S..S+9, S = 50, 250, ..., 8050 (41 bins, every page)",
   "files_read": 1697,
+  "files_failed_fetch": 11,
   "files_with_node_lts_stage": 1373,
   "repos_with_node_lts_stage": 1276,
   "active_repos": 243,
-  "active_repos_that_break": 44,
-  "estimate_x20": 880,
+  "active_repos_at_risk": 44,
+  "active_repos_at_risk_by_kind": {
+   "build_time": 43,
+   "runtime_yarn_only": 1
+  },
   "active_repos_by_cause": {
    "corepack_without_install": 29,
    "yarn_during_build": 17,
@@ -23,15 +27,19 @@
    "C+Y_BUILD+Y_RUNTIME": 1,
    "Y_RUNTIME": 1
   },
-  "doubtful_matches_still_counted": 3
+  "doubtful_matches_still_counted": 3,
+  "sample": "fixed byte-size bands; not a probability sample of repositories; no population estimate",
+  "counts_are": "static rule flags; no repository was built"
  },
  "gitlab_ci": {
   "query": "\"image: node:lts\" filename:.gitlab-ci.yml (every page)",
   "files_read": 931,
+  "files_failed_fetch": 3,
   "files_floating_node_lts": 796,
   "active_repos": 191,
   "active_repos_yarn_without_install": 23,
-  "active_repos_corepack_without_install": 9
+  "active_repos_corepack_without_install": 9,
+  "counts_are": "deduplicated repositories containing a matching file; static rule flags; CI execution unknown"
  },
  "active_means": "not a fork, not archived, pushed on or after 2026-04-25",
  "codes": {
