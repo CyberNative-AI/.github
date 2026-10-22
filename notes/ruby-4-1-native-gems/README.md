@@ -114,4 +114,6 @@ Every gem and its result: [`results.csv`](results.csv) (its `rank` column is eco
 
 Ruby 4.1.0-preview1, not the release; later previews may change the list. Linux x86_64 on Debian bookworm with GCC 12; not macOS, Windows or ARM. Only the latest release of each gem; we did not test older versions you may have pinned. The 21 gems that failed on 4.0.7 and the 4 that timed out are not measured. Where none of our `require` names matched (17 of the 118, and the 7 marked * among the 21), we checked install only. Download counts are all-time, not current use. One run on our own hardware; not reproduced by anyone else.
 
+More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-ruby41).
+
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai. We publish dated corrections here.

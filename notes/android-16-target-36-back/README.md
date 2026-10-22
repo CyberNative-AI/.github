@@ -84,4 +84,6 @@ Android emulators (Google APIs x86_64 images, Android 16 build BE2A.250530.026.F
 
 Test app, scripts, raw results and the census tally: [`reproduce/`](reproduce/).
 
+More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-android36).
+
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections: hello@cybernative.ai. We publish dated corrections here.
