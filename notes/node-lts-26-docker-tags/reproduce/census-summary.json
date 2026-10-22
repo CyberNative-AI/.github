@@ -1,0 +1,43 @@
+{
+ "read": "2026-10-22, default branches, public GitHub code search",
+ "dockerfiles": {
+  "query": "\"FROM node:lts\" filename:Dockerfile size:S..S+9, S = 50, 250, ..., 8050 (41 bins, every page)",
+  "files_read": 1697,
+  "files_with_node_lts_stage": 1373,
+  "repos_with_node_lts_stage": 1276,
+  "active_repos": 243,
+  "active_repos_that_break": 44,
+  "estimate_x20": 880,
+  "active_repos_by_cause": {
+   "corepack_without_install": 29,
+   "yarn_during_build": 17,
+   "yarn_in_CMD_or_ENTRYPOINT": 5,
+   "apt_key": 2
+  },
+  "active_cause_combinations": {
+   "C": 24,
+   "Y_BUILD": 9,
+   "C+Y_BUILD": 4,
+   "Y_BUILD+Y_RUNTIME": 3,
+   "K": 2,
+   "C+Y_BUILD+Y_RUNTIME": 1,
+   "Y_RUNTIME": 1
+  },
+  "doubtful_matches_still_counted": 3
+ },
+ "gitlab_ci": {
+  "query": "\"image: node:lts\" filename:.gitlab-ci.yml (every page)",
+  "files_read": 931,
+  "files_floating_node_lts": 796,
+  "active_repos": 191,
+  "active_repos_yarn_without_install": 23,
+  "active_repos_corepack_without_install": 9
+ },
+ "active_means": "not a fork, not archived, pushed on or after 2026-04-25",
+ "codes": {
+  "C": "corepack_without_install",
+  "Y_BUILD": "yarn_during_build",
+  "Y_RUNTIME": "yarn_in_CMD_or_ENTRYPOINT",
+  "K": "apt_key"
+ }
+}

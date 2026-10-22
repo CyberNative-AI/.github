@@ -1,0 +1,142 @@
+{
+ "dates": {
+  "2026-10-22": {
+   "repeat_identical": true,
+   "stanzas": 18,
+   "tags": 127,
+   "where": {
+    "lts": "24/bookworm",
+    "lts-slim": "24/bookworm-slim",
+    "lts-alpine": "24/alpine3.24",
+    "latest": "26/trixie",
+    "current": "26/trixie",
+    "slim": "26/trixie-slim",
+    "alpine": "26/alpine3.24",
+    "bookworm": "26/bookworm",
+    "trixie": "26/trixie",
+    "current-alpine": "26/alpine3.24"
+   },
+   "dropped_vs_20261022": [],
+   "latest_listed": true
+  },
+  "2026-10-27": {
+   "repeat_identical": true,
+   "stanzas": 18,
+   "tags": 127,
+   "where": {
+    "lts": "24/bookworm",
+    "lts-slim": "24/bookworm-slim",
+    "lts-alpine": "24/alpine3.24",
+    "latest": "26/trixie",
+    "current": "26/trixie",
+    "slim": "26/trixie-slim",
+    "alpine": "26/alpine3.24",
+    "bookworm": "26/bookworm",
+    "trixie": "26/trixie",
+    "current-alpine": "26/alpine3.24"
+   },
+   "dropped_vs_20261022": [],
+   "latest_listed": true
+  },
+  "2026-10-28": {
+   "repeat_identical": true,
+   "stanzas": 18,
+   "tags": 126,
+   "where": {
+    "lts": "26/trixie",
+    "lts-slim": "26/trixie-slim",
+    "lts-alpine": "26/alpine3.24",
+    "latest": "26/trixie",
+    "current": "26/trixie",
+    "slim": "26/trixie-slim",
+    "alpine": "26/alpine3.24",
+    "bookworm": "26/bookworm",
+    "trixie": "26/trixie",
+    "current-alpine": "26/alpine3.24"
+   },
+   "dropped_vs_20261022": [
+    "lts-krypton"
+   ],
+   "latest_listed": true
+  },
+  "2026-10-29": {
+   "repeat_identical": true,
+   "stanzas": 18,
+   "tags": 108,
+   "where": {
+    "lts": "26/trixie",
+    "lts-slim": "26/trixie-slim",
+    "lts-alpine": "26/alpine3.24",
+    "latest": null,
+    "current": null,
+    "slim": null,
+    "alpine": null,
+    "bookworm": null,
+    "trixie": null,
+    "current-alpine": null
+   },
+   "dropped_vs_20261022": [
+    "alpine",
+    "alpine3.23",
+    "alpine3.24",
+    "bookworm",
+    "bookworm-slim",
+    "current",
+    "current-alpine",
+    "current-alpine3.23",
+    "current-alpine3.24",
+    "current-bookworm",
+    "current-bookworm-slim",
+    "current-slim",
+    "current-trixie",
+    "current-trixie-slim",
+    "latest",
+    "lts-krypton",
+    "slim",
+    "trixie",
+    "trixie-slim"
+   ],
+   "latest_listed": false
+  },
+  "2026-11-15": {
+   "repeat_identical": true,
+   "stanzas": 18,
+   "tags": 108,
+   "where": {
+    "lts": "26/trixie",
+    "lts-slim": "26/trixie-slim",
+    "lts-alpine": "26/alpine3.24",
+    "latest": null,
+    "current": null,
+    "slim": null,
+    "alpine": null,
+    "bookworm": null,
+    "trixie": null,
+    "current-alpine": null
+   },
+   "dropped_vs_20261022": [
+    "alpine",
+    "alpine3.23",
+    "alpine3.24",
+    "bookworm",
+    "bookworm-slim",
+    "current",
+    "current-alpine",
+    "current-alpine3.23",
+    "current-alpine3.24",
+    "current-bookworm",
+    "current-bookworm-slim",
+    "current-slim",
+    "current-trixie",
+    "current-trixie-slim",
+    "latest",
+    "lts-krypton",
+    "slim",
+    "trixie",
+    "trixie-slim"
+   ],
+   "latest_listed": false
+  }
+ },
+ "matches_live_20261022": true
+}
