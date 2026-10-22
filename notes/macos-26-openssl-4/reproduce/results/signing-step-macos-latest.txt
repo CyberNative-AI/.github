@@ -1,0 +1,10 @@
+26.6.2
+ImageVersion=20261013.0424.1
+gate='^OpenSSL 3' | OpenSSL 3.6.5 | step rc=0 | identities in keychain: 1
+gate='^OpenSSL 3' | OpenSSL 4.0.3 | step rc=1 | identities in keychain: 0
+    80E18EF901000000:error:0308010C:digital envelope routines:inner_evp_generic_fetch:unsupported:crypto/evp/evp_fetch.c:376:Global default library context, Algorithm (RC2-40-CBC : 0), Properties (<null>)
+    80E18EF901000000:error:030000A0:digital envelope routines:EVP_PBE_CipherInit_ex:unknown cipher:crypto/evp/evp_pbe.c:127:RC2-40-CBC
+gate='^OpenSSL 3' | LibreSSL 3.3.6 | step rc=0 | identities in keychain: 1
+gate='^OpenSSL [3-9]' | OpenSSL 3.6.5 | step rc=0 | identities in keychain: 1
+gate='^OpenSSL [3-9]' | OpenSSL 4.0.3 | step rc=0 | identities in keychain: 1
+gate='^OpenSSL [3-9]' | LibreSSL 3.3.6 | step rc=0 | identities in keychain: 1

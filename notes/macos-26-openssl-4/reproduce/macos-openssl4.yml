@@ -1,0 +1,20 @@
+# Copy to .github/workflows/ in a repository of your own, copy probe.sh and
+# tls_check.py to reproduce/ next to it, then run it from the Actions tab.
+# It installs openssl@4 only if the image does not already have it.
+name: OpenSSL 4 probe
+on: workflow_dispatch
+permissions:
+  contents: read
+jobs:
+  probe:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-26]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1  # v7.0.1
+        with:
+          persist-credentials: false
+      - run: bash reproduce/probe.sh

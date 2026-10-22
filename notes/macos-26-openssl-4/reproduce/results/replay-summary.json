@@ -1,0 +1,20 @@
+{
+ "time": "2026-10-22T00:09:17.683131Z",
+ "E_active_codebases": 1027,
+ "invocation_classes": {
+  "SAME": 1825,
+  "UNTESTED": 171,
+  "STDOUT_CHANGE": 139,
+  "FILE_CHANGE": 66,
+  "BREAK": 1,
+  "versioned_path": 1
+ },
+ "tested_coverage": 0.922,
+ "codebases_with": {
+  "BREAK": 1,
+  "FILE_CHANGE": 47,
+  "STDOUT_CHANGE": 99,
+  "REVERSE": 0,
+  "PILOT_OK": 0
+ }
+}

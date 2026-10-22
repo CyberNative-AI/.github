@@ -1,0 +1,14 @@
+## C. certificates for TLS tests: verify with openssl -x509_strict and Python 3.13 default context
+C 3.6.5 ss.pem (ca=ss.pem, akid/skid lines=2): openssl3.6.5 strict: ss.pem: OK 
+C 3.6.5 leaf.pem (ca=ca.pem, akid/skid lines=2): openssl3.6.5 strict: leaf.pem: OK 
+C 3.6.5 leaf_noext.pem (ca=ca.pem, akid/skid lines=2): openssl3.6.5 strict: leaf_noext.pem: OK 
+C 4.0.3 ss.pem (ca=ss.pem, akid/skid lines=1): openssl3.6.5 strict: ss.pem: OK 
+C 4.0.3 leaf.pem (ca=ca.pem, akid/skid lines=0): openssl3.6.5 strict: error leaf.pem: verification failed 
+C 4.0.3 leaf_noext.pem (ca=ca.pem, akid/skid lines=2): openssl3.6.5 strict: leaf_noext.pem: OK 
+python 3.13.16 OpenSSL 3.5.7 9 Jun 2026 strict
+P 3.6.5 ss.pem OK
+P 3.6.5 leaf.pem OK
+P 3.6.5 leaf_noext.pem OK
+P 4.0.3 ss.pem OK
+P 4.0.3 leaf.pem SSLCertVerificationError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Missing Authority Key Identifier (_ssl.c:1032)
+P 4.0.3 leaf_noext.pem OK

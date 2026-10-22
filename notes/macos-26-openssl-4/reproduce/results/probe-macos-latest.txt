@@ -1,0 +1,109 @@
+## image
+ProductName:		macOS
+ProductVersion:		26.6.2
+BuildVersion:		25G83
+arm64
+ImageOS=macos26 ImageVersion=20261013.0424.1
+which -a openssl:
+/opt/homebrew/bin/openssl
+/usr/bin/openssl
+OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026)
+openssl@3 3.6.5
+openssl@4 4.0.3
+include/openssl -> ../Cellar/openssl@4/4.0.3/include/openssl
+lib/libssl.dylib -> ../Cellar/openssl@4/4.0.3/lib/libssl.dylib
+pkg-config openssl: 4.0.3
+openssl@4 formula: 4.0.3 keg_only= False installed= ['4.0.3'] linked_keg= 4.0.3
+/opt/homebrew/opt/openssl@3/bin/openssl: OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026)
+/opt/homebrew/opt/openssl@4/bin/openssl: OpenSSL 4.0.3 29 Sep 2026 (Library: OpenSSL 4.0.3 29 Sep 2026)
+/usr/bin/openssl: LibreSSL 3.3.6
+
+## fixtures (made with openssl@3)
+MAC: sha1, Iteration 2048
+MAC length: 20, salt length: 16
+PKCS7 Encrypted data: pbeWithSHA1And40BitRC2-CBC, Iteration 2048
+PKCS7 Data
+Shrouded Keybag: pbeWithSHA1And3-KeyTripleDES-CBC, Iteration 2048
+
+## thunderbolt-style gate on the same RC2-40 .p12
+  openssl=OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026) gate='^OpenSSL 3' LEGACY_FLAG='-legacy'
+  cert read rc=0, key read rc=0
+  openssl=OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026) gate='^OpenSSL [3-9]' LEGACY_FLAG='-legacy'
+  cert read rc=0, key read rc=0
+  openssl=OpenSSL 4.0.3 29 Sep 2026 (Library: OpenSSL 4.0.3 29 Sep 2026) gate='^OpenSSL 3' LEGACY_FLAG=''
+  cert read rc=1, key read rc=1
+    Error outputting keys and certificates
+    80E1EBF601000000:error:0308010C:digital envelope routines:inner_evp_generic_fetch:unsupported:crypto/evp/evp_fetch.c:376:Global default library context, Algorithm (RC2-40-CBC : 0), Properties (<null>)
+    80E1EBF601000000:error:030000A0:digital envelope routines:EVP_PBE_CipherInit_ex:unknown cipher:crypto/evp/evp_pbe.c:127:RC2-40-CBC
+  openssl=OpenSSL 4.0.3 29 Sep 2026 (Library: OpenSSL 4.0.3 29 Sep 2026) gate='^OpenSSL [3-9]' LEGACY_FLAG='-legacy'
+  cert read rc=0, key read rc=0
+  openssl=LibreSSL 3.3.6 gate='^OpenSSL 3' LEGACY_FLAG=''
+  cert read rc=0, key read rc=0
+    MAC verified OK
+    MAC verified OK
+  openssl=LibreSSL 3.3.6 gate='^OpenSSL [3-9]' LEGACY_FLAG=''
+  cert read rc=0, key read rc=0
+    MAC verified OK
+    MAC verified OK
+
+## pkcs12 read without/with -legacy
+$ /opt/homebrew/opt/openssl@3/bin/openssl pkcs12 -in legacy.p12 -nokeys -passin pass:test -out /dev/null
+  Error outputting keys and certificates
+  80E1EBF601000000:error:0308010C:digital envelope routines:inner_evp_generic_fetch:unsupported:crypto/evp/evp_fetch.c:376:Global default library context, Algorithm (RC2-40-CBC : 0), Properties ()
+  [rc=1]
+$ /opt/homebrew/opt/openssl@3/bin/openssl pkcs12 -in legacy.p12 -nokeys -legacy -passin pass:test -out /dev/null
+  [rc=0]
+$ /opt/homebrew/opt/openssl@4/bin/openssl pkcs12 -in legacy.p12 -nokeys -passin pass:test -out /dev/null
+  Error outputting keys and certificates
+  80E1EBF601000000:error:0308010C:digital envelope routines:inner_evp_generic_fetch:unsupported:crypto/evp/evp_fetch.c:376:Global default library context, Algorithm (RC2-40-CBC : 0), Properties (<null>)
+  80E1EBF601000000:error:030000A0:digital envelope routines:EVP_PBE_CipherInit_ex:unknown cipher:crypto/evp/evp_pbe.c:127:RC2-40-CBC
+  [rc=1]
+$ /opt/homebrew/opt/openssl@4/bin/openssl pkcs12 -in legacy.p12 -nokeys -legacy -passin pass:test -out /dev/null
+  [rc=0]
+
+## openssl version -e / -m
+$ /opt/homebrew/opt/openssl@3/bin/openssl version -e
+  ENGINESDIR: "/opt/homebrew/Cellar/openssl@3/3.6.5/lib/engines-3"
+  [rc=0]
+$ /opt/homebrew/opt/openssl@3/bin/openssl version -m
+  MODULESDIR: "/opt/homebrew/Cellar/openssl@3/3.6.5/lib/ossl-modules"
+  [rc=0]
+$ /opt/homebrew/opt/openssl@4/bin/openssl version -e
+  version: Unknown option: -e
+  version: Use -help for summary.
+  [rc=1]
+$ /opt/homebrew/opt/openssl@4/bin/openssl version -m
+  MODULESDIR: "/opt/homebrew/Cellar/openssl@4/4.0.3/lib/ossl-modules"
+  [rc=0]
+commons-crypto style line on 4.x:
+version: Unknown option: -e
+version: Use -help for summary.
+[]
+
+## export without -legacy, then security import
+MAC: sha256, Iteration 2048
+MAC length: 32, salt length: 16
+PKCS7 Encrypted data: PBES2, PBKDF2, AES-256-CBC, Iteration 2048, PRF hmacWithSHA256
+PKCS7 Data
+Shrouded Keybag: PBES2, PBKDF2, AES-256-CBC, Iteration 2048, PRF hmacWithSHA256
+$ security import legacy.p12 -k probe.keychain-db -P test -T /usr/bin/codesign
+  1 identity imported.
+  [rc=0]
+$ security import o3.p12 -k probe.keychain-db -P test -T /usr/bin/codesign
+  security: SecKeychainItemImport: MAC verification failed during PKCS12 import (wrong password?)
+  [rc=1]
+$ security import o4.p12 -k probe.keychain-db -P test -T /usr/bin/codesign
+  security: SecKeychainItemImport: MAC verification failed during PKCS12 import (wrong password?)
+  [rc=1]
+     0 valid identities found
+
+## CA-signed leaf with -extfile (SAN only vs SAN+SKID/AKID)
+  3.6.5 srv.crt: 2 key-identifier extensions
+    handshake OK
+  3.6.5 srv-fixed.crt: 2 key-identifier extensions
+    handshake OK
+  4.0.3 srv.crt: 0 key-identifier extensions
+    handshake FAIL: Missing Authority Key Identifier
+  4.0.3 srv-fixed.crt: 2 key-identifier extensions
+    handshake OK
+python 3.15.0 OpenSSL 4.0.3 29 Sep 2026
