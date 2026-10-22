@@ -21,5 +21,8 @@ them; the outcomes and exit codes are the same in both runs.
 mkdir raw && tar -xzf raw-rep1.tar.gz -C raw && python3 score.py raw/rep1 | cmp - score-rep1.json
 ```
 
+The raw output contains advisory data from GitHub, PyPA, OpenSSF, NVD and FIRST under their own
+terms: see [`THIRD-PARTY-DATA.md`](THIRD-PARTY-DATA.md).
+
 Scanner databases change daily, so a run today will differ from ours where a database has
 been updated.
