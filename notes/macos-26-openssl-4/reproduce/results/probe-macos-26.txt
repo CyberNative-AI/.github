@@ -25,7 +25,7 @@ PKCS7 Encrypted data: pbeWithSHA1And40BitRC2-CBC, Iteration 2048
 PKCS7 Data
 Shrouded Keybag: pbeWithSHA1And3-KeyTripleDES-CBC, Iteration 2048
 
-## thunderbolt-style gate on the same RC2-40 .p12
+## version-check gate on the same RC2-40 .p12
   openssl=OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026) gate='^OpenSSL 3' LEGACY_FLAG='-legacy'
   cert read rc=0, key read rc=0
   openssl=OpenSSL 3.6.5 29 Sep 2026 (Library: OpenSSL 3.6.5 29 Sep 2026) gate='^OpenSSL [3-9]' LEGACY_FLAG='-legacy'
@@ -75,7 +75,7 @@ $ /opt/homebrew/opt/openssl@4/bin/openssl version -e
 $ /opt/homebrew/opt/openssl@4/bin/openssl version -m
   MODULESDIR: "/opt/homebrew/Cellar/openssl@4/4.0.3/lib/ossl-modules"
   [rc=0]
-commons-crypto style line on 4.x:
+version -e line that sets an environment variable, on 4.x:
 version: Unknown option: -e
 version: Use -help for summary.
 []

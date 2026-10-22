@@ -42,7 +42,7 @@ each one first on `PATH`:
 | `openssl` on `PATH` | `grep '^OpenSSL 3'` | `grep '^OpenSSL [3-9]'` |
 |---|---|---|
 | OpenSSL 3.6.5 (the default today) | `-legacy` added, read works | `-legacy` added, read works |
-| OpenSSL 4.0.3 (the default from November 2–8) | **no `-legacy`, read exits 1** | `-legacy` added, read works |
+| OpenSSL 4.0.3 (the 4.x we tested; 4.x is planned as the default from November 2–8) | **no `-legacy`, read exits 1** | `-legacy` added, read works |
 | LibreSSL 3.3.6 (`/usr/bin/openssl`) | no flag, read works | no flag, read works |
 
 The OpenSSL 4 failure reads:
@@ -68,7 +68,8 @@ security: SecKeychainItemImport: MAC verification failed during PKCS12 import (w
 ```
 
 It refused an OpenSSL 3.6.5 export without `-legacy` the same way, and imported the
-`-legacy` export.
+`-legacy` export. The legacy formats here are a workaround for the importer tested on this
+runner, not a recommendation for protecting new PKCS#12 files.
 
 ## `openssl version -e` is gone
 
@@ -154,7 +155,9 @@ did not check which paths individual build tools use.
 - Each test ran once, by us. This is not an independent reproduction.
 
 [`reproduce/`](reproduce/) has the macOS workflow and scripts, their raw output, the
-replay totals, and `check.py`, which checks the tables in this note against the raw output.
+replay totals, and `check.py`, which checks the raw output against the results in this
+note's tables and the replay totals. It does not read this page; we compared the page with
+the raw output separately.
 
 ## Limits
 

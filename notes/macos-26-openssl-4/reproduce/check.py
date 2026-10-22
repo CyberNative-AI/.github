@@ -1,6 +1,7 @@
-"""Check the tables and totals in ../README.md against the raw output in results/.
+"""Check the raw output in results/ against the results in the note's tables and the replay totals.
 
-python3 check.py   # exits 0 if every claim matches, 1 otherwise
+The expected results are written into this file; it does not read ../README.md.
+python3 check.py   # exits 0 if every expected result matches, 1 otherwise
 """
 import json
 import pathlib

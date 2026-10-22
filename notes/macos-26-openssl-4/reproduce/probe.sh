@@ -33,7 +33,7 @@ gate() { # $1 binary dir on PATH, $2 regex
     openssl pkcs12 -in legacy.p12 -out temp_key.pem -nocerts -nodes $LEGACY_FLAG -passin pass:test >> g.txt 2>&1; r2=$?
     echo "  cert read rc=$r1, key read rc=$r2"; head -3 g.txt | sed 's/^/    /' )
 }
-echo; echo "## thunderbolt-style gate on the same RC2-40 .p12"
+echo; echo "## version-check gate on the same RC2-40 .p12"
 for d in "$(dirname "$O3")" "$(dirname "$O4")" /usr/bin; do
   gate "$d" '^OpenSSL 3'
   gate "$d" '^OpenSSL [3-9]'
@@ -42,7 +42,7 @@ echo; echo "## pkcs12 read without/with -legacy"
 for o in "$O3" "$O4"; do run "$o" pkcs12 -in legacy.p12 -nokeys -passin pass:test -out /dev/null; run "$o" pkcs12 -in legacy.p12 -nokeys -legacy -passin pass:test -out /dev/null; done
 echo; echo "## openssl version -e / -m"
 for o in "$O3" "$O4"; do run "$o" version -e; run "$o" version -m; done
-echo "commons-crypto style line on 4.x:"; ( export PATH="$(dirname "$O4"):$PATH"; echo "[$(echo $(openssl version -e | sed -n -e 's/engines-.*//' -e 's/: "/=/p'))]" )
+echo "version -e line that sets an environment variable, on 4.x:"; ( export PATH="$(dirname "$O4"):$PATH"; echo "[$(echo $(openssl version -e | sed -n -e 's/engines-.*//' -e 's/: "/=/p'))]" )
 
 echo; echo "## export without -legacy, then security import"
 "$O4" pkcs12 -export -in id.crt -inkey id.key -out o4.p12 -passout pass:test

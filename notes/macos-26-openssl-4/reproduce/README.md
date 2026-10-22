@@ -20,17 +20,20 @@ the installed versions do.
 - `results/probe-macos-latest.txt` and `results/probe-macos-26.txt`: `probe.sh` on
   GitHub-hosted runners on October 22, 2026 (macOS 26.6.2, image 20261013.0424.1). We ran an
   earlier copy of `probe.sh` that differed only in where it looked for `tls_check.py`.
+  After the run we reworded two section labels, in `probe.sh` and in both output files,
+  because they pointed at the projects we found; no measured line changed.
 - `results/signing-step-macos-latest.txt`: `signing-step.sh` on the same image.
 - `results/linux-python-check.txt`: the key-identifier check with Python 3.13.16 against
   OpenSSL 3.6.5 and 4.0.3 builds on Linux.
 - `results/replay-summary.json`: totals from the replay of 2,202 workflow calls. The list of
   repositories and calls is not published.
 
-## Check the note
+## Check the raw output
 
 ```sh
 python3 check.py
 ```
 
-It reads the raw output and checks every row of the note's tables and the replay totals. It
-exits 0 when they all match and 1 when one does not.
+It reads the raw output and checks it against the results in the note's tables and the
+replay totals, which are written into `check.py`. It exits 0 when they all match and 1 when
+one does not. It does not read the note itself.
