@@ -126,8 +126,11 @@ like `) -> str` match too.
 ## What did not break
 
 DuckDB 2.0.0 also replaced its SQL parser. We split 1,136 public `.sql` files from GitHub code
-search into 5,710 statements with 1.5.5 and parsed each with 2.0.0. It rejected none that 1.5.5
-accepted. The search returns best matches first, so this is not a random sample.
+search into 5,710 statements with 1.5.5 and parsed each with 2.0.0. 2.0.0 parsed 5,707 of them.
+The other three were cut short by our tool, not by the parser: 1.5.5's statement splitter rewrites
+`PIVOT` and returned a truncated slice. The three whole files parse on 2.0.0, so we found no
+statement that 1.5.5 accepted and 2.0.0 rejects. The search returns best matches first, so this is
+not a random sample.
 
 ## How we tested
 
