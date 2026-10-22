@@ -1,0 +1,13 @@
+{"duckdb": "1.5.6", "case": "export_arrow", "outcome": "OK", "detail": "CREATE TABLE t(l INTEGER[]);;\nCREATE MACRO m (z) AS (list_transform(z, (x -> (x + 1))));;\nCREATE VIEW v AS SELECT list_filter(l, (x -> (x > 1))) AS r FROM t;;"}
+{"duckdb": "1.5.6", "case": "export_python", "outcome": "OK", "detail": "CREATE TABLE t(l INTEGER[]);;\nCREATE MACRO m (z) AS (list_transform(z, (lambda x: (x + 1))));;\nCREATE VIEW v AS SELECT list_filter(l, (lambda x: (x > 1))) AS r FROM t;;"}
+{"duckdb": "2.0.0", "case": "import_arrow", "outcome": "ERR", "detail": "tables_after=0 BinderException: Binder Error: Deprecated lambda arrow (->) detected. Please transition to the new lambda syntax, i.e.., lambda x, i: x + i, before DuckDB's next release."}
+{"duckdb": "2.0.0", "case": "import_arrow_with_flag", "outcome": "OK", "detail": "tables_after=1 [([2, 3],)]"}
+{"duckdb": "2.0.0", "case": "import_python", "outcome": "OK", "detail": "tables_after=1 [([2, 3],)]"}
+{"duckdb": "2.0.0", "case": "import_python_with_flag", "outcome": "OK", "detail": "tables_after=1 [([2, 3],)]"}
+{"duckdb": "2.0.0", "case": "reopen_imported_file_without_flag", "outcome": "ERR", "detail": "BinderException: Binder Error: Deprecated lambda arrow (->) detected. Please transition to the new lambda syntax, i.e.., lambda x, i: x + i, before DuckDB's next release."}
+{"duckdb": "2.0.0", "case": "copy_from_database_arrow", "outcome": "OK", "detail": "[([2, 3],)]"}
+{"duckdb": "2.0.0", "case": "open_old_file_directly_arrow", "outcome": "OK", "detail": "[([2, 3],)]"}
+{"duckdb": "2.0.0", "case": "reopen_copied_file_without_flag", "outcome": "OK", "detail": "[([2, 3],)]"}
+{"duckdb": "2.0.0", "case": "rewritten_schema", "outcome": "OK", "detail": "CREATE TABLE t(l INTEGER[]);;\nCREATE MACRO m (z) AS (list_transform(z, (lambda x: (x + 1))));;\nCREATE VIEW v AS SELECT list_filter(l, (lambda x: (x > 1))) AS r FROM t;;"}
+{"duckdb": "2.0.0", "case": "import_rewritten", "outcome": "OK", "detail": "[([2, 3], [2, 3])]"}
+{"duckdb": "2.0.0", "case": "reopen_rewritten_file", "outcome": "OK", "detail": "[([2, 3], [2, 3])]"}

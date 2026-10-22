@@ -1,0 +1,85 @@
+{
+ "duckdb": "2.0.0",
+ "cases": {
+  "removed: duckdb.sql(q).fetchone()": {
+   "outcome": "AttributeError: Relations no longer have fetchone(): a relation keeps no result between calls, so every call runs it again. Use rel.limit(1).fetchall() instead.",
+   "warnings": []
+  },
+  "removed: con.sql(q).fetchmany(1)": {
+   "outcome": "AttributeError: Relations no longer have fetchmany(): a relation keeps no result between calls, so every call runs it again. Use rel.limit(n).fetchall() instead.",
+   "warnings": []
+  },
+  "removed: duckdb.query(q).fetchone()": {
+   "outcome": "AttributeError: Relations no longer have fetchone(): a relation keeps no result between calls, so every call runs it again. Use rel.limit(1).fetchall() instead.",
+   "warnings": []
+  },
+  "removed: rel.execute()": {
+   "outcome": "AttributeError: Relations no longer have execute(): a relation keeps no result between calls, so every call runs it again. Use rel.materialize() to run it once and keep its rows, or a method such as fetchall() instead.",
+   "warnings": []
+  },
+  "removed: con.execute(q).fetch_arrow_table()": {
+   "outcome": "AttributeError: '_duckdb.DuckDBPyConnection' object has no attribute 'fetch_arrow_table'",
+   "warnings": []
+  },
+  "removed: con.execute(q).arrow()": {
+   "outcome": "AttributeError: '_duckdb.DuckDBPyConnection' object has no attribute 'arrow'",
+   "warnings": []
+  },
+  "works: con.sql(q).limit(1).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).limit(2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.execute(q).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).to_arrow_table()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.execute(q).fetchone()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "trap: execute(q).fetchone() then con.sql(q2).fetchall()": {
+   "outcome": "ResourceInUseException: Resource In Use Error: connection has an unfinished result from execute(); call complete() or abort(), or fetch until a fetch returns no rows, before other work on this connection, or use a separate connection from cursor()",
+   "warnings": []
+  },
+  "trap: execute(range).fetchone() then con.sql(q2).fetchall()": {
+   "outcome": "ResourceInUseException: Resource In Use Error: connection has an unfinished result from execute(); call complete() or abort(), or fetch until a fetch returns no rows, before other work on this connection, or use a separate connection from cursor()",
+   "warnings": []
+  },
+  "trap: duckdb.execute(q).fetchone() then duckdb.sql(q2).fetchall()": {
+   "outcome": "ResourceInUseException: Resource In Use Error: connection has an unfinished result from execute(); call complete() or abort(), or fetch until a fetch returns no rows, before other work on this connection, or use a separate connection from cursor()",
+   "warnings": []
+  },
+  "no trap: execute(q).fetchone() then con.execute(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: execute(q).fetchall() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: limit(1).fetchall() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: limit(2).fetchall() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: to_arrow_table() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  }
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "duckdb": "1.5.6",
+ "marimo": "0.25.2",
+ "get_default_database": "memory",
+ "get_default_schema": "main",
+ "get_schemas(database=None)": [
+  "main"
+ ],
+ "data_source.default_database": "memory",
+ "data_source.default_schema": "main",
+ "data_source.databases": [
+  [
+   "memory",
+   [
+    "main"
+   ]
+  ],
+  [
+   "temp",
+   [
+    "main"
+   ]
+  ]
+ ],
+ "direct_rel_fetchone": "ok"
+}

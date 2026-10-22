@@ -1,0 +1,85 @@
+{
+ "duckdb": "1.4.5",
+ "cases": {
+  "removed: duckdb.sql(q).fetchone()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "removed: con.sql(q).fetchmany(1)": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "removed: duckdb.query(q).fetchone()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "removed: rel.execute()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "removed: con.execute(q).fetch_arrow_table()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "removed: con.execute(q).arrow()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).limit(1).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).limit(2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.execute(q).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.sql(q).to_arrow_table()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "works: con.execute(q).fetchone()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "trap: execute(q).fetchone() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "trap: execute(range).fetchone() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "trap: duckdb.execute(q).fetchone() then duckdb.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: execute(q).fetchone() then con.execute(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: execute(q).fetchall() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: limit(1).fetchall() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: limit(2).fetchall() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  },
+  "no trap: to_arrow_table() then con.sql(q2).fetchall()": {
+   "outcome": "OK",
+   "warnings": []
+  }
+ }
+}

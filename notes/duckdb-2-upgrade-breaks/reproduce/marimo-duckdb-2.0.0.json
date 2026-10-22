@@ -1,0 +1,24 @@
+{
+ "duckdb": "2.0.0",
+ "marimo": "0.25.2",
+ "get_default_database": null,
+ "get_default_schema": null,
+ "get_schemas(database=None)": [],
+ "data_source.default_database": null,
+ "data_source.default_schema": null,
+ "data_source.databases": [
+  [
+   "memory",
+   [
+    "main"
+   ]
+  ],
+  [
+   "temp",
+   [
+    "main"
+   ]
+  ]
+ ],
+ "direct_rel_fetchone": "AttributeError('Relations no longer have fetchone(): a relation keeps no result between calls, so every call runs it again. Use rel.limit(1).fetchall() instead.')"
+}
