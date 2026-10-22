@@ -1,0 +1,67 @@
+== wizard
+OK
+
+  upstream_dns:
+    - https://dns10.quad9.net/dns-query
+  upstream_dns_file: ""
+  bootstrap_dns:
+    - 9.9.9.10
+    - 149.112.112.10
+    - 2620:fe::10
+    - 2620:fe::fe:10
+  fallback_dns: []
+== default: upstream_dns:  - https://dns10.quad9.net/dns-query  bootstrap_dns:  - 9.9.9.10  - 149.112.112.10  - 2620:fe::10  - 2620:fe::fe:10  fallback_dns: [] 
+ quad9=reachable
+  cold resolved=10/10: 10 NOERROR,
+ quad9=drop
+  cold resolved=0/10: 10 SERVFAIL,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=0/5: 5 TIMEOUT,
+ quad9=reject
+  cold resolved=0/10: 10 SERVFAIL,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=0/5: 5 SERVFAIL,
+== hostname-upstream: upstream_dns:  - https://cloudflare-dns.com/dns-query  bootstrap_dns:  - 9.9.9.10  - 149.112.112.10  - 2620:fe::10  - 2620:fe::fe:10  fallback_dns: [] 
+ quad9=reachable
+  cold resolved=10/10: 10 NOERROR,
+ quad9=drop
+  cold resolved=0/10: 10 SERVFAIL,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
+ quad9=reject
+  cold resolved=0/10: 10 SERVFAIL,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
+== hostname-upstream+bootstrap: upstream_dns:  - https://cloudflare-dns.com/dns-query  bootstrap_dns:  - 1.1.1.1  - 1.0.0.1  fallback_dns: [] 
+ quad9=reachable
+  cold resolved=10/10: 10 NOERROR,
+ quad9=drop
+  cold resolved=10/10: 10 NOERROR,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
+ quad9=reject
+  cold resolved=10/10: 10 NOERROR,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
+== ip-upstream: upstream_dns:  - https://1.1.1.1/dns-query  bootstrap_dns:  - 9.9.9.10  - 149.112.112.10  - 2620:fe::10  - 2620:fe::fe:10  fallback_dns: [] 
+ quad9=reachable
+  cold resolved=10/10: 10 NOERROR,
+ quad9=drop
+  cold resolved=10/10: 10 NOERROR,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
+ quad9=reject
+  cold resolved=10/10: 10 NOERROR,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
+== fallback: upstream_dns:  - https://dns10.quad9.net/dns-query  bootstrap_dns:  - 9.9.9.10  - 149.112.112.10  - 2620:fe::10  - 2620:fe::fe:10  fallback_dns:  - 1.1.1.1 
+ quad9=reachable
+  cold resolved=10/10: 10 NOERROR,
+ quad9=drop
+  cold resolved=10/10: 10 NOERROR,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=0/5: 5 TIMEOUT,
+ quad9=reject
+  cold resolved=10/10: 10 NOERROR,
+  warm, cached resolved=5/5: 5 NOERROR,
+  warm, new resolved=5/5: 5 NOERROR,
