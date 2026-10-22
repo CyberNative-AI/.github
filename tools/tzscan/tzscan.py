@@ -109,7 +109,8 @@ LIMITS = {
     "member_bytes": 4 * GiB,          # largest file or archive entry examined
     "decompressed_bytes": 64 * GiB,   # bytes read out of archives after decompression (the image tar too), per target
     "members": 5_000_000,             # files plus entries listed in archives, per target
-    "zip_directory_bytes": 32 * MiB,  # one archive's central directory (read into memory)
+    "zip_directory_bytes": 64 * MiB,  # central directories open at once: an archive and the ones enclosing it
+                                      # (read into memory; a 64 MiB one peaks near 660 MB RSS)
     "retained_bytes": 256 * MiB,      # zone files, names, labels, ICU tables and reports kept until the end, per target
     "reports": 10_000,                # copies and problems reported, per target
     "scanned_bytes": 64 * GiB,        # binary bytes searched for embedded copies, per target
@@ -312,6 +313,7 @@ class Scan:
         self.full = False   # the report budget is spent; one final problem says so
         self.cleanup_error = None
         self.status = None
+        self.open_cd = 0    # central directory bytes of the archives open now (nested jars)
 
     # ---- reporting helpers -------------------------------------------------
     def room(self, record):
@@ -431,7 +433,8 @@ class Scan:
     @contextlib.contextmanager
     def open_zip(self, path, f, size, seekable):
         """A ZipFile over f, or over a copy when f is a stream. The central directory
-        size is checked before zipfile reads it."""
+        size, with those of the enclosing archives still open, is checked before
+        zipfile reads it."""
         spool = None
         if not seekable:
             spool = io.BytesIO() if size <= SPOOL else tempfile.TemporaryFile()
@@ -445,16 +448,21 @@ class Scan:
             f = spool
         try:
             cd = zip_directory_size(f, size)
-            if cd > LIMITS["zip_directory_bytes"]:
-                raise Incomplete("limit", f"central directory of {cd} bytes, over the zip_directory_bytes limit "
+            if self.open_cd + cd > LIMITS["zip_directory_bytes"]:
+                outer = f" (enclosing archives' directories hold {self.open_cd} more)" if self.open_cd else ""
+                raise Incomplete("limit", f"central directory of {cd} bytes{outer}, over the zip_directory_bytes limit "
                                           f"({LIMITS['zip_directory_bytes']}); not examined")
             try:
                 z = zipfile.ZipFile(f)
             except (zipfile.BadZipFile, ValueError, EOFError, struct.error) as e:
                 raise Incomplete("corrupt", f"damaged archive: {e}")
-            with z:
-                self.spend("members", len(z.infolist()))
-                yield z
+            self.open_cd += cd
+            try:
+                with z:
+                    self.spend("members", len(z.infolist()))
+                    yield z
+            finally:
+                self.open_cd -= cd
         finally:
             if spool:
                 spool.close()
