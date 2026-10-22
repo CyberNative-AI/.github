@@ -1,0 +1,8 @@
+node	v24.22.1
+os	alpine-3.24.3
+cmd_yarn	0
+cmd_corepack	0
+cmd_pnpm	127
+cmd_apt_key	127
+yarn_version	0
+DONE

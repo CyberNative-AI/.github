@@ -1,0 +1,17 @@
+ctl1	curl ca-certificates
+probe1	libasound2
+f0001	xdg-utils
+f0002	wget gnupg
+f0003	google-chrome-stable
+f0004	ffmpeg imagemagick webp libvips-dev python3 make g++
+f0005	build-essential
+f0006	python3 g++ make curl unzip
+f0007	curl gnupg2
+f0008	gnupg wget
+f0009	apt-utils dialog 2>&1
+f0010	git iproute2 procps
+f0011	curl apt-transport-https lsb-release
+f0012	yarn
+f0013	sudo
+f0014	python3 make g++
+f0015	curl openssl

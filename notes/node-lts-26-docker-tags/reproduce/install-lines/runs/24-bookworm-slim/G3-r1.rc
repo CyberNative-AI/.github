@@ -1,0 +1,5 @@
+node	v24.22.1
+os	bookworm
+cond_install	0
+yarn_version	0
+DONE

@@ -36,10 +36,30 @@ FROM node:24
 Node 24 images still include Yarn v1 and Corepack. docker-node lists Node 24's end of life
 as April 30, 2028.
 
-If you move to Node 26 instead, you have to install Corepack or Yarn yourself before the
-step that uses it: see [Corepack's README](https://github.com/nodejs/corepack#readme) and the
+If you move to Node 26, or the same Dockerfile has to build on both 24 and 26, install the
+tool yourself before the step that uses it. On October 22 we tested these two lines in six
+official images: Node 24.22.1 (bookworm, bookworm-slim, alpine3.24) and Node 26.12.1 (trixie,
+trixie-slim, alpine3.24). Both worked in all six.
+
+```dockerfile
+# Corepack (pnpm, modern Yarn)
+RUN npm install --global corepack && corepack enable
+```
+
+```dockerfile
+# Yarn v1
+RUN command -v yarn >/dev/null 2>&1 || npm install --global yarn@1.22.22
+```
+
+Do not use a plain `npm install --global yarn` in a file that also builds on Node 24. It
+failed in all three Node 24 images with npm's `EEXIST` error, because Yarn is already there;
+it worked on Node 26.
+
+We checked that each line exits without an error and that `yarn --version` then prints
+1.22.22 (for Corepack, in a project with `"packageManager": "yarn@1.22.22"`). The Corepack
+line installed Corepack 0.36.0 that day. We did not build a real project with either line.
+For other versions, see [Corepack's README](https://github.com/nodejs/corepack#readme) and the
 [docker-node README](https://github.com/nodejs/docker-node/blob/84410eeaede25daf49826da8265fbf548cc604fe/README.md#yarn-v1-classic-bundling).
-We have not tested an install line in a Node 26 image yet, so we do not give one here.
 
 ## `latest` drops out of the generated tag list on October 29
 
@@ -136,6 +156,21 @@ floating tag. If you copied a Dockerfile, check whether the original has changed
 - **GitLab CI.** Code search for `"image: node:lts" filename:.gitlab-ci.yml`, every result
   page; 931 files read (3 more could not be fetched). The counts are deduplicated repositories
   containing a matching file, from static rules; we did not check whether the jobs run.
+- **Install lines.** The six images above, pinned by digest, with network access for npm.
+  Each line ran once per image. The check of which tools each image includes ran twice, with
+  the same result.
+- **Debian package lists.** We took the 21 distinct `apt-get install` package lists in the
+  active census Dockerfiles (15 from full images, 6 from slim ones) and ran each as a
+  simulated install (`apt-get install -s`, nothing downloaded) in the Node 24 Debian 12 and
+  Node 26 Debian 13 image of the same kind, against the Debian archives on October 22. A
+  control list resolved in all four images. 18 lists resolved on both versions; 2 failed on
+  both (`google-chrome-stable` without its repository, and a shell redirect our extractor read
+  as a package name); 1 failed only on Debian 13: `yarn`. On Debian 12 that name resolves to
+  Debian's [`cmdtest`](https://packages.debian.org/bookworm/cmdtest) package, a testing tool
+  that also ships a command called `yarn`; Debian 13 has no `cmdtest`. The Dockerfiles with
+  that list add Yarn's own apt repository with `apt-key` first, so on Debian 13 they stop
+  earlier, and they are already among the 44 flagged. We found no other package that installs
+  on Debian 12 but not on 13.
 - We ran this once, on our own machine. Nobody has reproduced it independently.
 
 - **Check line.** We ran the `grep` line above over all 251 Dockerfiles of the active
@@ -144,7 +179,8 @@ floating tag. If you copied a Dockerfile, check whether the original has changed
   5 others: pinned tags, a digest, look-alike image names and a copy under `node_modules`.
 
 [`reproduce/`](reproduce/) has the preload, the run script, the scorer, the live tag list we
-compared against, the scored output and the census rules.
+compared against, the scored output, the census rules, and the install-line and Debian
+package-list tests with their raw output.
 
 ## Limits
 
@@ -157,8 +193,14 @@ compared against, the scored output and the census rules.
   pulls the new base; a runtime-only Yarn case fails when its container starts.
 - The census rules read Dockerfile text. We did not build any repository, so a flagged stage
   may be unused or the file may no longer be built.
-- We have not tested whether Debian package names used in `apt-get install` lines differ
-  between Debian 12 and 13.
+- The Debian package check simulated 21 package lists. It did not add each file's own apt
+  repositories or build anything.
+
+## Changes
+
+- October 22, 2026, after first publication: added the two tested install lines, the warning
+  about a plain `npm install --global yarn`, and the Debian package-list check. They replace
+  two statements that we had not tested these yet. No count or date in the note changed.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. We will publish dated corrections here.

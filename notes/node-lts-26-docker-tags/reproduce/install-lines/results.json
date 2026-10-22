@@ -1,0 +1,272 @@
+{
+ "24-alpine3.24": {
+  "G1-r1": {
+   "node": "v24.22.1",
+   "os": "alpine-3.24.3",
+   "cmd_yarn": "0",
+   "cmd_corepack": "0",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G1-r2": {
+   "node": "v24.22.1",
+   "os": "alpine-3.24.3",
+   "cmd_yarn": "0",
+   "cmd_corepack": "0",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G2-r1": {
+   "node": "v24.22.1",
+   "os": "alpine-3.24.3",
+   "npm_g_yarn": "1",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G3-r1": {
+   "node": "v24.22.1",
+   "os": "alpine-3.24.3",
+   "cond_install": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G4-r1": {
+   "node": "v24.22.1",
+   "os": "alpine-3.24.3",
+   "npm_g_corepack": "0",
+   "corepack_version": "0",
+   "corepack_enable": "0",
+   "yarn_version": "0",
+   "complete": true
+  }
+ },
+ "24-bookworm-slim": {
+  "G1-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "cmd_yarn": "0",
+   "cmd_corepack": "0",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G1-r2": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "cmd_yarn": "0",
+   "cmd_corepack": "0",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G2-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "npm_g_yarn": "1",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G3-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "cond_install": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G4-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "npm_g_corepack": "0",
+   "corepack_version": "0",
+   "corepack_enable": "0",
+   "yarn_version": "0",
+   "complete": true
+  }
+ },
+ "24-bookworm": {
+  "G1-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "cmd_yarn": "0",
+   "cmd_corepack": "0",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G1-r2": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "cmd_yarn": "0",
+   "cmd_corepack": "0",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G2-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "npm_g_yarn": "1",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G3-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "cond_install": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G4-r1": {
+   "node": "v24.22.1",
+   "os": "bookworm",
+   "npm_g_corepack": "0",
+   "corepack_version": "0",
+   "corepack_enable": "0",
+   "yarn_version": "0",
+   "complete": true
+  }
+ },
+ "26-alpine3.24": {
+  "G1-r1": {
+   "node": "v26.12.1",
+   "os": "alpine-3.24.3",
+   "cmd_yarn": "127",
+   "cmd_corepack": "127",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "127",
+   "complete": true
+  },
+  "G1-r2": {
+   "node": "v26.12.1",
+   "os": "alpine-3.24.3",
+   "cmd_yarn": "127",
+   "cmd_corepack": "127",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "127",
+   "complete": true
+  },
+  "G2-r1": {
+   "node": "v26.12.1",
+   "os": "alpine-3.24.3",
+   "npm_g_yarn": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G3-r1": {
+   "node": "v26.12.1",
+   "os": "alpine-3.24.3",
+   "cond_install": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G4-r1": {
+   "node": "v26.12.1",
+   "os": "alpine-3.24.3",
+   "npm_g_corepack": "0",
+   "corepack_version": "0",
+   "corepack_enable": "0",
+   "yarn_version": "0",
+   "complete": true
+  }
+ },
+ "26-trixie-slim": {
+  "G1-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "cmd_yarn": "127",
+   "cmd_corepack": "127",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "127",
+   "complete": true
+  },
+  "G1-r2": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "cmd_yarn": "127",
+   "cmd_corepack": "127",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "127",
+   "complete": true
+  },
+  "G2-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "npm_g_yarn": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G3-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "cond_install": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G4-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "npm_g_corepack": "0",
+   "corepack_version": "0",
+   "corepack_enable": "0",
+   "yarn_version": "0",
+   "complete": true
+  }
+ },
+ "26-trixie": {
+  "G1-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "cmd_yarn": "127",
+   "cmd_corepack": "127",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "127",
+   "complete": true
+  },
+  "G1-r2": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "cmd_yarn": "127",
+   "cmd_corepack": "127",
+   "cmd_pnpm": "127",
+   "cmd_apt_key": "127",
+   "yarn_version": "127",
+   "complete": true
+  },
+  "G2-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "npm_g_yarn": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G3-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "cond_install": "0",
+   "yarn_version": "0",
+   "complete": true
+  },
+  "G4-r1": {
+   "node": "v26.12.1",
+   "os": "trixie",
+   "npm_g_corepack": "0",
+   "corepack_version": "0",
+   "corepack_enable": "0",
+   "yarn_version": "0",
+   "complete": true
+  }
+ }
+}

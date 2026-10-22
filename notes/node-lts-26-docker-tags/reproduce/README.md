@@ -33,4 +33,37 @@ against the `lts` dates in
 `node:lts*` tag and which of them the rules flag as at risk on Node 26. `census-summary.json` has the counts.
 We do not publish the list of repositories.
 
+## Install lines
+
+`install-lines/images.txt` lists the six images by digest. `install-lines/probe.sh` runs one
+test group inside an image: `G1` lists the tools the image includes, `G2` is a plain
+`npm install --global yarn`, `G3` the Yarn v1 line from the note and `G4` the Corepack line.
+From the `install-lines` folder, for each image and group:
+
+```sh
+docker run --rm -e G=G4 -e TAG=26-trixie -e REP=1 -v "$PWD:/src:ro" -v "$PWD/out:/work" \
+  node@sha256:a98e6fda54fdbb22d4238054cca9a2a113bcd1191c09193a535aae22f400aa8e sh /src/probe.sh
+```
+
+Each run writes `out/TAG/G-rREP.rc` (exit code per step; 0 is success, 127 is "command not
+found") and a `.log` with the output. `install-lines/runs/` holds ours, and
+`install-lines/results.json` collects their exit codes.
+
+## Debian package lists
+
+`install-lines/apt/lists-full.txt` and `lists-slim.txt` hold the 21 distinct package lists
+from the active census Dockerfiles, one per line under an opaque ID, plus a control (`ctl1`)
+and one named package (`probe1`). `apt-replay.sh` runs `apt-get update` and then a simulated
+install of each list. From the `install-lines/apt` folder:
+
+```sh
+docker run --rm -e TAG=26-trixie -e VARIANT=full -v "$PWD:/src:ro" -v "$PWD:/in:ro" \
+  -v "$PWD/out:/work" \
+  node@sha256:a98e6fda54fdbb22d4238054cca9a2a113bcd1191c09193a535aae22f400aa8e sh /src/apt-replay.sh
+```
+
+Use the `24-bookworm` image for Debian 12, and the `-slim` images with `VARIANT=slim`.
+`results/` holds our output: one line per list with its exit code (0 resolved, 100 failed)
+and the first error lines.
+
 Third-party material and its licenses: [THIRD-PARTY.md](THIRD-PARTY.md).

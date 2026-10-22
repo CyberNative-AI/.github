@@ -1,0 +1,5 @@
+node	v24.22.1
+os	alpine-3.24.3
+cond_install	0
+yarn_version	0
+DONE

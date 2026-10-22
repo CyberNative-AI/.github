@@ -1,0 +1,10 @@
+### npm_g_yarn rc=1
+npm error code EEXIST
+npm error path /usr/local/bin/yarn
+npm error EEXIST: file already exists
+npm error File exists: /usr/local/bin/yarn
+npm error Remove the existing file and try again, or run npm
+npm error with --force to overwrite files recklessly.
+npm error A complete log of this run can be found in: /root/.npm/_logs/2026-10-22T12_55_06_187Z-debug-0.log
+### yarn_version rc=0
+1.22.22

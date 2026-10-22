@@ -1,0 +1,8 @@
+node	v26.12.1
+os	trixie
+cmd_yarn	127
+cmd_corepack	127
+cmd_pnpm	127
+cmd_apt_key	127
+yarn_version	127
+DONE

@@ -1,0 +1,10 @@
+### cmd_yarn rc=0
+/usr/local/bin/yarn
+### cmd_corepack rc=0
+/usr/local/bin/corepack
+### cmd_pnpm rc=127
+
+### cmd_apt_key rc=0
+/usr/bin/apt-key
+### yarn_version rc=0
+1.22.22

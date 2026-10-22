@@ -1,0 +1,10 @@
+### cmd_yarn rc=127
+
+### cmd_corepack rc=127
+
+### cmd_pnpm rc=127
+
+### cmd_apt_key rc=127
+
+### yarn_version rc=127
+/src/probe.sh: line 5: yarn: not found
