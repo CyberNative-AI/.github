@@ -1,0 +1,262 @@
+2026-10-23 07:55:32.358 UTC [1370] LOG:  starting PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-10-23 07:55:32.370 UTC [1370] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-10-23 07:55:32.549 UTC [1376] LOG:  database system was interrupted; last known up at 2026-10-23 07:43:08 UTC
+cp: cannot stat '/work/v18-fon/arch/00000002.history': No such file or directory
+2026-10-23 07:55:32.689 UTC [1376] LOG:  starting backup recovery with redo LSN 0/9B0000D8, checkpoint LSN 0/9B000130, on timeline ID 1
+2026-10-23 07:55:32.798 UTC [1376] LOG:  restored log file "00000001000000000000009B" from archive
+2026-10-23 07:55:32.994 UTC [1376] LOG:  starting archive recovery
+2026-10-23 07:55:33.073 UTC [1376] LOG:  redo starts at 0/9B0000D8
+2026-10-23 07:55:33.187 UTC [1376] LOG:  restored log file "00000001000000000000009C" from archive
+2026-10-23 07:55:33.500 UTC [1376] LOG:  completed backup recovery with redo LSN 0/9B0000D8 and end LSN 0/9B000E78
+2026-10-23 07:55:33.500 UTC [1376] LOG:  consistent recovery state reached at 0/9B000E78
+2026-10-23 07:55:33.500 UTC [1370] LOG:  database system is ready to accept read-only connections
+2026-10-23 07:55:33.813 UTC [1376] LOG:  restored log file "00000001000000000000009D" from archive
+2026-10-23 07:55:34.306 UTC [1376] LOG:  restored log file "00000001000000000000009E" from archive
+2026-10-23 07:55:34.833 UTC [1376] LOG:  restored log file "00000001000000000000009F" from archive
+2026-10-23 07:55:35.588 UTC [1376] LOG:  restored log file "0000000100000000000000A0" from archive
+2026-10-23 07:55:36.279 UTC [1376] LOG:  restored log file "0000000100000000000000A1" from archive
+2026-10-23 07:55:36.798 UTC [1376] LOG:  restored log file "0000000100000000000000A2" from archive
+2026-10-23 07:55:37.319 UTC [1376] LOG:  restored log file "0000000100000000000000A3" from archive
+2026-10-23 07:55:37.849 UTC [1376] LOG:  restored log file "0000000100000000000000A4" from archive
+2026-10-23 07:55:38.351 UTC [1376] LOG:  restored log file "0000000100000000000000A5" from archive
+2026-10-23 07:55:38.917 UTC [1376] LOG:  restored log file "0000000100000000000000A6" from archive
+2026-10-23 07:55:39.423 UTC [1376] LOG:  restored log file "0000000100000000000000A7" from archive
+2026-10-23 07:55:39.912 UTC [1376] LOG:  restored log file "0000000100000000000000A8" from archive
+2026-10-23 07:55:40.396 UTC [1376] LOG:  restored log file "0000000100000000000000A9" from archive
+2026-10-23 07:55:40.909 UTC [1376] LOG:  restored log file "0000000100000000000000AA" from archive
+2026-10-23 07:55:41.474 UTC [1376] LOG:  restored log file "0000000100000000000000AB" from archive
+2026-10-23 07:55:41.920 UTC [1376] LOG:  restored log file "0000000100000000000000AC" from archive
+2026-10-23 07:55:43.036 UTC [1376] LOG:  restored log file "0000000100000000000000AD" from archive
+2026-10-23 07:55:43.306 UTC [1376] LOG:  redo in progress, elapsed time: 10.23 s, current LSN: 0/ACFF6E08
+2026-10-23 07:55:43.585 UTC [1376] LOG:  restored log file "0000000100000000000000AE" from archive
+2026-10-23 07:55:44.116 UTC [1376] LOG:  restored log file "0000000100000000000000AF" from archive
+2026-10-23 07:55:45.071 UTC [1376] LOG:  restored log file "0000000100000000000000B0" from archive
+2026-10-23 07:55:46.263 UTC [1376] LOG:  restored log file "0000000100000000000000B1" from archive
+2026-10-23 07:55:46.764 UTC [1376] LOG:  restored log file "0000000100000000000000B2" from archive
+2026-10-23 07:55:47.273 UTC [1376] LOG:  restored log file "0000000100000000000000B3" from archive
+2026-10-23 07:55:47.838 UTC [1376] LOG:  restored log file "0000000100000000000000B4" from archive
+2026-10-23 07:55:48.458 UTC [1376] LOG:  restored log file "0000000100000000000000B5" from archive
+2026-10-23 07:55:48.929 UTC [1376] LOG:  restored log file "0000000100000000000000B6" from archive
+2026-10-23 07:55:49.410 UTC [1376] LOG:  restored log file "0000000100000000000000B7" from archive
+2026-10-23 07:55:49.949 UTC [1376] LOG:  restored log file "0000000100000000000000B8" from archive
+2026-10-23 07:55:51.045 UTC [1376] LOG:  restored log file "0000000100000000000000B9" from archive
+2026-10-23 07:55:51.513 UTC [1376] LOG:  restored log file "0000000100000000000000BA" from archive
+2026-10-23 07:55:52.177 UTC [1376] LOG:  restored log file "0000000100000000000000BB" from archive
+2026-10-23 07:55:52.455 UTC [1374] LOG:  restartpoint starting: wal
+2026-10-23 07:55:53.489 UTC [1376] LOG:  restored log file "0000000100000000000000BC" from archive
+2026-10-23 07:55:54.170 UTC [1376] LOG:  redo in progress, elapsed time: 21.09 s, current LSN: 0/BBFF5428
+2026-10-23 07:55:54.555 UTC [1376] LOG:  restored log file "0000000100000000000000BD" from archive
+2026-10-23 07:55:55.025 UTC [1376] LOG:  restored log file "0000000100000000000000BE" from archive
+2026-10-23 07:55:55.552 UTC [1376] LOG:  restored log file "0000000100000000000000BF" from archive
+2026-10-23 07:55:56.069 UTC [1376] LOG:  restored log file "0000000100000000000000C0" from archive
+2026-10-23 07:55:57.330 UTC [1376] LOG:  restored log file "0000000100000000000000C1" from archive
+2026-10-23 07:55:58.251 UTC [1376] LOG:  restored log file "0000000100000000000000C2" from archive
+2026-10-23 07:55:58.784 UTC [1376] LOG:  restored log file "0000000100000000000000C3" from archive
+2026-10-23 07:55:59.257 UTC [1376] LOG:  restored log file "0000000100000000000000C4" from archive
+2026-10-23 07:55:59.850 UTC [1376] LOG:  restored log file "0000000100000000000000C5" from archive
+2026-10-23 07:56:00.445 UTC [1376] LOG:  restored log file "0000000100000000000000C6" from archive
+2026-10-23 07:56:01.072 UTC [1376] LOG:  restored log file "0000000100000000000000C7" from archive
+2026-10-23 07:56:01.551 UTC [1376] LOG:  restored log file "0000000100000000000000C8" from archive
+2026-10-23 07:56:02.186 UTC [1376] LOG:  restored log file "0000000100000000000000C9" from archive
+2026-10-23 07:56:03.160 UTC [1376] LOG:  restored log file "0000000100000000000000CA" from archive
+2026-10-23 07:56:03.371 UTC [1376] LOG:  redo in progress, elapsed time: 30.29 s, current LSN: 0/C9FF4028
+2026-10-23 07:56:03.648 UTC [1376] LOG:  restored log file "0000000100000000000000CB" from archive
+2026-10-23 07:56:04.161 UTC [1376] LOG:  restored log file "0000000100000000000000CC" from archive
+2026-10-23 07:56:04.769 UTC [1376] LOG:  restored log file "0000000100000000000000CD" from archive
+2026-10-23 07:56:05.792 UTC [1376] LOG:  restored log file "0000000100000000000000CE" from archive
+2026-10-23 07:56:06.278 UTC [1376] LOG:  restored log file "0000000100000000000000CF" from archive
+2026-10-23 07:56:06.806 UTC [1376] LOG:  restored log file "0000000100000000000000D0" from archive
+2026-10-23 07:56:07.246 UTC [1376] LOG:  restored log file "0000000100000000000000D1" from archive
+2026-10-23 07:56:08.809 UTC [1376] LOG:  restored log file "0000000100000000000000D2" from archive
+2026-10-23 07:56:09.574 UTC [1376] LOG:  restored log file "0000000100000000000000D3" from archive
+2026-10-23 07:56:10.128 UTC [1376] LOG:  restored log file "0000000100000000000000D4" from archive
+2026-10-23 07:56:10.590 UTC [1376] LOG:  restored log file "0000000100000000000000D5" from archive
+2026-10-23 07:56:11.232 UTC [1376] LOG:  restored log file "0000000100000000000000D6" from archive
+2026-10-23 07:56:11.696 UTC [1376] LOG:  restored log file "0000000100000000000000D7" from archive
+2026-10-23 07:56:12.139 UTC [1376] LOG:  restored log file "0000000100000000000000D8" from archive
+2026-10-23 07:56:12.716 UTC [1376] LOG:  restored log file "0000000100000000000000D9" from archive
+2026-10-23 07:56:14.462 UTC [1376] LOG:  restored log file "0000000100000000000000DA" from archive
+2026-10-23 07:56:14.578 UTC [1374] LOG:  restartpoint complete: wrote 76 buffers (0.5%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 0 recycled; write=20.286 s, sync=1.325 s, total=22.123 s; sync files=9, longest=0.912 s, average=0.148 s; distance=16383 kB, estimate=16383 kB; lsn=0/9C0000B8, redo lsn=0/9C000060
+2026-10-23 07:56:14.578 UTC [1374] LOG:  recovery restart point at 0/9C000060
+2026-10-23 07:56:14.709 UTC [1376] LOG:  redo in progress, elapsed time: 41.63 s, current LSN: 0/D9FF5420
+2026-10-23 07:56:15.151 UTC [1376] LOG:  restored log file "0000000100000000000000DB" from archive
+2026-10-23 07:56:15.409 UTC [1374] LOG:  restartpoint starting: wal
+2026-10-23 07:56:16.120 UTC [1376] LOG:  restored log file "0000000100000000000000DC" from archive
+2026-10-23 07:56:16.620 UTC [1376] LOG:  restored log file "0000000100000000000000DD" from archive
+2026-10-23 07:56:17.085 UTC [1376] LOG:  restored log file "0000000100000000000000DE" from archive
+2026-10-23 07:56:17.573 UTC [1376] LOG:  restored log file "0000000100000000000000DF" from archive
+2026-10-23 07:56:18.028 UTC [1376] LOG:  restored log file "0000000100000000000000E0" from archive
+2026-10-23 07:56:18.589 UTC [1376] LOG:  restored log file "0000000100000000000000E1" from archive
+2026-10-23 07:56:19.141 UTC [1376] LOG:  restored log file "0000000100000000000000E2" from archive
+2026-10-23 07:56:20.129 UTC [1376] LOG:  restored log file "0000000100000000000000E3" from archive
+2026-10-23 07:56:20.658 UTC [1376] LOG:  restored log file "0000000100000000000000E4" from archive
+2026-10-23 07:56:21.181 UTC [1376] LOG:  restored log file "0000000100000000000000E5" from archive
+2026-10-23 07:56:21.646 UTC [1376] LOG:  restored log file "0000000100000000000000E6" from archive
+2026-10-23 07:56:22.541 UTC [1376] LOG:  restored log file "0000000100000000000000E7" from archive
+2026-10-23 07:56:22.997 UTC [1376] LOG:  restored log file "0000000100000000000000E8" from archive
+2026-10-23 07:56:23.221 UTC [1376] LOG:  redo in progress, elapsed time: 50.14 s, current LSN: 0/E7FF47E0
+2026-10-23 07:56:23.761 UTC [1376] LOG:  restored log file "0000000100000000000000E9" from archive
+2026-10-23 07:56:24.682 UTC [1376] LOG:  restored log file "0000000100000000000000EA" from archive
+2026-10-23 07:56:25.209 UTC [1376] LOG:  restored log file "0000000100000000000000EB" from archive
+2026-10-23 07:56:25.898 UTC [1376] LOG:  restored log file "0000000100000000000000EC" from archive
+2026-10-23 07:56:26.683 UTC [1376] LOG:  restored log file "0000000100000000000000ED" from archive
+2026-10-23 07:56:28.051 UTC [1376] LOG:  restored log file "0000000100000000000000EE" from archive
+2026-10-23 07:56:28.627 UTC [1376] LOG:  restored log file "0000000100000000000000EF" from archive
+2026-10-23 07:56:29.117 UTC [1376] LOG:  restored log file "0000000100000000000000F0" from archive
+2026-10-23 07:56:29.773 UTC [1376] LOG:  restored log file "0000000100000000000000F1" from archive
+2026-10-23 07:56:30.278 UTC [1376] LOG:  restored log file "0000000100000000000000F2" from archive
+2026-10-23 07:56:30.774 UTC [1376] LOG:  restored log file "0000000100000000000000F3" from archive
+2026-10-23 07:56:31.384 UTC [1376] LOG:  restored log file "0000000100000000000000F4" from archive
+2026-10-23 07:56:31.932 UTC [1376] LOG:  restored log file "0000000100000000000000F5" from archive
+2026-10-23 07:56:32.800 UTC [1376] LOG:  restored log file "0000000100000000000000F6" from archive
+2026-10-23 07:56:33.297 UTC [1376] LOG:  restored log file "0000000100000000000000F7" from archive
+2026-10-23 07:56:33.573 UTC [1376] LOG:  redo in progress, elapsed time: 60.49 s, current LSN: 0/F6FF70D0
+2026-10-23 07:56:34.133 UTC [1376] LOG:  restored log file "0000000100000000000000F8" from archive
+2026-10-23 07:56:35.336 UTC [1376] LOG:  restored log file "0000000100000000000000F9" from archive
+2026-10-23 07:56:37.122 UTC [1376] LOG:  restored log file "0000000100000000000000FA" from archive
+2026-10-23 07:56:38.880 UTC [1376] LOG:  restored log file "0000000100000000000000FB" from archive
+2026-10-23 07:56:39.570 UTC [1374] LOG:  restartpoint complete: wrote 68 buffers (0.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 33 removed, 0 recycled; write=19.914 s, sync=0.938 s, total=24.162 s; sync files=6, longest=0.258 s, average=0.157 s; distance=544772 kB, estimate=544772 kB; lsn=0/DB66B890, redo lsn=0/BD4013C8
+2026-10-23 07:56:39.570 UTC [1374] LOG:  recovery restart point at 0/BD4013C8
+2026-10-23 07:56:39.882 UTC [1376] LOG:  restored log file "0000000100000000000000FC" from archive
+2026-10-23 07:56:40.532 UTC [1376] LOG:  restored log file "0000000100000000000000FD" from archive
+2026-10-23 07:56:41.200 UTC [1376] LOG:  restored log file "0000000100000000000000FE" from archive
+2026-10-23 07:56:41.482 UTC [1374] LOG:  restartpoint starting: wal
+2026-10-23 07:56:42.182 UTC [1376] LOG:  restored log file "0000000100000000000000FF" from archive
+2026-10-23 07:56:42.750 UTC [1376] LOG:  restored log file "000000010000000100000000" from archive
+2026-10-23 07:56:43.369 UTC [1376] LOG:  restored log file "000000010000000100000001" from archive
+2026-10-23 07:56:43.611 UTC [1376] LOG:  redo in progress, elapsed time: 70.53 s, current LSN: 1/FF5430
+2026-10-23 07:56:43.900 UTC [1376] LOG:  restored log file "000000010000000100000002" from archive
+2026-10-23 07:56:44.568 UTC [1376] LOG:  restored log file "000000010000000100000003" from archive
+2026-10-23 07:56:45.513 UTC [1376] LOG:  restored log file "000000010000000100000004" from archive
+2026-10-23 07:56:46.051 UTC [1376] LOG:  restored log file "000000010000000100000005" from archive
+2026-10-23 07:56:46.560 UTC [1376] LOG:  restored log file "000000010000000100000006" from archive
+2026-10-23 07:56:47.487 UTC [1376] LOG:  restored log file "000000010000000100000007" from archive
+2026-10-23 07:56:48.038 UTC [1376] LOG:  restored log file "000000010000000100000008" from archive
+2026-10-23 07:56:48.631 UTC [1376] LOG:  restored log file "000000010000000100000009" from archive
+2026-10-23 07:56:49.852 UTC [1376] LOG:  restored log file "00000001000000010000000A" from archive
+2026-10-23 07:56:50.418 UTC [1376] LOG:  restored log file "00000001000000010000000B" from archive
+2026-10-23 07:56:51.053 UTC [1376] LOG:  restored log file "00000001000000010000000C" from archive
+2026-10-23 07:56:51.878 UTC [1376] LOG:  restored log file "00000001000000010000000D" from archive
+2026-10-23 07:56:53.221 UTC [1376] LOG:  restored log file "00000001000000010000000E" from archive
+2026-10-23 07:56:53.469 UTC [1376] LOG:  redo in progress, elapsed time: 80.39 s, current LSN: 1/DFF4910
+2026-10-23 07:56:53.779 UTC [1376] LOG:  restored log file "00000001000000010000000F" from archive
+2026-10-23 07:56:54.305 UTC [1376] LOG:  restored log file "000000010000000100000010" from archive
+2026-10-23 07:56:54.931 UTC [1376] LOG:  restored log file "000000010000000100000011" from archive
+2026-10-23 07:56:55.475 UTC [1376] LOG:  restored log file "000000010000000100000012" from archive
+2026-10-23 07:56:56.043 UTC [1376] LOG:  restored log file "000000010000000100000013" from archive
+2026-10-23 07:56:56.584 UTC [1376] LOG:  restored log file "000000010000000100000014" from archive
+2026-10-23 07:56:57.161 UTC [1376] LOG:  restored log file "000000010000000100000015" from archive
+2026-10-23 07:56:58.158 UTC [1376] LOG:  restored log file "000000010000000100000016" from archive
+2026-10-23 07:56:58.650 UTC [1376] LOG:  restored log file "000000010000000100000017" from archive
+2026-10-23 07:56:59.186 UTC [1376] LOG:  restored log file "000000010000000100000018" from archive
+2026-10-23 07:56:59.866 UTC [1376] LOG:  restored log file "000000010000000100000019" from archive
+2026-10-23 07:57:00.843 UTC [1376] LOG:  restored log file "00000001000000010000001A" from archive
+2026-10-23 07:57:01.437 UTC [1376] LOG:  restored log file "00000001000000010000001B" from archive
+2026-10-23 07:57:01.969 UTC [1376] LOG:  restored log file "00000001000000010000001C" from archive
+2026-10-23 07:57:04.143 UTC [1376] LOG:  restored log file "00000001000000010000001D" from archive
+2026-10-23 07:57:04.484 UTC [1376] LOG:  redo in progress, elapsed time: 91.41 s, current LSN: 1/1CFF51B0
+2026-10-23 07:57:06.619 UTC [1376] LOG:  restored log file "00000001000000010000001E" from archive
+2026-10-23 07:57:08.150 UTC [1374] LOG:  restartpoint complete: wrote 73 buffers (0.4%), wrote 0 SLRU buffers; 0 WAL file(s) added, 34 removed, 0 recycled; write=20.457 s, sync=1.665 s, total=26.669 s; sync files=6, longest=1.139 s, average=0.278 s; distance=567042 kB, estimate=567042 kB; lsn=0/FE402090, redo lsn=0/DFDC1BE8
+2026-10-23 07:57:08.150 UTC [1374] LOG:  recovery restart point at 0/DFDC1BE8
+2026-10-23 07:57:08.349 UTC [1376] LOG:  restored log file "00000001000000010000001F" from archive
+2026-10-23 07:57:08.992 UTC [1376] LOG:  restored log file "000000010000000100000020" from archive
+2026-10-23 07:57:09.593 UTC [1376] LOG:  restored log file "000000010000000100000021" from archive
+2026-10-23 07:57:09.869 UTC [1374] LOG:  restartpoint starting: wal
+2026-10-23 07:57:10.694 UTC [1376] LOG:  restored log file "000000010000000100000022" from archive
+2026-10-23 07:57:11.173 UTC [1376] LOG:  restored log file "000000010000000100000023" from archive
+2026-10-23 07:57:11.730 UTC [1376] LOG:  restored log file "000000010000000100000024" from archive
+2026-10-23 07:57:12.220 UTC [1376] LOG:  restored log file "000000010000000100000025" from archive
+2026-10-23 07:57:12.776 UTC [1376] LOG:  restored log file "000000010000000100000026" from archive
+2026-10-23 07:57:13.274 UTC [1376] LOG:  restored log file "000000010000000100000027" from archive
+2026-10-23 07:57:13.892 UTC [1376] LOG:  redo in progress, elapsed time: 100.81 s, current LSN: 1/26FF4330
+2026-10-23 07:57:14.232 UTC [1376] LOG:  restored log file "000000010000000100000028" from archive
+2026-10-23 07:57:14.749 UTC [1376] LOG:  restored log file "000000010000000100000029" from archive
+2026-10-23 07:57:15.283 UTC [1376] LOG:  restored log file "00000001000000010000002A" from archive
+2026-10-23 07:57:16.150 UTC [1376] LOG:  restored log file "00000001000000010000002B" from archive
+2026-10-23 07:57:16.605 UTC [1376] LOG:  restored log file "00000001000000010000002C" from archive
+2026-10-23 07:57:17.349 UTC [1376] LOG:  restored log file "00000001000000010000002D" from archive
+2026-10-23 07:57:18.910 UTC [1376] LOG:  restored log file "00000001000000010000002E" from archive
+2026-10-23 07:57:19.505 UTC [1376] LOG:  restored log file "00000001000000010000002F" from archive
+2026-10-23 07:57:19.992 UTC [1376] LOG:  restored log file "000000010000000100000030" from archive
+2026-10-23 07:57:20.547 UTC [1376] LOG:  restored log file "000000010000000100000031" from archive
+2026-10-23 07:57:21.100 UTC [1376] LOG:  restored log file "000000010000000100000032" from archive
+2026-10-23 07:57:21.515 UTC [1376] LOG:  restored log file "000000010000000100000033" from archive
+2026-10-23 07:57:22.051 UTC [1376] LOG:  restored log file "000000010000000100000034" from archive
+2026-10-23 07:57:22.582 UTC [1376] LOG:  restored log file "000000010000000100000035" from archive
+2026-10-23 07:57:23.144 UTC [1376] LOG:  redo in progress, elapsed time: 110.07 s, current LSN: 1/34FF3E30
+2026-10-23 07:57:23.373 UTC [1376] LOG:  restored log file "000000010000000100000036" from archive
+2026-10-23 07:57:23.891 UTC [1376] LOG:  restored log file "000000010000000100000037" from archive
+2026-10-23 07:57:24.832 UTC [1376] LOG:  restored log file "000000010000000100000038" from archive
+2026-10-23 07:57:25.692 UTC [1376] LOG:  restored log file "000000010000000100000039" from archive
+2026-10-23 07:57:26.232 UTC [1376] LOG:  restored log file "00000001000000010000003A" from archive
+2026-10-23 07:57:26.754 UTC [1376] LOG:  restored log file "00000001000000010000003B" from archive
+2026-10-23 07:57:27.568 UTC [1376] LOG:  restored log file "00000001000000010000003C" from archive
+2026-10-23 07:57:28.533 UTC [1376] LOG:  restored log file "00000001000000010000003D" from archive
+2026-10-23 07:57:29.104 UTC [1376] LOG:  restored log file "00000001000000010000003E" from archive
+2026-10-23 07:57:29.617 UTC [1376] LOG:  restored log file "00000001000000010000003F" from archive
+2026-10-23 07:57:31.817 UTC [1376] LOG:  restored log file "000000010000000100000040" from archive
+2026-10-23 07:57:34.211 UTC [1376] LOG:  restored log file "000000010000000100000041" from archive
+2026-10-23 07:57:34.560 UTC [1376] LOG:  redo in progress, elapsed time: 121.48 s, current LSN: 1/40FF5C10
+2026-10-23 07:57:35.922 UTC [1374] LOG:  restartpoint complete: wrote 104 buffers (0.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 36 removed, 0 recycled; write=19.770 s, sync=1.472 s, total=26.053 s; sync files=6, longest=1.037 s, average=0.246 s; distance=583929 kB, estimate=583929 kB; lsn=1/21403A10, redo lsn=1/3800130
+2026-10-23 07:57:35.922 UTC [1374] LOG:  recovery restart point at 1/3800130
+2026-10-23 07:57:36.127 UTC [1376] LOG:  restored log file "000000010000000100000042" from archive
+2026-10-23 07:57:36.804 UTC [1376] LOG:  restored log file "000000010000000100000043" from archive
+2026-10-23 07:57:37.452 UTC [1376] LOG:  restored log file "000000010000000100000044" from archive
+2026-10-23 07:57:37.759 UTC [1374] LOG:  restartpoint starting: wal
+2026-10-23 07:57:38.731 UTC [1376] LOG:  restored log file "000000010000000100000045" from archive
+2026-10-23 07:57:39.331 UTC [1376] LOG:  restored log file "000000010000000100000046" from archive
+2026-10-23 07:57:39.865 UTC [1376] LOG:  restored log file "000000010000000100000047" from archive
+2026-10-23 07:57:40.461 UTC [1376] LOG:  restored log file "000000010000000100000048" from archive
+2026-10-23 07:57:41.130 UTC [1376] LOG:  restored log file "000000010000000100000049" from archive
+2026-10-23 07:57:41.626 UTC [1376] LOG:  restored log file "00000001000000010000004A" from archive
+2026-10-23 07:57:42.358 UTC [1376] LOG:  restored log file "00000001000000010000004B" from archive
+2026-10-23 07:57:43.138 UTC [1376] LOG:  restored log file "00000001000000010000004C" from archive
+2026-10-23 07:57:43.550 UTC [1376] LOG:  redo in progress, elapsed time: 130.47 s, current LSN: 1/4BFF6058
+2026-10-23 07:57:43.879 UTC [1376] LOG:  restored log file "00000001000000010000004D" from archive
+2026-10-23 07:57:44.463 UTC [1376] LOG:  restored log file "00000001000000010000004E" from archive
+2026-10-23 07:57:46.166 UTC [1376] LOG:  restored log file "00000001000000010000004F" from archive
+2026-10-23 07:57:46.846 UTC [1376] LOG:  restored log file "000000010000000100000050" from archive
+2026-10-23 07:57:47.402 UTC [1376] LOG:  restored log file "000000010000000100000051" from archive
+2026-10-23 07:57:48.006 UTC [1376] LOG:  restored log file "000000010000000100000052" from archive
+2026-10-23 07:57:48.736 UTC [1376] LOG:  restored log file "000000010000000100000053" from archive
+2026-10-23 07:57:49.267 UTC [1376] LOG:  restored log file "000000010000000100000054" from archive
+2026-10-23 07:57:49.849 UTC [1376] LOG:  restored log file "000000010000000100000055" from archive
+2026-10-23 07:57:50.390 UTC [1376] LOG:  restored log file "000000010000000100000056" from archive
+2026-10-23 07:57:51.192 UTC [1376] LOG:  restored log file "000000010000000100000057" from archive
+2026-10-23 07:57:52.030 UTC [1376] LOG:  restored log file "000000010000000100000058" from archive
+2026-10-23 07:57:52.674 UTC [1376] LOG:  restored log file "000000010000000100000059" from archive
+2026-10-23 07:57:53.421 UTC [1376] LOG:  restored log file "00000001000000010000005A" from archive
+2026-10-23 07:57:53.977 UTC [1376] LOG:  redo in progress, elapsed time: 140.90 s, current LSN: 1/59FF3B30
+2026-10-23 07:57:54.305 UTC [1376] LOG:  restored log file "00000001000000010000005B" from archive
+2026-10-23 07:57:54.802 UTC [1376] LOG:  restored log file "00000001000000010000005C" from archive
+2026-10-23 07:57:55.400 UTC [1376] LOG:  restored log file "00000001000000010000005D" from archive
+2026-10-23 07:57:56.182 UTC [1376] LOG:  restored log file "00000001000000010000005E" from archive
+2026-10-23 07:57:56.782 UTC [1376] LOG:  restored log file "00000001000000010000005F" from archive
+2026-10-23 07:57:57.438 UTC [1376] LOG:  restored log file "000000010000000100000060" from archive
+2026-10-23 07:57:58.842 UTC [1376] LOG:  restored log file "000000010000000100000061" from archive
+2026-10-23 07:57:59.717 UTC [1376] LOG:  restored log file "000000010000000100000062" from archive
+2026-10-23 07:58:01.654 UTC [1376] LOG:  restored log file "000000010000000100000063" from archive
+2026-10-23 07:58:03.980 UTC [1376] LOG:  restored log file "000000010000000100000064" from archive
+2026-10-23 07:58:04.244 UTC [1376] LOG:  redo in progress, elapsed time: 151.17 s, current LSN: 1/63FF5F50
+2026-10-23 07:58:04.523 UTC [1374] LOG:  restartpoint complete: wrote 103 buffers (0.6%), wrote 0 SLRU buffers; 0 WAL file(s) added, 35 removed, 0 recycled; write=21.874 s, sync=0.630 s, total=26.764 s; sync files=6, longest=0.310 s, average=0.105 s; distance=574839 kB, estimate=583020 kB; lsn=1/4499BD38, redo lsn=1/2695DEA0
+2026-10-23 07:58:04.523 UTC [1374] LOG:  recovery restart point at 1/2695DEA0
+2026-10-23 07:58:04.704 UTC [1376] LOG:  restored log file "000000010000000100000065" from archive
+cp: cannot stat '/work/v18-fon/arch/000000010000000100000066': No such file or directory
+cp: cannot stat '/work/v18-fon/arch/000000010000000100000066': No such file or directory
+2026-10-23 07:58:04.955 UTC [1376] LOG:  redo done at 1/650000D8 system usage: CPU: user: 5.16 s, system: 7.88 s, elapsed: 151.88 s
+2026-10-23 07:58:04.955 UTC [1376] LOG:  last completed transaction was at log time 2026-10-23 07:46:57.126855+00
+2026-10-23 07:58:04.976 UTC [1376] LOG:  restored log file "000000010000000100000065" from archive
+cp: cannot stat '/work/v18-fon/arch/00000002.history': No such file or directory
+2026-10-23 07:58:05.199 UTC [1376] LOG:  selected new timeline ID: 2
+cp: cannot stat '/work/v18-fon/arch/00000001.history': No such file or directory
+2026-10-23 07:58:05.530 UTC [1376] LOG:  archive recovery complete
+2026-10-23 07:58:05.613 UTC [1374] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-23 07:58:08.629 UTC [1374] LOG:  checkpoint complete: wrote 15294 buffers (93.3%), wrote 2 SLRU buffers; 0 WAL file(s) added, 1 removed, 63 recycled; write=0.905 s, sync=0.471 s, total=3.084 s; sync files=6, longest=0.320 s, average=0.079 s; distance=1038984 kB, estimate=1038984 kB; lsn=1/66000028, redo lsn=1/66000028
+2026-10-23 07:58:08.716 UTC [1370] LOG:  database system is ready to accept connections
+2026-10-23 07:58:08.973 UTC [1370] LOG:  received fast shutdown request
+2026-10-23 07:58:09.032 UTC [1370] LOG:  aborting any active transactions
+2026-10-23 07:58:09.035 UTC [1370] LOG:  background worker "logical replication launcher" (PID 3252) exited with exit code 1
+2026-10-23 07:58:09.041 UTC [1374] LOG:  shutting down
+2026-10-23 07:58:09.110 UTC [1374] LOG:  checkpoint starting: shutdown immediate
+2026-10-23 07:58:09.300 UTC [1374] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.259 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=935085 kB; lsn=1/660000D8, redo lsn=1/660000D8
+2026-10-23 07:58:09.437 UTC [1370] LOG:  database system is shut down

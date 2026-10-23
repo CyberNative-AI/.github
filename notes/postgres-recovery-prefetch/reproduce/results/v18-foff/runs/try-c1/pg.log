@@ -1,0 +1,180 @@
+2026-10-23 11:33:55.465 UTC [1190] LOG:  starting PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-10-23 11:33:55.535 UTC [1190] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-10-23 11:33:55.701 UTC [1196] LOG:  database system was interrupted; last known up at 2026-10-23 07:51:33 UTC
+cp: cannot stat '/work/v18-foff/arch/00000002.history': No such file or directory
+2026-10-23 11:33:55.818 UTC [1196] LOG:  starting backup recovery with redo LSN 0/9B000028, checkpoint LSN 0/9B000080, on timeline ID 1
+2026-10-23 11:33:56.006 UTC [1196] LOG:  restored log file "00000001000000000000009B" from archive
+2026-10-23 11:33:56.186 UTC [1196] LOG:  starting archive recovery
+2026-10-23 11:33:56.242 UTC [1196] LOG:  redo starts at 0/9B000028
+2026-10-23 11:33:56.411 UTC [1196] LOG:  restored log file "00000001000000000000009C" from archive
+2026-10-23 11:33:56.686 UTC [1196] LOG:  completed backup recovery with redo LSN 0/9B000028 and end LSN 0/9B000E00
+2026-10-23 11:33:56.686 UTC [1196] LOG:  consistent recovery state reached at 0/9B000E00
+2026-10-23 11:33:56.686 UTC [1190] LOG:  database system is ready to accept read-only connections
+2026-10-23 11:34:06.302 UTC [1196] LOG:  redo in progress, elapsed time: 10.05 s, current LSN: 0/9C1E72D0
+2026-10-23 11:34:16.302 UTC [1196] LOG:  redo in progress, elapsed time: 20.05 s, current LSN: 0/9C4298C0
+2026-10-23 11:34:26.302 UTC [1196] LOG:  redo in progress, elapsed time: 30.05 s, current LSN: 0/9C66AF28
+2026-10-23 11:34:36.302 UTC [1196] LOG:  redo in progress, elapsed time: 40.05 s, current LSN: 0/9C8AD7A8
+2026-10-23 11:34:46.302 UTC [1196] LOG:  redo in progress, elapsed time: 50.05 s, current LSN: 0/9CAEFEC0
+2026-10-23 11:34:56.302 UTC [1196] LOG:  redo in progress, elapsed time: 60.05 s, current LSN: 0/9CD32850
+2026-10-23 11:35:06.302 UTC [1196] LOG:  redo in progress, elapsed time: 70.05 s, current LSN: 0/9CF74F68
+2026-10-23 11:35:08.905 UTC [1196] LOG:  restored log file "00000001000000000000009D" from archive
+2026-10-23 11:35:16.342 UTC [1196] LOG:  redo in progress, elapsed time: 80.09 s, current LSN: 0/9D1A09F0
+2026-10-23 11:35:26.342 UTC [1196] LOG:  redo in progress, elapsed time: 90.09 s, current LSN: 0/9D3E3108
+2026-10-23 11:35:36.342 UTC [1196] LOG:  redo in progress, elapsed time: 100.09 s, current LSN: 0/9D625918
+2026-10-23 11:35:46.343 UTC [1196] LOG:  redo in progress, elapsed time: 110.10 s, current LSN: 0/9D8681B0
+2026-10-23 11:35:56.343 UTC [1196] LOG:  redo in progress, elapsed time: 120.10 s, current LSN: 0/9DAAA8C8
+2026-10-23 11:36:06.342 UTC [1196] LOG:  redo in progress, elapsed time: 130.09 s, current LSN: 0/9DCECEB8
+2026-10-23 11:36:16.342 UTC [1196] LOG:  redo in progress, elapsed time: 140.09 s, current LSN: 0/9DF2C350
+2026-10-23 11:36:20.170 UTC [1196] LOG:  restored log file "00000001000000000000009E" from archive
+2026-10-23 11:36:26.270 UTC [1196] LOG:  redo in progress, elapsed time: 150.02 s, current LSN: 0/9E1556D0
+2026-10-23 11:36:36.270 UTC [1196] LOG:  redo in progress, elapsed time: 160.02 s, current LSN: 0/9E397DE8
+2026-10-23 11:36:46.270 UTC [1196] LOG:  redo in progress, elapsed time: 170.02 s, current LSN: 0/9E5DA778
+2026-10-23 11:36:56.270 UTC [1196] LOG:  redo in progress, elapsed time: 180.02 s, current LSN: 0/9E81CE90
+2026-10-23 11:37:06.269 UTC [1196] LOG:  redo in progress, elapsed time: 190.02 s, current LSN: 0/9EA5F840
+2026-10-23 11:37:16.270 UTC [1196] LOG:  redo in progress, elapsed time: 200.02 s, current LSN: 0/9ECA1F58
+2026-10-23 11:37:26.270 UTC [1196] LOG:  redo in progress, elapsed time: 210.02 s, current LSN: 0/9EEE4658
+2026-10-23 11:37:31.376 UTC [1196] LOG:  restored log file "00000001000000000000009F" from archive
+2026-10-23 11:37:36.278 UTC [1196] LOG:  redo in progress, elapsed time: 220.03 s, current LSN: 0/9F110110
+2026-10-23 11:37:46.278 UTC [1196] LOG:  redo in progress, elapsed time: 230.03 s, current LSN: 0/9F352700
+2026-10-23 11:37:56.278 UTC [1196] LOG:  redo in progress, elapsed time: 240.03 s, current LSN: 0/9F5931C0
+2026-10-23 11:38:06.279 UTC [1196] LOG:  redo in progress, elapsed time: 250.03 s, current LSN: 0/9F7D5B38
+2026-10-23 11:38:16.278 UTC [1196] LOG:  redo in progress, elapsed time: 260.03 s, current LSN: 0/9FA17EC8
+2026-10-23 11:38:26.279 UTC [1196] LOG:  redo in progress, elapsed time: 270.03 s, current LSN: 0/9FC5A858
+2026-10-23 11:38:36.278 UTC [1196] LOG:  redo in progress, elapsed time: 280.03 s, current LSN: 0/9FE9CF70
+2026-10-23 11:38:42.613 UTC [1196] LOG:  restored log file "0000000100000000000000A0" from archive
+2026-10-23 11:38:46.304 UTC [1196] LOG:  redo in progress, elapsed time: 290.06 s, current LSN: 0/A00CAB00
+2026-10-23 11:38:55.477 UTC [1194] LOG:  restartpoint starting: time
+2026-10-23 11:38:56.303 UTC [1196] LOG:  redo in progress, elapsed time: 300.06 s, current LSN: 0/A030C658
+2026-10-23 11:39:06.302 UTC [1196] LOG:  redo in progress, elapsed time: 310.05 s, current LSN: 0/A054ED70
+2026-10-23 11:39:16.303 UTC [1196] LOG:  redo in progress, elapsed time: 320.06 s, current LSN: 0/A07916E8
+2026-10-23 11:39:26.302 UTC [1196] LOG:  redo in progress, elapsed time: 330.06 s, current LSN: 0/A09D3E00
+2026-10-23 11:39:36.302 UTC [1196] LOG:  redo in progress, elapsed time: 340.05 s, current LSN: 0/A0C168B8
+2026-10-23 11:39:46.302 UTC [1196] LOG:  redo in progress, elapsed time: 350.05 s, current LSN: 0/A0E58EA8
+2026-10-23 11:39:53.806 UTC [1196] LOG:  restored log file "0000000100000000000000A1" from archive
+2026-10-23 11:39:56.255 UTC [1196] LOG:  redo in progress, elapsed time: 360.01 s, current LSN: 0/A107F300
+2026-10-23 11:40:06.254 UTC [1196] LOG:  redo in progress, elapsed time: 370.01 s, current LSN: 0/A12C1DA0
+2026-10-23 11:40:16.254 UTC [1196] LOG:  redo in progress, elapsed time: 380.01 s, current LSN: 0/A15044D0
+2026-10-23 11:40:26.255 UTC [1196] LOG:  redo in progress, elapsed time: 390.01 s, current LSN: 0/A1746E48
+2026-10-23 11:40:36.254 UTC [1196] LOG:  redo in progress, elapsed time: 400.01 s, current LSN: 0/A1986020
+2026-10-23 11:40:46.254 UTC [1196] LOG:  redo in progress, elapsed time: 410.01 s, current LSN: 0/A1BC5378
+2026-10-23 11:40:56.255 UTC [1196] LOG:  redo in progress, elapsed time: 420.01 s, current LSN: 0/A1E07CF0
+2026-10-23 11:41:05.157 UTC [1196] LOG:  restored log file "0000000100000000000000A2" from archive
+2026-10-23 11:41:06.278 UTC [1196] LOG:  redo in progress, elapsed time: 430.03 s, current LSN: 0/A2034448
+2026-10-23 11:41:16.278 UTC [1196] LOG:  redo in progress, elapsed time: 440.03 s, current LSN: 0/A2276E28
+2026-10-23 11:41:26.278 UTC [1196] LOG:  redo in progress, elapsed time: 450.03 s, current LSN: 0/A24B9418
+2026-10-23 11:41:36.278 UTC [1196] LOG:  redo in progress, elapsed time: 460.03 s, current LSN: 0/A26FBEE8
+2026-10-23 11:41:46.278 UTC [1196] LOG:  redo in progress, elapsed time: 470.03 s, current LSN: 0/A293E4F0
+2026-10-23 11:41:56.275 UTC [1196] LOG:  redo in progress, elapsed time: 480.03 s, current LSN: 0/A2B80F90
+2026-10-23 11:42:06.278 UTC [1196] LOG:  redo in progress, elapsed time: 490.03 s, current LSN: 0/A2DC3580
+2026-10-23 11:42:16.379 UTC [1196] LOG:  restored log file "0000000100000000000000A3" from archive
+2026-10-23 11:42:16.580 UTC [1196] LOG:  redo in progress, elapsed time: 500.33 s, current LSN: 0/A2FFEF90
+2026-10-23 11:42:26.286 UTC [1196] LOG:  redo in progress, elapsed time: 510.04 s, current LSN: 0/A3231398
+2026-10-23 11:42:36.286 UTC [1196] LOG:  redo in progress, elapsed time: 520.04 s, current LSN: 0/A3473AB0
+2026-10-23 11:42:46.286 UTC [1196] LOG:  redo in progress, elapsed time: 530.04 s, current LSN: 0/A36B61E0
+2026-10-23 11:42:56.286 UTC [1196] LOG:  redo in progress, elapsed time: 540.04 s, current LSN: 0/A38F88C8
+2026-10-23 11:43:06.286 UTC [1196] LOG:  redo in progress, elapsed time: 550.04 s, current LSN: 0/A3B3B270
+2026-10-23 11:43:16.286 UTC [1196] LOG:  redo in progress, elapsed time: 560.04 s, current LSN: 0/A3D7D860
+2026-10-23 11:43:25.306 UTC [1194] LOG:  restartpoint complete: wrote 55 buffers (0.3%), wrote 1 SLRU buffers; 0 WAL file(s) added, 1 removed, 0 recycled; write=269.386 s, sync=0.129 s, total=269.830 s; sync files=7, longest=0.056 s, average=0.019 s; distance=16384 kB, estimate=16384 kB; lsn=0/9C000080, redo lsn=0/9C000028
+2026-10-23 11:43:25.306 UTC [1194] LOG:  recovery restart point at 0/9C000028
+2026-10-23 11:43:26.286 UTC [1196] LOG:  redo in progress, elapsed time: 570.04 s, current LSN: 0/A3FC0318
+2026-10-23 11:43:27.586 UTC [1196] LOG:  restored log file "0000000100000000000000A4" from archive
+2026-10-23 11:43:36.303 UTC [1196] LOG:  redo in progress, elapsed time: 580.06 s, current LSN: 0/A41EBD88
+2026-10-23 11:43:46.302 UTC [1196] LOG:  redo in progress, elapsed time: 590.05 s, current LSN: 0/A442E5B0
+2026-10-23 11:43:56.303 UTC [1196] LOG:  redo in progress, elapsed time: 600.06 s, current LSN: 0/A4670F58
+2026-10-23 11:44:06.302 UTC [1196] LOG:  redo in progress, elapsed time: 610.05 s, current LSN: 0/A48B3548
+2026-10-23 11:44:16.302 UTC [1196] LOG:  redo in progress, elapsed time: 620.05 s, current LSN: 0/A4AF5FE8
+2026-10-23 11:44:26.302 UTC [1196] LOG:  redo in progress, elapsed time: 630.05 s, current LSN: 0/A4D385F0
+2026-10-23 11:44:36.302 UTC [1196] LOG:  redo in progress, elapsed time: 640.05 s, current LSN: 0/A4F7B090
+2026-10-23 11:44:38.805 UTC [1196] LOG:  restored log file "0000000100000000000000A5" from archive
+2026-10-23 11:44:46.262 UTC [1196] LOG:  redo in progress, elapsed time: 650.01 s, current LSN: 0/A51A0A88
+2026-10-23 11:44:56.334 UTC [1196] LOG:  redo in progress, elapsed time: 660.09 s, current LSN: 0/A53DFB50
+2026-10-23 11:45:06.256 UTC [1196] LOG:  redo in progress, elapsed time: 670.01 s, current LSN: 0/A561D948
+2026-10-23 11:45:16.334 UTC [1196] LOG:  redo in progress, elapsed time: 680.09 s, current LSN: 0/A5864BF8
+2026-10-23 11:45:26.334 UTC [1196] LOG:  redo in progress, elapsed time: 690.09 s, current LSN: 0/A5AA7698
+2026-10-23 11:45:36.334 UTC [1196] LOG:  redo in progress, elapsed time: 700.09 s, current LSN: 0/A5CE9C88
+2026-10-23 11:45:46.349 UTC [1196] LOG:  redo in progress, elapsed time: 710.10 s, current LSN: 0/A5F2C4B0
+2026-10-23 11:45:50.159 UTC [1196] LOG:  restored log file "0000000100000000000000A6" from archive
+2026-10-23 11:45:56.302 UTC [1196] LOG:  redo in progress, elapsed time: 720.05 s, current LSN: 0/A6155738
+2026-10-23 11:46:06.302 UTC [1196] LOG:  redo in progress, elapsed time: 730.06 s, current LSN: 0/A6397D28
+2026-10-23 11:46:16.303 UTC [1196] LOG:  redo in progress, elapsed time: 740.06 s, current LSN: 0/A65DA7E0
+2026-10-23 11:46:26.302 UTC [1196] LOG:  redo in progress, elapsed time: 750.05 s, current LSN: 0/A681CDD0
+2026-10-23 11:46:36.303 UTC [1196] LOG:  redo in progress, elapsed time: 760.06 s, current LSN: 0/A6A5F5E0
+2026-10-23 11:46:46.302 UTC [1196] LOG:  redo in progress, elapsed time: 770.05 s, current LSN: 0/A6CA1AD8
+2026-10-23 11:46:56.300 UTC [1196] LOG:  redo in progress, elapsed time: 780.05 s, current LSN: 0/A6EE4330
+2026-10-23 11:47:01.405 UTC [1196] LOG:  restored log file "0000000100000000000000A7" from archive
+2026-10-23 11:47:06.327 UTC [1196] LOG:  redo in progress, elapsed time: 790.08 s, current LSN: 0/A7110048
+2026-10-23 11:47:16.326 UTC [1196] LOG:  redo in progress, elapsed time: 800.08 s, current LSN: 0/A7352760
+2026-10-23 11:47:26.326 UTC [1196] LOG:  redo in progress, elapsed time: 810.08 s, current LSN: 0/A7595200
+2026-10-23 11:47:36.326 UTC [1196] LOG:  redo in progress, elapsed time: 820.08 s, current LSN: 0/A77D77F0
+2026-10-23 11:47:46.326 UTC [1196] LOG:  redo in progress, elapsed time: 830.08 s, current LSN: 0/A7A1A018
+2026-10-23 11:47:56.326 UTC [1196] LOG:  redo in progress, elapsed time: 840.08 s, current LSN: 0/A7C5C898
+2026-10-23 11:48:06.326 UTC [1196] LOG:  redo in progress, elapsed time: 850.08 s, current LSN: 0/A7E9EFB0
+2026-10-23 11:48:12.653 UTC [1196] LOG:  restored log file "0000000100000000000000A8" from archive
+2026-10-23 11:48:16.278 UTC [1196] LOG:  redo in progress, elapsed time: 860.03 s, current LSN: 0/A80C4D30
+2026-10-23 11:48:26.278 UTC [1196] LOG:  redo in progress, elapsed time: 870.03 s, current LSN: 0/A8307540
+2026-10-23 11:48:36.278 UTC [1196] LOG:  redo in progress, elapsed time: 880.03 s, current LSN: 0/A8549DC0
+2026-10-23 11:48:46.278 UTC [1196] LOG:  redo in progress, elapsed time: 890.03 s, current LSN: 0/A878C4F0
+2026-10-23 11:48:56.278 UTC [1196] LOG:  redo in progress, elapsed time: 900.03 s, current LSN: 0/A89CEE68
+2026-10-23 11:49:06.278 UTC [1196] LOG:  redo in progress, elapsed time: 910.03 s, current LSN: 0/A8C11580
+2026-10-23 11:49:16.278 UTC [1196] LOG:  redo in progress, elapsed time: 920.03 s, current LSN: 0/A8E54038
+2026-10-23 11:49:23.883 UTC [1196] LOG:  restored log file "0000000100000000000000A9" from archive
+2026-10-23 11:49:26.286 UTC [1196] LOG:  redo in progress, elapsed time: 930.04 s, current LSN: 0/A907F720
+2026-10-23 11:49:36.286 UTC [1196] LOG:  redo in progress, elapsed time: 940.04 s, current LSN: 0/A92C1F30
+2026-10-23 11:49:46.286 UTC [1196] LOG:  redo in progress, elapsed time: 950.04 s, current LSN: 0/A95047C8
+2026-10-23 11:49:56.286 UTC [1196] LOG:  redo in progress, elapsed time: 960.04 s, current LSN: 0/A9746EE0
+2026-10-23 11:50:06.286 UTC [1196] LOG:  redo in progress, elapsed time: 970.04 s, current LSN: 0/A9989858
+2026-10-23 11:50:16.286 UTC [1196] LOG:  redo in progress, elapsed time: 980.04 s, current LSN: 0/A9BCBF70
+2026-10-23 11:50:26.287 UTC [1196] LOG:  redo in progress, elapsed time: 990.04 s, current LSN: 0/A9E0E900
+2026-10-23 11:50:35.088 UTC [1196] LOG:  restored log file "0000000100000000000000AA" from archive
+2026-10-23 11:50:36.295 UTC [1196] LOG:  redo in progress, elapsed time: 1000.05 s, current LSN: 0/AA039D88
+2026-10-23 11:50:46.294 UTC [1196] LOG:  redo in progress, elapsed time: 1010.05 s, current LSN: 0/AA27C718
+2026-10-23 11:50:56.295 UTC [1196] LOG:  redo in progress, elapsed time: 1020.05 s, current LSN: 0/AA4BEE30
+2026-10-23 11:51:06.295 UTC [1196] LOG:  redo in progress, elapsed time: 1030.05 s, current LSN: 0/AA701640
+2026-10-23 11:51:16.294 UTC [1196] LOG:  redo in progress, elapsed time: 1040.05 s, current LSN: 0/AA943EF8
+2026-10-23 11:51:26.294 UTC [1196] LOG:  redo in progress, elapsed time: 1050.05 s, current LSN: 0/AAB86628
+2026-10-23 11:51:36.295 UTC [1196] LOG:  redo in progress, elapsed time: 1060.05 s, current LSN: 0/AADC8FA0
+2026-10-23 11:51:46.354 UTC [1196] LOG:  restored log file "0000000100000000000000AB" from archive
+2026-10-23 11:51:46.531 UTC [1196] LOG:  redo in progress, elapsed time: 1070.28 s, current LSN: 0/AAFFF038
+2026-10-23 11:51:56.334 UTC [1196] LOG:  redo in progress, elapsed time: 1080.09 s, current LSN: 0/AB237140
+2026-10-23 11:52:06.334 UTC [1196] LOG:  redo in progress, elapsed time: 1090.09 s, current LSN: 0/AB479858
+2026-10-23 11:52:16.334 UTC [1196] LOG:  redo in progress, elapsed time: 1100.09 s, current LSN: 0/AB6BBE78
+2026-10-23 11:52:26.334 UTC [1196] LOG:  redo in progress, elapsed time: 1110.09 s, current LSN: 0/AB8FE5A8
+2026-10-23 11:52:36.334 UTC [1196] LOG:  redo in progress, elapsed time: 1120.09 s, current LSN: 0/ABB40DB8
+2026-10-23 11:52:46.262 UTC [1196] LOG:  redo in progress, elapsed time: 1130.02 s, current LSN: 0/ABD81D68
+2026-10-23 11:52:56.243 UTC [1196] LOG:  redo in progress, elapsed time: 1140.00 s, current LSN: 0/ABFC0288
+2026-10-23 11:52:57.538 UTC [1196] LOG:  restored log file "0000000100000000000000AC" from archive
+2026-10-23 11:53:06.254 UTC [1196] LOG:  redo in progress, elapsed time: 1150.01 s, current LSN: 0/AC1EBE20
+2026-10-23 11:53:16.255 UTC [1196] LOG:  redo in progress, elapsed time: 1160.01 s, current LSN: 0/AC42A0E0
+2026-10-23 11:53:26.254 UTC [1196] LOG:  redo in progress, elapsed time: 1170.01 s, current LSN: 0/AC66C6D0
+2026-10-23 11:53:36.272 UTC [1196] LOG:  redo in progress, elapsed time: 1180.02 s, current LSN: 0/AC8AEEE0
+2026-10-23 11:53:46.254 UTC [1196] LOG:  redo in progress, elapsed time: 1190.01 s, current LSN: 0/ACAF1760
+2026-10-23 11:53:56.254 UTC [1196] LOG:  redo in progress, elapsed time: 1200.01 s, current LSN: 0/ACD33E78
+2026-10-23 11:54:06.254 UTC [1196] LOG:  redo in progress, elapsed time: 1210.01 s, current LSN: 0/ACF76808
+2026-10-23 11:54:08.783 UTC [1196] LOG:  restored log file "0000000100000000000000AD" from archive
+2026-10-23 11:54:16.302 UTC [1196] LOG:  redo in progress, elapsed time: 1220.05 s, current LSN: 0/AD1A6828
+2026-10-23 11:54:26.302 UTC [1196] LOG:  redo in progress, elapsed time: 1230.05 s, current LSN: 0/AD3E8E18
+2026-10-23 11:54:36.302 UTC [1196] LOG:  redo in progress, elapsed time: 1240.05 s, current LSN: 0/AD62A808
+2026-10-23 11:54:46.302 UTC [1196] LOG:  redo in progress, elapsed time: 1250.05 s, current LSN: 0/AD86C628
+2026-10-23 11:54:56.302 UTC [1196] LOG:  redo in progress, elapsed time: 1260.05 s, current LSN: 0/ADAAF0C8
+2026-10-23 11:55:06.302 UTC [1196] LOG:  redo in progress, elapsed time: 1270.05 s, current LSN: 0/ADCF16B8
+2026-10-23 11:55:16.302 UTC [1196] LOG:  redo in progress, elapsed time: 1280.05 s, current LSN: 0/ADF2F250
+2026-10-23 11:55:20.102 UTC [1196] LOG:  restored log file "0000000100000000000000AE" from archive
+cp: cannot stat '/work/v18-foff/arch/0000000100000000000000AF': No such file or directory
+cp: cannot stat '/work/v18-foff/arch/0000000100000000000000AF': No such file or directory
+2026-10-23 11:55:20.983 UTC [1196] LOG:  redo done at 0/AE022C70 system usage: CPU: user: 5.03 s, system: 7.83 s, elapsed: 1284.74 s
+2026-10-23 11:55:20.983 UTC [1196] LOG:  last completed transaction was at log time 2026-10-23 07:54:06.365687+00
+2026-10-23 11:55:21.005 UTC [1196] LOG:  restored log file "0000000100000000000000AE" from archive
+cp: cannot stat '/work/v18-foff/arch/00000002.history': No such file or directory
+2026-10-23 11:55:21.234 UTC [1196] LOG:  selected new timeline ID: 2
+cp: cannot stat '/work/v18-foff/arch/00000001.history': No such file or directory
+2026-10-23 11:55:21.535 UTC [1196] LOG:  archive recovery complete
+2026-10-23 11:55:21.580 UTC [1194] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-23 11:55:23.247 UTC [1194] LOG:  checkpoint complete: wrote 16089 buffers (98.2%), wrote 2 SLRU buffers; 0 WAL file(s) added, 0 removed, 19 recycled; write=0.591 s, sync=0.528 s, total=1.707 s; sync files=7, longest=0.377 s, average=0.076 s; distance=311296 kB, estimate=311296 kB; lsn=0/AF000028, redo lsn=0/AF000028
+2026-10-23 11:55:23.290 UTC [1190] LOG:  database system is ready to accept connections
+2026-10-23 11:55:23.533 UTC [1190] LOG:  received fast shutdown request
+2026-10-23 11:55:23.581 UTC [1190] LOG:  aborting any active transactions
+2026-10-23 11:55:23.583 UTC [1190] LOG:  background worker "logical replication launcher" (PID 13616) exited with exit code 1
+2026-10-23 11:55:23.589 UTC [1194] LOG:  shutting down
+2026-10-23 11:55:23.614 UTC [1194] LOG:  checkpoint starting: shutdown immediate
+2026-10-23 11:55:23.737 UTC [1194] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.149 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=280166 kB; lsn=0/AF0000D8, redo lsn=0/AF0000D8
+2026-10-23 11:55:23.851 UTC [1190] LOG:  database system is shut down

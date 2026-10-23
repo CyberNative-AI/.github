@@ -1,0 +1,935 @@
+{
+ "runs": [
+  {
+   "tag": "v18-foff",
+   "pf": "off",
+   "rep": "2",
+   "redo_s": 70.64,
+   "redo_cpu_user_s": 4.51,
+   "redo_cpu_sys_s": 6.53,
+   "wall_s": 76.1,
+   "dev_rbytes": 3472424960,
+   "dev_rios": 25399,
+   "dev_wbytes": 3735367680,
+   "dev_wios": 9651,
+   "kb_per_read_io": 133.5,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:off"
+  },
+  {
+   "tag": "v18-foff",
+   "pf": "off",
+   "rep": "3",
+   "redo_s": 64.9,
+   "redo_cpu_user_s": 4.65,
+   "redo_cpu_sys_s": 6.23,
+   "wall_s": 69.1,
+   "dev_rbytes": 3472408576,
+   "dev_rios": 25370,
+   "dev_wbytes": 3739525120,
+   "dev_wios": 9496,
+   "kb_per_read_io": 133.7,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:off"
+  },
+  {
+   "tag": "v18-foff",
+   "pf": "off",
+   "rep": "c2",
+   "redo_s": 100.05,
+   "redo_cpu_user_s": 4.83,
+   "redo_cpu_sys_s": 6.77,
+   "wall_s": 105.0,
+   "dev_rbytes": 3472367616,
+   "dev_rios": 25412,
+   "dev_wbytes": 3727269888,
+   "dev_wios": 11362,
+   "kb_per_read_io": 133.4,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb_cap300:off"
+  },
+  {
+   "tag": "v18-foff",
+   "pf": "try",
+   "rep": "1",
+   "redo_s": 76.83,
+   "redo_cpu_user_s": 5.22,
+   "redo_cpu_sys_s": 9.71,
+   "wall_s": 81.6,
+   "dev_rbytes": 3470745600,
+   "dev_rios": 383937,
+   "dev_wbytes": 3748864000,
+   "dev_wios": 8548,
+   "kb_per_read_io": 8.8,
+   "prefetch_final": {
+    "prefetch": 437163,
+    "hit": 87430,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 1,
+    "skip_rep": 3229500
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:try"
+  },
+  {
+   "tag": "v18-foff",
+   "pf": "try",
+   "rep": "4",
+   "redo_s": 65.75,
+   "redo_cpu_user_s": 4.86,
+   "redo_cpu_sys_s": 9.25,
+   "wall_s": 72.1,
+   "dev_rbytes": 3470635008,
+   "dev_rios": 383912,
+   "dev_wbytes": 3739779072,
+   "dev_wios": 9932,
+   "kb_per_read_io": 8.8,
+   "prefetch_final": {
+    "prefetch": 437163,
+    "hit": 87430,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 1,
+    "skip_rep": 3229500
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:try"
+  },
+  {
+   "tag": "v18-foff",
+   "pf": "try",
+   "rep": "c1",
+   "redo_s": 1284.74,
+   "redo_cpu_user_s": 5.03,
+   "redo_cpu_sys_s": 7.83,
+   "wall_s": 1288.4,
+   "dev_rbytes": 3470626816,
+   "dev_rios": 383912,
+   "dev_wbytes": 3774656512,
+   "dev_wios": 21573,
+   "kb_per_read_io": 8.8,
+   "prefetch_final": {
+    "prefetch": 437163,
+    "hit": 87430,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 1,
+    "skip_rep": 3229500
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb_cap300:try"
+  },
+  {
+   "tag": "v18-foff",
+   "pf": "try",
+   "rep": "pp1",
+   "redo_s": 62.2,
+   "redo_cpu_user_s": 4.55,
+   "redo_cpu_sys_s": 9.36,
+   "wall_s": 67.4,
+   "dev_rbytes": 3470626816,
+   "dev_rios": 383908,
+   "dev_wbytes": 3749847040,
+   "dev_wios": 9524,
+   "kb_per_read_io": 8.8,
+   "prefetch_final": {
+    "prefetch": 437163,
+    "hit": 87430,
+    "skip_init": 16394,
+    "skip_new": 229514,
+    "skip_fpw": 1,
+    "skip_rep": 3229502
+   },
+   "update_wal_bytes": 302132088,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "psrc:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "off",
+   "rep": "2",
+   "redo_s": 126.61,
+   "redo_cpu_user_s": 4.55,
+   "redo_cpu_sys_s": 5.95,
+   "wall_s": 133.2,
+   "dev_rbytes": 3407437824,
+   "dev_rios": 13361,
+   "dev_wbytes": 6809653248,
+   "dev_wios": 16463,
+   "kb_per_read_io": 249.1,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:off"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "off",
+   "rep": "3",
+   "redo_s": 129.9,
+   "redo_cpu_user_s": 4.84,
+   "redo_cpu_sys_s": 6.03,
+   "wall_s": 135.9,
+   "dev_rbytes": 3407462400,
+   "dev_rios": 13371,
+   "dev_wbytes": 6823571456,
+   "dev_wios": 16381,
+   "kb_per_read_io": 248.9,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:off"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "off",
+   "rep": "c2",
+   "redo_s": 145.64,
+   "redo_cpu_user_s": 4.9,
+   "redo_cpu_sys_s": 6.16,
+   "wall_s": 151.5,
+   "dev_rbytes": 3407261696,
+   "dev_rios": 13330,
+   "dev_wbytes": 6814666752,
+   "dev_wios": 17000,
+   "kb_per_read_io": 249.6,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb_cap300:off"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "off",
+   "rep": "c3",
+   "redo_s": 136.98,
+   "redo_cpu_user_s": 4.43,
+   "redo_cpu_sys_s": 5.54,
+   "wall_s": 144.6,
+   "dev_rbytes": 3407503360,
+   "dev_rios": 13391,
+   "dev_wbytes": 6813376512,
+   "dev_wios": 17487,
+   "kb_per_read_io": 248.5,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb_cap300:off"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "1",
+   "redo_s": 151.88,
+   "redo_cpu_user_s": 5.16,
+   "redo_cpu_sys_s": 7.88,
+   "wall_s": 156.8,
+   "dev_rbytes": 6540886016,
+   "dev_rios": 395863,
+   "dev_wbytes": 6815858688,
+   "dev_wios": 16754,
+   "kb_per_read_io": 16.1,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382531,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "4",
+   "redo_s": 179.67,
+   "redo_cpu_user_s": 4.83,
+   "redo_cpu_sys_s": 7.24,
+   "wall_s": 186.6,
+   "dev_rbytes": 6540857344,
+   "dev_rios": 395856,
+   "dev_wbytes": 6817128448,
+   "dev_wios": 15494,
+   "kb_per_read_io": 16.1,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382531,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "c1",
+   "redo_s": 1410.8,
+   "redo_cpu_user_s": 4.58,
+   "redo_cpu_sys_s": 5.79,
+   "wall_s": 1415.3,
+   "dev_rbytes": 6540783616,
+   "dev_rios": 395852,
+   "dev_wbytes": 6841905152,
+   "dev_wios": 25791,
+   "kb_per_read_io": 16.1,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382531,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb_cap300:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "c4",
+   "redo_s": 1453.44,
+   "redo_cpu_user_s": 4.29,
+   "redo_cpu_sys_s": 5.8,
+   "wall_s": 1472.8,
+   "dev_rbytes": 6555525120,
+   "dev_rios": 396140,
+   "dev_wbytes": 6841966592,
+   "dev_wios": 25616,
+   "kb_per_read_io": 16.2,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382531,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb_cap300:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "cp5",
+   "redo_s": 284.87,
+   "redo_cpu_user_s": 4.73,
+   "redo_cpu_sys_s": 5.55,
+   "wall_s": 293.7,
+   "dev_rbytes": 3854786560,
+   "dev_rios": 67967,
+   "dev_wbytes": 6812631040,
+   "dev_wios": 19281,
+   "kb_per_read_io": 55.4,
+   "prefetch_final": {
+    "prefetch": 54644,
+    "hit": 87427,
+    "skip_init": 16394,
+    "skip_new": 229514,
+    "skip_fpw": 382531,
+    "skip_rep": 3229494
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "psrc_cap300:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "pp2",
+   "redo_s": 181.92,
+   "redo_cpu_user_s": 4.79,
+   "redo_cpu_sys_s": 6.2,
+   "wall_s": 193.9,
+   "dev_rbytes": 3854966784,
+   "dev_rios": 67992,
+   "dev_wbytes": 6809911296,
+   "dev_wios": 17441,
+   "kb_per_read_io": 55.4,
+   "prefetch_final": {
+    "prefetch": 54644,
+    "hit": 87427,
+    "skip_init": 16394,
+    "skip_new": 229514,
+    "skip_fpw": 382531,
+    "skip_rep": 3229494
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "psrc:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "pp3",
+   "redo_s": 133.63,
+   "redo_cpu_user_s": 4.99,
+   "redo_cpu_sys_s": 6.77,
+   "wall_s": 139.4,
+   "dev_rbytes": 3854999552,
+   "dev_rios": 67991,
+   "dev_wbytes": 6817251328,
+   "dev_wios": 16732,
+   "kb_per_read_io": 55.4,
+   "prefetch_final": {
+    "prefetch": 54644,
+    "hit": 87427,
+    "skip_init": 16394,
+    "skip_new": 229514,
+    "skip_fpw": 382531,
+    "skip_rep": 3229494
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "psrc:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "pv1",
+   "redo_s": 159.87,
+   "redo_cpu_user_s": 4.92,
+   "redo_cpu_sys_s": 8.02,
+   "wall_s": 165.5,
+   "dev_rbytes": 6541307904,
+   "dev_rios": 395894,
+   "dev_wbytes": 6827016192,
+   "dev_wios": 16866,
+   "kb_per_read_io": 16.1,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382531,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "vsrc:try"
+  },
+  {
+   "tag": "v18-fon",
+   "pf": "try",
+   "rep": "pv4",
+   "redo_s": 151.63,
+   "redo_cpu_user_s": 5.21,
+   "redo_cpu_sys_s": 8.13,
+   "wall_s": 157.5,
+   "dev_rbytes": 6540816384,
+   "dev_rios": 395846,
+   "dev_wbytes": 6811824128,
+   "dev_wios": 16537,
+   "kb_per_read_io": 16.1,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382531,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364539544,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "vsrc:try"
+  },
+  {
+   "tag": "v19-fon",
+   "pf": "off",
+   "rep": "2",
+   "redo_s": 128.09,
+   "redo_cpu_user_s": 3.83,
+   "redo_cpu_sys_s": 5.91,
+   "wall_s": 134.3,
+   "dev_rbytes": 3407462400,
+   "dev_rios": 13375,
+   "dev_wbytes": 6822604800,
+   "dev_wios": 18068,
+   "kb_per_read_io": 248.8,
+   "prefetch_final": {
+    "prefetch": 0,
+    "hit": 0,
+    "skip_init": 0,
+    "skip_new": 0,
+    "skip_fpw": 0,
+    "skip_rep": 0
+   },
+   "update_wal_bytes": 3364520296,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:off"
+  },
+  {
+   "tag": "v19-fon",
+   "pf": "try",
+   "rep": "1",
+   "redo_s": 145.01,
+   "redo_cpu_user_s": 4.51,
+   "redo_cpu_sys_s": 7.94,
+   "wall_s": 152.6,
+   "dev_rbytes": 6541033472,
+   "dev_rios": 395864,
+   "dev_wbytes": 6826160128,
+   "dev_wios": 18053,
+   "kb_per_read_io": 16.1,
+   "prefetch_final": {
+    "prefetch": 437160,
+    "hit": 103824,
+    "skip_init": 16394,
+    "skip_new": 229516,
+    "skip_fpw": 382530,
+    "skip_rep": 2830579
+   },
+   "update_wal_bytes": 3364520296,
+   "gates": {
+    "redo_logged": true,
+    "ready": true,
+    "cold": true,
+    "setting_took_effect": true
+   },
+   "valid": true,
+   "arm": "deb:try"
+  }
+ ],
+ "cells": {
+  "v18-foff": {
+   "deb:off": {
+    "redo_s": [
+     70.64,
+     64.9
+    ],
+    "read_ios": [
+     25399,
+     25370
+    ],
+    "read_MB": [
+     3472,
+     3472
+    ],
+    "prefetch": [
+     0,
+     0
+    ]
+   },
+   "deb:try": {
+    "redo_s": [
+     76.83,
+     65.75
+    ],
+    "read_ios": [
+     383937,
+     383912
+    ],
+    "read_MB": [
+     3471,
+     3471
+    ],
+    "prefetch": [
+     437163,
+     437163
+    ]
+   },
+   "deb_cap300:off": {
+    "redo_s": [
+     100.05
+    ],
+    "read_ios": [
+     25412
+    ],
+    "read_MB": [
+     3472
+    ],
+    "prefetch": [
+     0
+    ]
+   },
+   "deb_cap300:try": {
+    "redo_s": [
+     1284.74
+    ],
+    "read_ios": [
+     383912
+    ],
+    "read_MB": [
+     3471
+    ],
+    "prefetch": [
+     437163
+    ]
+   },
+   "psrc:try": {
+    "redo_s": [
+     62.2
+    ],
+    "read_ios": [
+     383908
+    ],
+    "read_MB": [
+     3471
+    ],
+    "prefetch": [
+     437163
+    ]
+   },
+   "n_invalid": 0,
+   "ruling_deb": "NO_EFFECT_OR_MIXED",
+   "R_deb": 1.052,
+   "ruling_deb_cap300": "HARMFUL",
+   "R_deb_cap300": 12.841
+  },
+  "v18-fon": {
+   "deb:off": {
+    "redo_s": [
+     126.61,
+     129.9
+    ],
+    "read_ios": [
+     13361,
+     13371
+    ],
+    "read_MB": [
+     3407,
+     3407
+    ],
+    "prefetch": [
+     0,
+     0
+    ]
+   },
+   "deb:try": {
+    "redo_s": [
+     151.88,
+     179.67
+    ],
+    "read_ios": [
+     395863,
+     395856
+    ],
+    "read_MB": [
+     6541,
+     6541
+    ],
+    "prefetch": [
+     437160,
+     437160
+    ]
+   },
+   "deb_cap300:off": {
+    "redo_s": [
+     145.64,
+     136.98
+    ],
+    "read_ios": [
+     13330,
+     13391
+    ],
+    "read_MB": [
+     3407,
+     3408
+    ],
+    "prefetch": [
+     0,
+     0
+    ]
+   },
+   "deb_cap300:try": {
+    "redo_s": [
+     1410.8,
+     1453.44
+    ],
+    "read_ios": [
+     395852,
+     396140
+    ],
+    "read_MB": [
+     6541,
+     6556
+    ],
+    "prefetch": [
+     437160,
+     437160
+    ]
+   },
+   "psrc:try": {
+    "redo_s": [
+     181.92,
+     133.63
+    ],
+    "read_ios": [
+     67992,
+     67991
+    ],
+    "read_MB": [
+     3855,
+     3855
+    ],
+    "prefetch": [
+     54644,
+     54644
+    ]
+   },
+   "psrc_cap300:try": {
+    "redo_s": [
+     284.87
+    ],
+    "read_ios": [
+     67967
+    ],
+    "read_MB": [
+     3855
+    ],
+    "prefetch": [
+     54644
+    ]
+   },
+   "vsrc:try": {
+    "redo_s": [
+     159.87,
+     151.63
+    ],
+    "read_ios": [
+     395894,
+     395846
+    ],
+    "read_MB": [
+     6541,
+     6541
+    ],
+    "prefetch": [
+     437160,
+     437160
+    ]
+   },
+   "n_invalid": 0,
+   "ruling_deb": "HARMFUL",
+   "R_deb": 1.293,
+   "ruling_deb_cap300": "HARMFUL",
+   "R_deb_cap300": 10.135
+  },
+  "v19-fon": {
+   "deb:off": {
+    "redo_s": [
+     128.09
+    ],
+    "read_ios": [
+     13375
+    ],
+    "read_MB": [
+     3407
+    ],
+    "prefetch": [
+     0
+    ]
+   },
+   "deb:try": {
+    "redo_s": [
+     145.01
+    ],
+    "read_ios": [
+     395864
+    ],
+    "read_MB": [
+     6541
+    ],
+    "prefetch": [
+     437160
+    ]
+   },
+   "n_invalid": 0,
+   "ruling_deb": "NO_EFFECT_OR_MIXED",
+   "R_deb": 1.132
+  }
+ }
+}

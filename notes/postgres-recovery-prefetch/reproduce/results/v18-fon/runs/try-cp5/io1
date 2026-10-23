@@ -1,0 +1,7 @@
+8:0 rbytes=0 wbytes=0 rios=0 wios=2 dbytes=0 dios=0
+8:16 rbytes=0 wbytes=0 rios=0 wios=2 dbytes=0 dios=0
+259:0 rbytes=0 wbytes=0 rios=0 wios=2 dbytes=0 dios=0
+8:32 rbytes=7032119296 wbytes=9989562368 rios=80947 wios=24852 dbytes=0 dios=0
+8:48 rbytes=10592256 wbytes=4096 rios=243 wios=3 dbytes=0 dios=0
+252:0 rbytes=10592256 wbytes=4096 rios=243 wios=1 dbytes=0 dios=0
+252:1 rbytes=10592256 wbytes=4096 rios=243 wios=1 dbytes=0 dios=0

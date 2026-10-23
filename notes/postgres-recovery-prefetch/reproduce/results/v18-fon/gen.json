@@ -1,0 +1,4 @@
+{"tag":"v18-fon","scale":200,"fpw":"on","version":"PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","update_lsn_start":"0/9C000130","update_lsn_end":"1/648ACDC8",
+ "last_segment":"000000010000000100000064","update_wal_bytes":3364539544,"update_seconds":180.331,
+ "heap_pages_after":344263,"pkey_pages_after":54840,
+ "arch_bytes":5989466453,"base_bytes":3176869066}

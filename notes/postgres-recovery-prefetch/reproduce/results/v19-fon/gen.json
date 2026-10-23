@@ -1,0 +1,4 @@
+{"tag":"v19-fon","scale":200,"fpw":"on","version":"PostgreSQL 19rc1 (Debian 19~rc1-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit","update_lsn_start":"0/9B000138","update_lsn_end":"1/638A82A0",
+ "last_segment":"000000010000000100000063","update_wal_bytes":3364520296,"update_seconds":144.836,
+ "heap_pages_after":344263,"pkey_pages_after":54840,
+ "arch_bytes":5972689237,"base_bytes":3176825555}

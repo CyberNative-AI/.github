@@ -1,0 +1,58 @@
+2026-10-23 11:59:04.008 UTC [1190] LOG:  starting PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-10-23 11:59:04.015 UTC [1190] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-10-23 11:59:04.222 UTC [1196] LOG:  database system was interrupted; last known up at 2026-10-23 07:51:33 UTC
+cp: cannot stat '/work/v18-foff/arch/00000002.history': No such file or directory
+2026-10-23 11:59:04.348 UTC [1196] LOG:  starting backup recovery with redo LSN 0/9B000028, checkpoint LSN 0/9B000080, on timeline ID 1
+2026-10-23 11:59:04.554 UTC [1196] LOG:  restored log file "00000001000000000000009B" from archive
+2026-10-23 11:59:04.742 UTC [1196] LOG:  starting archive recovery
+2026-10-23 11:59:04.832 UTC [1196] LOG:  redo starts at 0/9B000028
+2026-10-23 11:59:04.887 UTC [1196] LOG:  completed backup recovery with redo LSN 0/9B000028 and end LSN 0/9B000E00
+2026-10-23 11:59:04.887 UTC [1196] LOG:  consistent recovery state reached at 0/9B000E00
+2026-10-23 11:59:04.887 UTC [1190] LOG:  database system is ready to accept read-only connections
+2026-10-23 11:59:05.149 UTC [1196] LOG:  restored log file "00000001000000000000009C" from archive
+2026-10-23 11:59:10.624 UTC [1196] LOG:  restored log file "00000001000000000000009D" from archive
+2026-10-23 11:59:14.879 UTC [1196] LOG:  redo in progress, elapsed time: 10.04 s, current LSN: 0/9DDB2040
+2026-10-23 11:59:15.715 UTC [1196] LOG:  restored log file "00000001000000000000009E" from archive
+2026-10-23 11:59:21.615 UTC [1196] LOG:  restored log file "00000001000000000000009F" from archive
+2026-10-23 11:59:24.923 UTC [1196] LOG:  redo in progress, elapsed time: 20.09 s, current LSN: 0/9FADB9E0
+2026-10-23 11:59:26.572 UTC [1196] LOG:  restored log file "0000000100000000000000A0" from archive
+2026-10-23 11:59:32.049 UTC [1196] LOG:  restored log file "0000000100000000000000A1" from archive
+2026-10-23 11:59:34.905 UTC [1196] LOG:  redo in progress, elapsed time: 30.07 s, current LSN: 0/A17A7AA8
+2026-10-23 11:59:37.965 UTC [1196] LOG:  restored log file "0000000100000000000000A2" from archive
+2026-10-23 11:59:43.160 UTC [1196] LOG:  restored log file "0000000100000000000000A3" from archive
+2026-10-23 11:59:44.834 UTC [1196] LOG:  redo in progress, elapsed time: 40.00 s, current LSN: 0/A3330268
+2026-10-23 11:59:48.911 UTC [1196] LOG:  restored log file "0000000100000000000000A4" from archive
+2026-10-23 11:59:54.621 UTC [1196] LOG:  restored log file "0000000100000000000000A5" from archive
+2026-10-23 11:59:55.050 UTC [1196] LOG:  redo in progress, elapsed time: 50.21 s, current LSN: 0/A4FFFFF8
+2026-10-23 12:00:00.641 UTC [1196] LOG:  restored log file "0000000100000000000000A6" from archive
+2026-10-23 12:00:04.896 UTC [1196] LOG:  redo in progress, elapsed time: 60.06 s, current LSN: 0/A6DC01D0
+2026-10-23 12:00:05.720 UTC [1196] LOG:  restored log file "0000000100000000000000A7" from archive
+2026-10-23 12:00:11.509 UTC [1196] LOG:  restored log file "0000000100000000000000A8" from archive
+2026-10-23 12:00:14.895 UTC [1196] LOG:  redo in progress, elapsed time: 70.06 s, current LSN: 0/A8AF48C8
+2026-10-23 12:00:16.531 UTC [1196] LOG:  restored log file "0000000100000000000000A9" from archive
+2026-10-23 12:00:21.828 UTC [1196] LOG:  restored log file "0000000100000000000000AA" from archive
+2026-10-23 12:00:24.870 UTC [1196] LOG:  redo in progress, elapsed time: 80.03 s, current LSN: 0/AA9B4DE8
+2026-10-23 12:00:27.475 UTC [1196] LOG:  restored log file "0000000100000000000000AB" from archive
+2026-10-23 12:00:32.977 UTC [1196] LOG:  restored log file "0000000100000000000000AC" from archive
+2026-10-23 12:00:35.130 UTC [1196] LOG:  redo in progress, elapsed time: 90.29 s, current LSN: 0/AC408550
+2026-10-23 12:00:39.131 UTC [1196] LOG:  restored log file "0000000100000000000000AD" from archive
+2026-10-23 12:00:44.566 UTC [1196] LOG:  restored log file "0000000100000000000000AE" from archive
+2026-10-23 12:00:44.862 UTC [1196] LOG:  redo in progress, elapsed time: 100.03 s, current LSN: 0/ADFFFF70
+cp: cannot stat '/work/v18-foff/arch/0000000100000000000000AF': No such file or directory
+2026-10-23 12:00:44.884 UTC [1196] LOG:  redo done at 0/AE022C70 system usage: CPU: user: 4.83 s, system: 6.77 s, elapsed: 100.05 s
+2026-10-23 12:00:44.884 UTC [1196] LOG:  last completed transaction was at log time 2026-10-23 07:54:06.365687+00
+2026-10-23 12:00:44.906 UTC [1196] LOG:  restored log file "0000000100000000000000AE" from archive
+cp: cannot stat '/work/v18-foff/arch/00000002.history': No such file or directory
+2026-10-23 12:00:45.223 UTC [1196] LOG:  selected new timeline ID: 2
+cp: cannot stat '/work/v18-foff/arch/00000001.history': No such file or directory
+2026-10-23 12:00:45.685 UTC [1196] LOG:  archive recovery complete
+2026-10-23 12:00:45.763 UTC [1194] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-23 12:00:48.350 UTC [1194] LOG:  checkpoint complete: wrote 15502 buffers (94.6%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 20 recycled; write=0.838 s, sync=1.123 s, total=2.644 s; sync files=9, longest=0.626 s, average=0.125 s; distance=327680 kB, estimate=327680 kB; lsn=0/AF000028, redo lsn=0/AF000028
+2026-10-23 12:00:48.419 UTC [1190] LOG:  database system is ready to accept connections
+2026-10-23 12:00:48.852 UTC [1190] LOG:  received fast shutdown request
+2026-10-23 12:00:48.906 UTC [1190] LOG:  aborting any active transactions
+2026-10-23 12:00:48.908 UTC [1190] LOG:  background worker "logical replication launcher" (PID 2203) exited with exit code 1
+2026-10-23 12:00:48.913 UTC [1194] LOG:  shutting down
+2026-10-23 12:00:48.962 UTC [1194] LOG:  checkpoint starting: shutdown immediate
+2026-10-23 12:00:49.129 UTC [1194] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.217 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=294912 kB; lsn=0/AF0000D8, redo lsn=0/AF0000D8
+2026-10-23 12:00:49.380 UTC [1190] LOG:  database system is shut down

@@ -1,0 +1,62 @@
+{
+ "cloudnative-pg/cloudnative-pg": {
+  "total": 0,
+  "paths": []
+ },
+ "patroni/patroni": {
+  "total": 1,
+  "paths": [
+   "patroni/postgresql/available_parameters/0_postgres.yml"
+  ]
+ },
+ "zalando/spilo": {
+  "total": 0,
+  "paths": []
+ },
+ "zalando/postgres-operator": {
+  "total": 0,
+  "paths": []
+ },
+ "CrunchyData/postgres-operator": {
+  "total": 0,
+  "paths": []
+ },
+ "ongres/stackgres": {
+  "total": 1,
+  "paths": [
+   "stackgres-k8s/src/admin-ui/cypress/fixtures/forms/sgcluster/postgresql.conf"
+  ]
+ },
+ "percona/percona-postgresql-operator": {
+  "total": 0,
+  "paths": []
+ },
+ "apecloud/kubeblocks": {
+  "total": 0,
+  "paths": []
+ },
+ "bitnami/charts": {
+  "total": 0,
+  "paths": []
+ },
+ "sorintlab/stolon": {
+  "total": 0,
+  "paths": []
+ },
+ "timescale/timescaledb-docker-ha": {
+  "total": 0,
+  "paths": []
+ },
+ "pgEdge/pgedge-postgres-operator": {
+  "total": 0,
+  "paths": []
+ },
+ "vitabaks/autobase": {
+  "total": 0,
+  "paths": []
+ },
+ "postgres-ai/postgresql-consulting-tuning-guides": {
+  "total": 0,
+  "paths": []
+ }
+}

@@ -1,0 +1,55 @@
+2026-10-23 08:23:57.210 UTC [1187] LOG:  starting PostgreSQL 18.6 (Debian 18.6-1.pgdg13+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+2026-10-23 08:23:57.223 UTC [1187] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2026-10-23 08:23:57.406 UTC [1193] LOG:  database system was interrupted; last known up at 2026-10-23 07:51:33 UTC
+cp: cannot stat '/work/v18-foff/arch/00000002.history': No such file or directory
+2026-10-23 08:23:57.551 UTC [1193] LOG:  starting backup recovery with redo LSN 0/9B000028, checkpoint LSN 0/9B000080, on timeline ID 1
+2026-10-23 08:23:57.686 UTC [1193] LOG:  restored log file "00000001000000000000009B" from archive
+2026-10-23 08:23:57.905 UTC [1193] LOG:  starting archive recovery
+2026-10-23 08:23:58.045 UTC [1193] LOG:  redo starts at 0/9B000028
+2026-10-23 08:23:58.195 UTC [1193] LOG:  restored log file "00000001000000000000009C" from archive
+2026-10-23 08:23:58.596 UTC [1193] LOG:  completed backup recovery with redo LSN 0/9B000028 and end LSN 0/9B000E00
+2026-10-23 08:23:58.596 UTC [1193] LOG:  consistent recovery state reached at 0/9B000E00
+2026-10-23 08:23:58.596 UTC [1187] LOG:  database system is ready to accept read-only connections
+2026-10-23 08:24:00.539 UTC [1193] LOG:  restored log file "00000001000000000000009D" from archive
+2026-10-23 08:24:03.962 UTC [1193] LOG:  restored log file "00000001000000000000009E" from archive
+2026-10-23 08:24:07.552 UTC [1193] LOG:  restored log file "00000001000000000000009F" from archive
+2026-10-23 08:24:08.478 UTC [1193] LOG:  redo in progress, elapsed time: 10.43 s, current LSN: 0/9EFFEFA8
+2026-10-23 08:24:10.979 UTC [1193] LOG:  restored log file "0000000100000000000000A0" from archive
+2026-10-23 08:24:14.741 UTC [1193] LOG:  restored log file "0000000100000000000000A1" from archive
+2026-10-23 08:24:18.228 UTC [1193] LOG:  redo in progress, elapsed time: 20.18 s, current LSN: 0/A1E8BB20
+2026-10-23 08:24:18.504 UTC [1193] LOG:  restored log file "0000000100000000000000A2" from archive
+2026-10-23 08:24:22.192 UTC [1193] LOG:  restored log file "0000000100000000000000A3" from archive
+2026-10-23 08:24:26.133 UTC [1193] LOG:  restored log file "0000000100000000000000A4" from archive
+2026-10-23 08:24:28.045 UTC [1193] LOG:  redo in progress, elapsed time: 30.00 s, current LSN: 0/A4483C80
+2026-10-23 08:24:31.114 UTC [1193] LOG:  restored log file "0000000100000000000000A5" from archive
+2026-10-23 08:24:34.163 UTC [1193] LOG:  restored log file "0000000100000000000000A6" from archive
+2026-10-23 08:24:37.719 UTC [1193] LOG:  restored log file "0000000100000000000000A7" from archive
+2026-10-23 08:24:38.428 UTC [1193] LOG:  redo in progress, elapsed time: 40.38 s, current LSN: 0/A6FFEFC8
+2026-10-23 08:24:41.055 UTC [1193] LOG:  restored log file "0000000100000000000000A8" from archive
+2026-10-23 08:24:44.217 UTC [1193] LOG:  restored log file "0000000100000000000000A9" from archive
+2026-10-23 08:24:47.291 UTC [1193] LOG:  restored log file "0000000100000000000000AA" from archive
+2026-10-23 08:24:48.213 UTC [1193] LOG:  redo in progress, elapsed time: 50.16 s, current LSN: 0/A9FFEFB8
+2026-10-23 08:24:50.992 UTC [1193] LOG:  restored log file "0000000100000000000000AB" from archive
+2026-10-23 08:24:54.477 UTC [1193] LOG:  restored log file "0000000100000000000000AC" from archive
+2026-10-23 08:24:58.513 UTC [1193] LOG:  redo in progress, elapsed time: 60.46 s, current LSN: 0/ACF8BE38
+2026-10-23 08:24:58.787 UTC [1193] LOG:  restored log file "0000000100000000000000AD" from archive
+2026-10-23 08:25:03.003 UTC [1193] LOG:  restored log file "0000000100000000000000AE" from archive
+cp: cannot stat '/work/v18-foff/arch/0000000100000000000000AF': No such file or directory
+cp: cannot stat '/work/v18-foff/arch/0000000100000000000000AF': No such file or directory
+2026-10-23 08:25:03.798 UTC [1193] LOG:  redo done at 0/AE022C70 system usage: CPU: user: 4.86 s, system: 9.25 s, elapsed: 65.75 s
+2026-10-23 08:25:03.798 UTC [1193] LOG:  last completed transaction was at log time 2026-10-23 07:54:06.365687+00
+2026-10-23 08:25:03.822 UTC [1193] LOG:  restored log file "0000000100000000000000AE" from archive
+cp: cannot stat '/work/v18-foff/arch/00000002.history': No such file or directory
+2026-10-23 08:25:04.371 UTC [1193] LOG:  selected new timeline ID: 2
+cp: cannot stat '/work/v18-foff/arch/00000001.history': No such file or directory
+2026-10-23 08:25:05.067 UTC [1193] LOG:  archive recovery complete
+2026-10-23 08:25:05.138 UTC [1191] LOG:  checkpoint starting: end-of-recovery immediate wait
+2026-10-23 08:25:08.253 UTC [1191] LOG:  checkpoint complete: wrote 15334 buffers (93.6%), wrote 3 SLRU buffers; 0 WAL file(s) added, 0 removed, 20 recycled; write=0.854 s, sync=1.210 s, total=3.165 s; sync files=9, longest=0.630 s, average=0.135 s; distance=327680 kB, estimate=327680 kB; lsn=0/AF000028, redo lsn=0/AF000028
+2026-10-23 08:25:08.321 UTC [1187] LOG:  database system is ready to accept connections
+2026-10-23 08:25:09.185 UTC [1187] LOG:  received fast shutdown request
+2026-10-23 08:25:09.260 UTC [1187] LOG:  aborting any active transactions
+2026-10-23 08:25:09.264 UTC [1187] LOG:  background worker "logical replication launcher" (PID 1892) exited with exit code 1
+2026-10-23 08:25:09.275 UTC [1191] LOG:  shutting down
+2026-10-23 08:25:09.328 UTC [1191] LOG:  checkpoint starting: shutdown immediate
+2026-10-23 08:25:10.096 UTC [1191] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.446 s, sync=0.001 s, total=0.822 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=294912 kB; lsn=0/AF0000D8, redo lsn=0/AF0000D8
+2026-10-23 08:25:10.222 UTC [1187] LOG:  database system is shut down
