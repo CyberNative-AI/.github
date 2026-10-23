@@ -17,6 +17,10 @@ and 08:08:49Z): each scanner's JSON, stderr and exit code per cell, plus the sca
 database versions (`ver-*`). `score-rep1.json` and `score-rep2.json` are `score.py` run on
 them; the outcomes and exit codes are the same in both runs.
 
+`raw-rep3.tar.gz` and `score-rep3.json` are the same for our run of October 23 (finished
+10:02:51Z), with newly downloaded databases. Compared with the October 22 runs, only grype's
+results for 1.107.0 changed, in all four forms.
+
 ```sh
 mkdir raw && tar -xzf raw-rep1.tar.gz -C raw && python3 score.py raw/rep1 | cmp - score-rep1.json
 ```

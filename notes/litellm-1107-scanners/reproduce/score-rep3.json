@@ -1,0 +1,769 @@
+[
+ {
+  "tool": "grype",
+  "V": "C",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "C",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "C",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "C",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "M",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 19,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "M",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 19,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "M",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 19,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "M",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 19,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "N",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "N",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "N",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "N",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "T",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "T",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "T",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "grype",
+  "V": "T",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "GHSA-92x9-889m-jgmw"
+  ],
+  "skip": null,
+  "err_tail": "[0000]  WARN no explicit name and version provided for directory source, deriving artifact ID from the given path (which is not ideal) from=syft"
+ },
+ {
+  "tool": "osv",
+  "V": "C",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 2,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 2 inodes visited, 1 Extract calls, 159.15\u00b5s elapsed, 159.21\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "C",
+  "F": "F2",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 2,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 275.73\u00b5s elapsed, 275.82\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "C",
+  "F": "F3",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 2,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 231.94\u00b5s elapsed, 232.03\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "C",
+  "F": "F4",
+  "rc": 128,
+  "outcome": "ERROR",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No package sources found, --help for usage information."
+ },
+ {
+  "tool": "osv",
+  "V": "M",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 36,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "no candidates at all for: litellm \"==1.82.7\""
+ },
+ {
+  "tool": "osv",
+  "V": "M",
+  "F": "F2",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 36,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 251.27\u00b5s elapsed, 251.32\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "M",
+  "F": "F3",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 36,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 193.7\u00b5s elapsed, 193.77\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "M",
+  "F": "F4",
+  "rc": 128,
+  "outcome": "ERROR",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No package sources found, --help for usage information."
+ },
+ {
+  "tool": "osv",
+  "V": "N",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 2 inodes visited, 1 Extract calls, 182.16\u00b5s elapsed, 182.21\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "N",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 262.6\u00b5s elapsed, 262.66\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "N",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 200.79\u00b5s elapsed, 200.87\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "N",
+  "F": "F4",
+  "rc": 128,
+  "outcome": "ERROR",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No package sources found, --help for usage information."
+ },
+ {
+  "tool": "osv",
+  "V": "T",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "no candidates at all for: litellm \"==1.107.0\""
+ },
+ {
+  "tool": "osv",
+  "V": "T",
+  "F": "F2",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 870.202\u00b5s elapsed, 870.312\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "T",
+  "F": "F3",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "End status: 1 dirs visited, 3 inodes visited, 1 Extract calls, 165.591\u00b5s elapsed, 165.641\u00b5s wall time"
+ },
+ {
+  "tool": "osv",
+  "V": "T",
+  "F": "F4",
+  "rc": 128,
+  "outcome": "ERROR",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No package sources found, --help for usage information."
+ },
+ {
+  "tool": "pa_osv",
+  "V": "C",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 2,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "Found 2 known vulnerabilities in 1 package"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "C",
+  "F": "F4",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 2,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "Found 2 known vulnerabilities in 1 package"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "M",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 36,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "Found 36 known vulnerabilities in 1 package"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "M",
+  "F": "F4",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 36,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76",
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "Found 36 known vulnerabilities in 1 package"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "N",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "N",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "T",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "Found 1 known vulnerability in 1 package"
+ },
+ {
+  "tool": "pa_osv",
+  "V": "T",
+  "F": "F4",
+  "rc": 1,
+  "outcome": "FLAG_MAL",
+  "n_findings": 1,
+  "mal_ids": [
+   "MAL-2026-2144",
+   "PYSEC-2026-2"
+  ],
+  "skip": null,
+  "err_tail": "Found 1 known vulnerability in 1 package"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "C",
+  "F": "F1",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "Found 1 known vulnerability in 1 package"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "C",
+  "F": "F4",
+  "rc": 1,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "Found 1 known vulnerability in 1 package"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "M",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "SKIP",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": "Dependency not found on PyPI and could not be audited: litellm (1.82.7)",
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "M",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "SKIP",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": "Dependency not found on PyPI and could not be audited: litellm (1.82.7)",
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "N",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "N",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "T",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "SKIP",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": "Dependency not found on PyPI and could not be audited: litellm (1.107.0)",
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "pa_pypi",
+  "V": "T",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "SKIP",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": "Dependency not found on PyPI and could not be audited: litellm (1.107.0)",
+  "err_tail": "No known vulnerabilities found"
+ },
+ {
+  "tool": "trivy",
+  "V": "C",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "C",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "C",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "C",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "FLAG_OTHER",
+  "n_findings": 1,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "M",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 18,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76"
+  ],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "M",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 18,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76"
+  ],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "M",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 18,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76"
+  ],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "M",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "FLAG_MAL",
+  "n_findings": 18,
+  "mal_ids": [
+   "GHSA-5mg7-485q-xm76"
+  ],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "N",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "N",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "N",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "N",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "T",
+  "F": "F1",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "T",
+  "F": "F2",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "T",
+  "F": "F3",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ },
+ {
+  "tool": "trivy",
+  "V": "T",
+  "F": "F4",
+  "rc": 0,
+  "outcome": "CLEAN",
+  "n_findings": 0,
+  "mal_ids": [],
+  "skip": null,
+  "err_tail": ""
+ }
+]

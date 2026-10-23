@@ -1,6 +1,6 @@
 # Third-party data in this folder
 
-`raw-rep1.tar.gz` and `raw-rep2.tar.gz` hold the unchanged output of trivy, grype, osv-scanner
+`raw-rep1.tar.gz`, `raw-rep2.tar.gz` and `raw-rep3.tar.gz` hold the unchanged output of trivy, grype, osv-scanner
 and `pip-audit`. That output includes advisory records, descriptions, references and scores that
 the scanners took from the databases below. That data belongs to its sources, and their terms
 apply to it:
@@ -18,7 +18,7 @@ source list gives the same licenses for the first three, and through the trivy a
 databases. We did not edit it. None of these sources reviewed or endorsed this note.
 
 Written by CyberNative AI LLC: `make_inputs.py`, `run_scanners.sh`, `score.py`,
-`pip-audit.Dockerfile`, `score-rep1.json`, `score-rep2.json`, this file and the READMEs. The score
+`pip-audit.Dockerfile`, `score-rep1.json`, `score-rep2.json`, `score-rep3.json`, this file and the READMEs. The score
 files summarize the raw output as outcomes, exit codes, advisory IDs, skip reasons and the last
 line of each scanner's error output, cut to 200 characters. `LICENSES/Apache-2.0.txt` is the
 unchanged license file from OpenSSF Malicious Packages.

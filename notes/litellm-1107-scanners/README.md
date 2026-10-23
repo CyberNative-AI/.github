@@ -1,5 +1,17 @@
 # litellm 1.107.0: trivy, grype and plain `pip-audit` still pass it (October 22)
 
+**Update, October 23.** We ran the same tests again on October 23 between 09:56 and 10:03 UTC,
+with the same scanner versions and newly downloaded databases. grype 0.121.0, with a database
+built at 06:30 UTC, now reports litellm 1.107.0 as malware (GHSA-92x9-889m-jgmw) in all four
+forms. It exited 0 anyway, as it did for every finding in our runs, so a CI step that runs
+grype without its `--fail-on` option passes even when grype reports malware. We did not test
+`--fail-on`. trivy 0.76.1, with a database updated at 07:12 UTC, still reported nothing in any
+form. `pip-audit`'s default PyPI service still skipped litellm and exited 0. Every other result
+was the same as on October 22. A pass from trivy or plain `pip-audit` still does not clear
+1.107.0. A grype pass counts only if its database includes GitHub's 00:32 UTC update to that
+advisory on October 22. Ours, built October 23 at 06:30 UTC, did; `grype db status` shows when
+yours was built.
+
 LiteLLM [reports](https://docs.litellm.ai/blog/security-incident-oct-21-2026) that "a
 malicious litellm==1.107.0 package was published to PyPI and was live for approximately 2
 hours (11:39 UTC to 13:23 UTC)" on October 21, and that its Docker images `v1.107.0`,
@@ -57,7 +69,7 @@ files or of the `*.dist-info` metadata folders, never inside a suspect environme
   `gh api '/advisories?ecosystem=pip&affects=litellm@1.107.0&type=malware'` returns
   GHSA-92x9-889m-jgmw; without `&type=malware` it returns nothing.
 
-## What each scanner reported
+## What each scanner reported on October 22
 
 | Scanner (database) | `requirements.txt` | `uv.lock` | `poetry.lock` | installed | 1.82.7 (March malware) |
 |---|---|---|---|---|---|
@@ -87,7 +99,9 @@ advisories: it flagged 1.82.7 with GHSA-92x9-889m-jgmw. On October 22 GitHub's A
 in that advisory, with a last update time of 00:32:04 UTC. The grype database we used took its
 GitHub data at 00:29:32 UTC, two and a half minutes earlier. That fits a database built just
 before 1.107.0 was added, but the update time does not show what changed, and we have not seen
-the advisory's earlier version. We will check a newer grype database on October 23.
+the advisory's earlier version. On October 23 the same grype binary, with a database whose
+GitHub data dates from 00:30:52 UTC that day, did report 1.107.0. That fits this explanation,
+but we did not test it directly.
 
 **trivy reported only the reviewed advisory.** trivy flagged 1.82.7 through
 GHSA-5mg7-485q-xm76, GitHub's reviewed advisory for the March releases, whose range is still
@@ -105,23 +119,25 @@ not expect trivy to flag 1.107.0 until GitHub adds it to a reviewed advisory.
   `--path -f json`) in their official images, pinned by digest, except `pip-audit`, which we
   installed from PyPI into the official Python image. Each scanner downloaded its own database
   at run time.
-- **Runs.** Two complete runs on October 22, 07:52–08:09 UTC, with identical results.
+- **Runs.** Two complete runs on October 22, 07:52–08:09 UTC, with identical results. A third
+  run on October 23, 09:56–10:03 UTC, with newly downloaded databases: only grype's four results
+  for 1.107.0 changed.
 - **`pip-audit` table output and `--strict`.** Our recorded `pip-audit` runs used JSON output.
   The "Skip Reason" table and the exit 1 under `--strict` come from reading pip-audit 2.10.1's
   source ([command line](https://github.com/pypa/pip-audit/blob/v2.10.1/pip_audit/_cli.py),
   [columns](https://github.com/pypa/pip-audit/blob/v2.10.1/pip_audit/_format/columns.py),
   [PyPI service](https://github.com/pypa/pip-audit/blob/v2.10.1/pip_audit/_service/pypi.py)),
   not from a recorded run.
-- We ran this once, ourselves. Nobody has reproduced it independently.
+- We ran all of this ourselves, on our own machine. Nobody has reproduced it independently.
 
-[`reproduce/`](reproduce/) has the input generator, the run script, the scorer, both runs' raw
-output and the scored results. The raw output contains third-party advisory data; see
+[`reproduce/`](reproduce/) has the input generator, the run script, the scorer, all three runs'
+raw output and the scored results. The raw output contains third-party advisory data; see
 [`reproduce/THIRD-PARTY-DATA.md`](reproduce/THIRD-PARTY-DATA.md).
 
 ## Limits
 
-- One reading of databases that change daily. trivy and grype will update; the date is part of
-  every result above.
+- Readings on two days of databases that change daily. trivy and grype will update; the date
+  is part of every result above.
 - Version matching only. No scanner here looks for `cook.pth` or other files the malware leaves.
 - We did not test GitHub Dependabot alerts or commercial scanners.
 
