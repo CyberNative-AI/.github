@@ -1,0 +1,34 @@
+{"rep":1,"layout":"old","set":"base","shape":"S1","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"S2","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"S3","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"S4","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"S5","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"S9","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"F1","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"F3","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"base","shape":"F4","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"base","shape":"S1","rc":1,"effect":true,"err":"bash: line 1: cd: /home/vsts/work/1/s: No such file or directory "}
+{"rep":1,"layout":"new","set":"base","shape":"S2","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"base","shape":"S3","rc":1,"effect":true,"err":"bash: line 1: /home/vsts/.local/bin/mytool: No such file or directory "}
+{"rep":1,"layout":"new","set":"base","shape":"S4","rc":1,"effect":false,"err":"mkdir: Permission denied "}
+{"rep":1,"layout":"new","set":"base","shape":"S5","rc":2,"effect":true,"err":"ls: cannot access '/home/vsts/work/1/s': No such file or directory "}
+{"rep":1,"layout":"new","set":"base","shape":"S9","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"base","shape":"F1","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"base","shape":"F3","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"base","shape":"F4","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"py","shape":"S6","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"py","shape":"S7","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"py","shape":"F6","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"py","shape":"F7","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"py","shape":"S6","rc":0,"effect":true,"err":"WARNING: The directory '/home/vsts/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip"}
+{"rep":1,"layout":"new","set":"py","shape":"S7","rc":2,"effect":false,"err":"error: Failed to initialize cache at `/home/vsts/.cache/uv`   Caused by: failed to create directory `/home/vsts/.cache/uv`: Permission denied (os error 13) "}
+{"rep":1,"layout":"new","set":"py","shape":"F6","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"py","shape":"F7","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"node","shape":"S8","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"node","shape":"S8b","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"node","shape":"F8b","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"old","set":"node","shape":"F8","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"node","shape":"S8","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"node","shape":"S8b","rc":243,"effect":false,"err":"npm error code EACCES npm error syscall mkdir "}
+{"rep":1,"layout":"new","set":"node","shape":"F8b","rc":0,"effect":true,"err":""}
+{"rep":1,"layout":"new","set":"node","shape":"F8","rc":0,"effect":true,"err":""}
