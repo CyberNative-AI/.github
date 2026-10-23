@@ -3,9 +3,10 @@
 **Update, October 23.** We ran the same tests again on October 23 between 09:56 and 10:03 UTC,
 with the same scanner versions and newly downloaded databases. grype 0.121.0, with a database
 built at 06:30 UTC, now reports litellm 1.107.0 as malware (GHSA-92x9-889m-jgmw) in all four
-forms. It exited 0 anyway, as it did for every finding in our runs, so a CI step that runs
-grype without its `--fail-on` option passes even when grype reports malware. We did not test
-`--fail-on`. trivy 0.76.1, with a database updated at 07:12 UTC, still reported nothing in any
+forms. It exited 0 anyway, as it did for every finding in our runs, which used grype's default
+settings. With those defaults, a CI step that runs grype passes even when grype reports malware.
+We did not test grype's `--fail-on` option or its `fail-on-severity` setting, which are meant to
+change that. trivy 0.76.1, with a database updated at 07:12 UTC, still reported nothing in any
 form. `pip-audit`'s default PyPI service still skipped litellm and exited 0. Every other result
 was the same as on October 22. A pass from trivy or plain `pip-audit` still does not clear
 1.107.0. A grype pass counts only if its database includes GitHub's 00:32 UTC update to that
@@ -100,7 +101,7 @@ in that advisory, with a last update time of 00:32:04 UTC. The grype database we
 GitHub data at 00:29:32 UTC, two and a half minutes earlier. That fits a database built just
 before 1.107.0 was added, but the update time does not show what changed, and we have not seen
 the advisory's earlier version. On October 23 the same grype binary, with a database whose
-GitHub data dates from 00:30:52 UTC that day, did report 1.107.0. That fits this explanation,
+GitHub data was captured at 00:32:06 UTC that day, did report 1.107.0. That fits this explanation,
 but we did not test it directly.
 
 **trivy reported only the reviewed advisory.** trivy flagged 1.82.7 through
