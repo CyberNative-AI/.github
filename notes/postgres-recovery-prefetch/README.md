@@ -8,14 +8,17 @@ pgsql-hackers cut the first case to 285 seconds, still twice `off`. With `full_p
 off it left the reads exactly as they were; we measured that without the cap.
 
 The reason is the number of reads, not the bytes. With prefetch on, replay read the data in
-8 kB pieces: about 396,000 read requests with `full_page_writes` on, against 13,400 for `off`.
+8 KiB pieces: about 396,000 read requests with `full_page_writes` on, against 13,400 for `off`.
 On our local disk that cost little time. Under a per-IO cap, as on many cloud volumes, every
 request counts, and replay time followed read requests ÷ 300.
 
-**If your standbys or restores run on storage with an IOPS limit, set
-`recovery_prefetch = off` on them, whatever `full_page_writes` is.** The upstream patch does
-not change that advice yet. PostgreSQL 19 RC 1 made the same reads as 18.6 in our uncapped
-runs.
+**If replay lags while the standby's disk sits at its read-IOPS limit, compare
+`recovery_prefetch = off` with `try` on your own workload, and keep the one that replays
+faster.** In this test, a bulk `UPDATE` that walks the table in key order, `off` was 10x faster
+under the cap with `full_page_writes` on and 12.8x with it off. Prefetching exists for replay
+that reads pages scattered across a large table; there `off` may be slower, and we did not
+test it (see Limits).
+PostgreSQL 19 RC 1 made the same reads as 18.6 in our uncapped runs.
 
 ## Why now
 
@@ -48,21 +51,24 @@ SHOW recovery_prefetch;   -- 'try' is the default
 SELECT prefetch, hit, skip_fpw FROM pg_stat_recovery_prefetch;
 ```
 
-A `prefetch` count that grows by hundreds of thousands while replay is behind means replay is
-issuing that many separate reads.
+A growing `prefetch` count shows prefetch activity: blocks PostgreSQL asked the operating
+system to read ahead of replay. It is not a count of disk reads, because the kernel can serve
+or merge them; in our uncapped `full_page_writes` on runs, 437,160 prefetches went with 395,860
+read requests on the disk. To see whether reads are what holds replay back, compare the read
+requests per second on the standby's disk or volume (`iostat`, the cgroup's `io.stat` or the
+cloud volume's metrics) with its IOPS limit.
 
-To turn it off, set `recovery_prefetch = off` in the server's configuration and reload.
+To try `off`, set `recovery_prefetch = off` in the server's configuration and reload.
 In PostgreSQL 18's source it is a reload-time setting (`PGC_SIGHUP`), so no restart is needed.
-We set it before start in our runs and did not test changing it during a replay. On
+We set it before start in our runs and did not test changing it during a replay. If replay
+is not faster with `off` on your workload, set it back to `try`. On
 CloudNativePG it goes under `spec.postgresql.parameters`, as in the ardentperf repro's
 [prefetch-off variation](https://github.com/ardentperf-labs/walreceiver-outage-repro/blob/main/variations/README.md#recovery_prefetchoff).
-In a GitHub code search on October 23, we found no setting of it in CloudNativePG, Patroni,
-Spilo, the Zalando, Crunchy, StackGres, Percona, KubeBlocks and pgEdge operators, Bitnami's
-charts, Stolon, timescaledb-docker-ha or autobase, so they run the default unless you change
-it. Patroni lists it only as an accepted parameter, and StackGres only in a test fixture.
-
-Prefetching exists for replay that has to read pages scattered across a large table. There,
-`off` may be slower. Our test does not cover that case (see Limits).
+A GitHub code search for `recovery_prefetch` on October 23 found no setting of it in the
+CloudNativePG, Patroni, Spilo, Zalando, Crunchy, StackGres, Percona, KubeBlocks and pgEdge
+operators, Bitnami's charts, Stolon, timescaledb-docker-ha or autobase. Patroni lists it only
+as an accepted parameter, and StackGres only in a test fixture. That searched their source
+text, not what your deployment runs: `SHOW recovery_prefetch` on the standby tells you.
 
 ## What we measured
 
@@ -75,7 +81,7 @@ that disk.
 
 **No cap, PostgreSQL 18.6 (Debian package image), two runs per cell**
 
-| WAL | `recovery_prefetch` | redo (s) | read requests | read GB | kB per read | `prefetch` count |
+| WAL | `recovery_prefetch` | redo (s) | read requests | read GB | KiB per read | `prefetch` count |
 |---|---|---|---|---|---|---|
 | `full_page_writes` on (3.36 GB) | try | 151.9, 179.7 | 395,863 / 395,856 | 6.54 | 16.1 | 437,160 |
 | | off | 126.6, 129.9 | 13,361 / 13,371 | 3.41 | 249 | 0 |
@@ -84,8 +90,8 @@ that disk.
 
 With `full_page_writes` on, `try` was 1.29x slower (medians), read 1.9x the bytes, and made
 29.6x as many read requests. With it off, `try` and `off` read the same bytes in about the same
-time (1.05x), but `try` made 15x as many, smaller requests. `off`'s reads averaged 134 kB,
-which fits kernel read-ahead on a table read in order; prefetch asked for each 8 kB page
+time (1.05x), but `try` made 15x as many, smaller requests. `off`'s reads averaged 134 KiB,
+which fits kernel read-ahead on a table read in order; prefetch asked for each 8 KiB page
 separately.
 
 **Read cap of 300 IOPS on the replay container** (`docker run --device-read-iops <disk>:300`,
@@ -121,7 +127,7 @@ Debian package: 151.6 and 159.9 s, about 395,900 read requests.
 - **`full_page_writes` off:** no change. Same 437,163 prefetches, 383,908 read requests, 62.2 s
   without the cap. We did not run the patched build under the cap here; with the same read
   requests we expect the same 12.8x, but that is an inference. The patch skips pages that a full-page image supplies; with no full-page
-  images, every page is still prefetched one 8 kB read at a time, which is the second cause in
+  images, every page is still prefetched one 8 KiB read at a time, which is the second cause in
   the ardentperf post.
 - **What is left:** the 54,644 remaining prefetches are within 0.4% of the size of the
   `pgbench_accounts` primary key index in pages (54,840). That fits index pages that fall out of
@@ -149,9 +155,11 @@ Debian package: 151.6 and 159.9 s, about 395,900 read requests.
 - We ran all of this ourselves, on our own machine, on October 23. Nobody has reproduced it
   independently.
 
-[`reproduce/`](reproduce/) has the scripts that ran inside the containers, a plain-docker
-wrapper, the source-build Dockerfile, every run's server log, IO counters and prefetch samples,
-and the scorer. `python3 score.py results` recomputes every number above.
+[`reproduce/`](reproduce/) has the scripts that ran inside the containers, the source-build
+Dockerfile, every run's server log, IO counters and prefetch samples, and the scorer.
+`python3 score.py results` in that folder recomputes every number above. We started the
+scripts through our own job scheduler, which is not published, and we have not published a
+tested launcher; the folder's README lists the container settings we used.
 
 ## Limits
 
