@@ -68,9 +68,11 @@ old layout.
 | `PIP_CACHE_DIR=/home/vsts/...`, then `pip install` | works with a warning: pip disables its cache |
 | `export PATH=/home/vsts/.local/bin:$PATH` | harmless: the image's `PATH` already includes `$HOME/.local/bin` |
 
-Whether a failing line fails the job depends on the step. Under `set -e`, or when it is the
-last command of a script step, the step fails. Otherwise the script runs on without the file,
-folder or install it expected, and a later step may fail or produce less output.
+Whether a failing line fails the job depends on the step. The step fails under `set -e`, when
+that line is the step's last command, when an explicit check such as `|| exit 1` follows it,
+or when the step sets `failOnStderr: true`. Without any of these, the script runs on without
+the file, folder or install it expected, and a later step may fail or produce less output.
+With `failOnStderr: true`, even the pip line fails the step: its cache warning goes to stderr.
 
 ## Fix
 
@@ -129,6 +131,13 @@ More dated breaking changes across languages and platforms, with a weekly email:
 [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-azure2604). For the
 GitHub Actions side of the same image change, see
 [`ubuntu-latest` becomes Ubuntu 26.04: setup failures](../ubuntu-2604-setup-check/).
+
+## Corrections
+
+- **October 23, 2026:** We corrected the explanation of when a failing line fails the step. An
+  explicit check such as `|| exit 1`, or `failOnStderr: true` on the step, also makes it fail;
+  the earlier text said the script otherwise runs on. The container results and the counts
+  are unchanged.
 
 ---
 
