@@ -1,0 +1,160 @@
+{
+ "frozen_classes": {
+  "AGENT_DOC": {
+   "files": 789,
+   "owners": 371,
+   "repos": 388,
+   "repos_active": 234,
+   "repos_leave_top_owner_out": 382,
+   "top_owner": "remotion-dev",
+   "top_owner_repos": 6
+  },
+  "CODE_DUAL": {
+   "files": 98,
+   "owners": 22,
+   "repos": 35,
+   "repos_active": 31,
+   "repos_leave_top_owner_out": 23,
+   "top_owner": "securedme-main-dev",
+   "top_owner_repos": 12
+  },
+  "CODE_OLD_ONLY": {
+   "files": 486,
+   "owners": 160,
+   "repos": 173,
+   "repos_active": 87,
+   "repos_leave_top_owner_out": 170,
+   "top_owner": "paulkinlan",
+   "top_owner_repos": 3
+  },
+  "DOC": {
+   "files": 256,
+   "owners": 126,
+   "repos": 137,
+   "repos_active": 85,
+   "repos_leave_top_owner_out": 132,
+   "top_owner": "towishy",
+   "top_owner_repos": 5
+  },
+  "ENGINE": {
+   "files": 21,
+   "owners": 5,
+   "repos": 5,
+   "repos_active": 5,
+   "repos_leave_top_owner_out": 4,
+   "top_owner": "babylonjs",
+   "top_owner_repos": 1
+  },
+  "NO_OLD_IN_BLOB": {
+   "files": 2,
+   "owners": 2,
+   "repos": 2,
+   "repos_active": 2,
+   "repos_leave_top_owner_out": 1,
+   "top_owner": "stolinski",
+   "top_owner_repos": 1
+  },
+  "UNREAD": {
+   "files": 0,
+   "owners": 0,
+   "repos": 0,
+   "repos_active": 0,
+   "repos_leave_top_owner_out": 0,
+   "top_owner": null,
+   "top_owner_repos": 0
+  },
+  "VENDORED": {
+   "files": 32,
+   "owners": 25,
+   "repos": 27,
+   "repos_active": 9,
+   "repos_leave_top_owner_out": 25,
+   "top_owner": "moosefroggo",
+   "top_owner_repos": 2
+  },
+  "hits_total_unique_files": 1684,
+  "repos_code_old_only_no_dual": 169,
+  "repos_code_old_only_no_dual_active": 85
+ },
+ "posthoc_code_old_only": {
+  "repos_no_dual": 169,
+  "three_src_copies_only": 26,
+  "own_code_repos": 143,
+  "own_code_active30d": 77,
+  "own_code_owners": 132,
+  "top_by_stars": [
+   [
+    "heygen-com/hyperframes",
+    70545
+   ],
+   [
+    "shader-effects-inc/shaders",
+    5361
+   ],
+   [
+    "AndrewPrifer/liquid-dom",
+    2560
+   ],
+   [
+    "visgl/luma.gl",
+    2486
+   ],
+   [
+    "openfilm/openfilm",
+    2293
+   ],
+   [
+    "Unclecheng-li/AI_Animation",
+    1607
+   ],
+   [
+    "GoogleChrome/modern-web-guidance-src",
+    1193
+   ],
+   [
+    "BrowserOperator/browser-operator-core",
+    516
+   ],
+   [
+    "buka-studio/www-marijanapav",
+    364
+   ],
+   [
+    "folk-js/folkjs",
+    230
+   ],
+   [
+    "heypoom/patchies",
+    214
+   ],
+   [
+    "remotion-dev/html-in-canvas",
+    197
+   ]
+  ]
+ },
+ "remotion_skill_copies": {
+  "repos": 255,
+  "current": 56,
+  "stale": 198,
+  "mixed": 1,
+  "active30d": {
+   "current": 56,
+   "stale": 92,
+   "mixed": 1
+  },
+  "upstream_fix": "remotion-dev/remotion c8202eae 2026-09-30"
+ },
+ "mwg_copies": {
+  "repos": 261,
+  "stale": 252,
+  "current": 9,
+  "active30d": {
+   "stale": 150,
+   "current": 9
+  },
+  "stale_owners": 224,
+  "files_read_at_head": 1156,
+  "upstream_fix": "modern-web-guidance-src b4fff095 2026-10-15; released v0.0.195 65e7edd6 2026-10-19"
+ }
+}

@@ -1,0 +1,14 @@
+<!doctype html><!-- Adapted from the WebGPU code sample in Google's "Introducing the HTML-in-Canvas API origin trial" (https://developer.chrome.com/blog/html-in-canvas-origin-trial). Changed by CyberNative AI LLC: the element's size, colour and text, a requestPaint() call, our test probe, and WebGPU adapter, device and context setup. Google licenses the code samples on the Chrome for Developers blog under the Apache License 2.0; see ../LICENSE-Apache-2.0.txt. This notice was added after our test run; the code below is as it ran. --><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block" layoutsubtree><div id="valueElement" style="width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif">HIC</div></canvas><script type="module">
+const canvas = c; __watch(c);
+const a = navigator.gpu ? await navigator.gpu.requestAdapter() : null; __probe.gpu_adapter = !!a;
+if (a) { const device = await a.requestDevice(); const root = { device }; const ctx = c.getContext('webgpu');
+  ctx.configure({ device, format: navigator.gpu.getPreferredCanvasFormat(), usage: GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.COPY_DST });
+  canvas.onpaint = () => {
+    const targetTexture = ctx.getCurrentTexture();
+    root.device.queue.copyElementImageToTexture(
+      valueElement,
+      { texture: targetTexture }
+    );
+  };
+  canvas.requestPaint(); }
+</script>

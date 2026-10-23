@@ -1,0 +1,7 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block"></canvas><script type="module">
+__watch(c);
+const a = navigator.gpu ? await navigator.gpu.requestAdapter() : null; __probe.gpu_adapter = !!a;
+if (a) { const d = await a.requestDevice(); const ctx = c.getContext('webgpu'); ctx.configure({ device: d, format: navigator.gpu.getPreferredCanvasFormat() });
+  const e = d.createCommandEncoder(); const pass = e.beginRenderPass({ colorAttachments: [{ view: ctx.getCurrentTexture().createView(), clearValue: {r:1,g:0,b:1,a:1}, loadOp: 'clear', storeOp: 'store' }] });
+  pass.end(); d.queue.submit([e.finish()]); }
+</script>

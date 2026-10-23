@@ -1,0 +1,20 @@
+<!doctype html><!-- Follows the PlayCanvas code sample in Google's "Introducing the HTML-in-Canvas API origin trial" (https://developer.chrome.com/blog/html-in-canvas-origin-trial): setSource on the first paint event, then upload on each paint. Changed by CyberNative AI LLC: our own element, texture size, material, plane and camera, and our test probe. Google licenses the code samples on the Chrome for Developers blog under the Apache License 2.0; see ../LICENSE-Apache-2.0.txt. This notice was added after our test run; the code below is as it ran. --><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block"></canvas><script type="module">
+import * as pc from '/assets/playcanvas-2.23.3/package/build/playcanvas.mjs';
+const canvas = c; __watch(c);
+canvas.setAttribute('layoutsubtree', 'true');
+const el = document.createElement('div'); el.style.cssText='width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif'; el.textContent='HIC'; canvas.appendChild(el);
+const device = await pc.createGraphicsDevice(canvas, { deviceTypes: ['webgl2'] });
+__probe.pc_supportsHtmlTextures = device.supportsHtmlTextures; __probe.pc_device = device.deviceType;
+const opts = new pc.AppOptions(); opts.graphicsDevice = device; opts.componentSystems = [pc.RenderComponentSystem, pc.CameraComponentSystem];
+const app = new pc.AppBase(canvas); app.init(opts);
+const htmlTexture = new pc.Texture(device, { width: 200, height: 100, format: pc.PIXELFORMAT_RGBA8, mipmaps: false, name: 'htmlTexture' });
+// Wait for the 'paint' event to set the source (blog block 8)
+canvas.addEventListener('paint', () => { htmlTexture.setSource(el); __probe.pc_setSource = true; }, { once: true });
+canvas.requestPaint();
+canvas.addEventListener('paint', () => { htmlTexture.upload(); });
+app.start();
+const material = new pc.StandardMaterial(); material.useLighting = false; material.emissiveMap = htmlTexture; material.emissive = new pc.Color(1, 1, 1); material.diffuse = new pc.Color(0, 0, 0); material.update();
+const plane = new pc.Entity('plane'); plane.addComponent('render', { type: 'plane', material }); app.root.addChild(plane);
+const cam = new pc.Entity('cam'); cam.addComponent('camera', { clearColor: new pc.Color(0.5, 0.5, 0.5), projection: pc.PROJECTION_ORTHOGRAPHIC, orthoHeight: 0.5 });
+cam.setPosition(0, 5, 0); cam.setEulerAngles(-90, 0, 0); app.root.addChild(cam);
+</script>

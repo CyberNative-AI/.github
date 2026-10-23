@@ -1,0 +1,29 @@
+<!doctype html><!-- Adapted from the 2D code sample in Google's "Introducing the HTML-in-Canvas API origin trial" (https://developer.chrome.com/blog/html-in-canvas-origin-trial). Changed by CyberNative AI LLC: the element's size and colour, a requestPaint() call and our test probe. Google licenses the code samples on the Chrome for Developers blog under the Apache License 2.0; see ../LICENSE-Apache-2.0.txt. This notice was added after our test run; the code below is as it ran. --><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><canvas id="canvas" style="width: 200px; height: 200px;" layoutsubtree>
+  <div id="form_element" style="width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif">
+    <label for="name">Name:</label> <input id="name" type="text">
+  </div>
+</canvas>
+<script>
+const observer = new ResizeObserver(([entry]) => {
+  const dpc = entry.devicePixelContentBoxSize;
+  canvas.width = dpc ? dpc[0].inlineSize : Math.round(entry.contentRect.width * window.devicePixelRatio);
+  canvas.height = dpc ? dpc[0].blockSize : Math.round(entry.contentRect.height * window.devicePixelRatio);
+});
+const supportsDevicePixelContentBox =
+  typeof ResizeObserverEntry !== 'undefined' &&
+  'devicePixelContentBoxSize' in ResizeObserverEntry.prototype;
+const options = supportsDevicePixelContentBox ? { box: 'device-pixel-content-box' } : {};
+observer.observe(canvas, options);
+</script>
+<script>
+const ctx = document.getElementById('canvas').getContext('2d');
+const form_element = document.getElementById('form_element');
+__watch(document.getElementById('canvas'));
+canvas.onpaint = () => {
+  ctx.reset();
+  // Draw the form element at x:0, y:0
+  let transform = ctx.drawElementImage(form_element, 0, 0);
+  // Use the transform returned later on...
+};
+canvas.requestPaint();
+</script>

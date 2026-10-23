@@ -1,0 +1,7 @@
+<!doctype html><!-- Follows the WebGL code sample in Google's "HTML-in-Canvas updates: Iterating toward a better Web API" (https://developer.chrome.com/blog/html-in-canvas-ot-changes): allocate the texture once with texImage2D, then texElementSubImage2D. Changed by CyberNative AI LLC: our own element, size and colour, the onpaint wiring, a draw (quad.js) and our test probe. Google licenses the code samples on the Chrome for Developers blog under the Apache License 2.0; see ../LICENSE-Apache-2.0.txt. This notice was added after our test run; the code below is as it ran. --><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><script src="/quad.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block" content="drawable"><div id="el" drawable style="width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif">HIC</div></canvas><script>
+__watch(c); const q = __quad(c); const gl = q.gl; let alloc = false;
+c.onpaint = () => { gl.bindTexture(gl.TEXTURE_2D, q.tex);
+  if (!alloc) { gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, 200, 100, 0, gl.RGBA, gl.UNSIGNED_BYTE, null); alloc = true; }
+  gl.texElementSubImage2D(gl.TEXTURE_2D, 0, 0, 0, el); q.draw(); };
+q.draw(); c.requestPaint();
+</script>

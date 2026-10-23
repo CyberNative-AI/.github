@@ -1,0 +1,1415 @@
+{
+ "searched": "2026-10-23",
+ "note": "Public, non-fork repositories whose matched code files (GitHub code index, October 23) contain the text texElementImage2D or copyElementImageToTexture and none of the new names, after leaving out the engine and specification repositories and files whose path marks a copy of an engine, a vendored library or three.js's renderer source. A text match, not parsed calls; files as indexed, not re-read; see head_recheck.jsonl for the default-branch re-read of the named repositories.",
+ "count": 143,
+ "repos": [
+  {
+   "repo": "heygen-com/hyperframes",
+   "stars": 70545,
+   "pushed_at": "2026-10-23T16:12:36Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "shader-effects-inc/shaders",
+   "stars": 5361,
+   "pushed_at": "2026-10-21T17:33:36Z",
+   "files": [
+    "packages/core/src/__tests__/gpu/shader-HTMLInCanvas.test.ts",
+    "packages/core/src/gpu/contract.ts",
+    "packages/core/src/gpu/kit/host/mediaLifecycle.ts",
+    "packages/core/src/gpu/textures.ts",
+    "packages/core/src/shaders/HTMLInCanvas/index.ts",
+    "packages/core/src/types.ts"
+   ]
+  },
+  {
+   "repo": "AndrewPrifer/liquid-dom",
+   "stars": 2560,
+   "pushed_at": "2026-09-06T16:01:19Z",
+   "files": [
+    "demo/showcase/src/App.tsx",
+    "packages/core/src/renderer/dom-content-sync.ts",
+    "packages/core/tests/dom-content-sync.test.ts"
+   ]
+  },
+  {
+   "repo": "visgl/luma.gl",
+   "stars": 2486,
+   "pushed_at": "2026-10-23T16:12:28Z",
+   "files": [
+    "modules/core/src/webgl/adapter/device-helpers/webgl-device-features.ts",
+    "modules/core/src/webgl/adapter/resources/webgl-texture.ts",
+    "modules/core/src/webgpu/adapter/resources/webgpu-texture.ts",
+    "modules/core/src/webgpu/adapter/webgpu-device.ts",
+    "modules/core/test/webgl/adapter/resources/webgl-texture-upload.spec.ts"
+   ]
+  },
+  {
+   "repo": "openfilm/openfilm",
+   "stars": 2293,
+   "pushed_at": "2026-10-23T15:51:11Z",
+   "files": [
+    "packages/openfilm/src/host.mjs"
+   ]
+  },
+  {
+   "repo": "Unclecheng-li/AI_Animation",
+   "stars": 1607,
+   "pushed_at": "2026-10-20T13:49:09Z",
+   "files": [
+    "skills/ui2v-motions/01_\u52a8\u6548\u5e93/itelmn/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "GoogleChrome/modern-web-guidance-src",
+   "stars": 1193,
+   "pushed_at": "2026-10-23T16:09:53Z",
+   "files": [
+    "guides/visual-design/apply-webgl-shaders/negative-demo.html"
+   ]
+  },
+  {
+   "repo": "BrowserOperator/browser-operator-core",
+   "stars": 516,
+   "pushed_at": "2026-03-19T23:17:01Z",
+   "files": [
+    "front_end/models/javascript_metadata/NativeFunctions.js"
+   ]
+  },
+  {
+   "repo": "buka-studio/www-marijanapav",
+   "stars": 364,
+   "pushed_at": "2026-10-12T11:32:53Z",
+   "files": [
+    "src/app/(main)/shop/components/LensClone/LensClone.tsx",
+    "src/types/html-in-canvas.d.ts",
+    "src/util.ts"
+   ]
+  },
+  {
+   "repo": "folk-js/folkjs",
+   "stars": 230,
+   "pushed_at": "2026-10-11T15:34:16Z",
+   "files": [
+    "website/demos/html-in-canvas.html"
+   ]
+  },
+  {
+   "repo": "heypoom/patchies",
+   "stars": 214,
+   "pushed_at": "2026-10-19T10:08:16Z",
+   "files": [
+    "ui/src/lib/html-in-canvas/html-canvas-node-output.test.ts",
+    "ui/src/lib/html-in-canvas/html-glsl-layer-node-output.ts",
+    "ui/src/lib/test-utils/mockWebGL.ts"
+   ]
+  },
+  {
+   "repo": "remotion-dev/html-in-canvas",
+   "stars": 197,
+   "pushed_at": "2026-05-03T14:24:19Z",
+   "files": [
+    "src/ArticleHighlight/gl.ts",
+    "src/Bonus/BurnDissolveComposition.tsx",
+    "src/Bonus/Composition.tsx",
+    "src/Bonus/GlitchComposition.tsx",
+    "src/Bonus/SaleStickerComposition.tsx",
+    "src/Bonus/ShineSticker.tsx",
+    "src/Bonus/StickerPeelComposition.tsx",
+    "src/CenteredWhitePaper/gl.ts",
+    "src/Crt/gl.ts",
+    "src/CubeTransitionCard/gl.ts",
+    "src/MagnifyingGlass/gl.ts",
+    "src/Vintage/gl.ts"
+   ]
+  },
+  {
+   "repo": "fimbox/html-in-canvas",
+   "stars": 196,
+   "pushed_at": "2026-04-17T13:44:32Z",
+   "files": [
+    "plugins/html-cloth.mjs"
+   ]
+  },
+  {
+   "repo": "repalash/three-html-render",
+   "stars": 193,
+   "pushed_at": "2026-04-20T16:24:37Z",
+   "files": [
+    "examples/focus-ring.html",
+    "examples/webGL-text-input.html",
+    "examples/webGL.html",
+    "examples/webgpu-jelly-slider/index.html",
+    "index.html",
+    "src/htmlInCanvasPolyfill.ts",
+    "src/threeHTMLRenderer.ts"
+   ]
+  },
+  {
+   "repo": "remorses/egaki",
+   "stars": 175,
+   "pushed_at": "2026-10-20T09:42:49Z",
+   "files": [
+    "cli/src/vite/angled-screen-shader.tsx"
+   ]
+  },
+  {
+   "repo": "BabylonJS/Babylon-Lite",
+   "stars": 166,
+   "pushed_at": "2026-10-23T06:58:19Z",
+   "files": [
+    "packages/babylon-lite/src/texture/html-texture.ts",
+    "tests/lite/unit/html-texture.test.ts"
+   ]
+  },
+  {
+   "repo": "LukyVj/GSS",
+   "stars": 118,
+   "pushed_at": "2026-10-23T15:07:50Z",
+   "files": [
+    "src/runtime/textures.ts"
+   ]
+  },
+  {
+   "repo": "jinruozai/HTML-Light-Demo",
+   "stars": 112,
+   "pushed_at": "2026-07-15T12:34:09Z",
+   "files": [
+    "app/light/three-html-compatibility.ts",
+    "tests/rendered-html.test.mjs"
+   ]
+  },
+  {
+   "repo": "my-mcp-hub/mcp-kit",
+   "stars": 98,
+   "pushed_at": "2026-10-22T21:36:51Z",
+   "files": [
+    "packages/mcp-kit-video/src/components/CrtTerminalCanvas.tsx"
+   ]
+  },
+  {
+   "repo": "COPPSARY/Motify",
+   "stars": 88,
+   "pushed_at": "2026-10-23T08:31:30Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "MCERQUA/OpenVoiceUI",
+   "stars": 80,
+   "pushed_at": "2026-10-20T08:13:21Z",
+   "files": [
+    "canvas-shared/html-surfaces.js"
+   ]
+  },
+  {
+   "repo": "jeantimex/glass-effect-webgpu",
+   "stars": 65,
+   "pushed_at": "2026-06-05T05:52:29Z",
+   "files": [
+    "src/webgpu/html-in-canvas.ts",
+    "src/webgpu/renderer.ts"
+   ]
+  },
+  {
+   "repo": "Absulit/points",
+   "stars": 56,
+   "pushed_at": "2026-08-18T21:23:22Z",
+   "files": [
+    "apidocs/points.js.html",
+    "build/points.js",
+    "examples/html_texture_1/index.js",
+    "src/points.js"
+   ]
+  },
+  {
+   "repo": "zz41354899/SwiftClip",
+   "stars": 46,
+   "pushed_at": "2026-05-11T01:21:17Z",
+   "files": [
+    "remotion/AppleMovie.tsx",
+    "remotion/Macintosh.tsx"
+   ]
+  },
+  {
+   "repo": "jamesroutley/news.routley.io",
+   "stars": 42,
+   "pushed_at": "2026-10-23T13:06:53Z",
+   "files": [
+    "docs/posts/the-html-in-canvas-api-origin-trial.html"
+   ]
+  },
+  {
+   "repo": "SawyerHood/html-in-canvas-room",
+   "stars": 41,
+   "pushed_at": "2026-04-09T23:08:38Z",
+   "files": [
+    "extension/entrypoints/content.ts",
+    "extension/types/html-in-canvas.d.ts"
+   ]
+  },
+  {
+   "repo": "bazodev/open-vids",
+   "stars": 38,
+   "pushed_at": "2026-10-09T11:40:36Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "MoizIbnYousaf/marketing-cli",
+   "stars": 32,
+   "pushed_at": "2026-10-20T07:05:36Z",
+   "files": [
+    "skills/cmo-remotion/templates/CRTComposition.tsx"
+   ]
+  },
+  {
+   "repo": "jangtrinh/design-os",
+   "stars": 28,
+   "pushed_at": "2026-10-22T11:31:12Z",
+   "files": [
+    "tests/adapters-canvas-effect-routing.test.ts"
+   ]
+  },
+  {
+   "repo": "ilya-makarov-dev/Reframe",
+   "stars": 21,
+   "pushed_at": "2026-05-01T13:35:21Z",
+   "files": [
+    "packages/editor/src/canvas-dom/present.ts",
+    "packages/editor/src/canvas-dom/webgl-present.ts"
+   ]
+  },
+  {
+   "repo": "Unclecheng-li/vulnclaw.com",
+   "stars": 21,
+   "pushed_at": "2026-10-05T15:28:13Z",
+   "files": [
+    "light-experience.js"
+   ]
+  },
+  {
+   "repo": "realness-online/web",
+   "stars": 20,
+   "pushed_at": "2026-10-21T16:04:35Z",
+   "files": [
+    "apps/realness/src/app/3d/utils/html-in-canvas.js",
+    "apps/realness/src/app/3d/utils/live-shadow-texture.js"
+   ]
+  },
+  {
+   "repo": "MaxLeiter/compiz-web",
+   "stars": 19,
+   "pushed_at": "2026-04-16T03:22:58Z",
+   "files": [
+    "src/pages/about.ts",
+    "src/transitions/TransitionEngine.ts"
+   ]
+  },
+  {
+   "repo": "thevibeworks/claude-reads-hn",
+   "stars": 16,
+   "pushed_at": "2026-10-23T11:10:01Z",
+   "files": [
+    "e/2026/10/23-1100.html",
+    "index.html"
+   ]
+  },
+  {
+   "repo": "swax/OpenSlope",
+   "stars": 10,
+   "pushed_at": "2026-10-22T22:06:13Z",
+   "files": [
+    "Slopesmith/test/video-screens.test.ts"
+   ]
+  },
+  {
+   "repo": "PaulKinlan/3d-io-demo-26",
+   "stars": 8,
+   "pushed_at": "2026-08-11T01:32:25Z",
+   "files": [
+    "src/main.js"
+   ]
+  },
+  {
+   "repo": "angular-wave/angular.ts",
+   "stars": 7,
+   "pushed_at": "2026-10-22T20:33:13Z",
+   "files": [
+    "docs/static/typedoc/interfaces/HtmlCanvasRuntimeSupport.html",
+    "integrations/closure/clojurescript/bin/.._externs/angular.js",
+    "integrations/closure/clojurescript/bin/target/classes/angular_ts/externs/angular.js",
+    "src/services/html-canvas/html-canvas.spec.ts",
+    "src/services/html-canvas/html-canvas.ts"
+   ]
+  },
+  {
+   "repo": "Quartio-Studio/yulius",
+   "stars": 7,
+   "pushed_at": "2026-10-23T16:12:06Z",
+   "files": [
+    "crates/yulius-server/web/assets/vendor/shaders/core/HTMLInCanvas-CKr2u76R.js"
+   ]
+  },
+  {
+   "repo": "Squidys-Tools/inkling",
+   "stars": 7,
+   "pushed_at": "2026-10-22T12:58:26Z",
+   "files": [
+    "src/components/LiquidGlass.tsx"
+   ]
+  },
+  {
+   "repo": "AksharP5/hyfrme",
+   "stars": 6,
+   "pushed_at": "2026-10-23T05:33:08Z",
+   "files": [
+    "registry/blocks/hyperframes-vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "loktar00/llm-website-demos",
+   "stars": 6,
+   "pushed_at": "2026-10-22T22:35:55Z",
+   "files": [
+    "ordinary-torn-site/index.html"
+   ]
+  },
+  {
+   "repo": "estebanrfp/webgpu-planetary-world",
+   "stars": 4,
+   "pushed_at": "2026-10-18T15:30:14Z",
+   "files": [
+    "lib/core/requirements.js",
+    "lib/systems/HtmlNameplateSystem.js",
+    "lib/systems/HtmlPanelSystem.js",
+    "lib/systems/ParcelTooltipSystem.js"
+   ]
+  },
+  {
+   "repo": "Intentface/intentface-launch",
+   "stars": 4,
+   "pushed_at": "2026-10-21T15:04:14Z",
+   "files": [
+    "packages/three/dom-texture.ts"
+   ]
+  },
+  {
+   "repo": "stolinski/gfx-computer",
+   "stars": 4,
+   "pushed_at": "2026-10-09T16:22:21Z",
+   "files": [
+    "scripts/cdp-capture-composition-posters.ts",
+    "scripts/cdp-capture-workspace-loop.ts",
+    "scripts/cdp-capture.mjs",
+    "scripts/cdp-dof-verify.mjs",
+    "scripts/cdp-page-health.mjs",
+    "scripts/probe-stale-build-recovery.ts",
+    "scripts/probe-standard-browser-rendering.mjs",
+    "scripts/run-gfx-authoring-scenario.ts",
+    "scripts/test-dom-capture-lane-seam.ts",
+    "scripts/verify-browser-render-matrix.mjs",
+    "scripts/webmcp-agent-browser-eval.ts",
+    "src/lib/pipelines/shader-passes/chapter-card-backdrop.ts",
+    "src/lib/pipelines/shader-passes/pullquote-photo-backdrop.ts",
+    "src/lib/pipelines/shader-passes/title-sequence-drop.ts",
+    "src/lib/pipelines/shader-passes/type-hero-rake.ts",
+    "src/lib/pipelines/surfaces/chapter-card/CanvasSource.svelte",
+    "src/lib/pipelines/surfaces/paper/CanvasSource.svelte",
+    "src/lib/pipelines/surfaces/pullquote-on-photo/CanvasSource.svelte",
+    "src/lib/pipelines/surfaces/title-sequence/CanvasSource.svelte",
+    "src/lib/platform/Composition.svelte",
+    "src/lib/platform/composition-dom-rasterizer.ts",
+    "src/lib/platform/html-in-canvas.test.ts",
+    "src/lib/platform/html-in-canvas.ts",
+    "src/lib/platform/pipelines/composition-planes.ts",
+    "src/lib/platform/standard-browser-dom-capture.ts",
+    "src/lib/text-animations/split-text.ts",
+    "src/lib/text-animations/strategies/kinetic-center-build.ts",
+    "src/lib/text-animations/strategies/kinetic-top-build.ts",
+    "src/lib/text-animations/unit-style.ts",
+    "src/routes/poc/dof3d/+page.svelte"
+   ]
+  },
+  {
+   "repo": "UUoocl/cablesStudio",
+   "stars": 4,
+   "pushed_at": "2026-09-27T14:41:53Z",
+   "files": [
+    "ops/Ops.Extension.Standalone.Electron.WebView/slides_preload.js",
+    "ops/Ops.Extension.Standalone.Electron.WebView/zoom_preload.js",
+    "ops/Ops.Extension.Standalone.Google.WebViewGoogleSlides/slides_preload.js",
+    "ops/Ops.Team.CablesStudio.HTMLInCanvas/Ops.Team.CablesStudio.HTMLInCanvas.js"
+   ]
+  },
+  {
+   "repo": "Waitence7/YummiLCU",
+   "stars": 4,
+   "pushed_at": "2026-10-23T10:34:52Z",
+   "files": [
+    "agent-tauri/src/htmlCanvasEffects.ts",
+    "agent-tauri/src/tabs/PatchNotesTab.tsx"
+   ]
+  },
+  {
+   "repo": "Amit-Sheen/hic-showroom",
+   "stars": 3,
+   "pushed_at": "2026-07-13T07:47:00Z",
+   "files": [
+    "components/basic-gradient/index.js",
+    "components/elastic-bulge/index.js",
+    "components/prismatic-shift/index.js",
+    "components/rain-drops/index.js",
+    "components/ripple-trails/index.js",
+    "components/wobbly-cursor/index.js",
+    "contribute.html"
+   ]
+  },
+  {
+   "repo": "haydncomley/liquid-glass-html-in-canvas",
+   "stars": 3,
+   "pushed_at": "2026-04-25T11:50:36Z",
+   "files": [
+    "src/types/html-in-canvas.d.ts"
+   ]
+  },
+  {
+   "repo": "kazuph/kazuph.github.io",
+   "stars": 3,
+   "pushed_at": "2026-10-20T20:10:51Z",
+   "files": [
+    "_posts/2026-05-24-liquid-dom-webgpu-glass.html"
+   ]
+  },
+  {
+   "repo": "nabeelvalley/docs",
+   "stars": 3,
+   "pushed_at": "2026-10-17T12:26:41Z",
+   "files": [
+    "client/web-components/shader.ts"
+   ]
+  },
+  {
+   "repo": "RangeLang/Range",
+   "stars": 3,
+   "pushed_at": "2026-10-23T13:13:27Z",
+   "files": [
+    "Website/tests/rendered-html.test.ts"
+   ]
+  },
+  {
+   "repo": "Xiphoray/Xiphoray.github.io",
+   "stars": 3,
+   "pushed_at": "2026-10-05T21:58:20Z",
+   "files": [
+    "bored/light.html"
+   ]
+  },
+  {
+   "repo": "adamtowerz/web",
+   "stars": 2,
+   "pushed_at": "2026-08-21T19:04:30Z",
+   "files": [
+    "adamtowers-io/components/PrintedText.tsx",
+    "adamtowers-io/types/html-in-canvas.d.ts"
+   ]
+  },
+  {
+   "repo": "ContentFries/visualfries",
+   "stars": 2,
+   "pushed_at": "2026-10-23T00:13:51Z",
+   "files": [
+    "tests/motion/fixtures/webgl-block/WebGlBlock.svelte"
+   ]
+  },
+  {
+   "repo": "solu199/html-surface-three",
+   "stars": 2,
+   "pushed_at": "2026-10-21T09:50:21Z",
+   "files": [
+    "src/backends/html-texture-backend.ts",
+    "src/backends/polyfill-compat.ts",
+    "tests/polyfill-compat.test.ts"
+   ]
+  },
+  {
+   "repo": "synthesiseng/prism",
+   "stars": 2,
+   "pushed_at": "2026-10-22T18:33:01Z",
+   "files": [
+    "packages/ui-dom/src/experimental-html-texture-adapter.ts"
+   ]
+  },
+  {
+   "repo": "0xdeafcafe/ceefax",
+   "stars": 1,
+   "pushed_at": "2026-08-02T17:04:22Z",
+   "files": [
+    "src/crt.ts",
+    "src/dom-screen.ts",
+    "src/main.ts",
+    "src/types/dom-extras.d.ts"
+   ]
+  },
+  {
+   "repo": "ai-integr8tor/heygen-com_hyperframes",
+   "stars": 1,
+   "pushed_at": "2026-09-10T20:46:55Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "arrival-space/arrival-plugins",
+   "stars": 1,
+   "pushed_at": "2026-10-23T15:28:01Z",
+   "files": [
+    "examples/html-cloth.mjs",
+    "examples/jsdos-cloth-v6.mjs"
+   ]
+  },
+  {
+   "repo": "b33fydan/breadstick-template",
+   "stars": 1,
+   "pushed_at": "2026-07-30T19:31:57Z",
+   "files": [
+    "remotion.config.mjs",
+    "src/remotion/compositions/AsciiPlanetShader.jsx",
+    "src/remotion/compositions/PracticeOverlay008.jsx"
+   ]
+  },
+  {
+   "repo": "BrendaOrtega/fixter2025",
+   "stars": 1,
+   "pushed_at": "2026-10-22T21:46:33Z",
+   "files": [
+    "scripts/create-html-in-canvas-post.ts"
+   ]
+  },
+  {
+   "repo": "cpiprint/hyperframes-captions",
+   "stars": 1,
+   "pushed_at": "2026-07-04T15:06:26Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "fimbox/doom-in-unreal",
+   "stars": 1,
+   "pushed_at": "2026-04-24T15:42:51Z",
+   "files": [
+    "plugins/jsdos-cloth-v6.mjs"
+   ]
+  },
+  {
+   "repo": "frankmwase/quick-ticket",
+   "stars": 1,
+   "pushed_at": "2026-10-06T06:14:41Z",
+   "files": [
+    "examples/web-ui/src/components/HTMLInCanvas.tsx"
+   ]
+  },
+  {
+   "repo": "Mizumi25/arkzen",
+   "stars": 1,
+   "pushed_at": "2026-06-26T07:10:55Z",
+   "files": [
+    "engine/backend/laravel-inertia/resources/js/Pages/VisualLab/components/HTMLCanvasSection.tsx",
+    "engine/frontend/astro/src/arkzen/generated/components/visual-lab/HTMLCanvasSection.tsx",
+    "engine/frontend/nextjs/app/visual-lab/components/HTMLCanvasSection.tsx",
+    "engine/frontend/react-vite/src/pages/visual-lab/components/HTMLCanvasSection.tsx",
+    "engine/frontend/tanstack-start/src/pages/visual-lab/components/HTMLCanvasSection.tsx",
+    "tatemonos/visual-lab/core.tsx"
+   ]
+  },
+  {
+   "repo": "NiJingzhe/nijingzhe.github.io",
+   "stars": 1,
+   "pushed_at": "2026-09-11T18:33:03Z",
+   "files": [
+    "src/htmlInCanvas.test.ts",
+    "src/htmlInCanvas.ts"
+   ]
+  },
+  {
+   "repo": "PaulKinlan/url-influence",
+   "stars": 1,
+   "pushed_at": "2026-07-03T18:15:54Z",
+   "files": [
+    "src/corpus.mjs"
+   ]
+  },
+  {
+   "repo": "postmelee/liquid-portfolio",
+   "stars": 1,
+   "pushed_at": "2026-07-19T10:05:12Z",
+   "files": [
+    "src/App.tsx"
+   ]
+  },
+  {
+   "repo": "rayx-ui/Gpux",
+   "stars": 1,
+   "pushed_at": "2026-10-19T12:28:49Z",
+   "files": [
+    "tools/browser/specs/html-island.spec.ts"
+   ]
+  },
+  {
+   "repo": "UUoocl/cables_standalone_for_mac",
+   "stars": 1,
+   "pushed_at": "2026-08-23T20:15:53Z",
+   "files": [
+    "patch/ops/Ops.Local.Standalone.HtmlInCanvas/Ops.Local.Standalone.HtmlInCanvas.js"
+   ]
+  },
+  {
+   "repo": "0xdeafcafe/dockos",
+   "stars": 0,
+   "pushed_at": "2026-07-04T12:33:50Z",
+   "files": [
+    "apps/web/src/ui/crt/html-canvas-lab/Demo.tsx",
+    "apps/web/src/ui/crt/html-canvas-lab/barrelShader.ts",
+    "apps/web/src/ui/crt/html-canvas-lab/htmlCanvasApi.ts",
+    "apps/web/src/ui/crt/html-canvas-lab/useHtmlCanvasWarp.ts"
+   ]
+  },
+  {
+   "repo": "23jmo/Johnathan-Portfolio",
+   "stars": 0,
+   "pushed_at": "2026-08-31T03:44:17Z",
+   "files": [
+    "app/glass-demo/page.tsx",
+    "components/scrollchat/LiquidGlassCanvas.tsx",
+    "components/spike/WebGLPageSpike.tsx"
+   ]
+  },
+  {
+   "repo": "abdulah-0/FrameForge",
+   "stars": 0,
+   "pushed_at": "2026-10-04T13:15:42Z",
+   "files": [
+    "hyperframes-main/registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "aknow2/hic",
+   "stars": 0,
+   "pushed_at": "2026-05-11T09:59:18Z",
+   "files": [
+    "index.html"
+   ]
+  },
+  {
+   "repo": "Avan0203/Obsiden",
+   "stars": 0,
+   "pushed_at": "2026-07-30T09:47:12Z",
+   "files": [
+    "front/javascript/htmlInCanvas.html"
+   ]
+  },
+  {
+   "repo": "az9713/html-to-canvas-demo",
+   "stars": 0,
+   "pushed_at": "2026-04-22T00:01:06Z",
+   "files": [
+    "Examples/crystal-hands/index.html",
+    "Examples/crystal-hands/src/crystal-renderer.ts",
+    "Examples/crystal-hands/src/html-in-canvas.d.ts",
+    "Examples/index.html",
+    "Examples/liquid-glass-nav/src/html-in-canvas.d.ts",
+    "Examples/shadow-puppet/src/html-in-canvas.d.ts",
+    "Examples/webGL.html",
+    "Examples/webgpu-jelly-slider/src/index.ts"
+   ]
+  },
+  {
+   "repo": "banqingyuan/lynlo-hyperframes-mirror",
+   "stars": 0,
+   "pushed_at": "2026-09-08T04:35:38Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "bitqs/xuan-film",
+   "stars": 0,
+   "pushed_at": "2026-10-14T12:34:49Z",
+   "files": [
+    "film/scenes/core/gl/InkReveal.tsx"
+   ]
+  },
+  {
+   "repo": "cbassuarez/tubcorp-command-site",
+   "stars": 0,
+   "pushed_at": "2026-04-22T06:42:05Z",
+   "files": [
+    "src/components/effects/HoverCanvas.tsx",
+    "src/components/effects/OperatorCanvas.tsx",
+    "src/components/effects/PhosphorTape.tsx",
+    "src/components/effects/SignalStatic.tsx",
+    "src/lib/htmlCanvas/detect.ts",
+    "tests/hover-canvas-mode.test.tsx"
+   ]
+  },
+  {
+   "repo": "decyjphr-org/common-agents",
+   "stars": 0,
+   "pushed_at": "2026-10-22T16:27:18Z",
+   "files": [
+    ".github/skills/html-in-canvas/assets/feature-detect.js",
+    ".github/skills/html-in-canvas/assets/webgl-shader-effect.html"
+   ]
+  },
+  {
+   "repo": "dongple-ex/coffee-tide",
+   "stars": 0,
+   "pushed_at": "2026-10-04T10:18:56Z",
+   "files": [
+    "src/lib/canvas/htmlInCanvas.ts"
+   ]
+  },
+  {
+   "repo": "dxj1031/personal-page",
+   "stars": 0,
+   "pushed_at": "2026-10-10T06:31:48Z",
+   "files": [
+    "ecotank/vendor/three-html-render/polyfill.mjs"
+   ]
+  },
+  {
+   "repo": "dxlyf/DxMyth",
+   "stars": 0,
+   "pushed_at": "2026-10-15T15:51:30Z",
+   "files": [
+    "packages/pixijs/src/html-source/glUploadHTMLResource.ts",
+    "packages/pixijs/src/html-source/gpuUploadHTMLResource.ts",
+    "packages/threejs/src/renderers/webgl-fallback/utils/WebGLTextureUtils.js",
+    "packages/threejs/src/renderers/webgpu/utils/WebGPUTextureUtils.js"
+   ]
+  },
+  {
+   "repo": "emiliacb/emiliacb",
+   "stars": 0,
+   "pushed_at": "2026-10-14T21:58:46Z",
+   "files": [
+    "landing/src/client/gradient-distortion.js"
+   ]
+  },
+  {
+   "repo": "ferraridavide/ticket",
+   "stars": 0,
+   "pushed_at": "2026-08-20T21:52:58Z",
+   "files": [
+    "script.js",
+    "ticket-texture.js"
+   ]
+  },
+  {
+   "repo": "floofysaur/underwater",
+   "stars": 0,
+   "pushed_at": "2026-10-03T16:40:19Z",
+   "files": [
+    "src/lib/shader-runtime/types.ts",
+    "src/lib/shader-runtime/useShaderRuntime.ts"
+   ]
+  },
+  {
+   "repo": "Gabeujin/codex-plugins",
+   "stars": 0,
+   "pushed_at": "2026-10-23T05:12:33Z",
+   "files": [
+    "plugins/canvas-web-experiences/demo/src/App.tsx",
+    "plugins/canvas-web-experiences/demo/src/runtime/htmlInCanvas.ts",
+    "plugins/canvas-web-experiences/demo/src/runtime/runtime.test.ts",
+    "plugins/canvas-web-experiences/demo/src/runtime/surfaceCatalog.ts",
+    "plugins/canvas-web-experiences/demo/src/scene/WebGLSurface.tsx",
+    "plugins/canvas-web-experiences/demo/src/scene/WebGpuSurface.tsx",
+    "plugins/canvas-web-experiences/demo/src/surface/SurfacePipelineHud.tsx",
+    "plugins/canvas-web-experiences/demo/src/surface/surfaceContracts.test.tsx"
+   ]
+  },
+  {
+   "repo": "GAO567/WebXR-feature-demos",
+   "stars": 0,
+   "pushed_at": "2026-04-01T18:12:59Z",
+   "files": [
+    "hic.html",
+    "hic.js"
+   ]
+  },
+  {
+   "repo": "gregrowles/pixiJS-v8.20.1",
+   "stars": 0,
+   "pushed_at": "2026-09-09T09:56:27Z",
+   "files": [
+    "src/html-source/glUploadHTMLResource.ts",
+    "src/html-source/gpuUploadHTMLResource.ts"
+   ]
+  },
+  {
+   "repo": "IMHOJEONG/web-tech",
+   "stars": 0,
+   "pushed_at": "2026-10-23T06:57:11Z",
+   "files": [
+    "apps/docs/public/experiments/html-in-canvas/index.html"
+   ]
+  },
+  {
+   "repo": "jiangshengdev/liquid-glass",
+   "stars": 0,
+   "pushed_at": "2026-06-13T03:10:05Z",
+   "files": [
+    "src/gpu/renderer.ts",
+    "src/utils/html-in-canvas.ts",
+    "src/webgpu.d.ts",
+    "tests/gpu-label-texture.test.ts",
+    "tests/html-in-canvas-support.test.ts"
+   ]
+  },
+  {
+   "repo": "JikkeyBTC/JIKKEY_TRANSITION_EFFECT",
+   "stars": 0,
+   "pushed_at": "2026-08-22T16:01:51Z",
+   "files": [
+    "scripts/capture-reference.cjs",
+    "tests/unit/jelly-toggle-3d-docs.test.ts"
+   ]
+  },
+  {
+   "repo": "johnhenry/canvas-fx",
+   "stars": 0,
+   "pushed_at": "2026-10-20T20:41:24Z",
+   "files": [
+    "src/gpu.mjs",
+    "src/pixel-canvas/index.mjs"
+   ]
+  },
+  {
+   "repo": "Kalajar2000/video-test",
+   "stars": 0,
+   "pushed_at": "2026-10-01T20:14:41Z",
+   "files": [
+    "hyperframes/registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "kevinbpatel/QuickDrawWeb",
+   "stars": 0,
+   "pushed_at": "2026-07-06T21:44:30Z",
+   "files": [
+    "components/glass/UnsupportedScreen.tsx",
+    "components/glass/supports-liquid-glass.ts",
+    "e2e/glass-support.spec.ts"
+   ]
+  },
+  {
+   "repo": "kevinkiklee/html-in-canvas-demos",
+   "stars": 0,
+   "pushed_at": "2026-04-14T07:29:03Z",
+   "files": [
+    "src/hic.d.ts",
+    "src/learn/content.ts",
+    "src/lib/__tests__/detect.test.ts",
+    "src/lib/__tests__/paint-tracker.test.ts",
+    "src/lib/detect.ts",
+    "src/lib/gl.ts",
+    "src/lib/paint-tracker.ts",
+    "src/main.ts",
+    "src/modes/film-strip/film-strip.ts",
+    "src/modes/gallery-walk/hic-bridge.ts",
+    "src/modes/print-table/print-table.ts",
+    "src/modes/wall-exhibition/wall-exhibition.ts",
+    "src/shell.ts"
+   ]
+  },
+  {
+   "repo": "KirtiJha/smashcut",
+   "stars": 0,
+   "pushed_at": "2026-09-10T00:51:26Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "krasimir/web-demos",
+   "stars": 0,
+   "pushed_at": "2026-10-18T11:52:46Z",
+   "files": [
+    "demos/html-in-canvas-basics/public/app.js",
+    "demos/html-in-canvas/public/app.js",
+    "demos/html-in-canvas2/public/app.js"
+   ]
+  },
+  {
+   "repo": "kunalahuja04/curtain-raiser-landing",
+   "stars": 0,
+   "pushed_at": "2026-06-03T00:07:34Z",
+   "files": [
+    "src/components/HtmlInCanvasExplorer.jsx"
+   ]
+  },
+  {
+   "repo": "lekandigital/aero-twitter-glass-lab",
+   "stars": 0,
+   "pushed_at": "2026-10-01T11:48:48Z",
+   "files": [
+    "_reference_vault/reference-library/github/liquid-dom/demo/showcase/src/App.tsx",
+    "_reference_vault/reference-library/github/liquid-dom/packages/core/src/renderer/dom-content-sync.ts",
+    "tests/experiment-eleven-reference-runtime.test.mjs"
+   ]
+  },
+  {
+   "repo": "lekandigital/glass-projects-lab",
+   "stars": 0,
+   "pushed_at": "2026-10-21T19:30:15Z",
+   "files": [
+    "liquid-dom-master/demo/showcase/src/App.tsx",
+    "liquid-dom-master/packages/core/src/renderer/dom-content-sync.ts",
+    "liquid-dom-master/packages/core/tests/dom-content-sync.test.ts",
+    "original-zips/liquid-dom-master/demo/showcase/src/App.tsx",
+    "original-zips/liquid-dom-master/packages/core/src/renderer/dom-content-sync.ts",
+    "webgpu-jelly-slider/src/index.ts"
+   ]
+  },
+  {
+   "repo": "lovit/html-in-canvas",
+   "stars": 0,
+   "pushed_at": "2026-08-24T01:25:04Z",
+   "files": [
+    "galleries/07-webgl-texture/src/main.js",
+    "galleries/11-live-document-3d/src/main.js",
+    "galleries/20-webgpu-texture/index.html",
+    "galleries/20-webgpu-texture/src/main.js",
+    "galleries/22-deep-field-gpu/index.html",
+    "galleries/22-deep-field-gpu/src/main.js",
+    "galleries/_shared/support.js",
+    "galleries/_shared/webgl.js"
+   ]
+  },
+  {
+   "repo": "lukemun/dreamcut",
+   "stars": 0,
+   "pushed_at": "2026-10-20T20:19:56Z",
+   "files": [
+    "scripts/verify-gpu-preview.ts"
+   ]
+  },
+  {
+   "repo": "mebinthattil/HackerNews-Daily-Email-Digest",
+   "stars": 0,
+   "pushed_at": "2026-10-23T08:49:16Z",
+   "files": [
+    "static/archives/23-10-2026.html"
+   ]
+  },
+  {
+   "repo": "mewhhaha/stillbrook",
+   "stars": 0,
+   "pushed_at": "2026-10-18T11:04:07Z",
+   "files": [
+    "app/routes/articles.the-button-in-the-painting/route.tsx"
+   ]
+  },
+  {
+   "repo": "MikkelBlom/dolly",
+   "stars": 0,
+   "pushed_at": "2026-10-20T00:19:41Z",
+   "files": [
+    "experiments/probe-hic-gpu.mjs",
+    "experiments/probe-html-in-canvas.mjs"
+   ]
+  },
+  {
+   "repo": "Mizumi250/Pluffy",
+   "stars": 0,
+   "pushed_at": "2026-10-23T14:15:32Z",
+   "files": [
+    "engine/backend/laravel-inertia/resources/js/Pages/VisualLab/components/HTMLCanvasSection.tsx",
+    "engine/frontend/astro/src/arkzen/generated/components/visual-lab/HTMLCanvasSection.tsx",
+    "engine/frontend/nextjs/app/visual-lab/components/HTMLCanvasSection.tsx",
+    "engine/frontend/react-vite/src/pages/visual-lab/components/HTMLCanvasSection.tsx",
+    "engine/frontend/tanstack-start/src/pages/visual-lab/components/HTMLCanvasSection.tsx",
+    "tatemonos/visual-lab/core.tsx"
+   ]
+  },
+  {
+   "repo": "mongrlz/floorwalkxyz",
+   "stars": 0,
+   "pushed_at": "2026-04-17T02:02:00Z",
+   "files": [
+    "extension/entrypoints/content.ts",
+    "extension/types/html-in-canvas.d.ts",
+    "extension/utils/street-scene.ts"
+   ]
+  },
+  {
+   "repo": "moosefroggo/nextwork-all-animations",
+   "stars": 0,
+   "pushed_at": "2026-06-09T15:39:43Z",
+   "files": [
+    "threejs/WebGLTextureUtils-2.js",
+    "threejs/WebGPUTextureUtils-2.js"
+   ]
+  },
+  {
+   "repo": "moosefroggo/nextwork-animations",
+   "stars": 0,
+   "pushed_at": "2026-06-09T15:07:01Z",
+   "files": [
+    "threejs/WebGLTextureUtils-2.js",
+    "threejs/WebGPUTextureUtils-2.js"
+   ]
+  },
+  {
+   "repo": "n8n5gy4cs9-cmd/nord-engine",
+   "stars": 0,
+   "pushed_at": "2026-10-23T14:45:07Z",
+   "files": [
+    "docs/manual/engines/babylon/9.30/api/babylonjs/babylon/12/uploadhtmlelementtotexture.html",
+    "docs/manual/engines/babylon/9.30/api/babylonjs/babylon/dd/htmltexture.html",
+    "docs/manual/engines/babylon/9.30/api/babylonjs/global/28/webglrenderingcontext.html",
+    "docs/manual/engines/babylon/9.30/api/babylonjs/global/8e/webgl2renderingcontext.html"
+   ]
+  },
+  {
+   "repo": "navigotechsolutions-labs/claude-agent-skills-hub",
+   "stars": 0,
+   "pushed_at": "2026-10-16T20:15:50Z",
+   "files": [
+    "hyperframes/registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "nikopradopalma17-art/impulso-video-skills",
+   "stars": 0,
+   "pushed_at": "2026-10-12T08:47:42Z",
+   "files": [
+    "01-frameworks/heygen-com--hyperframes/registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "nipunbatra/html-in-canvas",
+   "stars": 0,
+   "pushed_at": "2026-07-25T07:53:32Z",
+   "files": [
+    "assets/hic.js",
+    "demos/bulge.html",
+    "demos/slide-3d.html",
+    "index.html"
+   ]
+  },
+  {
+   "repo": "nodalityjs/nodality",
+   "stars": 0,
+   "pushed_at": "2026-10-06T10:21:34Z",
+   "files": [
+    "__tests__/e2e/raster-ops.spec.js",
+    "__tests__/unit/raster-live-visibility.test.mjs",
+    "__tests__/unit/raster-presets.test.mjs",
+    "lib/morph-node.js",
+    "lib/raster-ops.js",
+    "playwright.config.js",
+    "public/chain-diag.html",
+    "public/lib/morph-node.js",
+    "public/lib/raster-ops.js"
+   ]
+  },
+  {
+   "repo": "nodalityjs/nodalityjs.github.io",
+   "stars": 0,
+   "pushed_at": "2026-10-03T21:12:45Z",
+   "files": [
+    "docs/raster/basics/index.html"
+   ]
+  },
+  {
+   "repo": "noice-tech/banger-elements",
+   "stars": 0,
+   "pushed_at": "2026-09-10T21:20:53Z",
+   "files": [
+    "packages/elements/src/elements/fisheye/fisheye.tsx",
+    "packages/elements/src/elements/vhs/vhs.tsx",
+    "packages/elements/tests/vhs.test.ts"
+   ]
+  },
+  {
+   "repo": "ocean1547-ui/trend",
+   "stars": 0,
+   "pushed_at": "2026-10-21T23:32:40Z",
+   "files": [
+    "12_Hyperframes/registry/blocks/vfx-magnetic/vfx-magnetic.html",
+    "15_Shaders/packages/core/src/__tests__/gpu/shader-HTMLInCanvas.test.ts",
+    "15_Shaders/packages/core/src/gpu/contract.ts",
+    "15_Shaders/packages/core/src/gpu/kit/host/mediaLifecycle.ts",
+    "15_Shaders/packages/core/src/gpu/textures.ts",
+    "15_Shaders/packages/core/src/shaders/HTMLInCanvas/index.ts",
+    "15_Shaders/packages/core/src/types.ts"
+   ]
+  },
+  {
+   "repo": "omercnet/yawab",
+   "stars": 0,
+   "pushed_at": "2026-09-02T06:44:51Z",
+   "files": [
+    "website/src/lib/rasterize.ts"
+   ]
+  },
+  {
+   "repo": "paulbennet/html-in-canvas-examples",
+   "stars": 0,
+   "pushed_at": "2026-07-25T00:34:36Z",
+   "files": [
+    "src/lib/support.ts",
+    "src/lib/useElementTexture.ts",
+    "src/types/html-in-canvas.d.ts"
+   ]
+  },
+  {
+   "repo": "PaulKinlan/chrome-platform-showcase",
+   "stars": 0,
+   "pushed_at": "2026-10-18T11:03:50Z",
+   "files": [
+    "v138/html-in-canvas/index.html",
+    "v138/html-in-canvas/webgl-texture-feed/index.html"
+   ]
+  },
+  {
+   "repo": "petekp/three-ui",
+   "stars": 0,
+   "pushed_at": "2026-08-03T03:15:03Z",
+   "files": [
+    "app/App.tsx",
+    "app/scenes/ProbeLayout.tsx",
+    "app/scenes/ProbeStyle.tsx",
+    "src/lib/htmlInCanvas.ts"
+   ]
+  },
+  {
+   "repo": "pmatos/WebKit_HTML-in-canvas",
+   "stars": 0,
+   "pushed_at": "2026-05-15T20:17:05Z",
+   "files": [
+    "LayoutTests/fast/canvas/html-in-canvas/copyElementImageToTexture-4arg-dest-size.html",
+    "LayoutTests/fast/canvas/html-in-canvas/copyElementImageToTexture-6arg-source-crop.html",
+    "LayoutTests/fast/canvas/html-in-canvas/copyElementImageToTexture-8arg-crop-and-scale.html",
+    "LayoutTests/fast/canvas/html-in-canvas/copyElementImageToTexture-basic.html",
+    "LayoutTests/fast/canvas/html-in-canvas/copyElementImageToTexture-throws-on-ineligible.html",
+    "LayoutTests/fast/canvas/html-in-canvas/texElementImage2D-10arg-source-crop.html",
+    "LayoutTests/fast/canvas/html-in-canvas/texElementImage2D-12arg-crop-and-scale.html",
+    "LayoutTests/fast/canvas/html-in-canvas/texElementImage2D-8arg-dest-scale.html",
+    "LayoutTests/fast/canvas/html-in-canvas/texElementImage2D-basic.html",
+    "LayoutTests/fast/canvas/html-in-canvas/texElementImage2D-throws-on-ineligible.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/drawing-display-none-fails.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/nested-webgl-layoutsubtree-canvas.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/tex-element-image-2d-basic.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-css-transform-on-div.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-ink-overflow-ref.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-ink-overflow-worker-expected.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-ink-overflow-worker.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-ink-overflow.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-scaling-worker.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/html/canvas/drawElementImage/webgl-scaling.html",
+    "LayoutTests/imported/w3c/web-platform-tests/wpt_internal/resources/canvas-draw-element/util.js"
+   ]
+  },
+  {
+   "repo": "postmelee/r3f-htmltexture-prototype",
+   "stars": 0,
+   "pushed_at": "2026-05-27T07:17:03Z",
+   "files": [
+    "src/useHtmlTexture.tsx"
+   ]
+  },
+  {
+   "repo": "RockRobotic/engine",
+   "stars": 0,
+   "pushed_at": "2026-10-02T15:24:36Z",
+   "files": [
+    "examples/src/examples/misc/html-texture-configurator.example.mjs",
+    "examples/src/examples/misc/html-texture.example.mjs",
+    "src/platform/graphics/graphics-device.js",
+    "src/platform/graphics/webgl/webgl-graphics-device.js",
+    "src/platform/graphics/webgl/webgl-texture.js",
+    "src/platform/graphics/webgpu/webgpu-graphics-device.js",
+    "src/platform/graphics/webgpu/webgpu-texture.js",
+    "test/platform/graphics/webgl-bare.test.mjs"
+   ]
+  },
+  {
+   "repo": "rogie/figma-webgpu-shader-studio",
+   "stars": 0,
+   "pushed_at": "2026-10-02T13:50:29Z",
+   "files": [
+    "app/src/embedPage.js",
+    "app/src/runtime/host.js",
+    "app/src/runtime/host.test.js",
+    "app/src/runtime/htmlInCanvas.js"
+   ]
+  },
+  {
+   "repo": "rupurt/hifi",
+   "stars": 0,
+   "pushed_at": "2026-08-21T22:46:51Z",
+   "files": [
+    "packages/liquid/src/support.test.ts",
+    "packages/liquid/src/support.ts"
+   ]
+  },
+  {
+   "repo": "sangeetxyz/credit-cards",
+   "stars": 0,
+   "pushed_at": "2026-07-31T06:35:19Z",
+   "files": [
+    "lib/liquid-glass-support.ts"
+   ]
+  },
+  {
+   "repo": "simjaehyung/ml_project",
+   "stars": 0,
+   "pushed_at": "2026-06-07T09:11:11Z",
+   "files": [
+    "presentations/canvas_demo_v3.html"
+   ]
+  },
+  {
+   "repo": "Soflutionltd/glintmotion-source",
+   "stars": 0,
+   "pushed_at": "2026-10-19T17:23:05Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "sunganhao8-lgtm/zhaiyu-bp",
+   "stars": 0,
+   "pushed_at": "2026-08-27T02:57:33Z",
+   "files": [
+    "src/light-home.js"
+   ]
+  },
+  {
+   "repo": "TaggartMaher/taggart-maher-site",
+   "stars": 0,
+   "pushed_at": "2026-07-10T19:25:03Z",
+   "files": [
+    "src/composite/ScreenOverlay.svelte",
+    "src/composite/htmlInCanvas.ts"
+   ]
+  },
+  {
+   "repo": "takuma-hmng8/frozen-form",
+   "stars": 0,
+   "pushed_at": "2026-04-09T13:33:07Z",
+   "files": [
+    "src/html-in-canvas.d.ts"
+   ]
+  },
+  {
+   "repo": "toddyclipss/6Clips",
+   "stars": 0,
+   "pushed_at": "2026-10-16T23:30:50Z",
+   "files": [
+    "backend/catalog/shipped_blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "tyler-mitchell/infinite-canvas",
+   "stars": 0,
+   "pushed_at": "2026-10-11T19:17:50Z",
+   "files": [
+    "apps/compositor-poc/src/main.ts"
+   ]
+  },
+  {
+   "repo": "UUoocl/cables_standalone_electron_ops",
+   "stars": 0,
+   "pushed_at": "2026-08-31T23:59:01Z",
+   "files": [
+    "ops/Ops.Extension.Standalone.Electron.WebView/slides_preload.js",
+    "ops/Ops.Extension.Standalone.Electron.WebView/zoom_preload.js",
+    "ops/Ops.Extension.Standalone.Google.WebViewGoogleSlides/slides_preload.js"
+   ]
+  },
+  {
+   "repo": "vignesh1521/scout",
+   "stars": 0,
+   "pushed_at": "2026-02-14T00:25:43Z",
+   "files": [
+    "front_end/models/javascript_metadata/NativeFunctions.js"
+   ]
+  },
+  {
+   "repo": "vipingit1/remotion",
+   "stars": 0,
+   "pushed_at": "2026-07-11T20:40:28Z",
+   "files": [
+    "packages/core/src/HtmlInCanvas.tsx",
+    "packages/docs/components/demos/HtmlInCanvasDocsDemoWebGL.tsx",
+    "packages/docs/components/demos/HtmlInCanvasDocsDemoWebGPU.tsx",
+    "packages/example/src/HtmlInCanvas/compose-webgl-crt.tsx",
+    "packages/example/src/HtmlInCanvas/compose-webgl.tsx",
+    "packages/example/src/HtmlInCanvas/compose-webgpu.tsx",
+    "packages/example/src/HtmlInCanvas/minimal-docs-webgl.tsx",
+    "packages/transitions/src/presentations/book-flip.tsx",
+    "packages/transitions/src/presentations/cross-zoom.tsx",
+    "packages/transitions/src/presentations/crosswarp.tsx",
+    "packages/transitions/src/presentations/dissolve.tsx",
+    "packages/transitions/src/presentations/dreamy-zoom.tsx",
+    "packages/transitions/src/presentations/film-burn.tsx",
+    "packages/transitions/src/presentations/linear-blur.tsx",
+    "packages/transitions/src/presentations/ripple.tsx",
+    "packages/transitions/src/presentations/swap.tsx",
+    "packages/transitions/src/presentations/zoom-blur.tsx",
+    "packages/transitions/src/presentations/zoom-in-out.tsx"
+   ]
+  },
+  {
+   "repo": "virrdhiman/hyperframes-video-agent-master",
+   "stars": 0,
+   "pushed_at": "2026-10-14T07:01:50Z",
+   "files": [
+    "compositions/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "zaeem571/hyperframes",
+   "stars": 0,
+   "pushed_at": "2026-06-07T23:29:43Z",
+   "files": [
+    "registry/blocks/vfx-magnetic/vfx-magnetic.html"
+   ]
+  },
+  {
+   "repo": "zalo/InfinityEngine",
+   "stars": 0,
+   "pushed_at": "2026-04-09T20:59:36Z",
+   "files": [
+    "iframe/misc_html-texture-configurator.example.mjs",
+    "iframe/misc_html-texture.example.mjs"
+   ]
+  },
+  {
+   "repo": "zen1975/html-in-canvas-demo",
+   "stars": 0,
+   "pushed_at": "2026-04-12T01:43:48Z",
+   "files": [
+    "demos/water-drop/index.html"
+   ]
+  },
+  {
+   "repo": "zillafan80-Maxzilla/claw-code-ubuntu-desktopUI",
+   "stars": 0,
+   "pushed_at": "2026-04-13T16:07:12Z",
+   "files": [
+    "payload/claw-code/.claw/skills/html-in-canvas/references/html-in-canvas/Examples/webGL.html",
+    "payload/claw-code/.claw/skills/html-in-canvas/references/html-in-canvas/Examples/webgpu-jelly-slider/src/index.ts"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4635 @@
+{
+ "cells": {
+  "B2D|C156": "BLANK_LOUD",
+  "B2D|C156OT": "RENDERS",
+  "B2D|C157": "BLANK_LOUD",
+  "B2D|C158": "BLANK_LOUD",
+  "BGL|C156": "BLANK_LOUD",
+  "BGL|C156OT": "BLANK_LOUD",
+  "BGL|C157": "BLANK_SILENT",
+  "BGL|C158": "BLANK_SILENT",
+  "BGPU|C156": "BLANK_LOUD",
+  "BGPU|C156OT": "BLANK_LOUD",
+  "BGPU|C157": "BLANK_LOUD",
+  "BGPU|C158": "BLANK_LOUD",
+  "BJSN|C156": "BLANK_SILENT",
+  "BJSN|C156OT": "RENDERS",
+  "BJSN|C157": "BLANK_SILENT",
+  "BJSN|C158": "BLANK_SILENT",
+  "BJS|C156": "RENDERS",
+  "BJS|C156OT": "RENDERS",
+  "BJS|C157": "BLANK_SILENT",
+  "BJS|C158": "BLANK_SILENT",
+  "K0|C156": "BLANK_SILENT",
+  "K0|C156OT": "BLANK_SILENT",
+  "K0|C157": "BLANK_SILENT",
+  "K0|C158": "BLANK_SILENT",
+  "K1|C156": "RENDERS",
+  "K1|C156OT": "RENDERS",
+  "K1|C157": "RENDERS",
+  "K1|C158": "RENDERS",
+  "K2|C156": "RENDERS",
+  "K2|C156OT": "RENDERS",
+  "K2|C157": "RENDERS",
+  "K2|C158": "RENDERS",
+  "K3|C156": "RENDERS",
+  "K3|C156OT": "RENDERS",
+  "K3|C157": "RENDERS",
+  "K3|C158": "RENDERS",
+  "N2D|C156": "BLANK_LOUD",
+  "N2D|C156OT": "RENDERS",
+  "N2D|C157": "RENDERS",
+  "N2D|C158": "RENDERS",
+  "NGL|C156": "BLANK_LOUD",
+  "NGL|C156OT": "RENDERS",
+  "NGL|C157": "RENDERS",
+  "NGL|C158": "RENDERS",
+  "NGPU|C156": "BLANK_LOUD",
+  "NGPU|C156OT": "RENDERS",
+  "NGPU|C157": "RENDERS",
+  "NGPU|C158": "RENDERS",
+  "PC|C156": "BLANK_LOUD",
+  "PC|C156OT": "RENDERS",
+  "PC|C157": "BLANK_SILENT",
+  "PC|C158": "BLANK_SILENT",
+  "PX|C156": "BLANK_LOUD",
+  "PX|C156OT": "RENDERS",
+  "PX|C157": "BLANK_LOUD",
+  "PX|C158": "BLANK_LOUD",
+  "T3PR|C156": "BLANK_SILENT",
+  "T3PR|C156OT": "RENDERS",
+  "T3PR|C157": "RENDERS",
+  "T3PR|C158": "RENDERS",
+  "T3|C156": "BLANK_SILENT",
+  "T3|C156OT": "RENDERS",
+  "T3|C157": "BLANK_SILENT",
+  "T3|C158": "BLANK_SILENT"
+ },
+ "rows": [
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: c.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: c.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: c.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: c.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: c.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: c.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 40000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 40000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "three_gl_new": false,
+    "three_gl_old": false,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "three_gl_new": false,
+    "three_gl_old": false,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "three_gl_new": false,
+    "three_gl_old": false,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "three_gl_new": false,
+    "three_gl_old": false,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "pc_device": "webgl2",
+    "pc_supportsHtmlTextures": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: canvas.requestPaint is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "pc_device": "webgl2",
+    "pc_supportsHtmlTextures": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [
+    {
+     "text": "BJS - [16:28:00]: HTML-in-Canvas: texElementImage2D is not available. Enable chrome://flags/#canvas-draw-element, the built-in SVG fallback, or the three-html-render polyfill to use HtmlTexture.",
+     "type": "warning"
+    }
+   ],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [
+    {
+     "text": "BJS - [16:28:08]: HTML-in-Canvas: texElementImage2D is not available. Enable chrome://flags/#canvas-draw-element, the built-in SVG fallback, or the three-html-render polyfill to use HtmlTexture.",
+     "type": "warning"
+    }
+   ],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 40000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 15020,
+   "n_mag_by_shot": [
+    15020,
+    15020
+   ],
+   "outcome": "RENDERS",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 40000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 15020,
+   "n_mag_by_shot": [
+    15020,
+    15020
+   ],
+   "outcome": "RENDERS",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Failed to execute 'texElementImage2D' on 'WebGL2RenderingContext': The provided value is not of type '(Element or ElementImage)'."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Failed to execute 'texElementImage2D' on 'WebGL2RenderingContext': The provided value is not of type '(Element or ElementImage)'."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Failed to execute 'copyElementImageToTexture' on 'GPUQueue': Failed to read the 'source' property from 'GPUCopyElementImageSource': Required member is undefined."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Failed to execute 'copyElementImageToTexture' on 'GPUQueue': Failed to read the 'source' property from 'GPUCopyElementImageSource': Required member is undefined."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186",
+     "layoutsubtree=true"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": true,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186",
+     "layoutsubtree=true"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": true,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": true,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": true,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 86991,
+   "n_mag_by_shot": [
+    86991,
+    86991
+   ],
+   "outcome": "RENDERS",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "pc_device": "webgl2",
+    "pc_setSource": true,
+    "pc_supportsHtmlTextures": true,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 86991,
+   "n_mag_by_shot": [
+    86991,
+    86991
+   ],
+   "outcome": "RENDERS",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "pc_device": "webgl2",
+    "pc_setSource": true,
+    "pc_supportsHtmlTextures": true,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Cannot read properties of undefined (reading 'toString')"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Cannot read properties of undefined (reading 'toString')"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 40000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "InvalidStateError: Failed to execute 'drawElementImage' on 'CanvasRenderingContext2D': DrawElementImage requires the canvas to have the content=drawable attribute."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 40000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "InvalidStateError: Failed to execute 'drawElementImage' on 'CanvasRenderingContext2D': DrawElementImage requires the canvas to have the content=drawable attribute."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: root.device.queue.copyElementImageToTexture is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: root.device.queue.copyElementImageToTexture is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "pc_device": "webgl2",
+    "pc_setSource": true,
+    "pc_supportsHtmlTextures": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "pc_device": "webgl2",
+    "pc_setSource": true,
+    "pc_supportsHtmlTextures": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K2",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "k2": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 120000,
+   "n_mag_by_shot": [
+    120000,
+    120000
+   ],
+   "outcome": "RENDERS",
+   "page": "K3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Cannot read properties of undefined (reading 'toString')"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: Cannot read properties of undefined (reading 'toString')"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "N2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "NGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "NGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 2,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 40000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "InvalidStateError: Failed to execute 'drawElementImage' on 'CanvasRenderingContext2D': DrawElementImage requires the canvas to have the content=drawable attribute."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 40000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "InvalidStateError: Failed to execute 'drawElementImage' on 'CanvasRenderingContext2D': DrawElementImage requires the canvas to have the content=drawable attribute."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "B2D",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BGL",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: root.device.queue.copyElementImageToTexture is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "TypeError: root.device.queue.copyElementImageToTexture is not a function"
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "BGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "T3",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r186"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": null,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "186",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 116709,
+   "n_mag_by_shot": [
+    116709,
+    116709
+   ],
+   "outcome": "RENDERS",
+   "page": "T3PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width:400px;height:300px;display:block",
+     "data-engine=three.js r187dev",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "three_gl_new": true,
+    "three_gl_old": false,
+    "three_rev": "187dev",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "pc_device": "webgl2",
+    "pc_setSource": true,
+    "pc_supportsHtmlTextures": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "PC",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "pc_device": "webgl2",
+    "pc_setSource": true,
+    "pc_supportsHtmlTextures": false,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "BJSN",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.32.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.32.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource.",
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "out-main",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  }
+ ]
+}

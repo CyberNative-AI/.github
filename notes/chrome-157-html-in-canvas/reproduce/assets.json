@@ -1,0 +1,18 @@
+{
+ "chrome": {
+  "156.0.8078.47": "230f0db8c5086182f46c59c867c0d461eb525d6552dfad226ea6b4d9ec249db2",
+  "157.0.8103.15": "e44893f0eb826ba2e9c0e44e182f910e8d8473ce00b9eb7ae7a652512f02cd78",
+  "158.0.8119.0": "b0285775e765aedea00f4e869154b3791320cc2db5a9fae703d9a16d93d52665"
+ },
+ "npm_tarballs": {
+  "_babylonjs_core-9.32.0.tgz": "797645252d08a1d3ea4b12011844488d7580f5b2b66df85d6d7759d920fb37e5",
+  "babylonjs-9.32.0.tgz": "cd0d4640ab2e28b8dd6dcb4a3d40201e6197d4a38aa554b4652ee7fada9ecd07",
+  "pixi.js-8.22.0.tgz": "33a0481e8ae3eb33216c4c8db6a43722c04fa8872ca2cfc7878567fced658ca3",
+  "playcanvas-2.23.3.tgz": "02d004937bc7f96c2a2473c336f5c2420c79b2b459af15ff991d6cac14a8bc97",
+  "pr34732.tgz": "742dbe74d4e2d719f8bd14f6171f4fb344cf0deb9acdc620e4aba5dd69247d88",
+  "three-0.186.0.tgz": "61eeff9d7616005c9a481c796f52287d81fbbbc0d55eaca5565322924252c1aa"
+ },
+ "three_pr34732_head": "ewewraw/three.js@b28067fa5b9c800d89fedcfa7acdf24037388178",
+ "blog_html_sha256": "d598bb073c95006cdc52e77a23b055dcfc79c6a36e7cf697b46d0ab7ff933737",
+ "container_image": "mcr.microsoft.com/playwright:v1.62.1-noble"
+}

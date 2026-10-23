@@ -1,0 +1,14 @@
+<!doctype html><!-- The material and HTMLTexture lines follow the three.js code sample in Google's "Introducing the HTML-in-Canvas API origin trial" (https://developer.chrome.com/blog/html-in-canvas-origin-trial). Changed by CyberNative AI LLC: our own element, renderer, camera and plane, and our test probe. Google licenses the code samples on the Chrome for Developers blog under the Apache License 2.0; see ../LICENSE-Apache-2.0.txt. This notice was added after our test run; the code below is as it ran. --><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block"></canvas><script type="module">
+import * as THREE from '/assets/three-0.186.0/package/build/three.module.js';
+__watch(c);
+const el = document.createElement('div'); el.style.cssText='width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif'; el.textContent='HIC';
+const renderer = new THREE.WebGLRenderer({ canvas: c, preserveDrawingBuffer: true });
+renderer.setSize(400, 300, false); renderer.setClearColor(0x808080, 1);
+const scene = new THREE.Scene(); const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0.1, 10); camera.position.z = 1;
+const material = new THREE.MeshBasicMaterial();
+material.map = new THREE.HTMLTexture(el); // Pass the DOM element
+const mesh = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), material); scene.add(mesh);
+__probe.three_rev = THREE.REVISION; __probe.three_gl_old = 'texElementImage2D' in renderer.getContext(); __probe.three_gl_new = 'texElementSubImage2D' in renderer.getContext();
+renderer.setAnimationLoop(() => renderer.render(scene, camera));
+setTimeout(() => { __probe.canvas_attrs = [...c.attributes].map(a => a.name + '=' + a.value); __probe.el_parent = el.parentNode && el.parentNode.id; }, 3000);
+</script>

@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><script src="/assets/babylonjs-9.32.0/package/babylon.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block"></canvas><script>
+__watch(c);
+const el = document.createElement('div'); el.style.cssText='width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif'; el.textContent='HIC'; document.body.appendChild(el);
+const engine = new BABYLON.Engine(c, true, { preserveDrawingBuffer: true });
+const scene = new BABYLON.Scene(engine); scene.clearColor = new BABYLON.Color4(0.5, 0.5, 0.5, 1);
+const cam = new BABYLON.FreeCamera('cam', new BABYLON.Vector3(0, 0, -1), scene); cam.setTarget(BABYLON.Vector3.Zero());
+cam.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA; cam.orthoLeft = -1; cam.orthoRight = 1; cam.orthoTop = 0.75; cam.orthoBottom = -0.75;
+const plane = BABYLON.MeshBuilder.CreatePlane('p', { width: 2, height: 1.5 }, scene);
+const mat = new BABYLON.StandardMaterial('m', scene); mat.disableLighting = true;
+mat.emissiveTexture = new BABYLON.HtmlTexture('h', el, { scene, width: 200, height: 100, useSvgFallback: false }); plane.material = mat;
+__probe.bjs_version = BABYLON.Engine.Version; __probe.bjs_native = BABYLON.IsHtmlInCanvasUploadSupported ? BABYLON.IsHtmlInCanvasUploadSupported(engine) : 'no-export';
+engine.runRenderLoop(() => scene.render());
+setTimeout(() => { __probe.canvas_attrs = [...c.attributes].map(a => a.name + '=' + a.value); __probe.el_parent = el.parentNode && (el.parentNode.id || el.parentNode.tagName); }, 3000);
+</script>

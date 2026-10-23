@@ -1,0 +1,8 @@
+<!doctype html><!-- Follows the WebGPU code sample in Google's "HTML-in-Canvas updates: Iterating toward a better Web API" (https://developer.chrome.com/blog/html-in-canvas-ot-changes): drawElementImageToTexture with source and destination dictionaries. Changed by CyberNative AI LLC: our own element, size and colour, adapter, device and context setup, the onpaint wiring and our test probe. Google licenses the code samples on the Chrome for Developers blog under the Apache License 2.0; see ../LICENSE-Apache-2.0.txt. This notice was added after our test run; the code below is as it ran. --><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block" content="drawable"><div id="el" drawable style="width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif">HIC</div></canvas><script type="module">
+__watch(c);
+const a = navigator.gpu ? await navigator.gpu.requestAdapter() : null; __probe.gpu_adapter = !!a;
+if (a) { const d = await a.requestDevice(); const ctx = c.getContext('webgpu');
+  ctx.configure({ device: d, format: navigator.gpu.getPreferredCanvasFormat(), usage: GPUTextureUsage.RENDER_ATTACHMENT | GPUTextureUsage.COPY_DST });
+  c.onpaint = () => { d.queue.drawElementImageToTexture({ source: el }, { texture: ctx.getCurrentTexture(), size: { width: 200, height: 100 } }); };
+  c.requestPaint(); }
+</script>
