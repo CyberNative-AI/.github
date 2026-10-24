@@ -59,8 +59,8 @@ What we take from it:
 - **Grid demand: no lead.** Timestral-209M and Chronos-2 tie, and Chronos-2 took 63 s against 112 s for the same
   350 forecasts on our CPU.
 - **Pageviews: Timestral-209M is ahead, by about 3–10% depending on the average.** It is 10% better than Chronos-2
-  and 7% better than TimesFM-2.5 on the geometric mean above; on the plain mean of MASE the gaps are 2.5% (0.544
-  vs 0.558) and 3.2% (0.544 vs 0.562), because a few hard, news-driven pages dominate that average.
+  and 7% better than TimesFM-2.5 on the geometric mean above; on the plain mean of MASE the gaps are 2.5% (0.5444
+  vs 0.5581) and 3.1% (0.5444 vs 0.5619), because a few hard, news-driven pages dominate that average.
 - **Every foundation model beat seasonal naive by at least 20% on both datasets.** On the geometric mean, AutoETS
   and AutoARIMA were worse than seasonal naive here; on the plain mean of MASE, AutoARIMA on pageviews was slightly
   better than seasonal naive (0.900 vs 0.929). So "it didn't beat AutoARIMA" depends on the data and the average.
