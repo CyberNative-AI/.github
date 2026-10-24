@@ -1,0 +1,605 @@
+{"key": "ar/000", "lang": "ar", "TB": {"letters": 652, "expected_share": 1.0, "top": [["ARABIC", 652]]}, "I": {"letters": 691, "expected_share": 0.9971, "top": [["ARABIC", 689], ["LATIN", 2]]}}
+{"key": "ar/001", "lang": "ar", "TB": {"letters": 935, "expected_share": 1.0, "top": [["ARABIC", 935]]}, "I": {"letters": 935, "expected_share": 1.0, "top": [["ARABIC", 935]]}}
+{"key": "ar/002", "lang": "ar", "TB": {"letters": 900, "expected_share": 1.0, "top": [["ARABIC", 900]]}, "I": {"letters": 921, "expected_share": 1.0, "top": [["ARABIC", 921]]}}
+{"key": "ar/003", "lang": "ar", "I": {"letters": 246, "expected_share": 0.9878, "top": [["ARABIC", 243], ["LATIN", 3]]}, "TB": {"letters": 338, "expected_share": 1.0, "top": [["ARABIC", 338]]}}
+{"key": "ar/004", "lang": "ar", "TB": {"letters": 236, "expected_share": 1.0, "top": [["ARABIC", 236]]}, "I": {"letters": 237, "expected_share": 1.0, "top": [["ARABIC", 237]]}}
+{"key": "ar/005", "lang": "ar", "I": {"letters": 979, "expected_share": 1.0, "top": [["ARABIC", 979]]}, "TB": {"letters": 827, "expected_share": 1.0, "top": [["ARABIC", 827]]}}
+{"key": "ar/006", "lang": "ar", "I": {"letters": 405, "expected_share": 1.0, "top": [["ARABIC", 405]]}, "TB": {"letters": 330, "expected_share": 1.0, "top": [["ARABIC", 330]]}}
+{"key": "ar/007", "lang": "ar", "I": {"letters": 326, "expected_share": 1.0, "top": [["ARABIC", 326]]}, "TB": {"letters": 161, "expected_share": 1.0, "top": [["ARABIC", 161]]}}
+{"key": "ar/008", "lang": "ar", "I": {"letters": 410, "expected_share": 0.9854, "top": [["ARABIC", 404], ["LATIN", 6]]}, "TB": {"letters": 319, "expected_share": 1.0, "top": [["ARABIC", 319]]}}
+{"key": "ar/009", "lang": "ar", "I": {"letters": 452, "expected_share": 1.0, "top": [["ARABIC", 452]]}, "TB": {"letters": 375, "expected_share": 1.0, "top": [["ARABIC", 375]]}}
+{"key": "ar/010", "lang": "ar", "I": {"letters": 556, "expected_share": 1.0, "top": [["ARABIC", 556]]}, "TB": {"letters": 542, "expected_share": 1.0, "top": [["ARABIC", 542]]}}
+{"key": "ar/011", "lang": "ar", "I": {"letters": 182, "expected_share": 1.0, "top": [["ARABIC", 182]]}, "TB": {"letters": 106, "expected_share": 1.0, "top": [["ARABIC", 106]]}}
+{"key": "ar/013", "lang": "ar", "I": {"letters": 233, "expected_share": 1.0, "top": [["ARABIC", 233]]}, "TB": {"letters": 246, "expected_share": 1.0, "top": [["ARABIC", 246]]}}
+{"key": "ar/014", "lang": "ar", "I": {"letters": 390, "expected_share": 0.9282, "top": [["ARABIC", 362], ["CYRILLIC", 28]]}, "TB": {"letters": 397, "expected_share": 1.0, "top": [["ARABIC", 397]]}}
+{"key": "ar/016", "lang": "ar", "I": {"letters": 958, "expected_share": 0.9666, "top": [["ARABIC", 926], ["LATIN", 32]]}, "TB": {"letters": 924, "expected_share": 1.0, "top": [["ARABIC", 924]]}}
+{"key": "ar/017", "lang": "ar", "I": {"letters": 739, "expected_share": 0.9986, "top": [["ARABIC", 738], ["LATIN", 1]]}, "TB": {"letters": 670, "expected_share": 1.0, "top": [["ARABIC", 670]]}}
+{"key": "ar/018", "lang": "ar", "I": {"letters": 97, "expected_share": 1.0, "top": [["ARABIC", 97]]}, "TB": {"letters": 304, "expected_share": 1.0, "top": [["ARABIC", 304]]}}
+{"key": "ar/019", "lang": "ar", "I": {"letters": 1261, "expected_share": 0.9984, "top": [["ARABIC", 1259], ["LATIN", 2]]}, "TB": {"letters": 1446, "expected_share": 1.0, "top": [["ARABIC", 1446]]}}
+{"key": "ar/020", "lang": "ar", "I": {"letters": 937, "expected_share": 0.9979, "top": [["ARABIC", 935], ["LATIN", 2]]}, "TB": {"letters": 908, "expected_share": 1.0, "top": [["ARABIC", 908]]}}
+{"key": "ar/023", "lang": "ar", "I": {"letters": 538, "expected_share": 0.9777, "top": [["ARABIC", 526], ["LATIN", 9]]}, "TB": {"letters": 532, "expected_share": 1.0, "top": [["ARABIC", 532]]}}
+{"key": "ar/024", "lang": "ar", "I": {"letters": 1181, "expected_share": 0.9983, "top": [["ARABIC", 1179], ["LATIN", 2]]}, "TB": {"letters": 1042, "expected_share": 1.0, "top": [["ARABIC", 1042]]}}
+{"key": "ar/025", "lang": "ar", "I": {"letters": 370, "expected_share": 1.0, "top": [["ARABIC", 370]]}, "TB": {"letters": 354, "expected_share": 1.0, "top": [["ARABIC", 354]]}}
+{"key": "ar/026", "lang": "ar", "I": {"letters": 920, "expected_share": 1.0, "top": [["ARABIC", 920]]}, "TB": {"letters": 928, "expected_share": 1.0, "top": [["ARABIC", 928]]}}
+{"key": "ar/027", "lang": "ar", "I": {"letters": 1197, "expected_share": 0.9992, "top": [["ARABIC", 1196], ["LATIN", 1]]}, "TB": {"letters": 372, "expected_share": 1.0, "top": [["ARABIC", 372]]}}
+{"key": "ar/029", "lang": "ar", "I": {"letters": 378, "expected_share": 0.9788, "top": [["ARABIC", 370], ["LATIN", 8]]}, "TB": {"letters": 373, "expected_share": 1.0, "top": [["ARABIC", 373]]}}
+{"key": "ar/030", "lang": "ar", "I": {"letters": 450, "expected_share": 0.9978, "top": [["ARABIC", 449], ["LATIN", 1]]}, "TB": {"letters": 358, "expected_share": 1.0, "top": [["ARABIC", 358]]}}
+{"key": "ar/031", "lang": "ar", "I": {"letters": 555, "expected_share": 0.9874, "top": [["ARABIC", 548], ["LATIN", 7]]}, "TB": {"letters": 341, "expected_share": 1.0, "top": [["ARABIC", 341]]}}
+{"key": "ar/032", "lang": "ar", "I": {"letters": 1009, "expected_share": 0.999, "top": [["ARABIC", 1008], ["LATIN", 1]]}, "TB": {"letters": 990, "expected_share": 1.0, "top": [["ARABIC", 990]]}}
+{"key": "ar/033", "lang": "ar", "I": {"letters": 534, "expected_share": 1.0, "top": [["ARABIC", 534]]}, "TB": {"letters": 529, "expected_share": 1.0, "top": [["ARABIC", 529]]}}
+{"key": "ar/034", "lang": "ar", "I": {"letters": 1089, "expected_share": 1.0, "top": [["ARABIC", 1089]]}, "TB": {"letters": 1074, "expected_share": 1.0, "top": [["ARABIC", 1074]]}}
+{"key": "bn/000", "lang": "bn", "I": {"letters": 1241, "expected_share": 0.9992, "top": [["BENGALI", 1240], ["LATIN", 1]]}, "TB": {"letters": 1281, "expected_share": 0.9516, "top": [["BENGALI", 1219], ["LATIN", 62]]}}
+{"key": "bn/001", "lang": "bn", "I": {"letters": 724, "expected_share": 0.9986, "top": [["BENGALI", 723], ["LATIN", 1]]}, "TB": {"letters": 735, "expected_share": 0.9782, "top": [["BENGALI", 719], ["LATIN", 16]]}}
+{"key": "bn/002", "lang": "bn", "I": {"letters": 917, "expected_share": 1.0, "top": [["BENGALI", 917]]}, "TB": {"letters": 931, "expected_share": 0.971, "top": [["BENGALI", 904], ["LATIN", 27]]}}
+{"key": "bn/003", "lang": "bn", "I": {"letters": 516, "expected_share": 0.9981, "top": [["BENGALI", 515], ["LATIN", 1]]}, "TB": {"letters": 556, "expected_share": 0.8705, "top": [["BENGALI", 484], ["LATIN", 72]]}}
+{"key": "bn/004", "lang": "bn", "I": {"letters": 644, "expected_share": 0.9984, "top": [["BENGALI", 643], ["LATIN", 1]]}, "TB": {"letters": 669, "expected_share": 0.9223, "top": [["BENGALI", 617], ["LATIN", 52]]}}
+{"key": "bn/005", "lang": "bn", "I": {"letters": 364, "expected_share": 1.0, "top": [["BENGALI", 364]]}, "TB": {"letters": 361, "expected_share": 0.964, "top": [["BENGALI", 348], ["LATIN", 13]]}}
+{"key": "bn/007", "lang": "bn", "I": {"letters": 321, "expected_share": 0.9938, "top": [["BENGALI", 319], ["ARMENIAN", 1]]}, "TB": {"letters": 361, "expected_share": 0.8116, "top": [["BENGALI", 293], ["LATIN", 68]]}}
+{"key": "bn/009", "lang": "bn", "I": {"letters": 738, "expected_share": 0.8862, "top": [["BENGALI", 654], ["LATIN", 83]]}, "TB": {"letters": 788, "expected_share": 0.8782, "top": [["BENGALI", 692], ["LATIN", 96]]}}
+{"key": "bn/010", "lang": "bn", "I": {"letters": 597, "expected_share": 1.0, "top": [["BENGALI", 597]]}, "TB": {"letters": 609, "expected_share": 0.9589, "top": [["BENGALI", 584], ["LATIN", 25]]}}
+{"key": "bn/011", "lang": "bn", "I": {"letters": 890, "expected_share": 1.0, "top": [["BENGALI", 890]]}, "TB": {"letters": 909, "expected_share": 0.945, "top": [["BENGALI", 859], ["LATIN", 50]]}}
+{"key": "bn/012", "lang": "bn", "I": {"letters": 194, "expected_share": 0.6753, "top": [["BENGALI", 131], ["LATIN", 63]]}, "TB": {"letters": 189, "expected_share": 0.6455, "top": [["BENGALI", 122], ["LATIN", 67]]}}
+{"key": "bn/013", "lang": "bn", "I": {"letters": 639, "expected_share": 0.9984, "top": [["BENGALI", 638], ["DEVANAGARI", 1]]}, "TB": {"letters": 660, "expected_share": 0.9515, "top": [["BENGALI", 628], ["LATIN", 32]]}}
+{"key": "bn/015", "lang": "bn", "I": {"letters": 755, "expected_share": 0.9987, "top": [["BENGALI", 754], ["SINHALA", 1]]}, "TB": {"letters": 755, "expected_share": 0.9801, "top": [["BENGALI", 740], ["LATIN", 15]]}}
+{"key": "bn/017", "lang": "bn", "I": {"letters": 539, "expected_share": 0.9981, "top": [["BENGALI", 538], ["DEVANAGARI", 1]]}, "TB": {"letters": 546, "expected_share": 0.9524, "top": [["BENGALI", 520], ["LATIN", 26]]}}
+{"key": "bn/018", "lang": "bn", "I": {"letters": 88, "expected_share": 0.9091, "top": [["BENGALI", 80], ["LATIN", 8]]}, "TB": {"letters": 76, "expected_share": 0.9737, "top": [["BENGALI", 74], ["LATIN", 2]]}}
+{"key": "bn/020", "lang": "bn", "I": {"letters": 176, "expected_share": 1.0, "top": [["BENGALI", 176]]}, "TB": {"letters": 180, "expected_share": 0.9056, "top": [["BENGALI", 163], ["LATIN", 17]]}}
+{"key": "bn/022", "lang": "bn", "I": {"letters": 725, "expected_share": 0.9972, "top": [["BENGALI", 723], ["LATIN", 2]]}, "TB": {"letters": 745, "expected_share": 0.9664, "top": [["BENGALI", 720], ["LATIN", 25]]}}
+{"key": "bn/023", "lang": "bn", "I": {"letters": 553, "expected_share": 0.9946, "top": [["BENGALI", 550], ["LATIN", 2]]}, "TB": {"letters": 619, "expected_share": 0.9257, "top": [["BENGALI", 573], ["LATIN", 46]]}}
+{"key": "bn/024", "lang": "bn", "I": {"letters": 544, "expected_share": 0.9908, "top": [["BENGALI", 539], ["LATIN", 5]]}, "TB": {"letters": 580, "expected_share": 0.9638, "top": [["BENGALI", 559], ["LATIN", 21]]}}
+{"key": "bn/025", "lang": "bn", "I": {"letters": 457, "expected_share": 1.0, "top": [["BENGALI", 457]]}, "TB": {"letters": 451, "expected_share": 0.9756, "top": [["BENGALI", 440], ["LATIN", 11]]}}
+{"key": "bn/027", "lang": "bn", "I": {"letters": 136, "expected_share": 1.0, "top": [["BENGALI", 136]]}, "TB": {"letters": 147, "expected_share": 0.9388, "top": [["BENGALI", 138], ["LATIN", 9]]}}
+{"key": "bn/028", "lang": "bn", "I": {"letters": 475, "expected_share": 1.0, "top": [["BENGALI", 475]]}, "TB": {"letters": 475, "expected_share": 0.9747, "top": [["BENGALI", 463], ["LATIN", 12]]}}
+{"key": "bn/029", "lang": "bn", "I": {"letters": 381, "expected_share": 1.0, "top": [["BENGALI", 381]]}, "TB": {"letters": 402, "expected_share": 0.9751, "top": [["BENGALI", 392], ["LATIN", 10]]}}
+{"key": "bn/030", "lang": "bn", "I": {"letters": 426, "expected_share": 0.9366, "top": [["BENGALI", 399], ["LATIN", 27]]}, "TB": {"letters": 442, "expected_share": 0.8258, "top": [["BENGALI", 365], ["LATIN", 77]]}}
+{"key": "bn/031", "lang": "bn", "I": {"letters": 802, "expected_share": 0.5362, "top": [["BENGALI", 430], ["LATIN", 372]]}, "TB": {"letters": 722, "expected_share": 0.6191, "top": [["BENGALI", 447], ["LATIN", 275]]}}
+{"key": "bn/032", "lang": "bn", "I": {"letters": 550, "expected_share": 1.0, "top": [["BENGALI", 550]]}, "TB": {"letters": 545, "expected_share": 0.9633, "top": [["BENGALI", 525], ["LATIN", 20]]}}
+{"key": "bn/033", "lang": "bn", "I": {"letters": 551, "expected_share": 1.0, "top": [["BENGALI", 551]]}, "TB": {"letters": 558, "expected_share": 0.9749, "top": [["BENGALI", 544], ["LATIN", 14]]}}
+{"key": "bn/034", "lang": "bn", "I": {"letters": 685, "expected_share": 0.9752, "top": [["BENGALI", 668], ["LATIN", 17]]}, "TB": {"letters": 685, "expected_share": 0.9533, "top": [["BENGALI", 653], ["LATIN", 32]]}}
+{"key": "bn/035", "lang": "bn", "I": {"letters": 609, "expected_share": 0.9869, "top": [["BENGALI", 601], ["LATIN", 6]]}, "TB": {"letters": 726, "expected_share": 0.9229, "top": [["BENGALI", 670], ["LATIN", 56]]}}
+{"key": "bn/036", "lang": "bn", "I": {"letters": 105, "expected_share": 0.9429, "top": [["BENGALI", 99], ["LATIN", 3]]}, "TB": {"letters": 116, "expected_share": 0.8534, "top": [["BENGALI", 99], ["LATIN", 17]]}}
+{"key": "el/000", "lang": "el", "I": {"letters": 593, "expected_share": 0.8786, "top": [["GREEK", 521], ["LATIN", 56]]}, "TB": {"letters": 643, "expected_share": 0.9969, "top": [["GREEK", 641], ["MICRO", 2]]}}
+{"key": "el/001", "lang": "el", "I": {"letters": 248, "expected_share": 1.0, "top": [["GREEK", 248]]}, "TB": {"letters": 248, "expected_share": 0.9919, "top": [["GREEK", 246], ["MICRO", 2]]}}
+{"key": "el/002", "lang": "el", "I": {"letters": 643, "expected_share": 0.9767, "top": [["GREEK", 628], ["CYRILLIC", 8]]}, "TB": {"letters": 649, "expected_share": 0.9969, "top": [["GREEK", 647], ["MICRO", 2]]}}
+{"key": "el/004", "lang": "el", "I": {"letters": 965, "expected_share": 0.5378, "top": [["GREEK", 519], ["LATIN", 446]]}, "TB": {"letters": 1211, "expected_share": 0.9967, "top": [["GREEK", 1207], ["MICRO", 4]]}}
+{"key": "el/009", "lang": "el", "I": {"letters": 184, "expected_share": 0.4837, "top": [["LATIN", 92], ["GREEK", 89]]}, "TB": {"letters": 229, "expected_share": 1.0, "top": [["GREEK", 229]]}}
+{"key": "el/010", "lang": "el", "I": {"letters": 169, "expected_share": 0.2485, "top": [["LATIN", 108], ["GREEK", 42]]}, "TB": {"letters": 188, "expected_share": 1.0, "top": [["GREEK", 188]]}}
+{"key": "el/011", "lang": "el", "I": {"letters": 914, "expected_share": 0.9212, "top": [["GREEK", 842], ["LATIN", 62]]}, "TB": {"letters": 958, "expected_share": 0.9937, "top": [["GREEK", 952], ["MICRO", 6]]}}
+{"key": "el/013", "lang": "el", "I": {"letters": 980, "expected_share": 0.902, "top": [["GREEK", 884], ["LATIN", 77]]}, "TB": {"letters": 1021, "expected_share": 0.9931, "top": [["GREEK", 1014], ["MICRO", 7]]}}
+{"key": "el/014", "lang": "el", "I": {"letters": 611, "expected_share": 0.7512, "top": [["GREEK", 459], ["LATIN", 137]]}, "TB": {"letters": 313, "expected_share": 1.0, "top": [["GREEK", 313]]}}
+{"key": "el/015", "lang": "el", "I": {"letters": 2186, "expected_share": 0.9931, "top": [["GREEK", 2171], ["LATIN", 15]]}, "TB": {"letters": 2200, "expected_share": 0.9923, "top": [["GREEK", 2183], ["MICRO", 17]]}}
+{"key": "el/016", "lang": "el", "I": {"letters": 1027, "expected_share": 0.9611, "top": [["GREEK", 987], ["LATIN", 40]]}, "TB": {"letters": 1041, "expected_share": 0.9952, "top": [["GREEK", 1036], ["MICRO", 5]]}}
+{"key": "el/017", "lang": "el", "I": {"letters": 1154, "expected_share": 0.753, "top": [["GREEK", 869], ["LATIN", 278]]}, "TB": {"letters": 852, "expected_share": 1.0, "top": [["GREEK", 852]]}}
+{"key": "el/018", "lang": "el", "I": {"letters": 2188, "expected_share": 0.9081, "top": [["GREEK", 1987], ["LATIN", 189]]}, "TB": {"letters": 2363, "expected_share": 0.9962, "top": [["GREEK", 2354], ["MICRO", 9]]}}
+{"key": "el/019", "lang": "el", "I": {"letters": 123, "expected_share": 0.374, "top": [["LATIN", 77], ["GREEK", 46]]}, "TB": {"letters": 151, "expected_share": 1.0, "top": [["GREEK", 151]]}}
+{"key": "el/022", "lang": "el", "I": {"letters": 1567, "expected_share": 0.9834, "top": [["GREEK", 1541], ["LATIN", 26]]}, "TB": {"letters": 1574, "expected_share": 0.993, "top": [["GREEK", 1563], ["MICRO", 11]]}}
+{"key": "el/023", "lang": "el", "I": {"letters": 1103, "expected_share": 0.4207, "top": [["LATIN", 620], ["GREEK", 464]]}, "TB": {"letters": 1335, "expected_share": 0.9955, "top": [["GREEK", 1329], ["MICRO", 6]]}}
+{"key": "el/025", "lang": "el", "I": {"letters": 470, "expected_share": 0.8723, "top": [["GREEK", 410], ["LATIN", 58]]}, "TB": {"letters": 493, "expected_share": 0.998, "top": [["GREEK", 492], ["MICRO", 1]]}}
+{"key": "el/027", "lang": "el", "I": {"letters": 1121, "expected_share": 0.6753, "top": [["GREEK", 757], ["LATIN", 354]]}, "TB": {"letters": 543, "expected_share": 0.9963, "top": [["GREEK", 541], ["MICRO", 2]]}}
+{"key": "el/029", "lang": "el", "I": {"letters": 804, "expected_share": 0.7674, "top": [["GREEK", 617], ["LATIN", 185]]}, "TB": {"letters": 1123, "expected_share": 0.9991, "top": [["GREEK", 1122], ["MICRO", 1]]}}
+{"key": "el/031", "lang": "el", "I": {"letters": 821, "expected_share": 0.894, "top": [["GREEK", 734], ["LATIN", 86]]}, "TB": {"letters": 883, "expected_share": 0.9932, "top": [["GREEK", 877], ["MICRO", 6]]}}
+{"key": "el/032", "lang": "el", "I": {"letters": 379, "expected_share": 0.9974, "top": [["GREEK", 378], ["LATIN", 1]]}, "TB": {"letters": 379, "expected_share": 1.0, "top": [["GREEK", 379]]}}
+{"key": "el/034", "lang": "el", "I": {"letters": 253, "expected_share": 0.8577, "top": [["GREEK", 217], ["LATIN", 36]]}, "TB": {"letters": 269, "expected_share": 0.9926, "top": [["GREEK", 267], ["MICRO", 2]]}}
+{"key": "el/036", "lang": "el", "I": {"letters": 3030, "expected_share": 0.8548, "top": [["GREEK", 2590], ["LATIN", 415]]}, "TB": {"letters": 3192, "expected_share": 0.9944, "top": [["GREEK", 3174], ["MICRO", 18]]}}
+{"key": "el/037", "lang": "el", "I": {"letters": 403, "expected_share": 0.7469, "top": [["GREEK", 301], ["LATIN", 85]]}, "TB": {"letters": 431, "expected_share": 0.9884, "top": [["GREEK", 426], ["MICRO", 5]]}}
+{"key": "el/039", "lang": "el", "I": {"letters": 185, "expected_share": 0.3189, "top": [["LATIN", 119], ["GREEK", 59]]}, "TB": {"letters": 0, "expected_share": 0.0, "top": []}}
+{"key": "el/040", "lang": "el", "I": {"letters": 1460, "expected_share": 0.924, "top": [["GREEK", 1349], ["LATIN", 111]]}, "TB": {"letters": 1288, "expected_share": 0.9977, "top": [["GREEK", 1285], ["MICRO", 3]]}}
+{"key": "el/041", "lang": "el", "I": {"letters": 360, "expected_share": 0.8361, "top": [["GREEK", 301], ["LATIN", 58]]}, "TB": {"letters": 407, "expected_share": 0.9951, "top": [["GREEK", 405], ["MICRO", 2]]}}
+{"key": "el/042", "lang": "el", "I": {"letters": 1329, "expected_share": 0.8962, "top": [["GREEK", 1191], ["LATIN", 124]]}, "TB": {"letters": 1391, "expected_share": 0.9914, "top": [["GREEK", 1379], ["MICRO", 12]]}}
+{"key": "el/043", "lang": "el", "I": {"letters": 856, "expected_share": 0.9731, "top": [["GREEK", 833], ["LATIN", 21]]}, "TB": {"letters": 921, "expected_share": 0.9848, "top": [["GREEK", 907], ["MICRO", 14]]}}
+{"key": "el/044", "lang": "el", "I": {"letters": 560, "expected_share": 0.9268, "top": [["GREEK", 519], ["LATIN", 26]]}, "TB": {"letters": 578, "expected_share": 0.9913, "top": [["GREEK", 573], ["MICRO", 5]]}}
+{"key": "en/000", "lang": "en", "I": {"letters": 672, "expected_share": 1.0, "top": [["LATIN", 672]]}, "TB": {"letters": 672, "expected_share": 1.0, "top": [["LATIN", 672]]}}
+{"key": "en/003", "lang": "en", "I": {"letters": 4900, "expected_share": 1.0, "top": [["LATIN", 4900]]}, "TB": {"letters": 4896, "expected_share": 1.0, "top": [["LATIN", 4896]]}}
+{"key": "en/004", "lang": "en", "I": {"letters": 867, "expected_share": 1.0, "top": [["LATIN", 867]]}, "TB": {"letters": 868, "expected_share": 1.0, "top": [["LATIN", 868]]}}
+{"key": "en/005", "lang": "en", "I": {"letters": 1664, "expected_share": 0.9994, "top": [["LATIN", 1663], ["CYRILLIC", 1]]}, "TB": {"letters": 1664, "expected_share": 1.0, "top": [["LATIN", 1664]]}}
+{"key": "en/006", "lang": "en", "I": {"letters": 634, "expected_share": 1.0, "top": [["LATIN", 634]]}, "TB": {"letters": 634, "expected_share": 1.0, "top": [["LATIN", 634]]}}
+{"key": "en/007", "lang": "en", "I": {"letters": 1129, "expected_share": 1.0, "top": [["LATIN", 1129]]}, "TB": {"letters": 1109, "expected_share": 1.0, "top": [["LATIN", 1109]]}}
+{"key": "en/008", "lang": "en", "I": {"letters": 456, "expected_share": 1.0, "top": [["LATIN", 456]]}, "TB": {"letters": 473, "expected_share": 1.0, "top": [["LATIN", 473]]}}
+{"key": "en/009", "lang": "en", "I": {"letters": 974, "expected_share": 1.0, "top": [["LATIN", 974]]}, "TB": {"letters": 975, "expected_share": 1.0, "top": [["LATIN", 975]]}}
+{"key": "en/010", "lang": "en", "I": {"letters": 715, "expected_share": 1.0, "top": [["LATIN", 715]]}, "TB": {"letters": 715, "expected_share": 1.0, "top": [["LATIN", 715]]}}
+{"key": "en/011", "lang": "en", "I": {"letters": 1731, "expected_share": 1.0, "top": [["LATIN", 1731]]}, "TB": {"letters": 1715, "expected_share": 1.0, "top": [["LATIN", 1715]]}}
+{"key": "en/012", "lang": "en", "I": {"letters": 1052, "expected_share": 1.0, "top": [["LATIN", 1052]]}, "TB": {"letters": 1036, "expected_share": 1.0, "top": [["LATIN", 1036]]}}
+{"key": "en/013", "lang": "en", "I": {"letters": 1751, "expected_share": 1.0, "top": [["LATIN", 1751]]}, "TB": {"letters": 1744, "expected_share": 1.0, "top": [["LATIN", 1744]]}}
+{"key": "en/015", "lang": "en", "I": {"letters": 1058, "expected_share": 1.0, "top": [["LATIN", 1058]]}, "TB": {"letters": 1052, "expected_share": 1.0, "top": [["LATIN", 1052]]}}
+{"key": "en/016", "lang": "en", "I": {"letters": 857, "expected_share": 1.0, "top": [["LATIN", 857]]}, "TB": {"letters": 857, "expected_share": 1.0, "top": [["LATIN", 857]]}}
+{"key": "en/018", "lang": "en", "I": {"letters": 594, "expected_share": 1.0, "top": [["LATIN", 594]]}, "TB": {"letters": 594, "expected_share": 1.0, "top": [["LATIN", 594]]}}
+{"key": "en/019", "lang": "en", "I": {"letters": 982, "expected_share": 1.0, "top": [["LATIN", 982]]}, "TB": {"letters": 982, "expected_share": 1.0, "top": [["LATIN", 982]]}}
+{"key": "en/020", "lang": "en", "I": {"letters": 822, "expected_share": 1.0, "top": [["LATIN", 822]]}, "TB": {"letters": 822, "expected_share": 1.0, "top": [["LATIN", 822]]}}
+{"key": "en/021", "lang": "en", "I": {"letters": 1418, "expected_share": 1.0, "top": [["LATIN", 1418]]}, "TB": {"letters": 1408, "expected_share": 1.0, "top": [["LATIN", 1408]]}}
+{"key": "en/022", "lang": "en", "I": {"letters": 847, "expected_share": 1.0, "top": [["LATIN", 847]]}, "TB": {"letters": 907, "expected_share": 1.0, "top": [["LATIN", 907]]}}
+{"key": "en/023", "lang": "en", "I": {"letters": 803, "expected_share": 1.0, "top": [["LATIN", 803]]}, "TB": {"letters": 804, "expected_share": 1.0, "top": [["LATIN", 804]]}}
+{"key": "en/024", "lang": "en", "I": {"letters": 1107, "expected_share": 1.0, "top": [["LATIN", 1107]]}, "TB": {"letters": 1105, "expected_share": 1.0, "top": [["LATIN", 1105]]}}
+{"key": "en/025", "lang": "en", "I": {"letters": 1144, "expected_share": 1.0, "top": [["LATIN", 1144]]}, "TB": {"letters": 1125, "expected_share": 1.0, "top": [["LATIN", 1125]]}}
+{"key": "en/026", "lang": "en", "I": {"letters": 1141, "expected_share": 1.0, "top": [["LATIN", 1141]]}, "TB": {"letters": 1131, "expected_share": 1.0, "top": [["LATIN", 1131]]}}
+{"key": "en/028", "lang": "en", "I": {"letters": 1154, "expected_share": 1.0, "top": [["LATIN", 1154]]}, "TB": {"letters": 1154, "expected_share": 1.0, "top": [["LATIN", 1154]]}}
+{"key": "en/030", "lang": "en", "I": {"letters": 2177, "expected_share": 1.0, "top": [["LATIN", 2177]]}, "TB": {"letters": 2177, "expected_share": 1.0, "top": [["LATIN", 2177]]}}
+{"key": "en/033", "lang": "en", "I": {"letters": 1272, "expected_share": 1.0, "top": [["LATIN", 1272]]}, "TB": {"letters": 1272, "expected_share": 1.0, "top": [["LATIN", 1272]]}}
+{"key": "en/034", "lang": "en", "I": {"letters": 326, "expected_share": 1.0, "top": [["LATIN", 326]]}, "TB": {"letters": 326, "expected_share": 1.0, "top": [["LATIN", 326]]}}
+{"key": "en/035", "lang": "en", "I": {"letters": 659, "expected_share": 1.0, "top": [["LATIN", 659]]}, "TB": {"letters": 660, "expected_share": 1.0, "top": [["LATIN", 660]]}}
+{"key": "en/036", "lang": "en", "I": {"letters": 218, "expected_share": 1.0, "top": [["LATIN", 218]]}, "TB": {"letters": 218, "expected_share": 1.0, "top": [["LATIN", 218]]}}
+{"key": "en/037", "lang": "en", "I": {"letters": 2257, "expected_share": 1.0, "top": [["LATIN", 2257]]}, "TB": {"letters": 2206, "expected_share": 1.0, "top": [["LATIN", 2206]]}}
+{"key": "fa/000", "lang": "fa", "I": {"letters": 0, "expected_share": 0.0, "top": []}, "TB": {"letters": 8, "expected_share": 1.0, "top": [["ARABIC", 8]]}}
+{"key": "fa/001", "lang": "fa", "I": {"letters": 778, "expected_share": 0.9987, "top": [["ARABIC", 777], ["LATIN", 1]]}, "TB": {"letters": 774, "expected_share": 1.0, "top": [["ARABIC", 774]]}}
+{"key": "fa/002", "lang": "fa", "I": {"letters": 813, "expected_share": 0.9951, "top": [["ARABIC", 809], ["LATIN", 4]]}, "TB": {"letters": 805, "expected_share": 1.0, "top": [["ARABIC", 805]]}}
+{"key": "fa/003", "lang": "fa", "I": {"letters": 950, "expected_share": 1.0, "top": [["ARABIC", 950]]}, "TB": {"letters": 1064, "expected_share": 1.0, "top": [["ARABIC", 1064]]}}
+{"key": "fa/004", "lang": "fa", "I": {"letters": 967, "expected_share": 1.0, "top": [["ARABIC", 967]]}, "TB": {"letters": 840, "expected_share": 1.0, "top": [["ARABIC", 840]]}}
+{"key": "fa/007", "lang": "fa", "I": {"letters": 1399, "expected_share": 0.9979, "top": [["ARABIC", 1396], ["LATIN", 3]]}, "TB": {"letters": 1286, "expected_share": 1.0, "top": [["ARABIC", 1286]]}}
+{"key": "fa/008", "lang": "fa", "I": {"letters": 1912, "expected_share": 0.9744, "top": [["ARABIC", 1863], ["LATIN", 49]]}, "TB": {"letters": 1882, "expected_share": 1.0, "top": [["ARABIC", 1882]]}}
+{"key": "fa/012", "lang": "fa", "I": {"letters": 901, "expected_share": 1.0, "top": [["ARABIC", 901]]}, "TB": {"letters": 870, "expected_share": 1.0, "top": [["ARABIC", 870]]}}
+{"key": "fa/013", "lang": "fa", "I": {"letters": 61, "expected_share": 0.9508, "top": [["ARABIC", 58], ["LATIN", 3]]}, "TB": {"letters": 20, "expected_share": 1.0, "top": [["ARABIC", 20]]}}
+{"key": "fa/014", "lang": "fa", "I": {"letters": 1176, "expected_share": 1.0, "top": [["ARABIC", 1176]]}, "TB": {"letters": 1154, "expected_share": 1.0, "top": [["ARABIC", 1154]]}}
+{"key": "fa/015", "lang": "fa", "I": {"letters": 718, "expected_share": 1.0, "top": [["ARABIC", 718]]}, "TB": {"letters": 729, "expected_share": 1.0, "top": [["ARABIC", 729]]}}
+{"key": "fa/016", "lang": "fa", "I": {"letters": 1071, "expected_share": 0.9991, "top": [["ARABIC", 1070], ["LATIN", 1]]}, "TB": {"letters": 1037, "expected_share": 1.0, "top": [["ARABIC", 1037]]}}
+{"key": "fa/017", "lang": "fa", "I": {"letters": 169, "expected_share": 1.0, "top": [["ARABIC", 169]]}, "TB": {"letters": 169, "expected_share": 1.0, "top": [["ARABIC", 169]]}}
+{"key": "fa/018", "lang": "fa", "I": {"letters": 915, "expected_share": 0.9989, "top": [["ARABIC", 914], ["LATIN", 1]]}, "TB": {"letters": 866, "expected_share": 1.0, "top": [["ARABIC", 866]]}}
+{"key": "fa/019", "lang": "fa", "I": {"letters": 923, "expected_share": 1.0, "top": [["ARABIC", 923]]}, "TB": {"letters": 931, "expected_share": 1.0, "top": [["ARABIC", 931]]}}
+{"key": "fa/020", "lang": "fa", "I": {"letters": 1055, "expected_share": 0.9991, "top": [["ARABIC", 1054], ["LATIN", 1]]}, "TB": {"letters": 1015, "expected_share": 1.0, "top": [["ARABIC", 1015]]}}
+{"key": "fa/021", "lang": "fa", "I": {"letters": 820, "expected_share": 1.0, "top": [["ARABIC", 820]]}, "TB": {"letters": 802, "expected_share": 1.0, "top": [["ARABIC", 802]]}}
+{"key": "fa/022", "lang": "fa", "I": {"letters": 1318, "expected_share": 0.9992, "top": [["ARABIC", 1317], ["LATIN", 1]]}, "TB": {"letters": 1319, "expected_share": 1.0, "top": [["ARABIC", 1319]]}}
+{"key": "fa/023", "lang": "fa", "I": {"letters": 417, "expected_share": 1.0, "top": [["ARABIC", 417]]}, "TB": {"letters": 297, "expected_share": 1.0, "top": [["ARABIC", 297]]}}
+{"key": "fa/024", "lang": "fa", "I": {"letters": 201, "expected_share": 0.9602, "top": [["ARABIC", 193], ["LATIN", 8]]}, "TB": {"letters": 120, "expected_share": 1.0, "top": [["ARABIC", 120]]}}
+{"key": "fa/027", "lang": "fa", "I": {"letters": 1043, "expected_share": 0.9981, "top": [["ARABIC", 1041], ["LATIN", 2]]}, "TB": {"letters": 1043, "expected_share": 1.0, "top": [["ARABIC", 1043]]}}
+{"key": "fa/029", "lang": "fa", "I": {"letters": 7, "expected_share": 0.0, "top": [["LATIN", 7]]}, "TB": {"letters": 311, "expected_share": 1.0, "top": [["ARABIC", 311]]}}
+{"key": "fa/030", "lang": "fa", "I": {"letters": 873, "expected_share": 0.9989, "top": [["ARABIC", 872], ["LATIN", 1]]}, "TB": {"letters": 795, "expected_share": 1.0, "top": [["ARABIC", 795]]}}
+{"key": "fa/033", "lang": "fa", "I": {"letters": 565, "expected_share": 1.0, "top": [["ARABIC", 565]]}, "TB": {"letters": 293, "expected_share": 1.0, "top": [["ARABIC", 293]]}}
+{"key": "fa/034", "lang": "fa", "I": {"letters": 638, "expected_share": 0.9969, "top": [["ARABIC", 636], ["LATIN", 2]]}, "TB": {"letters": 449, "expected_share": 1.0, "top": [["ARABIC", 449]]}}
+{"key": "fa/035", "lang": "fa", "I": {"letters": 775, "expected_share": 0.9987, "top": [["ARABIC", 774], ["LATIN", 1]]}, "TB": {"letters": 693, "expected_share": 1.0, "top": [["ARABIC", 693]]}}
+{"key": "fa/036", "lang": "fa", "I": {"letters": 2665, "expected_share": 0.9996, "top": [["ARABIC", 2664], ["LATIN", 1]]}, "TB": {"letters": 2580, "expected_share": 1.0, "top": [["ARABIC", 2580]]}}
+{"key": "fa/037", "lang": "fa", "I": {"letters": 1141, "expected_share": 0.9991, "top": [["ARABIC", 1140], ["LATIN", 1]]}, "TB": {"letters": 1123, "expected_share": 1.0, "top": [["ARABIC", 1123]]}}
+{"key": "fa/038", "lang": "fa", "I": {"letters": 1213, "expected_share": 0.9984, "top": [["ARABIC", 1211], ["LATIN", 2]]}, "TB": {"letters": 1006, "expected_share": 1.0, "top": [["ARABIC", 1006]]}}
+{"key": "fa/039", "lang": "fa", "I": {"letters": 1066, "expected_share": 1.0, "top": [["ARABIC", 1066]]}, "TB": {"letters": 972, "expected_share": 1.0, "top": [["ARABIC", 972]]}}
+{"key": "fr/001", "lang": "fr", "I": {"letters": 1465, "expected_share": 1.0, "top": [["LATIN", 1465]]}, "TB": {"letters": 1466, "expected_share": 1.0, "top": [["LATIN", 1466]]}}
+{"key": "fr/002", "lang": "fr", "I": {"letters": 1807, "expected_share": 1.0, "top": [["LATIN", 1807]]}, "TB": {"letters": 1806, "expected_share": 1.0, "top": [["LATIN", 1806]]}}
+{"key": "fr/005", "lang": "fr", "I": {"letters": 970, "expected_share": 1.0, "top": [["LATIN", 970]]}, "TB": {"letters": 972, "expected_share": 1.0, "top": [["LATIN", 972]]}}
+{"key": "fr/006", "lang": "fr", "I": {"letters": 1201, "expected_share": 0.9992, "top": [["LATIN", 1200], ["MASCULINE", 1]]}, "TB": {"letters": 1167, "expected_share": 1.0, "top": [["LATIN", 1167]]}}
+{"key": "fr/007", "lang": "fr", "I": {"letters": 1181, "expected_share": 1.0, "top": [["LATIN", 1181]]}, "TB": {"letters": 1180, "expected_share": 1.0, "top": [["LATIN", 1180]]}}
+{"key": "fr/008", "lang": "fr", "I": {"letters": 742, "expected_share": 1.0, "top": [["LATIN", 742]]}, "TB": {"letters": 622, "expected_share": 1.0, "top": [["LATIN", 622]]}}
+{"key": "fr/009", "lang": "fr", "I": {"letters": 2195, "expected_share": 1.0, "top": [["LATIN", 2195]]}, "TB": {"letters": 2197, "expected_share": 1.0, "top": [["LATIN", 2197]]}}
+{"key": "fr/010", "lang": "fr", "I": {"letters": 2082, "expected_share": 1.0, "top": [["LATIN", 2082]]}, "TB": {"letters": 2081, "expected_share": 1.0, "top": [["LATIN", 2081]]}}
+{"key": "fr/012", "lang": "fr", "I": {"letters": 1589, "expected_share": 1.0, "top": [["LATIN", 1589]]}, "TB": {"letters": 1589, "expected_share": 1.0, "top": [["LATIN", 1589]]}}
+{"key": "fr/013", "lang": "fr", "I": {"letters": 1189, "expected_share": 1.0, "top": [["LATIN", 1189]]}, "TB": {"letters": 929, "expected_share": 1.0, "top": [["LATIN", 929]]}}
+{"key": "fr/015", "lang": "fr", "I": {"letters": 1105, "expected_share": 1.0, "top": [["LATIN", 1105]]}, "TB": {"letters": 1099, "expected_share": 1.0, "top": [["LATIN", 1099]]}}
+{"key": "fr/016", "lang": "fr", "I": {"letters": 753, "expected_share": 1.0, "top": [["LATIN", 753]]}, "TB": {"letters": 753, "expected_share": 1.0, "top": [["LATIN", 753]]}}
+{"key": "fr/017", "lang": "fr", "I": {"letters": 2752, "expected_share": 1.0, "top": [["LATIN", 2752]]}, "TB": {"letters": 2751, "expected_share": 1.0, "top": [["LATIN", 2751]]}}
+{"key": "fr/018", "lang": "fr", "I": {"letters": 1772, "expected_share": 1.0, "top": [["LATIN", 1772]]}, "TB": {"letters": 1768, "expected_share": 1.0, "top": [["LATIN", 1768]]}}
+{"key": "fr/019", "lang": "fr", "I": {"letters": 2063, "expected_share": 1.0, "top": [["LATIN", 2063]]}, "TB": {"letters": 2066, "expected_share": 1.0, "top": [["LATIN", 2066]]}}
+{"key": "fr/020", "lang": "fr", "I": {"letters": 2048, "expected_share": 0.9995, "top": [["LATIN", 2047], ["DEVANAGARI", 1]]}, "TB": {"letters": 2048, "expected_share": 1.0, "top": [["LATIN", 2048]]}}
+{"key": "fr/021", "lang": "fr", "I": {"letters": 733, "expected_share": 1.0, "top": [["LATIN", 733]]}, "TB": {"letters": 736, "expected_share": 1.0, "top": [["LATIN", 736]]}}
+{"key": "fr/022", "lang": "fr", "I": {"letters": 778, "expected_share": 1.0, "top": [["LATIN", 778]]}, "TB": {"letters": 780, "expected_share": 1.0, "top": [["LATIN", 780]]}}
+{"key": "fr/023", "lang": "fr", "I": {"letters": 1808, "expected_share": 1.0, "top": [["LATIN", 1808]]}, "TB": {"letters": 1807, "expected_share": 1.0, "top": [["LATIN", 1807]]}}
+{"key": "fr/024", "lang": "fr", "I": {"letters": 1710, "expected_share": 1.0, "top": [["LATIN", 1710]]}, "TB": {"letters": 1710, "expected_share": 1.0, "top": [["LATIN", 1710]]}}
+{"key": "fr/025", "lang": "fr", "I": {"letters": 1131, "expected_share": 1.0, "top": [["LATIN", 1131]]}, "TB": {"letters": 1130, "expected_share": 1.0, "top": [["LATIN", 1130]]}}
+{"key": "fr/026", "lang": "fr", "I": {"letters": 1068, "expected_share": 1.0, "top": [["LATIN", 1068]]}, "TB": {"letters": 1068, "expected_share": 1.0, "top": [["LATIN", 1068]]}}
+{"key": "fr/027", "lang": "fr", "I": {"letters": 992, "expected_share": 1.0, "top": [["LATIN", 992]]}, "TB": {"letters": 992, "expected_share": 1.0, "top": [["LATIN", 992]]}}
+{"key": "fr/028", "lang": "fr", "I": {"letters": 1144, "expected_share": 1.0, "top": [["LATIN", 1144]]}, "TB": {"letters": 1160, "expected_share": 1.0, "top": [["LATIN", 1160]]}}
+{"key": "fr/029", "lang": "fr", "I": {"letters": 476, "expected_share": 1.0, "top": [["LATIN", 476]]}, "TB": {"letters": 478, "expected_share": 1.0, "top": [["LATIN", 478]]}}
+{"key": "fr/030", "lang": "fr", "I": {"letters": 901, "expected_share": 1.0, "top": [["LATIN", 901]]}, "TB": {"letters": 889, "expected_share": 1.0, "top": [["LATIN", 889]]}}
+{"key": "fr/031", "lang": "fr", "I": {"letters": 5723, "expected_share": 0.9997, "top": [["LATIN", 5721], ["CYRILLIC", 2]]}, "TB": {"letters": 5709, "expected_share": 1.0, "top": [["LATIN", 5709]]}}
+{"key": "fr/032", "lang": "fr", "I": {"letters": 1362, "expected_share": 1.0, "top": [["LATIN", 1362]]}, "TB": {"letters": 1350, "expected_share": 1.0, "top": [["LATIN", 1350]]}}
+{"key": "fr/033", "lang": "fr", "I": {"letters": 1067, "expected_share": 0.9991, "top": [["LATIN", 1066], ["CYRILLIC", 1]]}, "TB": {"letters": 1068, "expected_share": 1.0, "top": [["LATIN", 1068]]}}
+{"key": "fr/034", "lang": "fr", "I": {"letters": 615, "expected_share": 1.0, "top": [["LATIN", 615]]}, "TB": {"letters": 615, "expected_share": 1.0, "top": [["LATIN", 615]]}}
+{"key": "gu/000", "lang": "gu", "I": {"letters": 420, "expected_share": 0.7738, "top": [["GUJARATI", 325], ["LATIN", 95]]}, "TB": {"letters": 405, "expected_share": 1.0, "top": [["GUJARATI", 405]]}}
+{"key": "gu/001", "lang": "gu", "TB": {"letters": 38, "expected_share": 1.0, "top": [["GUJARATI", 38]]}, "I": {"letters": 1044, "expected_share": 0.8946, "top": [["GUJARATI", 934], ["LATIN", 110]]}}
+{"key": "gu/004", "lang": "gu", "I": {"letters": 149, "expected_share": 0.5638, "top": [["GUJARATI", 84], ["LATIN", 63]]}, "TB": {"letters": 110, "expected_share": 1.0, "top": [["GUJARATI", 110]]}}
+{"key": "gu/005", "lang": "gu", "I": {"letters": 731, "expected_share": 0.9973, "top": [["GUJARATI", 729], ["LATIN", 2]]}, "TB": {"letters": 769, "expected_share": 1.0, "top": [["GUJARATI", 769]]}}
+{"key": "gu/006", "lang": "gu", "I": {"letters": 448, "expected_share": 0.9955, "top": [["GUJARATI", 446], ["LATIN", 2]]}, "TB": {"letters": 484, "expected_share": 1.0, "top": [["GUJARATI", 484]]}}
+{"key": "gu/011", "lang": "gu", "I": {"letters": 717, "expected_share": 0.9038, "top": [["GUJARATI", 648], ["DEVANAGARI", 67]]}, "TB": {"letters": 826, "expected_share": 1.0, "top": [["GUJARATI", 826]]}}
+{"key": "gu/013", "lang": "gu", "I": {"letters": 294, "expected_share": 0.6667, "top": [["GUJARATI", 196], ["LATIN", 98]]}, "TB": {"letters": 268, "expected_share": 1.0, "top": [["GUJARATI", 268]]}}
+{"key": "gu/017", "lang": "gu", "I": {"letters": 339, "expected_share": 0.0, "top": [["LATIN", 293], ["KHMER", 18]]}, "TB": {"letters": 546, "expected_share": 1.0, "top": [["GUJARATI", 546]]}}
+{"key": "gu/021", "lang": "gu", "I": {"letters": 579, "expected_share": 0.9931, "top": [["GUJARATI", 575], ["LATIN", 4]]}, "TB": {"letters": 633, "expected_share": 1.0, "top": [["GUJARATI", 633]]}}
+{"key": "gu/022", "lang": "gu", "I": {"letters": 326, "expected_share": 0.8436, "top": [["GUJARATI", 275], ["LATIN", 50]]}, "TB": {"letters": 361, "expected_share": 1.0, "top": [["GUJARATI", 361]]}}
+{"key": "gu/023", "lang": "gu", "I": {"letters": 260, "expected_share": 0.4385, "top": [["LATIN", 146], ["GUJARATI", 114]]}, "TB": {"letters": 161, "expected_share": 1.0, "top": [["GUJARATI", 161]]}}
+{"key": "gu/025", "lang": "gu", "I": {"letters": 557, "expected_share": 0.8169, "top": [["GUJARATI", 455], ["LATIN", 98]]}, "TB": {"letters": 553, "expected_share": 1.0, "top": [["GUJARATI", 553]]}}
+{"key": "gu/026", "lang": "gu", "I": {"letters": 562, "expected_share": 0.8114, "top": [["GUJARATI", 456], ["LATIN", 105]]}, "TB": {"letters": 545, "expected_share": 1.0, "top": [["GUJARATI", 545]]}}
+{"key": "gu/027", "lang": "gu", "I": {"letters": 391, "expected_share": 0.9872, "top": [["GUJARATI", 386], ["LATIN", 5]]}, "TB": {"letters": 481, "expected_share": 1.0, "top": [["GUJARATI", 481]]}}
+{"key": "gu/029", "lang": "gu", "I": {"letters": 579, "expected_share": 0.8618, "top": [["GUJARATI", 499], ["LATIN", 79]]}, "TB": {"letters": 642, "expected_share": 1.0, "top": [["GUJARATI", 642]]}}
+{"key": "gu/030", "lang": "gu", "I": {"letters": 348, "expected_share": 0.9885, "top": [["GUJARATI", 344], ["LATIN", 4]]}, "TB": {"letters": 401, "expected_share": 1.0, "top": [["GUJARATI", 401]]}}
+{"key": "gu/031", "lang": "gu", "I": {"letters": 98, "expected_share": 0.949, "top": [["GUJARATI", 93], ["LATIN", 3]]}, "TB": {"letters": 110, "expected_share": 1.0, "top": [["GUJARATI", 110]]}}
+{"key": "gu/033", "lang": "gu", "I": {"letters": 612, "expected_share": 0.9935, "top": [["GUJARATI", 608], ["LATIN", 3]]}, "TB": {"letters": 668, "expected_share": 1.0, "top": [["GUJARATI", 668]]}}
+{"key": "gu/034", "lang": "gu", "I": {"letters": 537, "expected_share": 0.9628, "top": [["GUJARATI", 517], ["LATIN", 15]]}, "TB": {"letters": 765, "expected_share": 1.0, "top": [["GUJARATI", 765]]}}
+{"key": "gu/036", "lang": "gu", "I": {"letters": 416, "expected_share": 0.8389, "top": [["GUJARATI", 349], ["LATIN", 62]]}, "TB": {"letters": 575, "expected_share": 1.0, "top": [["GUJARATI", 575]]}}
+{"key": "gu/037", "lang": "gu", "I": {"letters": 476, "expected_share": 0.7899, "top": [["GUJARATI", 376], ["LATIN", 100]]}, "TB": {"letters": 468, "expected_share": 1.0, "top": [["GUJARATI", 468]]}}
+{"key": "gu/038", "lang": "gu", "I": {"letters": 1223, "expected_share": 0.9092, "top": [["GUJARATI", 1112], ["LATIN", 108]]}, "TB": {"letters": 38, "expected_share": 1.0, "top": [["GUJARATI", 38]]}}
+{"key": "gu/040", "lang": "gu", "I": {"letters": 692, "expected_share": 0.9913, "top": [["GUJARATI", 686], ["LATIN", 4]]}, "TB": {"letters": 721, "expected_share": 1.0, "top": [["GUJARATI", 721]]}}
+{"key": "gu/041", "lang": "gu", "I": {"letters": 397, "expected_share": 0.995, "top": [["GUJARATI", 395], ["LATIN", 2]]}, "TB": {"letters": 418, "expected_share": 1.0, "top": [["GUJARATI", 418]]}}
+{"key": "gu/042", "lang": "gu", "I": {"letters": 531, "expected_share": 0.9887, "top": [["GUJARATI", 525], ["LATIN", 6]]}, "TB": {"letters": 624, "expected_share": 1.0, "top": [["GUJARATI", 624]]}}
+{"key": "gu/043", "lang": "gu", "I": {"letters": 287, "expected_share": 0.662, "top": [["GUJARATI", 190], ["LATIN", 97]]}, "TB": {"letters": 251, "expected_share": 1.0, "top": [["GUJARATI", 251]]}}
+{"key": "gu/045", "lang": "gu", "I": {"letters": 343, "expected_share": 0.9825, "top": [["GUJARATI", 337], ["DEVANAGARI", 4]]}, "TB": {"letters": 381, "expected_share": 1.0, "top": [["GUJARATI", 381]]}}
+{"key": "gu/046", "lang": "gu", "I": {"letters": 271, "expected_share": 0.7749, "top": [["GUJARATI", 210], ["LATIN", 61]]}, "TB": {"letters": 282, "expected_share": 1.0, "top": [["GUJARATI", 282]]}}
+{"key": "gu/047", "lang": "gu", "I": {"letters": 667, "expected_share": 0.9985, "top": [["GUJARATI", 666], ["LATIN", 1]]}, "TB": {"letters": 711, "expected_share": 1.0, "top": [["GUJARATI", 711]]}}
+{"key": "gu/048", "lang": "gu", "I": {"letters": 198, "expected_share": 0.0, "top": [["LATIN", 185], ["ARMENIAN", 7]]}, "TB": {"letters": 247, "expected_share": 1.0, "top": [["GUJARATI", 247]]}}
+{"key": "he/001", "lang": "he", "I": {"letters": 1068, "expected_share": 0.4785, "top": [["LATIN", 557], ["HEBREW", 511]]}, "TB": {"letters": 696, "expected_share": 1.0, "top": [["HEBREW", 696]]}}
+{"key": "he/002", "lang": "he", "I": {"letters": 1162, "expected_share": 0.6274, "top": [["HEBREW", 729], ["LATIN", 432]]}, "TB": {"letters": 1079, "expected_share": 1.0, "top": [["HEBREW", 1079]]}}
+{"key": "he/003", "lang": "he", "I": {"letters": 1660, "expected_share": 0.9813, "top": [["HEBREW", 1629], ["LATIN", 31]]}, "TB": {"letters": 1660, "expected_share": 1.0, "top": [["HEBREW", 1660]]}}
+{"key": "he/004", "lang": "he", "I": {"letters": 1109, "expected_share": 1.0, "top": [["HEBREW", 1109]]}, "TB": {"letters": 1118, "expected_share": 1.0, "top": [["HEBREW", 1118]]}}
+{"key": "he/006", "lang": "he", "I": {"letters": 688, "expected_share": 0.9128, "top": [["HEBREW", 628], ["LATIN", 60]]}, "TB": {"letters": 524, "expected_share": 1.0, "top": [["HEBREW", 524]]}}
+{"key": "he/007", "lang": "he", "I": {"letters": 1416, "expected_share": 0.9845, "top": [["HEBREW", 1394], ["LATIN", 22]]}, "TB": {"letters": 1401, "expected_share": 1.0, "top": [["HEBREW", 1401]]}}
+{"key": "he/008", "lang": "he", "I": {"letters": 1435, "expected_share": 0.2202, "top": [["LATIN", 1112], ["HEBREW", 316]]}, "TB": {"letters": 913, "expected_share": 1.0, "top": [["HEBREW", 913]]}}
+{"key": "he/010", "lang": "he", "I": {"letters": 1605, "expected_share": 0.9907, "top": [["HEBREW", 1590], ["LATIN", 15]]}, "TB": {"letters": 1623, "expected_share": 1.0, "top": [["HEBREW", 1623]]}}
+{"key": "he/011", "lang": "he", "I": {"letters": 531, "expected_share": 1.0, "top": [["HEBREW", 531]]}, "TB": {"letters": 534, "expected_share": 1.0, "top": [["HEBREW", 534]]}}
+{"key": "he/012", "lang": "he", "I": {"letters": 1002, "expected_share": 0.516, "top": [["HEBREW", 517], ["LATIN", 485]]}, "TB": {"letters": 829, "expected_share": 1.0, "top": [["HEBREW", 829]]}}
+{"key": "he/013", "lang": "he", "I": {"letters": 1592, "expected_share": 1.0, "top": [["HEBREW", 1592]]}, "TB": {"letters": 1597, "expected_share": 1.0, "top": [["HEBREW", 1597]]}}
+{"key": "he/015", "lang": "he", "I": {"letters": 2544, "expected_share": 0.9996, "top": [["HEBREW", 2543], ["LATIN", 1]]}, "TB": {"letters": 2452, "expected_share": 1.0, "top": [["HEBREW", 2452]]}}
+{"key": "he/016", "lang": "he", "I": {"letters": 787, "expected_share": 0.9936, "top": [["HEBREW", 782], ["ARABIC", 3]]}, "TB": {"letters": 635, "expected_share": 1.0, "top": [["HEBREW", 635]]}}
+{"key": "he/018", "lang": "he", "I": {"letters": 1590, "expected_share": 0.9994, "top": [["HEBREW", 1589], ["LATIN", 1]]}, "TB": {"letters": 1590, "expected_share": 1.0, "top": [["HEBREW", 1590]]}}
+{"key": "he/019", "lang": "he", "I": {"letters": 982, "expected_share": 1.0, "top": [["HEBREW", 982]]}, "TB": {"letters": 975, "expected_share": 1.0, "top": [["HEBREW", 975]]}}
+{"key": "he/020", "lang": "he", "I": {"letters": 1636, "expected_share": 1.0, "top": [["HEBREW", 1636]]}, "TB": {"letters": 1636, "expected_share": 1.0, "top": [["HEBREW", 1636]]}}
+{"key": "he/022", "lang": "he", "I": {"letters": 1148, "expected_share": 0.9617, "top": [["HEBREW", 1104], ["LATIN", 44]]}, "TB": {"letters": 1199, "expected_share": 1.0, "top": [["HEBREW", 1199]]}}
+{"key": "he/023", "lang": "he", "I": {"letters": 168, "expected_share": 0.994, "top": [["HEBREW", 167], ["LATIN", 1]]}, "TB": {"letters": 168, "expected_share": 1.0, "top": [["HEBREW", 168]]}}
+{"key": "he/024", "lang": "he", "I": {"letters": 286, "expected_share": 0.8497, "top": [["HEBREW", 243], ["LATIN", 43]]}, "TB": {"letters": 270, "expected_share": 1.0, "top": [["HEBREW", 270]]}}
+{"key": "he/027", "lang": "he", "I": {"letters": 934, "expected_share": 1.0, "top": [["HEBREW", 934]]}, "TB": {"letters": 904, "expected_share": 1.0, "top": [["HEBREW", 904]]}}
+{"key": "he/028", "lang": "he", "I": {"letters": 1655, "expected_share": 1.0, "top": [["HEBREW", 1655]]}, "TB": {"letters": 1646, "expected_share": 1.0, "top": [["HEBREW", 1646]]}}
+{"key": "he/029", "lang": "he", "I": {"letters": 756, "expected_share": 0.832, "top": [["HEBREW", 629], ["LATIN", 127]]}, "TB": {"letters": 466, "expected_share": 1.0, "top": [["HEBREW", 466]]}}
+{"key": "he/032", "lang": "he", "I": {"letters": 827, "expected_share": 1.0, "top": [["HEBREW", 827]]}, "TB": {"letters": 637, "expected_share": 1.0, "top": [["HEBREW", 637]]}}
+{"key": "he/033", "lang": "he", "I": {"letters": 1171, "expected_share": 1.0, "top": [["HEBREW", 1171]]}, "TB": {"letters": 1179, "expected_share": 1.0, "top": [["HEBREW", 1179]]}}
+{"key": "he/034", "lang": "he", "I": {"letters": 199, "expected_share": 0.9246, "top": [["HEBREW", 184], ["LATIN", 15]]}, "TB": {"letters": 208, "expected_share": 1.0, "top": [["HEBREW", 208]]}}
+{"key": "hi/001", "lang": "hi", "I": {"letters": 410, "expected_share": 0.9976, "top": [["DEVANAGARI", 409], ["LATIN", 1]]}, "TB": {"letters": 400, "expected_share": 1.0, "top": [["DEVANAGARI", 400]]}}
+{"key": "hi/002", "lang": "hi", "I": {"letters": 1202, "expected_share": 0.9967, "top": [["DEVANAGARI", 1198], ["LATIN", 4]]}, "TB": {"letters": 1198, "expected_share": 1.0, "top": [["DEVANAGARI", 1198]]}}
+{"key": "hi/004", "lang": "hi", "TB": {"letters": 343, "expected_share": 1.0, "top": [["DEVANAGARI", 343]]}, "I": {"letters": 324, "expected_share": 1.0, "top": [["DEVANAGARI", 324]]}}
+{"key": "hi/005", "lang": "hi", "I": {"letters": 457, "expected_share": 1.0, "top": [["DEVANAGARI", 457]]}, "TB": {"letters": 451, "expected_share": 1.0, "top": [["DEVANAGARI", 451]]}}
+{"key": "hi/006", "lang": "hi", "I": {"letters": 112, "expected_share": 1.0, "top": [["DEVANAGARI", 112]]}, "TB": {"letters": 146, "expected_share": 1.0, "top": [["DEVANAGARI", 146]]}}
+{"key": "hi/009", "lang": "hi", "I": {"letters": 871, "expected_share": 0.9943, "top": [["DEVANAGARI", 866], ["LATIN", 5]]}, "TB": {"letters": 872, "expected_share": 1.0, "top": [["DEVANAGARI", 872]]}}
+{"key": "hi/010", "lang": "hi", "I": {"letters": 225, "expected_share": 0.0, "top": [["LATIN", 117], ["ARABIC", 95]]}, "TB": {"letters": 380, "expected_share": 1.0, "top": [["DEVANAGARI", 380]]}}
+{"key": "hi/013", "lang": "hi", "I": {"letters": 1248, "expected_share": 1.0, "top": [["DEVANAGARI", 1248]]}, "TB": {"letters": 1257, "expected_share": 1.0, "top": [["DEVANAGARI", 1257]]}}
+{"key": "hi/014", "lang": "hi", "I": {"letters": 939, "expected_share": 0.9947, "top": [["DEVANAGARI", 934], ["LATIN", 5]]}, "TB": {"letters": 934, "expected_share": 1.0, "top": [["DEVANAGARI", 934]]}}
+{"key": "hi/015", "lang": "hi", "I": {"letters": 433, "expected_share": 0.9954, "top": [["DEVANAGARI", 431], ["LATIN", 2]]}, "TB": {"letters": 442, "expected_share": 1.0, "top": [["DEVANAGARI", 442]]}}
+{"key": "hi/016", "lang": "hi", "I": {"letters": 878, "expected_share": 0.9875, "top": [["DEVANAGARI", 867], ["LATIN", 11]]}, "TB": {"letters": 878, "expected_share": 1.0, "top": [["DEVANAGARI", 878]]}}
+{"key": "hi/017", "lang": "hi", "I": {"letters": 767, "expected_share": 0.9505, "top": [["DEVANAGARI", 729], ["LATIN", 38]]}, "TB": {"letters": 862, "expected_share": 1.0, "top": [["DEVANAGARI", 862]]}}
+{"key": "hi/018", "lang": "hi", "I": {"letters": 310, "expected_share": 1.0, "top": [["DEVANAGARI", 310]]}, "TB": {"letters": 300, "expected_share": 1.0, "top": [["DEVANAGARI", 300]]}}
+{"key": "hi/020", "lang": "hi", "I": {"letters": 544, "expected_share": 0.9982, "top": [["DEVANAGARI", 543], ["GURMUKHI", 1]]}, "TB": {"letters": 547, "expected_share": 1.0, "top": [["DEVANAGARI", 547]]}}
+{"key": "hi/021", "lang": "hi", "I": {"letters": 493, "expected_share": 0.9736, "top": [["DEVANAGARI", 480], ["LATIN", 13]]}, "TB": {"letters": 486, "expected_share": 1.0, "top": [["DEVANAGARI", 486]]}}
+{"key": "hi/023", "lang": "hi", "I": {"letters": 457, "expected_share": 1.0, "top": [["DEVANAGARI", 457]]}, "TB": {"letters": 448, "expected_share": 1.0, "top": [["DEVANAGARI", 448]]}}
+{"key": "hi/024", "lang": "hi", "I": {"letters": 584, "expected_share": 0.9743, "top": [["DEVANAGARI", 569], ["LATIN", 15]]}, "TB": {"letters": 564, "expected_share": 1.0, "top": [["DEVANAGARI", 564]]}}
+{"key": "hi/025", "lang": "hi", "I": {"letters": 861, "expected_share": 1.0, "top": [["DEVANAGARI", 861]]}, "TB": {"letters": 853, "expected_share": 1.0, "top": [["DEVANAGARI", 853]]}}
+{"key": "hi/026", "lang": "hi", "I": {"letters": 1182, "expected_share": 0.9941, "top": [["DEVANAGARI", 1175], ["LATIN", 7]]}, "TB": {"letters": 1181, "expected_share": 1.0, "top": [["DEVANAGARI", 1181]]}}
+{"key": "hi/027", "lang": "hi", "I": {"letters": 1063, "expected_share": 0.9953, "top": [["DEVANAGARI", 1058], ["LATIN", 5]]}, "TB": {"letters": 1047, "expected_share": 1.0, "top": [["DEVANAGARI", 1047]]}}
+{"key": "hi/029", "lang": "hi", "I": {"letters": 721, "expected_share": 1.0, "top": [["DEVANAGARI", 721]]}, "TB": {"letters": 713, "expected_share": 1.0, "top": [["DEVANAGARI", 713]]}}
+{"key": "hi/030", "lang": "hi", "I": {"letters": 548, "expected_share": 0.9854, "top": [["DEVANAGARI", 540], ["LATIN", 8]]}, "TB": {"letters": 528, "expected_share": 1.0, "top": [["DEVANAGARI", 528]]}}
+{"key": "hi/033", "lang": "hi", "I": {"letters": 645, "expected_share": 1.0, "top": [["DEVANAGARI", 645]]}, "TB": {"letters": 653, "expected_share": 1.0, "top": [["DEVANAGARI", 653]]}}
+{"key": "hi/035", "lang": "hi", "I": {"letters": 565, "expected_share": 1.0, "top": [["DEVANAGARI", 565]]}, "TB": {"letters": 569, "expected_share": 1.0, "top": [["DEVANAGARI", 569]]}}
+{"key": "hi/036", "lang": "hi", "I": {"letters": 845, "expected_share": 1.0, "top": [["DEVANAGARI", 845]]}, "TB": {"letters": 833, "expected_share": 1.0, "top": [["DEVANAGARI", 833]]}}
+{"key": "hi/037", "lang": "hi", "I": {"letters": 702, "expected_share": 1.0, "top": [["DEVANAGARI", 702]]}, "TB": {"letters": 722, "expected_share": 1.0, "top": [["DEVANAGARI", 722]]}}
+{"key": "hi/038", "lang": "hi", "TB": {"letters": 461, "expected_share": 1.0, "top": [["DEVANAGARI", 461]]}, "I": {"letters": 500, "expected_share": 0.902, "top": [["DEVANAGARI", 451], ["LATIN", 49]]}}
+{"key": "hi/039", "lang": "hi", "I": {"letters": 928, "expected_share": 1.0, "top": [["DEVANAGARI", 928]]}, "TB": {"letters": 920, "expected_share": 1.0, "top": [["DEVANAGARI", 920]]}}
+{"key": "hi/040", "lang": "hi", "I": {"letters": 1237, "expected_share": 1.0, "top": [["DEVANAGARI", 1237]]}, "TB": {"letters": 1260, "expected_share": 1.0, "top": [["DEVANAGARI", 1260]]}}
+{"key": "hi/042", "lang": "hi", "I": {"letters": 532, "expected_share": 0.9793, "top": [["DEVANAGARI", 521], ["LATIN", 6]]}, "TB": {"letters": 438, "expected_share": 1.0, "top": [["DEVANAGARI", 438]]}}
+{"key": "hy/000", "lang": "hy", "I": {"letters": 1091, "expected_share": 0.9404, "top": [["ARMENIAN", 1026], ["LATIN", 65]]}, "TB": {"letters": 1091, "expected_share": 1.0, "top": [["ARMENIAN", 1091]]}}
+{"key": "hy/001", "lang": "hy", "I": {"letters": 1021, "expected_share": 0.7816, "top": [["ARMENIAN", 798], ["LATIN", 223]]}, "TB": {"letters": 1037, "expected_share": 1.0, "top": [["ARMENIAN", 1037]]}}
+{"key": "hy/003", "lang": "hy", "I": {"letters": 255, "expected_share": 0.6431, "top": [["ARMENIAN", 164], ["LATIN", 91]]}, "TB": {"letters": 331, "expected_share": 1.0, "top": [["ARMENIAN", 331]]}}
+{"key": "hy/004", "lang": "hy", "I": {"letters": 1236, "expected_share": 0.8625, "top": [["ARMENIAN", 1066], ["LATIN", 170]]}, "TB": {"letters": 1248, "expected_share": 1.0, "top": [["ARMENIAN", 1248]]}}
+{"key": "hy/005", "lang": "hy", "I": {"letters": 1582, "expected_share": 0.9437, "top": [["ARMENIAN", 1493], ["LATIN", 89]]}, "TB": {"letters": 1591, "expected_share": 1.0, "top": [["ARMENIAN", 1591]]}}
+{"key": "hy/006", "lang": "hy", "I": {"letters": 1380, "expected_share": 0.8848, "top": [["ARMENIAN", 1221], ["LATIN", 159]]}, "TB": {"letters": 1397, "expected_share": 1.0, "top": [["ARMENIAN", 1397]]}}
+{"key": "hy/007", "lang": "hy", "I": {"letters": 1067, "expected_share": 0.9784, "top": [["ARMENIAN", 1044], ["LATIN", 23]]}, "TB": {"letters": 1075, "expected_share": 1.0, "top": [["ARMENIAN", 1075]]}}
+{"key": "hy/008", "lang": "hy", "I": {"letters": 1677, "expected_share": 0.8396, "top": [["ARMENIAN", 1408], ["LATIN", 263]]}, "TB": {"letters": 1699, "expected_share": 1.0, "top": [["ARMENIAN", 1699]]}}
+{"key": "hy/009", "lang": "hy", "I": {"letters": 1393, "expected_share": 0.9993, "top": [["ARMENIAN", 1392], ["LATIN", 1]]}, "TB": {"letters": 1385, "expected_share": 1.0, "top": [["ARMENIAN", 1385]]}}
+{"key": "hy/010", "lang": "hy", "I": {"letters": 309, "expected_share": 1.0, "top": [["ARMENIAN", 309]]}, "TB": {"letters": 322, "expected_share": 1.0, "top": [["ARMENIAN", 322]]}}
+{"key": "hy/011", "lang": "hy", "I": {"letters": 1167, "expected_share": 0.994, "top": [["ARMENIAN", 1160], ["LATIN", 7]]}, "TB": {"letters": 1064, "expected_share": 1.0, "top": [["ARMENIAN", 1064]]}}
+{"key": "hy/012", "lang": "hy", "I": {"letters": 357, "expected_share": 1.0, "top": [["ARMENIAN", 357]]}, "TB": {"letters": 354, "expected_share": 1.0, "top": [["ARMENIAN", 354]]}}
+{"key": "hy/013", "lang": "hy", "I": {"letters": 744, "expected_share": 1.0, "top": [["ARMENIAN", 744]]}, "TB": {"letters": 765, "expected_share": 1.0, "top": [["ARMENIAN", 765]]}}
+{"key": "hy/014", "lang": "hy", "I": {"letters": 673, "expected_share": 0.8053, "top": [["ARMENIAN", 542], ["LATIN", 131]]}, "TB": {"letters": 702, "expected_share": 1.0, "top": [["ARMENIAN", 702]]}}
+{"key": "hy/015", "lang": "hy", "I": {"letters": 331, "expected_share": 0.8792, "top": [["ARMENIAN", 291], ["LATIN", 40]]}, "TB": {"letters": 335, "expected_share": 1.0, "top": [["ARMENIAN", 335]]}}
+{"key": "hy/016", "lang": "hy", "I": {"letters": 1343, "expected_share": 0.9628, "top": [["ARMENIAN", 1293], ["LATIN", 50]]}, "TB": {"letters": 1344, "expected_share": 1.0, "top": [["ARMENIAN", 1344]]}}
+{"key": "hy/017", "lang": "hy", "I": {"letters": 1101, "expected_share": 0.7203, "top": [["ARMENIAN", 793], ["LATIN", 308]]}, "TB": {"letters": 1137, "expected_share": 1.0, "top": [["ARMENIAN", 1137]]}}
+{"key": "hy/018", "lang": "hy", "I": {"letters": 908, "expected_share": 0.8965, "top": [["ARMENIAN", 814], ["LATIN", 94]]}, "TB": {"letters": 912, "expected_share": 1.0, "top": [["ARMENIAN", 912]]}}
+{"key": "hy/019", "lang": "hy", "I": {"letters": 1372, "expected_share": 1.0, "top": [["ARMENIAN", 1372]]}, "TB": {"letters": 1352, "expected_share": 1.0, "top": [["ARMENIAN", 1352]]}}
+{"key": "hy/020", "lang": "hy", "I": {"letters": 1466, "expected_share": 1.0, "top": [["ARMENIAN", 1466]]}, "TB": {"letters": 1457, "expected_share": 1.0, "top": [["ARMENIAN", 1457]]}}
+{"key": "hy/021", "lang": "hy", "I": {"letters": 1076, "expected_share": 0.7593, "top": [["ARMENIAN", 817], ["LATIN", 259]]}, "TB": {"letters": 1082, "expected_share": 1.0, "top": [["ARMENIAN", 1082]]}}
+{"key": "hy/022", "lang": "hy", "I": {"letters": 510, "expected_share": 0.2843, "top": [["LATIN", 365], ["ARMENIAN", 145]]}, "TB": {"letters": 772, "expected_share": 1.0, "top": [["ARMENIAN", 772]]}}
+{"key": "hy/023", "lang": "hy", "I": {"letters": 625, "expected_share": 0.9648, "top": [["ARMENIAN", 603], ["LATIN", 22]]}, "TB": {"letters": 654, "expected_share": 1.0, "top": [["ARMENIAN", 654]]}}
+{"key": "hy/024", "lang": "hy", "I": {"letters": 612, "expected_share": 0.7778, "top": [["ARMENIAN", 476], ["LATIN", 136]]}, "TB": {"letters": 660, "expected_share": 1.0, "top": [["ARMENIAN", 660]]}}
+{"key": "hy/026", "lang": "hy", "I": {"letters": 948, "expected_share": 0.9272, "top": [["ARMENIAN", 879], ["LATIN", 69]]}, "TB": {"letters": 951, "expected_share": 1.0, "top": [["ARMENIAN", 951]]}}
+{"key": "hy/027", "lang": "hy", "I": {"letters": 318, "expected_share": 0.9654, "top": [["ARMENIAN", 307], ["LATIN", 11]]}, "TB": {"letters": 338, "expected_share": 1.0, "top": [["ARMENIAN", 338]]}}
+{"key": "hy/028", "lang": "hy", "I": {"letters": 819, "expected_share": 0.8901, "top": [["ARMENIAN", 729], ["LATIN", 90]]}, "TB": {"letters": 823, "expected_share": 1.0, "top": [["ARMENIAN", 823]]}}
+{"key": "hy/029", "lang": "hy", "I": {"letters": 741, "expected_share": 1.0, "top": [["ARMENIAN", 741]]}, "TB": {"letters": 737, "expected_share": 1.0, "top": [["ARMENIAN", 737]]}}
+{"key": "hy/030", "lang": "hy", "I": {"letters": 1739, "expected_share": 0.9454, "top": [["ARMENIAN", 1644], ["LATIN", 94]]}, "TB": {"letters": 2102, "expected_share": 1.0, "top": [["ARMENIAN", 2102]]}}
+{"key": "hy/031", "lang": "hy", "I": {"letters": 1220, "expected_share": 0.8295, "top": [["ARMENIAN", 1012], ["CYRILLIC", 148]]}, "TB": {"letters": 1211, "expected_share": 1.0, "top": [["ARMENIAN", 1211]]}}
+{"key": "kn/000", "lang": "kn", "I": {"letters": 482, "expected_share": 0.9959, "top": [["KANNADA", 480], ["LATIN", 2]]}, "TB": {"letters": 191, "expected_share": 1.0, "top": [["KANNADA", 191]]}}
+{"key": "kn/001", "lang": "kn", "I": {"letters": 349, "expected_share": 0.9513, "top": [["KANNADA", 332], ["LATIN", 16]]}, "TB": {"letters": 334, "expected_share": 1.0, "top": [["KANNADA", 334]]}}
+{"key": "kn/002", "lang": "kn", "I": {"letters": 826, "expected_share": 1.0, "top": [["KANNADA", 826]]}, "TB": {"letters": 822, "expected_share": 1.0, "top": [["KANNADA", 822]]}}
+{"key": "kn/003", "lang": "kn", "I": {"letters": 794, "expected_share": 1.0, "top": [["KANNADA", 794]]}, "TB": {"letters": 816, "expected_share": 1.0, "top": [["KANNADA", 816]]}}
+{"key": "kn/004", "lang": "kn", "I": {"letters": 679, "expected_share": 1.0, "top": [["KANNADA", 679]]}, "TB": {"letters": 660, "expected_share": 1.0, "top": [["KANNADA", 660]]}}
+{"key": "kn/005", "lang": "kn", "I": {"letters": 787, "expected_share": 1.0, "top": [["KANNADA", 787]]}, "TB": {"letters": 768, "expected_share": 1.0, "top": [["KANNADA", 768]]}}
+{"key": "kn/006", "lang": "kn", "I": {"letters": 709, "expected_share": 1.0, "top": [["KANNADA", 709]]}, "TB": {"letters": 705, "expected_share": 1.0, "top": [["KANNADA", 705]]}}
+{"key": "kn/007", "lang": "kn", "I": {"letters": 638, "expected_share": 0.9984, "top": [["KANNADA", 637], ["LATIN", 1]]}, "TB": {"letters": 635, "expected_share": 1.0, "top": [["KANNADA", 635]]}}
+{"key": "kn/008", "lang": "kn", "I": {"letters": 598, "expected_share": 0.9983, "top": [["KANNADA", 597], ["LATIN", 1]]}, "TB": {"letters": 591, "expected_share": 1.0, "top": [["KANNADA", 591]]}}
+{"key": "kn/009", "lang": "kn", "I": {"letters": 1692, "expected_share": 1.0, "top": [["KANNADA", 1692]]}, "TB": {"letters": 1695, "expected_share": 1.0, "top": [["KANNADA", 1695]]}}
+{"key": "kn/010", "lang": "kn", "I": {"letters": 738, "expected_share": 1.0, "top": [["KANNADA", 738]]}, "TB": {"letters": 724, "expected_share": 1.0, "top": [["KANNADA", 724]]}}
+{"key": "kn/011", "lang": "kn", "I": {"letters": 665, "expected_share": 1.0, "top": [["KANNADA", 665]]}, "TB": {"letters": 670, "expected_share": 1.0, "top": [["KANNADA", 670]]}}
+{"key": "kn/012", "lang": "kn", "I": {"letters": 516, "expected_share": 0.8527, "top": [["KANNADA", 440], ["LATIN", 76]]}, "TB": {"letters": 492, "expected_share": 1.0, "top": [["KANNADA", 492]]}}
+{"key": "kn/013", "lang": "kn", "I": {"letters": 738, "expected_share": 0.9973, "top": [["KANNADA", 736], ["LATIN", 2]]}, "TB": {"letters": 744, "expected_share": 1.0, "top": [["KANNADA", 744]]}}
+{"key": "kn/014", "lang": "kn", "I": {"letters": 747, "expected_share": 1.0, "top": [["KANNADA", 747]]}, "TB": {"letters": 723, "expected_share": 1.0, "top": [["KANNADA", 723]]}}
+{"key": "kn/015", "lang": "kn", "I": {"letters": 651, "expected_share": 1.0, "top": [["KANNADA", 651]]}, "TB": {"letters": 646, "expected_share": 1.0, "top": [["KANNADA", 646]]}}
+{"key": "kn/017", "lang": "kn", "I": {"letters": 998, "expected_share": 1.0, "top": [["KANNADA", 998]]}, "TB": {"letters": 998, "expected_share": 1.0, "top": [["KANNADA", 998]]}}
+{"key": "kn/018", "lang": "kn", "I": {"letters": 496, "expected_share": 0.998, "top": [["KANNADA", 495], ["LATIN", 1]]}, "TB": {"letters": 535, "expected_share": 1.0, "top": [["KANNADA", 535]]}}
+{"key": "kn/019", "lang": "kn", "I": {"letters": 445, "expected_share": 1.0, "top": [["KANNADA", 445]]}, "TB": {"letters": 448, "expected_share": 1.0, "top": [["KANNADA", 448]]}}
+{"key": "kn/020", "lang": "kn", "I": {"letters": 741, "expected_share": 0.9973, "top": [["KANNADA", 739], ["LATIN", 2]]}, "TB": {"letters": 729, "expected_share": 1.0, "top": [["KANNADA", 729]]}}
+{"key": "kn/021", "lang": "kn", "I": {"letters": 730, "expected_share": 0.9795, "top": [["KANNADA", 715], ["LATIN", 15]]}, "TB": {"letters": 702, "expected_share": 1.0, "top": [["KANNADA", 702]]}}
+{"key": "kn/022", "lang": "kn", "I": {"letters": 586, "expected_share": 1.0, "top": [["KANNADA", 586]]}, "TB": {"letters": 578, "expected_share": 1.0, "top": [["KANNADA", 578]]}}
+{"key": "kn/023", "lang": "kn", "I": {"letters": 803, "expected_share": 0.9601, "top": [["KANNADA", 771], ["LATIN", 32]]}, "TB": {"letters": 806, "expected_share": 1.0, "top": [["KANNADA", 806]]}}
+{"key": "kn/025", "lang": "kn", "I": {"letters": 681, "expected_share": 1.0, "top": [["KANNADA", 681]]}, "TB": {"letters": 687, "expected_share": 1.0, "top": [["KANNADA", 687]]}}
+{"key": "kn/026", "lang": "kn", "I": {"letters": 151, "expected_share": 0.9205, "top": [["KANNADA", 139], ["LATIN", 11]]}, "TB": {"letters": 164, "expected_share": 1.0, "top": [["KANNADA", 164]]}}
+{"key": "kn/028", "lang": "kn", "I": {"letters": 662, "expected_share": 1.0, "top": [["KANNADA", 662]]}, "TB": {"letters": 724, "expected_share": 1.0, "top": [["KANNADA", 724]]}}
+{"key": "kn/029", "lang": "kn", "I": {"letters": 886, "expected_share": 1.0, "top": [["KANNADA", 886]]}, "TB": {"letters": 889, "expected_share": 1.0, "top": [["KANNADA", 889]]}}
+{"key": "kn/030", "lang": "kn", "I": {"letters": 655, "expected_share": 0.9969, "top": [["KANNADA", 653], ["LATIN", 2]]}, "TB": {"letters": 670, "expected_share": 1.0, "top": [["KANNADA", 670]]}}
+{"key": "kn/031", "lang": "kn", "I": {"letters": 908, "expected_share": 0.9879, "top": [["KANNADA", 897], ["TELUGU", 6]]}, "TB": {"letters": 903, "expected_share": 1.0, "top": [["KANNADA", 903]]}}
+{"key": "kn/032", "lang": "kn", "I": {"letters": 926, "expected_share": 0.9741, "top": [["KANNADA", 902], ["LATIN", 24]]}, "TB": {"letters": 945, "expected_share": 1.0, "top": [["KANNADA", 945]]}}
+{"key": "ml/000", "lang": "ml", "I": {"letters": 152, "expected_share": 0.6053, "top": [["MALAYALAM", 92], ["LATIN", 60]]}, "TB": {"letters": 227, "expected_share": 1.0, "top": [["MALAYALAM", 227]]}}
+{"key": "ml/001", "lang": "ml", "I": {"letters": 655, "expected_share": 0.9176, "top": [["MALAYALAM", 601], ["LATIN", 54]]}, "TB": {"letters": 664, "expected_share": 0.9262, "top": [["MALAYALAM", 615], ["LATIN", 49]]}}
+{"key": "ml/002", "lang": "ml", "I": {"letters": 782, "expected_share": 0.9987, "top": [["MALAYALAM", 781], ["LATIN", 1]]}, "TB": {"letters": 764, "expected_share": 0.9974, "top": [["MALAYALAM", 762], ["LATIN", 2]]}}
+{"key": "ml/003", "lang": "ml", "I": {"letters": 118, "expected_share": 0.9068, "top": [["MALAYALAM", 107], ["LATIN", 11]]}, "TB": {"letters": 140, "expected_share": 0.5857, "top": [["MALAYALAM", 82], ["LATIN", 58]]}}
+{"key": "ml/004", "lang": "ml", "I": {"letters": 755, "expected_share": 0.9868, "top": [["MALAYALAM", 745], ["ARABIC", 6]]}, "TB": {"letters": 779, "expected_share": 0.7317, "top": [["MALAYALAM", 570], ["LATIN", 209]]}}
+{"key": "ml/005", "lang": "ml", "I": {"letters": 781, "expected_share": 1.0, "top": [["MALAYALAM", 781]]}, "TB": {"letters": 783, "expected_share": 0.9821, "top": [["MALAYALAM", 769], ["LATIN", 14]]}}
+{"key": "ml/007", "lang": "ml", "I": {"letters": 809, "expected_share": 0.9926, "top": [["MALAYALAM", 803], ["LATIN", 6]]}, "TB": {"letters": 813, "expected_share": 0.9828, "top": [["MALAYALAM", 799], ["LATIN", 14]]}}
+{"key": "ml/008", "lang": "ml", "I": {"letters": 572, "expected_share": 1.0, "top": [["MALAYALAM", 572]]}, "TB": {"letters": 553, "expected_share": 0.9855, "top": [["MALAYALAM", 545], ["LATIN", 8]]}}
+{"key": "ml/012", "lang": "ml", "I": {"letters": 613, "expected_share": 0.9951, "top": [["MALAYALAM", 610], ["LATIN", 3]]}, "TB": {"letters": 614, "expected_share": 0.9935, "top": [["MALAYALAM", 610], ["LATIN", 4]]}}
+{"key": "ml/013", "lang": "ml", "I": {"letters": 403, "expected_share": 0.995, "top": [["MALAYALAM", 401], ["ARABIC", 2]]}, "TB": {"letters": 399, "expected_share": 0.8897, "top": [["MALAYALAM", 355], ["LATIN", 44]]}}
+{"key": "ml/014", "lang": "ml", "I": {"letters": 351, "expected_share": 0.9972, "top": [["MALAYALAM", 350], ["LATIN", 1]]}, "TB": {"letters": 343, "expected_share": 0.9883, "top": [["MALAYALAM", 339], ["LATIN", 4]]}}
+{"key": "ml/016", "lang": "ml", "I": {"letters": 365, "expected_share": 0.9945, "top": [["MALAYALAM", 363], ["LATIN", 2]]}, "TB": {"letters": 372, "expected_share": 0.9328, "top": [["MALAYALAM", 347], ["LATIN", 25]]}}
+{"key": "ml/018", "lang": "ml", "I": {"letters": 292, "expected_share": 0.8253, "top": [["MALAYALAM", 241], ["LATIN", 51]]}, "TB": {"letters": 377, "expected_share": 0.9761, "top": [["MALAYALAM", 368], ["LATIN", 9]]}}
+{"key": "ml/019", "lang": "ml", "I": {"letters": 1723, "expected_share": 1.0, "top": [["MALAYALAM", 1723]]}, "TB": {"letters": 1727, "expected_share": 0.9954, "top": [["MALAYALAM", 1719], ["LATIN", 8]]}}
+{"key": "ml/021", "lang": "ml", "I": {"letters": 715, "expected_share": 0.9944, "top": [["MALAYALAM", 711], ["THAI", 3]]}, "TB": {"letters": 719, "expected_share": 0.9958, "top": [["MALAYALAM", 716], ["LATIN", 3]]}}
+{"key": "ml/022", "lang": "ml", "I": {"letters": 197, "expected_share": 1.0, "top": [["MALAYALAM", 197]]}, "TB": {"letters": 188, "expected_share": 1.0, "top": [["MALAYALAM", 188]]}}
+{"key": "ml/023", "lang": "ml", "I": {"letters": 555, "expected_share": 0.9964, "top": [["MALAYALAM", 553], ["LATIN", 2]]}, "TB": {"letters": 558, "expected_share": 0.9875, "top": [["MALAYALAM", 551], ["LATIN", 7]]}}
+{"key": "ml/024", "lang": "ml", "I": {"letters": 809, "expected_share": 0.9963, "top": [["MALAYALAM", 806], ["LATIN", 3]]}, "TB": {"letters": 779, "expected_share": 0.8434, "top": [["MALAYALAM", 657], ["LATIN", 122]]}}
+{"key": "ml/025", "lang": "ml", "I": {"letters": 381, "expected_share": 0.9974, "top": [["MALAYALAM", 380], ["LATIN", 1]]}, "TB": {"letters": 376, "expected_share": 0.9707, "top": [["MALAYALAM", 365], ["LATIN", 11]]}}
+{"key": "ml/026", "lang": "ml", "I": {"letters": 268, "expected_share": 0.9776, "top": [["MALAYALAM", 262], ["LATIN", 6]]}, "TB": {"letters": 226, "expected_share": 0.9425, "top": [["MALAYALAM", 213], ["LATIN", 13]]}}
+{"key": "ml/029", "lang": "ml", "I": {"letters": 296, "expected_share": 0.9932, "top": [["MALAYALAM", 294], ["LATIN", 2]]}, "TB": {"letters": 308, "expected_share": 0.9968, "top": [["MALAYALAM", 307], ["LATIN", 1]]}}
+{"key": "ml/030", "lang": "ml", "I": {"letters": 282, "expected_share": 0.9965, "top": [["MALAYALAM", 281], ["TELUGU", 1]]}, "TB": {"letters": 294, "expected_share": 0.9388, "top": [["MALAYALAM", 276], ["LATIN", 18]]}}
+{"key": "ml/032", "lang": "ml", "I": {"letters": 184, "expected_share": 0.1413, "top": [["LATIN", 124], ["MALAYALAM", 26]]}, "TB": {"letters": 342, "expected_share": 0.9094, "top": [["MALAYALAM", 311], ["LATIN", 31]]}}
+{"key": "ml/033", "lang": "ml", "I": {"letters": 284, "expected_share": 0.9789, "top": [["MALAYALAM", 278], ["LATIN", 6]]}, "TB": {"letters": 148, "expected_share": 0.9122, "top": [["MALAYALAM", 135], ["LATIN", 13]]}}
+{"key": "ml/034", "lang": "ml", "I": {"letters": 514, "expected_share": 0.9981, "top": [["MALAYALAM", 513], ["LATIN", 1]]}, "TB": {"letters": 500, "expected_share": 0.99, "top": [["MALAYALAM", 495], ["LATIN", 5]]}}
+{"key": "ml/036", "lang": "ml", "I": {"letters": 294, "expected_share": 0.9966, "top": [["MALAYALAM", 293], ["LATIN", 1]]}, "TB": {"letters": 303, "expected_share": 0.9538, "top": [["MALAYALAM", 289], ["LATIN", 14]]}}
+{"key": "ml/037", "lang": "ml", "I": {"letters": 601, "expected_share": 0.9967, "top": [["MALAYALAM", 599], ["LATIN", 2]]}, "TB": {"letters": 618, "expected_share": 0.9498, "top": [["MALAYALAM", 587], ["LATIN", 31]]}}
+{"key": "ml/038", "lang": "ml", "I": {"letters": 515, "expected_share": 0.9981, "top": [["MALAYALAM", 514], ["TAMIL", 1]]}, "TB": {"letters": 519, "expected_share": 0.9557, "top": [["MALAYALAM", 496], ["LATIN", 23]]}}
+{"key": "ml/039", "lang": "ml", "I": {"letters": 1271, "expected_share": 0.9245, "top": [["MALAYALAM", 1175], ["LATIN", 90]]}, "TB": {"letters": 1434, "expected_share": 0.9519, "top": [["MALAYALAM", 1365], ["LATIN", 69]]}}
+{"key": "ml/042", "lang": "ml", "I": {"letters": 211, "expected_share": 0.9953, "top": [["MALAYALAM", 210], ["LATIN", 1]]}, "TB": {"letters": 150, "expected_share": 1.0, "top": [["MALAYALAM", 150]]}}
+{"key": "mr/000", "lang": "mr", "I": {"letters": 843, "expected_share": 0.9431, "top": [["DEVANAGARI", 795], ["LATIN", 48]]}, "TB": {"letters": 872, "expected_share": 1.0, "top": [["DEVANAGARI", 872]]}}
+{"key": "mr/002", "lang": "mr", "I": {"letters": 780, "expected_share": 1.0, "top": [["DEVANAGARI", 780]]}, "TB": {"letters": 771, "expected_share": 1.0, "top": [["DEVANAGARI", 771]]}}
+{"key": "mr/004", "lang": "mr", "I": {"letters": 816, "expected_share": 1.0, "top": [["DEVANAGARI", 816]]}, "TB": {"letters": 804, "expected_share": 1.0, "top": [["DEVANAGARI", 804]]}}
+{"key": "mr/005", "lang": "mr", "I": {"letters": 972, "expected_share": 0.9846, "top": [["DEVANAGARI", 957], ["LATIN", 15]]}, "TB": {"letters": 999, "expected_share": 1.0, "top": [["DEVANAGARI", 999]]}}
+{"key": "mr/006", "lang": "mr", "I": {"letters": 699, "expected_share": 0.8083, "top": [["DEVANAGARI", 565], ["LATIN", 134]]}, "TB": {"letters": 589, "expected_share": 1.0, "top": [["DEVANAGARI", 589]]}}
+{"key": "mr/007", "lang": "mr", "I": {"letters": 1040, "expected_share": 0.9913, "top": [["DEVANAGARI", 1031], ["LATIN", 9]]}, "TB": {"letters": 1032, "expected_share": 1.0, "top": [["DEVANAGARI", 1032]]}}
+{"key": "mr/008", "lang": "mr", "I": {"letters": 971, "expected_share": 0.9969, "top": [["DEVANAGARI", 968], ["LATIN", 3]]}, "TB": {"letters": 976, "expected_share": 1.0, "top": [["DEVANAGARI", 976]]}}
+{"key": "mr/009", "lang": "mr", "I": {"letters": 123, "expected_share": 1.0, "top": [["DEVANAGARI", 123]]}, "TB": {"letters": 148, "expected_share": 1.0, "top": [["DEVANAGARI", 148]]}}
+{"key": "mr/010", "lang": "mr", "I": {"letters": 854, "expected_share": 0.9754, "top": [["DEVANAGARI", 833], ["LATIN", 21]]}, "TB": {"letters": 946, "expected_share": 1.0, "top": [["DEVANAGARI", 946]]}}
+{"key": "mr/011", "lang": "mr", "I": {"letters": 362, "expected_share": 0.9917, "top": [["DEVANAGARI", 359], ["LATIN", 3]]}, "TB": {"letters": 381, "expected_share": 1.0, "top": [["DEVANAGARI", 381]]}}
+{"key": "mr/012", "lang": "mr", "I": {"letters": 821, "expected_share": 0.9233, "top": [["DEVANAGARI", 758], ["LATIN", 63]]}, "TB": {"letters": 786, "expected_share": 1.0, "top": [["DEVANAGARI", 786]]}}
+{"key": "mr/014", "lang": "mr", "I": {"letters": 983, "expected_share": 1.0, "top": [["DEVANAGARI", 983]]}, "TB": {"letters": 993, "expected_share": 1.0, "top": [["DEVANAGARI", 993]]}}
+{"key": "mr/015", "lang": "mr", "I": {"letters": 927, "expected_share": 1.0, "top": [["DEVANAGARI", 927]]}, "TB": {"letters": 924, "expected_share": 1.0, "top": [["DEVANAGARI", 924]]}}
+{"key": "mr/016", "lang": "mr", "I": {"letters": 1238, "expected_share": 1.0, "top": [["DEVANAGARI", 1238]]}, "TB": {"letters": 1213, "expected_share": 1.0, "top": [["DEVANAGARI", 1213]]}}
+{"key": "mr/017", "lang": "mr", "I": {"letters": 981, "expected_share": 0.9766, "top": [["DEVANAGARI", 958], ["LATIN", 23]]}, "TB": {"letters": 977, "expected_share": 1.0, "top": [["DEVANAGARI", 977]]}}
+{"key": "mr/018", "lang": "mr", "I": {"letters": 660, "expected_share": 1.0, "top": [["DEVANAGARI", 660]]}, "TB": {"letters": 657, "expected_share": 1.0, "top": [["DEVANAGARI", 657]]}}
+{"key": "mr/019", "lang": "mr", "I": {"letters": 685, "expected_share": 0.8832, "top": [["DEVANAGARI", 605], ["LATIN", 80]]}, "TB": {"letters": 963, "expected_share": 1.0, "top": [["DEVANAGARI", 963]]}}
+{"key": "mr/020", "lang": "mr", "I": {"letters": 624, "expected_share": 1.0, "top": [["DEVANAGARI", 624]]}, "TB": {"letters": 629, "expected_share": 1.0, "top": [["DEVANAGARI", 629]]}}
+{"key": "mr/022", "lang": "mr", "I": {"letters": 815, "expected_share": 1.0, "top": [["DEVANAGARI", 815]]}, "TB": {"letters": 834, "expected_share": 1.0, "top": [["DEVANAGARI", 834]]}}
+{"key": "mr/023", "lang": "mr", "I": {"letters": 605, "expected_share": 0.6711, "top": [["DEVANAGARI", 406], ["LATIN", 199]]}, "TB": {"letters": 487, "expected_share": 1.0, "top": [["DEVANAGARI", 487]]}}
+{"key": "mr/025", "lang": "mr", "I": {"letters": 231, "expected_share": 0.9784, "top": [["DEVANAGARI", 226], ["BENGALI", 5]]}, "TB": {"letters": 257, "expected_share": 1.0, "top": [["DEVANAGARI", 257]]}}
+{"key": "mr/026", "lang": "mr", "I": {"letters": 500, "expected_share": 0.99, "top": [["DEVANAGARI", 495], ["LATIN", 5]]}, "TB": {"letters": 502, "expected_share": 1.0, "top": [["DEVANAGARI", 502]]}}
+{"key": "mr/027", "lang": "mr", "I": {"letters": 757, "expected_share": 1.0, "top": [["DEVANAGARI", 757]]}, "TB": {"letters": 758, "expected_share": 1.0, "top": [["DEVANAGARI", 758]]}}
+{"key": "mr/028", "lang": "mr", "I": {"letters": 635, "expected_share": 1.0, "top": [["DEVANAGARI", 635]]}, "TB": {"letters": 639, "expected_share": 1.0, "top": [["DEVANAGARI", 639]]}}
+{"key": "mr/030", "lang": "mr", "I": {"letters": 1026, "expected_share": 1.0, "top": [["DEVANAGARI", 1026]]}, "TB": {"letters": 1034, "expected_share": 1.0, "top": [["DEVANAGARI", 1034]]}}
+{"key": "mr/033", "lang": "mr", "I": {"letters": 699, "expected_share": 1.0, "top": [["DEVANAGARI", 699]]}, "TB": {"letters": 713, "expected_share": 1.0, "top": [["DEVANAGARI", 713]]}}
+{"key": "mr/034", "lang": "mr", "I": {"letters": 252, "expected_share": 0.996, "top": [["DEVANAGARI", 251], ["LATIN", 1]]}, "TB": {"letters": 251, "expected_share": 1.0, "top": [["DEVANAGARI", 251]]}}
+{"key": "mr/035", "lang": "mr", "I": {"letters": 708, "expected_share": 0.8799, "top": [["DEVANAGARI", 623], ["LATIN", 85]]}, "TB": {"letters": 864, "expected_share": 1.0, "top": [["DEVANAGARI", 864]]}}
+{"key": "mr/036", "lang": "mr", "I": {"letters": 765, "expected_share": 1.0, "top": [["DEVANAGARI", 765]]}, "TB": {"letters": 774, "expected_share": 1.0, "top": [["DEVANAGARI", 774]]}}
+{"key": "mr/037", "lang": "mr", "I": {"letters": 977, "expected_share": 1.0, "top": [["DEVANAGARI", 977]]}, "TB": {"letters": 964, "expected_share": 1.0, "top": [["DEVANAGARI", 964]]}}
+{"key": "or/002", "lang": "or", "I": {"letters": 305, "expected_share": 0.9934, "top": [["ORIYA", 303], ["LATIN", 2]]}, "TB": {"letters": 360, "expected_share": 1.0, "top": [["ORIYA", 360]]}}
+{"key": "or/004", "lang": "or", "I": {"letters": 842, "expected_share": 0.9988, "top": [["ORIYA", 841], ["LATIN", 1]]}, "TB": {"letters": 862, "expected_share": 1.0, "top": [["ORIYA", 862]]}}
+{"key": "or/005", "lang": "or", "I": {"letters": 603, "expected_share": 1.0, "top": [["ORIYA", 603]]}, "TB": {"letters": 622, "expected_share": 1.0, "top": [["ORIYA", 622]]}}
+{"key": "or/006", "lang": "or", "I": {"letters": 49, "expected_share": 0.0, "top": [["LATIN", 19], ["CYRILLIC", 14]]}, "TB": {"letters": 153, "expected_share": 1.0, "top": [["ORIYA", 153]]}}
+{"key": "or/007", "lang": "or", "I": {"letters": 24, "expected_share": 0.0, "top": [["LATIN", 9], ["SINHALA", 8]]}, "TB": {"letters": 353, "expected_share": 0.9972, "top": [["ORIYA", 352], ["MODIFIER", 1]]}}
+{"key": "or/011", "lang": "or", "I": {"letters": 329, "expected_share": 0.9696, "top": [["ORIYA", 319], ["LATIN", 9]]}, "TB": {"letters": 416, "expected_share": 1.0, "top": [["ORIYA", 416]]}}
+{"key": "or/013", "lang": "or", "I": {"letters": 305, "expected_share": 0.0, "top": [["SINHALA", 197], ["LATIN", 52]]}, "TB": {"letters": 748, "expected_share": 1.0, "top": [["ORIYA", 748]]}}
+{"key": "or/016", "lang": "or", "I": {"letters": 201, "expected_share": 0.005, "top": [["SINHALA", 163], ["ARMENIAN", 17]]}, "TB": {"letters": 393, "expected_share": 1.0, "top": [["ORIYA", 393]]}}
+{"key": "or/017", "lang": "or", "I": {"letters": 440, "expected_share": 0.0023, "top": [["SINHALA", 263], ["LATIN", 140]]}, "TB": {"letters": 1232, "expected_share": 1.0, "top": [["ORIYA", 1232]]}}
+{"key": "or/018", "lang": "or", "I": {"letters": 425, "expected_share": 0.9176, "top": [["ORIYA", 390], ["LATIN", 33]]}, "TB": {"letters": 496, "expected_share": 1.0, "top": [["ORIYA", 496]]}}
+{"key": "or/019", "lang": "or", "I": {"letters": 196, "expected_share": 0.9643, "top": [["ORIYA", 189], ["LATIN", 6]]}, "TB": {"letters": 297, "expected_share": 1.0, "top": [["ORIYA", 297]]}}
+{"key": "or/020", "lang": "or", "I": {"letters": 206, "expected_share": 0.0, "top": [["ARMENIAN", 147], ["LATIN", 55]]}, "TB": {"letters": 441, "expected_share": 1.0, "top": [["ORIYA", 441]]}}
+{"key": "or/022", "lang": "or", "I": {"letters": 388, "expected_share": 0.982, "top": [["ORIYA", 381], ["LATIN", 6]]}, "TB": {"letters": 508, "expected_share": 1.0, "top": [["ORIYA", 508]]}}
+{"key": "or/025", "lang": "or", "I": {"letters": 269, "expected_share": 0.0, "top": [["ARMENIAN", 113], ["SINHALA", 99]]}, "TB": {"letters": 541, "expected_share": 1.0, "top": [["ORIYA", 541]]}}
+{"key": "or/026", "lang": "or", "I": {"letters": 219, "expected_share": 0.0046, "top": [["ARMENIAN", 87], ["LATIN", 62]]}, "TB": {"letters": 551, "expected_share": 1.0, "top": [["ORIYA", 551]]}}
+{"key": "or/030", "lang": "or", "I": {"letters": 318, "expected_share": 0.9591, "top": [["ORIYA", 305], ["LATIN", 12]]}, "TB": {"letters": 416, "expected_share": 1.0, "top": [["ORIYA", 416]]}}
+{"key": "or/031", "lang": "or", "I": {"letters": 125, "expected_share": 0.0, "top": [["SINHALA", 98], ["LATIN", 20]]}, "TB": {"letters": 327, "expected_share": 1.0, "top": [["ORIYA", 327]]}}
+{"key": "or/034", "lang": "or", "I": {"letters": 99, "expected_share": 0.0, "top": [["SINHALA", 54], ["LATIN", 15]]}, "TB": {"letters": 257, "expected_share": 1.0, "top": [["ORIYA", 257]]}}
+{"key": "or/035", "lang": "or", "I": {"letters": 136, "expected_share": 0.0, "top": [["SINHALA", 90], ["LATIN", 23]]}, "TB": {"letters": 306, "expected_share": 1.0, "top": [["ORIYA", 306]]}}
+{"key": "or/037", "lang": "or", "I": {"letters": 262, "expected_share": 0.0, "top": [["ARMENIAN", 143], ["SINHALA", 52]]}, "TB": {"letters": 974, "expected_share": 1.0, "top": [["ORIYA", 974]]}}
+{"key": "or/038", "lang": "or", "I": {"letters": 365, "expected_share": 0.0, "top": [["ARMENIAN", 210], ["SINHALA", 80]]}, "TB": {"letters": 1034, "expected_share": 1.0, "top": [["ORIYA", 1034]]}}
+{"key": "or/039", "lang": "or", "I": {"letters": 121, "expected_share": 0.0, "top": [["LATIN", 77], ["SINHALA", 26]]}, "TB": {"letters": 378, "expected_share": 1.0, "top": [["ORIYA", 378]]}}
+{"key": "or/042", "lang": "or", "I": {"letters": 83, "expected_share": 0.0, "top": [["LATIN", 44], ["SINHALA", 18]]}, "TB": {"letters": 294, "expected_share": 1.0, "top": [["ORIYA", 294]]}}
+{"key": "or/043", "lang": "or", "I": {"letters": 257, "expected_share": 0.0, "top": [["ARMENIAN", 122], ["SINHALA", 109]]}, "TB": {"letters": 606, "expected_share": 1.0, "top": [["ORIYA", 606]]}}
+{"key": "or/044", "lang": "or", "I": {"letters": 721, "expected_share": 1.0, "top": [["ORIYA", 721]]}, "TB": {"letters": 779, "expected_share": 1.0, "top": [["ORIYA", 779]]}}
+{"key": "or/046", "lang": "or", "I": {"letters": 506, "expected_share": 0.9447, "top": [["ORIYA", 478], ["LATIN", 28]]}, "TB": {"letters": 487, "expected_share": 1.0, "top": [["ORIYA", 487]]}}
+{"key": "or/047", "lang": "or", "I": {"letters": 51, "expected_share": 0.0, "top": [["SINHALA", 18], ["LATIN", 11]]}, "TB": {"letters": 405, "expected_share": 1.0, "top": [["ORIYA", 405]]}}
+{"key": "or/048", "lang": "or", "I": {"letters": 256, "expected_share": 0.9531, "top": [["ORIYA", 244], ["LATIN", 11]]}, "TB": {"letters": 429, "expected_share": 1.0, "top": [["ORIYA", 429]]}}
+{"key": "or/051", "lang": "or", "I": {"letters": 324, "expected_share": 0.9568, "top": [["ORIYA", 310], ["LATIN", 13]]}, "TB": {"letters": 395, "expected_share": 1.0, "top": [["ORIYA", 395]]}}
+{"key": "or/053", "lang": "or", "I": {"letters": 171, "expected_share": 0.0175, "top": [["SINHALA", 95], ["LATIN", 45]]}, "TB": {"letters": 800, "expected_share": 0.9988, "top": [["ORIYA", 799], ["MODIFIER", 1]]}}
+{"key": "pa/000", "lang": "pa", "I": {"letters": 299, "expected_share": 1.0, "top": [["GURMUKHI", 299]]}, "TB": {"letters": 256, "expected_share": 1.0, "top": [["GURMUKHI", 256]]}}
+{"key": "pa/001", "lang": "pa", "I": {"letters": 432, "expected_share": 0.9606, "top": [["GURMUKHI", 415], ["LATIN", 17]]}, "TB": {"letters": 366, "expected_share": 1.0, "top": [["GURMUKHI", 366]]}}
+{"key": "pa/002", "lang": "pa", "I": {"letters": 228, "expected_share": 1.0, "top": [["GURMUKHI", 228]]}, "TB": {"letters": 84, "expected_share": 1.0, "top": [["GURMUKHI", 84]]}}
+{"key": "pa/003", "lang": "pa", "I": {"letters": 309, "expected_share": 1.0, "top": [["GURMUKHI", 309]]}, "TB": {"letters": 153, "expected_share": 1.0, "top": [["GURMUKHI", 153]]}}
+{"key": "pa/004", "lang": "pa", "I": {"letters": 832, "expected_share": 0.8401, "top": [["GURMUKHI", 699], ["LATIN", 89]]}, "TB": {"letters": 836, "expected_share": 1.0, "top": [["GURMUKHI", 836]]}}
+{"key": "pa/005", "lang": "pa", "I": {"letters": 602, "expected_share": 0.9153, "top": [["GURMUKHI", 551], ["LATIN", 51]]}, "TB": {"letters": 555, "expected_share": 1.0, "top": [["GURMUKHI", 555]]}}
+{"key": "pa/006", "lang": "pa", "I": {"letters": 304, "expected_share": 1.0, "top": [["GURMUKHI", 304]]}, "TB": {"letters": 243, "expected_share": 1.0, "top": [["GURMUKHI", 243]]}}
+{"key": "pa/007", "lang": "pa", "I": {"letters": 300, "expected_share": 1.0, "top": [["GURMUKHI", 300]]}, "TB": {"letters": 256, "expected_share": 1.0, "top": [["GURMUKHI", 256]]}}
+{"key": "pa/008", "lang": "pa", "I": {"letters": 124, "expected_share": 1.0, "top": [["GURMUKHI", 124]]}, "TB": {"letters": 73, "expected_share": 1.0, "top": [["GURMUKHI", 73]]}}
+{"key": "pa/009", "lang": "pa", "I": {"letters": 410, "expected_share": 0.9512, "top": [["GURMUKHI", 390], ["LATIN", 19]]}, "TB": {"letters": 409, "expected_share": 1.0, "top": [["GURMUKHI", 409]]}}
+{"key": "pa/010", "lang": "pa", "I": {"letters": 246, "expected_share": 1.0, "top": [["GURMUKHI", 246]]}, "TB": {"letters": 236, "expected_share": 1.0, "top": [["GURMUKHI", 236]]}}
+{"key": "pa/011", "lang": "pa", "I": {"letters": 161, "expected_share": 1.0, "top": [["GURMUKHI", 161]]}, "TB": {"letters": 160, "expected_share": 1.0, "top": [["GURMUKHI", 160]]}}
+{"key": "pa/012", "lang": "pa", "I": {"letters": 540, "expected_share": 0.9537, "top": [["GURMUKHI", 515], ["LATIN", 25]]}, "TB": {"letters": 537, "expected_share": 1.0, "top": [["GURMUKHI", 537]]}}
+{"key": "pa/013", "lang": "pa", "I": {"letters": 315, "expected_share": 0.8921, "top": [["GURMUKHI", 281], ["LATIN", 32]]}, "TB": {"letters": 341, "expected_share": 1.0, "top": [["GURMUKHI", 341]]}}
+{"key": "pa/014", "lang": "pa", "I": {"letters": 633, "expected_share": 0.9874, "top": [["GURMUKHI", 625], ["LATIN", 8]]}, "TB": {"letters": 632, "expected_share": 1.0, "top": [["GURMUKHI", 632]]}}
+{"key": "pa/015", "lang": "pa", "I": {"letters": 454, "expected_share": 1.0, "top": [["GURMUKHI", 454]]}, "TB": {"letters": 420, "expected_share": 1.0, "top": [["GURMUKHI", 420]]}}
+{"key": "pa/016", "lang": "pa", "I": {"letters": 1651, "expected_share": 0.9885, "top": [["GURMUKHI", 1632], ["LATIN", 18]]}, "TB": {"letters": 1461, "expected_share": 1.0, "top": [["GURMUKHI", 1461]]}}
+{"key": "pa/017", "lang": "pa", "I": {"letters": 366, "expected_share": 0.8224, "top": [["GURMUKHI", 301], ["LATIN", 65]]}, "TB": {"letters": 243, "expected_share": 1.0, "top": [["GURMUKHI", 243]]}}
+{"key": "pa/018", "lang": "pa", "I": {"letters": 834, "expected_share": 0.9988, "top": [["GURMUKHI", 833], ["LATIN", 1]]}, "TB": {"letters": 839, "expected_share": 1.0, "top": [["GURMUKHI", 839]]}}
+{"key": "pa/019", "lang": "pa", "I": {"letters": 547, "expected_share": 0.9963, "top": [["GURMUKHI", 545], ["LATIN", 2]]}, "TB": {"letters": 558, "expected_share": 1.0, "top": [["GURMUKHI", 558]]}}
+{"key": "pa/020", "lang": "pa", "I": {"letters": 561, "expected_share": 0.9982, "top": [["GURMUKHI", 560], ["LATIN", 1]]}, "TB": {"letters": 530, "expected_share": 1.0, "top": [["GURMUKHI", 530]]}}
+{"key": "pa/022", "lang": "pa", "I": {"letters": 622, "expected_share": 1.0, "top": [["GURMUKHI", 622]]}, "TB": {"letters": 371, "expected_share": 1.0, "top": [["GURMUKHI", 371]]}}
+{"key": "pa/024", "lang": "pa", "I": {"letters": 473, "expected_share": 0.9789, "top": [["GURMUKHI", 463], ["LATIN", 10]]}, "TB": {"letters": 468, "expected_share": 1.0, "top": [["GURMUKHI", 468]]}}
+{"key": "pa/025", "lang": "pa", "I": {"letters": 308, "expected_share": 1.0, "top": [["GURMUKHI", 308]]}, "TB": {"letters": 309, "expected_share": 1.0, "top": [["GURMUKHI", 309]]}}
+{"key": "pa/026", "lang": "pa", "I": {"letters": 659, "expected_share": 0.9666, "top": [["GURMUKHI", 637], ["LATIN", 22]]}, "TB": {"letters": 627, "expected_share": 1.0, "top": [["GURMUKHI", 627]]}}
+{"key": "pa/027", "lang": "pa", "I": {"letters": 356, "expected_share": 0.8455, "top": [["GURMUKHI", 301], ["LATIN", 54]]}, "TB": {"letters": 304, "expected_share": 1.0, "top": [["GURMUKHI", 304]]}}
+{"key": "pa/028", "lang": "pa", "I": {"letters": 690, "expected_share": 1.0, "top": [["GURMUKHI", 690]]}, "TB": {"letters": 639, "expected_share": 1.0, "top": [["GURMUKHI", 639]]}}
+{"key": "pa/029", "lang": "pa", "I": {"letters": 509, "expected_share": 0.8507, "top": [["GURMUKHI", 433], ["LATIN", 76]]}, "TB": {"letters": 470, "expected_share": 1.0, "top": [["GURMUKHI", 470]]}}
+{"key": "pa/030", "lang": "pa", "I": {"letters": 607, "expected_share": 0.9654, "top": [["GURMUKHI", 586], ["LATIN", 19]]}, "TB": {"letters": 592, "expected_share": 1.0, "top": [["GURMUKHI", 592]]}}
+{"key": "pa/032", "lang": "pa", "I": {"letters": 529, "expected_share": 1.0, "top": [["GURMUKHI", 529]]}, "TB": {"letters": 468, "expected_share": 1.0, "top": [["GURMUKHI", 468]]}}
+{"key": "ru/000", "lang": "ru", "I": {"letters": 877, "expected_share": 0.9954, "top": [["CYRILLIC", 873], ["LATIN", 4]]}, "TB": {"letters": 878, "expected_share": 1.0, "top": [["CYRILLIC", 878]]}}
+{"key": "ru/001", "lang": "ru", "I": {"letters": 858, "expected_share": 1.0, "top": [["CYRILLIC", 858]]}, "TB": {"letters": 855, "expected_share": 1.0, "top": [["CYRILLIC", 855]]}}
+{"key": "ru/002", "lang": "ru", "I": {"letters": 2217, "expected_share": 0.9224, "top": [["CYRILLIC", 2045], ["LATIN", 172]]}, "TB": {"letters": 2169, "expected_share": 1.0, "top": [["CYRILLIC", 2169]]}}
+{"key": "ru/003", "lang": "ru", "I": {"letters": 1215, "expected_share": 1.0, "top": [["CYRILLIC", 1215]]}, "TB": {"letters": 1214, "expected_share": 1.0, "top": [["CYRILLIC", 1214]]}}
+{"key": "ru/004", "lang": "ru", "I": {"letters": 1480, "expected_share": 0.9797, "top": [["CYRILLIC", 1450], ["LATIN", 30]]}, "TB": {"letters": 1471, "expected_share": 1.0, "top": [["CYRILLIC", 1471]]}}
+{"key": "ru/005", "lang": "ru", "I": {"letters": 356, "expected_share": 1.0, "top": [["CYRILLIC", 356]]}, "TB": {"letters": 353, "expected_share": 1.0, "top": [["CYRILLIC", 353]]}}
+{"key": "ru/006", "lang": "ru", "I": {"letters": 2346, "expected_share": 0.8325, "top": [["CYRILLIC", 1953], ["LATIN", 393]]}, "TB": {"letters": 2252, "expected_share": 1.0, "top": [["CYRILLIC", 2252]]}}
+{"key": "ru/007", "lang": "ru", "I": {"letters": 1188, "expected_share": 1.0, "top": [["CYRILLIC", 1188]]}, "TB": {"letters": 1182, "expected_share": 1.0, "top": [["CYRILLIC", 1182]]}}
+{"key": "ru/008", "lang": "ru", "I": {"letters": 899, "expected_share": 1.0, "top": [["CYRILLIC", 899]]}, "TB": {"letters": 893, "expected_share": 1.0, "top": [["CYRILLIC", 893]]}}
+{"key": "ru/009", "lang": "ru", "I": {"letters": 942, "expected_share": 0.9979, "top": [["CYRILLIC", 940], ["LATIN", 2]]}, "TB": {"letters": 942, "expected_share": 1.0, "top": [["CYRILLIC", 942]]}}
+{"key": "ru/011", "lang": "ru", "I": {"letters": 3756, "expected_share": 0.9968, "top": [["CYRILLIC", 3744], ["LATIN", 12]]}, "TB": {"letters": 3754, "expected_share": 1.0, "top": [["CYRILLIC", 3754]]}}
+{"key": "ru/013", "lang": "ru", "I": {"letters": 1186, "expected_share": 1.0, "top": [["CYRILLIC", 1186]]}, "TB": {"letters": 1174, "expected_share": 1.0, "top": [["CYRILLIC", 1174]]}}
+{"key": "ru/014", "lang": "ru", "I": {"letters": 2788, "expected_share": 0.9964, "top": [["CYRILLIC", 2778], ["LATIN", 10]]}, "TB": {"letters": 2711, "expected_share": 1.0, "top": [["CYRILLIC", 2711]]}}
+{"key": "ru/015", "lang": "ru", "I": {"letters": 829, "expected_share": 0.9144, "top": [["CYRILLIC", 758], ["LATIN", 71]]}, "TB": {"letters": 815, "expected_share": 1.0, "top": [["CYRILLIC", 815]]}}
+{"key": "ru/016", "lang": "ru", "I": {"letters": 1869, "expected_share": 0.9898, "top": [["CYRILLIC", 1850], ["LATIN", 19]]}, "TB": {"letters": 1994, "expected_share": 1.0, "top": [["CYRILLIC", 1994]]}}
+{"key": "ru/017", "lang": "ru", "I": {"letters": 823, "expected_share": 0.9806, "top": [["CYRILLIC", 807], ["LATIN", 16]]}, "TB": {"letters": 765, "expected_share": 1.0, "top": [["CYRILLIC", 765]]}}
+{"key": "ru/018", "lang": "ru", "I": {"letters": 117, "expected_share": 1.0, "top": [["CYRILLIC", 117]]}, "TB": {"letters": 114, "expected_share": 1.0, "top": [["CYRILLIC", 114]]}}
+{"key": "ru/019", "lang": "ru", "I": {"letters": 272, "expected_share": 0.9853, "top": [["CYRILLIC", 268], ["LATIN", 4]]}, "TB": {"letters": 524, "expected_share": 1.0, "top": [["CYRILLIC", 524]]}}
+{"key": "ru/020", "lang": "ru", "I": {"letters": 321, "expected_share": 0.9159, "top": [["CYRILLIC", 294], ["LATIN", 27]]}, "TB": {"letters": 409, "expected_share": 1.0, "top": [["CYRILLIC", 409]]}}
+{"key": "ru/022", "lang": "ru", "I": {"letters": 520, "expected_share": 0.9962, "top": [["CYRILLIC", 518], ["LATIN", 2]]}, "TB": {"letters": 511, "expected_share": 1.0, "top": [["CYRILLIC", 511]]}}
+{"key": "ru/023", "lang": "ru", "I": {"letters": 324, "expected_share": 0.9938, "top": [["CYRILLIC", 322], ["LATIN", 2]]}, "TB": {"letters": 322, "expected_share": 1.0, "top": [["CYRILLIC", 322]]}}
+{"key": "ru/024", "lang": "ru", "I": {"letters": 544, "expected_share": 1.0, "top": [["CYRILLIC", 544]]}, "TB": {"letters": 535, "expected_share": 1.0, "top": [["CYRILLIC", 535]]}}
+{"key": "ru/026", "lang": "ru", "I": {"letters": 1551, "expected_share": 0.9987, "top": [["CYRILLIC", 1549], ["LATIN", 2]]}, "TB": {"letters": 1540, "expected_share": 1.0, "top": [["CYRILLIC", 1540]]}}
+{"key": "ru/027", "lang": "ru", "I": {"letters": 1336, "expected_share": 1.0, "top": [["CYRILLIC", 1336]]}, "TB": {"letters": 1303, "expected_share": 1.0, "top": [["CYRILLIC", 1303]]}}
+{"key": "ru/028", "lang": "ru", "I": {"letters": 749, "expected_share": 0.9466, "top": [["CYRILLIC", 709], ["LATIN", 40]]}, "TB": {"letters": 744, "expected_share": 1.0, "top": [["CYRILLIC", 744]]}}
+{"key": "ru/029", "lang": "ru", "I": {"letters": 1338, "expected_share": 0.9993, "top": [["CYRILLIC", 1337], ["LATIN", 1]]}, "TB": {"letters": 1336, "expected_share": 1.0, "top": [["CYRILLIC", 1336]]}}
+{"key": "ru/030", "lang": "ru", "I": {"letters": 232, "expected_share": 0.9483, "top": [["CYRILLIC", 220], ["LATIN", 12]]}, "TB": {"letters": 221, "expected_share": 1.0, "top": [["CYRILLIC", 221]]}}
+{"key": "ru/031", "lang": "ru", "I": {"letters": 1800, "expected_share": 0.9911, "top": [["CYRILLIC", 1784], ["LATIN", 16]]}, "TB": {"letters": 1782, "expected_share": 1.0, "top": [["CYRILLIC", 1782]]}}
+{"key": "ru/033", "lang": "ru", "I": {"letters": 1343, "expected_share": 0.9538, "top": [["CYRILLIC", 1281], ["LATIN", 62]]}, "TB": {"letters": 1282, "expected_share": 1.0, "top": [["CYRILLIC", 1282]]}}
+{"key": "ru/034", "lang": "ru", "I": {"letters": 753, "expected_share": 1.0, "top": [["CYRILLIC", 753]]}, "TB": {"letters": 749, "expected_share": 1.0, "top": [["CYRILLIC", 749]]}}
+{"key": "sa/000", "lang": "sa", "I": {"letters": 943, "expected_share": 0.9979, "top": [["DEVANAGARI", 941], ["LATIN", 2]]}, "TB": {"letters": 984, "expected_share": 1.0, "top": [["DEVANAGARI", 984]]}}
+{"key": "sa/001", "lang": "sa", "I": {"letters": 453, "expected_share": 1.0, "top": [["DEVANAGARI", 453]]}, "TB": {"letters": 459, "expected_share": 0.9978, "top": [["DEVANAGARI", 458], ["MODIFIER", 1]]}}
+{"key": "sa/002", "lang": "sa", "I": {"letters": 1096, "expected_share": 0.9964, "top": [["DEVANAGARI", 1092], ["BENGALI", 2]]}, "TB": {"letters": 1075, "expected_share": 1.0, "top": [["DEVANAGARI", 1075]]}}
+{"key": "sa/003", "lang": "sa", "I": {"letters": 596, "expected_share": 0.9899, "top": [["DEVANAGARI", 590], ["LATIN", 6]]}, "TB": {"letters": 584, "expected_share": 1.0, "top": [["DEVANAGARI", 584]]}}
+{"key": "sa/004", "lang": "sa", "I": {"letters": 499, "expected_share": 0.994, "top": [["DEVANAGARI", 496], ["LATIN", 3]]}, "TB": {"letters": 487, "expected_share": 1.0, "top": [["DEVANAGARI", 487]]}}
+{"key": "sa/005", "lang": "sa", "I": {"letters": 569, "expected_share": 0.5712, "top": [["DEVANAGARI", 325], ["LATIN", 244]]}, "TB": {"letters": 398, "expected_share": 1.0, "top": [["DEVANAGARI", 398]]}}
+{"key": "sa/006", "lang": "sa", "I": {"letters": 414, "expected_share": 1.0, "top": [["DEVANAGARI", 414]]}, "TB": {"letters": 414, "expected_share": 1.0, "top": [["DEVANAGARI", 414]]}}
+{"key": "sa/007", "lang": "sa", "I": {"letters": 467, "expected_share": 0.8544, "top": [["DEVANAGARI", 399], ["LATIN", 68]]}, "TB": {"letters": 337, "expected_share": 1.0, "top": [["DEVANAGARI", 337]]}}
+{"key": "sa/008", "lang": "sa", "I": {"letters": 486, "expected_share": 0.9794, "top": [["DEVANAGARI", 476], ["LATIN", 10]]}, "TB": {"letters": 462, "expected_share": 1.0, "top": [["DEVANAGARI", 462]]}}
+{"key": "sa/009", "lang": "sa", "I": {"letters": 543, "expected_share": 0.9834, "top": [["DEVANAGARI", 534], ["LATIN", 9]]}, "TB": {"letters": 503, "expected_share": 1.0, "top": [["DEVANAGARI", 503]]}}
+{"key": "sa/010", "lang": "sa", "TB": {"letters": 557, "expected_share": 1.0, "top": [["DEVANAGARI", 557]]}, "I": {"letters": 572, "expected_share": 1.0, "top": [["DEVANAGARI", 572]]}}
+{"key": "sa/013", "lang": "sa", "TB": {"letters": 293, "expected_share": 1.0, "top": [["DEVANAGARI", 293]]}, "I": {"letters": 326, "expected_share": 0.9939, "top": [["DEVANAGARI", 324], ["LATIN", 2]]}}
+{"key": "sa/015", "lang": "sa", "I": {"letters": 522, "expected_share": 0.9904, "top": [["DEVANAGARI", 517], ["LATIN", 5]]}, "TB": {"letters": 521, "expected_share": 1.0, "top": [["DEVANAGARI", 521]]}}
+{"key": "sa/017", "lang": "sa", "I": {"letters": 471, "expected_share": 0.9958, "top": [["DEVANAGARI", 469], ["LATIN", 2]]}, "TB": {"letters": 468, "expected_share": 1.0, "top": [["DEVANAGARI", 468]]}}
+{"key": "sa/018", "lang": "sa", "I": {"letters": 479, "expected_share": 1.0, "top": [["DEVANAGARI", 479]]}, "TB": {"letters": 467, "expected_share": 1.0, "top": [["DEVANAGARI", 467]]}}
+{"key": "sa/019", "lang": "sa", "I": {"letters": 583, "expected_share": 1.0, "top": [["DEVANAGARI", 583]]}, "TB": {"letters": 593, "expected_share": 1.0, "top": [["DEVANAGARI", 593]]}}
+{"key": "sa/020", "lang": "sa", "I": {"letters": 381, "expected_share": 0.9974, "top": [["DEVANAGARI", 380], ["LATIN", 1]]}, "TB": {"letters": 373, "expected_share": 1.0, "top": [["DEVANAGARI", 373]]}}
+{"key": "sa/021", "lang": "sa", "I": {"letters": 410, "expected_share": 0.9976, "top": [["DEVANAGARI", 409], ["LATIN", 1]]}, "TB": {"letters": 406, "expected_share": 1.0, "top": [["DEVANAGARI", 406]]}}
+{"key": "sa/022", "lang": "sa", "I": {"letters": 616, "expected_share": 1.0, "top": [["DEVANAGARI", 616]]}, "TB": {"letters": 613, "expected_share": 1.0, "top": [["DEVANAGARI", 613]]}}
+{"key": "sa/023", "lang": "sa", "I": {"letters": 125, "expected_share": 0.984, "top": [["DEVANAGARI", 123], ["ARABIC", 2]]}, "TB": {"letters": 0, "expected_share": 0.0, "top": []}}
+{"key": "sa/024", "lang": "sa", "I": {"letters": 555, "expected_share": 1.0, "top": [["DEVANAGARI", 555]]}, "TB": {"letters": 551, "expected_share": 1.0, "top": [["DEVANAGARI", 551]]}}
+{"key": "sa/025", "lang": "sa", "I": {"letters": 605, "expected_share": 1.0, "top": [["DEVANAGARI", 605]]}, "TB": {"letters": 606, "expected_share": 1.0, "top": [["DEVANAGARI", 606]]}}
+{"key": "sa/026", "lang": "sa", "I": {"letters": 447, "expected_share": 0.9955, "top": [["DEVANAGARI", 445], ["LATIN", 2]]}, "TB": {"letters": 662, "expected_share": 1.0, "top": [["DEVANAGARI", 662]]}}
+{"key": "sa/027", "lang": "sa", "I": {"letters": 656, "expected_share": 1.0, "top": [["DEVANAGARI", 656]]}, "TB": {"letters": 646, "expected_share": 1.0, "top": [["DEVANAGARI", 646]]}}
+{"key": "sa/028", "lang": "sa", "I": {"letters": 1077, "expected_share": 0.9619, "top": [["DEVANAGARI", 1036], ["LATIN", 41]]}, "TB": {"letters": 1094, "expected_share": 1.0, "top": [["DEVANAGARI", 1094]]}}
+{"key": "sa/029", "lang": "sa", "I": {"letters": 721, "expected_share": 0.9972, "top": [["DEVANAGARI", 719], ["ARABIC", 2]]}, "TB": {"letters": 740, "expected_share": 1.0, "top": [["DEVANAGARI", 740]]}}
+{"key": "sa/030", "lang": "sa", "I": {"letters": 475, "expected_share": 0.9874, "top": [["DEVANAGARI", 469], ["LATIN", 6]]}, "TB": {"letters": 466, "expected_share": 1.0, "top": [["DEVANAGARI", 466]]}}
+{"key": "sa/031", "lang": "sa", "I": {"letters": 422, "expected_share": 0.7085, "top": [["DEVANAGARI", 299], ["LATIN", 123]]}, "TB": {"letters": 326, "expected_share": 1.0, "top": [["DEVANAGARI", 326]]}}
+{"key": "sa/032", "lang": "sa", "I": {"letters": 539, "expected_share": 1.0, "top": [["DEVANAGARI", 539]]}, "TB": {"letters": 538, "expected_share": 0.9981, "top": [["DEVANAGARI", 537], ["MODIFIER", 1]]}}
+{"key": "sa/033", "lang": "sa", "I": {"letters": 408, "expected_share": 0.9779, "top": [["DEVANAGARI", 399], ["LATIN", 9]]}, "TB": {"letters": 392, "expected_share": 1.0, "top": [["DEVANAGARI", 392]]}}
+{"key": "ta/010", "lang": "ta", "I": {"letters": 219, "expected_share": 1.0, "top": [["TAMIL", 219]]}, "TB": {"letters": 222, "expected_share": 1.0, "top": [["TAMIL", 222]]}}
+{"key": "ta/090", "lang": "ta", "I": {"letters": 527, "expected_share": 1.0, "top": [["TAMIL", 527]]}, "TB": {"letters": 754, "expected_share": 1.0, "top": [["TAMIL", 754]]}}
+{"key": "ta/091", "lang": "ta", "I": {"letters": 910, "expected_share": 1.0, "top": [["TAMIL", 910]]}, "TB": {"letters": 900, "expected_share": 1.0, "top": [["TAMIL", 900]]}}
+{"key": "ta/116", "lang": "ta", "I": {"letters": 130, "expected_share": 0.5077, "top": [["TAMIL", 66], ["LATIN", 63]]}, "TB": {"letters": 95, "expected_share": 1.0, "top": [["TAMIL", 95]]}}
+{"key": "ta/146", "lang": "ta", "I": {"letters": 656, "expected_share": 0.9985, "top": [["TAMIL", 655], ["LATIN", 1]]}, "TB": {"letters": 656, "expected_share": 1.0, "top": [["TAMIL", 656]]}}
+{"key": "ta/199", "lang": "ta", "I": {"letters": 105, "expected_share": 0.9429, "top": [["TAMIL", 99], ["LATIN", 6]]}, "TB": {"letters": 108, "expected_share": 1.0, "top": [["TAMIL", 108]]}}
+{"key": "ta/325", "lang": "ta", "I": {"letters": 602, "expected_share": 0.9917, "top": [["TAMIL", 597], ["LATIN", 5]]}, "TB": {"letters": 601, "expected_share": 1.0, "top": [["TAMIL", 601]]}}
+{"key": "ta/359", "lang": "ta", "I": {"letters": 482, "expected_share": 0.9793, "top": [["TAMIL", 472], ["LATIN", 10]]}, "TB": {"letters": 460, "expected_share": 1.0, "top": [["TAMIL", 460]]}}
+{"key": "ta/434", "lang": "ta", "I": {"letters": 536, "expected_share": 1.0, "top": [["TAMIL", 536]]}, "TB": {"letters": 540, "expected_share": 1.0, "top": [["TAMIL", 540]]}}
+{"key": "ta/566", "lang": "ta", "I": {"letters": 813, "expected_share": 0.9926, "top": [["TAMIL", 807], ["LATIN", 6]]}, "TB": {"letters": 815, "expected_share": 1.0, "top": [["TAMIL", 815]]}}
+{"key": "te/000", "lang": "te", "I": {"letters": 536, "expected_share": 1.0, "top": [["TELUGU", 536]]}, "TB": {"letters": 529, "expected_share": 1.0, "top": [["TELUGU", 529]]}}
+{"key": "te/001", "lang": "te", "I": {"letters": 668, "expected_share": 0.9985, "top": [["TELUGU", 667], ["LATIN", 1]]}, "TB": {"letters": 652, "expected_share": 1.0, "top": [["TELUGU", 652]]}}
+{"key": "te/002", "lang": "te", "I": {"letters": 237, "expected_share": 0.9958, "top": [["TELUGU", 236], ["DEVANAGARI", 1]]}, "TB": {"letters": 232, "expected_share": 1.0, "top": [["TELUGU", 232]]}}
+{"key": "te/003", "lang": "te", "I": {"letters": 568, "expected_share": 0.9982, "top": [["TELUGU", 567], ["LATIN", 1]]}, "TB": {"letters": 558, "expected_share": 1.0, "top": [["TELUGU", 558]]}}
+{"key": "te/007", "lang": "te", "I": {"letters": 313, "expected_share": 0.984, "top": [["TELUGU", 308], ["LATIN", 5]]}, "TB": {"letters": 313, "expected_share": 1.0, "top": [["TELUGU", 313]]}}
+{"key": "te/010", "lang": "te", "I": {"letters": 565, "expected_share": 0.9965, "top": [["TELUGU", 563], ["LATIN", 2]]}, "TB": {"letters": 529, "expected_share": 1.0, "top": [["TELUGU", 529]]}}
+{"key": "te/011", "lang": "te", "I": {"letters": 960, "expected_share": 1.0, "top": [["TELUGU", 960]]}, "TB": {"letters": 965, "expected_share": 1.0, "top": [["TELUGU", 965]]}}
+{"key": "te/013", "lang": "te", "I": {"letters": 968, "expected_share": 0.9928, "top": [["TELUGU", 961], ["LATIN", 7]]}, "TB": {"letters": 978, "expected_share": 1.0, "top": [["TELUGU", 978]]}}
+{"key": "te/015", "lang": "te", "I": {"letters": 389, "expected_share": 0.9974, "top": [["TELUGU", 388], ["LATIN", 1]]}, "TB": {"letters": 392, "expected_share": 1.0, "top": [["TELUGU", 392]]}}
+{"key": "te/016", "lang": "te", "I": {"letters": 332, "expected_share": 0.997, "top": [["TELUGU", 331], ["LATIN", 1]]}, "TB": {"letters": 336, "expected_share": 1.0, "top": [["TELUGU", 336]]}}
+{"key": "te/017", "lang": "te", "I": {"letters": 989, "expected_share": 1.0, "top": [["TELUGU", 989]]}, "TB": {"letters": 991, "expected_share": 1.0, "top": [["TELUGU", 991]]}}
+{"key": "te/018", "lang": "te", "I": {"letters": 863, "expected_share": 0.9606, "top": [["TELUGU", 829], ["LATIN", 34]]}, "TB": {"letters": 1002, "expected_share": 1.0, "top": [["TELUGU", 1002]]}}
+{"key": "te/019", "lang": "te", "I": {"letters": 323, "expected_share": 0.8483, "top": [["TELUGU", 274], ["LATIN", 49]]}, "TB": {"letters": 274, "expected_share": 1.0, "top": [["TELUGU", 274]]}}
+{"key": "te/020", "lang": "te", "I": {"letters": 2069, "expected_share": 1.0, "top": [["TELUGU", 2069]]}, "TB": {"letters": 2074, "expected_share": 1.0, "top": [["TELUGU", 2074]]}}
+{"key": "te/021", "lang": "te", "I": {"letters": 928, "expected_share": 0.9881, "top": [["TELUGU", 917], ["LATIN", 11]]}, "TB": {"letters": 939, "expected_share": 1.0, "top": [["TELUGU", 939]]}}
+{"key": "te/023", "lang": "te", "I": {"letters": 864, "expected_share": 1.0, "top": [["TELUGU", 864]]}, "TB": {"letters": 870, "expected_share": 1.0, "top": [["TELUGU", 870]]}}
+{"key": "te/024", "lang": "te", "I": {"letters": 708, "expected_share": 0.9915, "top": [["TELUGU", 702], ["LATIN", 6]]}, "TB": {"letters": 690, "expected_share": 1.0, "top": [["TELUGU", 690]]}}
+{"key": "te/025", "lang": "te", "I": {"letters": 578, "expected_share": 0.9239, "top": [["TELUGU", 534], ["LATIN", 44]]}, "TB": {"letters": 524, "expected_share": 1.0, "top": [["TELUGU", 524]]}}
+{"key": "te/028", "lang": "te", "I": {"letters": 174, "expected_share": 0.0, "top": [["MALAYALAM", 135], ["LATIN", 23]]}, "TB": {"letters": 369, "expected_share": 1.0, "top": [["TELUGU", 369]]}}
+{"key": "te/029", "lang": "te", "I": {"letters": 716, "expected_share": 0.9958, "top": [["TELUGU", 713], ["CYRILLIC", 2]]}, "TB": {"letters": 700, "expected_share": 1.0, "top": [["TELUGU", 700]]}}
+{"key": "te/030", "lang": "te", "I": {"letters": 601, "expected_share": 0.9967, "top": [["TELUGU", 599], ["LATIN", 2]]}, "TB": {"letters": 610, "expected_share": 1.0, "top": [["TELUGU", 610]]}}
+{"key": "te/032", "lang": "te", "I": {"letters": 369, "expected_share": 0.8808, "top": [["TELUGU", 325], ["LATIN", 44]]}, "TB": {"letters": 331, "expected_share": 1.0, "top": [["TELUGU", 331]]}}
+{"key": "te/034", "lang": "te", "I": {"letters": 810, "expected_share": 0.963, "top": [["TELUGU", 780], ["LATIN", 30]]}, "TB": {"letters": 816, "expected_share": 1.0, "top": [["TELUGU", 816]]}}
+{"key": "te/038", "lang": "te", "I": {"letters": 500, "expected_share": 0.998, "top": [["TELUGU", 499], ["LATIN", 1]]}, "TB": {"letters": 498, "expected_share": 1.0, "top": [["TELUGU", 498]]}}
+{"key": "te/039", "lang": "te", "I": {"letters": 810, "expected_share": 0.9988, "top": [["TELUGU", 809], ["LATIN", 1]]}, "TB": {"letters": 800, "expected_share": 1.0, "top": [["TELUGU", 800]]}}
+{"key": "te/040", "lang": "te", "I": {"letters": 455, "expected_share": 0.9385, "top": [["TELUGU", 427], ["LATIN", 27]]}, "TB": {"letters": 454, "expected_share": 1.0, "top": [["TELUGU", 454]]}}
+{"key": "te/042", "lang": "te", "I": {"letters": 525, "expected_share": 0.9962, "top": [["TELUGU", 523], ["LATIN", 2]]}, "TB": {"letters": 513, "expected_share": 1.0, "top": [["TELUGU", 513]]}}
+{"key": "te/043", "lang": "te", "I": {"letters": 906, "expected_share": 0.9757, "top": [["TELUGU", 884], ["LATIN", 22]]}, "TB": {"letters": 927, "expected_share": 1.0, "top": [["TELUGU", 927]]}}
+{"key": "te/044", "lang": "te", "I": {"letters": 548, "expected_share": 0.9982, "top": [["TELUGU", 547], ["LATIN", 1]]}, "TB": {"letters": 541, "expected_share": 1.0, "top": [["TELUGU", 541]]}}
+{"key": "te/045", "lang": "te", "I": {"letters": 445, "expected_share": 0.8966, "top": [["TELUGU", 399], ["LATIN", 46]]}, "TB": {"letters": 363, "expected_share": 1.0, "top": [["TELUGU", 363]]}}
+{"key": "th/002", "lang": "th", "I": {"letters": 576, "expected_share": 1.0, "top": [["THAI", 576]]}, "TB": {"letters": 602, "expected_share": 1.0, "top": [["THAI", 602]]}}
+{"key": "th/003", "lang": "th", "I": {"letters": 306, "expected_share": 1.0, "top": [["THAI", 306]]}, "TB": {"letters": 341, "expected_share": 1.0, "top": [["THAI", 341]]}}
+{"key": "th/004", "lang": "th", "I": {"letters": 599, "expected_share": 1.0, "top": [["THAI", 599]]}, "TB": {"letters": 649, "expected_share": 1.0, "top": [["THAI", 649]]}}
+{"key": "th/006", "lang": "th", "I": {"letters": 270, "expected_share": 0.9963, "top": [["THAI", 269], ["LATIN", 1]]}, "TB": {"letters": 318, "expected_share": 1.0, "top": [["THAI", 318]]}}
+{"key": "th/007", "lang": "th", "I": {"letters": 634, "expected_share": 0.9984, "top": [["THAI", 633], ["LATIN", 1]]}, "TB": {"letters": 848, "expected_share": 1.0, "top": [["THAI", 848]]}}
+{"key": "th/008", "lang": "th", "I": {"letters": 935, "expected_share": 1.0, "top": [["THAI", 935]]}, "TB": {"letters": 1028, "expected_share": 1.0, "top": [["THAI", 1028]]}}
+{"key": "th/009", "lang": "th", "I": {"letters": 239, "expected_share": 1.0, "top": [["THAI", 239]]}, "TB": {"letters": 240, "expected_share": 1.0, "top": [["THAI", 240]]}}
+{"key": "th/010", "lang": "th", "I": {"letters": 255, "expected_share": 0.9961, "top": [["THAI", 254], ["LATIN", 1]]}, "TB": {"letters": 307, "expected_share": 1.0, "top": [["THAI", 307]]}}
+{"key": "th/011", "lang": "th", "I": {"letters": 598, "expected_share": 0.9933, "top": [["THAI", 594], ["LATIN", 4]]}, "TB": {"letters": 666, "expected_share": 1.0, "top": [["THAI", 666]]}}
+{"key": "th/012", "lang": "th", "I": {"letters": 520, "expected_share": 1.0, "top": [["THAI", 520]]}, "TB": {"letters": 563, "expected_share": 1.0, "top": [["THAI", 563]]}}
+{"key": "th/013", "lang": "th", "I": {"letters": 1349, "expected_share": 1.0, "top": [["THAI", 1349]]}, "TB": {"letters": 1351, "expected_share": 1.0, "top": [["THAI", 1351]]}}
+{"key": "th/015", "lang": "th", "I": {"letters": 724, "expected_share": 0.9848, "top": [["THAI", 713], ["LATIN", 11]]}, "TB": {"letters": 813, "expected_share": 1.0, "top": [["THAI", 813]]}}
+{"key": "th/016", "lang": "th", "I": {"letters": 286, "expected_share": 1.0, "top": [["THAI", 286]]}, "TB": {"letters": 311, "expected_share": 1.0, "top": [["THAI", 311]]}}
+{"key": "th/018", "lang": "th", "I": {"letters": 975, "expected_share": 1.0, "top": [["THAI", 975]]}, "TB": {"letters": 1105, "expected_share": 1.0, "top": [["THAI", 1105]]}}
+{"key": "th/020", "lang": "th", "I": {"letters": 1433, "expected_share": 0.9491, "top": [["THAI", 1360], ["LATIN", 73]]}, "TB": {"letters": 1506, "expected_share": 1.0, "top": [["THAI", 1506]]}}
+{"key": "th/021", "lang": "th", "I": {"letters": 1145, "expected_share": 0.9956, "top": [["THAI", 1140], ["LATIN", 5]]}, "TB": {"letters": 1350, "expected_share": 1.0, "top": [["THAI", 1350]]}}
+{"key": "th/022", "lang": "th", "I": {"letters": 401, "expected_share": 0.9177, "top": [["THAI", 368], ["LATIN", 33]]}, "TB": {"letters": 494, "expected_share": 1.0, "top": [["THAI", 494]]}}
+{"key": "th/023", "lang": "th", "I": {"letters": 998, "expected_share": 0.998, "top": [["THAI", 996], ["LATIN", 2]]}, "TB": {"letters": 1074, "expected_share": 1.0, "top": [["THAI", 1074]]}}
+{"key": "th/024", "lang": "th", "I": {"letters": 463, "expected_share": 0.9892, "top": [["THAI", 458], ["LATIN", 4]]}, "TB": {"letters": 513, "expected_share": 1.0, "top": [["THAI", 513]]}}
+{"key": "th/025", "lang": "th", "I": {"letters": 1641, "expected_share": 1.0, "top": [["THAI", 1641]]}, "TB": {"letters": 1645, "expected_share": 1.0, "top": [["THAI", 1645]]}}
+{"key": "th/026", "lang": "th", "I": {"letters": 1354, "expected_share": 0.9919, "top": [["THAI", 1343], ["LATIN", 10]]}, "TB": {"letters": 1446, "expected_share": 1.0, "top": [["THAI", 1446]]}}
+{"key": "th/028", "lang": "th", "I": {"letters": 604, "expected_share": 1.0, "top": [["THAI", 604]]}, "TB": {"letters": 649, "expected_share": 1.0, "top": [["THAI", 649]]}}
+{"key": "th/029", "lang": "th", "I": {"letters": 881, "expected_share": 0.9546, "top": [["THAI", 841], ["LATIN", 40]]}, "TB": {"letters": 951, "expected_share": 1.0, "top": [["THAI", 951]]}}
+{"key": "th/030", "lang": "th", "I": {"letters": 469, "expected_share": 0.9979, "top": [["THAI", 468], ["LATIN", 1]]}, "TB": {"letters": 462, "expected_share": 1.0, "top": [["THAI", 462]]}}
+{"key": "th/031", "lang": "th", "I": {"letters": 578, "expected_share": 1.0, "top": [["THAI", 578]]}, "TB": {"letters": 612, "expected_share": 1.0, "top": [["THAI", 612]]}}
+{"key": "th/032", "lang": "th", "I": {"letters": 1350, "expected_share": 0.9956, "top": [["THAI", 1344], ["LATIN", 5]]}, "TB": {"letters": 1436, "expected_share": 1.0, "top": [["THAI", 1436]]}}
+{"key": "th/033", "lang": "th", "I": {"letters": 1309, "expected_share": 0.9954, "top": [["THAI", 1303], ["LATIN", 4]]}, "TB": {"letters": 1335, "expected_share": 1.0, "top": [["THAI", 1335]]}}
+{"key": "th/034", "lang": "th", "I": {"letters": 553, "expected_share": 1.0, "top": [["THAI", 553]]}, "TB": {"letters": 569, "expected_share": 1.0, "top": [["THAI", 569]]}}
+{"key": "th/036", "lang": "th", "I": {"letters": 645, "expected_share": 1.0, "top": [["THAI", 645]]}, "TB": {"letters": 653, "expected_share": 1.0, "top": [["THAI", 653]]}}
+{"key": "th/037", "lang": "th", "I": {"letters": 1204, "expected_share": 0.9992, "top": [["THAI", 1203], ["LATIN", 1]]}, "TB": {"letters": 1245, "expected_share": 1.0, "top": [["THAI", 1245]]}}
+{"key": "uk/000", "lang": "uk", "I": {"letters": 2213, "expected_share": 0.9236, "top": [["CYRILLIC", 2044], ["LATIN", 169]]}, "TB": {"letters": 2191, "expected_share": 1.0, "top": [["CYRILLIC", 2191]]}}
+{"key": "uk/002", "lang": "uk", "I": {"letters": 1869, "expected_share": 0.9567, "top": [["CYRILLIC", 1788], ["LATIN", 81]]}, "TB": {"letters": 1821, "expected_share": 1.0, "top": [["CYRILLIC", 1821]]}}
+{"key": "uk/003", "lang": "uk", "I": {"letters": 742, "expected_share": 1.0, "top": [["CYRILLIC", 742]]}, "TB": {"letters": 742, "expected_share": 1.0, "top": [["CYRILLIC", 742]]}}
+{"key": "uk/004", "lang": "uk", "I": {"letters": 2152, "expected_share": 0.9935, "top": [["CYRILLIC", 2138], ["LATIN", 14]]}, "TB": {"letters": 2160, "expected_share": 1.0, "top": [["CYRILLIC", 2160]]}}
+{"key": "uk/005", "lang": "uk", "I": {"letters": 2722, "expected_share": 0.968, "top": [["CYRILLIC", 2635], ["LATIN", 87]]}, "TB": {"letters": 2738, "expected_share": 1.0, "top": [["CYRILLIC", 2738]]}}
+{"key": "uk/006", "lang": "uk", "I": {"letters": 1701, "expected_share": 0.9988, "top": [["CYRILLIC", 1699], ["LATIN", 2]]}, "TB": {"letters": 1706, "expected_share": 1.0, "top": [["CYRILLIC", 1706]]}}
+{"key": "uk/007", "lang": "uk", "I": {"letters": 1924, "expected_share": 0.9995, "top": [["CYRILLIC", 1923], ["LATIN", 1]]}, "TB": {"letters": 1927, "expected_share": 1.0, "top": [["CYRILLIC", 1927]]}}
+{"key": "uk/008", "lang": "uk", "I": {"letters": 1816, "expected_share": 0.9994, "top": [["CYRILLIC", 1815], ["LATIN", 1]]}, "TB": {"letters": 1822, "expected_share": 1.0, "top": [["CYRILLIC", 1822]]}}
+{"key": "uk/009", "lang": "uk", "I": {"letters": 1136, "expected_share": 1.0, "top": [["CYRILLIC", 1136]]}, "TB": {"letters": 1139, "expected_share": 1.0, "top": [["CYRILLIC", 1139]]}}
+{"key": "uk/010", "lang": "uk", "I": {"letters": 163, "expected_share": 0.9264, "top": [["CYRILLIC", 151], ["LATIN", 12]]}, "TB": {"letters": 173, "expected_share": 1.0, "top": [["CYRILLIC", 173]]}}
+{"key": "uk/011", "lang": "uk", "I": {"letters": 753, "expected_share": 0.8805, "top": [["CYRILLIC", 663], ["LATIN", 90]]}, "TB": {"letters": 768, "expected_share": 1.0, "top": [["CYRILLIC", 768]]}}
+{"key": "uk/012", "lang": "uk", "I": {"letters": 375, "expected_share": 1.0, "top": [["CYRILLIC", 375]]}, "TB": {"letters": 375, "expected_share": 1.0, "top": [["CYRILLIC", 375]]}}
+{"key": "uk/013", "lang": "uk", "I": {"letters": 1537, "expected_share": 1.0, "top": [["CYRILLIC", 1537]]}, "TB": {"letters": 1540, "expected_share": 1.0, "top": [["CYRILLIC", 1540]]}}
+{"key": "uk/014", "lang": "uk", "I": {"letters": 879, "expected_share": 0.9852, "top": [["CYRILLIC", 866], ["LATIN", 13]]}, "TB": {"letters": 873, "expected_share": 1.0, "top": [["CYRILLIC", 873]]}}
+{"key": "uk/015", "lang": "uk", "I": {"letters": 229, "expected_share": 0.952, "top": [["CYRILLIC", 218], ["LATIN", 11]]}, "TB": {"letters": 272, "expected_share": 1.0, "top": [["CYRILLIC", 272]]}}
+{"key": "uk/016", "lang": "uk", "I": {"letters": 781, "expected_share": 0.9859, "top": [["CYRILLIC", 770], ["LATIN", 11]]}, "TB": {"letters": 775, "expected_share": 1.0, "top": [["CYRILLIC", 775]]}}
+{"key": "uk/017", "lang": "uk", "I": {"letters": 331, "expected_share": 0.9547, "top": [["CYRILLIC", 316], ["LATIN", 15]]}, "TB": {"letters": 325, "expected_share": 1.0, "top": [["CYRILLIC", 325]]}}
+{"key": "uk/018", "lang": "uk", "I": {"letters": 836, "expected_share": 1.0, "top": [["CYRILLIC", 836]]}, "TB": {"letters": 838, "expected_share": 1.0, "top": [["CYRILLIC", 838]]}}
+{"key": "uk/019", "lang": "uk", "I": {"letters": 987, "expected_share": 1.0, "top": [["CYRILLIC", 987]]}, "TB": {"letters": 990, "expected_share": 1.0, "top": [["CYRILLIC", 990]]}}
+{"key": "uk/020", "lang": "uk", "I": {"letters": 1109, "expected_share": 0.982, "top": [["CYRILLIC", 1089], ["LATIN", 20]]}, "TB": {"letters": 1148, "expected_share": 1.0, "top": [["CYRILLIC", 1148]]}}
+{"key": "uk/021", "lang": "uk", "I": {"letters": 798, "expected_share": 1.0, "top": [["CYRILLIC", 798]]}, "TB": {"letters": 804, "expected_share": 1.0, "top": [["CYRILLIC", 804]]}}
+{"key": "uk/022", "lang": "uk", "I": {"letters": 257, "expected_share": 1.0, "top": [["CYRILLIC", 257]]}, "TB": {"letters": 258, "expected_share": 1.0, "top": [["CYRILLIC", 258]]}}
+{"key": "uk/023", "lang": "uk", "I": {"letters": 1165, "expected_share": 0.9768, "top": [["CYRILLIC", 1138], ["LATIN", 27]]}, "TB": {"letters": 1162, "expected_share": 1.0, "top": [["CYRILLIC", 1162]]}}
+{"key": "uk/024", "lang": "uk", "I": {"letters": 1282, "expected_share": 1.0, "top": [["CYRILLIC", 1282]]}, "TB": {"letters": 1291, "expected_share": 1.0, "top": [["CYRILLIC", 1291]]}}
+{"key": "uk/025", "lang": "uk", "I": {"letters": 1082, "expected_share": 0.9972, "top": [["CYRILLIC", 1079], ["LATIN", 3]]}, "TB": {"letters": 1089, "expected_share": 1.0, "top": [["CYRILLIC", 1089]]}}
+{"key": "uk/030", "lang": "uk", "I": {"letters": 249, "expected_share": 1.0, "top": [["CYRILLIC", 249]]}, "TB": {"letters": 306, "expected_share": 1.0, "top": [["CYRILLIC", 306]]}}
+{"key": "uk/031", "lang": "uk", "I": {"letters": 1914, "expected_share": 0.9995, "top": [["CYRILLIC", 1913], ["LATIN", 1]]}, "TB": {"letters": 1914, "expected_share": 1.0, "top": [["CYRILLIC", 1914]]}}
+{"key": "uk/032", "lang": "uk", "I": {"letters": 939, "expected_share": 0.9787, "top": [["CYRILLIC", 919], ["LATIN", 20]]}, "TB": {"letters": 932, "expected_share": 1.0, "top": [["CYRILLIC", 932]]}}
+{"key": "uk/033", "lang": "uk", "I": {"letters": 648, "expected_share": 0.9676, "top": [["CYRILLIC", 627], ["LATIN", 21]]}, "TB": {"letters": 654, "expected_share": 1.0, "top": [["CYRILLIC", 654]]}}
+{"key": "uk/034", "lang": "uk", "I": {"letters": 992, "expected_share": 0.997, "top": [["CYRILLIC", 989], ["LATIN", 3]]}, "TB": {"letters": 997, "expected_share": 1.0, "top": [["CYRILLIC", 997]]}}
