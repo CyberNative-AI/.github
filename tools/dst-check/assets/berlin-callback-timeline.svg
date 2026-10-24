@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="614" viewBox="0 0 360 614" role="img" aria-labelledby="title desc">
+  <title id="title">Berlin's clock moves back; two measured callbacks follow</title>
+  <desc id="desc">Controlled-time example: cron 4.4.0, expression 0 0 3 * * *, Europe/Berlin, 25 October 2026. Clock context, not a measured callback: 00:59:59 UTC is 02:59:59 at offset +02:00. At the fall-back instant, the measured callback at 01:00:00 UTC is 02:00:00 at offset +01:00, labelled SHIFTED because it is outside the 03:00 expression. One hour later the measured callback at 02:00:00 UTC is 03:00:00 at offset +01:00, labelled ok. Times below share the date 2026-10-25. The time axis is schematic, not to scale. Labels use the checker's comparison policy, not a universal scheduler defect verdict.</desc>
+  <defs>
+    <linearGradient id="metal" gradientUnits="userSpaceOnUse" x1="26" y1="0" x2="44" y2="0">
+      <stop offset="0" stop-color="#3c3d45"/>
+      <stop offset=".22" stop-color="#e8e9e7"/>
+      <stop offset=".38" stop-color="#828792"/>
+      <stop offset=".55" stop-color="#24252b"/>
+      <stop offset=".78" stop-color="#b2c8f0"/>
+      <stop offset="1" stop-color="#545965"/>
+    </linearGradient>
+  </defs>
+  <rect width="360" height="614" rx="12" fill="#151518"/>
+  <g font-family="Arial, Helvetica, sans-serif" fill="#e8e9e7">
+    <text x="22" y="31" font-size="13" letter-spacing="1.6" fill="#b2c8f0">DST-CHECK / CALLBACK TRACE</text>
+    <text x="22" y="66" font-size="22" font-weight="600">Two callbacks. One match.</text>
+    <text x="22" y="92" font-size="14" fill="#b2b4bd">Europe/Berlin · 2026-10-25</text>
+    <text x="22" y="120" font-family="monospace" font-size="15">0 0 3 * * * · cron@4.4.0</text>
+    <text x="22" y="143" font-size="14" fill="#b2b4bd">Requested local time: 03:00</text>
+
+    <path d="M35 189 V239 M35 314 V400 M35 475 V500" fill="none" stroke="url(#metal)" stroke-width="6"/>
+    <path d="M35 185 V239" fill="none" stroke="#b2b4bd" stroke-width="1" stroke-dasharray="3 5"/>
+    <circle cx="35" cy="177" r="5" fill="#151518" stroke="#b2b4bd" stroke-width="1.5"/>
+    <text x="55" y="182" font-size="13" fill="#b2b4bd">BEFORE · clock context only</text>
+    <text x="55" y="210" font-family="monospace" font-size="17">00:59:59Z</text>
+    <text x="55" y="233" font-size="15" fill="#b2b4bd">02:59:59 local · UTC+02:00</text>
+
+    <path d="M21 261 H338" fill="none" stroke="#3c3d45"/>
+    <text x="55" y="281" font-size="13" fill="#b2c8f0">CLOCK BACK · −60 minutes</text>
+    <path d="M35 298 L44 307 L35 316 L26 307 Z" fill="#b2c8f0"/>
+    <text x="55" y="312" font-family="monospace" font-size="17">01:00:00Z</text>
+    <text x="55" y="336" font-size="15">02:00:00 local · UTC+01:00</text>
+    <text x="55" y="364" font-family="monospace" font-size="15" font-weight="600" fill="#b2c8f0">SHIFTED</text>
+    <text x="137" y="364" font-size="14" fill="#b2b4bd">outside expression</text>
+
+    <text x="55" y="401" font-size="13" fill="#b2b4bd">ONE ELAPSED HOUR LATER</text>
+    <circle cx="35" cy="426" r="8" fill="url(#metal)"/>
+    <circle cx="35" cy="426" r="3" fill="#151518"/>
+    <text x="55" y="431" font-family="monospace" font-size="17">02:00:00Z</text>
+    <text x="55" y="455" font-size="15">03:00:00 local · UTC+01:00</text>
+    <text x="55" y="483" font-family="monospace" font-size="15" font-weight="600">ok</text>
+    <text x="83" y="483" font-size="14" fill="#b2b4bd">matches expression</text>
+
+    <path d="M22 514 H338" fill="none" stroke="#3c3d45"/>
+    <text x="22" y="542" font-size="14">Two measured callbacks.</text>
+    <text x="22" y="565" font-size="14">Only the second matches 03:00.</text>
+    <text x="22" y="592" font-size="13" fill="#b2b4bd">Controlled time · schematic, not to scale</text>
+  </g>
+</svg>

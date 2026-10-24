@@ -29,6 +29,14 @@ Consequence: At least one callback ran at a local time that does not match the e
 
 Here each row is one callback: label, UTC instant, local time. At the 25 October fall-back, the job is called at 02:00 local, outside its expression, and again at 03:00. The full report also prints three method and policy lines after the first line, and closing `Safer hint` and `Limits` lines; they are omitted here.
 
+### Why the first callback is `SHIFTED`
+
+<img src="assets/berlin-callback-timeline.svg" width="360" alt="Berlin, 25 October 2026: just before the clock change, 00:59:59Z is 02:59:59 local at UTC+02:00 (clock context, not a callback). The measured callback at 01:00:00Z is 02:00:00 local at UTC+01:00, labelled SHIFTED. The callback at 02:00:00Z is 03:00:00 local at UTC+01:00, labelled ok." />
+
+The local clock moves back while UTC continues forward. The 02:00 callback is `SHIFTED`, not `DUPLICATED`: it falls outside this job's 03:00 expression. The pre-change point is clock context; only the two marked callbacks are measured report rows. The diagram is schematic, not to scale.
+
+This is the recorded controlled-time example above, not a production trace. The existing [`comparisonPolicy` and `calendarPolicy`](#read-the-calendar-rule-before-the-dst-labels) remain comparison baselines, not universal defect verdicts. For your job, [confirm the actual runtime expression, timezone and installed executing package/version](#find-schedule-candidates-and-check-confirmed-runtime-values) before checking it.
+
 ## Find schedule candidates and check confirmed runtime values
 
 1. From the project root, list source lines that may contain `cron`, `node-cron` or `node-schedule` calls:
