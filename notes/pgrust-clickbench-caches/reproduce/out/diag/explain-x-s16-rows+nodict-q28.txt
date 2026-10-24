@@ -1,0 +1,24 @@
+ Limit  (cost=324225.56..324225.62 rows=25 width=104) (actual time=167.589..167.951 rows=21.00 loops=1)
+   Output: (regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)), (avg(octet_length(referer))), (count(*)), (min(referer))
+   ->  Sort  (cost=324225.56..327377.67 rows=1260847 width=104) (actual time=167.589..167.621 rows=21.00 loops=1)
+         Output: (regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)), (avg(octet_length(referer))), (count(*)), (min(referer))
+         Sort Key: (avg(octet_length(hits.referer))) DESC
+         ->  HashAggregate  (cost=229543.14..288645.36 rows=1260847 width=104) (actual: not counted)
+               Output: (regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)), avg(octet_length(referer)), count(*), min(referer)
+               Group Key: regexp_replace(hits.referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)
+               Filter: (count(*) > 100000)
+               ->  Seq Scan on public.hits  (cost=0.00..69879.81 rows=13445333 width=108) (actual time=0.159..167.244 rows=13438474.00 loops=1)
+                     Output: regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text), referer
+                     Filter: (hits.referer <> ''::text)
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 166 claims
+   p0  section W6  167.085 ms  claims 166
+   p1  emit (NoDrivingSite)  0.334 ms
+   p2  emit (NoDrivingSite)  0.032 ms
+   Run: 167.951 ms, leader alone 0.866 ms
+   Granules: 1967 read, 1 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 7.679 ms
+ Planning:
+   Buffers: shared hit=83
+ Planning Time: 0.456 ms
+ Execution Time: 175.702 ms
+

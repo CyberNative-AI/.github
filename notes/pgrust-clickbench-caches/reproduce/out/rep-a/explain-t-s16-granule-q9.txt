@@ -1,0 +1,23 @@
+ Limit  (cost=287369.11..287369.14 rows=10 width=60) (actual time=47.950..48.140 rows=10.00 loops=1)
+   Output: regionid, (sum(advengineid)), (count(*)), (avg(resolutionwidth)), (count(DISTINCT userid))
+   ->  Sort  (cost=287369.11..287381.01 rows=4760 width=60) (actual time=47.950..47.963 rows=10.00 loops=1)
+         Output: regionid, (sum(advengineid)), (count(*)), (avg(resolutionwidth)), (count(DISTINCT userid))
+         Sort Key: (count(*)) DESC
+         ->  HashAggregate  (cost=261538.40..287266.25 rows=4760 width=60) (actual: not counted)
+               Output: regionid, sum(advengineid), count(*), avg(resolutionwidth), count(DISTINCT userid)
+               Group Key: hits.regionid
+               Distinct: hashed
+               ->  Seq Scan on public.hits  (cost=0.00..21538.40 rows=16000000 width=16) (actual time=0.180..47.900 rows=16000000.00 loops=1)
+                     Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 179 claims
+   p0  section W6  47.720 ms  claims 179
+   p1  emit (NoDrivingSite)  0.043 ms
+   p2  emit (NoDrivingSite)  0.013 ms
+   Run: 48.140 ms, leader alone 0.420 ms
+   Granules: 1968 read, 0 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 2.554 ms
+ Planning:
+   Buffers: shared hit=78
+ Planning Time: 0.288 ms
+ Execution Time: 50.755 ms
+

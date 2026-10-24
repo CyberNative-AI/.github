@@ -1,0 +1,21 @@
+ Limit  (cost=7782.96..7782.96 rows=10 width=15) (actual time=4.214..4.384 rows=10.00 loops=1)
+   Output: searchphrase, eventtime
+   ->  Sort  (cost=7782.96..7782.96 rows=178862 width=15) (actual time=4.214..4.232 rows=10.00 loops=1)
+         Output: searchphrase, eventtime
+         Sort Key: hits.eventtime, hits.searchphrase COLLATE "C"
+         Gravity Rewrite: zone walk on eventtime asc nulls last
+         Sort Method: top-N heapsort  Memory: 25kB
+         ->  Seq Scan on public.hits  (cost=0.00..553.78 rows=178862 width=15) (actual time=0.136..4.210 rows=140997.00 loops=1)
+               Output: searchphrase, eventtime
+               Filter: (hits.searchphrase <> ''::text)
+ Gravity: driver road, width 6, 2 pipelines, 2 sites, 1 sections, 108 claims
+   p0  section W6  4.073 ms  claims 108
+   p1  emit (NoDrivingSite)  0.017 ms
+   Run: 4.384 ms, leader alone 0.311 ms
+   Granules: 144 read, 0 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 4.138 ms
+ Planning:
+   Buffers: shared hit=27
+ Planning Time: 0.255 ms
+ Execution Time: 8.592 ms
+

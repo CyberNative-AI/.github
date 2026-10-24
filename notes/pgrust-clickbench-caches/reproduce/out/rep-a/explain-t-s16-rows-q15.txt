@@ -1,0 +1,22 @@
+ Limit  (cost=170675.13..170675.16 rows=10 width=16) (actual time=42.367..42.546 rows=10.00 loops=1)
+   Output: userid, (count(*))
+   ->  Sort  (cost=170675.13..177092.22 rows=2566835 width=16) (actual time=42.367..42.381 rows=10.00 loops=1)
+         Output: userid, (count(*))
+         Sort Key: (count(*)) DESC
+         ->  HashAggregate  (cost=89538.40..115206.75 rows=2566835 width=16) (actual: not counted)
+               Output: userid, count(*)
+               Group Key: hits.userid
+               ->  Seq Scan on public.hits  (cost=0.00..9538.40 rows=16000000 width=8) (actual time=0.214..42.309 rows=16000000.00 loops=1)
+                     Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 170 claims
+   p0  section W6  42.095 ms  claims 170
+   p1  emit (NoDrivingSite)  0.051 ms
+   p2  emit (NoDrivingSite)  0.014 ms
+   Run: 42.546 ms, leader alone 0.451 ms
+   Granules: 1968 read, 0 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 2.875 ms
+ Planning:
+   Buffers: shared hit=69
+ Planning Time: 0.388 ms
+ Execution Time: 45.499 ms
+

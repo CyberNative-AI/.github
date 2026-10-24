@@ -1,0 +1,22 @@
+ Limit  (cost=317883.68..317883.70 rows=10 width=55) (actual time=166.888..167.099 rows=10.00 loops=1)
+   Output: userid, (EXTRACT(minute FROM eventtime)), searchphrase, (count(*))
+   ->  Sort  (cost=317883.68..324300.76 rows=2566835 width=55) (actual time=166.888..166.908 rows=10.00 loops=1)
+         Output: userid, (EXTRACT(minute FROM eventtime)), searchphrase, (count(*))
+         Sort Key: (count(*)) DESC
+         ->  HashAggregate  (cost=233538.40..262415.29 rows=2566835 width=55) (actual: not counted)
+               Output: userid, (EXTRACT(minute FROM eventtime)), searchphrase, count(*)
+               Group Key: hits.userid, EXTRACT(minute FROM hits.eventtime), hits.searchphrase
+               ->  Seq Scan on public.hits  (cost=0.00..73538.40 rows=16000000 width=47) (actual time=0.138..166.827 rows=16000000.00 loops=1)
+                     Output: userid, EXTRACT(minute FROM eventtime), searchphrase
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 247 claims
+   p0  section W6  166.688 ms  claims 247
+   p1  emit (NoDrivingSite)  0.053 ms
+   p2  emit (NoDrivingSite)  0.020 ms
+   Run: 167.099 ms, leader alone 0.411 ms
+   Granules: 1968 read, 0 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 3.283 ms
+ Planning:
+   Buffers: shared hit=92
+ Planning Time: 0.383 ms
+ Execution Time: 170.437 ms
+

@@ -1,0 +1,23 @@
+ Limit  (cost=92361.99..92362.02 rows=10 width=17) (actual time=29.744..30.810 rows=10.00 loops=1)
+   Output: searchengineid, searchphrase, (count(*))
+   ->  Sort  (cost=92361.99..95258.49 rows=1158600 width=17) (actual time=29.744..29.781 rows=10.00 loops=1)
+         Output: searchengineid, searchphrase, (count(*))
+         Sort Key: (count(*)) DESC, hits.searchengineid, hits.searchphrase COLLATE "C"
+         ->  HashAggregate  (cost=55739.06..67325.06 rows=1158600 width=17) (actual: not counted)
+               Output: searchengineid, searchphrase, count(*)
+               Group Key: hits.searchengineid, hits.searchphrase
+               ->  Seq Scan on public.hits  (cost=0.00..41239.07 rows=1933333 width=9) (actual time=0.177..29.684 rows=1934837.00 loops=1)
+                     Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+                     Filter: (hits.searchphrase <> ''::text)
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 149 claims
+   p0  section W6  29.506 ms  claims 149
+   p1  emit (NoDrivingSite)  0.052 ms
+   p2  emit (NoDrivingSite)  0.037 ms
+   Run: 30.810 ms, leader alone 1.304 ms
+   Granules: 1958 read, 10 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 4.086 ms
+ Planning:
+   Buffers: shared hit=88
+ Planning Time: 0.380 ms
+ Execution Time: 34.972 ms
+
