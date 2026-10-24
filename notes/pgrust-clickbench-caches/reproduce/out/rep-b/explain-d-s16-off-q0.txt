@@ -1,0 +1,13 @@
+ Sort  (cost=45538.42..45538.43 rows=1 width=8) (actual time=0.354..0.412 rows=1.00 loops=1)
+   Output: (count(*))
+   Sort Key: (count(*))
+   Sort Method: quicksort  Memory: 25kB
+   ->  Aggregate  (cost=45538.40..45538.41 rows=1 width=8) (actual time=0.336..0.354 rows=1.00 loops=1)
+         Output: count(*)
+         ->  Seq Scan on public.hits  (cost=0.00..5538.40 rows=16000000 width=0) (actual time=0.169..0.334 rows=16000000.00 loops=1)
+               Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+ Planning:
+   Buffers: shared hit=12
+ Planning Time: 0.225 ms
+ Execution Time: 2.672 ms
+

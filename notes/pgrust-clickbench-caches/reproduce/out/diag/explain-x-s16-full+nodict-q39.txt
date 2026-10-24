@@ -1,0 +1,23 @@
+ Limit  (cost=43633.19..43633.22 rows=10 width=125) (actual time=23.566..23.873 rows=10.00 loops=1)
+   Output: traficsourceid, searchengineid, advengineid, (CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END), url, (count(*))
+   ->  Sort  (cost=43630.69..44832.48 rows=480713 width=125) (actual time=23.566..23.751 rows=1010.00 loops=1)
+         Output: traficsourceid, searchengineid, advengineid, (CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END), url, (count(*))
+         Sort Key: (count(*)) DESC
+         ->  HashAggregate  (cost=11831.19..17239.21 rows=480713 width=125) (actual: not counted)
+               Output: traficsourceid, searchengineid, advengineid, (CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END), url, count(*)
+               Group Key: hits.traficsourceid, hits.searchengineid, hits.advengineid, CASE WHEN ((hits.searchengineid = 0) AND (hits.advengineid = 0)) THEN hits.referer ELSE ''::text END, hits.url
+               ->  Seq Scan on public.hits  (cost=0.00..4242.17 rows=505935 width=117) (actual time=0.163..22.820 rows=600288.00 loops=1)
+                     Output: traficsourceid, searchengineid, advengineid, CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END, url
+                     Filter: ((hits.isrefresh = 0) AND (hits.counterid = 62) AND (hits.eventdate >= '2013-07-01'::date) AND (hits.eventdate <= '2013-07-31'::date))
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 171 claims
+   p0  section W6  22.657 ms  claims 171
+   p1  emit (NoDrivingSite)  0.739 ms
+   p2  emit (NoDrivingSite)  0.185 ms
+   Run: 23.873 ms, leader alone 1.216 ms
+   Granules: 77 read, 1891 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 5.991 ms
+ Planning:
+   Buffers: shared hit=116
+ Planning Time: 0.380 ms
+ Execution Time: 29.909 ms
+

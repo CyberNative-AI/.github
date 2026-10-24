@@ -1,0 +1,23 @@
+ Limit  (cost=47070.75..47070.77 rows=10 width=125) (actual time=79.742..81.051 rows=10.00 loops=1)
+   Output: traficsourceid, searchengineid, advengineid, (CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END), url, (count(*))
+   ->  Sort  (cost=47068.25..48364.14 rows=518356 width=125) (actual time=79.742..80.900 rows=1010.00 loops=1)
+         Output: traficsourceid, searchengineid, advengineid, (CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END), url, (count(*))
+         Sort Key: (count(*)) DESC, hits.traficsourceid, hits.searchengineid, hits.advengineid, (CASE WHEN ((hits.searchengineid = 0) AND (hits.advengineid = 0)) THEN hits.referer ELSE ''::text END) COLLATE "C", hits.url COLLATE "C"
+         ->  HashAggregate  (cost=12778.64..18610.14 rows=518356 width=125) (actual: not counted)
+               Output: traficsourceid, searchengineid, advengineid, (CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END), url, count(*)
+               Group Key: hits.traficsourceid, hits.searchengineid, hits.advengineid, CASE WHEN ((hits.searchengineid = 0) AND (hits.advengineid = 0)) THEN hits.referer ELSE ''::text END, hits.url
+               ->  Seq Scan on public.hits  (cost=0.00..4560.51 rows=547875 width=117) (actual time=0.153..25.458 rows=600288.00 loops=1)
+                     Output: traficsourceid, searchengineid, advengineid, CASE WHEN ((searchengineid = 0) AND (advengineid = 0)) THEN referer ELSE ''::text END, url
+                     Filter: ((hits.isrefresh = 0) AND (hits.counterid = 62) AND (hits.eventdate >= '2013-07-01'::date) AND (hits.eventdate <= '2013-07-31'::date))
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 2 sections, 238 claims
+   p0  section W6  25.305 ms  claims 174
+   p1  section W6  54.272 ms  claims 64
+   p2  emit (NoDrivingSite)  1.158 ms
+   Run: 81.051 ms, leader alone 1.473 ms
+   Granules: 77 read, 1891 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 5.939 ms
+ Planning:
+   Buffers: shared hit=116
+ Planning Time: 0.389 ms
+ Execution Time: 87.051 ms
+

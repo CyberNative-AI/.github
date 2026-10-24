@@ -1,0 +1,23 @@
+ Sort  (cost=17664.53..17664.56 rows=13 width=10) (actual time=1.480..1.579 rows=12.00 loops=1)
+   Output: advengineid, (count(*))
+   Sort Key: (count(*)) DESC, hits.advengineid
+   Sort Method: quicksort  Memory: 25kB
+   ->  HashAggregate  (cost=17664.16..17664.29 rows=13 width=10) (actual time=1.444..1.480 rows=12.00 loops=1)
+         Output: advengineid, count(*)
+         Group Key: hits.advengineid
+         Groups: 12
+         ->  Seq Scan on public.hits  (cost=0.00..16010.83 rows=330667 width=2) (actual time=0.104..1.441 rows=320336.00 loops=1)
+               Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+               Filter: (hits.advengineid <> 0)
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 2 sections, 93 claims
+   p0  section W6  1.337 ms  claims 93
+   p1  serial  0.036 ms
+   p2  emit (NoDrivingSite)  0.010 ms
+   Run: 1.579 ms, leader alone 0.242 ms
+   Granules: 1476 read, 492 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 3.576 ms
+ Planning:
+   Buffers: shared hit=80
+ Planning Time: 0.265 ms
+ Execution Time: 5.194 ms
+

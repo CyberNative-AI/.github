@@ -1,0 +1,16 @@
+ Aggregate  (cost=16828.41..16828.42 rows=1 width=8) (actual time=4.814..5.018 rows=1.00 loops=1)
+   Output: count(*)
+   ->  Seq Scan on public.hits  (cost=0.00..16009.74 rows=327467 width=0) (actual time=0.126..4.808 rows=320336.00 loops=1)
+         Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+         Filter: (hits.advengineid <> 0)
+ Gravity: driver road, width 6, 2 pipelines, 1 sites, 1 sections, 93 claims
+   p0  section W6  4.682 ms  claims 93
+   p1  emit (NoDrivingSite)  0.030 ms
+   Run: 5.018 ms, leader alone 0.336 ms
+   Granules: 1476 read, 492 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 2.075 ms
+ Planning:
+   Buffers: shared hit=8
+ Planning Time: 0.191 ms
+ Execution Time: 7.158 ms
+

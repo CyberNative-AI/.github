@@ -1,0 +1,23 @@
+ Limit  (cost=14427.69..14427.72 rows=10 width=124) (actual time=13.379..13.726 rows=10.00 loops=1)
+   Output: title, (count(*))
+   ->  Sort  (cost=14427.69..15275.24 rows=339018 width=124) (actual time=13.379..13.421 rows=10.00 loops=1)
+         Output: title, (count(*))
+         Sort Key: (count(*)) DESC
+         ->  HashAggregate  (cost=3711.45..7101.63 rows=339018 width=124) (actual: not counted)
+               Output: title, count(*)
+               Group Key: hits.title
+               ->  Seq Scan on public.hits  (cost=0.00..1889.29 rows=364432 width=116) (actual time=0.166..13.271 rows=548873.00 loops=1)
+                     Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+                     Filter: ((hits.isrefresh = 0) AND (hits.counterid = 62) AND (hits.dontcounthits = 0) AND (hits.eventdate >= '2013-07-01'::date) AND (hits.eventdate <= '2013-07-31'::date) AND (hits.title <> ''::text))
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 153 claims
+   p0  section W6  13.104 ms  claims 153
+   p1  emit (NoDrivingSite)  0.093 ms
+   p2  emit (NoDrivingSite)  0.042 ms
+   Run: 13.726 ms, leader alone 0.622 ms
+   Granules: 77 read, 1891 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 5.531 ms
+ Planning:
+   Buffers: shared hit=109
+ Planning Time: 0.451 ms
+ Execution Time: 19.348 ms
+

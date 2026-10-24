@@ -1,0 +1,24 @@
+ Limit  (cost=20920.18..20920.21 rows=10 width=11) (actual time=7.786..7.935 rows=10.00 loops=1)
+   Output: mobilephone, mobilephonemodel, (count(DISTINCT userid))
+   ->  Sort  (cost=20920.18..20928.90 rows=3488 width=11) (actual time=7.786..7.807 rows=10.00 loops=1)
+         Output: mobilephone, mobilephonemodel, (count(DISTINCT userid))
+         Sort Key: (count(DISTINCT hits.userid)) DESC
+         ->  HashAggregate  (cost=14147.42..20844.81 rows=3488 width=11) (actual: not counted)
+               Output: mobilephone, mobilephonemodel, count(DISTINCT userid)
+               Group Key: hits.mobilephone, hits.mobilephonemodel
+               Distinct: hashed
+               ->  Seq Scan on public.hits  (cost=0.00..6616.75 rows=753067 width=11) (actual time=0.123..7.731 rows=747086.00 loops=1)
+                     Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+                     Filter: (hits.mobilephonemodel <> ''::text)
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 146 claims
+   p0  section W6  7.608 ms  claims 146
+   p1  emit (NoDrivingSite)  0.049 ms
+   p2  emit (NoDrivingSite)  0.021 ms
+   Run: 7.935 ms, leader alone 0.327 ms
+   Granules: 1964 read, 4 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 3.583 ms
+ Planning:
+   Buffers: shared hit=93
+ Planning Time: 0.397 ms
+ Execution Time: 11.562 ms
+
