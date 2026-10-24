@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <application android:label="winprobe" android:theme="@style/P">
+    <activity android:name=".E0" android:exported="true"/>
+    <activity android:name=".E1" android:exported="true" android:theme="@style/P.OptOut"/>
+    <activity android:name=".E2" android:exported="true"/>
+    <activity android:name=".OU" android:exported="true"/>
+    <activity android:name=".O1" android:exported="true" android:screenOrientation="portrait"/>
+    <activity android:name=".O2" android:exported="true"/>
+    <activity android:name=".R1" android:exported="true" android:resizeableActivity="false" android:maxAspectRatio="1.86"/>
+  </application>
+</manifest>

@@ -1,0 +1,38 @@
+{
+ "frame": "Open-source apps on F-Droid updated since 2025-10-21 whose latest F-Droid build targets 35 or lower, source on GitHub, GitLab or Codeberg, with a Google Play listing under the same package name on 2026-10-21 (the frame of our Back handlers note)",
+ "source_read": "2026-10-24, default branch, depth-1 clone",
+ "pattern_counts": {
+  "rows": 99,
+  "scanned": 98,
+  "errors": 1,
+  "head<=35": 48,
+  "head>=36": 21,
+  "unresolved": 29,
+  "E": 10,
+  "O_any": 31,
+  "O_MAN": 24,
+  "R_MAN": 3,
+  "O_CODE": 7,
+  "O_DART": 1,
+  "O_CDV": 1,
+  "O_EXPO": 1,
+  "OPT_R": 0,
+  "GAME": 3,
+  "AT_RISK_E": 10,
+  "AT_RISK_O": 24,
+  "DEAD_E": 0
+ },
+ "after_reading_targets_by_hand": {
+  "opt_out_not_at_36": 9,
+  "opt_out_already_at_36": 1,
+  "opt_out_theme_traced": 8,
+  "opt_out_theme_not_traced": 1,
+  "lock_not_at_36_no_property_no_game_category": 20,
+  "lock_already_at_36_or_more": 4,
+  "lock_target_chosen_at_build_time": 1,
+  "lock_listed_as_game_on_fdroid": 6,
+  "declares_appCategory_game": 3,
+  "in_both_groups": 3
+ },
+ "notes": "pattern_counts are census/analyse.py output. A target the pattern could not read counts as not at 36 there; we then read those targets by hand (version catalogs, root-project variables, CMake defaults). The per-app list is not published."
+}

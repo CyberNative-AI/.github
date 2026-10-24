@@ -1,0 +1,4 @@
+<resources>
+  <style name="P" parent="android:Theme.Material.Light.NoActionBar"/>
+  <style name="P.OptOut"/>
+</resources>

@@ -1,0 +1,22 @@
+package: name='ai.cybernative.winprobe.t35' versionCode='1' versionName='1' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+targetSdkVersion:'35'
+            A: http://schemas.android.com/apk/res/android:screenOrientation(0x0101001e)=1
+            A: http://schemas.android.com/apk/res/android:resizeableActivity(0x010104f6)=false
+            A: http://schemas.android.com/apk/res/android:maxAspectRatio(0x01010560)=1.86
+package: name='ai.cybernative.winprobe.t36' versionCode='1' versionName='1' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+targetSdkVersion:'36'
+            A: http://schemas.android.com/apk/res/android:screenOrientation(0x0101001e)=1
+            A: http://schemas.android.com/apk/res/android:resizeableActivity(0x010104f6)=false
+            A: http://schemas.android.com/apk/res/android:maxAspectRatio(0x01010560)=1.86
+package: name='ai.cybernative.winprobe.t36game' versionCode='1' versionName='1' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+targetSdkVersion:'36'
+        A: http://schemas.android.com/apk/res/android:appCategory(0x01010545)=0
+            A: http://schemas.android.com/apk/res/android:screenOrientation(0x0101001e)=1
+            A: http://schemas.android.com/apk/res/android:resizeableActivity(0x010104f6)=false
+            A: http://schemas.android.com/apk/res/android:maxAspectRatio(0x01010560)=1.86
+package: name='ai.cybernative.winprobe.t36prop' versionCode='1' versionName='1' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+targetSdkVersion:'36'
+            A: http://schemas.android.com/apk/res/android:name(0x01010003)="android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY" (Raw: "android.window.PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY")
+            A: http://schemas.android.com/apk/res/android:screenOrientation(0x0101001e)=1
+            A: http://schemas.android.com/apk/res/android:resizeableActivity(0x010104f6)=false
+            A: http://schemas.android.com/apk/res/android:maxAspectRatio(0x01010560)=1.86
