@@ -1,0 +1,13 @@
+ Seq Scan on public.hits  (cost=0.00..1769.88 rows=6 width=8) (actual time=0.107..1.341 rows=0.00 loops=1)
+   Output: userid
+   Filter: (hits.userid = '435090932899640449'::bigint)
+ Gravity: driver road, width 6, 1 pipelines, 1 sites, 1 sections, 93 claims
+   p0  section W6  1.169 ms  claims 93
+   Run: 1.341 ms, leader alone 0.172 ms
+   Granules: 217 read, 1751 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 1.979 ms
+ Planning:
+   Buffers: shared hit=12
+ Planning Time: 0.216 ms
+ Execution Time: 3.359 ms
+

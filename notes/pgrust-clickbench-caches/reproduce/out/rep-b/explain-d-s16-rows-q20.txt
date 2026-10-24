@@ -1,0 +1,21 @@
+ Sort  (cost=13219.45..13219.45 rows=1 width=8) (actual time=5.858..6.040 rows=1.00 loops=1)
+   Output: (count(*))
+   Sort Key: (count(*))
+   Sort Method: quicksort  Memory: 25kB
+   ->  Aggregate  (cost=13219.43..13219.44 rows=1 width=8) (actual time=5.806..5.857 rows=1.00 loops=1)
+         Output: count(*)
+         ->  Seq Scan on public.hits  (cost=0.00..13215.92 rows=1405 width=0) (actual time=0.165..5.800 rows=864.00 loops=1)
+               Output: watchid, javaenable, title, goodevent, eventtime, eventdate, counterid, clientip, regionid, userid, counterclass, os, useragent, url, referer, isrefresh, referercategoryid, refererregionid, urlcategoryid, urlregionid, resolutionwidth, resolutionheight, resolutiondepth, flashmajor, flashminor, flashminor2, netmajor, netminor, useragentmajor, useragentminor, cookieenable, javascriptenable, ismobile, mobilephone, mobilephonemodel, params, ipnetworkid, traficsourceid, searchengineid, searchphrase, advengineid, isartifical, windowclientwidth, windowclientheight, clienttimezone, clienteventtime, silverlightversion1, silverlightversion2, silverlightversion3, silverlightversion4, pagecharset, codeversion, islink, isdownload, isnotbounce, funiqid, originalurl, hid, isoldcounter, isevent, isparameter, dontcounthits, withhash, hitcolor, localeventtime, age, sex, income, interests, robotness, remoteip, windowname, openername, historylength, browserlanguage, browsercountry, socialnetwork, socialaction, httperror, sendtiming, dnstiming, connecttiming, responsestarttiming, responseendtiming, fetchtiming, socialsourcenetworkid, socialsourcepage, paramprice, paramorderid, paramcurrency, paramcurrencyid, openstatservicename, openstatcampaignid, openstatadid, openstatsourceid, utmsource, utmmedium, utmcampaign, utmcontent, utmterm, fromtag, hasgclid, refererhash, urlhash, clid
+               Filter: (hits.url ~~ '%google%'::text)
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 1 sections, 97 claims
+   p0  section W6  5.635 ms  claims 97
+   p1  emit (NoDrivingSite)  0.051 ms
+   p2  emit (NoDrivingSite)  0.008 ms
+   Run: 6.040 ms, leader alone 0.406 ms
+   Granules: 505 read, 1463 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 3.436 ms
+ Planning:
+   Buffers: shared hit=16
+ Planning Time: 0.254 ms
+ Execution Time: 9.554 ms
+

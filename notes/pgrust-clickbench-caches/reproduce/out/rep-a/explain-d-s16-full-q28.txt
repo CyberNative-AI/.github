@@ -1,0 +1,25 @@
+ Limit  (cost=324384.11..324384.18 rows=25 width=104) (actual time=828.491..828.795 rows=21.00 loops=1)
+   Output: (regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)), (avg(octet_length(referer))), (count(*)), (min(referer))
+   ->  Sort  (cost=324384.11..327536.26 rows=1260857 width=104) (actual time=828.491..828.545 rows=21.00 loops=1)
+         Output: (regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)), (avg(octet_length(referer))), (count(*)), (min(referer))
+         Sort Key: (avg(octet_length(hits.referer))) DESC, (regexp_replace(hits.referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)) COLLATE "C", (count(*)), (min(hits.referer)) COLLATE "C"
+         ->  HashAggregate  (cost=229700.95..288803.64 rows=1260857 width=104) (actual: not counted)
+               Output: (regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)), avg(octet_length(referer)), count(*), min(referer)
+               Group Key: regexp_replace(hits.referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text)
+               Filter: (count(*) > 100000)
+               ->  Seq Scan on public.hits  (cost=0.00..69904.62 rows=13456533 width=109) (actual: not counted)
+                     Output: regexp_replace(referer, '^https?://(?:www\.)?([^/]+)/.*$'::text, '\1'::text), referer
+                     Filter: (hits.referer <> ''::text)
+ Gravity: driver road, width 6, 4 pipelines, 3 sites, 2 sections, 333 claims
+   p0  section W6  246.145 ms  claims 197
+   p1  section W6  579.534 ms  claims 136
+   p2  emit (NoDrivingSite)  0.241 ms
+   p3  emit (NoDrivingSite)  0.053 ms
+   Run: 828.795 ms, leader alone 3.116 ms
+   Granules: 3934 read, 2 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 8.438 ms
+ Planning:
+   Buffers: shared hit=94
+ Planning Time: 0.381 ms
+ Execution Time: 837.292 ms
+

@@ -1,0 +1,13 @@
+ Limit  (cost=82780.20..82780.23 rows=10 width=8) (actual time=4.826..5.038 rows=10.00 loops=1)
+   Output: searchphrase
+   ->  Sort  (cost=82780.20..87641.53 rows=1944533 width=8) (actual: not counted)
+         Output: searchphrase
+         Sort Key: hits.searchphrase COLLATE "C"
+         ->  Seq Scan on public.hits  (cost=0.00..40759.54 rows=1944533 width=8) (actual: not counted)
+               Output: searchphrase
+               Filter: (hits.searchphrase <> ''::text)
+ Planning:
+   Buffers: shared hit=16
+ Planning Time: 0.261 ms
+ Execution Time: 9.499 ms
+

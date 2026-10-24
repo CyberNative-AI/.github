@@ -1,0 +1,23 @@
+ Limit  (cost=3049.31..3049.33 rows=10 width=16) (actual time=10.491..10.789 rows=10.00 loops=1)
+   Output: (date_trunc('minute'::text, eventtime)), (count(*))
+   ->  Sort  (cost=3046.81..3135.41 rows=35440 width=16) (actual time=10.491..10.653 rows=1010.00 loops=1)
+         Output: (date_trunc('minute'::text, eventtime)), (count(*))
+         Sort Key: (date_trunc('minute'::text, hits.eventtime)), (count(*))
+         ->  HashAggregate  (cost=702.43..1101.13 rows=35440 width=16) (actual: not counted)
+               Output: (date_trunc('minute'::text, eventtime)), count(*)
+               Group Key: date_trunc('minute'::text, hits.eventtime)
+               ->  Seq Scan on public.hits  (cost=0.00..332.44 rows=73997 width=8) (actual time=0.138..10.054 rows=558105.00 loops=1)
+                     Output: date_trunc('minute'::text, eventtime)
+                     Filter: ((hits.isrefresh = 0) AND (hits.counterid = 62) AND (hits.dontcounthits = 0) AND (hits.eventdate >= '2013-07-14'::date) AND (hits.eventdate <= '2013-07-15'::date))
+ Gravity: driver road, width 6, 3 pipelines, 2 sites, 2 sections, 158 claims
+   p0  section W6  9.916 ms  claims 151
+   p1  section W6  0.427 ms  claims 7
+   p2  emit (NoDrivingSite)  0.162 ms
+   Run: 10.789 ms, leader alone 0.447 ms
+   Granules: 77 read, 1891 skipped, 0 answered; 0 part opens
+   Program: admitted, shape GRAPH, 4.583 ms
+ Planning:
+   Buffers: shared hit=106
+ Planning Time: 0.407 ms
+ Execution Time: 15.443 ms
+

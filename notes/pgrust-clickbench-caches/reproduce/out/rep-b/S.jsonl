@@ -1,0 +1,8 @@
+{"event":"stale","mode":"full","mut":"insert","mut_out":"INSERT 0 1000  / INSERT 0 50 ","before_q1":"320336","before_q20":"864","warm_q1":"321336","warm_q20":"914","cold_q1":"321336","cold_q20":"914"}
+{"event":"stale","mode":"full","mut":"delete","mut_out":"DELETE 1000  / DELETE 40 ","before_q1":"321336","before_q20":"914","warm_q1":"320336","warm_q20":"874","cold_q1":"320336","cold_q20":"874"}
+{"event":"stale","mode":"rows","mut":"insert","mut_out":"INSERT 0 1000  / INSERT 0 50 ","before_q1":"320336","before_q20":"874","warm_q1":"321336","warm_q20":"924","cold_q1":"321336","cold_q20":"924"}
+{"event":"stale","mode":"rows","mut":"delete","mut_out":"DELETE 1500  / DELETE 60 ","before_q1":"321336","before_q20":"924","warm_q1":"319836","warm_q20":"864","cold_q1":"319836","cold_q20":"864"}
+{"event":"stale","mode":"granule","mut":"insert","mut_out":"INSERT 0 1000  / INSERT 0 50 ","before_q1":"319836","before_q20":"864","warm_q1":"320836","warm_q20":"914","cold_q1":"320836","cold_q20":"914"}
+{"event":"stale","mode":"granule","mut":"delete","mut_out":"DELETE 1500  / DELETE 70 ","before_q1":"320836","before_q20":"914","warm_q1":"319336","warm_q20":"844","cold_q1":"319336","cold_q20":"844"}
+{"event":"stale","mode":"off","mut":"insert","mut_out":"INSERT 0 1000  / INSERT 0 50 ","before_q1":"319336","before_q20":"844","warm_q1":"320336","warm_q20":"894","cold_q1":"320336","cold_q20":"894"}
+{"event":"stale","mode":"off","mut":"delete","mut_out":"DELETE 1500  / DELETE 70 ","before_q1":"320336","before_q20":"894","warm_q1":"318836","warm_q20":"824","cold_q1":"318836","cold_q20":"824"}

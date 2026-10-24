@@ -1,0 +1,13 @@
+mode_shown {'full+nodict': ['full/off'], 'rows+nodict': ['rows/off'], 'granule': ['granule/on'], 'full': ['full/on']} errors []
+full+nodict  /granule all 0.942  without q20-22 0.950
+rows+nodict  /granule all 0.980  without q20-22 0.984
+granule      /granule all 1.000  without q20-22 1.000
+full         /granule all 0.865  without q20-22 0.948
+q  full+nodict  rows+nodict  granule  full  (hot ms)
+1 1.15  1.46  2.72  1.23
+20 28.44  31.11  47.41  1.16
+21 32.30  40.15  37.96  2.44
+22 57.80  62.22  56.45  11.64
+23 7.91  6.62  6.85  3.30
+28 157.84  141.56  166.62  113.11
+31 27.69  20.11  34.27  21.35
