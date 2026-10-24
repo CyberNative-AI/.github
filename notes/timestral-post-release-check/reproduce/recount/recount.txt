@@ -1,0 +1,43 @@
+# recount.py out/score-all.json
+FRESH/E  Timestral-209M/Chronos-2        recount 1.007 [0.976,1.038] n=50 | scorer 1.007 [0.976,1.038] OK
+FRESH/E  Timestral-209M/TimesFM-2.5      recount 0.874 [0.845,0.902] n=50 | scorer 0.874 [0.846,0.902] OK
+FRESH/E  Timestral-209M/MSTL             recount 0.632 [0.575,0.693] n=50 | scorer 0.632 [0.575,0.697] OK
+FRESH/E  Timestral-209M/AutoETS          recount 0.352 [0.305,0.409] n=50 | scorer 0.352 [0.304,0.408] OK
+FRESH/E  Timestral-209M/SeasonalNaive    recount 0.695 [0.653,0.740] n=50 | scorer 0.695 [0.651,0.742] OK
+FRESH/E  Timestral-5M/Timestral-209M   recount 1.060 [1.036,1.086] n=50 | scorer 1.060 [1.034,1.086] OK
+FRESH/E  Timestral-28M/Chronos-2-small  recount 0.954 [0.924,0.984] n=50 | scorer 0.954 [0.924,0.984] OK
+FRESH/E  Timestral-209M/EIA-BA-forecast  recount 0.823 [0.662,1.014] n=50 | scorer 0.823 [0.660,1.015] OK
+FRESH/W  Timestral-209M/Chronos-2        recount 0.897 [0.843,0.957] n=150 | scorer 0.897 [0.844,0.955] OK
+FRESH/W  Timestral-209M/TimesFM-2.5      recount 0.927 [0.883,0.971] n=150 | scorer 0.927 [0.883,0.971] OK
+FRESH/W  Timestral-209M/AutoETS          recount 0.414 [0.348,0.486] n=150 | scorer 0.414 [0.348,0.485] OK
+FRESH/W  Timestral-209M/AutoARIMA        recount 0.388 [0.322,0.464] n=150 | scorer 0.388 [0.319,0.461] OK
+FRESH/W  Timestral-209M/SeasonalNaive    recount 0.631 [0.567,0.701] n=150 | scorer 0.631 [0.567,0.700] OK
+FRESH/W  Timestral-5M/Timestral-209M   recount 1.094 [1.053,1.137] n=150 | scorer 1.094 [1.056,1.136] OK
+FRESH/W  Timestral-28M/Chronos-2-small  recount 0.891 [0.835,0.951] n=150 | scorer 0.891 [0.833,0.951] OK
+PRE/E    Timestral-209M/Chronos-2        recount 0.991 [0.967,1.016] n=50 | scorer 0.991 [0.968,1.016] OK
+PRE/W    Timestral-209M/Chronos-2        recount 0.926 [0.863,0.991] n=150 | scorer 0.926 [0.865,0.995] OK
+FRESH/E  SeasonalNaive    gmean_rel 1.000 mean_mase 0.865 wall 3.27 OK
+FRESH/E  AutoETS          gmean_rel 1.976 mean_mase 1.760 wall 128.98 OK
+FRESH/E  MSTL             gmean_rel 1.100 mean_mase 0.977 wall 45.95 OK
+FRESH/E  Timestral-5M     gmean_rel 0.737 mean_mase 0.650 wall 9.32 OK
+FRESH/E  Timestral-28M    gmean_rel 0.723 mean_mase 0.638 wall 17.93 OK
+FRESH/E  Timestral-209M   gmean_rel 0.695 mean_mase 0.616 wall 112.47 OK
+FRESH/E  Chronos-2-small  gmean_rel 0.758 mean_mase 0.663 wall 28.1 OK
+FRESH/E  Chronos-2        gmean_rel 0.691 mean_mase 0.609 wall 63.08 OK
+FRESH/E  TimesFM-2.5      gmean_rel 0.796 mean_mase 0.703 wall 126.89 OK
+FRESH/E  EIA-BA-forecast  gmean_rel 0.845 mean_mase 1.059 wall None OK
+FRESH/W  SeasonalNaive    gmean_rel 1.000 mean_mase 0.929 wall 2.34 OK
+FRESH/W  AutoETS          gmean_rel 1.524 mean_mase 0.949 wall 25.84 OK
+FRESH/W  AutoARIMA        gmean_rel 1.629 mean_mase 0.900 wall 174.42 OK
+FRESH/W  Timestral-5M     gmean_rel 0.691 mean_mase 0.573 wall 2.4 OK
+FRESH/W  Timestral-28M    gmean_rel 0.678 mean_mase 0.569 wall 4.84 OK
+FRESH/W  Timestral-209M   gmean_rel 0.631 mean_mase 0.544 wall 22.64 OK
+FRESH/W  Chronos-2-small  gmean_rel 0.761 mean_mase 0.583 wall 7.83 OK
+FRESH/W  Chronos-2        gmean_rel 0.703 mean_mase 0.558 wall 15.79 OK
+FRESH/W  TimesFM-2.5      gmean_rel 0.681 mean_mase 0.562 wall 31.41 OK
+DiD E recount 0.985 [0.948,1.024] | scorer 0.985 [0.950,1.024]
+DiD W recount 1.032 [0.947,1.121] | scorer 1.032 [0.946,1.128]
+disagreements: 0
+
+# mase_recount.py data/frames.json <forecast dir matching out/forecasts.sha256> out/score-all.json
+series-model cells compared: 3600; worst relative difference vs scorer: 4.48e-16
