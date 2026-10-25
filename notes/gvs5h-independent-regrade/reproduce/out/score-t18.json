@@ -1,0 +1,233 @@
+{
+ "arms": {
+  "fable5_single": {
+   "G1_n": 437,
+   "G1_stock_pass_rate_ours": 1.0,
+   "corrected_to_pass": 15,
+   "corrected_to_pass_ours_pass": 15,
+   "disagreements": [],
+   "functional_mean": 91.9,
+   "g2_rows_to_read": [],
+   "lenient_rows": [],
+   "matrix": {
+    "stock=F reported=F ours=NOCODE": 9,
+    "stock=F reported=F ours=RE": 8,
+    "stock=F reported=F ours=TLE": 2,
+    "stock=F reported=F ours=WA": 29,
+    "stock=F reported=P ours=PASS": 15,
+    "stock=P reported=P ours=PASS": 437
+   },
+   "mean_ours": 90.4,
+   "mean_ours_t18_sensitivity": 90.4,
+   "mean_reported": 90.4,
+   "mean_reported_recomputed": 90.4,
+   "mean_stock": 87.4,
+   "n": 500,
+   "n_functional": 27,
+   "n_stdin": 73,
+   "oracle_passk_1to5": [
+    90.4,
+    92.9,
+    94.0,
+    94.6,
+    95.0
+   ],
+   "stdin_mean": 89.9,
+   "verdicts": {
+    "NOCODE": 9,
+    "PASS": 452,
+    "RE": 8,
+    "TLE": 2,
+    "WA": 29
+   }
+  },
+  "q38_27b_multi": {
+   "G1_n": 422,
+   "G1_stock_pass_rate_ours": 1.0,
+   "corrected_to_pass": 40,
+   "corrected_to_pass_ours_pass": 40,
+   "disagreements": [],
+   "functional_mean": 97.8,
+   "g2_rows_to_read": [],
+   "lenient_rows": [],
+   "matrix": {
+    "stock=F reported=F ours=RE": 6,
+    "stock=F reported=F ours=TLE": 1,
+    "stock=F reported=F ours=WA": 31,
+    "stock=F reported=P ours=PASS": 40,
+    "stock=P reported=P ours=PASS": 422
+   },
+   "mean_ours": 92.4,
+   "mean_ours_t18_sensitivity": 92.4,
+   "mean_reported": 92.4,
+   "mean_reported_recomputed": 92.4,
+   "mean_stock": 84.4,
+   "n": 500,
+   "n_functional": 27,
+   "n_stdin": 73,
+   "oracle_passk_1to5": [
+    92.4,
+    94.5,
+    95.2,
+    95.6,
+    96.0
+   ],
+   "stdin_mean": 90.4,
+   "verdicts": {
+    "PASS": 462,
+    "RE": 6,
+    "TLE": 1,
+    "WA": 31
+   }
+  },
+  "q38_27b_single128k": {
+   "G1_n": 299,
+   "G1_stock_pass_rate_ours": 1.0,
+   "corrected_to_pass": 35,
+   "corrected_to_pass_ours_pass": 35,
+   "disagreements": [],
+   "functional_mean": 72.6,
+   "g2_rows_to_read": [],
+   "lenient_rows": [],
+   "matrix": {
+    "stock=F reported=F ours=NOCODE": 27,
+    "stock=F reported=F ours=RE": 80,
+    "stock=F reported=F ours=WA": 46,
+    "stock=F reported=P ours=PASS": 35,
+    "stock=P reported=F ours=NOCODE": 8,
+    "stock=P reported=F ours=RE": 5,
+    "stock=P reported=P ours=PASS": 299
+   },
+   "mean_ours": 66.8,
+   "mean_ours_t18_sensitivity": 66.8,
+   "mean_reported": 66.8,
+   "mean_reported_recomputed": 66.8,
+   "mean_stock": 62.4,
+   "n": 500,
+   "n_functional": 27,
+   "n_stdin": 73,
+   "oracle_passk_1to5": [
+    66.8,
+    81.6,
+    87.1,
+    89.2,
+    90.0
+   ],
+   "stdin_mean": 64.7,
+   "verdicts": {
+    "NOCODE": 35,
+    "PASS": 334,
+    "RE": 85,
+    "WA": 46
+   }
+  },
+  "q38_fn_multi": {
+   "G1_n": 437,
+   "G1_stock_pass_rate_ours": 1.0,
+   "corrected_to_pass": 28,
+   "corrected_to_pass_ours_pass": 28,
+   "disagreements": [],
+   "functional_mean": 98.5,
+   "g2_rows_to_read": [],
+   "lenient_rows": [],
+   "matrix": {
+    "stock=F reported=F ours=RE": 8,
+    "stock=F reported=F ours=TLE": 1,
+    "stock=F reported=F ours=WA": 26,
+    "stock=F reported=P ours=PASS": 28,
+    "stock=P reported=P ours=PASS": 437
+   },
+   "mean_ours": 93.0,
+   "mean_ours_t18_sensitivity": 93.0,
+   "mean_reported": 93.0,
+   "mean_reported_recomputed": 93.0,
+   "mean_stock": 87.4,
+   "n": 500,
+   "n_functional": 27,
+   "n_stdin": 73,
+   "oracle_passk_1to5": [
+    93.0,
+    94.9,
+    95.5,
+    95.8,
+    96.0
+   ],
+   "stdin_mean": 91.0,
+   "verdicts": {
+    "PASS": 465,
+    "RE": 8,
+    "TLE": 1,
+    "WA": 26
+   }
+  },
+  "q38_fn_single": {
+   "G1_n": 394,
+   "G1_stock_pass_rate_ours": 1.0,
+   "corrected_to_pass": 27,
+   "corrected_to_pass_ours_pass": 27,
+   "disagreements": [],
+   "functional_mean": 95.6,
+   "g2_rows_to_read": [],
+   "lenient_rows": [],
+   "matrix": {
+    "stock=F reported=F ours=NOCODE": 20,
+    "stock=F reported=F ours=RE": 27,
+    "stock=F reported=F ours=TLE": 4,
+    "stock=F reported=F ours=WA": 28,
+    "stock=F reported=P ours=PASS": 27,
+    "stock=P reported=P ours=PASS": 394
+   },
+   "mean_ours": 84.2,
+   "mean_ours_t18_sensitivity": 84.2,
+   "mean_reported": 84.2,
+   "mean_reported_recomputed": 84.2,
+   "mean_stock": 78.8,
+   "n": 500,
+   "n_functional": 27,
+   "n_stdin": 73,
+   "oracle_passk_1to5": [
+    84.2,
+    90.4,
+    91.7,
+    92.4,
+    93.0
+   ],
+   "stdin_mean": 80.0,
+   "verdicts": {
+    "NOCODE": 20,
+    "PASS": 421,
+    "RE": 27,
+    "TLE": 4,
+    "WA": 28
+   }
+  }
+ },
+ "decision": {
+  "G1_all": true,
+  "G1_gap_pts": 0.0,
+  "G1_rates": {
+   "fable5_single": 1.0,
+   "q38_27b_multi": 1.0,
+   "q38_27b_single128k": 1.0
+  },
+  "corrected_40_ours_pass": 40,
+  "d_27Bmulti_minus_fable5": 2.0,
+  "d_ci95": [
+   -1.0,
+   5.4
+  ],
+  "shift_vs_reported": {
+   "fable5_single": 0.0,
+   "q38_27b_multi": 0.0,
+   "q38_27b_single128k": 0.0
+  },
+  "shift_vs_reported_t18": {
+   "fable5_single": 0.0,
+   "q38_27b_multi": 0.0,
+   "q38_27b_single128k": 0.0
+  },
+  "verdict": "CONFIRMED (pending G2 manual read)"
+ },
+ "n_records": 2500,
+ "n_verdicts": 2500
+}
