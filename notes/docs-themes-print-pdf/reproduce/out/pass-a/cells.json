@@ -1,0 +1,6524 @@
+{
+ "docusaurus.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       44.0,
+       651.3,
+       88.8,
+       657.9
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.202,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       435.9,
+       618.3,
+       476.3,
+       624.9
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.323,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       135.0,
+       365.0,
+       177.3,
+       371.9
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.292,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       412.3,
+       681.5,
+       458.0,
+       688.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.259,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       118.6,
+       426.5,
+       164.1,
+       433.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.259,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       43.8,
+       542.5,
+       93.2,
+       549.1
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.167,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       524.4,
+       501.5,
+       562.7,
+       508.4
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.19,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "docusaurus.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       52.2,
+       575.4,
+       119.4,
+       585.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.226,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       86.3,
+       509.4,
+       146.9,
+       519.2
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.353,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       188.7,
+       49.8,
+       252.1,
+       60.2
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       83.6,
+       619.8,
+       152.0,
+       630.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.0,
+       141.3,
+       232.2,
+       151.7
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       50.8,
+       347.6,
+       85.2,
+       395.0
+      ],
+      "chars": 11,
+      "lines": 3,
+      "min_ink": 0.24,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       513.5,
+       357.3,
+       561.8,
+       385.3
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.24,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       244.3,
+       234.3,
+       301.6,
+       244.7
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 2,
+  "scale": 1.0
+ },
+ "docusaurus.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       52.2,
+       575.4,
+       119.4,
+       585.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.226,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       86.3,
+       509.4,
+       146.9,
+       519.2
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.353,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       188.7,
+       109.1,
+       252.1,
+       119.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       83.6,
+       619.8,
+       152.0,
+       630.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.0,
+       201.3,
+       232.2,
+       211.7
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       51.9,
+       394.9,
+       125.9,
+       404.8
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.24,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       244.3,
+       294.3,
+       301.6,
+       304.7
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "mdbook.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.2,
+       633.5,
+       106.2,
+       642.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.2,
+       579.5,
+       100.3,
+       588.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.4,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       198.5,
+       361.0,
+       266.2,
+       371.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.312,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       114.5,
+       667.7,
+       187.5,
+       678.6
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.297,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       58.6,
+       502.7,
+       123.6,
+       511.6
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       257.0,
+       418.7,
+       318.5,
+       429.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "mdbook.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.2,
+       633.5,
+       106.2,
+       642.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.2,
+       579.5,
+       100.3,
+       588.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.4,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       198.5,
+       295.0,
+       266.2,
+       305.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.312,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       114.5,
+       667.7,
+       187.5,
+       678.6
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.297,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       55.9,
+       463.1,
+       93.6,
+       486.8
+      ],
+      "chars": 11,
+      "lines": 2,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       507.5,
+       463.2,
+       551.1,
+       486.8
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       257.0,
+       352.7,
+       318.5,
+       363.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "mdbook.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.2,
+       633.5,
+       106.2,
+       642.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.2,
+       579.5,
+       100.3,
+       588.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.4,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       198.5,
+       361.0,
+       266.2,
+       371.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.312,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       114.5,
+       667.7,
+       187.5,
+       678.6
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.297,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       58.6,
+       502.7,
+       123.6,
+       511.6
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       257.0,
+       418.7,
+       318.5,
+       429.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.322,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "mkdocs-material.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       90.2,
+       593.1,
+       126.4,
+       599.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.298,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       108.9,
+       561.4,
+       141.7,
+       568.1
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       211.9,
+       214.2,
+       256.7,
+       221.6
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.302,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       191.6,
+       179.1,
+       244.8,
+       187.0
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.238,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       81.1,
+       618.9,
+       139.0,
+       626.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.238,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       71.0,
+       712.9,
+       89.8,
+       718.7
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.39,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       200.3,
+       712.9,
+       219.0,
+       718.7
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.348,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       172.5,
+       340.2,
+       228.5,
+       348.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.238,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       187.2,
+       282.0,
+       220.0,
+       289.9
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.252,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       94.4,
+       483.9,
+       132.0,
+       490.2
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.226,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       489.1,
+       483.9,
+       523.5,
+       490.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.264,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       159.1,
+       397.7,
+       206.7,
+       405.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 2,
+  "scale": 0.862
+ },
+ "mkdocs-material.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       90.2,
+       593.1,
+       126.4,
+       599.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.298,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       108.9,
+       561.4,
+       141.7,
+       568.1
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       211.9,
+       214.2,
+       256.7,
+       221.6
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.302,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       191.6,
+       179.1,
+       244.8,
+       187.0
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.238,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       81.1,
+       618.9,
+       139.0,
+       626.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.238,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       71.0,
+       712.9,
+       89.8,
+       718.7
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.39,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       200.3,
+       712.9,
+       219.0,
+       718.7
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.348,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       172.5,
+       340.2,
+       228.5,
+       348.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.238,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       187.2,
+       282.0,
+       220.0,
+       289.9
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.252,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       94.4,
+       483.9,
+       132.0,
+       490.2
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.226,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       489.1,
+       483.9,
+       523.5,
+       490.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.264,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       159.1,
+       397.7,
+       206.7,
+       405.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 2,
+  "scale": 0.862
+ },
+ "mkdocs-material.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       93.3,
+       572.6,
+       135.3,
+       580.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.25,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       465.7,
+       535.9,
+       503.8,
+       543.7
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.347,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       234.5,
+       128.7,
+       286.4,
+       137.3
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.224,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       210.9,
+       87.3,
+       272.6,
+       96.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       120.2,
+       602.6,
+       187.3,
+       611.7
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.245,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       71.1,
+       711.5,
+       92.8,
+       718.3
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.389,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       221.1,
+       711.5,
+       242.7,
+       718.3
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.389,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       188.8,
+       274.1,
+       253.7,
+       283.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.226,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       205.8,
+       206.6,
+       243.9,
+       215.7
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.255,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       98.3,
+       445.9,
+       141.8,
+       453.3
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       243.5,
+       340.8,
+       298.8,
+       350.0
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.337,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 2,
+  "scale": 1.0
+ },
+ "mkdocs.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       180.0,
+       656.6,
+       215.4,
+       661.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.222,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       198.0,
+       611.6,
+       229.8,
+       616.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.292,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       276.0,
+       423.5,
+       318.3,
+       430.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.271,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       305.4,
+       675.5,
+       351.0,
+       682.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.259,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       184.0,
+       553.9,
+       229.5,
+       560.0
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.267,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "MISSING",
+    "occ": []
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "mkdocs.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       180.0,
+       656.6,
+       215.4,
+       661.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.222,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       241.2,
+       611.6,
+       273.0,
+       616.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.317,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       276.0,
+       375.5,
+       318.3,
+       382.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.271,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       305.4,
+       675.5,
+       351.0,
+       682.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.259,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       181.6,
+       531.2,
+       204.5,
+       560.0
+      ],
+      "chars": 11,
+      "lines": 3,
+      "min_ink": 0.267,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       400.9,
+       543.2,
+       428.1,
+       560.0
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.267,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "MISSING",
+    "occ": []
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "mkdocs.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       180.0,
+       656.6,
+       215.4,
+       661.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.222,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       276.0,
+       459.5,
+       318.3,
+       466.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.271,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       305.4,
+       675.5,
+       351.0,
+       682.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.259,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       184.0,
+       589.9,
+       229.5,
+       596.0
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.267,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "MISSING",
+    "occ": []
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "sphinx-alabaster.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       58.3,
+       688.2,
+       95.4,
+       695.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       387.2,
+       658.7,
+       420.8,
+       665.6
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       138.0,
+       451.9,
+       187.5,
+       459.0
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       43.2,
+       710.4,
+       97.2,
+       717.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       125.6,
+       507.9,
+       178.2,
+       515.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.214,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       49.8,
+       603.7,
+       90.7,
+       610.6
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.341,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       504.4,
+       568.4,
+       549.4,
+       575.5
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.292,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "sphinx-alabaster.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       60.3,
+       683.3,
+       99.8,
+       690.6
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       410.8,
+       651.8,
+       446.5,
+       659.2
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.316,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       145.2,
+       405.3,
+       198.0,
+       412.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.269,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       44.2,
+       706.9,
+       101.7,
+       714.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.245,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.2,
+       43.6,
+       762.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.244,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       134.7,
+       757.2,
+       150.0,
+       762.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.244,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       132.0,
+       464.4,
+       188.1,
+       472.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.245,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       51.0,
+       574.7,
+       82.6,
+       594.2
+      ],
+      "chars": 11,
+      "lines": 2,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       421.7,
+       580.4,
+       461.6,
+       587.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       535.7,
+       528.9,
+       583.6,
+       536.5
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.264,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.711
+ },
+ "sphinx-alabaster.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       58.3,
+       688.2,
+       95.4,
+       695.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       138.0,
+       471.9,
+       187.5,
+       479.0
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       43.2,
+       710.4,
+       97.2,
+       717.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       125.6,
+       527.9,
+       178.2,
+       535.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.214,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       49.8,
+       623.7,
+       90.7,
+       630.6
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.341,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       504.4,
+       587.9,
+       549.4,
+       595.0
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.292,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "sphinx-furo.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       43.5,
+       684.0,
+       81.8,
+       689.7
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.338,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       421.9,
+       664.5,
+       456.4,
+       670.2
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.362,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       136.4,
+       452.2,
+       184.8,
+       459.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.28,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       416.1,
+       707.2,
+       468.8,
+       714.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.28,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       119.2,
+       507.2,
+       170.0,
+       514.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.3,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       43.4,
+       607.4,
+       85.6,
+       613.0
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.206,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       512.4,
+       570.2,
+       555.7,
+       577.4
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.283,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "sphinx-furo.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       50.4,
+       631.6,
+       105.5,
+       639.7
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       532.8,
+       589.2,
+       582.4,
+       597.3
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.371,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       184.1,
+       250.2,
+       253.6,
+       260.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.235,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       39.6,
+       665.0,
+       115.3,
+       675.3
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.227,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.7,
+       49.2,
+       761.2
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.389,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       172.1,
+       754.7,
+       192.8,
+       761.2
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.361,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       159.2,
+       329.3,
+       232.4,
+       339.6
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.235,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.8,
+       482.8,
+       88.7,
+       506.5
+      ],
+      "chars": 11,
+      "lines": 2,
+      "min_ink": 0.302,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       534.6,
+       482.9,
+       586.2,
+       506.5
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.291,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       170.3,
+       402.6,
+       232.6,
+       412.9
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.235,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.959
+ },
+ "sphinx-furo.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       51.4,
+       625.9,
+       108.9,
+       634.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.273,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       190.8,
+       293.2,
+       263.3,
+       304.0
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.263,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       84.1,
+       660.7,
+       163.1,
+       671.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.9,
+       375.7,
+       241.2,
+       386.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       51.2,
+       525.2,
+       114.6,
+       533.6
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.214,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       222.5,
+       452.2,
+       287.5,
+       463.0
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.263,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "sphinx-pydata.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       53.3,
+       626.4,
+       104.2,
+       635.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       504.8,
+       586.6,
+       550.9,
+       596.1
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.368,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       188.7,
+       235.1,
+       252.1,
+       245.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       83.6,
+       668.6,
+       152.0,
+       679.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       173.0,
+       317.6,
+       241.2,
+       328.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       51.0,
+       485.7,
+       107.2,
+       495.1
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       244.3,
+       386.6,
+       301.6,
+       397.0
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "sphinx-pydata.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       53.3,
+       626.4,
+       104.2,
+       635.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       504.8,
+       586.6,
+       550.9,
+       596.1
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.368,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       188.7,
+       195.3,
+       252.1,
+       205.7
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       83.6,
+       668.6,
+       152.0,
+       679.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       173.0,
+       278.6,
+       241.2,
+       289.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       47.1,
+       466.9,
+       86.2,
+       495.1
+      ],
+      "chars": 11,
+      "lines": 2,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       511.7,
+       466.9,
+       561.4,
+       495.1
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       244.3,
+       347.6,
+       301.6,
+       358.0
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "sphinx-pydata.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       53.3,
+       626.4,
+       104.2,
+       635.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       188.7,
+       261.3,
+       252.1,
+       271.7
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       83.6,
+       668.6,
+       152.0,
+       679.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.265,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       173.0,
+       343.8,
+       241.2,
+       354.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.253,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       51.0,
+       511.9,
+       107.2,
+       521.4
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.288,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       244.3,
+       412.8,
+       301.6,
+       423.2
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "sphinx-rtd.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       138.6,
+       648.6,
+       174.0,
+       653.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.222,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       138.6,
+       615.1,
+       170.5,
+       620.3
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.333,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       229.6,
+       386.1,
+       276.4,
+       393.1
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.294,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       160.6,
+       676.1,
+       211.4,
+       683.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.294,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       14.6,
+       771.1,
+       29.1,
+       775.6
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       114.6,
+       771.1,
+       129.0,
+       775.6
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       214.1,
+       441.1,
+       262.9,
+       448.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.294,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       143.6,
+       557.2,
+       178.6,
+       561.9
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.214,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       264.6,
+       493.6,
+       307.1,
+       500.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.303,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "sphinx-rtd.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       63.1,
+       584.1,
+       116.3,
+       591.9
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.266,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       63.1,
+       533.8,
+       111.0,
+       541.6
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.271,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       199.6,
+       139.2,
+       269.8,
+       149.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.218,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       123.1,
+       625.2,
+       199.3,
+       635.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.218,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       14.8,
+       767.8,
+       36.6,
+       774.5
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.8,
+       767.8,
+       186.4,
+       774.5
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       176.4,
+       221.7,
+       249.6,
+       232.3
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.218,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       66.8,
+       410.2,
+       94.3,
+       441.2
+      ],
+      "chars": 11,
+      "lines": 3,
+      "min_ink": 0.188,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       485.7,
+       421.5,
+       533.5,
+       428.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.214,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       265.6,
+       300.5,
+       329.4,
+       311.1
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.291,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "sphinx-rtd.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       63.1,
+       584.1,
+       116.3,
+       591.9
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.266,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       63.1,
+       533.8,
+       111.0,
+       541.6
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.271,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       199.6,
+       190.2,
+       269.8,
+       200.8
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.218,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       123.1,
+       625.2,
+       199.3,
+       635.8
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.218,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       14.8,
+       767.8,
+       36.6,
+       774.5
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.8,
+       767.8,
+       186.4,
+       774.5
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       176.4,
+       272.7,
+       249.6,
+       283.3
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.218,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       70.6,
+       447.0,
+       123.2,
+       454.0
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.188,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       265.6,
+       351.5,
+       329.4,
+       362.1
+      ],
+      "chars": 8,
+      "lines": 2,
+      "min_ink": 0.291,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "starlight.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       44.3,
+       640.9,
+       85.6,
+       647.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.3,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       44.3,
+       604.4,
+       81.4,
+       610.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.307,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       136.4,
+       391.2,
+       184.8,
+       398.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.242,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       416.1,
+       684.2,
+       468.8,
+       691.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.242,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       119.2,
+       435.2,
+       170.0,
+       442.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.25,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       36.0,
+       535.3,
+       84.8,
+       541.8
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.195,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       512.4,
+       494.2,
+       555.7,
+       501.4
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.283,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "starlight.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       52.5,
+       558.3,
+       114.5,
+       567.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.256,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       84.0,
+       484.8,
+       139.8,
+       493.9
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.283,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       190.8,
+       99.7,
+       263.3,
+       110.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.263,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       84.1,
+       623.2,
+       163.1,
+       634.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.9,
+       165.7,
+       241.2,
+       176.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       40.2,
+       361.4,
+       79.5,
+       391.6
+      ],
+      "chars": 11,
+      "lines": 2,
+      "min_ink": 0.285,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       518.8,
+       361.5,
+       565.0,
+       391.6
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.285,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       222.5,
+       233.2,
+       287.5,
+       244.0
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.263,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 2,
+  "scale": 1.0
+ },
+ "starlight.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       52.5,
+       558.3,
+       114.5,
+       567.4
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.256,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       84.0,
+       484.8,
+       139.8,
+       493.9
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.283,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       190.8,
+       165.7,
+       263.3,
+       176.5
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.263,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       84.1,
+       623.2,
+       163.1,
+       634.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       164.9,
+       231.7,
+       241.2,
+       242.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.241,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       40.2,
+       381.9,
+       113.3,
+       391.6
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.285,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       222.5,
+       298.5,
+       287.5,
+       309.2
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.263,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ },
+ "vitepress.A": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       146.0,
+       633.4,
+       187.3,
+       639.5
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.267,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       167.0,
+       585.9,
+       204.2,
+       592.0
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.33,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       235.7,
+       322.2,
+       283.4,
+       328.7
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.231,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       180.2,
+       663.7,
+       232.9,
+       670.2
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.231,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.1,
+       757.6,
+       42.7,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       128.1,
+       757.6,
+       142.5,
+       762.1
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.278,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       251.0,
+       390.9,
+       292.3,
+       397.0
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.267,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       145.5,
+       516.1,
+       185.3,
+       521.4
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.194,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       312.7,
+       445.7,
+       354.1,
+       452.2
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.327,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 0.667
+ },
+ "vitepress.AB": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       66.4,
+       568.0,
+       128.3,
+       577.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.221,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       129.4,
+       496.8,
+       185.2,
+       505.9
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.364,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       200.9,
+       42.7,
+       272.5,
+       52.4
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.32,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       117.7,
+       613.4,
+       196.7,
+       623.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.298,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       223.9,
+       145.8,
+       285.9,
+       154.9
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.315,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       61.5,
+       354.7,
+       97.7,
+       380.5
+      ],
+      "chars": 11,
+      "lines": 2,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       504.1,
+       354.8,
+       546.0,
+       380.5
+      ],
+      "chars": 10,
+      "lines": 2,
+      "min_ink": 0.308,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       316.4,
+       228.0,
+       378.5,
+       237.6
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.356,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 2,
+  "scale": 1.0
+ },
+ "vitepress.default": {
+  "cells": {
+   "ZQBEFOREPRINT": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQBEYONDSHRINK": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCLIPCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCODECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       66.4,
+       568.0,
+       128.3,
+       577.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.221,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQCODEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQCOVERCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQDETAILS": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQENDCTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       200.9,
+       155.2,
+       272.5,
+       164.9
+      ],
+      "chars": 9,
+      "lines": 1,
+      "min_ink": 0.32,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQHALFCLIP": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQHIDDENCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQOFFPAGE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQPARACTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       117.7,
+       613.4,
+       196.7,
+       623.1
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.298,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQPOSCODE": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQRULA": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       28.3,
+       754.3,
+       50.1,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQRULB": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       178.3,
+       754.3,
+       199.9,
+       761.0
+      ],
+      "chars": 6,
+      "lines": 1,
+      "min_ink": 0.417,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQSPLITCTRL": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTAB1CTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       223.9,
+       257.5,
+       285.9,
+       266.6
+      ],
+      "chars": 10,
+      "lines": 1,
+      "min_ink": 0.295,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTAB2": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQTABLECTRL": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       65.6,
+       445.3,
+       125.3,
+       453.2
+      ],
+      "chars": 11,
+      "lines": 1,
+      "min_ink": 0.286,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   },
+   "ZQTABLEEND": {
+    "class": "MISSING",
+    "occ": []
+   },
+   "ZQURLEND": {
+    "class": "VISIBLE",
+    "occ": [
+     {
+      "box": [
+       316.4,
+       339.7,
+       378.5,
+       349.4
+      ],
+      "chars": 8,
+      "lines": 1,
+      "min_ink": 0.303,
+      "overlap": 0,
+      "page": 1
+     }
+    ]
+   }
+  },
+  "pages": 1,
+  "scale": 1.0
+ }
+}

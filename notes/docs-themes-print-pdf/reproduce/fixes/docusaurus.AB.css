@@ -1,0 +1,1 @@
+@media print { .markdown table { display: table; overflow: visible } .markdown table code { overflow-wrap: anywhere } }

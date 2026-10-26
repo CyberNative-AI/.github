@@ -1,0 +1,1 @@
+@media print { .md-typeset__scrollwrap { overflow: visible } .md-typeset table:not([class]) code { overflow-wrap: anywhere } }

@@ -1,0 +1,1 @@
+@media print { [role=main] .table-wrapper.container, .content { overflow: visible } .highlight pre { white-space: pre-wrap } }

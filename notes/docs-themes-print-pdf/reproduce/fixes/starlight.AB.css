@@ -1,0 +1,1 @@
+@media print { .sl-markdown-content table { display: table; overflow: visible } .sl-markdown-content td code { overflow-wrap: anywhere } }

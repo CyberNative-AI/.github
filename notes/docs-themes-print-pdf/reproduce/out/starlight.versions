@@ -1,0 +1,5 @@
+starlight@0.0.1 /work/sites/starlight
++-- @astrojs/starlight@0.42.7
++-- astro@7.4.2
+`-- sharp@0.35.5
+

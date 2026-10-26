@@ -1,0 +1,902 @@
+{
+ "docusaurus.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "docusaurus.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "docusaurus.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "MISSING",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "mdbook.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "MISSING",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "mdbook.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "mdbook.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "MISSING",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "mkdocs-material.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "mkdocs-material.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "mkdocs-material.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "mkdocs.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "CLIPPED",
+   0
+  ],
+  "max_connection_pool_size": [
+   "CLIPPED",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "CLIPPED",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "mkdocs.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "CLIPPED",
+   0
+  ],
+  "max_connection_pool_size": [
+   "CLIPPED",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "CLIPPED",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "CLIPPED",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "CLIPPED",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "mkdocs.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "CLIPPED",
+   0
+  ],
+  "max_connection_pool_size": [
+   "CLIPPED",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "CLIPPED",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-alabaster.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-alabaster.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "sphinx-alabaster.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-furo.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-furo.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "sphinx-furo.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-pydata.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-pydata.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "sphinx-pydata.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-rtd.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "CLIPPED",
+   0
+  ],
+  "max_connection_pool_size": [
+   "CLIPPED",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "CLIPPED",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "CLIPPED",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "sphinx-rtd.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "sphinx-rtd.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "starlight.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "starlight.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "starlight.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "MISSING",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "vitepress.A": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "CLIPPED",
+   0
+  ],
+  "max_connection_pool_size": [
+   "CLIPPED",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "CLIPPED",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ },
+ "vitepress.AB": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "VISIBLE",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "VISIBLE",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "VISIBLE",
+   0
+  ],
+  "ZQTABLEEND": [
+   "VISIBLE",
+   0
+  ]
+ },
+ "vitepress.default": {
+  "ZQTABLECTRL": [
+   "VISIBLE",
+   0
+  ],
+  "integer_or_null": [
+   "VISIBLE",
+   0
+  ],
+  "max_connection_pool_size": [
+   "VISIBLE",
+   0
+  ],
+  "ACME_MAX_CONNECTION_POOL_SIZE": [
+   "MISSING",
+   0
+  ],
+  "v2026.10.0_preview": [
+   "MISSING",
+   0
+  ],
+  "worker_and_scheduler_processes": [
+   "MISSING",
+   0
+  ],
+  "ZQTABLEEND": [
+   "MISSING",
+   0
+  ]
+ }
+}

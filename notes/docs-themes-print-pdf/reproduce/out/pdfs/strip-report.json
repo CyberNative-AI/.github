@@ -1,0 +1,242 @@
+{
+ "docusaurus.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   2,
+   2
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "86abf156db838d282add96a5bb53c1e95bb7d102d756e097ca7d730facc4d1e5",
+  "sha256_out": "ef8ea345533ec8cf4fe7c3a285672a21835fd9ec627c374520e3099b61d4f99b",
+  "text_same": true
+ },
+ "docusaurus.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "f4eef6389ecdedaef34690d4a090727d1d4959072d782db4ecf7cae57340c0c6",
+  "sha256_out": "df2c36c3825912cb94b5752967dba6c5106bddd36f1bed49534e5c0fd9207704",
+  "text_same": true
+ },
+ "mdbook.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "ab0d8c4d71da018030b3554592033a1e17c8ed4c6148163c88d127acce492032",
+  "sha256_out": "7dc4faf6f126869ec383ac5b75ed3d2d519411b2ed20be5d0bd1602a2a82144f",
+  "text_same": true
+ },
+ "mdbook.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "7c32bcfabe1a1a2803146efed9e833b5444bc23052c6a9339540afe644b3bf01",
+  "sha256_out": "7e2f5dac76eeab963f54187608aea7d8854602a3d81c180144962986fa6d32b0",
+  "text_same": true
+ },
+ "mkdocs-material.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   2,
+   2
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "47f842ae250abc433d70ae99c52bf0f21d08e5ec27ee456b1f1402612c7eaa45",
+  "sha256_out": "c7366eb77dc6baea7f937314e1db99630c2a1e20992a822fb75f8a678720b36e",
+  "text_same": true
+ },
+ "mkdocs-material.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   2,
+   2
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "a1d82ab46df365e96c801c0ae2ba440f93d651e831b5d43ff06f3194ad8ac8c0",
+  "sha256_out": "cdf06ed33f25a3bd94b875134d28d52a3934744fab118480523b1b462845d6d5",
+  "text_same": true
+ },
+ "mkdocs.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "70dab83255aaae1c361adeff145d0b2341a7224061ccf7db82a8ace09af6df08",
+  "sha256_out": "d259d76a61e4a24e73c04bea600171e98b89f173ae0ecd66b02220435f822f42",
+  "text_same": true
+ },
+ "mkdocs.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "d21ccbec5d1a88cf5d68798fd589d192227085ddaaa9cfabdaeb706c8748168b",
+  "sha256_out": "ac3125f28dbbddaafe3f9e915ffd4f28196a39675529f1a22efddfa5d7c64cdf",
+  "text_same": true
+ },
+ "sphinx-alabaster.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "a793ff24a5b1819d55fabe78630752627b1620865206eff01e5613647baad107",
+  "sha256_out": "5864c89d4b264a02824a3302a876a9c259523769ddf44fb53f3c91d5fddceb4a",
+  "text_same": true
+ },
+ "sphinx-alabaster.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "93d264441f3c57643bf2695d98b4fad5d834d42d882c83cc6864316fc7261aa9",
+  "sha256_out": "cdb390ba9e5219e1209b206883be78b6b712a89525d562f03f18a4f34e1285f9",
+  "text_same": true
+ },
+ "sphinx-furo.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "e22aff5969931beded3bb68d6e8ae71937963717a6fad4d1e0cc311b23af0bbc",
+  "sha256_out": "bc4ed81f97c57d0747da0f9198379eedadd68709ea2fb6b40500a717cd39723b",
+  "text_same": true
+ },
+ "sphinx-furo.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "c677a9ca1b861d796436e1bde7431d2c5f679bd57e5f851c89c579b558e8ab8e",
+  "sha256_out": "cf4190ab1014af4c60cb920247f2e1dbd0f0075e5e203a839095b18a653b3ede",
+  "text_same": true
+ },
+ "sphinx-pydata.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "cc28563c252759690c05ba88116f5d2e4564643a37b6d937d980b99cbe071366",
+  "sha256_out": "15749e634197a413886fc96b9d818344311e408da0adb400e6abc2ef8dd5a63d",
+  "text_same": true
+ },
+ "sphinx-pydata.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 0,
+  "render_same": true,
+  "sha256_in": "9f7811811ab8b2248e95fee50d69b2b8b0767e09e1a8ff62216cb06b323dc33b",
+  "sha256_out": "ed7a7678bcc4f7facc8b75036f58469aae9f88326184ef2cd22e4766c5e45887",
+  "text_same": true
+ },
+ "sphinx-rtd.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "83c1d6b29f2810ff0f4a41ad0768fede9efbd6a8e090a94f24954019133c7412",
+  "sha256_out": "66e7c452c9ef192232555188db41a3bcf38d7987601993fc34ff3d33043aaf39",
+  "text_same": true
+ },
+ "sphinx-rtd.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "8428d8feb2f3a8d62c7e0fd3eb968d40ae70ecf24bb51997fe5a4bfea3f2c50e",
+  "sha256_out": "b46258c4e42155d9b31c41c29ef72f4ff9a731be9fccc107d5a165ec42abb801",
+  "text_same": true
+ },
+ "starlight.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   2,
+   2
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "c9ff7ae8ac2785593a98f173e4b13f3b792a5cb38b0ab8780aed64f5e045b582",
+  "sha256_out": "96585391fd02aedc6a7f09ac4e1fced6a24029684a3a719f72cb1f5f6dcc04a8",
+  "text_same": true
+ },
+ "starlight.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "a4e7af118f97b84227747e52b00d4e8049a7a3b22095bc64c783459c86eaae0c",
+  "sha256_out": "4c728c1cdf3035dcb34ca09fc3275e17a2a241fa8f08e738fe49fe6b04510104",
+  "text_same": true
+ },
+ "vitepress.AB.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   2,
+   2
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "c8930a22b5541a3d433bd25932426d53fdd55747b9befeca57b6c6cdf4d75c78",
+  "sha256_out": "e472ca1316fc014bae165ef40d91ee21bb6e8b23acb5139f0c994872ef6580ad",
+  "text_same": true
+ },
+ "vitepress.default.pdf": {
+  "local_bytes_after": 0,
+  "pages": [
+   1,
+   1
+  ],
+  "removed": 1,
+  "render_same": true,
+  "sha256_in": "3bfd2a74100f99f6bd0f110baac1af8dab43de196f9a173e8365a26435547fcb",
+  "sha256_out": "bf665b24b33762c2fedd0cacb6712e7e54741dcee77df24d5cfd2bdcd315a03f",
+  "text_same": true
+ }
+}
