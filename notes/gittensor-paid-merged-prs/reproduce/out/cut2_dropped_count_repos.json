@@ -1,0 +1,49 @@
+{
+ "windows": {
+  "prepre": [
+   "2026-03-09T20:43:25Z",
+   "2026-04-10T20:43:24Z"
+  ],
+  "pre": [
+   "2026-04-10T20:43:25Z",
+   "2026-05-12T20:43:24Z"
+  ],
+  "post": [
+   "2026-05-12T20:43:25Z",
+   "2026-06-13T20:43:24Z"
+  ]
+ },
+ "repos": [
+  "ant-design/ant-design",
+  "bitcoin/bips",
+  "bitcoinjs/bitcoinjs-lib",
+  "clickhouse/clickhouse",
+  "dbeaver/dbeaver",
+  "denoland/deno",
+  "espressif/arduino-esp32",
+  "ethereum/go-ethereum",
+  "godotengine/godot",
+  "grafana/grafana",
+  "homebrew/brew",
+  "hoppscotch/hoppscotch",
+  "huggingface/lerobot",
+  "infiniflow/ragflow",
+  "jellyfin/jellyfin",
+  "jupyterlab/jupyterlab",
+  "keras-team/keras",
+  "langgenius/dify",
+  "laravel/framework",
+  "medusajs/medusa",
+  "modelcontextprotocol/typescript-sdk",
+  "monero-project/monero",
+  "nextcloud/desktop",
+  "penpot/penpot",
+  "ray-project/ray",
+  "run-llama/llama_index",
+  "sbt/sbt",
+  "stirling-tools/stirling-pdf",
+  "twentyhq/twenty",
+  "vllm-project/vllm",
+  "zed-industries/zed"
+ ]
+}

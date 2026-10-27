@@ -1,0 +1,943 @@
+{
+ "cut1": {
+  "T": "2026-04-09T21:18:56Z",
+  "commit": "faa56734",
+  "committer_date_variant": {
+   "T": "2026-04-10T16:39:31Z",
+   "all_repos": {
+    "post": {
+     "complete": 1,
+     "search_visible": 1
+    },
+    "pre": {
+     "complete": 94,
+     "search_visible": 73
+    }
+   },
+   "excluding_ruff": {
+    "post": {
+     "complete": 1,
+     "search_visible": 1
+    },
+    "pre": {
+     "complete": 72,
+     "search_visible": 64
+    }
+   },
+   "windows": {
+    "post": [
+     "2026-04-10T16:39:31Z",
+     "2026-05-11T21:18:55Z"
+    ],
+    "pre": [
+     "2026-03-09T16:39:31Z",
+     "2026-04-10T16:39:30Z"
+    ]
+   }
+  },
+  "excluding_ruff": {
+   "post": {
+    "complete": 2,
+    "search_visible": 1
+   },
+   "pre": {
+    "complete": 72,
+    "search_visible": 65
+   }
+  },
+  "per_repo": {
+   "apache/airflow": {
+    "post": {
+     "all_prs": 1473,
+     "complete": 0,
+     "other": 1473,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 1481,
+     "complete": 2,
+     "other": 1479,
+     "search_visible": 2
+    }
+   },
+   "astral-sh/ruff": {
+    "post": {
+     "all_prs": 505,
+     "complete": 5,
+     "other": 500,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 576,
+     "complete": 17,
+     "other": 559,
+     "search_visible": 9
+    }
+   },
+   "azerothcore/azerothcore-wotlk": {
+    "post": {
+     "all_prs": 222,
+     "complete": 0,
+     "other": 222,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 244,
+     "complete": 1,
+     "other": 243,
+     "search_visible": 1
+    }
+   },
+   "charmbracelet/crush": {
+    "post": {
+     "all_prs": 162,
+     "complete": 0,
+     "other": 162,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 127,
+     "complete": 4,
+     "other": 123,
+     "search_visible": 4
+    }
+   },
+   "cloudflare/cloudflare-docs": {
+    "post": {
+     "all_prs": 883,
+     "complete": 0,
+     "other": 883,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 791,
+     "complete": 1,
+     "other": 790,
+     "search_visible": 1
+    }
+   },
+   "dillonzq/loveit": {
+    "post": {
+     "all_prs": 1,
+     "complete": 0,
+     "other": 1,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 11,
+     "complete": 6,
+     "other": 5,
+     "search_visible": 4
+    }
+   },
+   "docker/docs": {
+    "post": {
+     "all_prs": 273,
+     "complete": 0,
+     "other": 273,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 259,
+     "complete": 2,
+     "other": 257,
+     "search_visible": 2
+    }
+   },
+   "envoyproxy/envoy": {
+    "post": {
+     "all_prs": 533,
+     "complete": 0,
+     "other": 533,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 419,
+     "complete": 2,
+     "other": 417,
+     "search_visible": 2
+    }
+   },
+   "espressif/esp-idf": {
+    "post": {
+     "all_prs": 24,
+     "complete": 0,
+     "other": 24,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 15,
+     "complete": 1,
+     "other": 14,
+     "search_visible": 1
+    }
+   },
+   "flowiseai/flowise": {
+    "post": {
+     "all_prs": 137,
+     "complete": 0,
+     "other": 137,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 170,
+     "complete": 2,
+     "other": 168,
+     "search_visible": 2
+    }
+   },
+   "google/flatbuffers": {
+    "post": {
+     "all_prs": 32,
+     "complete": 0,
+     "other": 32,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 55,
+     "complete": 4,
+     "other": 51,
+     "search_visible": 4
+    }
+   },
+   "gradio-app/gradio": {
+    "post": {
+     "all_prs": 97,
+     "complete": 0,
+     "other": 97,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 146,
+     "complete": 1,
+     "other": 145,
+     "search_visible": 1
+    }
+   },
+   "halo-dev/halo": {
+    "post": {
+     "all_prs": 64,
+     "complete": 0,
+     "other": 64,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 55,
+     "complete": 1,
+     "other": 54,
+     "search_visible": 1
+    }
+   },
+   "llvm/llvm-project": {
+    "post": {
+     "all_prs": 4875,
+     "complete": 0,
+     "other": 4875,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 4890,
+     "complete": 2,
+     "other": 4888,
+     "search_visible": 2
+    }
+   },
+   "mdn/content": {
+    "post": {
+     "all_prs": 233,
+     "complete": 0,
+     "other": 233,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 242,
+     "complete": 2,
+     "other": 240,
+     "search_visible": 2
+    }
+   },
+   "nushell/nushell": {
+    "post": {
+     "all_prs": 116,
+     "complete": 0,
+     "other": 116,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 180,
+     "complete": 9,
+     "other": 171,
+     "search_visible": 9
+    }
+   },
+   "openai/openai-python": {
+    "post": {
+     "all_prs": 113,
+     "complete": 0,
+     "other": 113,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 94,
+     "complete": 1,
+     "other": 93,
+     "search_visible": 1
+    }
+   },
+   "openapitools/openapi-generator": {
+    "post": {
+     "all_prs": 191,
+     "complete": 0,
+     "other": 191,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 259,
+     "complete": 7,
+     "other": 252,
+     "search_visible": 3
+    }
+   },
+   "openwrt/luci": {
+    "post": {
+     "all_prs": 69,
+     "complete": 0,
+     "other": 69,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 71,
+     "complete": 2,
+     "other": 69,
+     "search_visible": 2
+    }
+   },
+   "owncloud/android": {
+    "post": {
+     "all_prs": 26,
+     "complete": 0,
+     "other": 26,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 12,
+     "complete": 1,
+     "other": 11,
+     "search_visible": 1
+    }
+   },
+   "payloadcms/payload": {
+    "post": {
+     "all_prs": 224,
+     "complete": 0,
+     "other": 224,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 222,
+     "complete": 1,
+     "other": 221,
+     "search_visible": 1
+    }
+   },
+   "pipedreamhq/pipedream": {
+    "post": {
+     "all_prs": 143,
+     "complete": 0,
+     "other": 143,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 181,
+     "complete": 6,
+     "other": 175,
+     "search_visible": 5
+    }
+   },
+   "pola-rs/polars": {
+    "post": {
+     "all_prs": 213,
+     "complete": 2,
+     "other": 211,
+     "search_visible": 1
+    },
+    "pre": {
+     "all_prs": 245,
+     "complete": 5,
+     "other": 240,
+     "search_visible": 5
+    }
+   },
+   "python/cpython": {
+    "post": {
+     "all_prs": 915,
+     "complete": 0,
+     "other": 915,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 971,
+     "complete": 1,
+     "other": 970,
+     "search_visible": 1
+    }
+   },
+   "richardlitt/standard-readme": {
+    "post": {
+     "all_prs": 1,
+     "complete": 0,
+     "other": 1,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 2,
+     "complete": 2,
+     "other": 0,
+     "search_visible": 2
+    }
+   },
+   "theodinproject/curriculum": {
+    "post": {
+     "all_prs": 48,
+     "complete": 0,
+     "other": 48,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 47,
+     "complete": 3,
+     "other": 44,
+     "search_visible": 3
+    }
+   },
+   "toeverything/affine": {
+    "post": {
+     "all_prs": 65,
+     "complete": 0,
+     "other": 65,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 116,
+     "complete": 1,
+     "other": 115,
+     "search_visible": 1
+    }
+   },
+   "trinodb/trino": {
+    "post": {
+     "all_prs": 311,
+     "complete": 0,
+     "other": 311,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 401,
+     "complete": 1,
+     "other": 400,
+     "search_visible": 1
+    }
+   },
+   "umbraco/umbraco-cms": {
+    "post": {
+     "all_prs": 260,
+     "complete": 0,
+     "other": 260,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 223,
+     "complete": 1,
+     "other": 222,
+     "search_visible": 1
+    }
+   }
+  },
+  "queries": 74,
+  "queries_short": 0,
+  "repos_counted": 29,
+  "repos_excluded": [],
+  "totals": {
+   "post": {
+    "all_prs": 12209,
+    "complete": 7,
+    "other": 12202,
+    "search_visible": 1
+   },
+   "pre": {
+    "all_prs": 12505,
+    "complete": 89,
+    "other": 12416,
+    "search_visible": 74
+   }
+  },
+  "windows": {
+   "post": [
+    "2026-04-09T21:18:56Z",
+    "2026-05-11T21:18:55Z"
+   ],
+   "pre": [
+    "2026-03-08T21:18:56Z",
+    "2026-04-09T21:18:55Z"
+   ]
+  }
+ },
+ "cut2": {
+  "T": "2026-05-12T20:43:25Z",
+  "commit": "73c9d034",
+  "per_repo": {
+   "ant-design/ant-design": {
+    "post": {
+     "all_prs": 305,
+     "complete": 0,
+     "other": 305,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 212,
+     "complete": 3,
+     "other": 209,
+     "search_visible": 3
+    }
+   },
+   "bitcoin/bips": {
+    "post": {
+     "all_prs": 42,
+     "complete": 0,
+     "other": 42,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 20,
+     "complete": 1,
+     "other": 19,
+     "search_visible": 1
+    }
+   },
+   "bitcoinjs/bitcoinjs-lib": {
+    "post": {
+     "all_prs": 2,
+     "complete": 0,
+     "other": 2,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 5,
+     "complete": 1,
+     "other": 4,
+     "search_visible": 1
+    }
+   },
+   "clickhouse/clickhouse": {
+    "post": {
+     "all_prs": 2156,
+     "complete": 0,
+     "other": 2156,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 1859,
+     "complete": 1,
+     "other": 1858,
+     "search_visible": 1
+    }
+   },
+   "dbeaver/dbeaver": {
+    "post": {
+     "all_prs": 133,
+     "complete": 1,
+     "other": 132,
+     "search_visible": 1
+    },
+    "pre": {
+     "all_prs": 180,
+     "complete": 25,
+     "other": 155,
+     "search_visible": 24
+    }
+   },
+   "denoland/deno": {
+    "post": {
+     "all_prs": 975,
+     "complete": 0,
+     "other": 975,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 627,
+     "complete": 11,
+     "other": 616,
+     "search_visible": 8
+    }
+   },
+   "espressif/arduino-esp32": {
+    "post": {
+     "all_prs": 66,
+     "complete": 0,
+     "other": 66,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 41,
+     "complete": 1,
+     "other": 40,
+     "search_visible": 1
+    }
+   },
+   "ethereum/go-ethereum": {
+    "post": {
+     "all_prs": 187,
+     "complete": 0,
+     "other": 187,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 209,
+     "complete": 1,
+     "other": 208,
+     "search_visible": 1
+    }
+   },
+   "godotengine/godot": {
+    "post": {
+     "all_prs": 492,
+     "complete": 0,
+     "other": 492,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 614,
+     "complete": 1,
+     "other": 613,
+     "search_visible": 1
+    }
+   },
+   "grafana/grafana": {
+    "post": {
+     "all_prs": 1362,
+     "complete": 0,
+     "other": 1362,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 1935,
+     "complete": 1,
+     "other": 1934,
+     "search_visible": 1
+    }
+   },
+   "homebrew/brew": {
+    "post": {
+     "all_prs": 390,
+     "complete": 0,
+     "other": 390,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 222,
+     "complete": 4,
+     "other": 218,
+     "search_visible": 4
+    }
+   },
+   "hoppscotch/hoppscotch": {
+    "post": {
+     "all_prs": 82,
+     "complete": 0,
+     "other": 82,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 95,
+     "complete": 12,
+     "other": 83,
+     "search_visible": 12
+    }
+   },
+   "huggingface/lerobot": {
+    "post": {
+     "all_prs": 156,
+     "complete": 0,
+     "other": 156,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 178,
+     "complete": 1,
+     "other": 177,
+     "search_visible": 1
+    }
+   },
+   "jellyfin/jellyfin": {
+    "post": {
+     "all_prs": 137,
+     "complete": 0,
+     "other": 137,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 105,
+     "complete": 1,
+     "other": 104,
+     "search_visible": 1
+    }
+   },
+   "jupyterlab/jupyterlab": {
+    "post": {
+     "all_prs": 116,
+     "complete": 2,
+     "other": 114,
+     "search_visible": 2
+    },
+    "pre": {
+     "all_prs": 102,
+     "complete": 5,
+     "other": 97,
+     "search_visible": 5
+    }
+   },
+   "keras-team/keras": {
+    "post": {
+     "all_prs": 133,
+     "complete": 0,
+     "other": 133,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 173,
+     "complete": 1,
+     "other": 172,
+     "search_visible": 1
+    }
+   },
+   "langgenius/dify": {
+    "post": {
+     "all_prs": 903,
+     "complete": 0,
+     "other": 903,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 742,
+     "complete": 153,
+     "other": 589,
+     "search_visible": 143
+    }
+   },
+   "laravel/framework": {
+    "post": {
+     "all_prs": 367,
+     "complete": 0,
+     "other": 367,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 379,
+     "complete": 3,
+     "other": 376,
+     "search_visible": 3
+    }
+   },
+   "medusajs/medusa": {
+    "post": {
+     "all_prs": 258,
+     "complete": 0,
+     "other": 258,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 242,
+     "complete": 6,
+     "other": 236,
+     "search_visible": 5
+    }
+   },
+   "modelcontextprotocol/typescript-sdk": {
+    "post": {
+     "all_prs": 161,
+     "complete": 0,
+     "other": 161,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 162,
+     "complete": 1,
+     "other": 161,
+     "search_visible": 1
+    }
+   },
+   "monero-project/monero": {
+    "post": {
+     "all_prs": 149,
+     "complete": 0,
+     "other": 149,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 155,
+     "complete": 2,
+     "other": 153,
+     "search_visible": 2
+    }
+   },
+   "nextcloud/desktop": {
+    "post": {
+     "all_prs": 93,
+     "complete": 0,
+     "other": 93,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 118,
+     "complete": 1,
+     "other": 117,
+     "search_visible": 1
+    }
+   },
+   "penpot/penpot": {
+    "post": {
+     "all_prs": 315,
+     "complete": 8,
+     "other": 307,
+     "search_visible": 8
+    },
+    "pre": {
+     "all_prs": 432,
+     "complete": 155,
+     "other": 277,
+     "search_visible": 126
+    }
+   },
+   "ray-project/ray": {
+    "post": {
+     "all_prs": 675,
+     "complete": 0,
+     "other": 675,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 671,
+     "complete": 1,
+     "other": 670,
+     "search_visible": 1
+    }
+   },
+   "run-llama/llama_index": {
+    "post": {
+     "all_prs": 256,
+     "complete": 0,
+     "other": 256,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 186,
+     "complete": 3,
+     "other": 183,
+     "search_visible": 3
+    }
+   },
+   "sbt/sbt": {
+    "post": {
+     "all_prs": 89,
+     "complete": 0,
+     "other": 89,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 112,
+     "complete": 12,
+     "other": 100,
+     "search_visible": 2
+    }
+   },
+   "stirling-tools/stirling-pdf": {
+    "post": {
+     "all_prs": 260,
+     "complete": 0,
+     "other": 260,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 216,
+     "complete": 10,
+     "other": 206,
+     "search_visible": 7
+    }
+   },
+   "twentyhq/twenty": {
+    "post": {
+     "all_prs": 836,
+     "complete": 0,
+     "other": 836,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 743,
+     "complete": 5,
+     "other": 738,
+     "search_visible": 1
+    }
+   },
+   "vllm-project/vllm": {
+    "post": {
+     "all_prs": 2477,
+     "complete": 0,
+     "other": 2477,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 2117,
+     "complete": 7,
+     "other": 2110,
+     "search_visible": 3
+    }
+   },
+   "zed-industries/zed": {
+    "post": {
+     "all_prs": 1357,
+     "complete": 0,
+     "other": 1357,
+     "search_visible": 0
+    },
+    "pre": {
+     "all_prs": 1417,
+     "complete": 17,
+     "other": 1400,
+     "search_visible": 17
+    }
+   }
+  },
+  "queries": 74,
+  "queries_short": 0,
+  "repos_counted": 30,
+  "repos_excluded": [
+   "infiniflow/ragflow"
+  ],
+  "totals": {
+   "post": {
+    "all_prs": 14930,
+    "complete": 11,
+    "other": 14919,
+    "search_visible": 11
+   },
+   "pre": {
+    "all_prs": 14269,
+    "complete": 446,
+    "other": 13823,
+    "search_visible": 381
+   }
+  },
+  "windows": {
+   "post": [
+    "2026-05-12T20:43:25Z",
+    "2026-06-13T20:43:24Z"
+   ],
+   "pre": [
+    "2026-04-10T20:43:25Z",
+    "2026-05-12T20:43:24Z"
+   ]
+  }
+ },
+ "definitions": "Exploratory: the frames below were defined after the first run's results, when the second run found that author:\nsearch misses 33 registered accounts whose PRs repo-wide search still returns.\n\n- complete frame: PRs whose author is a registered miner (raw/api_miners.json), any author of a tagline PR found by the\n  collector (raw/tag_prs.jsonl), or any author of a tagline PR in the pulled windows.\n- search-visible frame: registered miners and collector tagline authors, minus every login whose author: search returned\n  HTTP 422 in the collector's raw/calls.jsonl (the first run's frame).\n- other: every pulled PR (bots included) minus the complete frame.\nBots (login ending [bot] or user type Bot) are never miner PRs.",
+ "window_days": 32
+}

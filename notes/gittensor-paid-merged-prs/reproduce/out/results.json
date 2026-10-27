@@ -1,0 +1,204 @@
+{
+ "E2_merged_paid_eligible_by_month": {
+  "2025-10": {
+   "independent": 63
+  },
+  "2025-11": {
+   "ecosystem_or_later": 5,
+   "independent": 206,
+   "self": 17
+  },
+  "2025-12": {
+   "ecosystem_or_later": 34,
+   "independent": 49,
+   "self": 23
+  },
+  "2026-01": {
+   "ecosystem_or_later": 16,
+   "independent": 204,
+   "self": 40
+  },
+  "2026-02": {
+   "ecosystem_or_later": 63,
+   "independent": 64,
+   "self": 50
+  },
+  "2026-03": {
+   "ecosystem_or_later": 56,
+   "independent": 161,
+   "self": 53
+  },
+  "2026-04": {
+   "ecosystem_or_later": 289,
+   "independent": 305,
+   "self": 120
+  },
+  "2026-05": {
+   "ecosystem_or_later": 482,
+   "independent": 138,
+   "self": 332
+  },
+  "2026-06": {
+   "ecosystem_or_later": 6798,
+   "independent": 79,
+   "self": 2286
+  },
+  "2026-07": {
+   "ecosystem_or_later": 5089,
+   "independent": 8,
+   "self": 2906
+  },
+  "2026-08": {
+   "ecosystem_or_later": 125,
+   "self": 31
+  },
+  "2026-09": {
+   "ecosystem_or_later": 40,
+   "independent": 2,
+   "self": 88
+  },
+  "2026-10": {
+   "ecosystem_or_later": 53,
+   "independent": 1,
+   "self": 120
+  }
+ },
+ "E3_inside_assoc_share_of_decided": 0.0,
+ "H1": {
+  "existing_pairs": {
+   "median_d": 0.625,
+   "miner_decided": 3,
+   "n_repos": 1,
+   "weighted_d": 0.625
+  },
+  "leave_top_miner_out": -0.1289,
+  "leave_top_repo_out": -0.1627,
+  "median_d": -0.1806,
+  "merged90_over_all_created_miner": 0.6013,
+  "miner_decided": 905,
+  "n_repos": 68,
+  "pooled_baseline_pre": [
+   0.8078541374474053,
+   2852
+  ],
+  "pooled_miner": [
+   0.6972375690607735,
+   905
+  ],
+  "recruited_pairs": {
+   "median_d": -0.1859,
+   "miner_decided": 897,
+   "n_repos": 66,
+   "weighted_d": -0.113
+  },
+  "ruling": "FRAGILE",
+  "secondary_in_program_baseline": {
+   "median_d": -0.1345,
+   "miner_decided": 878,
+   "n_repos": 64,
+   "weighted_d": -0.0151
+  },
+  "top_miner_share": 0.1072,
+  "top_repo_share": 0.2564,
+  "weighted_d": -0.1101
+ },
+ "H2": {
+  "cut1_all_pairs": {
+   "N_c": {
+    "post": 12208,
+    "pre": 12431,
+    "prepre": 11541
+   },
+   "N_m": {
+    "post": 1,
+    "pre": 74,
+    "prepre": 16
+   },
+   "miners_ge3_pre": 8,
+   "miners_ge3_pre_with_post": 1,
+   "miners_pre": 13,
+   "placebo": 4.293872174402702,
+   "ratio": 0.013760360950727924,
+   "repos": 29,
+   "repos_with_pre_miner_pr": 29,
+   "top_repo": null
+  },
+  "cut1_recruited": {
+   "N_c": {
+    "post": 12208,
+    "pre": 12431,
+    "prepre": 11541
+   },
+   "N_m": {
+    "post": 1,
+    "pre": 74,
+    "prepre": 16
+   },
+   "miners_ge3_pre": 8,
+   "miners_ge3_pre_with_post": 1,
+   "miners_pre": 13,
+   "placebo": 4.293872174402702,
+   "ratio": 0.013760360950727924,
+   "repos": 29,
+   "repos_with_pre_miner_pr": 29,
+   "top_repo": null
+  },
+  "cut1_stayers": {
+   "N_c": {
+    "post": 11159,
+    "pre": 12024,
+    "prepre": 10687
+   },
+   "N_m": {
+    "post": 428,
+    "pre": 226,
+    "prepre": 64
+   },
+   "miners_ge3_pre": 13,
+   "miners_ge3_pre_with_post": 12,
+   "miners_pre": 23,
+   "placebo": 3.1385952054224884,
+   "ratio": 2.0406053449455857,
+   "repos": 28,
+   "repos_with_pre_miner_pr": 28,
+   "top_repo": null
+  },
+  "cut2_recruited": {
+   "N_c": {
+    "post": 15527,
+    "pre": 14406,
+    "prepre": 15870
+   },
+   "N_m": {
+    "post": 204,
+    "pre": 435,
+    "prepre": 230
+   },
+   "miners_ge3_pre": 32,
+   "miners_ge3_pre_with_post": 16,
+   "miners_pre": 45,
+   "placebo": 2.08350687213661,
+   "ratio": 0.4351076989360025,
+   "repos": 31,
+   "repos_with_pre_miner_pr": 31,
+   "top_repo": null
+  },
+  "d1_over_stayers": 0.006743273992107893,
+  "ruling": "UNDERPOWERED"
+ },
+ "H2_ban_screen": {
+  "candidate_repos": 3,
+  "labelled_reaction_repos": [
+   "astral-sh/ruff"
+  ]
+ },
+ "H2_ban_screen_hits": {
+  "astral-sh/ruff": true
+ },
+ "frame": {
+  "baseline_repos": 79,
+  "h1_units": 1407,
+  "miners_searchable_rows_authors": 194,
+  "pr_rows": 56430
+ }
+}

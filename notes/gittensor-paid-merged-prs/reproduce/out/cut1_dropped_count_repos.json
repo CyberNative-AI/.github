@@ -1,0 +1,47 @@
+{
+ "windows": {
+  "prepre": [
+   "2026-02-04T21:18:56Z",
+   "2026-03-08T21:18:55Z"
+  ],
+  "pre": [
+   "2026-03-08T21:18:56Z",
+   "2026-04-09T21:18:55Z"
+  ],
+  "post": [
+   "2026-04-09T21:18:56Z",
+   "2026-05-11T21:18:55Z"
+  ]
+ },
+ "repos": [
+  "apache/airflow",
+  "astral-sh/ruff",
+  "azerothcore/azerothcore-wotlk",
+  "charmbracelet/crush",
+  "cloudflare/cloudflare-docs",
+  "dillonzq/loveit",
+  "docker/docs",
+  "envoyproxy/envoy",
+  "espressif/esp-idf",
+  "flowiseai/flowise",
+  "google/flatbuffers",
+  "gradio-app/gradio",
+  "halo-dev/halo",
+  "llvm/llvm-project",
+  "mdn/content",
+  "nushell/nushell",
+  "openai/openai-python",
+  "openapitools/openapi-generator",
+  "openwrt/luci",
+  "owncloud/android",
+  "payloadcms/payload",
+  "pipedreamhq/pipedream",
+  "pola-rs/polars",
+  "python/cpython",
+  "richardlitt/standard-readme",
+  "theodinproject/curriculum",
+  "toeverything/affine",
+  "trinodb/trino",
+  "umbraco/umbraco-cms"
+ ]
+}

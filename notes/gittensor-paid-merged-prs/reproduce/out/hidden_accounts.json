@@ -1,0 +1,57 @@
+{
+ "accounts": {
+  "deleted_404": 3,
+  "hidden": 33,
+  "other": 0,
+  "profile_found": 30
+ },
+ "definitions": "- accounts: how many of the hidden accounts still have a /users profile (found) and how many return 404 (deleted).\n- windows: per removal window (32 days before and after each cut, as in removal_windows.py), how many hidden accounts\n  have at least one PR there, their PR count and merge state; per cut (pre or post) and across both cuts.\nMerge state is as of the pull: merged (merged_at set), closed (closed, not merged), open. Bots are not counted.",
+ "windows": {
+  "both_cuts_accounts": 4,
+  "cut1_post": {
+   "accounts": 2,
+   "closed_unmerged": 5,
+   "merged": 1,
+   "open": 0,
+   "prs": 6
+  },
+  "cut1_pre": {
+   "accounts": 4,
+   "closed_unmerged": 7,
+   "merged": 6,
+   "open": 1,
+   "prs": 14
+  },
+  "cut1_pre_and_post_accounts": 1,
+  "cut1_pre_or_post": {
+   "accounts": 5,
+   "closed_unmerged": 12,
+   "merged": 7,
+   "open": 1,
+   "prs": 20
+  },
+  "cut2_post": {
+   "accounts": 0,
+   "closed_unmerged": 0,
+   "merged": 0,
+   "open": 0,
+   "prs": 0
+  },
+  "cut2_pre": {
+   "accounts": 9,
+   "closed_unmerged": 31,
+   "merged": 18,
+   "open": 5,
+   "prs": 54
+  },
+  "cut2_pre_and_post_accounts": 0,
+  "cut2_pre_or_post": {
+   "accounts": 9,
+   "closed_unmerged": 31,
+   "merged": 18,
+   "open": 5,
+   "prs": 54
+  },
+  "either_cut_accounts": 10
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "cut1": {
+  "relisted_in_post": [],
+  "repos_excl": 29,
+  "N_m": {
+   "prepre": 16,
+   "pre": 74,
+   "post": 1
+  },
+  "N_c": {
+   "prepre": 11541,
+   "pre": 12431,
+   "post": 12208
+  },
+  "ratio_excl_relisted": 0.013760360950727924,
+  "placebo_excl_relisted": 4.293872174402702,
+  "post_top_repos_all": [
+   [
+    "pola-rs/polars",
+    1
+   ]
+  ]
+ },
+ "cut2": {
+  "relisted_in_post": [
+   "infiniflow/ragflow"
+  ],
+  "repos_excl": 30,
+  "N_m": {
+   "prepre": 223,
+   "pre": 381,
+   "post": 11
+  },
+  "N_c": {
+   "prepre": 15515,
+   "pre": 13888,
+   "post": 14919
+  },
+  "ratio_excl_relisted": 0.0268761900439099,
+  "placebo_excl_relisted": 1.9086758772292367,
+  "post_top_repos_all": [
+   [
+    "infiniflow/ragflow",
+    193
+   ],
+   [
+    "penpot/penpot",
+    8
+   ],
+   [
+    "jupyterlab/jupyterlab",
+    2
+   ]
+  ]
+ },
+ "h1_top_repos_decided": [
+  [
+   "langgenius/dify",
+   232
+  ],
+  [
+   "sbt/sbt",
+   139
+  ],
+  [
+   "happyfish100/fastdfs",
+   109
+  ],
+  [
+   "infiniflow/ragflow",
+   54
+  ],
+  [
+   "DotNetNext/SqlSugar",
+   32
+  ]
+ ],
+ "e4": {
+  "control_probed": 182,
+  "control_422": 4,
+  "miners_api": 182,
+  "miners_unsearchable": 33
+ }
+}

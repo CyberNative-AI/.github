@@ -1,0 +1,46 @@
+{
+ "windows": {
+  "prepre": [
+   "2026-02-04T21:18:56Z",
+   "2026-03-08T21:18:55Z"
+  ],
+  "pre": [
+   "2026-03-08T21:18:56Z",
+   "2026-04-09T21:18:55Z"
+  ],
+  "post": [
+   "2026-04-09T21:18:56Z",
+   "2026-05-11T21:18:55Z"
+  ]
+ },
+ "repos": [
+  "ant-design/ant-design",
+  "bevyengine/bevy",
+  "bitcoin/bitcoin",
+  "bitcoinj/bitcoinj",
+  "bitcoinjs/bitcoinjs-lib",
+  "bitpay/bitcore",
+  "dbeaver/dbeaver",
+  "denoland/deno",
+  "ggml-org/llama.cpp",
+  "grafana/grafana",
+  "huggingface/transformers",
+  "infiniflow/ragflow",
+  "jupyterlab/jupyterlab",
+  "keras-team/keras",
+  "langgenius/dify",
+  "medusajs/medusa",
+  "nextcloud/server",
+  "nocodb/nocodb",
+  "ollama/ollama",
+  "pandas-dev/pandas",
+  "penpot/penpot",
+  "ray-project/ray",
+  "run-llama/llama_index",
+  "sbt/sbt",
+  "significant-gravitas/autogpt",
+  "stirling-tools/stirling-pdf",
+  "withastro/astro",
+  "zed-industries/zed"
+ ]
+}
