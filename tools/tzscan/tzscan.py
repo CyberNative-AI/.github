@@ -314,6 +314,8 @@ class Scan:
         self.cleanup_error = None
         self.status = None
         self.open_cd = 0    # central directory bytes of the archives open now (nested jars)
+        self.zoneinfo_env = None    # path named by ZONEINFO, relative to the root; Go reads it first
+        self.zoneinfo_found = False
 
     # ---- reporting helpers -------------------------------------------------
     def room(self, record):
@@ -650,11 +652,25 @@ class Scan:
         system = lambda c: c["kind"] == "zoneinfo" and (c["path"] in self.SYSTEM_TREES or
                                                         any(l in self.SYSTEM_TREES for l in c.get("linkedFrom", [])))
         has_system = any(system(c) for c in self.copies)
+        # Go's LoadLocation reads $ZONEINFO (a zip, or a directory) before every other copy
+        zi = self.zoneinfo_env
+        for _ in range(16):
+            if zi not in self.links:
+                break
+            kind, tgt = self.links[zi]
+            zi = os.path.normpath(tgt.lstrip("/") if tgt.startswith("/") or kind == "hard"
+                                  else os.path.join(os.path.dirname(zi), tgt))
+        named = {c["path"] for c in self.copies if zi and c["kind"] == "zoneinfo" and c["path"] == zi}
+        named |= {c["sameAs"] for c in self.copies if c["path"] in named and c.get("sameAs")}
+        self.zoneinfo_found = bool(named)
         for c in self.copies:
             k, p = c["kind"], c["path"]
             if k == "zoneinfo":
-                tier = "A" if system(c) else "B"
-                if "pytz" in p:
+                tier = "A" if system(c) or p in named else "B"
+                if p in named:
+                    c["use"] = (f"named by this image's ZONEINFO (/{self.zoneinfo_env}): Go programs read it "
+                                "before /usr/share/zoneinfo and before their own embedded copy")
+                elif "pytz" in p:
                     c["use"] = "used by pytz"
                 elif p.endswith("tzdata/zoneinfo"):
                     c["use"] = "Python tzdata package: used by zoneinfo only when the OS has no tz files"
@@ -667,8 +683,9 @@ class Scan:
                 elif tier == "B":
                     c["use"] = "a program's own copy at this path"
             elif k == "go-embedded":
-                tier = "B" if has_system else "A"
-                c["use"] = USE[k] + ("; this image has one, so this copy is a fallback" if has_system
+                tier = "B" if has_system or named else "A"
+                c["use"] = USE[k] + (f"; this image's ZONEINFO names /{self.zoneinfo_env}, so this copy is a fallback"
+                                     if named else "; this image has one, so this copy is a fallback" if has_system
                                      else "; this image has none, so this copy is the one used")
             elif k == "jdk-tzdb":
                 tier = "B" if "!/" in p else "A"
@@ -1203,7 +1220,25 @@ def remove_container(scan, ref):
               f"tzscan: remove it with: docker rm -f -v {ref}", file=sys.stderr)
 
 
-def scan_image(image):
+def zoneinfo_path(value, workdir="/"):
+    """The image path Go opens for ZONEINFO=value (relative to the working directory), or None if unset."""
+    if not value:
+        return None
+    p = os.path.normpath(os.path.join("/", workdir or "/", value)).lstrip("/")
+    return p if p not in ("", ".") else None
+
+
+def zoneinfo_from_config(text):
+    """ZONEINFO from `docker image inspect --format '{{json .Config}}'` output (the last entry wins)."""
+    cfg = json.loads(text) or {}
+    value = None
+    for e in cfg.get("Env") or []:
+        if e.startswith("ZONEINFO="):
+            value = e[len("ZONEINFO="):]
+    return zoneinfo_path(value, cfg.get("WorkingDir") or "/")
+
+
+def scan_image(image, zoneinfo=None):
     scan = Scan(image)
     owned, cid, p, name, abandoned = [], None, None, None, False  # owned: every name tzscan asked Docker to create
     try:
@@ -1214,8 +1249,17 @@ def scan_image(image):
                 if rc != 0:
                     scan.problem("docker", image, f"docker pull failed: {err}")
                     return scan
+            rc, out, err = docker("image", "inspect", "--format", "{{json .Config}}", "--", image)
+            if rc != 0:
+                scan.problem("docker", image, f"docker image inspect failed: {err}")
+                return scan
         except OSError as e:
             scan.problem("docker", image, f"cannot run docker: {e}")
+            return scan
+        try:
+            scan.zoneinfo_env = zoneinfo_from_config(out) if zoneinfo is None else zoneinfo_path(zoneinfo)
+        except (ValueError, AttributeError, TypeError) as e:
+            scan.problem("docker", image, f"unreadable image configuration: {type(e).__name__}: {e}")
             return scan
         with deferred_signals():
             for extra in ([], ["--entrypoint", ""]):
@@ -1277,6 +1321,9 @@ def scan_image(image):
 # ---- output ------------------------------------------------------------------
 def print_scan(scan):
     print(f"== {scan.target}")
+    if scan.zoneinfo_env:
+        print(f"   ZONEINFO=/{scan.zoneinfo_env}" + ("" if scan.zoneinfo_found else
+              ": no copy found there, so Go programs use the copies below"))
     for tier, title in (("A", "used by default for local time"), ("B", "library and program copies (matter only if that code is used)")):
         group = [c for c in scan.copies if c.get("tier") == tier and not c.get("sameAs")]
         if not group:
@@ -1330,19 +1377,25 @@ def main():
     ap.add_argument("--tar", action="append", default=[])
     ap.add_argument("--dir", action="append", default=[])
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--zoneinfo", metavar="PATH",
+                    help="the ZONEINFO value the container runs with (absolute; empty for unset). "
+                         "Images are otherwise read from their configuration; --tar and --dir have none")
     a = ap.parse_args()
     if not (a.images or a.tar or a.dir):
         ap.error("give an image, --tar or --dir")
+    if a.zoneinfo and not a.zoneinfo.startswith("/"):
+        ap.error("--zoneinfo takes an absolute path")
     for img in a.images:
         if not img or img.startswith("-"):
             ap.error(f"not an image name: {img!r}")
     # a terminated scan still removes its temporary container (finally blocks run on SystemExit)
     signal.signal(signal.SIGTERM, _on_signal)
     signal.signal(signal.SIGINT, _on_signal)
-    jobs = [(img, lambda img=img: scan_image(img)) for img in a.images]
+    jobs = [(img, lambda img=img: scan_image(img, a.zoneinfo)) for img in a.images]
     for t in a.tar:
         def job(t=t):
             s = Scan(t)
+            s.zoneinfo_env = zoneinfo_path(a.zoneinfo)
             try:
                 fh = sys.stdin.buffer if t == "-" else open(t, "rb")
             except OSError as e:
@@ -1356,6 +1409,7 @@ def main():
     for d in a.dir:
         def job(d=d):
             s = Scan(d)
+            s.zoneinfo_env = zoneinfo_path(a.zoneinfo)
             walk_dir(s, d)
             s.finish()
             return s
@@ -1371,6 +1425,8 @@ def main():
         if a.json:
             sys.stdout.write(",\n " if statuses else "[\n ")
             json.dump({"target": s.target, "status": s.status, "complete": not s.problems,
+                       **({"zoneinfoEnv": {"path": "/" + s.zoneinfo_env, "found": s.zoneinfo_found}}
+                          if s.zoneinfo_env else {}),
                        "copies": s.copies, "problems": s.problems,
                        **({"cleanupError": s.cleanup_error} if s.cleanup_error else {})}, _Indented(sys.stdout), indent=1)
         else:

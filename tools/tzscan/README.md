@@ -19,7 +19,13 @@ python3 tzscan.py --tar rootfs.tar
 python3 tzscan.py --dir /path/to/rootfs
 ```
 
-Add `--json` for machine-readable output. Each target there has `complete` and a `problems` list naming anything that was not read.
+Add `--json` for machine-readable output. Each target there has `complete` and a `problems` list naming anything that was not read, and `zoneinfoEnv` when `ZONEINFO` is set (below).
+
+Go programs read the zip or directory named by `ZONEINFO` before any other copy, including `/usr/share/zoneinfo` and the copy compiled into the program. tzscan reads `ZONEINFO` from the image's configuration and lists the copy it names as used by default. A tar or a directory has no configuration, and a value set only at run time (`docker run -e`, a Kubernetes `env:`) is not in the image, so give it with `--zoneinfo`:
+
+```sh
+python3 tzscan.py --dir /path/to/rootfs --zoneinfo /zoneinfo.zip
+```
 
 ## What a report looks like
 
@@ -63,7 +69,7 @@ An image can be built to exhaust memory or disk, so tzscan reads each target wit
 | Copy | How it is judged |
 |---|---|
 | OS zoneinfo, and the same files shipped by Python `tzdata`, pytz, PostgreSQL and Go's `zoneinfo.zip` | **Measured:** the zone files are evaluated for Vancouver, Edmonton, Inuvik, Winnipeg and Casablanca on 15 December 2026. Symlinks, hardlinks and aliases are followed. |
-| Go `time/tzdata` compiled into a binary | **Measured.** Default only when the image has no zoneinfo directory, because Go reads the system copy first. |
+| Go `time/tzdata` compiled into a binary | **Measured.** Default only when `ZONEINFO` names no copy and the image has no zoneinfo directory, because Go reads those first. |
 | PHP and MongoDB built-in database (timelib), including PECL `timezonedb.so` | **Measured.** |
 | Zone files compiled into a binary (ClickHouse) | **Measured.** |
 | Joda-Time in jars, including jars inside jars | **Measured** by decoding Joda's compiled zones. The jar's own version label is shown but not trusted. |
@@ -84,12 +90,14 @@ We also scanned the arm64 builds of 11 of those images, from the same image inde
 
 The fixes in our guides were also checked: a 2026e zoneinfo tree, a 2026e `tzdb.dat`, Joda-Time 2.15.0, an ICU 2026e `.res` override and PECL `timezonedb` 2026.5 each read as current. A tree with one stale zone is reported stale for that zone, and a tree missing a zone, a damaged `tzdb.dat` or an empty directory exits 2.
 
+For `ZONEINFO`, a Go program built with its own 2026c copy, on a host with 2026e zone files, gave the 2026c answers with `ZONEINFO` naming a 2026c zip and the 2026e answers with a 2026e zip, so the named file comes first. tzscan lists a named zip, directory or symlink as used by default, also when the value is relative to the image's working directory, and the compiled-in copy as a fallback.
+
 ## Not established
 
 - Windows images; running tzscan on an arm64 machine (we scanned arm64 images from an x86-64 host); big-endian ICU data; ICU data with no table of contents and two version strings (reported as UNKNOWN).
 - MySQL and MariaDB named time zones: they live in tables in the data directory, created at run time, not in the image.
 - Rust `chrono-tz` newer than 0.10.4 (reported as UNKNOWN until mapped).
-- Images that set `ZONEINFO` or `TZDIR`, or a JDK started with `-Djava.time.zone.DefaultZoneRulesProvider`: tzscan does not model that precedence.
+- Images that set `TZDIR`, or a JDK started with `-Djava.time.zone.DefaultZoneRulesProvider`: tzscan does not model that precedence.
 
 ## License
 
