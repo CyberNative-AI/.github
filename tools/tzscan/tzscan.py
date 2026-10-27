@@ -314,8 +314,18 @@ class Scan:
         self.cleanup_error = None
         self.status = None
         self.open_cd = 0    # central directory bytes of the archives open now (nested jars)
-        self.zoneinfo_env = None    # path named by ZONEINFO, relative to the root; Go reads it first
-        self.zoneinfo_found = False
+        self.zoneinfo_env = None    # ZONEINFO as an absolute path inside the target, unnormalized; Go reads it first
+        self.zoneinfo_zip = False   # Go opens it as a zip (the value ends in .zip), else as a directory
+        self.zoneinfo_files = set() # with a zip ZONEINFO: every regular file, so an unread target is not taken as absent
+        self.go_zips = {}           # path -> (zones, reasons) as Go reads that zip, or None when not read
+        self.zoneinfo_named = set() # copy paths Go reads through ZONEINFO
+        self.zoneinfo_full = False  # Go loads every measured zone there, so the copies after it are fallbacks
+        self.zoneinfo_note = None
+
+    def set_zoneinfo(self, z):
+        """z: (absolute path, opened as a zip) from zoneinfo_path, or None when unset."""
+        if z:
+            self.zoneinfo_env, self.zoneinfo_zip = z
 
     # ---- reporting helpers -------------------------------------------------
     def room(self, record):
@@ -384,6 +394,19 @@ class Scan:
         """f: a binary file object at the start of the file's data; size: its length.
         seekable: f is a real file that zipfile may seek in."""
         base = os.path.basename(path)
+        if self.zoneinfo_zip:
+            self.spend("retained_bytes", ENTRY_COST + len(path))
+            self.zoneinfo_files.add(path)
+            if base == os.path.basename(self.zoneinfo_env):  # also under a linked parent or through ..
+                if size > SPOOL:
+                    self.go_zips[path] = None
+                else:
+                    self.spend("scanned_bytes", size)
+                    data = f.read(size)
+                    zones, why = self.go_zip(data)
+                    self.spend("retained_bytes", ENTRY_COST + sum(map(len, zones.values())))
+                    self.go_zips[path] = (zones, why)
+                    f, seekable = io.BytesIO(data), True
         low = base.lower()
         named = (base in ("tzdb.dat", "TZDB.dat", "zoneinfo64.res", "zoneinfo.zip", "dateutil-zoneinfo.tar.gz")
                  or low.endswith((".jar", ".war", ".ear") + BINARY_EXT) or ".so." in low)
@@ -496,6 +519,21 @@ class Scan:
                 self.problem("corrupt", f"{path}!/{name}", f"{type(e).__name__}: {e}")
         if zones:
             self.named(path, "zoneinfo", zones, "zoneinfo zip, zones measured")
+
+    @staticmethod
+    def go_zip(data):
+        """(zone -> TZif bytes Go loads from this zip, reasons it loads none for some names)."""
+        zones, why = {}, set()
+        for name in NAMES:
+            got = go_zip_read(data, name)
+            if isinstance(got, bytes):
+                if load_tzif(got):
+                    zones.setdefault(NAMES[name], got)
+                else:
+                    why.add("its zone files are not ones Go can load")
+            elif got:
+                why.add(got)
+        return zones, why
 
     def tarball_tree(self, path, f):
         zones = {}
@@ -652,23 +690,13 @@ class Scan:
         system = lambda c: c["kind"] == "zoneinfo" and (c["path"] in self.SYSTEM_TREES or
                                                         any(l in self.SYSTEM_TREES for l in c.get("linkedFrom", [])))
         has_system = any(system(c) for c in self.copies)
-        # Go's LoadLocation reads $ZONEINFO (a zip, or a directory) before every other copy
-        zi = self.zoneinfo_env
-        for _ in range(16):
-            if zi not in self.links:
-                break
-            kind, tgt = self.links[zi]
-            zi = os.path.normpath(tgt.lstrip("/") if tgt.startswith("/") or kind == "hard"
-                                  else os.path.join(os.path.dirname(zi), tgt))
-        named = {c["path"] for c in self.copies if zi and c["kind"] == "zoneinfo" and c["path"] == zi}
-        named |= {c["sameAs"] for c in self.copies if c["path"] in named and c.get("sameAs")}
-        self.zoneinfo_found = bool(named)
+        named = self.zoneinfo_named
         for c in self.copies:
             k, p = c["kind"], c["path"]
             if k == "zoneinfo":
                 tier = "A" if system(c) or p in named else "B"
                 if p in named:
-                    c["use"] = (f"named by this image's ZONEINFO (/{self.zoneinfo_env}): Go programs read it "
+                    c["use"] = (f"named by this image's ZONEINFO ({self.zoneinfo_env}): Go programs read it "
                                 "before /usr/share/zoneinfo and before their own embedded copy")
                 elif "pytz" in p:
                     c["use"] = "used by pytz"
@@ -683,9 +711,9 @@ class Scan:
                 elif tier == "B":
                     c["use"] = "a program's own copy at this path"
             elif k == "go-embedded":
-                tier = "B" if has_system or named else "A"
-                c["use"] = USE[k] + (f"; this image's ZONEINFO names /{self.zoneinfo_env}, so this copy is a fallback"
-                                     if named else "; this image has one, so this copy is a fallback" if has_system
+                tier = "B" if has_system or self.zoneinfo_full else "A"
+                c["use"] = USE[k] + (f"; this image's ZONEINFO names {self.zoneinfo_env}, so this copy is a fallback"
+                                     if self.zoneinfo_full else "; this image has one, so this copy is a fallback" if has_system
                                      else "; this image has none, so this copy is the one used")
             elif k == "jdk-tzdb":
                 tier = "B" if "!/" in p else "A"
@@ -738,7 +766,82 @@ class Scan:
                 for c in self.copies:
                     if c["path"] == dest:
                         c.setdefault("linkedFrom", []).append(lp)
+        if self.zoneinfo_env:
+            self.zoneinfo_source()
         self.classify()
+
+    def physical(self, path):
+        """The path, relative to the root, that opening absolute `path` in the target reaches. Links
+        seen in the walk are followed where they occur, so `..` after a link climbs from its target,
+        as the kernel does. None after 40 links (the kernel's ELOOP)."""
+        todo, out, hops = path.split("/")[::-1], [], 0
+        while todo:
+            part = todo.pop()
+            if part in ("", "."):
+                continue
+            if part == "..":
+                out = out[:-1]
+                continue
+            link = self.links.get("/".join(out + [part]))
+            if link is None:
+                out.append(part)
+                continue
+            hops += 1
+            if hops > 40:
+                return None
+            kind, tgt = link
+            if kind == "hard" or tgt.startswith("/"):  # a tar hardlink names another member from the root
+                out = []
+            todo.extend(tgt.split("/")[::-1])
+        return "/".join(out)
+
+    def zoneinfo_source(self):
+        """Find what Go's LoadLocation reads through ZONEINFO (time/zoneinfo.go): a value longer than
+        4 characters ending in .zip is read as a zip, anything else as a directory of zone files.
+        A zone Go cannot load there comes from the next source, so the copies after ZONEINFO are
+        fallbacks only when every measured zone loads from it."""
+        raw, zones, why = self.zoneinfo_env, {}, set()
+        where = self.physical(raw)
+        if where is None:
+            self.problem("zoneinfo", raw, "ZONEINFO: too many levels of symbolic links; not established")
+            return
+        if self.zoneinfo_zip:
+            if where in self.go_zips:
+                if self.go_zips[where] is None:
+                    self.problem("limit", raw, f"ZONEINFO names /{where}, over {SPOOL} bytes; not read as Go reads it")
+                    return
+                zones, why = self.go_zips[where]
+            elif where in self.zoneinfo_files:
+                self.problem("zoneinfo", raw, f"ZONEINFO names /{where}, which tzscan reads as a zip only under "
+                                              f"the name {os.path.basename(raw)}; not established")
+                return
+            elif any(p.startswith(where + "/") for p in self.tzif):
+                why.add("it is a directory, and Go opens a name ending in .zip as a zip file")
+        else:
+            for name in NAMES:
+                p = self.physical(raw + "/" + name)
+                if p is None:
+                    self.problem("zoneinfo", raw + "/" + name, "ZONEINFO: too many levels of symbolic links; not established")
+                    return
+                data = self.blobs.get(self.tzif.get(p))
+                if data and load_tzif(data):
+                    zones.setdefault(NAMES[name], data)
+        if not zones:
+            self.zoneinfo_note = ("; ".join(sorted(why)) or "Go finds no zone files there") + \
+                                 ", so Go programs use the copies below"
+            return
+        where = where or "."
+        offsets = self.measure(zones)
+        c = next((c for c in self.copies if c["kind"] == "zoneinfo" and c["path"] == where
+                  and c["detail"].get("offsetsDec15") == offsets), None)
+        c = c or self.named(where, "zoneinfo", zones, "named by ZONEINFO, zones read as Go reads them")
+        if not c:
+            return  # the report budget is spent, which is already a problem
+        self.zoneinfo_named = {c["path"]} | ({c["sameAs"]} if c.get("sameAs") else set())
+        self.zoneinfo_full = len(zones) == len(ZONES)
+        if not self.zoneinfo_full:
+            self.zoneinfo_note = (f"Go loads {len(zones)} of the {len(ZONES)} zones from /{where}; "
+                                  "the others come from the copies below")
 
     def conclude(self):
         """Per-target exit status: incomplete first, then the published 1 / 2 / 3 / 0 order."""
@@ -972,6 +1075,37 @@ def zip_directory_size(f, size):
         cd, = struct.unpack_from("<Q", rec, 40)
     f.seek(0)
     return cd
+
+
+def go_zip_read(data, name):
+    """What Go's loadTzinfoFromZip (time/zoneinfo_read.go) gives for one zone name: its bytes,
+    None when the zip has no such entry (Go goes on to the next source), or why Go fails.
+    Go finds the end record in the last 22 bytes only, so an archive comment breaks it, and it
+    reads stored entries only."""
+    u16 = lambda b, o: int.from_bytes(b[o:o + 2], "little")
+    u32 = lambda b, o: int.from_bytes(b[o:o + 4], "little")
+    bad = "it is not a zip file Go can read"
+    if len(data) < 22 or u32(data, len(data) - 22) != 0x06054B50:
+        return bad
+    n, size, off = u16(data, len(data) - 12), u32(data, len(data) - 10), u32(data, len(data) - 6)
+    if off + size > len(data):
+        return bad
+    cd, want = data[off:off + size], name.encode()
+    for _ in range(n):
+        if len(cd) < 46 or u32(cd, 0) != 0x02014B50:
+            break
+        meth, usize, nl, xl, cl, at = u16(cd, 10), u32(cd, 24), u16(cd, 28), u16(cd, 30), u16(cd, 32), u32(cd, 42)
+        zname, cd = cd[46:46 + nl], cd[46 + nl + xl + cl:]
+        if zname != want:
+            continue
+        if meth != 0:
+            return "its entries are compressed, and Go reads only stored ones"
+        h = data[at:at + 30 + nl]
+        if len(h) < 30 + nl or u32(h, 0) != 0x04034B50 or u16(h, 8) != meth or u16(h, 26) != nl or h[30:] != want:
+            return bad
+        start = at + 30 + nl + u16(h, 28)
+        return data[start:start + usize] if start + usize <= len(data) else bad
+    return None
 
 
 class BoundedTarInfo(tarfile.TarInfo):
@@ -1221,11 +1355,13 @@ def remove_container(scan, ref):
 
 
 def zoneinfo_path(value, workdir="/"):
-    """The image path Go opens for ZONEINFO=value (relative to the working directory), or None if unset."""
+    """(absolute path, opened as a zip) for ZONEINFO=value, or None if unset. A relative value is
+    joined to the working directory as written: `..` is resolved against the image's own links.
+    Go chooses zip or directory from the value itself."""
     if not value:
         return None
-    p = os.path.normpath(os.path.join("/", workdir or "/", value)).lstrip("/")
-    return p if p not in ("", ".") else None
+    path = value if value.startswith("/") else (workdir or "/").rstrip("/") + "/" + value
+    return path, len(value) > 4 and value.endswith(".zip")
 
 
 def zoneinfo_from_config(text):
@@ -1257,7 +1393,7 @@ def scan_image(image, zoneinfo=None):
             scan.problem("docker", image, f"cannot run docker: {e}")
             return scan
         try:
-            scan.zoneinfo_env = zoneinfo_from_config(out) if zoneinfo is None else zoneinfo_path(zoneinfo)
+            scan.set_zoneinfo(zoneinfo_from_config(out) if zoneinfo is None else zoneinfo_path(zoneinfo))
         except (ValueError, AttributeError, TypeError) as e:
             scan.problem("docker", image, f"unreadable image configuration: {type(e).__name__}: {e}")
             return scan
@@ -1322,8 +1458,7 @@ def scan_image(image, zoneinfo=None):
 def print_scan(scan):
     print(f"== {scan.target}")
     if scan.zoneinfo_env:
-        print(f"   ZONEINFO=/{scan.zoneinfo_env}" + ("" if scan.zoneinfo_found else
-              ": no copy found there, so Go programs use the copies below"))
+        print(f"   ZONEINFO={scan.zoneinfo_env}" + (f": {scan.zoneinfo_note}" if scan.zoneinfo_note else ""))
     for tier, title in (("A", "used by default for local time"), ("B", "library and program copies (matter only if that code is used)")):
         group = [c for c in scan.copies if c.get("tier") == tier and not c.get("sameAs")]
         if not group:
@@ -1395,7 +1530,7 @@ def main():
     for t in a.tar:
         def job(t=t):
             s = Scan(t)
-            s.zoneinfo_env = zoneinfo_path(a.zoneinfo)
+            s.set_zoneinfo(zoneinfo_path(a.zoneinfo))
             try:
                 fh = sys.stdin.buffer if t == "-" else open(t, "rb")
             except OSError as e:
@@ -1409,7 +1544,7 @@ def main():
     for d in a.dir:
         def job(d=d):
             s = Scan(d)
-            s.zoneinfo_env = zoneinfo_path(a.zoneinfo)
+            s.set_zoneinfo(zoneinfo_path(a.zoneinfo))
             walk_dir(s, d)
             s.finish()
             return s
@@ -1425,7 +1560,9 @@ def main():
         if a.json:
             sys.stdout.write(",\n " if statuses else "[\n ")
             json.dump({"target": s.target, "status": s.status, "complete": not s.problems,
-                       **({"zoneinfoEnv": {"path": "/" + s.zoneinfo_env, "found": s.zoneinfo_found}}
+                       **({"zoneinfoEnv": {"path": s.zoneinfo_env, "form": "zip" if s.zoneinfo_zip else "directory",
+                                           "found": s.zoneinfo_full,
+                                           **({"note": s.zoneinfo_note} if s.zoneinfo_note else {})}}
                           if s.zoneinfo_env else {}),
                        "copies": s.copies, "problems": s.problems,
                        **({"cleanupError": s.cleanup_error} if s.cleanup_error else {})}, _Indented(sys.stdout), indent=1)
