@@ -74,6 +74,46 @@ Result: 65 of 65 rows match on 59 images. No row where the expected copy is stal
 | `python:3.14-slim` | `sha256:a2b82f3c48559aa0a8446d9af49826b6e2b2016f4cd2afabfe6013ec53729170` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | python |
 | `python:3.15.0rc3-slim` | `sha256:a3af3d230522dd52f7f2191b39e1892912dbcb0c8dee22afdec3dc83baf0f549` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | python |
 
+## arm64
+
+The arm64 builds of 11 images above, from the same image index (the x86-64 digests above are index digests), pulled by their arm64 manifest digest and scanned on 27 October 2026 with `tzscan.py --json`, from an x86-64 host. All 11 gave the same verdicts, releases and exit status as their x86-64 build. `eclipse-temurin:21-jre` is a newer index than the one in the table above: its OS tzdata is now 2026e on both architectures.
+
+**Expected** is filled in where the release was established on arm64, and all 17 match. **Run on arm64 under emulation** means the image's own arm64 binary, started with `qemu-aarch64` 10.2.1 user-mode emulation as the container's entrypoint, ran the probe from Methods below. The Java probe was compiled for Java 8, because a JRE cannot run a source file. **File identical** means the file has the same SHA-256 as the x86-64 copy measured above. For rows marked not established, the copy is inside a binary we did not run on arm64, or it is a file whose release we did not establish on either architecture. tzscan's verdict there equals its x86-64 verdict.
+
+| Image | arm64 digest | Copy | Expected | tzscan | Method |
+|---|---|---|---|---|---|
+| `eclipse-temurin:21-jre` | `sha256:e8ffcc88eeec92a9860c5b574dfedfb9a7cef2a5cc7de8e4f2d029c7e8bbd2df` | jdk-tzdb `opt/java/openjdk/lib/tzdb.dat` | 2026b | 2026b | java, run on arm64 under emulation |
+| `eclipse-temurin:21-jre` | `sha256:e8ffcc88eeec92a9860c5b574dfedfb9a7cef2a5cc7de8e4f2d029c7e8bbd2df` | zoneinfo `usr/share/zoneinfo` | >=2026e | >=2026e | pkg |
+| `php:8.4-cli` | `sha256:3cbf9ac1eb9249e5c72dfd1976f7b1eff70936f4fbfd60475373d67e15bde5d4` | timelib `usr/local/bin/php` | 2026c | 2026c | php, run on arm64 under emulation |
+| `php:8.4-cli` | `sha256:3cbf9ac1eb9249e5c72dfd1976f7b1eff70936f4fbfd60475373d67e15bde5d4` | timelib `usr/local/bin/php-cgi` | — | 2026c | not established on arm64; same verdict as x86-64 |
+| `php:8.4-cli` | `sha256:3cbf9ac1eb9249e5c72dfd1976f7b1eff70936f4fbfd60475373d67e15bde5d4` | timelib `usr/local/bin/phpdbg` | — | 2026c | not established on arm64; same verdict as x86-64 |
+| `php:8.4-cli` | `sha256:3cbf9ac1eb9249e5c72dfd1976f7b1eff70936f4fbfd60475373d67e15bde5d4` | timelib `usr/local/lib/libphp.so` | — | 2026c | not established on arm64; same verdict as x86-64 |
+| `php:8.4-cli` | `sha256:3cbf9ac1eb9249e5c72dfd1976f7b1eff70936f4fbfd60475373d67e15bde5d4` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg |
+| `golang:1.27` | `sha256:a83e961ad968e2e7abc2a59554e356f00c2a270a15fbb39f2c84a4caf13be9c3` | zoneinfo `usr/local/go/lib/time/zoneinfo.zip` | 2026c | 2026c | file identical to the x86-64 copy, measured 2026c with go |
+| `golang:1.27` | `sha256:a83e961ad968e2e7abc2a59554e356f00c2a270a15fbb39f2c84a4caf13be9c3` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg |
+| `registry.k8s.io/kube-controller-manager:v1.36.5` | `sha256:15f8587dc75f4f473bcff3c514193f192924e1e087936556bec94b5c087a32c3` | go-embedded `usr/local/bin/kube-controller-manager` | — | <2026b | not established on arm64; same verdict as x86-64 |
+| `registry.k8s.io/kube-controller-manager:v1.36.5` | `sha256:15f8587dc75f4f473bcff3c514193f192924e1e087936556bec94b5c087a32c3` | zoneinfo `usr/share/zoneinfo` | 2026b | 2026b | pkg |
+| `node:24-slim` | `sha256:ba6b7d0ee561d9d49deb99e2b93c98632cc287b6cca1a6b18d66127054efa4dc` | icu `usr/local/bin/node` | 2026c | 2026c | node, run on arm64 under emulation |
+| `node:24-slim` | `sha256:ba6b7d0ee561d9d49deb99e2b93c98632cc287b6cca1a6b18d66127054efa4dc` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg |
+| `python:3.14-slim` | `sha256:7f47c8ffd4e70e88f7326b68e7df95109597ef66023a1052b7d1ec18390d2604` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg and python, run on arm64 under emulation |
+| `trinodb/trino:483` | `sha256:aa18e61b2e7776ab8641ba8baaa8687d0430894e88c639e61010cc46a994ab36` | jdk-tzdb `lib/tzdb.dat` | 2026a | 2026a | java, run on arm64 under emulation |
+| `trinodb/trino:483` | `sha256:aa18e61b2e7776ab8641ba8baaa8687d0430894e88c639e61010cc46a994ab36` | joda `usr/lib/trino/lib/joda-time_joda-time-2.14.2.jar` | 2026b | 2026b | file identical to the x86-64 copy, measured 2026b with trino |
+| `trinodb/trino:483` | `sha256:aa18e61b2e7776ab8641ba8baaa8687d0430894e88c639e61010cc46a994ab36` | threetenbp `usr/lib/trino/plugin/bigquery/org.threeten_threetenbp-1.7.0.jar!/org/threeten/bp/TZDB.dat` | — | 2024b | not established on arm64; same verdict as x86-64 |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | tzif-blobs `usr/bin/clickhouse` | >=2026e | >=2026e | clickhouse, run on arm64 under emulation |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | icu `usr/bin/clickhouse` | — | 2025b | not established on arm64; same verdict as x86-64 |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | chrono-tz `usr/bin/clickhouse` | — | 2025b | not established on arm64; same verdict as x86-64 |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | chrono-tz `usr/bin/clickhouse` | — | <=2025b | not established on arm64; same verdict as x86-64 |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | icu `usr/share/zoneinfo-icu/44/be/zoneinfo64.res` | — | 2026c | not established on arm64; same verdict as x86-64 |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | icu `usr/share/zoneinfo-icu/44/le/zoneinfo64.res` | — | 2026c | not established on arm64; same verdict as x86-64 |
+| `clickhouse/clickhouse-server:26.9.18.11` | `sha256:eda2c8d431084bbeba793369e715f7bc96fc314f8543b27d81ce65b651ac18a7` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg |
+| `mongo:8.0` | `sha256:f7b146ec8059a89b16b2290c8d6e27c2eebf16f8f8884e6d56c248a8770c6fd1` | timelib `usr/bin/mongod` | — | <2026b | not established on arm64; same verdict as x86-64 |
+| `mongo:8.0` | `sha256:f7b146ec8059a89b16b2290c8d6e27c2eebf16f8f8884e6d56c248a8770c6fd1` | timelib `usr/bin/mongos` | — | <2026b | not established on arm64; same verdict as x86-64 |
+| `mongo:8.0` | `sha256:f7b146ec8059a89b16b2290c8d6e27c2eebf16f8f8884e6d56c248a8770c6fd1` | icu `usr/bin/mongosh` | — | 2026c | not established on arm64; same verdict as x86-64 |
+| `mongo:8.0` | `sha256:f7b146ec8059a89b16b2290c8d6e27c2eebf16f8f8884e6d56c248a8770c6fd1` | timelib `usr/lib/mongosh_crypt_v1.so` | — | <2026b | not established on arm64; same verdict as x86-64 |
+| `mongo:8.0` | `sha256:f7b146ec8059a89b16b2290c8d6e27c2eebf16f8f8884e6d56c248a8770c6fd1` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg |
+| `debian:13` | `sha256:b55910b579d6eb05ebd79fbc8468b974fa39bb0610d52e1f1390bb2177ab7614` | zoneinfo `usr/share/zoneinfo` | 2026c | 2026c | pkg |
+| `alpine:3.22` | `sha256:2e1a7aa4cbc4e9e5222bb4c24a839aa1a6170ea5492d644777ce7b178824e44f` | zoneinfo `usr/share/zoneinfo` | absent | absent | none |
+
 ## Methods
 
 The probes print offsets for 15 December 2026, 12:00 UTC, after the change. Correct values: Vancouver −7, Edmonton −6, Inuvik −6, Winnipeg −5. Where a probe includes Casablanca, it is checked at a date after 20 September 2026; correct is +0.

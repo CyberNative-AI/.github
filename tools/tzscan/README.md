@@ -80,11 +80,13 @@ tzscan lists copies and which one is used by default. It does not see which copy
 
 We compared its verdicts on 59 images (65 copies) with results established without it: for runtime copies, the offsets the runtime printed when we ran it inside the image; for OS zoneinfo, the image's tzdata package version. It matched all 65, and it reported no stale copy as current. The images include Temurin 8–25, Corretto, distroless java and static, UBI OpenJDK, PHP 8.2–8.5, Go 1.25–1.27, Debian, Ubuntu, Alpine, UBI, Amazon Linux 2023, .NET, Ruby and Python bases, kube-controller-manager 1.34–1.37, MySQL, MariaDB, MongoDB 7–9, Elasticsearch, OpenSearch, Trino, ClickHouse and Node 22, 24 and 26. [VALIDATION.md](VALIDATION.md) lists each image digest, the expected release and the command behind it.
 
+We also scanned the arm64 builds of 11 of those images, from the same image indexes, on 27 October 2026. Every verdict matched the x86-64 build's. For 17 of the 31 arm64 copies we established the release on arm64 itself: by running the image's own arm64 runtime under emulation, from its tzdata package, or because the file is byte-identical to the x86-64 copy we had measured. All 17 matched, and VALIDATION.md lists them. The other 14, mostly copies compiled into binaries we did not run on arm64, are checked only against the x86-64 verdict.
+
 The fixes in our guides were also checked: a 2026e zoneinfo tree, a 2026e `tzdb.dat`, Joda-Time 2.15.0, an ICU 2026e `.res` override and PECL `timezonedb` 2026.5 each read as current. A tree with one stale zone is reported stale for that zone, and a tree missing a zone, a damaged `tzdb.dat` or an empty directory exits 2.
 
 ## Not established
 
-- arm64 and Windows images; big-endian ICU data; ICU data with no table of contents and two version strings (reported as UNKNOWN).
+- Windows images; running tzscan on an arm64 machine (we scanned arm64 images from an x86-64 host); big-endian ICU data; ICU data with no table of contents and two version strings (reported as UNKNOWN).
 - MySQL and MariaDB named time zones: they live in tables in the data directory, created at run time, not in the image.
 - Rust `chrono-tz` newer than 0.10.4 (reported as UNKNOWN until mapped).
 - Images that set `ZONEINFO` or `TZDIR`, or a JDK started with `-Djava.time.zone.DefaultZoneRulesProvider`: tzscan does not model that precedence.
