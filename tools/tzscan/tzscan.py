@@ -317,7 +317,8 @@ class Scan:
         self.zoneinfo_env = None    # ZONEINFO as an absolute path inside the target, unnormalized; Go reads it first
         self.zoneinfo_zip = False   # Go opens it as a zip (the value ends in .zip), else as a directory
         self.zoneinfo_files = set() # with a zip ZONEINFO: every regular file, so an unread target is not taken as absent
-        self.go_zips = {}           # path -> (zones, reasons) as Go reads that zip, or None when not read
+        self.go_zips = {}           # path -> (zones, reasons, exact names) as Go reads that zip, or None when not read
+        self.dirs = set()           # with ZONEINFO set: directories the walk saw, so `..` is applied only after one
         self.zoneinfo_named = set() # copy paths Go reads through ZONEINFO
         self.zoneinfo_full = False  # Go loads every measured zone there, so the copies after it are fallbacks
         self.zoneinfo_note = None
@@ -385,6 +386,19 @@ class Scan:
         self.spend("retained_bytes", ENTRY_COST + len(path) + len(target))
         self.links[path] = (kind, target)
 
+    def keep_dirs(self, path, isdir):
+        """With ZONEINFO set, record the directories a walked path shows: its parents, and itself
+        when it is one."""
+        if not self.zoneinfo_env:
+            return
+        parts = [x for x in path.split("/") if x not in ("", ".")]
+        for n in range(len(parts) if isdir else len(parts) - 1, 0, -1):
+            d = "/".join(parts[:n])
+            if d in self.dirs:
+                return
+            self.spend("retained_bytes", ENTRY_COST + len(d))
+            self.dirs.add(d)
+
     @staticmethod
     def is_zone(path):
         return any(path == n or path.endswith("/" + n) for n in NAMES)
@@ -403,9 +417,9 @@ class Scan:
                 else:
                     self.spend("scanned_bytes", size)
                     data = f.read(size)
-                    zones, why = self.go_zip(data)
+                    zones, why, exact = self.go_zip(data)
                     self.spend("retained_bytes", ENTRY_COST + sum(map(len, zones.values())))
-                    self.go_zips[path] = (zones, why)
+                    self.go_zips[path] = (zones, why, exact)
                     f, seekable = io.BytesIO(data), True
         low = base.lower()
         named = (base in ("tzdb.dat", "TZDB.dat", "zoneinfo64.res", "zoneinfo.zip", "dateutil-zoneinfo.tar.gz")
@@ -522,18 +536,21 @@ class Scan:
 
     @staticmethod
     def go_zip(data):
-        """(zone -> TZif bytes Go loads from this zip, reasons it loads none for some names)."""
-        zones, why = {}, set()
+        """(zone -> TZif bytes Go loads from this zip under the zone's name or an alias, reasons it
+        loads none for some names, zones Go loads under their own name)."""
+        zones, why, exact = {}, set(), set()
         for name in NAMES:
             got = go_zip_read(data, name)
             if isinstance(got, bytes):
                 if load_tzif(got):
                     zones.setdefault(NAMES[name], got)
+                    if name in ZONES:
+                        exact.add(name)
                 else:
                     why.add("its zone files are not ones Go can load")
             elif got:
                 why.add(got)
-        return zones, why
+        return zones, why, exact
 
     def tarball_tree(self, path, f):
         zones = {}
@@ -771,15 +788,19 @@ class Scan:
         self.classify()
 
     def physical(self, path):
-        """The path, relative to the root, that opening absolute `path` in the target reaches. Links
-        seen in the walk are followed where they occur, so `..` after a link climbs from its target,
-        as the kernel does. None after 40 links (the kernel's ELOOP)."""
+        """(path relative to the root that opening absolute `path` in the target reaches, None) or
+        (None, why it is not established). Links seen in the walk are followed where they occur, so
+        `..` after a link climbs from its target, as the kernel does. `..` is applied only after a
+        directory the walk saw: after a missing name or a file the kernel fails, and Go goes on to
+        its next source. 40 links is the kernel's ELOOP."""
         todo, out, hops = path.split("/")[::-1], [], 0
         while todo:
             part = todo.pop()
             if part in ("", "."):
                 continue
             if part == "..":
+                if out and "/".join(out) not in self.dirs:
+                    return None, f"/{'/'.join(out)} before .. is not a directory tzscan saw"
                 out = out[:-1]
                 continue
             link = self.links.get("/".join(out + [part]))
@@ -788,29 +809,29 @@ class Scan:
                 continue
             hops += 1
             if hops > 40:
-                return None
+                return None, "too many levels of symbolic links"
             kind, tgt = link
             if kind == "hard" or tgt.startswith("/"):  # a tar hardlink names another member from the root
                 out = []
             todo.extend(tgt.split("/")[::-1])
-        return "/".join(out)
+        return "/".join(out), None
 
     def zoneinfo_source(self):
         """Find what Go's LoadLocation reads through ZONEINFO (time/zoneinfo.go): a value longer than
         4 characters ending in .zip is read as a zip, anything else as a directory of zone files.
         A zone Go cannot load there comes from the next source, so the copies after ZONEINFO are
         fallbacks only when every measured zone loads from it."""
-        raw, zones, why = self.zoneinfo_env, {}, set()
-        where = self.physical(raw)
-        if where is None:
-            self.problem("zoneinfo", raw, "ZONEINFO: too many levels of symbolic links; not established")
+        raw, zones, why, exact = self.zoneinfo_env, {}, set(), set()
+        where, bad = self.physical(raw)
+        if bad:
+            self.problem("zoneinfo", raw, f"ZONEINFO: {bad}; not established")
             return
         if self.zoneinfo_zip:
             if where in self.go_zips:
                 if self.go_zips[where] is None:
                     self.problem("limit", raw, f"ZONEINFO names /{where}, over {SPOOL} bytes; not read as Go reads it")
                     return
-                zones, why = self.go_zips[where]
+                zones, why, exact = self.go_zips[where]
             elif where in self.zoneinfo_files:
                 self.problem("zoneinfo", raw, f"ZONEINFO names /{where}, which tzscan reads as a zip only under "
                                               f"the name {os.path.basename(raw)}; not established")
@@ -819,13 +840,15 @@ class Scan:
                 why.add("it is a directory, and Go opens a name ending in .zip as a zip file")
         else:
             for name in NAMES:
-                p = self.physical(raw + "/" + name)
-                if p is None:
-                    self.problem("zoneinfo", raw + "/" + name, "ZONEINFO: too many levels of symbolic links; not established")
+                p, bad = self.physical(raw + "/" + name)
+                if bad:
+                    self.problem("zoneinfo", raw + "/" + name, f"ZONEINFO: {bad}; not established")
                     return
                 data = self.blobs.get(self.tzif.get(p))
                 if data and load_tzif(data):
                     zones.setdefault(NAMES[name], data)
+                    if name in ZONES:
+                        exact.add(name)
         if not zones:
             self.zoneinfo_note = ("; ".join(sorted(why)) or "Go finds no zone files there") + \
                                  ", so Go programs use the copies below"
@@ -838,10 +861,11 @@ class Scan:
         if not c:
             return  # the report budget is spent, which is already a problem
         self.zoneinfo_named = {c["path"]} | ({c["sameAs"]} if c.get("sameAs") else set())
-        self.zoneinfo_full = len(zones) == len(ZONES)
+        # Go loads the name a program asks for, so another name for the same rules does not count here
+        self.zoneinfo_full = len(exact) == len(ZONES)
         if not self.zoneinfo_full:
-            self.zoneinfo_note = (f"Go loads {len(zones)} of the {len(ZONES)} zones from /{where}; "
-                                  "the others come from the copies below")
+            self.zoneinfo_note = (f"Go loads {len(exact)} of the {len(ZONES)} zones from /{where} under their "
+                                  "own names; the others come from the copies below")
 
     def conclude(self):
         """Per-target exit status: incomplete first, then the published 1 / 2 / 3 / 0 order."""
@@ -1264,6 +1288,7 @@ def walk_tar(scan, fileobj):
 
         def one():
             scan.spend("members", 1)
+            scan.keep_dirs(path, m.isdir())
             if m.issym():
                 scan.keep_link(path, "sym", m.linkname)
             elif m.islnk():
@@ -1282,6 +1307,9 @@ def walk_dir(scan, top):
         scan.problem("read-error", os.path.relpath(e.filename, top) if e.filename else top, f"{type(e).__name__}: {e.strerror or e}")
     for dp, dn, fn in os.walk(top, onerror=onerror):
         if scan.full:
+            return
+        rel = os.path.relpath(dp, top)
+        if not _guard(scan, rel, lambda: scan.keep_dirs(rel, True)):
             return
         for name in fn + [d for d in dn if os.path.islink(os.path.join(dp, d))]:
             full = os.path.join(dp, name)

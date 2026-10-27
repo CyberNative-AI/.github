@@ -365,6 +365,103 @@ class ZoneinfoEffectiveSource(unittest.TestCase):
         self.assertEqual(tiers(s)[("zoneinfo", "real/zoneinfo.zip")][0], "A")
 
 
+    # `..` is applied by the kernel only after a directory; otherwise the open fails and Go falls back
+    def test_dotdot_after_missing_name_is_incomplete(self):
+        put(self.root, "custom.zip", zip_bytes("2026e"))
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/missing/../custom.zip")
+        self.assertEqual(rc, 2, err)
+        self.assertFalse(s["zoneinfoEnv"]["found"])
+        self.assertEqual(tiers(s)[("go-embedded", "server")][0], "A")
+        self.assertTrue(any(p["kind"] == "zoneinfo" for p in s["problems"]))
+
+    def test_dotdot_after_file_is_incomplete(self):
+        put(self.root, "custom.zip", zip_bytes("2026e"))
+        put(self.root, "file", b"not a directory")
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/file/../custom.zip")
+        self.assertEqual(rc, 2, err)
+        self.assertFalse(s["zoneinfoEnv"]["found"])
+
+    def test_directory_value_link_loop_inside_is_incomplete(self):
+        tree(self.root, "tz", "2026e")
+        shutil.rmtree(os.path.join(self.root, "tz/America"))
+        self.link("America", "tz/America")
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/tz")
+        self.assertEqual(rc, 2, err)
+        self.assertFalse(s["zoneinfoEnv"]["found"])
+
+    def test_directory_value_dotdot_after_missing_name_is_incomplete(self):
+        tree(self.root, "tz", "2026e")
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/missing/../tz")
+        self.assertEqual(rc, 2, err)
+        self.assertFalse(s["zoneinfoEnv"]["found"])
+
+    def test_dotdot_after_existing_directory(self):
+        put(self.root, "custom.zip", zip_bytes("2026e"))
+        put(self.root, "server", go_program("2026c"))
+        os.makedirs(os.path.join(self.root, "existing"))
+        rc, s, err = self.scan("/existing/../custom.zip")
+        self.assertEqual(rc, 3, err)
+        self.assertTrue(s["zoneinfoEnv"]["found"])
+        self.assertEqual(tiers(s)[("go-embedded", "server")][0], "B")
+
+    def test_tar_dotdot_after_implied_directory(self):
+        # a tar may list existing/f without an entry for existing/; the file shows it is a directory
+        put(self.root, "custom.zip", zip_bytes("2026e"))
+        put(self.root, "server", go_program("2026c"))
+        put(self.root, "existing/f", b"x")
+        tar = os.path.join(tempfile.mkdtemp(), "image.tar")
+        self.addCleanup(shutil.rmtree, os.path.dirname(tar))
+        subprocess.run(["tar", "-C", self.root, "-cf", tar, "custom.zip", "server", "existing/f"], check=True)
+        rc, s, err = run("--tar", tar, "--zoneinfo", "/existing/../custom.zip")
+        self.assertEqual(rc, 3, err)
+        rc, s, err = run("--tar", tar, "--zoneinfo", "/existing/f/../../custom.zip")
+        self.assertEqual(rc, 2, err)
+
+    # Go loads the name the program asks for: Canada/Central does not stand in for America/Winnipeg
+    def alias_only(self):
+        zones = dict(OFFSETS["2026e"])
+        del zones["America/Winnipeg"]
+        zones["Canada/Central"] = -5
+        return zones
+
+    def test_alias_in_zip_keeps_fallback_in_use(self):
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_STORED) as z:
+            for name, hours in self.alias_only().items():
+                z.writestr(name, tzif(hours))
+        put(self.root, "custom.zip", buf.getvalue())
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/custom.zip")
+        self.assertEqual(rc, 1, err)
+        self.assertFalse(s["zoneinfoEnv"]["found"])
+        self.assertIn("4 of the 5 zones", s["zoneinfoEnv"]["note"])
+        self.assertEqual(tiers(s)[("go-embedded", "server")], ("A", "STALE", "2026c"))
+
+    def test_alias_in_directory_keeps_fallback_in_use(self):
+        for name, hours in self.alias_only().items():
+            put(self.root, os.path.join("plain", name), tzif(hours))
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/plain")
+        self.assertEqual(rc, 1, err)
+        self.assertFalse(s["zoneinfoEnv"]["found"])
+        self.assertEqual(tiers(s)[("go-embedded", "server")], ("A", "STALE", "2026c"))
+
+    def test_alias_beside_own_name_still_full(self):
+        buf = io.BytesIO()
+        with zipfile.ZipFile(buf, "w", zipfile.ZIP_STORED) as z:
+            for name, hours in OFFSETS["2026e"].items():
+                z.writestr(name, tzif(hours))
+            z.writestr("Canada/Central", tzif(-5))
+        put(self.root, "custom.zip", buf.getvalue())
+        put(self.root, "server", go_program("2026c"))
+        rc, s, err = self.scan("/custom.zip")
+        self.assertEqual(rc, 3, err)
+        self.assertTrue(s["zoneinfoEnv"]["found"])
+
 @unittest.skipUnless(os.environ.get("TZSCAN_DOCKER_TESTS") == "1" and shutil.which("docker"),
                      "set TZSCAN_DOCKER_TESTS=1 to build and scan images")
 class ZoneinfoEnvImage(unittest.TestCase):

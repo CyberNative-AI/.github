@@ -21,7 +21,7 @@ python3 tzscan.py --dir /path/to/rootfs
 
 Add `--json` for machine-readable output. Each target there has `complete` and a `problems` list naming anything that was not read, and `zoneinfoEnv` when `ZONEINFO` is set (below).
 
-Go programs read the zip or directory named by `ZONEINFO` before any other copy, including `/usr/share/zoneinfo` and the copy compiled into the program. tzscan reads `ZONEINFO` from the image's configuration and follows Go's rules for it: a value ending in `.zip` is read as a zip, and Go reads only uncompressed entries from it; any other value is a directory of zone files. Links and `..` are followed as they are in the image. The copy Go loads from there is listed as used by default. When Go cannot load a zone from it (a compressed zip, a directory named `.zip`, a missing file), the next copy is the one used, and tzscan says so. When tzscan cannot establish what Go reads, the target is incomplete (exit 2). A tar or a directory has no configuration, and a value set only at run time (`docker run -e`, a Kubernetes `env:`) is not in the image, so give it with `--zoneinfo`:
+Go programs read the zip or directory named by `ZONEINFO` before any other copy, including `/usr/share/zoneinfo` and the copy compiled into the program. tzscan reads `ZONEINFO` from the image's configuration and follows Go's rules for it: a value ending in `.zip` is read as a zip, and Go reads only uncompressed entries from it; any other value is a directory of zone files. Links and `..` are followed as they are in the image. The copy Go loads from there is listed as used by default. When Go cannot load a zone from it (a compressed zip, a directory named `.zip`, a missing file), the next copy is the one used, and tzscan says so. Go loads the zone name the program asks for, so only zone files under their own names count: `Canada/Central` does not stand in for `America/Winnipeg`. When tzscan cannot establish what Go reads, the target is incomplete (exit 2). A tar or a directory has no configuration, and a value set only at run time (`docker run -e`, a Kubernetes `env:`) is not in the image, so give it with `--zoneinfo`:
 
 ```sh
 python3 tzscan.py --dir /path/to/rootfs --zoneinfo /zoneinfo.zip
@@ -97,7 +97,7 @@ For `ZONEINFO`, a Go program built with its own 2026c copy, on a host with 2026e
 - Windows images; running tzscan on an arm64 machine (we scanned arm64 images from an x86-64 host); big-endian ICU data; ICU data with no table of contents and two version strings (reported as UNKNOWN).
 - MySQL and MariaDB named time zones: they live in tables in the data directory, created at run time, not in the image.
 - Rust `chrono-tz` newer than 0.10.4 (reported as UNKNOWN until mapped).
-- A `ZONEINFO` zip reached through a link to a file with another name, or one over 64 MiB: reported incomplete (exit 2).
+- A `ZONEINFO` zip reached through a link to a file with another name, or one over 64 MiB, and a `ZONEINFO` value with `..` after a name tzscan did not see as a directory: reported incomplete (exit 2).
 - Images that set `TZDIR`, or a JDK started with `-Djava.time.zone.DefaultZoneRulesProvider`: tzscan does not model that precedence.
 
 ## License
