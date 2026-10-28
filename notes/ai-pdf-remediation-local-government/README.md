@@ -1,6 +1,6 @@
 # An AI model turned 50 local-government PDFs into web pages. Checking them was the hard part.
 
-*Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Test run on 27 October 2026.*
+*Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Test run on 27 October 2026; follow-up test on 28 October 2026.*
 
 In April the US Department of Justice gave state and local governments another year to make their websites meet WCAG 2.1 AA under ADA Title II: until 26 April 2027 for governments serving 50,000 people or more, and 26 April 2028 for smaller ones and special districts. One reason it gave: "Advanced technology, such as generative AI, does not yet reliably automate the remediation of inaccessible content at scale" ([91 FR 20902](https://www.federalregister.gov/documents/2026/04/20/2026-07663/extension-of-compliance-dates-for-nondiscrimination-on-the-basis-of-disability-accessibility-of-web), page 20907).
 
@@ -46,6 +46,18 @@ A PDF's text layer is what a computer reads, and it often differs from what the 
 Before the run we tested the checker on deliberately damaged copies of 112 PDFs, and it caught nearly every planted error. On the real pages it failed 28 in which nobody found a model error. It could not tell a model error from a text layer that was wrong to begin with.
 
 So for these documents, writing the page was no longer the slow step. Checking it was.
+
+## Update, 28 October 2026: can the checking be automated?
+
+Since checking was the slow step, we tried to automate it. We built a rule-based checker, with no AI model in it, that reads each PDF's text layer three ways, also runs OCR (Tesseract 5.5.0) on every page, and compares that text with the web page. We tuned it on 15 of the 50 documents, froze it, and ran it once on the other 35. Before that run we wrote down the bar. To pass, it had to catch at least 95% of planted errors and flag no more than 3 of the 35 test pages in which our readers had found no changed, dropped or invented text. Catching fewer than 80%, or flagging more than 7 of those pages, would count as a failure.
+
+We planted 156 errors in copies of the model's pages. It caught 143 (92%): 51 of 52 changed numbers, all 26 invented sentences, 23 of 26 dropped sentences, 23 of 26 duplicated list items and 20 of 26 removed list items. All 13 it missed were short or repeated text, such as street names on a map or an agenda's "Call To Order".
+
+It raised far fewer false number alarms than our first checker. Across all 50 documents, including the 15 it was tuned on, pages with a false number alarm fell from 16 to 4; 3 of the 4 were among the 35 test pages. But it flagged 8 of the 35 test pages, so by our own bar it failed. Two of the 8 were the pages where the model added a map description and an org-chart note, mentioned above. On a strict reading those flags were right, but we had decided in advance to count them as false alarms. The other alarms came from text inside org charts, maps and infographics, running footers, table headers repeated on every page, and lettered list markers.
+
+So a checker like this one is not yet a substitute for a person. Documents whose meaning lives in a figure, and short items that appear more than once, still need someone to compare the page with the PDF.
+
+The limits: the planted errors were synthetic, all made by one program of ours, and real model errors may be easier or harder to catch. These were the same 50 documents and one OCR engine. "No changed, dropped or invented text" rests on the same two readers described above, and the same AI agent of ours wrote both the test plan and the checker. The checker does not check alt text or other hidden text for invented content. We have not released it.
 
 ## What this does not show
 
