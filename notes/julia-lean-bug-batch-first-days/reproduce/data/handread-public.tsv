@@ -1,0 +1,63 @@
+set	number	type	label	actor	decisive_quote_or_event
+F	64129	issue	FIXED_LINKED	maintainer A	closed 10-28T10:32:47Z after bot PR #64365 merged 10:32:45Z (closed after 72 h; timeline-extra)
+F	64146	issue	FIXED_LINKED	maintainer A	bot PR #64320 merged 10-28T00:25:33Z
+F	64152	issue	FIXED_LINKED	maintainer A	bot PR #64314 merged 10-28T00:25:59Z
+F	64159	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64188 (maintainer A) merged 10-26T10:44Z
+F	64160	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64209 (maintainer A) merged 10-27T12:01Z
+F	64161	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64211 (maintainer A) merged 10-26T10:57Z
+F	64163	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64233 (maintainer A) merged 10-26T10:52Z
+F	64166	issue	FIXED_LINKED	maintainer A	closed 10-28T10:33:48Z after bot PR #64289 merged 10:33:47Z (closed after 72 h; timeline-extra)
+F	64168	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64280 (maintainer A) merged 10-27T11:18Z
+F	64175	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64215 (maintainer A) merged 10-26T10:33Z
+F	64179	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64187 (maintainer A) merged 10-26T10:23Z (one PR fixes 64179+64180)
+F	64180	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64187 (maintainer A) merged 10-26T10:23Z
+F	64218	issue	FIXED_LINKED	maintainer A	first disputed ("is this really a bug?"), then "sounds good, you've convinced me"; PR #64231 (maintainer A) merged 10-26T10:36Z
+F	64262	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64278 (maintainer A) merged 10-27T11:15Z
+F	64263	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64279 (maintainer A) merged 10-27T11:15Z
+F	64274	issue	FIXED_LINKED	maintainer A	maintainer-authored PR #64282 (maintainer A) merged 10-27T11:19Z
+F	64276	issue	FIXED_LINKED	maintainer C	PR #64283 (maintainer A) merged 10-27T16:49Z
+F	64265	issue	NOT_A_BUG	maintainer B	reporter (MilesCranmer): "Actually this one doesn't seem like a bug: #41769. It's just a docstring that needs updating."
+F	64295	pr	DUPLICATE	maintainer D	person 1: "This is already fixed in #60527"
+F	64358	pr	NOT_A_BUG	person 2	person 3: "I don't think this is the right solution"; person 2: "Agreed -- we don't usually promise which error is thrown"
+F	64154	issue(open)	NOT_A_BUG_OPEN	person 2	"They are meant to be defined for `Union{Int,Symbol}`"
+F	64194	issue(open)	NOT_A_BUG_OPEN	maintainer A	"I'd be inclined to call this \"not planned\""
+F	64216	issue(open)	NOT_A_BUG_OPEN	person 2	"Not really a bug, since it's not guaranteed that `@fastmath` gives the same answers"
+F	64340	pr(open)	APPROACH_DOUBT_OPEN	maintainer A	"feels a bit of a bandaid to fix this on the `Take` side"
+F	64151	issue(open)	CONFIRMED_OPEN	person 2	"there's no question about what is wrong and how to fix it"
+F	64155	issue(open)	CONFIRMED_OPEN	person 2	"Can you make simple fixes like this a PR instead of an issue?"
+F	64149	issue(open)	CONFIRMED_OPEN	person 2	"I don't think it seen a fix"
+F	64183	issue(open)	CONFIRMED_OPEN	maintainer A	"regression from 55601"
+F	64225	issue(open)	CONFIRMED_OPEN	maintainer B	"oh that's probably worth guaranteeing."
+F	64272	issue(open)	CONTEXT_OPEN	person 4	"My concern was not about the report or the PR."
+F	64153	issue(open)	CONTEXT_OPEN	maintainer A	"also ref: #61893"
+F	64301	pr(open)	CONTEXT_OPEN	maintainer D	"needs a rebase"
+O	62708	issue	DUPLICATE	person 5	state_reason duplicate
+O	62767	pr	OTHER	person 6	stdlib bump (person 7) superseded
+O	62909	issue	DUPLICATE	maintainer A	"duplicate of #46331"
+O	62949	issue	NOT_A_BUG	person 8	"Sounds like you have a busted cache"
+O	62965	issue	NOT_A_BUG	person 9	reporter: likely hardware failure on one computer
+O	63074	pr	REJECTED_APPROACH	person 10	maintainer C: "`julia-repl` code blocks are *not* tests"
+O	63078	pr	AUTHOR_WITHDREW	person 11	"Closing in favour of #63082"
+O	63126	issue	NOT_A_BUG	person 12	"fixed in the latest version" of LanguageServer (external)
+O	63172	issue	OTHER	person 12	spam ("CSOAI — Julia AI governance")
+O	63258	pr	OTHER	maintainer A	closed without comment
+O	63330	issue	NOT_A_BUG	person 2	"it is working in exactly the way it was designed to work"
+O	63439	pr	OTHER	person 13	stdlib bump (person 7)
+O	63479	pr	OTHER	maintainer D	stdlib bump (person 7)
+O	63491	pr	OTHER	maintainer D	stdlib bump (person 7)
+O	63494	pr	OTHER	person 14	closed by a non-author without comment
+O	63521	pr	AUTHOR_WITHDREW	person 14	closed by author
+O	63523	issue	REJECTED_APPROACH	person 2	"That does double rounding, so it's not a valid fma implementation"
+O	63716	pr	NOT_A_BUG	maintainer A	"this is already not a warning"
+O	63717	pr	OTHER	maintainer A	"undisclosed AI. Please don't use our repo just for some kind of open source contribution trophy case"
+O	63758	issue	NOT_A_BUG	person 8	"you aren't using the official build of Julia"
+O	63759	issue	DUPLICATE	person 8	state_reason duplicate
+O	63776	pr	OTHER	person 13	stdlib bump (person 7)
+O	63786	issue	OTHER	person 3	spam
+O	63850	issue	FIXED_BY_OTHER	maintainer D	"Fixed by #63755" (timeline rule missed it: rule false negative)
+O	63860	pr	OTHER	person 13	stdlib bump (person 7)
+O	63867	pr	REJECTED_APPROACH	person 2	"We aren't going to make `sig_match_fast` implement the contents of `sig_match_slow`"
+O	63895	pr	FIXED_BY_OTHER	person 2	person 12: "What do you think about #63669?" (unverified)
+O	63908	pr	OTHER	maintainer A	"undisclosed AI"
+O	63922	issue	NOT_A_BUG	person 2	"It isn't clear why we should discard a Union when the user went out of their way to specify it"
+O	64003	issue	NOT_A_BUG	person 15	after person 16: "this is the correct behavior with that assumption"

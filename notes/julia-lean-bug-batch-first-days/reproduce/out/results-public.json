@@ -1,0 +1,548 @@
+{
+ "gates": {
+  "clusters": {
+   "maintainer D|2026-10-28": 1,
+   "maintainer A|2026-10-28": 9,
+   "maintainer C|2026-10-27": 1,
+   "maintainer B|2026-10-27": 2
+  },
+  "distinct_mergers": 4,
+  "gate_a_ge3_mergers": true,
+  "gate_b_loo_gt_o": false,
+  "leave_top_out_rate": 0.05128205128205128,
+  "mergers": {
+   "maintainer D": 1,
+   "maintainer A": 9,
+   "maintainer C": 1,
+   "maintainer B": 2
+  },
+  "o_small_prior_point": 0.23684210526315788,
+  "top_merger": "maintainer A"
+ },
+ "groups": {
+  "F_issue": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.047619047619047616,
+     0.020508863227294692,
+     0.10666310043365843
+    ],
+    "n": 105,
+    "outcomes": {
+     "ACCEPTED": 5,
+     "COMPLETED_NOFIX": 1,
+     "OPEN": 99
+    },
+    "raw": {
+     "COMPLETED": 6,
+     "NOT": 99
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.17543859649122806,
+     0.09818747133596609,
+     0.2936759905059315
+    ],
+    "n": 57,
+    "outcomes": {
+     "ACCEPTED": 10,
+     "OPEN": 47
+    },
+    "raw": {
+     "COMPLETED": 10,
+     "NOT": 47
+    }
+   },
+   "n_total": 105
+  },
+  "F_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.15853658536585366,
+     0.09505500489170982,
+     0.2525806402966371
+    ],
+    "n": 82,
+    "outcomes": {
+     "ACCEPTED": 13,
+     "CLOSED_UNACCEPTED": 2,
+     "OPEN": 67
+    },
+    "raw": {
+     "MERGED": 13,
+     "NOT": 69
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     null,
+     null,
+     null
+    ],
+    "n": 0,
+    "outcomes": {},
+    "raw": {}
+   },
+   "n_total": 83
+  },
+  "F_small_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.16666666666666666,
+     0.10006850973163443,
+     0.26455779278444536
+    ],
+    "n": 78,
+    "outcomes": {
+     "ACCEPTED": 13,
+     "CLOSED_UNACCEPTED": 2,
+     "OPEN": 63
+    },
+    "raw": {
+     "MERGED": 13,
+     "NOT": 65
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     null,
+     null,
+     null
+    ],
+    "n": 0,
+    "outcomes": {},
+    "raw": {}
+   },
+   "n_total": 79
+  },
+  "I_prior_issue": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.0,
+     0.0,
+     0.02634090684688045
+    ],
+    "n": 142,
+    "outcomes": {
+     "COMPLETED_NOFIX": 12,
+     "NOT_PLANNED": 2,
+     "OPEN": 128
+    },
+    "raw": {
+     "COMPLETED": 12,
+     "NOT": 130
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.0,
+     0.0,
+     0.02634090684688045
+    ],
+    "n": 142,
+    "outcomes": {
+     "COMPLETED_NOFIX": 28,
+     "NOT_PLANNED": 3,
+     "OPEN": 111
+    },
+    "raw": {
+     "COMPLETED": 28,
+     "NOT": 114
+    }
+   },
+   "n_total": 142
+  },
+  "I_prior_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.34301075268817205,
+     0.31320216275160084,
+     0.3741109747226775
+    ],
+    "n": 930,
+    "outcomes": {
+     "ACCEPTED": 319,
+     "CLOSED_UNACCEPTED": 34,
+     "OPEN": 577
+    },
+    "raw": {
+     "MERGED": 319,
+     "NOT": 611
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.5290322580645161,
+     0.4968974107928911,
+     0.5609282418659752
+    ],
+    "n": 930,
+    "outcomes": {
+     "ACCEPTED": 492,
+     "CLOSED_UNACCEPTED": 44,
+     "OPEN": 394
+    },
+    "raw": {
+     "MERGED": 492,
+     "NOT": 438
+    }
+   },
+   "n_total": 930
+  },
+  "O_fix_prior_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.3125,
+     0.17952352116618736,
+     0.4856699969803239
+    ],
+    "n": 32,
+    "outcomes": {
+     "ACCEPTED": 10,
+     "CLOSED_UNACCEPTED": 4,
+     "OPEN": 18
+    },
+    "raw": {
+     "MERGED": 10,
+     "NOT": 22
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.46875,
+     0.30869129901682335,
+     0.6355076206742619
+    ],
+    "n": 32,
+    "outcomes": {
+     "ACCEPTED": 15,
+     "CLOSED_UNACCEPTED": 4,
+     "OPEN": 13
+    },
+    "raw": {
+     "MERGED": 15,
+     "NOT": 17
+    }
+   },
+   "n_total": 32
+  },
+  "O_prior_issue": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.0425531914893617,
+     0.01964589254224454,
+     0.08972600061552229
+    ],
+    "n": 141,
+    "outcomes": {
+     "ACCEPTED": 6,
+     "COMPLETED_NOFIX": 11,
+     "NOT_PLANNED": 11,
+     "OPEN": 113
+    },
+    "raw": {
+     "COMPLETED": 17,
+     "NOT": 124
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.0851063829787234,
+     0.04935325776791658,
+     0.14286776160773243
+    ],
+    "n": 141,
+    "outcomes": {
+     "ACCEPTED": 12,
+     "COMPLETED_NOFIX": 14,
+     "NOT_PLANNED": 12,
+     "OPEN": 103
+    },
+    "raw": {
+     "COMPLETED": 26,
+     "NOT": 115
+    }
+   },
+   "n_total": 141
+  },
+  "O_prior_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.3675889328063241,
+     0.31056980427873093,
+     0.4285690268140514
+    ],
+    "n": 253,
+    "outcomes": {
+     "ACCEPTED": 93,
+     "CLOSED_UNACCEPTED": 26,
+     "OPEN": 134
+    },
+    "raw": {
+     "MERGED": 89,
+     "NOT": 164
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.49407114624505927,
+     0.43301449152495575,
+     0.5553051576284522
+    ],
+    "n": 253,
+    "outcomes": {
+     "ACCEPTED": 125,
+     "CLOSED_UNACCEPTED": 34,
+     "OPEN": 94
+    },
+    "raw": {
+     "MERGED": 117,
+     "NOT": 136
+    }
+   },
+   "n_total": 253
+  },
+  "O_same_issue": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.0,
+     0.0,
+     0.5615060804490177
+    ],
+    "n": 3,
+    "outcomes": {
+     "OPEN": 3
+    },
+    "raw": {
+     "NOT": 3
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.0,
+     0.0,
+     0.7934567085261071
+    ],
+    "n": 1,
+    "outcomes": {
+     "OPEN": 1
+    },
+    "raw": {
+     "NOT": 1
+    }
+   },
+   "n_total": 8
+  },
+  "O_same_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.125,
+     0.034976749337057134,
+     0.3602333143674828
+    ],
+    "n": 16,
+    "outcomes": {
+     "ACCEPTED": 2,
+     "CLOSED_UNACCEPTED": 5,
+     "OPEN": 9
+    },
+    "raw": {
+     "MERGED": 2,
+     "NOT": 14
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.16666666666666666,
+     0.03005258587173032,
+     0.563509436563646
+    ],
+    "n": 6,
+    "outcomes": {
+     "ACCEPTED": 1,
+     "CLOSED_UNACCEPTED": 2,
+     "OPEN": 3
+    },
+    "raw": {
+     "MERGED": 1,
+     "NOT": 5
+    }
+   },
+   "n_total": 19
+  },
+  "O_small_prior_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.23684210526315788,
+     0.15539206970596958,
+     0.34361596620513435
+    ],
+    "n": 76,
+    "outcomes": {
+     "ACCEPTED": 18,
+     "CLOSED_UNACCEPTED": 6,
+     "OPEN": 52
+    },
+    "raw": {
+     "MERGED": 18,
+     "NOT": 58
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.4342105263157895,
+     0.32860752483199596,
+     0.5461444841457801
+    ],
+    "n": 76,
+    "outcomes": {
+     "ACCEPTED": 33,
+     "CLOSED_UNACCEPTED": 9,
+     "OPEN": 34
+    },
+    "raw": {
+     "MERGED": 32,
+     "NOT": 44
+    }
+   },
+   "n_total": 76
+  },
+  "O_small_same_pr": {
+   "h24": {
+    "accepted_rate_wilson": [
+     0.14285714285714285,
+     0.02567895594897479,
+     0.51313450331903
+    ],
+    "n": 7,
+    "outcomes": {
+     "ACCEPTED": 1,
+     "CLOSED_UNACCEPTED": 3,
+     "OPEN": 3
+    },
+    "raw": {
+     "MERGED": 1,
+     "NOT": 6
+    }
+   },
+   "h72": {
+    "accepted_rate_wilson": [
+     0.5,
+     0.09452865480086614,
+     0.9054713451991339
+    ],
+    "n": 2,
+    "outcomes": {
+     "ACCEPTED": 1,
+     "OPEN": 1
+    },
+    "raw": {
+     "MERGED": 1,
+     "NOT": 1
+    }
+   },
+   "n_total": 8
+  }
+ },
+ "read_time": "2026-10-28T12:03:06Z",
+ "ruling": "NO_ADVANTAGE",
+ "tests": {
+  "F_issue_vs_O_prior_issue_h24": {
+   "diff_newcombe": [
+    0.005065856129685915,
+    -0.04934219491616596,
+    0.06839787423922625
+   ],
+   "fisher_p": 1.0,
+   "k1": 5,
+   "k2": 6,
+   "n1": 105,
+   "n2": 141
+  },
+  "F_issue_vs_O_prior_issue_h72": {
+   "diff_newcombe": [
+    0.09033221351250466,
+    -0.006125617682674556,
+    0.21385697744965154
+   ],
+   "fisher_p": 0.08152484462386769,
+   "k1": 10,
+   "k2": 12,
+   "n1": 57,
+   "n2": 141
+  },
+  "F_issue_vs_O_same_issue_h24": {
+   "diff_newcombe": [
+    0.047619047619047616,
+    -0.5145411079229238,
+    0.10666310043365843
+   ],
+   "fisher_p": 1.0,
+   "k1": 5,
+   "k2": 0,
+   "n1": 105,
+   "n2": 3
+  },
+  "F_pr_vs_O_fix_prior_pr_h24": {
+   "diff_newcombe": [
+    -0.15396341463414634,
+    -0.338402453109358,
+    0.008907786598188278
+   ],
+   "fisher_p": 0.07473307561744459,
+   "k1": 13,
+   "k2": 10,
+   "n1": 82,
+   "n2": 32
+  },
+  "F_pr_vs_O_prior_pr_h24": {
+   "diff_newcombe": [
+    -0.20905234744047044,
+    -0.29707781491827745,
+    -0.09907296170900526
+   ],
+   "fisher_p": 0.00034386659064460236,
+   "k1": 13,
+   "k2": 93,
+   "n1": 82,
+   "n2": 253
+  },
+  "F_small_pr_vs_O_small_prior_pr_h24": {
+   "diff_newcombe": [
+    -0.07017543859649122,
+    -0.1960164966324109,
+    0.057169686417676835
+   ],
+   "fisher_p": 0.31838204870942016,
+   "k1": 13,
+   "k2": 18,
+   "n1": 78,
+   "n2": 76
+  },
+  "F_small_pr_vs_O_small_prior_pr_h72": {
+   "diff_newcombe": [
+    null,
+    null,
+    null
+   ],
+   "fisher_p": null,
+   "k1": 0,
+   "k2": 33,
+   "n1": 0,
+   "n2": 76
+  },
+  "F_small_pr_vs_O_small_same_pr_h24": {
+   "diff_newcombe": [
+    0.023809523809523808,
+    -0.3524093462352488,
+    0.1764967860801285
+   ],
+   "fisher_p": 1.0,
+   "k1": 13,
+   "k2": 1,
+   "n1": 78,
+   "n2": 7
+  }
+ }
+}
