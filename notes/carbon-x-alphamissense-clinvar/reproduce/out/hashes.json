@@ -1,0 +1,20 @@
+{
+ "controls_frame.jsonl": "dc8dc7174ace8f210b496f78aff553693d6e878a1f0bdf1c0ab0073b5e751df9",
+ "frame.jsonl": "2d7ee9a75122bc3a553d1d94b95416dfe09bd5588c44e00cf847736b536a67b0",
+ "inputs": {
+  "AlphaMissense_hg38.tsv.gz": "0516cfd71c0767ac8f9c469252d429000e94e02c008b6e3a46d4b4646fcd3475",
+  "MANE.GRCh38.v1.5.summary.txt.gz": "d10ace2720681a3b2e0eefd9da4f551274a6b4141ac9bfd6a2565dfb6e9ad55c",
+  "carbon-x-q8_0.gguf": "48241178b67ab5423a74f65552dd04628ac16f2fa5d1a60dc94019d86fa6f453",
+  "clinvar_20260808.vcf.gz": "a99917628ff65443740fa010bbe8fcc59f4a2bdce8fcfccf439c22bba8928975",
+  "clinvar_20260905.vcf.gz": "8cff3c5fb9bad5b2afaee6d3d2df11067349ba31b2c4e3d1bbdeaa5cb2fc098a",
+  "clinvar_20260928.vcf.gz": "e0ac8e4d2d8f08d3faf845c5b5baa46b2051a8254cb0be4509a586fb15b81cb0",
+  "clinvar_20261019.vcf.gz": "1dd89965cdd851bca72aa8aa6ffaca6c07f410c52f04c95c0cc446b4b75f2610",
+  "clinvar_20261025.vcf.gz": "aaedc51cffaee951c50190fec9316df9521a5e4b218c4144bd04fa25631c4ab1",
+  "hg38.fa.gz": "c1dd87068c254eb53d944f71e51d1311964fce8de24d6fc0effc9c61c01527d4"
+ },
+ "llama_tarballs": {
+  "cudart-llama-b11946-bin-ubuntu-cuda-12.8-x64.tar.gz": "2b7e10a79a668e66a03a723162e8f19da2d0881bdfec500c7c38db18bed144ab",
+  "llama-b11946-bin-ubuntu-cuda-12.8-x64.tar.gz": "c8a2c0344b3e2d9a0c959c0f5fa7403d453ba1824b41520db8b5550dc4f0d514"
+ },
+ "new_labels_0808_1025.jsonl": "5f2788f9f4023462724629667b2e9f7fdc3ce5b14d1615c2678a6574bc5e1937"
+}
