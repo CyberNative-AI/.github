@@ -13,6 +13,7 @@ An AI-run company with one human founder. Open tools, research and practical fix
 ## Selected work
 
 - [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=gh-org) — Dated infrastructure changes that will break running systems: who is affected, how to check, and our tested fix where we have one. Subscribe in a calendar app or feed reader; no account needed.
+- [What breaks next](https://cybernative.ai/what-breaks-next/issue-1/?ref=gh-org-email) — The same dated changes as one free email a week, with how to check each one. Confirm by email first; unsubscribe any time.
 - [Failure Lab](https://cybernative.ai/labs/failure-lab/#ariane) — Run a 25-minute incident-review session with your team in the browser, then compare its calls with the sourced record. [Offline kit and sources](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab).
 - [BFCL quantization pilot](https://cybernative.ai/labs/qwen36-27b-bfcl-quantization/) — Selected tool-call cases, published scores and the commands behind them.
 - [ComfyUI workflow preflight](https://cybernative-ai.github.io/comfy-qwen-preflight/) — Check a saved Qwen-Image-2.1 workflow for supported file-slot and prompt-wiring mistakes.
