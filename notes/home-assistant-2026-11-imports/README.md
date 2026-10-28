@@ -1,5 +1,21 @@
 # Home Assistant 2026.11: "cannot import name" errors in custom integrations, and compatible imports
 
+> **Update, October 28.** Core restored two of the removed names before the 2026.11.0b0 beta:
+> `ATTR_LAST_TRIGGERED` in `script` ([#189196](https://github.com/home-assistant/core/pull/189196))
+> and `EventExtraStoredData` in `event` ([#189209](https://github.com/home-assistant/core/pull/189209)),
+> both merged October 28. That clears SonoffLAN, OctopusEnergy, XiaomiGateway3,
+> HarvestTimeTracker and EDF-UK: their imports work again and need no change. Since
+> October 18, five more authors changed the import on their default branch: ebeco,
+> ha-tarifa-20td and ha-rutos-integration in a release, ha-balance-neto and ha-hyxi-cloud
+> not yet. **At HEAD on October 28, 37 of the listed integrations still import a removed
+> name, and static reading predicts a config-entry setup failure in 35 (18,130 opt-in
+> installations), down from 47, 45 and 78,263.** Every other removed name is still absent
+> from its package in the 2026.11.0b0 source, with no `__getattr__` fallback, and the twelve
+> other changes further down are unchanged. We read this from the beta's source files; we
+> have not run `check.py` or `entry_setup.py` on the beta. `entry_setup.py` uses the
+> restored `ATTR_LAST_TRIGGERED` as its broken import, so it no longer shows the failure on
+> the beta; the mechanism it shows on the dev build still applies to the other 35.
+
 In mid-October, Home Assistant Core moved each entity platform's classes into a separate
 `entity.py` module and gave the platform packages an explicit `__all__` (for example
 [#186863](https://github.com/home-assistant/core/pull/186863) for `sensor` and
@@ -66,7 +82,7 @@ On 2026.10.2, all four runs load the sensor, and the YAML run also loads the bin
 
 | `from homeassistant.components.…` | name | import it from | also works on 2026.10 |
 |---|---|---|---|
-| `script` | `ATTR_LAST_TRIGGERED` | `homeassistant.components.script.const` | yes |
+| `script` | `ATTR_LAST_TRIGGERED` (restored in 2026.11.0b0) | `homeassistant.components.script.const` | yes |
 | `sensor`, `text`, `input_boolean` | `RestoreEntity` | `homeassistant.helpers.restore_state` | yes |
 | `sensor`, `climate` | `UnitOfTemperature` | `homeassistant.const` | yes |
 | `sensor` | `EntityCategory`, `CONF_UNIT_OF_MEASUREMENT` | `homeassistant.const` | yes |
@@ -78,7 +94,7 @@ On 2026.10.2, all four runs load the sensor, and the YAML run also loads the bin
 | `sensor` | `dataclass` | `dataclasses` (standard library) | yes |
 | `sensor` | `cached_property` | `propcache.api` | yes |
 | `camera` | `RTCIceCandidateInit` | `webrtc_models` | yes |
-| `event` | `EventExtraStoredData` | `homeassistant.components.event.entity` | no, see below |
+| `event` | `EventExtraStoredData` (restored in 2026.11.0b0) | `homeassistant.components.event.entity` | no, see below |
 | `wake_on_lan` | `SERVICE_SEND_MAGIC_PACKET` | `homeassistant.components.wake_on_lan.services` | no, see below |
 | `zone` | `DATA_ZONE_STORAGE_COLLECTION` | removed; no replacement checked | |
 
@@ -114,11 +130,11 @@ query did not complete.
 
 | integration | opt-in installs | removed import (code at HEAD, October 18) | predicted effect on checked 2026.11 dev |
 |---|---:|---|---|
-| [AlexxIT/SonoffLAN](https://github.com/AlexxIT/SonoffLAN) | 45,671 | `ATTR_LAST_TRIGGERED` from `components.script`: [`binary_sensor.py:7`](https://github.com/AlexxIT/SonoffLAN/blob/08135f0bef69a46edbe19b86c6b6c548cc570e85/custom_components/sonoff/binary_sensor.py#L7) (+1 file) | affected entry fails setup |
-| [BottlecapDave/HomeAssistant-OctopusEnergy](https://github.com/BottlecapDave/HomeAssistant-OctopusEnergy) | 10,410 | `EventExtraStoredData` from `components.event`: [`rates_current_day.py:7`](https://github.com/BottlecapDave/HomeAssistant-OctopusEnergy/blob/fb6c839f740d2d3c641737602757e8bc160ce12a/custom_components/octopus_energy/electricity/rates_current_day.py#L7) (+1 file) | affected entry fails setup |
+| [AlexxIT/SonoffLAN](https://github.com/AlexxIT/SonoffLAN) | 45,671 | `ATTR_LAST_TRIGGERED` from `components.script`: [`binary_sensor.py:7`](https://github.com/AlexxIT/SonoffLAN/blob/08135f0bef69a46edbe19b86c6b6c548cc570e85/custom_components/sonoff/binary_sensor.py#L7) (+1 file) | affected entry fails setup(October 28: name restored in 2026.11.0b0, no change needed) |
+| [BottlecapDave/HomeAssistant-OctopusEnergy](https://github.com/BottlecapDave/HomeAssistant-OctopusEnergy) | 10,410 | `EventExtraStoredData` from `components.event`: [`rates_current_day.py:7`](https://github.com/BottlecapDave/HomeAssistant-OctopusEnergy/blob/fb6c839f740d2d3c641737602757e8bc160ce12a/custom_components/octopus_energy/electricity/rates_current_day.py#L7) (+1 file) | affected entry fails setup(October 28: name restored in 2026.11.0b0, no change needed) |
 | [AlexandrErohin/home-assistant-flightradar24](https://github.com/AlexandrErohin/home-assistant-flightradar24) | 6,589 | `RestoreEntity` from `components.text`: [`text.py:12`](https://github.com/AlexandrErohin/home-assistant-flightradar24/blob/8cffeb79b6b0d430dcc7741d39238f80130a4b7a/custom_components/flightradar24/text.py#L12) | affected entry fails setup |
 | [ekutner/home-connect-hass](https://github.com/ekutner/home-connect-hass) | 3,934 | `time` from `components.time`: [`time.py:4`](https://github.com/ekutner/home-connect-hass/blob/f74cffd95724802d723fc62e5da719da82ab6f0a/custom_components/home_connect_alt/time.py#L4) | affected entry fails setup |
-| [AlexxIT/XiaomiGateway3](https://github.com/AlexxIT/XiaomiGateway3) | 3,233 | `ATTR_LAST_TRIGGERED` from `components.script`: [`binary_sensor.py:7`](https://github.com/AlexxIT/XiaomiGateway3/blob/65f7249901803b40ef0c58e717754f5220c9f273/custom_components/xiaomi_gateway3/binary_sensor.py#L7) | affected entry fails setup |
+| [AlexxIT/XiaomiGateway3](https://github.com/AlexxIT/XiaomiGateway3) | 3,233 | `ATTR_LAST_TRIGGERED` from `components.script`: [`binary_sensor.py:7`](https://github.com/AlexxIT/XiaomiGateway3/blob/65f7249901803b40ef0c58e717754f5220c9f273/custom_components/xiaomi_gateway3/binary_sensor.py#L7) | affected entry fails setup(October 28: name restored in 2026.11.0b0, no change needed) |
 | [bjrnptrsn/climate_group_helper](https://github.com/bjrnptrsn/climate_group_helper) | 1,500 | `EntityCategory` from `components.sensor`: [`sensor.py:14`](https://github.com/bjrnptrsn/climate_group_helper/blob/9e59b0211d2750f0243b135fb7c6faaba61d80fe/custom_components/climate_group_helper/sensor.py#L14) | affected entry fails setup |
 | [jjjonesjr33/petlibro](https://github.com/jjjonesjr33/petlibro) | 1,396 | `dataclass` from `components.sensor`: [`entity.py:34`](https://github.com/jjjonesjr33/petlibro/blob/7ee757fa8f76f628af2e845a301335656e9919a1/custom_components/petlibro/pets/entity.py#L34) | affected entry fails setup |
 | [pyalarmdotcom/alarmdotcom](https://github.com/pyalarmdotcom/alarmdotcom) | 917 | `UnitOfTemperature` from `components.climate`: [`climate.py:18`](https://github.com/pyalarmdotcom/alarmdotcom/blob/0eefd0b76a98be0a229be07f64f71c0840b771c5/custom_components/alarmdotcom/climate.py#L18) | affected entry fails setup |
@@ -133,9 +149,9 @@ query did not complete.
 | [custom-components/weatheralerts](https://github.com/custom-components/weatheralerts) | 576 | `RestoreEntity` from `components.sensor`: [`sensor.py:11`](https://github.com/custom-components/weatheralerts/blob/7c01f7f498d0676db71cf8f665076c5a2aeb63c2/custom_components/weatheralerts/sensor.py#L11) | affected entry fails setup |
 | [joleys/niko-home-control-II](https://github.com/joleys/niko-home-control-II) | 539 | `RestoreEntity` from `components.input_boolean`: [`nhc_entity.py:1`](https://github.com/joleys/niko-home-control-II/blob/b0b26282f9946e3b3c3074a750504fb871b16900/custom_components/nhc2/entities/nhc_entity.py#L1) | shows loaded, no entities (a core maintainer opened an issue Oct 14) |
 | [ruaan-deysel/ha-unifi-insights](https://github.com/ruaan-deysel/ha-unifi-insights) | 393 | `EntityCategory` from `components.sensor`: [`sensor.py:12`](https://github.com/ruaan-deysel/ha-unifi-insights/blob/5c09c5a75fae41fe843e1f410f0d55d346fabcdd/custom_components/unifi_insights/sensor.py#L12) | affected entry fails setup |
-| [joggs/home_assistant_ebeco](https://github.com/joggs/home_assistant_ebeco) | 305 | `StateType` from `components.sensor`: [`sensor.py:11`](https://github.com/joggs/home_assistant_ebeco/blob/1c6d5b7348340887e6da879d44b1ff8b202f2773/custom_components/ebeco/sensor.py#L11) | affected entry fails setup |
-| [MiguelAngelLV/ha-balance-neto](https://github.com/MiguelAngelLV/ha-balance-neto) | 259 | `RestoreEntity` from `components.sensor`: [`sensor.py:13`](https://github.com/MiguelAngelLV/ha-balance-neto/blob/29ad412618a762f4c4ca2e6bbc2a2a290528de8d/custom_components/balance_neto/sensor.py#L13) | affected entry fails setup |
-| [MiguelAngelLV/ha-tarifa-20td](https://github.com/MiguelAngelLV/ha-tarifa-20td) | 248 | `RestoreEntity` from `components.sensor`: [`sensor.py:13`](https://github.com/MiguelAngelLV/ha-tarifa-20td/blob/2f18000083ff9691990c6453cf9177a707f1e4b2/custom_components/tarifa_20td/sensor.py#L13) | affected entry fails setup |
+| [joggs/home_assistant_ebeco](https://github.com/joggs/home_assistant_ebeco) | 305 | `StateType` from `components.sensor`: [`sensor.py:11`](https://github.com/joggs/home_assistant_ebeco/blob/1c6d5b7348340887e6da879d44b1ff8b202f2773/custom_components/ebeco/sensor.py#L11) | affected entry fails setup(October 28: fixed in release 0.6.13) |
+| [MiguelAngelLV/ha-balance-neto](https://github.com/MiguelAngelLV/ha-balance-neto) | 259 | `RestoreEntity` from `components.sensor`: [`sensor.py:13`](https://github.com/MiguelAngelLV/ha-balance-neto/blob/29ad412618a762f4c4ca2e6bbc2a2a290528de8d/custom_components/balance_neto/sensor.py#L13) | affected entry fails setup(October 28: fixed on main, not yet released) |
+| [MiguelAngelLV/ha-tarifa-20td](https://github.com/MiguelAngelLV/ha-tarifa-20td) | 248 | `RestoreEntity` from `components.sensor`: [`sensor.py:13`](https://github.com/MiguelAngelLV/ha-tarifa-20td/blob/2f18000083ff9691990c6453cf9177a707f1e4b2/custom_components/tarifa_20td/sensor.py#L13) | affected entry fails setup(October 28: fixed in release v2.2.3) |
 | [Tvalley71/pluggit](https://github.com/Tvalley71/pluggit) | 166 | `HomeAssistantError` from `components.sensor`: [`text.py:6`](https://github.com/Tvalley71/pluggit/blob/c6894e2bc798a76c3bff47cc74a17fa9e56877e5/custom_components/pluggit/text.py#L6) | affected entry fails setup |
 | [Tvalley71/dantherm](https://github.com/Tvalley71/dantherm) | 89 | `HomeAssistantError` from `components.sensor`: [`text.py:6`](https://github.com/Tvalley71/dantherm/blob/a04c381a665248ea7da8dd568da22a28affc5dea/custom_components/dantherm/text.py#L6) | affected entry fails setup |
 | [toringer/home-assistant-heru](https://github.com/toringer/home-assistant-heru) | 81 | `EntityCategory` from `components.sensor`: [`HeruQualitySensor.py:4`](https://github.com/toringer/home-assistant-heru/blob/ec1294fcd29f9495a95271c78a936514c3b1c806/custom_components/heru/HeruQualitySensor.py#L4) (+1 file) | affected entry fails setup |
@@ -153,19 +169,19 @@ query did not complete.
 | [golles/ha-aquatlantis-ori](https://github.com/golles/ha-aquatlantis-ori) | 11 | `StateType` from `components.sensor`: [`sensor.py:9`](https://github.com/golles/ha-aquatlantis-ori/blob/b9d31a412d657fd37d00677a069a59eb3a6cd3bb/custom_components/ori/sensor.py#L9) | affected entry fails setup |
 | [iluvdata/pdf_scrape](https://github.com/iluvdata/pdf_scrape) | 11 | `cached_property` from `components.sensor`: [`sensor.py:9`](https://github.com/iluvdata/pdf_scrape/blob/be2095af8b7de172085f8411e9c7304329dad709/custom_components/pdf_scrape/sensor.py#L9) | affected entry fails setup |
 | [martinstafford/daikin_d3net](https://github.com/martinstafford/daikin_d3net) | 8 | `UnitOfTemperature` from `components.climate`; `UnitOfTemperature` from `components.sensor`: [`climate.py:14`](https://github.com/martinstafford/daikin_d3net/blob/92ae9ab46c6ce6d737f1bfb7af6fd128983cbe2a/custom_components/daikin_d3net/climate.py#L14) (+2 files) | affected entry fails setup |
-| [BottlecapDave/HomeAssistant-HarvestTimeTracker](https://github.com/BottlecapDave/HomeAssistant-HarvestTimeTracker) | 7 | `EventExtraStoredData` from `components.event`: [`tasks.py:8`](https://github.com/BottlecapDave/HomeAssistant-HarvestTimeTracker/blob/a7723ade8dea8d8f4a40a778b202b4cb60f0c7c3/custom_components/harvest_time_tracker/sensors/tasks.py#L8) | affected entry fails setup |
+| [BottlecapDave/HomeAssistant-HarvestTimeTracker](https://github.com/BottlecapDave/HomeAssistant-HarvestTimeTracker) | 7 | `EventExtraStoredData` from `components.event`: [`tasks.py:8`](https://github.com/BottlecapDave/HomeAssistant-HarvestTimeTracker/blob/a7723ade8dea8d8f4a40a778b202b4cb60f0c7c3/custom_components/harvest_time_tracker/sensors/tasks.py#L8) | affected entry fails setup(October 28: name restored in 2026.11.0b0, no change needed) |
 | [gjohansson-ST/response_as_sensor](https://github.com/gjohansson-ST/response_as_sensor) | 7 | `CONF_UNIT_OF_MEASUREMENT` from `components.sensor`: [`config_flow.py:12`](https://github.com/gjohansson-ST/response_as_sensor/blob/e67a2c89f2ef4747001acfd1cbe8fab86f529c7f/custom_components/response_as_sensor/config_flow.py#L12) | affected entry fails setup |
 | [cleveroom-code/ha-cleveroom-home](https://github.com/cleveroom-code/ha-cleveroom-home) | 6 | `UnitOfTemperature` from `components.sensor`: [`sensor.py:12`](https://github.com/cleveroom-code/ha-cleveroom-home/blob/5fa4f7c5b17ecc8da8c5d2f85b994ed7c1dbae41/custom_components/cleveroom/sensor.py#L12) | affected entry fails setup |
 | [tom42530/asys_ble_ha](https://github.com/tom42530/asys_ble_ha) | 6 | `RestoreEntity` from `components.sensor`: [`sensor.py:8`](https://github.com/tom42530/asys_ble_ha/blob/1ce64d06aeac5dbf0d9447b91df0665e9145f94d/custom_components/asys_ble/sensor.py#L8) | affected entry fails setup |
 | [Beormund/tascam-bdmp4k](https://github.com/Beormund/tascam-bdmp4k) | 2 | `StateType` from `components.sensor`: [`sensor.py:5`](https://github.com/Beormund/tascam-bdmp4k/blob/2fa1ea34604b57d34f0914c30a5bc55cde4cbd2c/custom_components/tascam_bdmp4k/sensor.py#L5) | affected entry fails setup |
 | [dneprojects/habitron](https://github.com/dneprojects/habitron) | 2 | `RTCIceCandidateInit` from `components.camera`: [`handlers.py:18`](https://github.com/dneprojects/habitron/blob/8c56c943dd9c8ddc5fc58d98872c226ce14c8e42/custom_components/habitron/ws_provider/handlers.py#L18) (+1 file) | affected entry fails setup |
-| [Bobby5291/HomeAssistant-EDF-UK](https://github.com/Bobby5291/HomeAssistant-EDF-UK) | not reported | `EventExtraStoredData` from `components.event`: [`rates_events.py:7`](https://github.com/Bobby5291/HomeAssistant-EDF-UK/blob/ff45e757a3949ab7420a46f98df61ebaba391a8b/custom_components/edf_energy/electricity/rates_events.py#L7) | affected entry fails setup |
+| [Bobby5291/HomeAssistant-EDF-UK](https://github.com/Bobby5291/HomeAssistant-EDF-UK) | not reported | `EventExtraStoredData` from `components.event`: [`rates_events.py:7`](https://github.com/Bobby5291/HomeAssistant-EDF-UK/blob/ff45e757a3949ab7420a46f98df61ebaba391a8b/custom_components/edf_energy/electricity/rates_events.py#L7) | affected entry fails setup(October 28: name restored in 2026.11.0b0, no change needed) |
 | [Jarauvi/elisa_kotiakku](https://github.com/Jarauvi/elisa_kotiakku) | not reported | `RestoreEntity` from `components.sensor`: [`sensor.py:8`](https://github.com/Jarauvi/elisa_kotiakku/blob/a4f5c77ec1472a6a69ac93c8e3620f92590c8377/custom_components/elisa_kotiakku/sensor.py#L8) | affected entry fails setup |
-| [Veldkornet/ha-hyxi-cloud](https://github.com/Veldkornet/ha-hyxi-cloud) | not reported | `EntityCategory` from `components.sensor`: [`sensor.py:14`](https://github.com/Veldkornet/ha-hyxi-cloud/blob/318671a6343083db880eaf74e615f183bb3d3edc/custom_components/hyxi_cloud/sensor.py#L14) | affected entry fails setup |
+| [Veldkornet/ha-hyxi-cloud](https://github.com/Veldkornet/ha-hyxi-cloud) | not reported | `EntityCategory` from `components.sensor`: [`sensor.py:14`](https://github.com/Veldkornet/ha-hyxi-cloud/blob/318671a6343083db880eaf74e615f183bb3d3edc/custom_components/hyxi_cloud/sensor.py#L14) | affected entry fails setup(October 28: fixed on main, not yet released) |
 | [bwcon/homeassistant-crestron-home](https://github.com/bwcon/homeassistant-crestron-home) | not reported | `UnitOfTemperature` from `components.climate`: [`climate.py:8`](https://github.com/bwcon/homeassistant-crestron-home/blob/e603e94d284a524a6ec63bd165374fc57946eb5c/custom_components/crestron_home/climate.py#L8) | affected entry fails setup |
 | [lmt-lv/lmt-iot-ha-integration](https://github.com/lmt-lv/lmt-iot-ha-integration) | not reported | `RestoreEntity` from `components.sensor`: [`sensor.py:7`](https://github.com/lmt-lv/lmt-iot-ha-integration/blob/73f4b2a4c5f36d8271ce8164c3365c9e7068748e/custom_components/lmt_iot/sensor.py#L7) | affected entry fails setup |
 | [swansmart/hivi_speaker](https://github.com/swansmart/hivi_speaker) | not reported | `async_dispatcher_send` from `components.persistent_notification`: [`discovery_scheduler.py:11`](https://github.com/swansmart/hivi_speaker/blob/00b34595882b7957c2aa89ec5b50b2bb14dfb8e7/custom_components/hivi_speaker/discovery_scheduler.py#L11) | affected entry fails setup |
-| [tailgatelabs/ha-rutos-integration](https://github.com/tailgatelabs/ha-rutos-integration) | not reported | `DATA_ZONE_STORAGE_COLLECTION` from `components.zone`: [`__init__.py:9`](https://github.com/tailgatelabs/ha-rutos-integration/blob/79b9f9fcf1295cc3371e31c9d57d610d4d14da36/custom_components/rutos/__init__.py#L9) | affected entry fails setup |
+| [tailgatelabs/ha-rutos-integration](https://github.com/tailgatelabs/ha-rutos-integration) | not reported | `DATA_ZONE_STORAGE_COLLECTION` from `components.zone`: [`__init__.py:9`](https://github.com/tailgatelabs/ha-rutos-integration/blob/79b9f9fcf1295cc3371e31c9d57d610d4d14da36/custom_components/rutos/__init__.py#L9) | affected entry fails setup(October 28: fixed in release v1.3.1) |
 
 </details>
 

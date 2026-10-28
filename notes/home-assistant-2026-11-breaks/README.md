@@ -1,5 +1,17 @@
 # Home Assistant 2026.11: what still breaks after the maintainers' outreach
 
+> **Update, October 28.** The 2026.11.0b0 beta source adds no compatibility shim for
+> either change: `RestoreStateData` has no `last_states`, and `DeviceInfo`'s mapping layer
+> still has no `setdefault` or `copy`, and its `update` still takes no keyword arguments.
+> Three listed integrations have fixed their code since October 18: xai_conversation in
+> release v4.0.0 and hitachi_yutaki in release v2.2.0, both from the notified table, and
+> luxtronik on its main branch ([PR #847](https://github.com/BenPru/luxtronik/pull/847),
+> merged October 23; its latest release, 2026.10.18, still has the old read). **3 notified
+> integrations remain unfixed at HEAD: pyscript, Zendure-HA and bravia-quad.** FordPass's
+> raising guard and pyscript's `last_states` read are unchanged at HEAD, and the other nine
+> un-notified integrations still have the cited code. We read this from source files; we
+> have not run `check.py` on the beta.
+
 Home Assistant Core 2026.11 removes `RestoreStateData.last_states` and turns `DeviceInfo`
 into a dataclass. The beta is due around October 28 and the release around November 4.
 Neither change has a deprecation period for the patterns below.
@@ -18,7 +30,7 @@ three groups that the outreach has not closed:
   sets we checked.** Some paths are conditional or affect initial restoration rather than
   permanent stored data.
 - **1 closed issue whose fix still fails.** FordPass shipped a guard that raises on 2026.11.
-- **5 notified integrations still unfixed** at HEAD, including pyscript, which fails setup.
+- **5 notified integrations still unfixed** at HEAD on October 18 (3 on October 28), including pyscript, which fails setup.
 
 If you maintain a custom integration, the fixes are in the two migration posts:
 [`last_states` removal](https://contributors.home-assistant.io/blog/2026/10/06/restore-state-last-states-removal/)
@@ -29,7 +41,7 @@ If you use one of the integrations below, check for an update before you install
 
 | integration | what fails on 2026.11 | opt-in installs | code (Oct 18) |
 |---|---|---:|---|
-| [BenPru/luxtronik](https://github.com/BenPru/luxtronik) | reads `last_states`; setup fails with the EVU2 manual model and its switch enabled | 666 | [`custom_components/luxtronik2/coordinator.py:338`](https://github.com/BenPru/luxtronik/blob/5887859e7e431e1e29c4cc38a40aee52b9abf867/custom_components/luxtronik2/coordinator.py#L338) |
+| [BenPru/luxtronik](https://github.com/BenPru/luxtronik) | reads `last_states`; setup fails with the EVU2 manual model and its switch enabled (October 28: fixed on main, not yet released) | 666 | [`custom_components/luxtronik2/coordinator.py:338`](https://github.com/BenPru/luxtronik/blob/5887859e7e431e1e29c4cc38a40aee52b9abf867/custom_components/luxtronik2/coordinator.py#L338) |
 | [natekspencer/ha-vivint](https://github.com/natekspencer/ha-vivint) | `.setdefault()` on a `DeviceInfo`; camera entities fail | 489 | [`custom_components/vivint/camera.py:109`](https://github.com/natekspencer/ha-vivint/blob/b0d8b4e6db817b7023d5abe6cc10f13f51c9e570/custom_components/vivint/camera.py#L109) |
 | [EiS94/db_info](https://github.com/EiS94/db_info) | reads `last_states` inside a broad `except`; the coordinator cannot seed stored time settings before its first refresh. The switch and datetime entities have their own later restore paths. | 345 | [`custom_components/db_info/coordinator.py:74`](https://github.com/EiS94/db_info/blob/2cfcb01e92f93e33e156e25dda8a639c679d7276/custom_components/db_info/coordinator.py#L74) |
 | [Ediminator/homematicip-hcu](https://github.com/Ediminator/homematicip-hcu) | `.copy()` on a `DeviceInfo`; fails for renamed alarm-switching groups (default branch, not release 2.3.0) | 338 | [`custom_components/hcu_integration/select.py:128`](https://github.com/Ediminator/homematicip-hcu/blob/ff9f9e09c4b4e74f117563d5563e6d9940b99137/custom_components/hcu_integration/select.py#L128) |
@@ -51,8 +63,8 @@ versions; three domains were not reported. These are not counts of affected inst
 | [Zendure/Zendure-HA](https://github.com/Zendure/Zendure-HA) | a one-time entity migration reads `last_states`; it fails with a logged error and renamed entities are not migrated. Issue #1694 open | 4,204 |
 | [marq24/ha-fordpass](https://github.com/marq24/ha-fordpass) | issue #275 closed by release 2026.10.2, whose guard still raises (below) | 1,990 |
 | [steamEngineer/bravia-quad-homeassistant](https://github.com/steamEngineer/bravia-quad-homeassistant) | select and switch restore helpers raise; issue #236 open | 81 |
-| [pajeronda/xai_conversation](https://github.com/pajeronda/xai_conversation) | raises when its entities are removed; issue #26 open | 51 |
-| [alepee/hass-hitachi_yutaki](https://github.com/alepee/hass-hitachi_yutaki) | setup fails once its energy sensors exist; issue #458 open, fix PR #469 open | 21 |
+| [pajeronda/xai_conversation](https://github.com/pajeronda/xai_conversation) | raises when its entities are removed; issue #26 open (October 28: fixed in release v4.0.0, issue closed) | 51 |
+| [alepee/hass-hitachi_yutaki](https://github.com/alepee/hass-hitachi_yutaki) | setup fails once its energy sensors exist; issue #458 open, fix PR #469 open (October 28: fixed in release v2.2.0, issue closed) | 21 |
 
 ## A guard written on 2026.10 cannot test the 2026.11 branch
 
