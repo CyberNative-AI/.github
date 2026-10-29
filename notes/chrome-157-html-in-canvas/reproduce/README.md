@@ -20,6 +20,9 @@ Everything behind the note's tables, as it ran on October 23.
   screenshot, and `score.json`.
 - `results/babylon-update/`: the Babylon.js `update()` run, with `K0`, `K1` and `BJS` repeated
   as controls.
+- `pages-babylon-9.33.0/` and `results/babylon-9.33.0/`: the October 29 rerun of `BJS` and `BJSW`
+  on Babylon.js 9.33.0. The two pages differ from `pages/` only in the Babylon script path; `K0`
+  and `K1` from `pages/` ran as controls.
 - `census/`: `census_summary.json` (counts by class), `old-names-only.json` (the 143
   repositories and their matched files), `head_recheck.jsonl` (the named repositories' matched
   files re-read at their default branch on October 23). The counts come from the text of the
@@ -52,6 +55,11 @@ ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 K0 K1 K2 K3 N2D NGL NGPU 
 python3 score.py <output folder> > score.json
 python3 score.py results/main > /dev/null   # prints the main table from our records
 ```
+
+For the October 29 rerun, copy `pages-babylon-9.33.0/BJS.html` and `BJSW.html` over the ones in
+`pages/`, unpack `babylonjs-9.33.0` under `assets/` as above, and run
+`ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 K0 K1 BJS BJSW`;
+`python3 score.py results/babylon-9.33.0 > /dev/null` prints its table from our records.
 
 After the run we changed only comments and descriptions: the source and license notices at the
 top of the adapted pages, the first line of `probe.js`, `run.mjs`, `run_all.sh` and `score.py`,
