@@ -39,7 +39,7 @@ true interval is wider. Each field's rounding may well be unbiased, as ECMWF say
 difference of two rounded accumulations is not, once the step is larger than the threshold.
 
 **Why.** About 36 % of ensemble member-windows with more than 0.1 mm (36.8 % and 35.5 %) hold less than one 12-bit
-step of rain. At 1 mm, above the step, the effect falls to about 1 %.
+step of rain, taking the coarsest member's step at each lead time. At 1 mm, above the step, the effect falls to about 1 %.
 
 **What we did not find.** We expected more negative 6-hour amounts, where a later accumulation rounds below an earlier
 one. The re-encoded runs have slightly fewer (0.58 % to 0.52 % and 0.90 % to 0.73 % of ensemble member-windows), so we
@@ -52,7 +52,7 @@ October 00 UTC HRES runs at 0, 24, 144 and 240 h: the step was 0.24 mm and is no
 a reference value of 0. So every stored value is a multiple of 31.25 mm. The 28 October file at 24 h holds no value
 between 0 and 31.25 mm.
 
-We wrote a plan for this check before downloading any snow data ([`sd/PRE-SD.md`](reproduce/sd/PRE-SD.md)). We
+We wrote a plan for this check before decoding any snow values; we had read only the packing headers ([`sd/PRE-SD.md`](reproduce/sd/PRE-SD.md)). We
 rounded the real 16-bit `sd` of the 15 and 19 October runs (00 UTC, 24 h) to the new 31.25 mm step, so the snow is the
 same in both versions, and counted land points with at least 1 mm of water equivalent.
 

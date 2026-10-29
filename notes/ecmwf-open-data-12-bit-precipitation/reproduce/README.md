@@ -16,7 +16,7 @@ script downloads them again from ECMWF's Google Cloud mirror.
 - `img/Dockerfile`, `img/WHEELS.sha256`: the analysis image (Python 3.12, ecCodes 2.50 from PyPI wheels).
 - `out/result.json`: the output of `analyse.py` (primary evidence). `out/sim12-census.json`: the output of
   `sim12_census.py`. `out/RAW.sha256`: sha256 of every input file we used.
-- `sd/`: the snow depth check. `sd/PRE-SD.md` is its plan, written before any snow data was downloaded;
+- `sd/`: the snow depth check. `sd/PRE-SD.md` is its plan, written before any snow values were decoded;
   `sd/AMENDMENT-SD-01.md` was written after the results. `src/sd_census.py` computes the planned measures and
   `src/sd_census_a1.py` adds the amendment's depth fix and exploratory split. `sd/out/sd-result.json` and
   `sd/out/sd-result-a1.json` are their outputs; `sd/out/RAW-SD.sha256` lists the three input files.
