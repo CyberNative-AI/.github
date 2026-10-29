@@ -1,0 +1,1248 @@
+{
+ "cells": {
+  "BJSW|C156": "RENDERS",
+  "BJSW|C156OT": "RENDERS",
+  "BJSW|C157": "RENDERS",
+  "BJSW|C158": "RENDERS",
+  "BJS|C156": "RENDERS",
+  "BJS|C156OT": "RENDERS",
+  "BJS|C157": "RENDERS",
+  "BJS|C158": "RENDERS",
+  "K0|C156": "BLANK_SILENT",
+  "K0|C156OT": "BLANK_SILENT",
+  "K0|C157": "BLANK_SILENT",
+  "K0|C158": "BLANK_SILENT",
+  "K1|C156": "RENDERS",
+  "K1|C156OT": "RENDERS",
+  "K1|C157": "RENDERS",
+  "K1|C158": "RENDERS"
+ },
+ "rows": [
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": false,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1"
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [
+    {
+     "text": "BJS - [14:52:56]: HTML-in-Canvas: the native upload failed (Failed to execute 'texElementSubImage2D' on 'WebGL2RenderingContext': No cached paint record for element.). The element must be drawable inside the engine's rendering canvas with content=\"drawable\" (or layoutsubtree on older implementations",
+     "type": "warning"
+    }
+   ],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [
+    {
+     "text": "BJS - [14:53:04]: HTML-in-Canvas: the native upload failed (Failed to execute 'texElementSubImage2D' on 'WebGL2RenderingContext': No cached paint record for element.). The element must be drawable inside the engine's rendering canvas with content=\"drawable\" (or layoutsubtree on older implementations",
+     "type": "warning"
+    }
+   ],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [
+    {
+     "text": "BJS - [14:54:01]: HTML-in-Canvas: the native upload failed (Failed to execute 'texElementSubImage2D' on 'WebGL2RenderingContext': No cached paint record for element.). The element must be drawable inside the engine's rendering canvas with content=\"drawable\" (or layoutsubtree on older implementations",
+     "type": "warning"
+    }
+   ],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [
+    {
+     "text": "BJS - [14:54:08]: HTML-in-Canvas: the native upload failed (Failed to execute 'texElementSubImage2D' on 'WebGL2RenderingContext': No cached paint record for element.). The element must be drawable inside the engine's rendering canvas with content=\"drawable\" (or layoutsubtree on older implementations",
+     "type": "warning"
+    }
+   ],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "K0",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 20000,
+   "n_mag_by_shot": [
+    20000,
+    20000
+   ],
+   "outcome": "RENDERS",
+   "page": "K1",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 0,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJS",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [
+    {
+     "text": "BJS - [14:55:06]: HTML-in-Canvas: the native upload failed (Failed to execute 'texElementSubImage2D' on 'WebGL2RenderingContext': No cached paint record for element.). The element must be drawable inside the engine's rendering canvas with content=\"drawable\" (or layoutsubtree on older implementations",
+     "type": "warning"
+    }
+   ],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [
+    {
+     "text": "BJS - [14:55:13]: HTML-in-Canvas: the native upload failed (Failed to execute 'texElementSubImage2D' on 'WebGL2RenderingContext': No cached paint record for element.). The element must be drawable inside the engine's rendering canvas with content=\"drawable\" (or layoutsubtree on older implementations",
+     "type": "warning"
+    }
+   ],
+   "dir": "babylon-9.33.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 115937,
+   "n_mag_by_shot": [
+    115937,
+    115937
+   ],
+   "outcome": "RENDERS",
+   "page": "BJSW",
+   "probe": {
+    "bjs_native": true,
+    "bjs_version": "9.33.0",
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none; -webkit-tap-highlight-color: transparent;",
+     "touch-action=none",
+     "data-engine=Babylon.js v9.33.0",
+     "tabindex=1",
+     "content=drawable"
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_parent": "c",
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  }
+ ]
+}
