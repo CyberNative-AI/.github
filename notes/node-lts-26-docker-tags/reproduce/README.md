@@ -22,6 +22,11 @@ To check the one-line cause yourself, read `isCurrent` in
 against the `lts` dates in
 [`versions.json`](https://github.com/nodejs/docker-node/blob/84410eeaede25daf49826da8265fbf548cc604fe/versions.json).
 
+## Live read, October 29
+
+`read-20261029.md` has the commands and output for the October 29 read of the tag list,
+Docker Hub and the generator rerun at docker-node's newer commit.
+
 ## Check line
 
 `sh check-controls.sh` writes the 12 test files to a temporary folder and runs the note's

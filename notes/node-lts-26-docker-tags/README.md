@@ -92,7 +92,7 @@ Until now there was always a newer major waiting for LTS. Under Node's new relea
 Node 27 starts as an alpha on October 28 and is not in docker-node's `versions.json`. After
 Node 26 reaches LTS, no version qualifies, so no image is tagged `latest`.
 
-What this means on Docker Hub is our inference; we have not seen it yet. Each merged
+What this means for `latest` on Docker Hub is our inference; it has not happened yet. Each merged
 docker-node change to the images regenerates the list and opens a pull request to
 docker-library/official-images, which that project's maintainers review before it takes
 effect. Docker's
@@ -105,8 +105,28 @@ current/latest tags. This is a static reading; we did not simulate that entry.
 [docker-node issue 2524](https://github.com/nodejs/docker-node/issues/2524) already discusses
 whether alpha releases should use current/latest (see this
 [comment from August 10](https://github.com/nodejs/docker-node/issues/2524#issuecomment-5243054521));
-we did not find a discussion there of the October 29 omission at this pinned revision. We will read the live tags on October 29 and November 5 and add a
+we did not find a discussion there of the October 29 omission at this pinned revision. We will read the live tags again on November 5 and add a
 dated line here.
+
+**October 29, 2026 read.** The
+[list generated on October 28](https://github.com/docker-library/official-images/blob/ab8a9d5fa655fa97194f2bfb17bf32735ec85a93/library/node)
+moved `lts`, `lts-slim` and
+`lts-alpine` to Node 26 and still lists `latest`, as the table expects for that date. It no
+longer lists `lts-krypton`, the codename tag for Node 24. Docker Hub still serves
+`node:lts-krypton` from its last build, last updated October 28 at 17:40 UTC with Node 24.22.1.
+`node:24` was rebuilt later that day with Node 24.22.2. So far one tag shows the effect
+described above: once dropped from the list, it stayed pullable and missed the next rebuild.
+Node 24.22.2 is not marked as a security release, so that tag has not yet missed a security
+fix. If you use `node:lts-krypton` to stay on Node 24, use `node:24` instead. The commands
+and their output are in [`reproduce/read-20261029.md`](reproduce/read-20261029.md).
+
+No docker-node change to the images has been merged since October 28, so the `latest`
+prediction is still untested. On docker-node's current main,
+[`stackbrew.js` is unchanged and the only `versions.json` change is Node 26's codename](https://github.com/nodejs/docker-node/compare/84410eeaede25daf49826da8265fbf548cc604fe...14b1d124e21d312c46b30db98985ab7e58a89594).
+We ran the generator again at that commit (`14b1d124`) on October 29: its October 28 output
+matched the live tag list, and from October 29 it drops the same 18 tags. The next merged
+change to the images would generate a list without `latest`, unless the script or
+`versions.json` changes first.
 
 ## Corepack is the most common flag
 
@@ -184,8 +204,8 @@ package-list tests with their raw output.
 
 ## Limits
 
-- The generator result is what the script prints, not yet what Docker Hub does. The
-  maintainers can change the script or `versions.json` before October 29.
+- For `latest`, the generator result is still what the script prints, not yet what Docker
+  Hub does. The maintainers can change the script or `versions.json` before the next merge.
 - Code search sees default branches of public repositories only, and our search phrase misses
   `FROM --platform=…` and registry-prefixed forms. We cannot tell whether a Dockerfile is
   still built.
@@ -201,6 +221,8 @@ package-list tests with their raw output.
 - October 22, 2026, after first publication: added the two tested install lines, the warning
   about a plain `npm install --global yarn`, and the Debian package-list check. They replace
   two statements that we had not tested these yet. No count or date in the note changed.
+- October 29, 2026: added the October 29 read of the live tag list and Docker Hub. No count
+  or prediction changed.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. We will publish dated corrections here.
