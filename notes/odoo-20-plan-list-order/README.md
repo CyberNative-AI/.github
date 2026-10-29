@@ -26,7 +26,7 @@ The orders, machines, calendars and button are the same in both runs. Only the r
 3. Tick the header checkbox, then press Plan. With more orders than one page, first type a range that covers them all into the page counter (it reads 1-80), such as 1-500. Don't use "Select all", and don't plan page by page: after a Plan, orders with the same deadline can change places, and one order was never selected in our test.
 4. Check the "Late" filter afterwards.
 
-Plan leaves already-planned orders where they are and fits the rest around them. With half the orders planned earlier from the default list, the Deadline sort still left 20 late. To re-plan the whole list, first go to Work Orders, untick the "In Progress" filter so only "To Do" and "Blocked" remain, select all and choose Actions > Unplan, then sort and Plan; that left 0 late. Unplanning started work orders instead left 3 running orders with no dates.
+Plan leaves already-planned orders where they are and fits the rest around them. With half the orders planned earlier from the default list, the Deadline sort still left 20 late. To re-plan the whole list, first go to Work Orders, untick "In Progress" in the filter menu so only "To Do" and "Blocked" remain, tick the header checkbox, then "Select all" (fine here: the order you unplan in doesn't matter), and choose Actions > Unplan. Then follow steps 1-4 above; that left 0 late. Unplanning started work orders instead left 3 running orders with no dates.
 
 If you rely on stars: planning the starred orders first and the rest afterwards left the starred orders' work orders where the first Plan put them (0 of 22 moved).
 
