@@ -1,0 +1,11 @@
+work_center,name,calendar,alternatives
+SAW,Panel Saw,C40,
+CNC-A,CNC Router A,C80,CNC-B
+CNC-B,CNC Router B,C40,CNC-A
+DRL,Drill 1,C40,
+EDG,Edge Bander,C40,
+SND,Sanding,C40,
+PNT,Paint Booth,C40,
+AS1,Assembly 1,C40,AS2
+AS2,Assembly 2,C40,AS1
+PKG,Testing & Packing,C40,

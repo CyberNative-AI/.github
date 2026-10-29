@@ -1,0 +1,11 @@
+calendar,name,weekday,start,end
+C40,Work Center 40 hours/week,0,08:00,16:00
+C40,Work Center 40 hours/week,1,08:00,16:00
+C40,Work Center 40 hours/week,2,08:00,16:00
+C40,Work Center 40 hours/week,3,08:00,16:00
+C40,Work Center 40 hours/week,4,08:00,16:00
+C80,Two shifts 80 hours/week,0,06:00,22:00
+C80,Two shifts 80 hours/week,1,06:00,22:00
+C80,Two shifts 80 hours/week,2,06:00,22:00
+C80,Two shifts 80 hours/week,3,06:00,22:00
+C80,Two shifts 80 hours/week,4,06:00,22:00
