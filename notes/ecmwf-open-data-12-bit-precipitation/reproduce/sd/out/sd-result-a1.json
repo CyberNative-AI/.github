@@ -1,0 +1,252 @@
+{
+ "q": 0.03125,
+ "post_bits": 9,
+ "C1_multiple_of_q": true,
+ "post_nonzero_lt_q": 0,
+ "dates": {
+  "20261015": {
+   "pre_bits": 16,
+   "R": 0.0,
+   "n_land": 351192,
+   "n_snow": 167203,
+   "snow_area_share_of_land": 0.22519714468882213,
+   "eccodes9_bits": 9,
+   "eccodes9_q": 0.03125,
+   "C2_max_over_q": 320.0,
+   "arms": {
+    "NEAREST": {
+     "Z_count": 0.1954031925264499,
+     "Z_area": 0.36540863224112563,
+     "share_depth_change_ge5cm": 0.09328181910611652,
+     "median_abs_depth_change_cm": 0.0,
+     "p90_abs_depth_change_cm": 4.78379060091007,
+     "share_sd_change_ge_10mm": 0.09790494189697553
+    },
+    "FLOOR": {
+     "Z_count": 0.25293804536999936,
+     "Z_area": 0.45303712480585007,
+     "share_depth_change_ge5cm": 0.2800966489835709,
+     "median_abs_depth_change_cm": 0.0,
+     "p90_abs_depth_change_cm": 6.735189111240483,
+     "share_sd_change_ge_10mm": 0.28448054161707625
+    },
+    "ECCODES9": {
+     "Z_count": 0.1938123119800482,
+     "Z_area": 0.3628800310527213,
+     "share_depth_change_ge5cm": 0.09328181910611652,
+     "median_abs_depth_change_cm": 0.0,
+     "p90_abs_depth_change_cm": 4.78379060091007,
+     "share_sd_change_ge_10mm": 0.09790494189697553
+    }
+   },
+   "posthoc": {
+    "NEAREST": {
+     "SEASONAL": {
+      "n": 54331,
+      "Z_count": 0.6013509782628702,
+      "Z_area": 0.6652950112203737,
+      "share_depth_change_ge5cm": 0.2870736780107121,
+      "median_abs_depth_change_cm": 3.113623765571674,
+      "p90_abs_depth_change_cm": 7.068733981993021,
+      "share_depth_lt_10cm_pre": 0.6546538808415086
+     },
+     "SEASONAL_30_70N": {
+      "n": 38507,
+      "Z_count": 0.7149868855013374,
+      "Z_area": 0.7383898372831562,
+      "share_depth_change_ge5cm": 0.27813124886384294,
+      "median_abs_depth_change_cm": 2.976706426556957,
+      "p90_abs_depth_change_cm": 7.092820048347842,
+      "share_depth_lt_10cm_pre": 0.7623289272080401
+     }
+    },
+    "FLOOR": {
+     "SEASONAL": {
+      "n": 54331,
+      "Z_count": 0.7784137969115238,
+      "Z_area": 0.8248391319668222,
+      "share_depth_change_ge5cm": 0.4309694281349506,
+      "median_abs_depth_change_cm": 4.142935096893853,
+      "p90_abs_depth_change_cm": 11.460544572629562,
+      "share_depth_lt_10cm_pre": 0.6546538808415086
+     },
+     "SEASONAL_30_70N": {
+      "n": 38507,
+      "Z_count": 0.878931103435739,
+      "Z_area": 0.8888477188661579,
+      "share_depth_change_ge5cm": 0.38104760173474955,
+      "median_abs_depth_change_cm": 3.5321087490497236,
+      "p90_abs_depth_change_cm": 11.144230112251062,
+      "share_depth_lt_10cm_pre": 0.7623289272080401
+     }
+    },
+    "ECCODES9": {
+     "SEASONAL": {
+      "n": 54331,
+      "Z_count": 0.596455062487346,
+      "Z_area": 0.6606912180759873,
+      "share_depth_change_ge5cm": 0.2870736780107121,
+      "median_abs_depth_change_cm": 3.113623765571674,
+      "p90_abs_depth_change_cm": 7.068733981993021,
+      "share_depth_lt_10cm_pre": 0.6546538808415086
+     },
+     "SEASONAL_30_70N": {
+      "n": 38507,
+      "Z_count": 0.7104162879476459,
+      "Z_area": 0.7340665520019402,
+      "share_depth_change_ge5cm": 0.27813124886384294,
+      "median_abs_depth_change_cm": 2.976706426556957,
+      "p90_abs_depth_change_cm": 7.092820048347842,
+      "share_depth_lt_10cm_pre": 0.7623289272080401
+     }
+    }
+   },
+   "seasonal_sd_quantiles_mm": {
+    "10": 1.953125,
+    "25": 4.150390625,
+    "50": 11.23046875,
+    "75": 27.34375,
+    "90": 109.375
+   },
+   "snow_sd_quantiles_mm": {
+    "10": 5.37109375,
+    "25": 29.78515625,
+    "50": 10000.0,
+    "75": 10000.0,
+    "90": 10000.0
+   },
+   "snow_depth_quantiles_cm": {
+    "10": 2.9767709136246125,
+    "25": 15.161738035066321,
+    "50": 2032.81096353118,
+    "75": 2038.898484595919,
+    "90": 2046.1013458324019
+   }
+  },
+  "20261019": {
+   "pre_bits": 16,
+   "R": 0.0,
+   "n_land": 351192,
+   "n_snow": 171074,
+   "snow_area_share_of_land": 0.23444616358755888,
+   "eccodes9_bits": 9,
+   "eccodes9_q": 0.03125,
+   "C2_max_over_q": 320.0,
+   "arms": {
+    "NEAREST": {
+     "Z_count": 0.18307282228743116,
+     "Z_area": 0.3420531791235722,
+     "share_depth_change_ge5cm": 0.10881840606988788,
+     "median_abs_depth_change_cm": 0.0,
+     "p90_abs_depth_change_cm": 5.2443835019144505,
+     "share_sd_change_ge_10mm": 0.11100459450296363
+    },
+    "FLOOR": {
+     "Z_count": 0.2547610975367385,
+     "Z_area": 0.4535971350150021,
+     "share_depth_change_ge5cm": 0.3115844605258543,
+     "median_abs_depth_change_cm": 0.0,
+     "p90_abs_depth_change_cm": 7.899038091592669,
+     "share_sd_change_ge_10mm": 0.3153547587593673
+    },
+    "ECCODES9": {
+     "Z_count": 0.18130165893122274,
+     "Z_area": 0.3391841712390933,
+     "share_depth_change_ge5cm": 0.10881840606988788,
+     "median_abs_depth_change_cm": 0.0,
+     "p90_abs_depth_change_cm": 5.2443835019144505,
+     "share_sd_change_ge_10mm": 0.11100459450296363
+    }
+   },
+   "posthoc": {
+    "NEAREST": {
+     "SEASONAL": {
+      "n": 58186,
+      "Z_count": 0.5382566253050562,
+      "Z_area": 0.6033775239008957,
+      "share_depth_change_ge5cm": 0.31993950434812496,
+      "median_abs_depth_change_cm": 3.387141857472286,
+      "p90_abs_depth_change_cm": 7.292160439340943,
+      "share_depth_lt_10cm_pre": 0.5895748118104012
+     },
+     "SEASONAL_30_70N": {
+      "n": 42588,
+      "Z_count": 0.6468253968253969,
+      "Z_area": 0.67388180904985,
+      "share_depth_change_ge5cm": 0.31973795435333896,
+      "median_abs_depth_change_cm": 3.359313894090751,
+      "p90_abs_depth_change_cm": 7.337736080265611,
+      "share_depth_lt_10cm_pre": 0.6942800788954635
+     }
+    },
+    "FLOOR": {
+     "SEASONAL": {
+      "n": 58186,
+      "Z_count": 0.749028976042347,
+      "Z_area": 0.8001396650519574,
+      "share_depth_change_ge5cm": 0.4833980682638435,
+      "median_abs_depth_change_cm": 4.790284269923321,
+      "p90_abs_depth_change_cm": 12.303597881638996,
+      "share_depth_lt_10cm_pre": 0.5895748118104012
+     },
+     "SEASONAL_30_70N": {
+      "n": 42588,
+      "Z_count": 0.8509674086597163,
+      "Z_area": 0.8653333909663714,
+      "share_depth_change_ge5cm": 0.44679252371560063,
+      "median_abs_depth_change_cm": 4.294182726259953,
+      "p90_abs_depth_change_cm": 12.227393532949387,
+      "share_depth_lt_10cm_pre": 0.6942800788954635
+     }
+    },
+    "ECCODES9": {
+     "SEASONAL": {
+      "n": 58186,
+      "Z_count": 0.533049187089678,
+      "Z_area": 0.5983166299257994,
+      "share_depth_change_ge5cm": 0.31993950434812496,
+      "median_abs_depth_change_cm": 3.387141857472286,
+      "p90_abs_depth_change_cm": 7.292160439340943,
+      "share_depth_lt_10cm_pre": 0.5895748118104012
+     },
+     "SEASONAL_30_70N": {
+      "n": 42588,
+      "Z_count": 0.6416361416361417,
+      "Z_area": 0.6688512832649499,
+      "share_depth_change_ge5cm": 0.31973795435333896,
+      "median_abs_depth_change_cm": 3.359313894090751,
+      "p90_abs_depth_change_cm": 7.337736080265611,
+      "share_depth_lt_10cm_pre": 0.6942800788954635
+     }
+    }
+   },
+   "seasonal_sd_quantiles_mm": {
+    "10": 2.197265625,
+    "25": 5.126953125,
+    "50": 13.916015625,
+    "75": 31.25,
+    "90": 96.435546875
+   },
+   "snow_sd_quantiles_mm": {
+    "10": 6.34765625,
+    "25": 29.541015625,
+    "50": 10000.0,
+    "75": 10000.0,
+    "90": 10000.0
+   },
+   "snow_depth_quantiles_cm": {
+    "10": 3.5558715022327276,
+    "25": 15.390091662612189,
+    "50": 2032.6322106996806,
+    "75": 2038.8010570556312,
+    "90": 2046.461189089629
+   }
+  }
+ },
+ "C2": true,
+ "C3": {
+  "20261015": true,
+  "20261019": true
+ },
+ "verdict": "CONTINUE"
+}

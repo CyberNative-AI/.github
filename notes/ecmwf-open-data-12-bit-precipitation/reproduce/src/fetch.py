@@ -1,6 +1,7 @@
 """Fetch tp (and lsm) GRIB messages from the ECMWF open-data Google mirror by byte range.
-Usage: fetch.py OUTDIR DATE STREAM STEPS(comma) [--lsm]
-Writes OUTDIR/DATE/STREAM/<step>.grib2 (concatenated tp messages, index order) and <step>.index.json; skips existing."""
+Usage: fetch.py OUTDIR DATE STREAM STEPS(comma) [--lsm] [--params P1,P2,...]
+Writes OUTDIR/DATE/STREAM/<step>.grib2 (concatenated messages, index order) and <step>.index.json; skips existing.
+--params replaces the tp/lsm selection, e.g. --params sd,rsn,lsm for the snow depth check."""
 import json, sys, time, urllib.request, urllib.error, pathlib, hashlib
 G = "https://storage.googleapis.com/ecmwf-open-data/"
 def get(url, rng=None):
@@ -12,7 +13,7 @@ def get(url, rng=None):
             time.sleep(2 * (k + 1))
     raise SystemExit(f"failed {url}")
 out, date, stream, steps = pathlib.Path(sys.argv[1]), sys.argv[2], sys.argv[3], [int(s) for s in sys.argv[4].split(",")]
-params = {"tp"} | ({"lsm"} if "--lsm" in sys.argv else set())
+params = set(sys.argv[sys.argv.index("--params") + 1].split(",")) if "--params" in sys.argv else {"tp"} | ({"lsm"} if "--lsm" in sys.argv else set())
 typ = {"oper": "fc", "enfo": "ef"}[stream]
 d = out / date / stream; d.mkdir(parents=True, exist_ok=True)
 for st in steps:
