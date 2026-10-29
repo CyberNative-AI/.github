@@ -60,8 +60,9 @@ schedules from "now". Times are UTC throughout.
 ## Reading the checker output
 
 `out/<arm>.check.txt` starts with `INFEASIBLE ... errors=17` for both arms. That is Odoo's
-behaviour, not a loading problem: for orders whose first operation was finished on Friday, Plan
-books the next operations straight after it, which is before Monday 08:00, and the checker counts
+behaviour, not a loading problem: for 7 of the 8 orders whose first operation was finished on
+Friday (the eighth already has its second operation started), Plan books the next operations
+straight after it, which is before Monday 08:00, and the checker counts
 any work booked before the export time as an error (and the minutes before Monday 00:00 as
 non-working, hence a few "calendar" lines). The late counts are unaffected.
 
