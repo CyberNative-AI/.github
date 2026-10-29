@@ -1,0 +1,31 @@
+[
+ {
+  "id": "S1",
+  "type": "machine_down",
+  "at": "2026-11-03 10:00",
+  "work_center": "PNT",
+  "from": "2026-11-03 10:00",
+  "to": "2026-11-04 12:00",
+  "text": "Paint Booth extraction fan failed Tuesday 10:00; booth down until Wednesday 12:00."
+ },
+ {
+  "id": "S2",
+  "type": "overrun",
+  "mo": "WH/MO/00167",
+  "sequence": 20,
+  "extra_min": 240,
+  "at": "planned_end",
+  "text": "At its planned finish, WH/MO/00167 operation 20 (Rout) needs 4 more working hours (tool breakage)."
+ },
+ {
+  "id": "S3",
+  "type": "rush_order",
+  "at": "2026-11-04 13:00",
+  "mo": "WH/MO/00173",
+  "product": "Dining Table",
+  "qty": 4,
+  "due": "2026-11-06 16:00",
+  "priority": "1",
+  "text": "Rush order arrives Wednesday 13:00: 4 Dining Tables due Friday 16:00."
+ }
+]
