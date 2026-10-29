@@ -27,6 +27,37 @@ on 157. On October 23 we found no fix, issue or pull request for PlayCanvas, Bab
 that mentions the new names. For Babylon.js 9.32.0 there is a workaround in your own code:
 calling the texture's `update()` yourself brought it back on 157 in our test (below).
 
+## Update, 29 October 2026
+
+**Babylon.js 9.33.0 fixes this. If you use `HtmlTexture`, upgrade.** Babylon.js 9.33.0, published
+on npm on October 29, includes the fix from Babylon.js pull request
+[#19052](https://github.com/BabylonJS/Babylon.js/pull/19052), opened after our report on the
+Babylon.js forum. We reran our minimal Babylon page with 9.33.0 instead of 9.32.0, nothing else
+changed, on the same four browsers, two loads each. With defaults, the texture rendered on Chrome
+157.0.8103.15 and 158 Canary, where 9.32.0 was blank. There Babylon reported native upload
+support and set `content="drawable"` on the canvas itself. It still rendered on 156, with and
+without the feature.
+
+The `update()` workaround below also still rendered on 9.33.0. But with the feature available
+(157, 158, and 156 with it turned on), the early call now logs "HTML-in-Canvas: the native upload
+failed" once, so remove the call when you upgrade.
+
+The other engines, as of October 29:
+
+- **PlayCanvas** merged its fix ([#9824](https://github.com/playcanvas/engine/pull/9824)) on
+  October 26. It is in the 2.24.0 beta builds, not in a stable release. The latest release is
+  still 2.23.3.
+- **PixiJS** has a draft fix, [#12341](https://github.com/pixijs/pixijs/pull/12341), which is not
+  merged. Its preview build rendered on 157 and 158 on our page
+  ([our result](https://github.com/pixijs/pixijs/issues/12340#issuecomment-6462080964)). The
+  latest release is still 8.22.0.
+- **three.js** pull request [#34732](https://github.com/mrdoob/three.js/pull/34732) is still open.
+  The latest release is still 0.186.1.
+
+The 9.33.0 pages, records, screenshots and scores are in
+[`reproduce/results/babylon-9.33.0/`](reproduce/results/babylon-9.33.0/). The rest of this note
+is as published on October 23.
+
 ## Why now
 
 On October 22 Chrome's May post
