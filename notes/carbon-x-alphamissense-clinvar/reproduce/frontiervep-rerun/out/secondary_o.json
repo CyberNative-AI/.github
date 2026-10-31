@@ -1,0 +1,69 @@
+{
+ "C_orig": {
+  "BA": 0.8917,
+  "BA_CI95": [
+   0.8333,
+   0.9417
+  ]
+ },
+ "F_gene": {
+  "BA": 0.7667,
+  "BA_CI95": [
+   0.6917,
+   0.8417
+  ],
+  "R_minus_arm_CI95": [
+   0.1333,
+   0.2917
+  ],
+  "delta_vs_C_orig": -0.125,
+  "delta_vs_C_orig_CI95": [
+   -0.2083,
+   -0.0417
+  ],
+  "label_flips_vs_C_orig": {
+   "label_changed": 27,
+   "n_both_valid": 119,
+   "rate": 0.2269
+  },
+  "mcnemar_vs_C_orig": {
+   "C_orig_right_F_gene_wrong": 21,
+   "F_gene_right_C_orig_wrong": 6,
+   "p_exact_two_sided": 0.005925
+  }
+ },
+ "F_plus": {
+  "BA": 0.775,
+  "BA_CI95": [
+   0.7,
+   0.85
+  ],
+  "R_minus_arm_CI95": [
+   0.125,
+   0.275
+  ],
+  "delta_vs_C_orig": -0.1167,
+  "delta_vs_C_orig_CI95": [
+   -0.2,
+   -0.0333
+  ],
+  "label_flips_vs_C_orig": {
+   "label_changed": 28,
+   "n_both_valid": 119,
+   "rate": 0.2353
+  },
+  "mcnemar_vs_C_orig": {
+   "C_orig_right_F_plus_wrong": 21,
+   "F_plus_right_C_orig_wrong": 7,
+   "p_exact_two_sided": 0.012541
+  }
+ },
+ "R": {
+  "BA": 0.975,
+  "BA_CI95": [
+   0.9417,
+   1.0
+  ]
+ },
+ "n": 120
+}

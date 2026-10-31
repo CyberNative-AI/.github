@@ -1,6 +1,6 @@
 # Carbon-X against the free AlphaMissense table on 300 ClinVar missense variants classified after 8 August: 0.69 against 0.87 balanced accuracy (October 28)
 
-*Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Test run on 28 October 2026.*
+*Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Test run on 28 October 2026; rerun with the publisher's FrontierVEP prompt on 30 October, added 31 October.*
 
 [Carbon-X](https://huggingface.co/HuggingFaceBio/Carbon-X) is an open 14.8-billion-parameter
 DNA and text chat model from HuggingFaceBio, Hugging Face's biology team, released on October 21. Its model
@@ -24,6 +24,52 @@ though that is a different set of 1,000 variants. If you are choosing a first-pa
 variants, the free table matched ClinVar's newest classifications much more often. That says
 which of the two agrees with ClinVar, not which is right: classification guidance lets
 submitters use scores like AlphaMissense as evidence, which could favour it (see Limitations).**
+
+## Rerun with the FrontierVEP prompt (31 October)
+
+After we posted this, a member of the Carbon-X team
+[gave us the prompt FrontierVEP uses](https://huggingface.co/HuggingFaceBio/Carbon-X/discussions/6):
+only the 8,192-base window, the variant's position in it and the two alleles, with the answer
+requested as `<answer>benign</answer>` or `<answer>pathogenic</answer>`. No gene, coordinates or
+strand. On 30 October we reran the same 300 missense variants with that template. The model file,
+llama.cpp build, sampling, thinking setting and per-variant seeds were unchanged; only the message
+changed. The template does not say which strand the window is on, so we ran both the hg38 plus
+strand and the gene's orientation, and fixed in advance that a reading counts only if both agree.
+
+**The gap holds. Carbon-X scored 0.653 with the template in both orientations, against 0.690
+with our first prompt and 0.870 for AlphaMissense.**
+
+| Missense variants (150 pathogenic, 150 benign) | Balanced accuracy (95% interval) | Gap to AlphaMissense (95% interval) |
+|---|---|---|
+| Carbon-X, FrontierVEP template, plus strand | 0.653 (0.600 to 0.707) | 0.217 (0.153 to 0.277) |
+| Carbon-X, FrontierVEP template, gene orientation | 0.653 (0.603 to 0.707) | 0.217 (0.157 to 0.277) |
+| Carbon-X, our first prompt, new seeds only | 0.693 (0.640 to 0.743) | 0.177 (0.120 to 0.237) |
+| Carbon-X, our first prompt (above) | 0.690 | 0.180 (0.12 to 0.24) |
+| AlphaMissense, score above 0.5 (unchanged) | 0.870 | |
+
+- **No measurable effect on accuracy.** Against our first prompt on the same variants, the
+  template's difference is -0.037 (-0.097 to 0.027) on the plus strand, exact McNemar p = 0.30,
+  and -0.037 (-0.097 to 0.023, p = 0.29) for gene orientation.
+- **It does change which variants get which call.** About 30% of the labels differ from our
+  first run (94 and 89 of 298). Rerunning our first prompt with new seeds changed 5% (15 of
+  297), so most of that is the prompt, not sampling.
+- **No unusable answers.** All 300 ended with a valid tag under the strict rule in the
+  publisher's `vepqa.py` (the completion must end in the tag, which must hold exactly `benign`
+  or `pathogenic`). The two orientations each got 196 right, but not the same 196: they disagree
+  on 48 variants, 24 each way.
+- **Other variant types did worse.** On the 120 non-missense variants the template scored 0.775
+  (plus strand) and 0.767 (gene orientation), against 0.892 with our first prompt, which also
+  gave the gene, the coordinates and the variant window. This run does not separate which of
+  those helped.
+
+What we could not match: the FrontierVEP dataset is still gated for us, so we used the text the
+Carbon-X team quoted and could not compare our messages with its stored prompts byte for byte.
+The variant sits at position 4,097 of the window (4,096 on the plus strand for minus-strand
+genes); the Carbon-X team's example puts it at 4,427, so FrontierVEP's positions probably vary.
+The DNA goes in as one unbroken line; with or without `<dna>` tags the server gave the same
+tokens in the 12 messages we checked. Before the main run, the 20 older interface-check variants
+gave usable answers in both orientations (0.80 and 0.85). The rerun files are in
+[`reproduce/frontiervep-rerun/`](reproduce/frontiervep-rerun/).
 
 ## Results
 
@@ -146,11 +192,11 @@ so some of those labels may be older than the upload.
   answers.
 - Q8_0 GGUF on llama.cpp, not the BF16 weights on vLLM. The publisher reports the same
   FrontierVEP score for both, within one standard error.
-- Our prompt follows the publisher's documented agent interface. Their FrontierVEP prompt is not
-  public yet and may differ, in where the variant sits in the window or in strand. We did not
-  measure how much our prompt or runtime changes Carbon-X's answers on these variants; its
-  similar FrontierVEP accuracy comes from different variants and cannot settle that.
-- We ran this once on our own machine; nobody outside the company has repeated it.
+- Our first prompt follows the publisher's documented agent interface. The 31 October rerun
+  with the FrontierVEP template (above) left the result unchanged, but we could not check that
+  template against the gated dataset, and the variant's position in the window differs from
+  FrontierVEP's. We did not measure the effect of the runtime (Q8_0 on llama.cpp).
+- We ran this, and the rerun, on our own machine; nobody outside the company has repeated it.
 
 ## Files
 
@@ -167,6 +213,10 @@ answer with its seed and the SHA-256 of the exact message we sent.
 (`diff_windows.py`, `build_frame.py`), query the server (`run_carbon.py`) and score the answers
 (`score.py`). [`reproduce/README.md`](reproduce/README.md) gives the commands and input
 hashes.
+[`reproduce/frontiervep-rerun/`](reproduce/frontiervep-rerun/) holds the 31 October rerun: every
+raw answer with its seed and message hash, the scores, and the scripts that build the messages,
+query the server and score the answers. Its README shows how to rescore the stored answers
+without a GPU.
 
 ClinVar data are from NCBI. AlphaMissense predictions are © 2023 DeepMind Technologies
 Limited, published on [Zenodo record 10813168](https://zenodo.org/records/10813168) under
