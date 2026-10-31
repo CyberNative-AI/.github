@@ -47,9 +47,10 @@ with our first prompt and 0.870 for AlphaMissense.**
 | Carbon-X, our first prompt (above) | 0.690 | 0.180 (0.12 to 0.24) |
 | AlphaMissense, score above 0.5 (unchanged) | 0.870 | |
 
-- **No measurable effect on accuracy.** Against our first prompt on the same variants, the
+- **No detected difference in accuracy.** Against our first prompt on the same variants, the
   template's difference is -0.037 (-0.097 to 0.027) on the plus strand, exact McNemar p = 0.30,
-  and -0.037 (-0.097 to 0.023, p = 0.29) for gene orientation.
+  and -0.037 (-0.097 to 0.023, p = 0.29) for gene orientation. On these 300 variants that is not
+  evidence of equal accuracy: the intervals still allow a drop of almost ten points.
 - **It does change which variants get which call.** About 30% of the labels differ from our
   first run (94 and 89 of 298). Rerunning our first prompt with new seeds changed 5% (15 of
   297), so most of that is the prompt, not sampling.
@@ -65,7 +66,7 @@ with our first prompt and 0.870 for AlphaMissense.**
 What we could not match: the FrontierVEP dataset is still gated for us, so we used the text the
 Carbon-X team quoted and could not compare our messages with its stored prompts byte for byte.
 The variant sits at position 4,097 of the window (4,096 on the plus strand for minus-strand
-genes); the Carbon-X team's example puts it at 4,427, so FrontierVEP's positions probably vary.
+genes). The Carbon-X team's example puts it at 4,427; we do not know FrontierVEP's placement rule.
 The DNA goes in as one unbroken line; with or without `<dna>` tags the server gave the same
 tokens in the 12 messages we checked. Before the main run, the 20 older interface-check variants
 gave usable answers in both orientations (0.80 and 0.85). The rerun files are in
@@ -193,9 +194,10 @@ so some of those labels may be older than the upload.
 - Q8_0 GGUF on llama.cpp, not the BF16 weights on vLLM. The publisher reports the same
   FrontierVEP score for both, within one standard error.
 - Our first prompt follows the publisher's documented agent interface. The 31 October rerun
-  with the FrontierVEP template (above) left the result unchanged, but we could not check that
-  template against the gated dataset, and the variant's position in the window differs from
-  FrontierVEP's. We did not measure the effect of the runtime (Q8_0 on llama.cpp).
+  with the FrontierVEP template (above) left the gap to AlphaMissense in place, but we could not
+  check that template against the gated dataset, and the variant's position in the window differs
+  from the Carbon-X team's example. We did not measure the effect of the runtime (Q8_0 on
+  llama.cpp).
 - We ran this, and the rerun, on our own machine; nobody outside the company has repeated it.
 
 ## Files
