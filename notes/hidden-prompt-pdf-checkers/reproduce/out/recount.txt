@@ -1,0 +1,50 @@
+D1 types seen: ['Off-Page Text', 'Suspicious Pattern', 'Tiny Text', 'White/Invisible Text']
+D2 types seen: ['Sub-legible font size', 'Text in invisible render mode (mode 3)', 'Text inside a hidden optional content group (layer)', 'Text not visible in the rendered page', 'Text positioned outside the page', 'Transparent text']
+key words: {'PT': ['antencao', 'artificial', 'comando', 'conteste', 'documentos', 'forma', 'impugne', 'independentemente', 'inteligencia', 'peticao', 'superficial'], 'EN': ['artificial', 'attention', 'challenge', 'command', 'documents', 'given', 'intelligence', 'petition', 'regardless', 'respond', 'superficially'], 'CTRL': ['ignore', 'instructions', 'positive', 'previous', 'review']}
+N1        D1=. D2=. D3=. D4=Y reach 0 /4 
+N2        D1=. D2=. D3=. D4=Y reach 0 /4 
+T00-CTRL  D1=. D2=. D3=. D4=. reach 4 /4 
+T00-EN    D1=. D2=. D3=. D4=. reach 4 /4 
+T00-PT    D1=. D2=. D3=. D4=. reach 4 /4 
+T01-CTRL  D1=Y D2=Y D3=Y D4=Y reach 4 /4 
+T01-EN    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T01-PT    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T02-CTRL  D1=Y D2=Y D3=Y D4=Y reach 4 /4 
+T02-EN    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T02-PT    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T03-CTRL  D1=Y D2=Y D3=Y D4=Y reach 4 /4 
+T03-EN    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T03-PT    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T04-CTRL  D1=Y D2=Y D3=Y D4=Y reach 4 /4 
+T04-EN    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T04-PT    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T05-CTRL  D1=. D2=Y D3=Y D4=Y reach 4 /4 
+T05-EN    D1=. D2=Y D3=. D4=Y reach 4 /4 
+T05-PT    D1=. D2=Y D3=. D4=Y reach 4 /4 
+T06-CTRL  D1=Y D2=Y D3=Y D4=Y reach 4 /4 
+T06-EN    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T06-PT    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T07-CTRL  D1=Y D2=Y D3=Y D4=Y reach 4 /4 
+T07-EN    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T07-PT    D1=Y D2=Y D3=. D4=Y reach 4 /4 
+T08-CTRL  D1=Y D2=Y D3=Y D4=Y reach 2 /4 pdftotext,pymupdf
+T08-EN    D1=Y D2=Y D3=. D4=Y reach 2 /4 pdftotext,pymupdf
+T08-PT    D1=Y D2=Y D3=. D4=Y reach 2 /4 pdftotext,pymupdf
+T09-CTRL  D1=. D2=Y D3=Y D4=Y reach 3 /4 pymupdf
+T09-EN    D1=. D2=Y D3=. D4=Y reach 3 /4 pymupdf
+T09-PT    D1=. D2=Y D3=. D4=Y reach 3 /4 pymupdf
+T10-CTRL  D1=. D2=Y D3=Y D4=Y reach 4 /4 
+T10-EN    D1=. D2=Y D3=. D4=Y reach 4 /4 
+T10-PT    D1=. D2=Y D3=. D4=Y reach 4 /4 
+T11-CTRL  D1=. D2=Y D3=Y D4=Y reach 3 /4 pymupdf
+T11-EN    D1=. D2=Y D3=. D4=Y reach 3 /4 pymupdf
+T11-PT    D1=. D2=Y D3=. D4=Y reach 3 /4 pymupdf
+T12-CTRL  D1=. D2=Y D3=Y D4=Y reach 4 /4 
+T12-EN    D1=. D2=Y D3=. D4=Y reach 4 /4 
+T12-PT    D1=. D2=Y D3=. D4=Y reach 4 /4 
+T13-CTRL  D1=. D2=Y D3=Y D4=Y reach 2 /4 pdftotext,pymupdf
+T13-EN    D1=. D2=Y D3=. D4=Y reach 2 /4 pdftotext,pymupdf
+T13-PT    D1=. D2=Y D3=. D4=Y reach 2 /4 pdftotext,pymupdf
+PT {'D1': 7, 'D2': 12, 'D3': 0, 'D4': 12} of 12
+EN {'D1': 7, 'D2': 12, 'D3': 0, 'D4': 12} of 12
+CTRL {'D1': 7, 'D2': 12, 'D3': 12, 'D4': 12} of 12
