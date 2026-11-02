@@ -142,10 +142,10 @@ unless something checks the file first.
   text). 44 files in all.
 - We counted a version as hidden from a reader if, rendered at 100 dpi by both MuPDF and
   Poppler, it changed no more than 20 pixels of the page, or if OCR read fewer than a fifth of
-  its words. One technique, text
-  outside the crop area, still showed in both renderers we used, so it is reported but not
-  counted: 12 hidden techniques. hidden-text-detector flagged it as well; pdf-injection-scanner
-  did not.
+  its words. One technique, text outside the crop area, did not show in MuPDF's rendering but
+  did show in Poppler's, which renders the whole page area by default, and OCR read it there.
+  So it is reported but not counted: 12 hidden techniques. hidden-text-detector flagged it as
+  well; pdf-injection-scanner did not.
 - A tool flagged a file if a hidden-text finding quoted at least two distinctive words of the
   payload. For PhantomLint, the words had to be among those it marks as hidden.
 - Every tool was installed as published and run offline in a container. We wrote the scoring
@@ -167,6 +167,8 @@ unless something checks the file first.
 - A tick here means a tool flagged these files. It does not mean a tool catches every way of
   hiding text.
 - We ran this on our own machine; nobody else has reproduced it.
+- Correction, November 2: an earlier version said the text outside the crop area showed in both
+  renderers; it showed only in Poppler's.
 
 ## Em português
 
