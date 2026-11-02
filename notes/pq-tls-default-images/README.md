@@ -1,11 +1,21 @@
 # 13 of 15 popular TLS server images already negotiate post-quantum key exchange. Pomerium and `kong:latest` do not
 
+**Clarification, 2 November 2026.** An earlier version of this note quoted the paper's phrase "deliberate protocol
+modernization" as if it described what operators intended, and answered it with "On a current image, PQ key exchange
+takes no deliberate action." That reading was ours, not the paper's. In the paper (section 5.5.2), the phrase sums up a
+comparison of TLS configurations: owner-managed domains with PQ key exchange had modestly stricter TLS settings than
+owner-managed domains without it, for example less support for legacy protocol versions (10.5% vs. 11.9%) and
+deprecated cipher suites (46.9% vs. 52.6%). The paper did not measure whether operators enabled PQ themselves. It also
+reports the case this note tests, a server that supports PQ but does not choose it by default: in July 2025, 73 domains
+advertised PQ support but negotiated classical groups by default, and by March 2026 two did. We reworded the two
+sentences. The test and its results are unchanged.
+
 At IMC 2026 (12–16 October), researchers from UNSW Sydney and Georgia Tech reported a gap in post-quantum TLS
 ([Mind the Gap: Policy vs Reality in Post-Quantum TLS Deployment](https://arxiv.org/abs/2607.29005)). In March 2026,
 49.22% of their stable panel of 684,494 HTTPS domains negotiated hybrid post-quantum (PQ) key exchange, all of it
 X25519MLKEM768. Almost all of it came through CDNs and managed hosting. More than 75% of provider-managed domains
-supported it, against less than 10% of domains whose owners appear to run TLS themselves. The authors read
-owner-managed PQ adoption as "deliberate protocol modernization".
+supported it, against less than 10% of domains whose owners appear to run TLS themselves. Owner-managed domains
+that did use PQ had modestly stricter TLS settings, which the authors sum up as "deliberate protocol modernization".
 
 We tested the other side of that gap: what a self-hoster gets from the image. On 17 October 2026 we ran the
 TLS web server and reverse proxy images with at least 250 million Docker Hub pulls at their current tag. We gave
@@ -52,7 +62,7 @@ threshold were left out because they cannot run alone: `istio/proxyv2` (needs is
 
 ## What this suggests about the gap
 
-On a current image, PQ key exchange takes no deliberate action. Low owner-managed adoption may therefore track
+On a current image, PQ key exchange needs no setting. Low owner-managed adoption may therefore track
 servers running older images, distribution packages or configurations that pin a curve list, more than a default
 that owners have to change. That is a hypothesis. We did not measure deployed servers, older tags or distribution
 packages.
