@@ -1,0 +1,10 @@
+{
+  "S5.pdf": [
+    {
+      "severity": "INFO",
+      "type": "OCR text layer",
+      "where": "page 1",
+      "detail": "The entire page (10 spans) uses invisible render mode, which is typical of a scanned document with OCR. Most likely benign."
+    }
+  ]
+}

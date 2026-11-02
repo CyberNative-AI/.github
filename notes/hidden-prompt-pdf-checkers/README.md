@@ -1,4 +1,4 @@
-# A Brazilian court fined two lawyers for a hidden instruction to its AI. Of three free PDF checkers, one flagged it every way we hid it (November 2)
+# A Brazilian court fined two lawyers for a hidden instruction to its AI. Of three free PDF checkers, one flagged all 12 versions we hid (November 2)
 
 In May, a labour court in Parauapebas, Brazil, fined two lawyers over a petition that
 carried an instruction to the court's AI in white text on a white page:
@@ -14,6 +14,11 @@ on them. **In the 12 versions where it stayed hidden on the rendered page, hidde
 with no false alarm on two clean pages. pdf-injection-scanner flagged 7 of the 12. PhantomLint,
 as installed, flagged none:** it only looks closely at text that resembles one of ten English
 phrases, and the court's text, in Portuguese or English, is not close enough to any of them.
+
+**Update, November 2:** on a scanned page, hidden-text-detector and pdf-injection-scanner both
+missed it. When the court's text sits in the invisible text layer that OCR software adds to a scan,
+hidden-text-detector reports the page as a "most likely benign" OCR layer and exits with 0.
+[Details](#scanned-pages-update-november-2).
 
 ## Why now
 
@@ -50,6 +55,10 @@ with code 1 on every hidden version and 0 on the clean pages, so it can stop an 
 show against its background, invisible render mode, a font too small to read, text off the
 page, transparent text, a hidden layer) and quotes the hidden text. Whether hidden text is an
 attack is still a person's call: the tool's README says so too.
+
+If the output includes an "OCR text layer" line for a page, the tool did not check the invisible
+text on that page one line at a time. Extract that page's text and read it for anything you do
+not see on the page ([why](#scanned-pages-update-november-2)).
 
 ## Results
 
@@ -97,6 +106,23 @@ from fixing that:
   choosing a language, so the build we tested used Tesseract's English default. English OCR
   misreading accented words is a plausible explanation, but we did not isolate the cause.
 
+## Scanned pages (update, November 2)
+
+OCR software stores the text it recognises on a scan in invisible render mode, on top of the page
+image, so it can be searched and copied. hidden-text-detector treats a page where more than 80% of
+the text is in that mode as such a scan and reports one INFO line, "Most likely benign", instead of
+reporting each invisible line. We turned the clean petition into a 150 dpi scan with an OCR layer
+and added the court's text to that invisible layer, over a blank part of the page. hidden-text-detector
+reported only the INFO line and exited with 0. pdf-injection-scanner reported nothing. pypdf
+still extracted the court's text. The result was the same with a noisier JPEG scan and with an
+OCR layer written by Tesseract instead of by us. We did not run PhantomLint on these pages.
+
+The court's text as white ordinary text on the same scan was flagged by both tools. On our
+one-page scan it also took the invisible share below 80%, so hidden-text-detector then reported
+all ten lines of the legitimate OCR layer as hidden text too. Whether a page crosses the 80% mark
+depends on how many text pieces it has, so results on real scans will vary. Files and output:
+[`reproduce/ocr-layer/`](reproduce/ocr-layer/).
+
 ## Hidden text still reached the text extractors
 
 We also read each file with four open-source PDF text extractors. pypdf 6.1.1 and pdfminer.six
@@ -133,6 +159,8 @@ unless something checks the file first.
 - Two clean pages is a small false-alarm test. Real filings can carry legitimate hidden text,
   such as an OCR layer under a scanned page or white form fields, and we did not test how often
   any tool flags those.
+- The scanned-page test (November 2) is one synthetic page in seven versions. We did not test real
+  scanned filings or how often real scanned pages fall on either side of the 80% mark.
 - We did not test what any court's AI reads, whether the hidden instruction changes what a model
   does, image-only PDFs, or tricks that remap a font so the text you see differs from the text an
   extractor gets.
@@ -152,6 +180,11 @@ página (nomes e fatos fictícios) e testamos três verificadores gratuitos:
 - **pdf-injection-scanner 0.2.1** sinalizou 7 de 12. Não detectou texto preto que não aparece na
   página: modo de renderização invisível, retângulo branco desenhado por cima, recorte de área
   zero, opacidade zero e camada oculta.
+- **Atualização, 2 de novembro:** numa página digitalizada, o hidden-text-detector e o
+  pdf-injection-scanner não sinalizaram o texto quando ele estava na camada invisível de texto que
+  o OCR acrescenta à imagem. O hidden-text-detector trata uma página com mais de 80% do texto
+  nesse modo como digitalização com OCR e informa apenas "Most likely benign", com código de
+  saída 0. O pypdf extraiu o texto mesmo assim.
 - **PhantomLint**, na configuração padrão, sinalizou 0 de 12: só examina textos parecidos com dez
   frases em inglês. No modo que examina todo o texto, sinalizou as 12, mas também as páginas
   limpas, marcando como ocultas palavras acentuadas visíveis. A versão testada usa o OCR em
@@ -168,7 +201,9 @@ python3 scripts/scan.py peticao.pdf
 ```
 
 São as versões que testamos, com Python 3.12. Sem o pikepdf, a ferramenta não faz a verificação
-de camadas ocultas.
+de camadas ocultas. Se a saída tiver uma linha "OCR text layer" para uma página, a ferramenta não
+verificou linha a linha o texto invisível dessa página: extraia o texto da página e procure o que
+não aparece nela.
 
 O resultado vale para estes arquivos de teste. Não testamos o que o sistema de IA de algum
 tribunal lê, PDFs só com imagem nem truques de fonte. Decidir se um texto oculto é um ataque
@@ -177,7 +212,8 @@ continua sendo tarefa de uma pessoa.
 ## Files
 
 [`reproduce/`](reproduce/) holds the PDF generator, the 44 PDFs and their hashes, the runner and
-scorer, every tool's raw output, the per-file scores and the commands to rerun it. See
+scorer, every tool's raw output, the per-file scores and the commands to rerun it. The
+scanned-page test is in [`reproduce/ocr-layer/`](reproduce/ocr-layer/). See
 [`reproduce/README.md`](reproduce/README.md); our files are MIT-licensed.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
