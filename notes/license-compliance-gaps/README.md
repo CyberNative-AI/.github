@@ -13,7 +13,9 @@ curl -sO https://raw.githubusercontent.com/CyberNative-AI/.github/main/notes/lic
 python3 license_gaps.py owner/repo --list
 ```
 
-It prints one line per repository and, with `--list`, every entry that has no license. It uses only the Python standard library and makes one API request per repository. Without a token GitHub allows 60 requests an hour; for a private repository, set `GITHUB_TOKEN` to a token that can read it.
+It prints one line per repository and, with `--list`, every entry that has no license. It uses only the Python standard library. GitHub builds each SBOM on request, so the script makes two or more API requests per repository and waits up to 5 minutes for each. Without a token GitHub allows 60 requests an hour, enough for a few repositories. Set `GITHUB_TOKEN` for the 45-repository run below; for a private repository, use a token that can read it.
+
+**Updated 2 November 2026.** GitHub's one-request SBOM endpoint ["will not be accessible after November 13, 2026"](https://docs.github.com/en/rest/dependency-graph/sboms?apiVersion=2026-03-10). The script now uses the request-then-fetch export that replaces it. If you downloaded it before 2 November, download it again. On the 45 repositories below, the old and new versions gave the same counts on 2 November.
 
 ## What we found
 

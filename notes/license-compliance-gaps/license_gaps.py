@@ -10,11 +10,14 @@ entries whose licenseConcluded and licenseDeclared are both NOASSERTION.
     python3 license_gaps.py --top Java Ruby JavaScript Python Go --n 9
     python3 license_gaps.py --sbom-dir raw/ --repos sample.txt   # rerun from saved files
 
-One API request per repository (plus one per language for --top). Without a
-token GitHub allows 60 requests an hour; set GITHUB_TOKEN for private repos.
+GitHub builds each SBOM on request: two or more API requests per repository
+(start the export, then poll every 5 seconds, for up to 5 minutes, until it is
+ready), plus one per language for --top. Without a token GitHub allows 60
+requests an hour; set GITHUB_TOKEN for more, or for private repos. The token is
+sent to api.github.com only, not to the download link GitHub returns.
 Standard library only.
 """
-import argparse, json, os, re, sys, urllib.parse, urllib.request
+import argparse, json, os, re, sys, time, urllib.parse, urllib.request
 
 API = "https://api.github.com"
 # An exact version: 1.2.3, v2, 4.0.0-rc.1, 1.0.0+build. Ranges (^1.2, ~>3, >=2),
@@ -23,19 +26,67 @@ EXACT = re.compile(r"v?\d+(\.\d+)*([-.+][0-9A-Za-z.\-]+)?")
 WILDCARD = re.compile(r"(^|\.)[xX*](\.|$)")
 
 
+class NoRedirect(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, *args):   # urllib would copy the token to any host
+        return None
+
+
+OPENER = urllib.request.build_opener(NoRedirect)
+
+
+def fetch(url, token=True):
+    """(status, Location, body) of a GET. Follows redirects only within api.github.com."""
+    for _ in range(4):
+        headers = {"Accept": "application/vnd.github+json",
+                   "X-GitHub-Api-Version": "2022-11-28", "User-Agent": "license-gaps"}
+        if token and os.environ.get("GITHUB_TOKEN"):
+            headers["Authorization"] = "Bearer " + os.environ["GITHUB_TOKEN"]
+        try:
+            with OPENER.open(urllib.request.Request(url, headers=headers), timeout=120) as r:
+                return r.status, None, r.read()
+        except urllib.error.HTTPError as e:
+            status, loc, body = e.code, e.headers.get("Location"), e.read()
+            e.close()
+        if not (status in (301, 302, 307, 308) and token and loc and loc.startswith(API + "/")):
+            return status, loc, body
+        url = loc
+    return status, loc, body
+
+
 def get(path):
-    req = urllib.request.Request(API + path, headers={
-        "Accept": "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2022-11-28",
-        "User-Agent": "license-gaps"})
-    token = os.environ.get("GITHUB_TOKEN")
-    if token:
-        req.add_header("Authorization", "Bearer " + token)
+    status, _, body = fetch(API + path)
+    if status != 200:
+        return {"message": f"HTTP {status}"}
+    return json.loads(body)
+
+
+def sbom(name):
+    """{"sbom": SPDX document} from GitHub's asynchronous SBOM export, or {"message": ...}."""
+    status, _, body = fetch(f"{API}/repos/{name}/dependency-graph/sbom/generate-report")
     try:
-        with urllib.request.urlopen(req, timeout=120) as r:
-            return json.load(r)
-    except urllib.error.HTTPError as e:
-        return {"message": f"HTTP {e.code}"}
+        url = str(json.loads(body).get("sbom_url", "")) if status == 201 else ""
+    except (ValueError, AttributeError):
+        url = ""
+    if not url.startswith(API + "/"):
+        return {"message": f"HTTP {status} starting the SBOM export"}
+    for i in range(61):
+        if i:
+            time.sleep(5)
+        status, loc, body = fetch(url)
+        if status != 202:
+            break
+    else:
+        return {"message": "SBOM export not ready after 5 minutes"}
+    if status != 302 or not (loc or "").startswith("https://"):
+        return {"message": f"HTTP {status} fetching the SBOM export"}
+    status, _, body = fetch(loc, token=False)
+    try:
+        doc = json.loads(body) if status == 200 else None
+    except ValueError:
+        doc = None
+    if not isinstance(doc, dict) or "spdxVersion" not in doc:
+        return {"message": f"HTTP {status} downloading the SBOM export"}
+    return {"sbom": doc}
 
 
 def kind(version):
@@ -116,7 +167,7 @@ def main():
         if a.sbom_dir:
             d = json.load(open(os.path.join(a.sbom_dir, "sbom-" + name.replace("/", "_") + ".json")))
         else:
-            d = get(f"/repos/{name}/dependency-graph/sbom")
+            d = sbom(name)
         if "sbom" not in d:
             print(f"{name}\tERROR {d.get('message')}")
             continue
