@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><style>body{margin:0;background:#fff}</style><script src="/probe.js"></script><script src="/assets/pixi.js-pr12341/package/dist/pixi.js"></script><script src="/assets/pixi.js-pr12341/package/dist/packages/html-source.js"></script><canvas id="c" width="400" height="300" style="width:400px;height:300px;display:block"></canvas><script type="module">
+__watch(c);
+if ('webgl' === 'webgpu') __probe.gpu_adapter = !!(navigator.gpu && await navigator.gpu.requestAdapter().catch(() => null));
+const app = new PIXI.Application();
+await app.init({ canvas: c, width: 400, height: 300, preference: 'webgl', background: '#808080', autoDensity: false, resolution: 1 });
+__probe.renderer = app.renderer.name;
+const el = document.createElement('div'); el.style.cssText='width:200px;height:100px;background:#ff00ff;color:#000;font:40px sans-serif'; el.textContent='HIC';
+if (false) { const wrap = document.createElement('div'); wrap.style.cssText='width:300px;height:200px'; wrap.appendChild(el); app.canvas.appendChild(wrap); } else app.canvas.appendChild(el);
+__probe.px_version = PIXI.VERSION; __probe.px_HTMLSource = typeof PIXI.HTMLSource; __probe.nested = false;
+const source = new PIXI.HTMLSource({ resource: el });
+const sprite = PIXI.Sprite.from(source);
+app.stage.addChild(sprite);
+setTimeout(() => { __probe.canvas_attrs = [...c.attributes].map(a => a.name + '=' + a.value); __probe.el_attrs = [...el.attributes].map(a => a.name); __probe.px_ready = source.isReady; }, 3000);
+</script>

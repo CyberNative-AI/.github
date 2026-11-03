@@ -27,6 +27,54 @@ on 157. On October 23 we found no fix, issue or pull request for PlayCanvas, Bab
 that mentions the new names. For Babylon.js 9.32.0 there is a workaround in your own code:
 calling the texture's `update()` yourself brought it back on 157 in our test (below).
 
+## Update, 3 November 2026
+
+**Google promoted Chrome 157 to Stable today, and the old names have not come back.** Its
+release post gives 157.0.8103.38 for Linux and 157.0.8103.38/.39 for Windows and Mac, rolling out
+over the coming days and weeks. We read Chromium's source at 157.0.8103.42, the newest 157 tag on
+the morning of November 3: it has no `texElementImage2D`, no `copyElementImageToTexture` and no
+`layoutsubtree`.
+
+**On the Stable build, our test gave the same result as on October 23.** We ran the 16 test pages
+behind the main table, unchanged, on Chrome for Testing 157.0.8103.38, the build Linux Stable
+serves, with the same setup and two loads each. All 16 came out as they did on 157.0.8103.15.
+three.js 0.186.0, PlayCanvas 2.23.3 and Babylon.js 9.32.0 stayed blank with nothing logged.
+PixiJS 8.22.0 stayed blank and threw its error. The three.js pull request and our three pages
+that use the new names rendered; the 2D one still threw the `TypeError` described below. Chrome's
+blog snippets failed as before.
+
+**Of the four engines, only Babylon.js has shipped a stable release that drew an HTML texture on
+Chrome 157 in our test.** As of November 3:
+
+- **Babylon.js** has been fixed since 9.33.0 (October 29 update below). 9.33.1 and 9.33.2 keep
+  the new code; we read their builds but did not run them. Upgrade, and remove any `update()`
+  workaround.
+- **PixiJS** merged its fix, [#12341](https://github.com/pixijs/pixijs/pull/12341), on October
+  30 and closed our report, [#12340](https://github.com/pixijs/pixijs/issues/12340). It is not in
+  a release yet; the latest is still 8.22.0. We ran the first build npm published after the
+  merge, `8.22.0-dev.4fabfa6` (the `dev` tag). On 157.0.8103.15 and 158 it rendered with WebGL
+  and with WebGPU, with the element directly inside the canvas or nested one level, in both loads,
+  with no exceptions or console errors. 8.22.0 on the same browsers stayed blank and threw its error.
+- **PlayCanvas** has its fix in the 2.24.0 beta builds (2.24.0-beta.30 today), not in a stable
+  release. The latest release is still 2.23.3.
+- **three.js 0.187.0**, released October 30, still calls only the old names. With 0.187.0 in
+  place of 0.186.0 on our three.js page, the texture stayed blank on 157 and 158 with nothing
+  logged, and rendered on 156 with the feature turned on, as 0.186.0 did. Pull request
+  [#34732](https://github.com/mrdoob/three.js/pull/34732) is still open.
+
+**Most of the code we counted has not moved.** On November 3 we re-read, at each repository's
+default branch, the matched files of the 143 repositories whose files contained only the old
+names on October 23. In 135 they still contain only the old names, including all six we name
+below. One now also has the new names. In 7 the matched files are gone. This is a text match,
+as before, not a check of whether the code runs.
+
+The three.js and PixiJS pages, records, screenshots and scores are in
+[`reproduce/results/three-0.187.0/`](reproduce/results/three-0.187.0/) and
+[`reproduce/results/pixijs-dev/`](reproduce/results/pixijs-dev/); the Stable run is in
+[`reproduce/results/stable-157.0.8103.38/`](reproduce/results/stable-157.0.8103.38/); the re-read is
+[`reproduce/census/head_recheck_20261103.jsonl`](reproduce/census/head_recheck_20261103.jsonl). The October 29
+update and the rest of this note follow unchanged.
+
 ## Update, 29 October 2026
 
 **Babylon.js 9.33.0 fixes this. If you use `HtmlTexture`, upgrade.** Babylon.js 9.33.0, published

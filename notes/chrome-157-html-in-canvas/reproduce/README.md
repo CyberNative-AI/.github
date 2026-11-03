@@ -23,11 +23,25 @@ Everything behind the note's tables, as it ran on October 23.
 - `pages-babylon-9.33.0/` and `results/babylon-9.33.0/`: the October 29 rerun of `BJS` and `BJSW`
   on Babylon.js 9.33.0. The two pages differ from `pages/` only in the Babylon script path; `K0`
   and `K1` from `pages/` ran as controls.
+- `pages-three-0.187.0/` and `results/three-0.187.0/`: the October 30 rerun of `T3` on three.js
+  0.187.0. The page differs from `pages/T3.html` only in the three.js path; `K0` and `K1` from
+  `pages/` ran as controls.
+- `pages-pixijs-dev/` and `results/pixijs-dev/`: the October 30 run of PixiJS's merged fix, npm
+  `pixi.js@8.22.0-dev.4fabfa6`. `PR` (WebGL) and `PRGPU` (WebGPU) put the element directly in the
+  canvas; `PRN` and `PRGPUN` nest it one level. They load the build from `assets/pixi.js-pr12341/`,
+  the path we first used for the fix's pull-request build. `PX` from `pages/` and `PXGPU` (8.22.0
+  with WebGPU) ran as controls; this run had no `K0`/`K1` pages.
+- `results/stable-157.0.8103.38/`: the November 3 rerun of the 16 main-run pages from `pages/`,
+  unchanged, on Chrome for Testing 157.0.8103.38, the build Linux Stable served from November 3.
+  The arm keeps the label `C157`; each record's `browser` field names the build.
 - `census/`: `census_summary.json` (counts by class), `old-names-only.json` (the 143
   repositories and their matched files), `head_recheck.jsonl` (the named repositories' matched
   files re-read at their default branch on October 23). The counts come from the text of the
   files GitHub's code search returned, not from parsing code. The search scripts are not
   included.
+  `head_recheck_20261103.jsonl` is the November 3 re-read of all 407 matched files of the 143
+  repositories at their default branch, made by `head_recheck_20261103.py` with the same text
+  rules (`python3 -I head_recheck_20261103.py old-names-only.json out.jsonl` prints the counts).
 - `LICENSE-Apache-2.0.txt`: the license of the Chrome blog code samples that `B2D`, `BGL`,
   `BGPU`, `N2D`, `NGL`, `NGPU`, `PC`, `T3` and `T3PR` adapt. Each of those pages starts with a
   comment naming its source and our changes.
@@ -61,6 +75,18 @@ For the October 29 rerun, copy `pages-babylon-9.33.0/BJS.html` and `BJSW.html` o
 `ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 K0 K1 BJS BJSW`;
 `python3 score.py results/babylon-9.33.0 > /dev/null` prints its table from our records.
 
+For the October 30 three.js rerun, copy `pages-three-0.187.0/T3.html` over `pages/T3.html`, unpack
+`three-0.187.0` under `assets/`, and run `ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 K0 K1 T3`.
+For the PixiJS run, copy `pages-pixijs-dev/*.html` into `pages/`, unpack `pixi.js-8.22.0-dev.4fabfa6`
+as `assets/pixi.js-pr12341/package/`, and run
+`ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 PX PXGPU PR PRGPU PRN PRGPUN`.
+`python3 score.py results/three-0.187.0 > /dev/null` and `python3 score.py results/pixijs-dev > /dev/null`
+print their tables from our records; we regenerated both `score.json` files with this `score.py`.
+For the November 3 Stable run, add Chrome for Testing 157.0.8103.38 under
+`bin-cft/157.0.8103.38/chrome-linux64/` (its zip is in `assets.json`) and run, in the same container,
+`node /work/src/run.mjs /bin-cft/157.0.8103.38/chrome-linux64/chrome C157 /work/pages /assets /out 2 K0 K1 K2 K3 N2D NGL NGPU B2D BGL BGPU T3 T3PR PC BJS BJSN PX`.
+That is what `run_all.sh` does for `C157`, with this build in place of 157.0.8103.15.
+`python3 score.py results/stable-157.0.8103.38 > /dev/null` prints its table from our records.
 After the run we changed only comments and descriptions: the source and license notices at the
 top of the adapted pages, the first line of `probe.js`, `run.mjs`, `run_all.sh` and `score.py`,
 and the census list's file name and `note` text.
