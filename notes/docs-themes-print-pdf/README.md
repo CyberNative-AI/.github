@@ -1,5 +1,7 @@
 # Docs themes cut off wide tables and long code lines when a page is printed or saved as PDF: 10 default themes measured in Chromium (October 26)
 
+**Update, November 4.** Starlight 0.42.9 fixes this. Its maintainers wrote the fix ([#4341](https://github.com/withastro/starlight/pull/4341)) from the reproduction in our report ([#4317](https://github.com/withastro/starlight/issues/4317)) and released it the same day. When printing, text in table cells, and anything inside them, may now break anywhere (`overflow-wrap: anywhere`). The fix does not unclip the table. We added its rule to our Starlight 0.42.7 test page and printed it in the same setup: all 7 table values print, at full size. So for Starlight, letting cell contents break was enough on its own. If your site uses Starlight, upgrade to 0.42.9 or later instead of adding `starlight.AB.css`. The results below are from October 26 and were not rerun on 0.42.9.
+
 We built one test page with ten popular docs generators, each with its default theme, and
 printed it to PDF with Chromium 151, the engine behind Chrome's Save as PDF. **All ten themes cut
 off the right-hand end of a wide table. Five of the ten also cut off the end of a long code
