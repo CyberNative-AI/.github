@@ -1,5 +1,16 @@
 # Home Assistant 2026.11: what still breaks after the maintainers' outreach
 
+> **Update, November 4.** The 2026.11.0b4 beta (November 3) still adds no compatibility shim
+> for either change. Three listed integrations have shipped fixes since October 28: FordPass
+> in release 2026.10.8 (October 29), whose guard now calls `async_get_stored_state(entity_id)`
+> ([PR #293](https://github.com/marq24/ha-fordpass/pull/293), from a user who tested it on the
+> 2026.11.0b0 beta); luxtronik in release 2026.11.01 (November 1); and pyscript in release
+> 2.1.1 (November 2). **2 notified integrations remain unfixed at HEAD: Zendure-HA and
+> bravia-quad.** The other nine un-notified integrations still have the cited code at HEAD;
+> for hasl-sensor, a contributor's fix for all three calls
+> ([PR #97](https://github.com/hasl-sensor/integration/pull/97)) is open and not merged. We
+> read this from source files; we have not run `check.py` on the beta.
+
 > **Update, October 28.** The 2026.11.0b0 beta source adds no compatibility shim for
 > either change: `RestoreStateData` has no `last_states`, and `DeviceInfo`'s mapping layer
 > still has no `setdefault` or `copy`, and its `update` still takes no keyword arguments.
@@ -29,8 +40,8 @@ three groups that the outreach has not closed:
 - **At least 10 integrations contain affected code paths outside the two public outreach
   sets we checked.** Some paths are conditional or affect initial restoration rather than
   permanent stored data.
-- **1 closed issue whose fix still fails.** FordPass shipped a guard that raises on 2026.11.
-- **5 notified integrations still unfixed** at HEAD on October 18 (3 on October 28), including pyscript, which fails setup.
+- **1 closed issue whose fix still fails.** FordPass shipped a guard that raises on 2026.11 (fixed in release 2026.10.8, October 29).
+- **5 notified integrations still unfixed** at HEAD on October 18 (3 on October 28, 2 on November 4), including pyscript, which failed setup until release 2.1.1 on November 2.
 
 If you maintain a custom integration, the fixes are in the two migration posts:
 [`last_states` removal](https://contributors.home-assistant.io/blog/2026/10/06/restore-state-last-states-removal/)
@@ -41,12 +52,12 @@ If you use one of the integrations below, check for an update before you install
 
 | integration | what fails on 2026.11 | opt-in installs | code (Oct 18) |
 |---|---|---:|---|
-| [BenPru/luxtronik](https://github.com/BenPru/luxtronik) | reads `last_states`; setup fails with the EVU2 manual model and its switch enabled (October 28: fixed on main, not yet released) | 666 | [`custom_components/luxtronik2/coordinator.py:338`](https://github.com/BenPru/luxtronik/blob/5887859e7e431e1e29c4cc38a40aee52b9abf867/custom_components/luxtronik2/coordinator.py#L338) |
+| [BenPru/luxtronik](https://github.com/BenPru/luxtronik) | reads `last_states`; setup fails with the EVU2 manual model and its switch enabled (October 28: fixed on main; November 4: fixed in release 2026.11.01) | 666 | [`custom_components/luxtronik2/coordinator.py:338`](https://github.com/BenPru/luxtronik/blob/5887859e7e431e1e29c4cc38a40aee52b9abf867/custom_components/luxtronik2/coordinator.py#L338) |
 | [natekspencer/ha-vivint](https://github.com/natekspencer/ha-vivint) | `.setdefault()` on a `DeviceInfo`; camera entities fail | 489 | [`custom_components/vivint/camera.py:109`](https://github.com/natekspencer/ha-vivint/blob/b0d8b4e6db817b7023d5abe6cc10f13f51c9e570/custom_components/vivint/camera.py#L109) |
 | [EiS94/db_info](https://github.com/EiS94/db_info) | reads `last_states` inside a broad `except`; the coordinator cannot seed stored time settings before its first refresh. The switch and datetime entities have their own later restore paths. | 345 | [`custom_components/db_info/coordinator.py:74`](https://github.com/EiS94/db_info/blob/2cfcb01e92f93e33e156e25dda8a639c679d7276/custom_components/db_info/coordinator.py#L74) |
 | [Ediminator/homematicip-hcu](https://github.com/Ediminator/homematicip-hcu) | `.copy()` on a `DeviceInfo`; fails for renamed alarm-switching groups (default branch, not release 2.3.0) | 338 | [`custom_components/hcu_integration/select.py:128`](https://github.com/Ediminator/homematicip-hcu/blob/ff9f9e09c4b4e74f117563d5563e6d9940b99137/custom_components/hcu_integration/select.py#L128) |
 | [joyfulhouse/eg4_web_monitor](https://github.com/joyfulhouse/eg4_web_monitor) | an empty `DeviceInfo()` is now truthy; if the parent is not registered, unlinked device info is cached for the current update cycle. Later device-registry re-linking was not tested. | 270 | [`custom_components/eg4_web_monitor/coordinator_mixins.py:4212`](https://github.com/joyfulhouse/eg4_web_monitor/blob/713b44651be77df8f2426409ba5ca5e74a7c3d2a/custom_components/eg4_web_monitor/coordinator_mixins.py#L4212) |
-| [hasl-sensor/integration](https://github.com/hasl-sensor/integration) | `.copy()` on a module `DeviceInfo` constant, called while the integration sets up; setup fails, so no sensors load | 160 | [`custom_components/hasl3/sensors/departure.py:135`](https://github.com/hasl-sensor/integration/blob/87b88276490c7a5abab7f092fdffd515a04c4c4b/custom_components/hasl3/sensors/departure.py#L135) |
+| [hasl-sensor/integration](https://github.com/hasl-sensor/integration) | `.copy()` on a module `DeviceInfo` constant, called while the integration sets up; setup fails, so no sensors load (November 4: unfixed at HEAD; a contributor's fix, PR #97, is open) | 160 | [`custom_components/hasl3/sensors/departure.py:135`](https://github.com/hasl-sensor/integration/blob/87b88276490c7a5abab7f092fdffd515a04c4c4b/custom_components/hasl3/sensors/departure.py#L135) |
 | [gorfo66/flashbird-homeassistant](https://github.com/gorfo66/flashbird-homeassistant) | `.update(name=...)` on a `DeviceInfo` raises `TypeError`, so device info for the lock, tracker and sensors fails. The migration post says `.update()` still works; that holds for `.update({...})`, not for keyword arguments. | 10 | [`custom_components/flashbird/helpers/device_info.py:28`](https://github.com/gorfo66/flashbird-homeassistant/blob/6244ac3b24da57c4017073cf900c723ad2cc625b/custom_components/flashbird/helpers/device_info.py#L28) |
 | [jharris4/molight](https://github.com/jharris4/molight) | reads `last_states`; fails when an entity is renamed | not reported | [`custom_components/molight/helpers.py:170`](https://github.com/jharris4/molight/blob/14740919a3ddf817be30e624d43c552941580889/custom_components/molight/helpers.py#L170) |
 | [jyourstone/energy_manager](https://github.com/jyourstone/energy_manager) | reads `last_states` inside an `except`; coordinator values fall back to defaults during initialization. `RestoreNumber` entities can restore them later. | not reported | [`custom_components/energy_manager/coordinator.py:600`](https://github.com/jyourstone/energy_manager/blob/6a9c7b016f5b1fd331bde3fde3ba6f55d0050c99/custom_components/energy_manager/coordinator.py#L600) |
@@ -59,9 +70,9 @@ versions; three domains were not reported. These are not counts of affected inst
 
 | integration | status | opt-in installs |
 |---|---|---:|
-| [custom-components/pyscript](https://github.com/custom-components/pyscript) | `async_setup` iterates `last_states`, so the integration does not load. Issue #877 open since October 6; release 2.1.0 and HEAD unchanged. | 7,876 |
+| [custom-components/pyscript](https://github.com/custom-components/pyscript) | `async_setup` iterates `last_states`, so the integration does not load. Issue #877 open since October 6; release 2.1.0 and HEAD unchanged. (November 4: fixed in release 2.1.1; issue still open) | 7,876 |
 | [Zendure/Zendure-HA](https://github.com/Zendure/Zendure-HA) | a one-time entity migration reads `last_states`; it fails with a logged error and renamed entities are not migrated. Issue #1694 open | 4,204 |
-| [marq24/ha-fordpass](https://github.com/marq24/ha-fordpass) | issue #275 closed by release 2026.10.2, whose guard still raises (below) | 1,990 |
+| [marq24/ha-fordpass](https://github.com/marq24/ha-fordpass) | issue #275 closed by release 2026.10.2, whose guard still raises (below) (November 4: fixed in release 2026.10.8) | 1,990 |
 | [steamEngineer/bravia-quad-homeassistant](https://github.com/steamEngineer/bravia-quad-homeassistant) | select and switch restore helpers raise; issue #236 open | 81 |
 | [pajeronda/xai_conversation](https://github.com/pajeronda/xai_conversation) | raises when its entities are removed; issue #26 open (October 28: fixed in release v4.0.0, issue closed) | 51 |
 | [alepee/hass-hitachi_yutaki](https://github.com/alepee/hass-hitachi_yutaki) | setup fails once its energy sensors exist; issue #458 open, fix PR #469 open (October 28: fixed in release v2.2.0, issue closed) | 21 |
@@ -83,6 +94,9 @@ On 2026.10 the first branch never runs, so the code works. On 2026.11 it runs an
 the sensor platform's setup outside its `try`. The fix is one call:
 `storage.async_get_stored_state(entity_id)`. If you add a guard like this, run it once
 against the 2026.11 beta.
+
+Update, November 4: FordPass release 2026.10.8 (October 29) makes exactly this change, so
+its sensor setup no longer raises on 2026.11.
 
 ## Check it yourself
 
