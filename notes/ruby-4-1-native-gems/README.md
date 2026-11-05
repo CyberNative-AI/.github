@@ -46,17 +46,22 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 
 ## What to do
 
-**Fixed but not released: eventmachine, thin, yajl-ruby, panko_serializer, iconv.** The last eventmachine release, 1.2.7, is from May 2018. iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 2025). These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
+**Fixed but not released: eventmachine, thin, yajl-ruby, panko_serializer, iconv.** The last eventmachine release, 1.2.7, is from May 2018. These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
 
 ```ruby
 gem "eventmachine", git: "https://github.com/eventmachine/eventmachine.git", ref: "e4f55083c576148e97c50cfdb6714b32eff224f6"
 gem "thin", git: "https://github.com/macournoyer/thin.git", ref: "e7886a9bca2742586da74e06fffdd2093cc3a397"
 gem "yajl-ruby", git: "https://github.com/brianmario/yajl-ruby.git", ref: "6501652d113557d976676134056aa983e7863020"
 gem "panko_serializer", git: "https://github.com/yosiat/panko_serializer.git", ref: "9267e19d779a05eae16ce0a2b2e36c3907c22e75"
-gem "iconv", git: "https://github.com/ruby/iconv.git", ref: "883f7a2815303ae6dd52495f01fc8d934e8b8c73"
 ```
 
 thin needs both lines: thin 2.0.1 with eventmachine pinned still fails in thin's own parser. A git pin is a stopgap. It installs unreleased code, needs `git` at install time and stops tracking rubygems.org releases, so review the changes since the last release and switch back once a release ships. yajl-ruby has an open request for a release: [brianmario/yajl-ruby#233](https://github.com/brianmario/yajl-ruby/issues/233).
+
+iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 2025). We tested commit `883f7a28` by building it as a gem and installing that file (`gem build iconv.gemspec`, then `gem install --local`), not through Bundler; it installed and ran on 4.1.0-preview1 and on 4.0.7. The matching Gemfile line, which we have not yet run through Bundler, is:
+
+```ruby
+gem "iconv", git: "https://github.com/ruby/iconv.git", ref: "883f7a2815303ae6dd52495f01fc8d934e8b8c73"
+```
 
 **hiredis.** redis-rb's README now uses the [`hiredis-client`](https://github.com/redis/redis-rb#hiredis-binding) gem for its hiredis driver. hiredis-client 0.31.0 installed and loaded on 4.1.0-preview1 in our run. We did not test a switch from `hiredis` in a real app.
 
