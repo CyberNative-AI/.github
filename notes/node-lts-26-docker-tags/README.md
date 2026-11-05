@@ -1,17 +1,18 @@
-# `node:lts` becomes Node 26 on October 28, and `node:latest` may stop updating the next day
+# `node:lts` became Node 26 on October 28, and `node:latest` may stop updating after the next image change
 
-On October 28, Node.js 26 enters long-term support, and the official Docker `node:lts`
-tags move from Node 24 to Node 26. Node 26 images ship without Yarn and without Corepack.
+On October 28, Node.js 26 entered long-term support, and the official Docker `node:lts`
+tags moved from Node 24 to Node 26. Node 26 images ship without Yarn and without Corepack.
 That part is already known: the [docker-node README](https://github.com/nodejs/docker-node/blob/84410eeaede25daf49826da8265fbf548cc604fe/README.md#yarn-v1-classic-bundling)
 says "Yarn v1 is not bundled into `node` images as of Node.js 26.0.0", and Node's
 [distribution notes](https://github.com/nodejs/node/blob/v26.x/doc/contributing/distribution.md#history)
 say Corepack "is no longer distributed as of Node.js 25.0.0".
 
-We checked two things that we have not seen reported:
+We checked two things:
 
 1. **From October 29, the script that generates the official `node` tag list no longer
    lists `latest`.** We ran it with the clock set to each date. Unless the maintainers
-   change it first, `FROM node` and `node:latest` would stop getting rebuilt.
+   change it first, `FROM node` and `node:latest` would stop getting rebuilt once the list
+   is next generated. As of November 5 that has not happened; see the November 5 read below.
 2. **Static rules flagged 44 of 243 active sampled repositories for potential build or
    runtime failure after the move: 43 with build-time patterns and one with only a runtime
    Yarn command.** The most common pattern is Corepack, not Yarn.
@@ -22,10 +23,12 @@ To find the lines that use a moving tag (`lts`, `latest`, `current`, `slim`, `al
 no tag at all) in Dockerfiles, Compose files and CI files, run this from your repository root:
 
 ```sh
-grep -rnEi --exclude-dir=node_modules "(^[[:space:]]*FROM[[:space:]]+(--platform=[^[:space:]]+[[:space:]]+)?|image:[[:space:]]*[\"']?)(docker\.io/)?(library/)?node(:(lts|latest|current|slim|alpine|bookworm|trixie)[^@[:space:]\"']*)?([\"']?[[:space:]]|[\"']?$)" .
+grep -rnEi --exclude-dir=node_modules "(^[[:space:]]*FROM[[:space:]]+(--platform=[^[:space:]]+[[:space:]]+)?|(image|container):[[:space:]]*[\"']?)(docker\.io/)?(library/)?node(:(lts|latest|current|slim|alpine|bookworm|trixie)[^@[:space:]\"']*)?([\"']?[[:space:]]|[\"']?$)" .
 ```
 
-It matched all 251 active census Dockerfiles. Then pin the major version you build and test
+It matched all 251 active census Dockerfiles. It also matches GitHub Actions `container:`
+entries. It does not see a tag set through a build argument (`FROM node:${NODE_VERSION}`)
+or a Jenkins `docker { image 'node:lts' }` block. Then pin the major version you build and test
 with today:
 
 ```dockerfile
@@ -60,6 +63,9 @@ We checked that each line exits without an error and that `yarn --version` then 
 line installed Corepack 0.36.0 that day. We did not build a real project with either line.
 For other versions, see [Corepack's README](https://github.com/nodejs/corepack#readme) and the
 [docker-node README](https://github.com/nodejs/docker-node/blob/84410eeaede25daf49826da8265fbf548cc604fe/README.md#yarn-v1-classic-bundling).
+For pnpm, the build error lines, and installs checked in small projects with a committed
+lockfile, see our guide:
+https://cybernative.ai/guides/corepack-yarn-pnpm-not-found-node-26-docker/
 
 ## `latest` drops out of the generated tag list on October 29
 
@@ -105,8 +111,10 @@ current/latest tags. This is a static reading; we did not simulate that entry.
 [docker-node issue 2524](https://github.com/nodejs/docker-node/issues/2524) already discusses
 whether alpha releases should use current/latest (see this
 [comment from August 10](https://github.com/nodejs/docker-node/issues/2524#issuecomment-5243054521));
-we did not find a discussion there of the October 29 omission at this pinned revision. We will read the live tags again on November 5 and add a
-dated line here.
+we did not find a discussion there of the October 29 omission at this pinned revision. After
+publication we found [nodejs/Release issue 1171](https://github.com/nodejs/Release/issues/1171),
+opened on August 9, which had already pointed out that users of `current` would be stuck once
+Node 26 reached LTS.
 
 **October 29, 2026 read.** The
 [list generated on October 28](https://github.com/docker-library/official-images/blob/ab8a9d5fa655fa97194f2bfb17bf32735ec85a93/library/node)
@@ -127,6 +135,35 @@ We ran the generator again at that commit (`14b1d124`) on October 29: its Octobe
 matched the live tag list, and from October 29 it drops the same 18 tags. The next merged
 change to the images would generate a list without `latest`, unless the script or
 `versions.json` changes first.
+
+**November 5, 2026 read.** `node:latest` has not stopped updating. docker-node merged one
+change after October 28: pull request 2679 on November 5, which changes only the Node version
+the repository's own tooling uses. Its
+[workflow](https://github.com/nodejs/docker-node/blob/4730c96eda1aefbf7b952fd725d6b37e9e531a8c/.github/workflows/official-pr.yml)
+generates a new tag list only after a merged change to a `Dockerfile`, `docker-entrypoint.sh`,
+`versions.json`, `stackbrew.js` or the workflow itself, so the list was not regenerated. The
+live `library/node` file is the same as on October 29 and still lists `latest`. Docker Hub
+rebuilt `latest`, `lts`, `26`, `slim` and `24` on November 5 between 11:39 and 11:43 UTC,
+with the same Node versions and no change to the list. `node:lts-krypton` was not rebuilt: it
+is still the October 28 build with Node 24.22.1 and has now missed two rebuilds of `node:24`.
+
+The next likely change to the images is Node's
+[security release](https://nodejs.org/en/blog/vulnerability/november-2026-security-releases),
+announced for November 11 for the 26, 24 and 22 lines, with HIGH as the highest severity. If
+`stackbrew.js` and the release dates in `versions.json` are unchanged when those image
+updates merge, the new list drops `latest` and the other 17 tags.
+[docker-node pull request 2678](https://github.com/nodejs/docker-node/pull/2678), still open
+on November 5, replaces the generator. On October 30 its author wrote that
+["current" will remain the latest non-alpha release](https://github.com/nodejs/Release/issues/1171#issuecomment-6534061462)
+and that the new generator adds Node 27 entries
+["with the rest of the file unchanged"](https://github.com/nodejs/docker-node/pull/2678#issuecomment-6534002122).
+If that change merges first, `latest` would probably stay; we have not run it.
+
+Today's generator keeps `node:26` in the list, and it is the same image as `node:latest`
+today. If you build from `node` or `node:latest`, pin `node:26` (or `node:24`) before
+November 11. `node:lts-krypton` is no longer listed, so it will miss that security fix; use
+`node:24`. We will read the live tags again on November 12 and add a dated line here.
+The commands and their output are in [`reproduce/read-20261105.md`](reproduce/read-20261105.md).
 
 ## Corepack is the most common flag
 
@@ -195,8 +232,10 @@ floating tag. If you copied a Dockerfile, check whether the original has changed
 
 - **Check line.** We ran the `grep` line above over all 251 Dockerfiles of the active
   repositories in the census: it matched all 251, including those of the 44 flagged
-  repositories. On 12 small test files (`reproduce/check-controls.sh`) it matched the 7 floating forms and none of the
-  5 others: pinned tags, a digest, look-alike image names and a copy under `node_modules`.
+  repositories. On 13 small test files (`reproduce/check-controls.sh`) it matched the 8
+  floating forms, including `container: node:lts`, and none of the others: pinned tags
+  (including `container: node:24`), a digest, look-alike image names and a copy under
+  `node_modules`.
 
 [`reproduce/`](reproduce/) has the preload, the run script, the scorer, the live tag list we
 compared against, the scored output, the census rules, and the install-line and Debian
@@ -205,7 +244,8 @@ package-list tests with their raw output.
 ## Limits
 
 - For `latest`, the generator result is still what the script prints, not yet what Docker
-  Hub does. The maintainers can change the script or `versions.json` before the next merge.
+  Hub does. The maintainers can change the script or `versions.json` before the list is next
+  generated.
 - Code search sees default branches of public repositories only, and our search phrase misses
   `FROM --platform=…` and registry-prefixed forms. We cannot tell whether a Dockerfile is
   still built.
@@ -223,6 +263,12 @@ package-list tests with their raw output.
   two statements that we had not tested these yet. No count or date in the note changed.
 - October 29, 2026: added the October 29 read of the live tag list and Docker Hub. No count
   or prediction changed.
+- November 5, 2026: added the November 5 read. The title said `node:latest` may stop
+  updating the day after October 28; it did not, because no merged change has regenerated
+  the tag list since, so the title now says "after the next image change". We removed "that we have not
+  seen reported" from the introduction and link the earlier nodejs/Release issue. The search
+  line now also matches GitHub Actions `container:` entries, and the note links to our guide
+  with tested pnpm lines. No count changed.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. We will publish dated corrections here.

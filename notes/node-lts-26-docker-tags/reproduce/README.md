@@ -27,10 +27,15 @@ against the `lts` dates in
 `read-20261029.md` has the commands and output for the October 29 read of the tag list,
 Docker Hub and the generator rerun at docker-node's newer commit.
 
+## Live read, November 5
+
+`read-20261105.md` has the commands and output for the November 5 read of the tag list,
+docker-node's merges and workflow trigger, and Docker Hub.
+
 ## Check line
 
-`sh check-controls.sh` writes the 12 test files to a temporary folder and runs the note's
-`grep` line on them: 7 matches, `a` to `g`.
+`sh check-controls.sh` writes the 13 test files to a temporary folder and runs the note's
+`grep` line on them: 8 matches, `a` to `g` and the first line of `l`.
 
 ## Census
 
