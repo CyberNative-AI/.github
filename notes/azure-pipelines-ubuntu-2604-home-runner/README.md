@@ -11,7 +11,7 @@ On Microsoft-hosted Azure Pipelines agents running 26.04, the agent user is `run
 | Sources (`Build.SourcesDirectory`) | `/home/vsts/work/1/s` | `/home/runner/work/1/s` |
 
 The 26.04 image readme, the `ubuntu-latest` announcement and the Azure Pipelines docs do not
-mention it. The one public report we found is a user issue from October 22
+mention it. The first public report we found is a user issue from October 22
 ([actions/runner-images#15028](https://github.com/actions/runner-images/issues/15028)).
 GitHub Actions is not affected: its runners already used `/home/runner`.
 
@@ -24,7 +24,7 @@ on 26.04. A pipeline with no `pool` or `vmImage` at all also gets `ubuntu-latest
 
 ## Is it already happening?
 
-Yes, for jobs that ask for 26.04. In pythonocc-core's public
+Yes. Jobs that ask for 26.04 already run there. In pythonocc-core's public
 [build 6812](https://dev.azure.com/tpaviot/pythonocc-core/_build/results?buildId=6812), job
 `Ubuntu_26_04_python314` checked out under `/home/runner/work/1/s`, while job
 `Ubuntu_24_04_python311` checked out under `/home/vsts/work/1/s`.
@@ -33,6 +33,11 @@ The `ubuntu-latest` switch had not reached MNE-Python's Linux jobs in
 [build 40474](https://dev.azure.com/mne-tools/mne-python/_build/results?buildId=40474), which
 finished on October 23: those jobs still ran on Ubuntu 24.04. This observation does not
 establish the rollout state of other projects.
+
+It has since reached jobs with no image set. On November 2, an Azure DevOps user
+[reported](https://github.com/actions/runner-images/issues/14748#issuecomment-6583080668) that a pipeline with no
+`vmImage` ran on Ubuntu 26.04 (image version 20261025.179.1) as `runner`; its last successful
+run was on 24.04 as `vsts`.
 
 ## Check yours
 
@@ -113,9 +118,12 @@ cover private repositories or classic pipelines, so the count is not a populatio
   cache folder). We expect the Permission denied above, but did not run them.
 - **`docker run -v /home/vsts/...:...`.** Docker creates a missing bind-mount source, so we
   expect an empty mount rather than an error. Not run.
-- **`Cache@2` / `Cache@1` with a `path:` under `/home/vsts`.** Tools that write to their default
-  folders under `$HOME` now write under `/home/runner`, so such an entry no longer matches what
-  they write. Not run.
+- **`Cache@2` / `Cache@1` with a `path:` under `/home/vsts`.** Not run by us. The user report
+  [above](https://github.com/actions/runner-images/issues/14748#issuecomment-6583080668) shows `Cache@2` (task
+  version 2.282.1) failing the step on 26.04 when it restored an entry saved by earlier 24.04
+  runs: `Access to the path '/home/vsts' is denied.` We had expected such an entry only to stop
+  matching what tools write; a restore can fail the step instead. The Fix table above covers
+  the `path:` input.
 - **Task inputs that point at `/home/vsts`**, such as a `CopyFiles` source folder. These may
   find nothing instead of failing. Not run.
 - **An actual hosted 26.04 agent.** We read the layout from public build logs and reproduced the
@@ -138,6 +146,12 @@ GitHub Actions side of the same image change, see
   explicit check such as `|| exit 1`, or `failOnStderr: true` on the step, also makes it fail;
   the earlier text said the script otherwise runs on. The container results and the counts
   are unchanged.
+- **November 6, 2026:** A user report from November 2 showed two things this page had not.
+  The rollout has reached a pipeline with no `vmImage`, and `Cache@2` with a `path:` under
+  `/home/vsts` failed the step on restore, where we had expected only a cache miss. We updated
+  "Is it already happening?", the `Cache@2` line under "What we did not test", and the
+  sentence that called #15028 the one public report. The container results and the counts are
+  unchanged.
 
 ---
 
