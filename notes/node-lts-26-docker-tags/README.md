@@ -75,7 +75,7 @@ We ran it unchanged, at commit `84410eea`, with only the clock changed:
 
 | Date the script runs | `lts` | `latest`, `current`, `slim`, `alpine` |
 |---|---|---|
-| October 22 (today) | 24 (Debian 12 bookworm) | 26 (Debian 13 trixie) |
+| October 22 | 24 (Debian 12 bookworm) | 26 (Debian 13 trixie) |
 | October 27 | 24 (bookworm) | 26 (trixie) |
 | October 28 | **26 (trixie)** | 26 (trixie) |
 | October 29 and later | 26 (trixie) | **not listed** |
@@ -161,8 +161,9 @@ If that change merges first, `latest` would probably stay; we have not run it.
 
 Today's generator keeps `node:26` in the list, and it is the same image as `node:latest`
 today. If you build from `node` or `node:latest`, pin `node:26` (or `node:24`) before
-November 11. `node:lts-krypton` is no longer listed, so it will miss that security fix; use
-`node:24`. We will read the live tags again on November 12 and add a dated line here.
+November 11. `node:lts-krypton` is no longer listed, so it will miss that security fix unless
+it is added back to the supported list before then; use `node:24`. We will read the live tags
+again on November 12 and add a dated line here.
 The commands and their output are in [`reproduce/read-20261105.md`](reproduce/read-20261105.md).
 
 ## Corepack is the most common flag
