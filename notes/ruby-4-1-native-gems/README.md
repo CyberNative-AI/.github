@@ -33,7 +33,7 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | ruby-debug-ide 0.7.5 | 1,372 | install* (through debase) | depends on debase |
 | atomic 1.1.101 | 1,520 | loads, but silently uses its pure-Ruby fallback | no |
 | bson_ext 1.12.5 | 1,808 | install* (`struct RRegexp` changed) | no repository listed |
-| iconv 1.1.1 | 1,927 | install | no |
+| iconv 1.1.1 | 1,927 | install | **yes, not released** (corrected 2026-11-05) |
 | hpricot 0.8.6 | 2,005 | install | no repository listed |
 | rblineprof 0.3.7 | 2,208 | **require** | no |
 | zookeeper 1.5.5 | 2,260 | install* | no |
@@ -42,17 +42,18 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | panko_serializer 0.8.5 | 2,923 | **require** | **yes, not released** |
 | algorithms 1.1.0 | 2,933 | install | no |
 
-"Fixed" means the default branch no longer uses the removed APIs, checked 2026-10-21. For the four marked yes, we also built and ran that branch on 4.1.0-preview1 (below). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
+"Fixed" means the default branch no longer uses the removed APIs when built on Ruby 4.1, checked 2026-10-21 (iconv: 2026-11-05, see [Correction](#correction-2026-11-05)). For the five marked yes, we also built and ran that branch on 4.1.0-preview1 (below). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
 
 ## What to do
 
-**Fixed but not released: eventmachine, thin, yajl-ruby, panko_serializer.** The last eventmachine release, 1.2.7, is from May 2018. These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
+**Fixed but not released: eventmachine, thin, yajl-ruby, panko_serializer, iconv.** The last eventmachine release, 1.2.7, is from May 2018. iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 2025). These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
 
 ```ruby
 gem "eventmachine", git: "https://github.com/eventmachine/eventmachine.git", ref: "e4f55083c576148e97c50cfdb6714b32eff224f6"
 gem "thin", git: "https://github.com/macournoyer/thin.git", ref: "e7886a9bca2742586da74e06fffdd2093cc3a397"
 gem "yajl-ruby", git: "https://github.com/brianmario/yajl-ruby.git", ref: "6501652d113557d976676134056aa983e7863020"
 gem "panko_serializer", git: "https://github.com/yosiat/panko_serializer.git", ref: "9267e19d779a05eae16ce0a2b2e36c3907c22e75"
+gem "iconv", git: "https://github.com/ruby/iconv.git", ref: "883f7a2815303ae6dd52495f01fc8d934e8b8c73"
 ```
 
 thin needs both lines: thin 2.0.1 with eventmachine pinned still fails in thin's own parser. A git pin is a stopgap. It installs unreleased code, needs `git` at install time and stops tracking rubygems.org releases, so review the changes since the last release and switch back once a release ships. yajl-ruby has an open request for a release: [brianmario/yajl-ruby#233](https://github.com/brianmario/yajl-ruby/issues/233).
@@ -113,6 +114,12 @@ Every gem and its result: [`results.csv`](results.csv) (its `rank` column is eco
 ## Limits
 
 Ruby 4.1.0-preview1, not the release; later previews may change the list. Linux x86_64 on Debian bookworm with GCC 12; not macOS, Windows or ARM. Only the latest release of each gem; we did not test older versions you may have pinned. The 21 gems that failed on 4.0.7 and the 4 that timed out are not measured. Where none of our `require` names matched (17 of the 118, and the 7 marked * among the 21), we checked install only. Download counts are all-time, not current use. One run on our own hardware; not reproduced by anyone else.
+
+## Correction, 2026-11-05
+
+We first listed iconv as not fixed in its repository. That was wrong. Our search of its default branch found `OBJ_INFECT`, one of the removed names, but both uses sit behind a build check (`have_func("OBJ_INFECT")` and `#ifdef HAVE_OBJ_INFECT`) that leaves them out on Ruby 4.1. The fix was merged on 2026-01-29 in [ruby/iconv#36](https://github.com/ruby/iconv/pull/36) and [#38](https://github.com/ruby/iconv/pull/38) and is not in a release yet. We then built commit `883f7a28` on 4.1.0-preview1 and on 4.0.7: it installed, converted `é` from ISO-8859-1 to UTF-8 and back, and passed its own tests (12 tests, 0 failures). iconv 1.1.1 from rubygems.org still fails to install on 4.1.0-preview1. So five of the 21 are fixed but not released, not four.
+
+We reread the default branches of the other 11 gems marked "no" for the same mistake. Each still contains the code that broke it, outside any such check (for numo-narray, the `rb_alloc_tmp_buffer` call whose signature changed), so none of them changed.
 
 More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-ruby41).
 
