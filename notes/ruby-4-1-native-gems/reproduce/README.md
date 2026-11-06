@@ -79,7 +79,7 @@ Each `bundle install` stops after 15 minutes (20 in `fix_exec.sh`) and each smok
 
 On 4.1.0-preview1, facter and packwerk fail with `cannot load such file -- tsort` before reaching those lines, and on 4.0.7 they print the tsort warning first. That supports the diagnosis, but neither has a complete passing run, so the note does not claim the `gem "tsort"` fix for them.
 
-## 6. Update 2026-11-06: panko_serializer 1.0.0
+## 6. Update 2026-11-06: cbor 0.6.1.1 and panko_serializer 1.0.0
 
 `src/panko_1_0_0.sh` bundles the released `panko_serializer` 1.0.0, requires it, serializes a two-item array and prints the gem's declared extensions and the number of `.so` files it ships. It needs network access to rubygems.org:
 
@@ -91,6 +91,8 @@ done
 ```
 
 On both Rubies it printed `INSTALL rc=0`, `REQUIRE_RUN rc=0`, `PANKO 1.0.0 extensions=[] so_files=0` and `JSON [{"id":1,"name":"a"},{"id":2,"name":"b"}]` (2026-11-06). Results are in `work/P100-<arm>/`.
+
+`src/cbor_0_6_1_1.sh` does the same for `cbor` 0.6.1.1 with a round trip of a small hash, and then counts the undefined symbols of its shared object that appear in `data/removed.txt`. Run it with the same loop, replacing the script name. On both Rubies it printed `INSTALL rc=0`, `REQUIRE_RUN rc=0`, `CBOR 0.6.1.1 bytes=12 roundtrip=true` and `REMOVED_UNDEFINED 0` (2026-11-06). As a check of the count, the same script with 0.5.10.3 on 4.0.7 printed `REMOVED_UNDEFINED 1`. Results are in `work/C0611-<arm>/`.
 
 ## Licence
 

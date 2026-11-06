@@ -6,7 +6,7 @@ Run this in your app's directory:
 grep -E '^    (eventmachine|thin|kostya-sigar|yajl-ruby|hiredis|therubyracer|ffi-yajl|debase|cbor|timfel-krb5-auth|ruby-debug-ide|atomic|bson_ext|iconv|hpricot|rblineprof|zookeeper|numo-narray|ruby-stemmer|panko_serializer|algorithms) \(' Gemfile.lock
 ```
 
-Each gem it prints installed on Ruby 4.0.7 and then, at its latest release on rubygems.org, broke on Ruby 4.1.0-preview1 (measured 2026-10-21, Linux x86_64): 18 fail to install, 2 install and fail at `require`, and 1 loads without its C extension. If it prints nothing, none of them are in your bundle. A gem you have already pinned to a git commit prints too; check its source in the lockfile. panko_serializer 1.0.0, released on 2026-11-06, is not affected ([Update](#update-2026-11-06)).
+Each gem it prints installed on Ruby 4.0.7 and then, at its latest release on rubygems.org, broke on Ruby 4.1.0-preview1 (measured 2026-10-21, Linux x86_64): 18 fail to install, 2 install and fail at `require`, and 1 loads without its C extension. If it prints nothing, none of them are in your bundle. A gem you have already pinned to a git commit prints too; check its source in the lockfile. cbor 0.6.1.1 (released 2026-11-05) and panko_serializer 1.0.0 (released 2026-11-06) are not affected ([Update](#update-2026-11-06)).
 
 Ruby 4.1.0 has no announced release date. Ruby usually ships its new version on December 25.
 
@@ -28,7 +28,7 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | therubyracer 0.12.3 | 909 | install | no |
 | ffi-yajl 3.0.1 | 934 | install | no |
 | debase 0.2.9 | 1,006 | install (no 4.1 headers in debase-ruby_core_source 4.0.1) | no |
-| cbor 0.5.10.3 | 1,160 | install | no repository listed |
+| cbor 0.5.10.3 | 1,160 | install | **yes, released in 0.6.1.1** (2026-11-05, see [Update](#update-2026-11-06)) |
 | timfel-krb5-auth 0.8.3 | 1,305 | install* | no repository listed |
 | ruby-debug-ide 0.7.5 | 1,372 | install* (through debase) | depends on debase |
 | atomic 1.1.101 | 1,520 | loads, but silently uses its pure-Ruby fallback | no |
@@ -61,9 +61,11 @@ iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 
 
 **panko_serializer: upgrade to 1.0.0.** It was released on 2026-11-06 and no longer has a C extension. `gem "panko_serializer", "1.0.0"` installed, loaded and serialized a test object with Bundler on 4.1.0-preview1 and on 4.0.7. It is a new major version, so read its [release notes](https://github.com/yosiat/panko_serializer/releases/tag/v1.0.0) before you upgrade. If you used our earlier git pin to commit `9267e19d`, replace it with the release.
 
+**cbor: upgrade to 0.6.1.1.** It was released on 2026-11-05 and moves the extension to the typed data API. `gem "cbor", "0.6.1.1"` compiled, loaded and round-tripped a test value with Bundler on 4.1.0-preview1 and on 4.0.7.
+
 **hiredis.** redis-rb's README now uses the [`hiredis-client`](https://github.com/redis/redis-rb#hiredis-binding) gem for its hiredis driver. hiredis-client 0.31.0 installed and loaded on 4.1.0-preview1 in our run. We did not test a switch from `hiredis` in a real app.
 
-**The rest.** None of the others is fixed in its repository yet, as far as we found. Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
+**The rest.** None of the others is fixed in its repository yet, as far as we found (rechecked against rubygems.org on 2026-11-06). Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
 
 ## Failures `bundle install` will not show
 
@@ -126,7 +128,11 @@ We reread the default branches of the other 11 gems marked "no" for the same mis
 
 ## Update, 2026-11-06
 
-panko_serializer released 1.0.0, which replaces its C extension with plain Ruby. The gem now ships no native code, so the removed C APIs no longer affect it. On the same two images, with Bundler, 1.0.0 installed (its dependency oj 3.17.8 compiled), loaded and serialized a two-item array on 4.1.0-preview1 and on 4.0.7 ([`reproduce/src/panko_1_0_0.sh`](reproduce/src/panko_1_0_0.sh)). Of the 21 gems, four are now fixed but not released (eventmachine, thin, yajl-ruby, iconv) and one has a released fix. The table above still shows what we measured on 2026-10-21. The maintainer closed our release request, [yosiat/panko_serializer#240](https://github.com/yosiat/panko_serializer/issues/240), when 1.0.0 shipped.
+Two of the 21 gems have released fixes since we measured.
+
+cbor released 0.6.1.1 on 2026-11-05, which moves its extension to the typed data API ([cabo/cbor-ruby#31](https://github.com/cabo/cbor-ruby/pull/31)). On the same two images, with Bundler, 0.6.1.1 compiled, loaded and round-tripped a small hash on 4.1.0-preview1 and on 4.0.7, and its shared object has no undefined symbol from our list of removed names; 0.5.10.3, built on 4.0.7, has one ([`reproduce/src/cbor_0_6_1_1.sh`](reproduce/src/cbor_0_6_1_1.sh)).
+
+panko_serializer released 1.0.0 on 2026-11-06, which replaces its C extension with plain Ruby. The gem now ships no native code, so the removed C APIs no longer affect it. On the same two images, with Bundler, 1.0.0 installed (its dependency oj 3.17.8 compiled), loaded and serialized a two-item array on 4.1.0-preview1 and on 4.0.7 ([`reproduce/src/panko_1_0_0.sh`](reproduce/src/panko_1_0_0.sh)). Of the 21 gems, four are now fixed but not released (eventmachine, thin, yajl-ruby, iconv) and two have released fixes (cbor, panko_serializer). The other 19 have no release newer than the one we tested. The table above still shows what we measured on 2026-10-21. The maintainer closed our release request, [yosiat/panko_serializer#240](https://github.com/yosiat/panko_serializer/issues/240), when 1.0.0 shipped.
 
 More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-ruby41).
 
