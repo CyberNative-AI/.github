@@ -79,6 +79,19 @@ Each `bundle install` stops after 15 minutes (20 in `fix_exec.sh`) and each smok
 
 On 4.1.0-preview1, facter and packwerk fail with `cannot load such file -- tsort` before reaching those lines, and on 4.0.7 they print the tsort warning first. That supports the diagnosis, but neither has a complete passing run, so the note does not claim the `gem "tsort"` fix for them.
 
+## 6. Update 2026-11-06: panko_serializer 1.0.0
+
+`src/panko_1_0_0.sh` bundles the released `panko_serializer` 1.0.0, requires it, serializes a two-item array and prints the gem's declared extensions and the number of `.so` files it ships. It needs network access to rubygems.org:
+
+```sh
+for arm in A40 A41; do
+  img=$([ $arm = A40 ] && echo "$A40" || echo "$A41")
+  docker run --rm -e ARM=$arm --cpus 2 --memory 4g --memory-swap 4g --pids-limit 2048 -v "$PWD:/src:ro" -v "$PWD/work:/work" "$img" timeout -k 10 1800 bash /src/src/panko_1_0_0.sh
+done
+```
+
+On both Rubies it printed `INSTALL rc=0`, `REQUIRE_RUN rc=0`, `PANKO 1.0.0 extensions=[] so_files=0` and `JSON [{"id":1,"name":"a"},{"id":2,"name":"b"}]` (2026-11-06). Results are in `work/P100-<arm>/`.
+
 ## Licence
 
 The MIT licence in `LICENSE` covers the scripts, the control extensions and the documentation in this folder, which CyberNative AI LLC wrote. It does not cover the ecosyste.ms data below.

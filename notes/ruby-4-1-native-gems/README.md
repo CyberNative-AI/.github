@@ -6,7 +6,7 @@ Run this in your app's directory:
 grep -E '^    (eventmachine|thin|kostya-sigar|yajl-ruby|hiredis|therubyracer|ffi-yajl|debase|cbor|timfel-krb5-auth|ruby-debug-ide|atomic|bson_ext|iconv|hpricot|rblineprof|zookeeper|numo-narray|ruby-stemmer|panko_serializer|algorithms) \(' Gemfile.lock
 ```
 
-Each gem it prints installed on Ruby 4.0.7 and then, at its latest release on rubygems.org, broke on Ruby 4.1.0-preview1 (measured 2026-10-21, Linux x86_64): 18 fail to install, 2 install and fail at `require`, and 1 loads without its C extension. If it prints nothing, none of them are in your bundle. A gem you have already pinned to a git commit prints too; check its source in the lockfile.
+Each gem it prints installed on Ruby 4.0.7 and then, at its latest release on rubygems.org, broke on Ruby 4.1.0-preview1 (measured 2026-10-21, Linux x86_64): 18 fail to install, 2 install and fail at `require`, and 1 loads without its C extension. If it prints nothing, none of them are in your bundle. A gem you have already pinned to a git commit prints too; check its source in the lockfile. panko_serializer 1.0.0, released on 2026-11-06, is not affected ([Update](#update-2026-11-06)).
 
 Ruby 4.1.0 has no announced release date. Ruby usually ships its new version on December 25.
 
@@ -39,20 +39,19 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | zookeeper 1.5.5 | 2,260 | install* | no |
 | numo-narray 0.9.2.1 | 2,753 | install (`rb_alloc_tmp_buffer` signature changed) | no |
 | ruby-stemmer 3.0.0 | 2,756 | install* | no |
-| panko_serializer 0.8.5 | 2,923 | **require** | **yes, not released** |
+| panko_serializer 0.8.5 | 2,923 | **require** | **yes, released in 1.0.0** (2026-11-06, see [Update](#update-2026-11-06)) |
 | algorithms 1.1.0 | 2,933 | install | no |
 
 "Fixed" means the default branch no longer uses the removed APIs when built on Ruby 4.1, checked 2026-10-21 (iconv: 2026-11-05, see [Correction](#correction-2026-11-05)). For the five marked yes, we also built and ran that branch on 4.1.0-preview1 (below). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
 
 ## What to do
 
-**Fixed but not released: eventmachine, thin, yajl-ruby, panko_serializer, iconv.** The last eventmachine release, 1.2.7, is from May 2018. These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
+**Fixed but not released: eventmachine, thin, yajl-ruby, iconv.** The last eventmachine release, 1.2.7, is from May 2018. These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
 
 ```ruby
 gem "eventmachine", git: "https://github.com/eventmachine/eventmachine.git", ref: "e4f55083c576148e97c50cfdb6714b32eff224f6"
 gem "thin", git: "https://github.com/macournoyer/thin.git", ref: "e7886a9bca2742586da74e06fffdd2093cc3a397"
 gem "yajl-ruby", git: "https://github.com/brianmario/yajl-ruby.git", ref: "6501652d113557d976676134056aa983e7863020"
-gem "panko_serializer", git: "https://github.com/yosiat/panko_serializer.git", ref: "9267e19d779a05eae16ce0a2b2e36c3907c22e75"
 gem "iconv", git: "https://github.com/ruby/iconv.git", ref: "883f7a2815303ae6dd52495f01fc8d934e8b8c73"
 ```
 
@@ -60,13 +59,15 @@ thin needs both lines: thin 2.0.1 with eventmachine pinned still fails in thin's
 
 iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 2025).
 
+**panko_serializer: upgrade to 1.0.0.** It was released on 2026-11-06 and no longer has a C extension. `gem "panko_serializer", "1.0.0"` installed, loaded and serialized a test object with Bundler on 4.1.0-preview1 and on 4.0.7. It is a new major version, so read its [release notes](https://github.com/yosiat/panko_serializer/releases/tag/v1.0.0) before you upgrade. If you used our earlier git pin to commit `9267e19d`, replace it with the release.
+
 **hiredis.** redis-rb's README now uses the [`hiredis-client`](https://github.com/redis/redis-rb#hiredis-binding) gem for its hiredis driver. hiredis-client 0.31.0 installed and loaded on 4.1.0-preview1 in our run. We did not test a switch from `hiredis` in a real app.
 
 **The rest.** None of the others is fixed in its repository yet, as far as we found. Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
 
 ## Failures `bundle install` will not show
 
-panko_serializer and rblineprof compile and install, and then fail at `require` with `undefined symbol: Data_Wrap_Struct`. A CI job that only runs `bundle install` passes. Load your bundle too:
+panko_serializer 0.8.5 and rblineprof compile and install, and then fail at `require` with `undefined symbol: Data_Wrap_Struct`. A CI job that only runs `bundle install` passes. Load your bundle too:
 
 ```sh
 bundle exec ruby -e 'Bundler.require'
@@ -122,6 +123,10 @@ Ruby 4.1.0-preview1, not the release; later previews may change the list. Linux 
 We first listed iconv as not fixed in its repository. That was wrong. Our search of its default branch found `OBJ_INFECT`, one of the removed names, but both uses sit behind a build check (`have_func("OBJ_INFECT")` and `#ifdef HAVE_OBJ_INFECT`) that leaves them out on Ruby 4.1. The fix was merged on 2026-01-29 in [ruby/iconv#36](https://github.com/ruby/iconv/pull/36) and [#38](https://github.com/ruby/iconv/pull/38) and is not in a release yet. We then built commit `883f7a28` on 4.1.0-preview1 and on 4.0.7: it installed, converted `é` from ISO-8859-1 to UTF-8 and back, and passed its own tests (12 tests, 0 failures). iconv 1.1.1 from rubygems.org still fails to install on 4.1.0-preview1. So five of the 21 are fixed but not released, not four.
 
 We reread the default branches of the other 11 gems marked "no" for the same mistake. Each still contains the code that broke it, outside any such check (for numo-narray, the `rb_alloc_tmp_buffer` call whose signature changed), so none of them changed.
+
+## Update, 2026-11-06
+
+panko_serializer released 1.0.0, which replaces its C extension with plain Ruby. The gem now ships no native code, so the removed C APIs no longer affect it. On the same two images, with Bundler, 1.0.0 installed (its dependency oj 3.17.8 compiled), loaded and serialized a two-item array on 4.1.0-preview1 and on 4.0.7 ([`reproduce/src/panko_1_0_0.sh`](reproduce/src/panko_1_0_0.sh)). Of the 21 gems, four are now fixed but not released (eventmachine, thin, yajl-ruby, iconv) and one has a released fix. The table above still shows what we measured on 2026-10-21. The maintainer closed our release request, [yosiat/panko_serializer#240](https://github.com/yosiat/panko_serializer/issues/240), when 1.0.0 shipped.
 
 More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-ruby41).
 
