@@ -42,7 +42,7 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | panko_serializer 0.8.5 | 2,923 | **require** | **yes, released in 1.0.0** (2026-11-06, see [Update](#update-2026-11-06)) |
 | algorithms 1.1.0 | 2,933 | install | no |
 
-"Fixed" means the default branch no longer uses the removed APIs when built on Ruby 4.1, checked 2026-10-21 (iconv: 2026-11-05, see [Correction](#correction-2026-11-05)). For the five marked yes, we also built and ran that branch on 4.1.0-preview1 (below). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
+"Fixed" means the default branch no longer uses the removed APIs when built on Ruby 4.1, checked 2026-10-21 (iconv: 2026-11-05, see [Correction](#correction-2026-11-05)). For the five marked yes other than cbor, we also built and ran that branch on 4.1.0-preview1 (below); for cbor we tested the released 0.6.1.1 instead ([Update](#update-2026-11-06)). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
 
 ## What to do
 
