@@ -65,7 +65,7 @@ iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 
 
 **hiredis.** redis-rb's README now uses the [`hiredis-client`](https://github.com/redis/redis-rb#hiredis-binding) gem for its hiredis driver. hiredis-client 0.31.0 installed and loaded on 4.1.0-preview1 in our run. We did not test a switch from `hiredis` in a real app.
 
-**The rest.** None of the others is fixed in its repository yet, as far as we found (rechecked against rubygems.org on 2026-11-06). Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
+**The rest.** None of the others has a newer release on rubygems.org as of 2026-11-06. Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
 
 ## Failures `bundle install` will not show
 
