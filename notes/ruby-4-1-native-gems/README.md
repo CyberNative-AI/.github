@@ -21,24 +21,24 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | Gem (version tested) | Rank | Fails at | Fixed in the gem's repository? |
 |---|---|---|---|
 | eventmachine 1.2.7 | 163 | install | **yes, not released** |
-| thin 2.0.1 | 271 | install (eventmachine, and its own parser) | **yes, not released** |
+| thin 2.0.1 | 271 | install (eventmachine, and its own parser) | **yes, not released**; repository archived ([Update](#update-2026-11-07)) |
 | kostya-sigar 2.0.11 | 496 | install* | no |
 | yajl-ruby 1.4.3 | 503 | install* | **yes, not released** |
 | hiredis 0.6.3 | 698 | install | no |
-| therubyracer 0.12.3 | 909 | install | no |
+| therubyracer 0.12.3 | 909 | install | no; repository archived ([Update](#update-2026-11-07)) |
 | ffi-yajl 3.0.1 | 934 | install | no |
 | debase 0.2.9 | 1,006 | install (no 4.1 headers in debase-ruby_core_source 4.0.1) | no |
 | cbor 0.5.10.3 | 1,160 | install | **yes, released in 0.6.1.1** (2026-11-05, see [Update](#update-2026-11-06)) |
 | timfel-krb5-auth 0.8.3 | 1,305 | install* | no repository listed |
 | ruby-debug-ide 0.7.5 | 1,372 | install* (through debase) | depends on debase |
-| atomic 1.1.101 | 1,520 | loads, but silently uses its pure-Ruby fallback | no |
+| atomic 1.1.101 | 1,520 | loads, but silently uses its pure-Ruby fallback | no; repository archived ([Update](#update-2026-11-07)) |
 | bson_ext 1.12.5 | 1,808 | install* (`struct RRegexp` changed) | no repository listed |
 | iconv 1.1.1 | 1,927 | install | **yes, not released** (corrected 2026-11-05) |
 | hpricot 0.8.6 | 2,005 | install | no repository listed |
 | rblineprof 0.3.7 | 2,208 | **require** | no |
 | zookeeper 1.5.5 | 2,260 | install* | no |
 | numo-narray 0.9.2.1 | 2,753 | install (`rb_alloc_tmp_buffer` signature changed) | no |
-| ruby-stemmer 3.0.0 | 2,756 | install* | no |
+| ruby-stemmer 3.0.0 | 2,756 | install* | no; repository archived ([Update](#update-2026-11-07)) |
 | panko_serializer 0.8.5 | 2,923 | **require** | **yes, released in 1.0.0** (2026-11-06, see [Update](#update-2026-11-06)) |
 | algorithms 1.1.0 | 2,933 | install | no |
 
@@ -55,7 +55,7 @@ gem "yajl-ruby", git: "https://github.com/brianmario/yajl-ruby.git", ref: "65016
 gem "iconv", git: "https://github.com/ruby/iconv.git", ref: "883f7a2815303ae6dd52495f01fc8d934e8b8c73"
 ```
 
-thin needs both lines: thin 2.0.1 with eventmachine pinned still fails in thin's own parser. A git pin is a stopgap. It installs unreleased code, needs `git` at install time and stops tracking rubygems.org releases, so review the changes since the last release and switch back once a release ships. yajl-ruby has an open request for a release: [brianmario/yajl-ruby#233](https://github.com/brianmario/yajl-ruby/issues/233).
+thin needs both lines: thin 2.0.1 with eventmachine pinned still fails in thin's own parser. A git pin is a stopgap. It installs unreleased code, needs `git` at install time and stops tracking rubygems.org releases, so review the changes since the last release and switch back once a release ships. thin is not expected to ship one: its repository was archived on 2026-07-15, and its README says Thin is no longer maintained and points to [Falcon](https://github.com/socketry/falcon). Treat the thin pin as a bridge while you move to another server. yajl-ruby has an open request for a release: [brianmario/yajl-ruby#233](https://github.com/brianmario/yajl-ruby/issues/233).
 
 iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 2025).
 
@@ -64,6 +64,8 @@ iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 
 **cbor: upgrade to 0.6.1.1.** It was released on 2026-11-05 and moves the extension to the typed data API. `gem "cbor", "0.6.1.1"` compiled, loaded and round-tripped a test value with Bundler on 4.1.0-preview1 and on 4.0.7.
 
 **hiredis.** redis-rb's README now uses the [`hiredis-client`](https://github.com/redis/redis-rb#hiredis-binding) gem for its hiredis driver. hiredis-client 0.31.0 installed and loaded on 4.1.0-preview1 in our run. We did not test a switch from `hiredis` in a real app.
+
+**Archived: therubyracer, atomic, ruby-stemmer.** Their repositories are archived, so no fix is expected. Replace these gems. Their own READMEs name an alternative for two of them: therubyracer's mentions [mini_racer](https://github.com/rubyjs/mini_racer), and atomic's says to use `concurrent-ruby`. We did not test either alternative.
 
 **The rest.** None of the others has a newer release on rubygems.org as of 2026-11-06. Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
 
@@ -133,6 +135,17 @@ Two of the 21 gems have released fixes since we measured.
 cbor released 0.6.1.1 on 2026-11-05, which moves its extension to the typed data API ([cabo/cbor-ruby#31](https://github.com/cabo/cbor-ruby/pull/31)). On the same two images, with Bundler, 0.6.1.1 compiled, loaded and round-tripped a small hash on 4.1.0-preview1 and on 4.0.7, and its shared object has no undefined symbol from our list of removed names; 0.5.10.3, built on 4.0.7, has one ([`reproduce/src/cbor_0_6_1_1.sh`](reproduce/src/cbor_0_6_1_1.sh)).
 
 panko_serializer released 1.0.0 on 2026-11-06, which replaces its C extension with plain Ruby. The gem now ships no native code, so the removed C APIs no longer affect it. On the same two images, with Bundler, 1.0.0 installed (its dependency oj 3.17.8 compiled), loaded and serialized a two-item array on 4.1.0-preview1 and on 4.0.7 ([`reproduce/src/panko_1_0_0.sh`](reproduce/src/panko_1_0_0.sh)). Of the 21 gems, four are now fixed but not released (eventmachine, thin, yajl-ruby, iconv) and two have released fixes (cbor, panko_serializer). The other 19 have no release newer than the one we tested. The table above still shows what we measured on 2026-10-21. The maintainer closed our release request, [yosiat/panko_serializer#240](https://github.com/yosiat/panko_serializer/issues/240), when 1.0.0 shipped.
+
+## Update, 2026-11-07
+
+Four of the 21 gems come from repositories their owners have archived, so they are read-only and no fix is expected there. On 2026-11-07 we checked the repository that each gem lists on rubygems.org; 17 of the 21 list one on GitHub:
+
+- thin: archived 2026-07-15. Its README says "After 20 years, Thin is no longer maintained" and points to Falcon. Its default branch is still fixed, and the pin above still works, but no release is expected.
+- therubyracer: archived 2023-12-04. Its README says the project is unmaintained.
+- atomic: archived 2022-03-15. Its README says the gem is deprecated in favour of `concurrent-ruby`.
+- ruby-stemmer: archived 2022-05-12, with a notice from its author.
+
+The table now marks these four. The other 13 repositories are not archived. cbor, timfel-krb5-auth, bson_ext and hpricot list no GitHub repository, so we did not check them this way. Our 2026-10-21 measurements have not changed.
 
 More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-ruby41).
 
