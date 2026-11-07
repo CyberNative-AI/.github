@@ -1,29 +1,33 @@
 """Replay one pinned ThinkingBox validator with synthetic effect inputs.
 
 No agent, database, MCP server, framework package, or model is run.
-Upstream Python is Microsoft MIT-licensed; see LICENSE.upstream.txt.
+The pinned file is Microsoft's; see LICENSE.upstream.txt.
 """
 
 import ast
 import hashlib
 import json
+from pathlib import Path
 from types import SimpleNamespace
 from urllib.request import Request, urlopen
 
 
 COMMIT = "fcaba4c1a9debec42fda7f15bf29fe6d6b46c431"
-SOURCE = (
-    "https://raw.githubusercontent.com/microsoft/thinkingbox-data/"
-    + COMMIT
-    + "/dataset/test_case/sandbox_external_retail/sandbox_external_retail_group1.py"
-)
+FILE = "sandbox_external_retail_group1.py"
+# Byte-identical copy of dataset/test_case/sandbox_external_retail/<FILE> at
+# COMMIT in microsoft/thinkingbox-data, which is no longer publicly available.
+SOURCE = "https://raw.githubusercontent.com/CyberNative-AI/.github/main/notes/thinkingbox-state-check/" + FILE
 SHA256 = "9a3bc8a7bfbe6aab60ba1f6c2bd7e57719524a9cccc9b2528d64ca832f6e943d"
 TARGET = "test_case_ST003_006"
 
 
 def main():
-    with urlopen(Request(SOURCE, headers={"User-Agent": "thinkingbox-validator-example"}), timeout=30) as response:
-        raw = response.read(1_000_001)
+    local = Path(__file__).with_name(FILE)
+    if local.is_file():
+        raw = local.read_bytes()
+    else:
+        with urlopen(Request(SOURCE, headers={"User-Agent": "thinkingbox-validator-example"}), timeout=30) as response:
+            raw = response.read(1_000_001)
     if len(raw) > 1_000_000 or hashlib.sha256(raw).hexdigest() != SHA256:
         raise RuntimeError("Pinned upstream source does not match the recorded SHA-256")
 
