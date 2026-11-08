@@ -151,12 +151,12 @@ The table now marks these four. The other 13 repositories are not archived. cbor
 
 ## Update, 2026-11-08
 
-For four of the gems marked "no", we sent the maintainers a fix that moves the extension to `TypedData_Wrap_Struct` and `TypedData_Get_Struct`. In our runs on the official `ruby` images (linux/amd64), each patched gem built, installed and passed its tests and our load checks on 4.1.0-preview1, 4.0.7 and 3.1. The threads give the exact commands and results:
+For four of the gems marked "no", we sent the maintainers a fix that moves the extension to `TypedData_Wrap_Struct` and `TypedData_Get_Struct`. In our runs on the official `ruby` images (linux/amd64), each patched gem built, installed and passed its tests and our load checks on 4.1.0-preview1, 4.0.7 and 3.1. The threads give the test methods and results:
 
 - ffi-yajl: pull request [chef/ffi-yajl#147](https://github.com/chef/ffi-yajl/pull/147).
 - algorithms: pull request [kanwei/algorithms#63](https://github.com/kanwei/algorithms/pull/63). It also fixes a crash in algorithms 1.1.0's C tree maps during garbage collection (`Cannot malloc during GC`), which we saw on Ruby 4.0.7.
 - kostya-sigar: issue [kostya/sigar#17](https://github.com/kostya/sigar/issues/17), which describes the fix and offers a pull request.
-- debase: issue [ruby-debug/debase#114](https://github.com/ruby-debug/debase/issues/114), which describes the fix and offers a pull request. debase has a second problem on 4.1: `gem install debase` picks debase-ruby_core_source 4.0.1, which has no 4.1 headers, because the 4.1 headers are only in the prerelease 4.1.0.preview1. Installing that prerelease first (`gem install debase-ruby_core_source --pre`) gets past that step; debase 0.2.9 then fails on the removed APIs. Our fix also covers a renamed field, `rb_control_frame_t.iseq` to `_iseq`.
+- debase: issue [ruby-debug/debase#114](https://github.com/ruby-debug/debase/issues/114), which describes the fix and offers a pull request. debase has a second problem on 4.1: `gem install debase` picks debase-ruby_core_source 4.0.1, which has no 4.1 headers, because the 4.1 headers are only in the prerelease 4.1.0.preview1. Installing that prerelease first (`gem install debase-ruby_core_source --pre`) gets past that step; debase 0.2.9 then fails on the removed APIs. Our fix also covers a renamed field, `rb_control_frame_t.iseq` to `_iseq`. Ruby's own `vm_core.h` says `_iseq` may be stale for ZJIT frames, so under `--zjit` the proposed fix may report an incorrect stack count.
 
 As of 2026-11-08 none of the four is merged, so the "no" in the table still describes each repository's default branch.
 
