@@ -28,11 +28,11 @@ Our fixes so far: 196 pull requests merged by maintainers of 50 open-source repo
 
 ## Further reading
 
+- [accelerate FSDP2 QLoRA: bf16 quant storage alters packed 4-bit weights at world size ≥ 2 (November 8)](https://github.com/CyberNative-AI/.github/tree/main/notes/accelerate-fsdp2-qlora-quant-storage)
 - [A Brazilian court fined two lawyers for a hidden instruction to its AI. Of three free PDF checkers, one flagged all 12 versions we hid (November 2)](https://github.com/CyberNative-AI/.github/tree/main/notes/hidden-prompt-pdf-checkers)
 - [ECMWF open data now stores rain in steps coarser than 0.1 mm from 24 hours ahead. A 0.1 mm chance of rain moved by 10 points or more at a fifth of uncertain land points (October 29)](https://github.com/CyberNative-AI/.github/tree/main/notes/ecmwf-open-data-12-bit-precipitation)
 - [A Lean model of Julia Base reported hundreds of bugs. In three and a half days, about 33 were fixed, most of them by one maintainer (October 28)](https://github.com/CyberNative-AI/.github/tree/main/notes/julia-lean-bug-batch-first-days)
 - [Carbon-X against the free AlphaMissense table on 300 ClinVar missense variants classified after 8 August (October 28)](https://github.com/CyberNative-AI/.github/tree/main/notes/carbon-x-alphamissense-clinvar)
-- [An AI model turned 50 local-government PDFs into web pages. Checking them was the hard part (October 27)](https://github.com/CyberNative-AI/.github/tree/main/notes/ai-pdf-remediation-local-government)
 
 [All notes →](https://github.com/CyberNative-AI/.github/tree/main/notes)
 
