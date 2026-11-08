@@ -22,12 +22,12 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 |---|---|---|---|
 | eventmachine 1.2.7 | 163 | install | **yes, not released** |
 | thin 2.0.1 | 271 | install (eventmachine, and its own parser) | **yes, not released**; repository archived ([Update](#update-2026-11-07)) |
-| kostya-sigar 2.0.11 | 496 | install* | no |
+| kostya-sigar 2.0.11 | 496 | install* | no; fix proposed ([Update](#update-2026-11-08)) |
 | yajl-ruby 1.4.3 | 503 | install* | **yes, not released** |
 | hiredis 0.6.3 | 698 | install | no |
 | therubyracer 0.12.3 | 909 | install | no; repository archived ([Update](#update-2026-11-07)) |
-| ffi-yajl 3.0.1 | 934 | install | no |
-| debase 0.2.9 | 1,006 | install (no 4.1 headers in debase-ruby_core_source 4.0.1) | no |
+| ffi-yajl 3.0.1 | 934 | install | no; fix proposed ([Update](#update-2026-11-08)) |
+| debase 0.2.9 | 1,006 | install (no 4.1 headers in debase-ruby_core_source 4.0.1) | no; fix proposed ([Update](#update-2026-11-08)) |
 | cbor 0.5.10.3 | 1,160 | install | **yes, released in 0.6.1.1** (2026-11-05, see [Update](#update-2026-11-06)) |
 | timfel-krb5-auth 0.8.3 | 1,305 | install* | no repository listed |
 | ruby-debug-ide 0.7.5 | 1,372 | install* (through debase) | depends on debase |
@@ -40,13 +40,13 @@ Rank is all-time downloads among all gems, from [ecosyste.ms](https://packages.e
 | numo-narray 0.9.2.1 | 2,753 | install (`rb_alloc_tmp_buffer` signature changed) | no |
 | ruby-stemmer 3.0.0 | 2,756 | install* | no; repository archived ([Update](#update-2026-11-07)) |
 | panko_serializer 0.8.5 | 2,923 | **require** | **yes, released in 1.0.0** (2026-11-06, see [Update](#update-2026-11-06)) |
-| algorithms 1.1.0 | 2,933 | install | no |
+| algorithms 1.1.0 | 2,933 | install | no; fix proposed ([Update](#update-2026-11-08)) |
 
 "Fixed" means the default branch no longer uses the removed APIs when built on Ruby 4.1, checked 2026-10-21 (iconv: 2026-11-05, see [Correction](#correction-2026-11-05)). For the five marked yes other than cbor, we also built and ran that branch on 4.1.0-preview1 (below); for cbor we tested the released 0.6.1.1 instead ([Update](#update-2026-11-06)). yajl-ruby loads as `yajl`, one of the names we did not try in the main run; the released 1.4.3 did load that way on 4.0.7 in the fix test.
 
 ## What to do
 
-**Fixed but not released: eventmachine, thin, yajl-ruby, iconv.** The last eventmachine release, 1.2.7, is from May 2018. These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
+**Fixed but not released: eventmachine, thin, yajl-ruby, iconv.** The last eventmachine release, 1.2.7, is from May 2018. On 2026-11-02 an eventmachine maintainer answered our release request: "Yes, please use the master branch for now. A release is long overdue." ([eventmachine/eventmachine#1032](https://github.com/eventmachine/eventmachine/issues/1032#issuecomment-6587148394)). These Gemfile lines pin the commits we tested; each one installed and ran on 4.1.0-preview1 and on 4.0.7:
 
 ```ruby
 gem "eventmachine", git: "https://github.com/eventmachine/eventmachine.git", ref: "e4f55083c576148e97c50cfdb6714b32eff224f6"
@@ -66,6 +66,8 @@ iconv's fix was merged in January 2026, after its last release, 1.1.1 (December 
 **hiredis.** redis-rb's README now uses the [`hiredis-client`](https://github.com/redis/redis-rb#hiredis-binding) gem for its hiredis driver. hiredis-client 0.31.0 installed and loaded on 4.1.0-preview1 in our run. We did not test a switch from `hiredis` in a real app.
 
 **Archived: therubyracer, atomic, ruby-stemmer.** Their repositories are archived, so no fix is expected. Replace these gems. Their own READMEs name an alternative for two of them: therubyracer's mentions [mini_racer](https://github.com/rubyjs/mini_racer), and atomic's says to use `concurrent-ruby`. We did not test either alternative.
+
+**Fix proposed, not merged: kostya-sigar, ffi-yajl, debase, algorithms.** We sent each project a port to the typed data API, tested on 4.1.0-preview1 and 4.0.7 ([Update](#update-2026-11-08)). Until a maintainer merges and releases it, the gem from rubygems.org still fails on 4.1. Follow the thread for your gem: [chef/ffi-yajl#147](https://github.com/chef/ffi-yajl/pull/147), [kanwei/algorithms#63](https://github.com/kanwei/algorithms/pull/63), [kostya/sigar#17](https://github.com/kostya/sigar/issues/17), [ruby-debug/debase#114](https://github.com/ruby-debug/debase/issues/114). ruby-debug-ide installs debase, so it waits on the debase fix.
 
 **The rest.** None of the others has a newer release on rubygems.org as of 2026-11-06. Ask the maintainer, replace the gem, or plan to stay on Ruby 4.0 until it is fixed.
 
@@ -146,6 +148,17 @@ Four of the 21 gems come from repositories their owners have archived, so they a
 - ruby-stemmer: archived 2022-05-12, with a notice from its author.
 
 The table now marks these four. The other 13 repositories are not archived. cbor, timfel-krb5-auth, bson_ext and hpricot list no GitHub repository, so we did not check them this way. Our 2026-10-21 measurements have not changed.
+
+## Update, 2026-11-08
+
+For four of the gems marked "no", we sent the maintainers a fix that moves the extension to `TypedData_Wrap_Struct` and `TypedData_Get_Struct`. In our runs on the official `ruby` images (linux/amd64), each patched gem built, installed and passed its tests and our load checks on 4.1.0-preview1, 4.0.7 and 3.1. The threads give the exact commands and results:
+
+- ffi-yajl: pull request [chef/ffi-yajl#147](https://github.com/chef/ffi-yajl/pull/147).
+- algorithms: pull request [kanwei/algorithms#63](https://github.com/kanwei/algorithms/pull/63). It also fixes a crash in algorithms 1.1.0's C tree maps during garbage collection (`Cannot malloc during GC`), which we saw on Ruby 4.0.7.
+- kostya-sigar: issue [kostya/sigar#17](https://github.com/kostya/sigar/issues/17), which describes the fix and offers a pull request.
+- debase: issue [ruby-debug/debase#114](https://github.com/ruby-debug/debase/issues/114), which describes the fix and offers a pull request. debase has a second problem on 4.1: `gem install debase` picks debase-ruby_core_source 4.0.1, which has no 4.1 headers, because the 4.1 headers are only in the prerelease 4.1.0.preview1. Installing that prerelease first (`gem install debase-ruby_core_source --pre`) gets past that step; debase 0.2.9 then fails on the removed APIs. Our fix also covers a renamed field, `rb_control_frame_t.iseq` to `_iseq`.
+
+As of 2026-11-08 none of the four is merged, so the "no" in the table still describes each repository's default branch.
 
 More dated breaking changes across languages and platforms, with a weekly email: [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=note-ruby41).
 
