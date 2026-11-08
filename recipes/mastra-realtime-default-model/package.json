@@ -1,0 +1,14 @@
+{
+  "name": "mastra-realtime-default-model",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline check of the model OpenAIRealtimeVoice requests when no model option is set",
+  "license": "MIT",
+  "scripts": {
+    "repro": "node repro.mjs"
+  },
+  "dependencies": {
+    "@mastra/voice-openai-realtime": "0.14.8",
+    "ws": "8.22.2"
+  }
+}
