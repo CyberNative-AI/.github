@@ -38,8 +38,8 @@ official Docker image at `/opt/adguardhome/conf/AdGuardHome.yaml`:
 grep -A6 -E '^  (upstream_dns|bootstrap_dns|fallback_dns):' AdGuardHome.yaml
 ```
 
-This is what the wizard of v0.107.79, the current release, writes (the development branch has
-the same defaults):
+This is what the wizard of v0.107.79 writes (the source of v0.107.80 and of the development
+branch has the same defaults):
 
 ```yaml
   upstream_dns:
@@ -148,6 +148,13 @@ listes mixtes, les exceptions par client ou domaine, ni les configurations `upst
 
 [`reproduce/`](reproduce/) has the script, its output and the per-query data, with the
 command to run it on any Linux machine with Docker.
+
+## Correction, 2026-11-08
+
+This page called v0.107.79 "the current release". AdGuard Home v0.107.80 came out on
+3 November 2026, so that was no longer true. Its source keeps the same Quad9-only upstream and
+bootstrap defaults ([`dnsforward.go` in v0.107.80](https://github.com/AdguardTeam/AdGuardHome/blob/v0.107.80/internal/dnsforward/dnsforward.go#L46-L49)),
+so the check and fix above should apply to it as written. We did not rerun the tests on v0.107.80.
 
 ---
 
