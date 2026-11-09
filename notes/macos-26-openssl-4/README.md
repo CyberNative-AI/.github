@@ -1,10 +1,22 @@
-# `macos-latest` switches `openssl` to 4.x on November 2–8. A `'^OpenSSL 3'` check stops adding `-legacy`
+# GitHub plans to switch `openssl` to 4.x on `macos-latest`. A `'^OpenSSL 3'` check will stop adding `-legacy`
+
+**Update, 9 November 2026.** The switch has not happened. The software lists for the newest images,
+macOS 26 Arm64 [20261102.0473](https://github.com/actions/runner-images/releases/tag/macos-26-arm64/20261102.0473)
+(published 3 November) and Xcode 27 Arm64 [20261104.0337](https://github.com/actions/runner-images/releases/tag/xcode-27-arm64/20261104.0337)
+(published 4 November), still give OpenSSL 3.5.9 as the default `openssl`, with OpenSSL 4.1.0
+installed alongside it at `/opt/homebrew/opt/openssl@4/bin/openssl`. GitHub's
+[image build script](https://github.com/actions/runner-images/blob/741e4eb8ef5f51698d730ac16ede65cadb067522/images/macos/scripts/build/install-openssl.sh)
+still sets OpenSSL 3 as the default on macOS 26, and the
+[announcement](https://github.com/actions/runner-images/issues/14856) is still open with no new
+date. It says the rollout is "subject to compatibility validation". To try a workflow with
+OpenSSL 4 now, put `/opt/homebrew/opt/openssl@4/bin` first on `PATH`. Our tests below used
+OpenSSL 4.0.3, the 4.x on the image in October.
 
 GitHub [announced](https://github.com/actions/runner-images/issues/14856) on October 6: "The
 default `openssl` command will change from **OpenSSL 3.x** to **OpenSSL 4.x** on macOS 26
 Intel/Arm64 and Xcode 27 Arm64 runner images." The rollout "is planned to begin on
 **November 2, 2026** and complete by **November 8, 2026**". `macos-latest` is macOS 26, and
-images are replaced gradually, so a job can get either version during that week.
+images are replaced gradually, so during the rollout a job can get either version.
 
 We found 2,202 calls to plain `openssl` in jobs on these runners in 1,027 active public
 repositories, and ran 2,031 of them under OpenSSL 3.5.9, 3.6.5 and 4.0.3 with the same
@@ -41,8 +53,8 @@ each one first on `PATH`:
 
 | `openssl` on `PATH` | `grep '^OpenSSL 3'` | `grep '^OpenSSL [3-9]'` |
 |---|---|---|
-| OpenSSL 3.6.5 (the default today) | `-legacy` added, read works | `-legacy` added, read works |
-| OpenSSL 4.0.3 (the 4.x we tested; 4.x is planned as the default from November 2–8) | **no `-legacy`, read exits 1** | `-legacy` added, read works |
+| OpenSSL 3.6.5 (the default on October 22) | `-legacy` added, read works | `-legacy` added, read works |
+| OpenSSL 4.0.3 (the 4.x we tested; GitHub plans to make 4.x the default) | **no `-legacy`, read exits 1** | `-legacy` added, read works |
 | LibreSSL 3.3.6 (`/usr/bin/openssl`) | no flag, read works | no flag, read works |
 
 The OpenSSL 4 failure reads:
@@ -115,10 +127,10 @@ extensions file with only the SAN, and a strict client), so this is a how-to, no
 
 ## Headers and libraries are already OpenSSL 4
 
-On the image we ran, `openssl` is still 3.6.5, but Homebrew's shared `include/openssl`,
-`lib/libssl.dylib` and `pkg-config --modversion openssl` all point at OpenSSL 4.0.3, and the
-runner's `python3` (3.15.0) reports OpenSSL 4.0.3. A native build that finds OpenSSL through
-those paths already builds against 4.0.3 today; the November change is about the command. We
+On the image we ran, `openssl` was 3.6.5, but Homebrew's shared `include/openssl`,
+`lib/libssl.dylib` and `pkg-config --modversion openssl` all pointed at OpenSSL 4.0.3, and the
+runner's `python3` (3.15.0) reported OpenSSL 4.0.3. A native build that found OpenSSL through
+those paths built against 4.0.3 on that image; the planned change is about the command. We
 did not check which paths individual build tools use.
 
 ## What to do
@@ -126,7 +138,8 @@ did not check which paths individual build tools use.
 1. Run the `grep` above on every workflow and script that runs on `macos-latest`,
    `macos-26` or Xcode 27 images.
 2. If you need OpenSSL 3, call it by its prefix: `"$(brew --prefix openssl@3)/bin/openssl"`.
-   GitHub says OpenSSL 3 stays installed. On today's image this prints 3.6.5.
+   GitHub says OpenSSL 3 stays installed. It printed 3.6.5 on the image we tested; the November
+   images list OpenSSL 3.5.9.
 3. If you only need to tell OpenSSL from LibreSSL, match `'^OpenSSL [3-9]'` rather than
    `'^OpenSSL 3'`.
 4. Keep `-legacy` when OpenSSL 4 reads an old `.p12`, and when you export one for
@@ -167,7 +180,7 @@ the raw output separately.
   repositories or self-hosted runners.
 - We used a synthetic RC2-40 `.p12`, not an Apple Developer export, and stopped at
   `security import`: no `codesign` or notarization.
-- The image will change. We read it on October 22, before the rollout.
+- The image will change. We read it on October 22; the update at the top is from November 9.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. We will publish dated corrections here.
