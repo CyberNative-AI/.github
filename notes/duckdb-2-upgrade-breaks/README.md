@@ -1,5 +1,7 @@
 # DuckDB 2.0.0: what breaks that the migration guides don't say (October 22)
 
+**Update, November 10.** Two of the five libraries have released fixes. sqlglot 30.25.0 (October 26) and later write DuckDB lambdas with the `lambda` keyword, and narwhals 2.28.0 (October 27) no longer calls the removed method, so upgrading either one removes its break. dlt 1.32.0 (October 29) still makes the DuckLake call. Its `duckdb` and `ducklake` extras now require `duckdb<2`, so installing `dlt[ducklake]` keeps DuckDB 1.x, but dlt itself sets no cap: a later `pip install -U duckdb` still upgrades to 2.0.0 and brings the break back ([dlt#4595](https://github.com/dlt-hub/dlt/issues/4595) is still open). ibis-framework 12.0.0 and marimo 0.25.2 are still the latest releases and still break. marimo has a fix on its main branch: we reported the `None` lookups ([marimo#11456](https://github.com/marimo-team/marimo/issues/11456)) and its maintainers merged [#11515](https://github.com/marimo-team/marimo/pull/11515) on October 28. DuckDB merged [#27122](https://github.com/duckdb/duckdb/pull/27122), the fix for opening old files with arrow lambdas, on October 26; 2.0.0 is still DuckDB's latest release. The rest of this note is from October 22.
+
 DuckDB 2.0.0 went to PyPI on October 21 at 12:50 UTC. It requires Python 3.11 or newer, so on
 those Pythons `pip install -U duckdb` now installs it. DuckDB's
 [migration guide](https://duckdb.org/docs/2.0/operations_manual/migration) and
