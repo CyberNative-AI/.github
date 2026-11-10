@@ -34,6 +34,13 @@ Everything behind the note's tables, as it ran on October 23.
 - `results/stable-157.0.8103.38/`: the November 3 rerun of the 16 main-run pages from `pages/`,
   unchanged, on Chrome for Testing 157.0.8103.38, the build Linux Stable served from November 3.
   The arm keeps the label `C157`; each record's `browser` field names the build.
+- `pages-playcanvas-2.24.0/` and `results/playcanvas-2.24.0/`: the November 10 run of PlayCanvas
+  2.24.0. `PB` (WebGL2) and `PBGPU` (WebGPU) mark the canvas `content="drawable"` and the element
+  `drawable`; `PBOLD` keeps the old `layoutsubtree` markup. `PC` from `pages/` (2.23.3) ran as the
+  control. The arm `C157S` is Chrome for Testing 157.0.8103.38. Our runner for this run also
+  accepts a device scale factor; at its default of 1 it does what `run.mjs` here does, and its
+  records carry an extra `dpr` field. The same run also covered a scale factor of 2 and a
+  four-colour version of each page; those cells agreed with these and are not included.
 - `census/`: `census_summary.json` (counts by class), `old-names-only.json` (the 143
   repositories and their matched files), `head_recheck.jsonl` (the named repositories' matched
   files re-read at their default branch on October 23). The counts come from the text of the
@@ -87,6 +94,12 @@ For the November 3 Stable run, add Chrome for Testing 157.0.8103.38 under
 `node /work/src/run.mjs /bin-cft/157.0.8103.38/chrome-linux64/chrome C157 /work/pages /assets /out 2 K0 K1 K2 K3 N2D NGL NGPU B2D BGL BGPU T3 T3PR PC BJS BJSN PX`.
 That is what `run_all.sh` does for `C157`, with this build in place of 157.0.8103.15.
 `python3 score.py results/stable-157.0.8103.38 > /dev/null` prints its table from our records.
+For the November 10 PlayCanvas run, copy `pages-playcanvas-2.24.0/*.html` into `pages/`, unpack
+`playcanvas-2.24.0` under `assets/`, and run `ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 PC PB PBOLD PBGPU`,
+then `node /work/src/run.mjs /bin-cft/157.0.8103.38/chrome-linux64/chrome C157S /work/pages /assets /out 2 PC PB PBOLD PBGPU`.
+`python3 score.py results/playcanvas-2.24.0 > results/playcanvas-2.24.0/score.json` prints its table from our
+records and regenerates our `score.json` byte for byte. The table has no column for the 157.0.8103.38 arm
+(`C157S`); its cells are in `score.json`.
 After the run we changed only comments and descriptions: the source and license notices at the
 top of the adapted pages, the first line of `probe.js`, `run.mjs`, `run_all.sh` and `score.py`,
 and the census list's file name and `note` text.

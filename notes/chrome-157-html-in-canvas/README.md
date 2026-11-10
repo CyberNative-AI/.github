@@ -27,6 +27,37 @@ on 157. On October 23 we found no fix, issue or pull request for PlayCanvas, Bab
 that mentions the new names. For Babylon.js 9.32.0 there is a workaround in your own code:
 calling the texture's `update()` yourself brought it back on 157 in our test (below).
 
+## Update, 10 November 2026
+
+**PlayCanvas 2.24.0, released November 9, fixes this, but only on pages that also change their
+markup.** Its release notes list pull request [#9824](https://github.com/playcanvas/engine/pull/9824),
+"Support the HTML-in-Canvas API names shipping in Chrome 157". We ran three versions of our
+PlayCanvas page on it, two loads each, on Chrome for Testing 157.0.8103.15, 157.0.8103.38 (the
+Linux Stable build from November 3) and 158.0.8119.0:
+
+- With `content="drawable"` on the canvas and `drawable` on the element, as PlayCanvas's own
+  example in #9824 does, the HTML texture rendered with WebGL2 and with WebGPU, with nothing
+  logged.
+- With only the old `layoutsubtree` attribute, the texture stayed blank and Chrome threw
+  `InvalidStateError: ... texElementSubImage2D() requires the canvas to have the content=drawable
+  attribute`. So upgrading PlayCanvas is not enough on its own, but the failure is no longer
+  silent.
+- PlayCanvas 2.23.3 on the same browsers stayed blank with nothing logged.
+
+On Chrome 156 with the feature turned on, all three 2.24.0 pages rendered, as 2.23.3 does.
+
+**Two of the four engines now have a stable release that drew an HTML texture on Chrome 157 in
+our test: Babylon.js (since 9.33.0) and PlayCanvas (2.24.0).** PixiJS's fix is merged but not
+released; the latest is still 8.22.0. three.js 0.187.0 is still the latest three.js release, and
+pull request [#34732](https://github.com/mrdoob/three.js/pull/34732) is still open. On November 9
+its author removed its code for Chrome versions before 157, after a maintainer asked; we tested
+the pull request at `b28067fa`, before that change.
+
+The pages, records, screenshots and scores are in
+[`reproduce/pages-playcanvas-2.24.0/`](reproduce/pages-playcanvas-2.24.0/) and
+[`reproduce/results/playcanvas-2.24.0/`](reproduce/results/playcanvas-2.24.0/). The November 3
+update and the rest of this note follow unchanged.
+
 ## Update, 3 November 2026
 
 **Google promoted Chrome 157 to Stable today, and the old names have not come back.** Its
