@@ -1,4 +1,4 @@
-# Reproduce: the Julia Lean-model bug batch, first three and a half days and 14 days on
+# Reproduce: the Julia Lean-model bug batch, first three and a half days and first 14 days
 
 This folder holds the scripts, the rules we fixed before counting, the summary output and our hand labels behind the
 note. It does not hold the raw GitHub responses or the per-item table, which carry every author's login; the fetch

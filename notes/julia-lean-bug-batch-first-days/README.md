@@ -15,13 +15,13 @@ requests from the batch account, 82 of them opened in 42 minutes on October 27.
 
 We read every one of those 188 items on October 28 at 12:03 UTC, 33 hours after the pull requests
 arrived, and compared them with ordinary outside contributions to the same repository. We read
-them again on November 11, 14 days after the pull requests arrived.
+them again on November 11 and counted what happened to each one in its first 14 days.
 
-## November 11 update: 14 days on
+## November 11 update: the first 14 days
 
 On October 28 one maintainer had merged most of the fixes. That did not last. We read the same
 188 items again on November 11 at 12:00 UTC, with the same fetch script and the same outcome rules
-(how, below).
+(how, below). Each item counts what happened in its first 14 days after it was opened.
 
 - **Pull requests:** 55 of the 83 were accepted (66%; 95% interval 56 to 76): 54 merged, and 1
   closed after a linked pull request was merged. The same 2 as on October 28 were closed without
@@ -31,18 +31,19 @@ On October 28 one maintainer had merged most of the fixes. That did not last. We
   24 of the 54, a second has merged 20, and four others merged 2 or 3 each.
 - **Issues:** 40 of the 105 were closed with a linked merged fix (38%; 95% interval 29 to 48), up
   from 17. One more is closed as a docstring problem, and 64 are still open.
-- **Who wrote those fixes:** each of the 40 issues links one merged pull request. The batch
-  account wrote 20 of them. The maintainer who had written 13 of the first 17 fixes is still at
-  13. Two other maintainers wrote 3 between them, and four other contributors wrote 1 each.
+- **Who wrote those fixes:** each of the 40 issues links one merged pull request; two pull
+  requests each fix two issues, so there are 38. Counted by issue, the batch account's pull
+  requests are the linked fix for 20 of the 40, and those of the maintainer who had 13 of the
+  first 17 are still the fix for 13. Two other maintainers' pull requests fix 3 issues between
+  them, and four other contributors' fix 1 each.
 - **Disputes:** we did not read the comments by hand again, so we give no new dispute count. Of
   the 5 disputes counted on October 28, 2 were closed without being accepted, 1 was fixed later
   ([#64154](https://github.com/JuliaLang/julia/issues/64154), closed on October 31 by a merged
   pull request from the author's later items) and 2 are still open.
 - **Later items:** from October 28 to November 9 the batch account filed 46 more items (37 pull
-  requests, 9 issues). They came a few at a time, not as a second burst, and several pull requests
-  bundle many fixes, such as "arrays: fix 11 functions that assume indices start at 1"
-  ([#64528](https://github.com/JuliaLang/julia/pull/64528)). None was 14 days old at our read, so
-  they are not in the counts above.
+  requests, 9 issues). Several of the pull requests bundle many fixes, such as "arrays: fix 11
+  functions that assume indices start at 1" ([#64528](https://github.com/JuliaLang/julia/pull/64528)).
+  None was 14 days old at our read, so they are not in the counts above.
 
 A merge is still not proof that a fix is correct, and most of the issues are still open. Our
 planned comparison with other outside contributors was the 24-hour one below, and its result
