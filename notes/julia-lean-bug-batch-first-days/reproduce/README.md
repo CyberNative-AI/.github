@@ -1,4 +1,4 @@
-# Reproduce: the Julia Lean-model bug batch, first three and a half days
+# Reproduce: the Julia Lean-model bug batch, first three and a half days and 14 days on
 
 This folder holds the scripts, the rules we fixed before counting, the summary output and our hand labels behind the
 note. It does not hold the raw GitHub responses or the per-item table, which carry every author's login; the fetch
@@ -9,6 +9,7 @@ script rebuilds them from GitHub's public API.
   ruling), `test_rules.py` (11 fixtures for the outcome rules), `handread_fetch.py` and `handread_sample.py` (fetch the
   comments we read by hand).
 - `out/results-public.json`: the output of `compute.py` for our read at 2026-10-28T12:03:06Z, logins replaced (below).
+- `src/h14_read.py` and `out/h14-public.json`: the 14-day read of November 11 (below).
 - `data/handread-public.tsv`: one row per hand-labelled item, with the quote or event that decides the label, logins
   replaced (below).
 
@@ -38,12 +39,30 @@ for closed items; NOT_A_BUG_OPEN, APPROACH_DOUBT_OPEN, CONFIRMED_OPEN, CONTEXT_O
 commented on. The note's 5 disputes are the NOT_A_BUG and NOT_A_BUG_OPEN rows for the batch (set F). The labelling was
 not blind.
 
+## The 14-day read (November 11)
+
+`h14_read.py` was written on 2026-11-11, after the rules were fixed. It needs two fetches: the 10-28 one, which defines
+the 188 batch items, and one at the 14-day read time. `fetch.py` reads timelines only for items closed within 72 hours,
+so `h14_read.py` reads the timelines of batch items closed later (25 at our read) into the same `raw/` folder, then
+applies `compute.py`'s outcome rules unchanged at 14 days (336 hours) and writes `out/h14.json`.
+
+```sh
+python3 -I src/fetch.py run14 --read-time 2026-11-11T12:00:00Z     # -> run14/raw/*, run14/data/items.jsonl
+python3 -I src/h14_read.py run14 run                                # run = the 10-28 fetch above; -> run14/out/h14.json
+```
+
+`F1` is the 188 items seen at the 10-28 read; `F2` is the batch account's later items, none 14 days old at our read, so
+they have states but no 14-day outcomes. `O_prior_raw_h14_context_only` gives other outside pull requests' merges
+within 14 days. We did not plan a 14-day comparison before counting and do not draw one from it.
+
 ## Logins
 
 The two files in `out/` and `data/` replace every GitHub login except the batch author's two accounts
 (`MilesCranmer`, `MilesCranmerBot`). `maintainer A` to `maintainer D` are the four people who merged batch pull
 requests within 24 hours, by number of merges (A merged most); `person 1` to `person 16` are everyone else, in order of
-first appearance in the hand labels. Everything else is unchanged. Running the scripts gives the logins.
+first appearance in the hand labels. In `out/h14-public.json` the same people keep the same labels, and people who
+appear only there are `person 17` to `person 23`, in order of first appearance in that file. Everything else is
+unchanged. Running the scripts gives the logins.
 
 ## Differences from our internal copies
 
@@ -57,6 +76,8 @@ first appearance in the hand labels. Everything else is unchanged. Running the s
   transport errors (dropped connections), no change to queries or rules.
 - `src/compute.py`: first docstring line only. On our saved data it writes `results.json` byte for byte as our internal
   copy does.
+- `src/h14_read.py`: the first docstring line drops our internal experiment number, and the usage lines describe the two
+  fetches by read time instead of by our run folder names.
 - The other scripts are unchanged.
 
 `SHA256SUMS` lists every file in this folder.

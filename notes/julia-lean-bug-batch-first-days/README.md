@@ -1,4 +1,4 @@
-# A Lean model of Julia Base reported hundreds of bugs. In three and a half days, about 33 were fixed, most of them by one maintainer (October 28)
+# A Lean model of Julia Base reported hundreds of bugs. After 14 days, 54 of its 83 fix PRs had been merged, by six maintainers (October 28, updated November 11)
 
 Miles Cranmer, a Julia developer, used AI coding agents to model parts of Julia Base, the
 language's core library, in Lean 4, a proof assistant, and to prove or refute the properties its
@@ -14,7 +14,47 @@ you make simple fixes like this a PR instead of an issue?"
 requests from the batch account, 82 of them opened in 42 minutes on October 27.
 
 We read every one of those 188 items on October 28 at 12:03 UTC, 33 hours after the pull requests
-arrived, and compared them with ordinary outside contributions to the same repository.
+arrived, and compared them with ordinary outside contributions to the same repository. We read
+them again on November 11, 14 days after the pull requests arrived.
+
+## November 11 update: 14 days on
+
+On October 28 one maintainer had merged most of the fixes. That did not last. We read the same
+188 items again on November 11 at 12:00 UTC, with the same fetch script and the same outcome rules
+(how, below).
+
+- **Pull requests:** 55 of the 83 were accepted (66%; 95% interval 56 to 76): 54 merged, and 1
+  closed after a linked pull request was merged. The same 2 as on October 28 were closed without
+  being accepted; 26 are still open. Of the 76 that meet the small-PR rule at this read (three grew
+  past it during review), 49 were accepted.
+- **Who merged them:** six maintainers. The one who had merged 16 of the first 20 has now merged
+  24 of the 54, a second has merged 20, and four others merged 2 or 3 each.
+- **Issues:** 40 of the 105 were closed with a linked merged fix (38%; 95% interval 29 to 48), up
+  from 17. One more is closed as a docstring problem, and 64 are still open.
+- **Who wrote those fixes:** each of the 40 issues links one merged pull request. The batch
+  account wrote 20 of them. The maintainer who had written 13 of the first 17 fixes is still at
+  13. Two other maintainers wrote 3 between them, and four other contributors wrote 1 each.
+- **Disputes:** we did not read the comments by hand again, so we give no new dispute count. Of
+  the 5 disputes counted on October 28, 2 were closed without being accepted, 1 was fixed later
+  ([#64154](https://github.com/JuliaLang/julia/issues/64154), closed on October 31 by a merged
+  pull request from the author's later items) and 2 are still open.
+- **Later items:** from October 28 to November 9 the batch account filed 46 more items (37 pull
+  requests, 9 issues). They came a few at a time, not as a second burst, and several pull requests
+  bundle many fixes, such as "arrays: fix 11 functions that assume indices start at 1"
+  ([#64528](https://github.com/JuliaLang/julia/pull/64528)). None was 14 days old at our read, so
+  they are not in the counts above.
+
+A merge is still not proof that a fix is correct, and most of the issues are still open. Our
+planned comparison with other outside contributors was the 24-hour one below, and its result
+stands. We did not set a 14-day comparison before counting, so we do not make one.
+
+How we counted: `fetch.py` reads timelines only for items closed within 72 hours. A new script,
+`h14_read.py`, written on November 11 after the rules were fixed, reads the 25 timelines still
+missing for batch items closed later, then applies the unchanged outcome rules at 14 days. Its
+output, with logins replaced, is
+[`reproduce/out/h14-public.json`](reproduce/out/h14-public.json).
+
+## October 28: the first 33 hours
 
 **Few reports were disputed.** Of about 52 items a maintainer had acted on (merged, closed, or commented
 on while open), 5 were disputed as not bugs, one of them by the author, who called it a
@@ -91,8 +131,8 @@ merges, 4 of 78 small batch PRs (5.1%) were accepted within 24 hours.
 ## What this does not show
 
 - Whether the merged fixes are correct. A merge is a maintainer's decision, not a proof.
-- The final outcome. Most items are under four days old. We will read them again on November 11,
-  14 days after the burst, with the same scripts, and add the result here.
+- The final outcome. On October 28 most items were under four days old. At 14 days, 26 of the 83
+  pull requests and 64 of the 105 issues were still open (November 11 update, above).
 - Anything about other projects. This is one repository and one batch, chosen and filtered by
   its author.
 - The burst PRs are not independent: one person merging many in one sitting moves the whole
@@ -117,7 +157,8 @@ Logins other than the author's are replaced by role labels; the scripts rebuild 
 from GitHub. See [`reproduce/README.md`](reproduce/README.md).
 
 We ran this once on our own machine, and recounted the headline numbers from the saved API
-responses with a separately written script. Nobody outside the company has
+responses with a separately written script. For the November 11 read we reran `h14_read.py` on the
+saved responses without network access and got the same output. Nobody outside the company has
 reproduced it.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:

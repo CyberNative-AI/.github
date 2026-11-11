@@ -1,0 +1,581 @@
+{
+ "F1": {
+  "issue": {
+   "accepted_h14_wilson": [
+    0.38095238095238093,
+    0.293823651390926,
+    0.4764847600987984
+   ],
+   "ineligible_h14": 0,
+   "n_eligible_h14": 105,
+   "n_total": 105,
+   "outcomes_h14": {
+    "ACCEPTED": 40,
+    "COMPLETED_NOFIX": 1,
+    "OPEN": 64
+   },
+   "raw_h14": {
+    "COMPLETED": 41,
+    "NOT": 64
+   },
+   "state_at_read": {
+    "closed:completed": 42,
+    "open:None": 63
+   }
+  },
+  "issue_fix_pr_authors_h14": {
+   "maintainer D": 2,
+   "person 12": 1,
+   "MilesCranmerBot": 20,
+   "person 17": 1,
+   "maintainer A": 13,
+   "person 18": 1,
+   "person 19": 1,
+   "person 20": 1
+  },
+  "mergers_at_read": {
+   "maintainer D": 20,
+   "person 21": 3,
+   "person 12": 2,
+   "maintainer A": 24,
+   "maintainer C": 3,
+   "maintainer B": 2
+  },
+  "pr": {
+   "accepted_h14_wilson": [
+    0.6626506024096386,
+    0.5557524399753323,
+    0.7551584598699032
+   ],
+   "ineligible_h14": 0,
+   "n_eligible_h14": 83,
+   "n_total": 83,
+   "outcomes_h14": {
+    "ACCEPTED": 55,
+    "CLOSED_UNACCEPTED": 2,
+    "OPEN": 26
+   },
+   "raw_h14": {
+    "MERGED": 54,
+    "NOT": 29
+   },
+   "state_at_read": {
+    "closed:None": 3,
+    "merged": 54,
+    "open:None": 26
+   }
+  },
+  "pr_small": {
+   "accepted_h14_wilson": [
+    0.6447368421052632,
+    0.5325617632032839,
+    0.742983817045609
+   ],
+   "ineligible_h14": 0,
+   "n_eligible_h14": 76,
+   "n_total": 76,
+   "outcomes_h14": {
+    "ACCEPTED": 49,
+    "CLOSED_UNACCEPTED": 2,
+    "OPEN": 25
+   },
+   "raw_h14": {
+    "MERGED": 48,
+    "NOT": 28
+   },
+   "state_at_read": {
+    "closed:None": 3,
+    "merged": 48,
+    "open:None": 25
+   }
+  }
+ },
+ "F1_missing_from_run3": [],
+ "F2": {
+  "issue": {
+   "accepted_h14_wilson": [
+    null,
+    null,
+    null
+   ],
+   "ineligible_h14": 9,
+   "n_eligible_h14": 0,
+   "n_total": 9,
+   "outcomes_h14": {},
+   "raw_h14": {},
+   "state_at_read": {
+    "closed:completed": 2,
+    "open:None": 6,
+    "open:reopened": 1
+   }
+  },
+  "issue_fix_pr_authors_h14": {},
+  "mergers_at_read": {
+   "maintainer D": 6,
+   "person 21": 3,
+   "person 22": 1,
+   "person 12": 5,
+   "person 13": 1,
+   "maintainer A": 4,
+   "person 23": 1,
+   "maintainer C": 1,
+   "person 2": 1
+  },
+  "pr": {
+   "accepted_h14_wilson": [
+    null,
+    null,
+    null
+   ],
+   "ineligible_h14": 37,
+   "n_eligible_h14": 0,
+   "n_total": 37,
+   "outcomes_h14": {},
+   "raw_h14": {},
+   "state_at_read": {
+    "merged": 23,
+    "open:None": 14
+   }
+  },
+  "pr_small": {
+   "accepted_h14_wilson": [
+    null,
+    null,
+    null
+   ],
+   "ineligible_h14": 18,
+   "n_eligible_h14": 0,
+   "n_total": 18,
+   "outcomes_h14": {},
+   "raw_h14": {},
+   "state_at_read": {
+    "merged": 13,
+    "open:None": 5
+   }
+  }
+ },
+ "F2_items": [
+  {
+   "created_at": "2026-10-28T20:23:54Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64432,
+   "state": "closed",
+   "title": "Fix `allunique`/`allequal`, `IdSet` element types, and weak dict bugs"
+  },
+  {
+   "created_at": "2026-10-28T20:59:01Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64433,
+   "state": "open",
+   "title": "arrays: `cat` with an offset axis returns misplaced values or uninitialized memory"
+  },
+  {
+   "created_at": "2026-10-29T00:24:31Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64437,
+   "state": "open",
+   "title": "ranges: broadcasting can change the numerical result for a `LinRange`"
+  },
+  {
+   "created_at": "2026-10-29T00:33:36Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64438,
+   "state": "closed",
+   "title": "show: stop treating the `f` in `Inf` as a Float32 exponent in `alignment`"
+  },
+  {
+   "created_at": "2026-10-29T00:45:22Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64439,
+   "state": "closed",
+   "title": "dict: print `\u2026` in limited `show` only when entries are left out"
+  },
+  {
+   "created_at": "2026-10-29T00:58:19Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64440,
+   "state": "open",
+   "title": "integers: `div`, `fld` and `cld` return an unsigned result when dividing an unsigned integer by a wider signed integer"
+  },
+  {
+   "created_at": "2026-10-29T02:05:17Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64442,
+   "state": "open",
+   "title": "bitset: ignore duplicates in `symdiff!(::BitSet, itr)`"
+  },
+  {
+   "created_at": "2026-10-29T10:46:47Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64450,
+   "state": "closed",
+   "title": "ranges: compare lengths in `==` for zero-step `StepRangeLen`"
+  },
+  {
+   "created_at": "2026-10-29T11:23:54Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64452,
+   "state": "closed",
+   "title": "ranges: allow `reverse` of a `StepRangeLen` with an unsigned step"
+  },
+  {
+   "created_at": "2026-10-29T11:23:57Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64453,
+   "state": "closed",
+   "title": "ranges: `findall(in(span), r)` returns invalid indices when endpoint differences overflow"
+  },
+  {
+   "created_at": "2026-10-29T13:26:23Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64455,
+   "state": "closed",
+   "title": "Markdown: don't count the blank line ending a list towards `List.loose`"
+  },
+  {
+   "created_at": "2026-10-29T14:02:43Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64457,
+   "state": "open",
+   "title": "regex, Unicode: fix wrong results and errors on edge-case patterns and strings"
+  },
+  {
+   "created_at": "2026-10-29T14:03:03Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64458,
+   "state": "open",
+   "title": "file, shell: fix dangling symlink checks and command escaping and parsing edge cases"
+  },
+  {
+   "created_at": "2026-10-29T14:03:24Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64459,
+   "state": "open",
+   "title": "loading: fix edge cases in environment, depot and artifact path lookup"
+  },
+  {
+   "created_at": "2026-10-29T14:03:44Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64460,
+   "state": "open",
+   "title": "Sockets: reject malformed IPv6 addresses and accept `BigInt` hosts"
+  },
+  {
+   "created_at": "2026-10-29T14:04:05Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64461,
+   "state": "closed",
+   "title": "TOML: reject signed dates and illegal additions to existing tables"
+  },
+  {
+   "created_at": "2026-10-29T14:04:26Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64462,
+   "state": "open",
+   "title": "IO: fix small bugs in Base64 decoding, `crc32c`, `copyline`, `getpass` and `dlopen`"
+  },
+  {
+   "created_at": "2026-10-29T14:04:48Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64463,
+   "state": "closed",
+   "title": "Markdown, Printf: fix list markers, empty code spans and negative precision"
+  },
+  {
+   "created_at": "2026-10-29T14:05:08Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64464,
+   "state": "closed",
+   "title": "UUIDs, Random: fix string handling in `uuid5` and `rand`"
+  },
+  {
+   "created_at": "2026-10-29T14:05:29Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64465,
+   "state": "open",
+   "title": "Base: fix string-handling edge cases in logging, `SubString` and `VersionNumber`"
+  },
+  {
+   "created_at": "2026-10-29T14:05:49Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64466,
+   "state": "closed",
+   "title": "asyncmap, namedtuple: reject invalid `ntasks` results and non-`Int` integer keys"
+  },
+  {
+   "created_at": "2026-10-30T15:17:21Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64482,
+   "state": "closed",
+   "title": "tuple: fix `NTuple{N}(A)` throwing for multidimensional arrays of length `N`"
+  },
+  {
+   "created_at": "2026-10-30T15:17:30Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64483,
+   "state": "open",
+   "title": "sort: fix `sort` and `sort!` throwing on empty arrays with `dims`"
+  },
+  {
+   "created_at": "2026-10-30T15:56:22Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64490,
+   "state": "closed",
+   "title": "docs: fix docstring signatures of methods with `where` type parameters"
+  },
+  {
+   "created_at": "2026-10-31T02:13:23Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64501,
+   "state": "closed",
+   "title": "intfuncs: fix `lcm` of a one-element array returning a negative value"
+  },
+  {
+   "created_at": "2026-10-31T04:17:24Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64504,
+   "state": "closed",
+   "title": "sort: make `insorted` on a range agree with `searchsorted`"
+  },
+  {
+   "created_at": "2026-10-31T16:17:30Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64523,
+   "state": "closed",
+   "title": "rational: fix directed rounding of a `Rational` to a float type"
+  },
+  {
+   "created_at": "2026-10-31T16:17:35Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64524,
+   "state": "open",
+   "title": "regex: `replace` skips an empty match right after a non-empty match"
+  },
+  {
+   "created_at": "2026-10-31T19:40:02Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64528,
+   "state": "closed",
+   "title": "arrays: fix 11 functions that assume indices start at 1"
+  },
+  {
+   "created_at": "2026-11-02T08:35:32Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64575,
+   "state": "open",
+   "title": "rational: order signed zero in `cmp` between floats and rationals"
+  },
+  {
+   "created_at": "2026-11-02T23:57:22Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64598,
+   "state": "open",
+   "title": "Dates: keep month and year ranges from passing their stop"
+  },
+  {
+   "created_at": "2026-11-03T14:11:46Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64614,
+   "state": "closed",
+   "title": "show: space the range `:` when an operand prints with a leading `:`"
+  },
+  {
+   "created_at": "2026-11-03T14:22:02Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64615,
+   "state": "closed",
+   "title": "show: fix 8 bugs in printing operators and operands in `Expr`"
+  },
+  {
+   "created_at": "2026-11-03T19:14:59Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64624,
+   "state": "open",
+   "title": "numbers: fix 7 bugs in rounding, integer arithmetic and digit extraction"
+  },
+  {
+   "created_at": "2026-11-05T20:12:39Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64693,
+   "state": "closed",
+   "title": "iobuffer: fix buffer overflow from a negative `maxsize`"
+  },
+  {
+   "created_at": "2026-11-06T00:46:59Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64697,
+   "state": "closed",
+   "title": "arrays: fix 2 bugs in appending and iterators"
+  },
+  {
+   "created_at": "2026-11-06T02:29:52Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64699,
+   "state": "closed",
+   "title": "abstractarray: fix order of operations that leaves `mapslices` output uninitialized"
+  },
+  {
+   "created_at": "2026-11-07T20:15:52Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64767,
+   "state": "open",
+   "title": "1.14 regression: `sizeof` returns 8 for `Type{T}` types"
+  },
+  {
+   "created_at": "2026-11-08T02:51:36Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64772,
+   "state": "open",
+   "title": "permuteddimsarray: copy in linear order in `copyto!` for differently shaped sources"
+  },
+  {
+   "created_at": "2026-11-08T03:08:05Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64773,
+   "state": "closed",
+   "title": "indices: promote `CartesianIndices` and `LinearIndices` with mixed axis types"
+  },
+  {
+   "created_at": "2026-11-08T03:48:08Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64774,
+   "state": "closed",
+   "title": "complex: `muladd` with a real addend does not promote the imaginary part"
+  },
+  {
+   "created_at": "2026-11-08T04:50:14Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64775,
+   "state": "open",
+   "title": "strings: print chars above U+10FFFF as `\\x` bytes in `show` and `escape_string`"
+  },
+  {
+   "created_at": "2026-11-08T07:05:04Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64779,
+   "state": "open",
+   "title": "datatype: `VecElement` tuples over 32 KiB get alignment 0"
+  },
+  {
+   "created_at": "2026-11-08T18:02:22Z",
+   "is_pr": false,
+   "login": "MilesCranmerBot",
+   "number": 64790,
+   "state": "open",
+   "title": "codegen: GC frees a field of an `unsafe_load` result at `-O2` but not `-O0`"
+  },
+  {
+   "created_at": "2026-11-08T18:33:50Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64791,
+   "state": "closed",
+   "title": "lock: mark a `OncePerThread` slot as failed when its result cannot be converted"
+  },
+  {
+   "created_at": "2026-11-09T00:41:07Z",
+   "is_pr": true,
+   "login": "MilesCranmerBot",
+   "number": 64798,
+   "state": "open",
+   "title": "ranges: make `in` and `searchsortedfirst`/`searchsortedlast` agree with indexing for `LinRange`"
+  }
+ ],
+ "O_prior_raw_h14_context_only": {
+  "O_prior_pr": {
+   "merged_rate_wilson": [
+    0.5177865612648221,
+    0.45640908235056277,
+    0.5786319701892128
+   ],
+   "raw_h14": {
+    "MERGED": 131,
+    "NOT": 122
+   }
+  },
+  "O_small_prior_pr": {
+   "merged_rate_wilson": [
+    0.5131578947368421,
+    0.4028849903549509,
+    0.622164607849494
+   ],
+   "raw_h14": {
+    "MERGED": 39,
+    "NOT": 37
+   }
+  }
+ },
+ "extra_calls": 25,
+ "extra_timelines": [
+  64129,
+  64132,
+  64141,
+  64143,
+  64149,
+  64150,
+  64151,
+  64154,
+  64155,
+  64166,
+  64170,
+  64172,
+  64176,
+  64178,
+  64190,
+  64195,
+  64196,
+  64198,
+  64200,
+  64202,
+  64224,
+  64235,
+  64236,
+  64272,
+  64316
+ ],
+ "horizon_h": 336,
+ "read_time": "2026-11-11T12:00:00Z"
+}
