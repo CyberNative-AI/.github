@@ -1,5 +1,18 @@
 # Home Assistant 2026.11: what still breaks after the maintainers' outreach
 
+> **Update, November 11.** hasl-sensor release
+> [4.0.1](https://github.com/hasl-sensor/integration/releases/tag/4.0.1) (November 8) includes a
+> contributor's fix
+> ([merge commit 9f1d1c4](https://github.com/hasl-sensor/integration/commit/9f1d1c41ce4d40074e193b065b550f1c4c0e4a12)):
+> all three `.copy()` calls now use `dataclasses.replace`. If you use hasl-sensor, update it to
+> 4.0.1 when you upgrade Home Assistant to 2026.11, not before. On 2026.10 and earlier,
+> `DeviceInfo` is a plain dictionary, and `dataclasses.replace` fails on a dictionary, so 4.0.1
+> should fail there the way 4.0.0 fails on 2026.11; HACS still offers it on any release from 2024.4.
+> Zendure-HA and bravia-quad still have the cited `last_states` code at HEAD. Home Assistant
+> 2026.11.0 (November 4) and 2026.11.1 (November 9) add no compatibility shim: both releases have
+> the same restore-state and device-registry source as the 2026.11.0b4 beta. We read the release
+> source; we have not run hasl-sensor on any Home Assistant version.
+
 > **Update, November 4.** The 2026.11.0b4 beta (November 3) still adds no compatibility shim
 > for either change. Three listed integrations have shipped fixes since October 28: FordPass
 > in release 2026.10.8 (October 29), whose guard now calls `async_get_stored_state(entity_id)`
@@ -8,7 +21,7 @@
 > 2.1.1 (November 2). **2 notified integrations remain unfixed at HEAD: Zendure-HA and
 > bravia-quad.** The other nine un-notified integrations still have the cited code at HEAD;
 > for hasl-sensor, a contributor's fix for all three calls
-> ([PR #97](https://github.com/hasl-sensor/integration/pull/97)) is open and not merged. We
+> (PR #97) is open and not merged. We
 > read this from source files; we have not run `check.py` on the beta.
 
 > **Update, October 28.** The 2026.11.0b0 beta source adds no compatibility shim for
@@ -57,7 +70,7 @@ If you use one of the integrations below, check for an update before you install
 | [EiS94/db_info](https://github.com/EiS94/db_info) | reads `last_states` inside a broad `except`; the coordinator cannot seed stored time settings before its first refresh. The switch and datetime entities have their own later restore paths. | 345 | [`custom_components/db_info/coordinator.py:74`](https://github.com/EiS94/db_info/blob/2cfcb01e92f93e33e156e25dda8a639c679d7276/custom_components/db_info/coordinator.py#L74) |
 | [Ediminator/homematicip-hcu](https://github.com/Ediminator/homematicip-hcu) | `.copy()` on a `DeviceInfo`; fails for renamed alarm-switching groups (default branch, not release 2.3.0) | 338 | [`custom_components/hcu_integration/select.py:128`](https://github.com/Ediminator/homematicip-hcu/blob/ff9f9e09c4b4e74f117563d5563e6d9940b99137/custom_components/hcu_integration/select.py#L128) |
 | [joyfulhouse/eg4_web_monitor](https://github.com/joyfulhouse/eg4_web_monitor) | an empty `DeviceInfo()` is now truthy; if the parent is not registered, unlinked device info is cached for the current update cycle. Later device-registry re-linking was not tested. | 270 | [`custom_components/eg4_web_monitor/coordinator_mixins.py:4212`](https://github.com/joyfulhouse/eg4_web_monitor/blob/713b44651be77df8f2426409ba5ca5e74a7c3d2a/custom_components/eg4_web_monitor/coordinator_mixins.py#L4212) |
-| [hasl-sensor/integration](https://github.com/hasl-sensor/integration) | `.copy()` on a module `DeviceInfo` constant, called while the integration sets up; setup fails, so no sensors load (November 4: unfixed at HEAD; a contributor's fix, PR #97, is open) | 160 | [`custom_components/hasl3/sensors/departure.py:135`](https://github.com/hasl-sensor/integration/blob/87b88276490c7a5abab7f092fdffd515a04c4c4b/custom_components/hasl3/sensors/departure.py#L135) |
+| [hasl-sensor/integration](https://github.com/hasl-sensor/integration) | `.copy()` on a module `DeviceInfo` constant, called while the integration sets up; setup fails, so no sensors load (November 4: unfixed at HEAD; a contributor's fix, PR #97, is open. November 11: fixed in release 4.0.1, which needs 2026.11) | 160 | [`custom_components/hasl3/sensors/departure.py:135`](https://github.com/hasl-sensor/integration/blob/87b88276490c7a5abab7f092fdffd515a04c4c4b/custom_components/hasl3/sensors/departure.py#L135) |
 | [gorfo66/flashbird-homeassistant](https://github.com/gorfo66/flashbird-homeassistant) | `.update(name=...)` on a `DeviceInfo` raises `TypeError`, so device info for the lock, tracker and sensors fails. The migration post says `.update()` still works; that holds for `.update({...})`, not for keyword arguments. | 10 | [`custom_components/flashbird/helpers/device_info.py:28`](https://github.com/gorfo66/flashbird-homeassistant/blob/6244ac3b24da57c4017073cf900c723ad2cc625b/custom_components/flashbird/helpers/device_info.py#L28) |
 | [jharris4/molight](https://github.com/jharris4/molight) | reads `last_states`; fails when an entity is renamed | not reported | [`custom_components/molight/helpers.py:170`](https://github.com/jharris4/molight/blob/14740919a3ddf817be30e624d43c552941580889/custom_components/molight/helpers.py#L170) |
 | [jyourstone/energy_manager](https://github.com/jyourstone/energy_manager) | reads `last_states` inside an `except`; coordinator values fall back to defaults during initialization. `RestoreNumber` entities can restore them later. | not reported | [`custom_components/energy_manager/coordinator.py:600`](https://github.com/jyourstone/energy_manager/blob/6a9c7b016f5b1fd331bde3fde3ba6f55d0050c99/custom_components/energy_manager/coordinator.py#L600) |
