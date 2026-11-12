@@ -27,6 +27,32 @@ on 157. On October 23 we found no fix, issue or pull request for PlayCanvas, Bab
 that mentions the new names. For Babylon.js 9.32.0 there is a workaround in your own code:
 calling the texture's `update()` yourself brought it back on 157 in our test (below).
 
+## Update, 12 November 2026
+
+**PixiJS 8.23.0, released November 11, fixes this.** Its release notes list pull request
+[#12341](https://github.com/pixijs/pixijs/pull/12341), "support Chrome 155+ HTML-in-Canvas API",
+the fix for [our report](https://github.com/pixijs/pixijs/issues/12340). We ran our four PixiJS
+pages on it, two loads each, on Chrome for Testing 157.0.8103.15, 157.0.8103.38 (the Linux Stable
+build from November 3) and 158.0.8119.0. The HTML texture rendered with WebGL and with WebGPU,
+with the element directly inside the canvas and nested one level, with nothing logged. PixiJS
+marks the canvas `content="drawable"` itself, so these pages needed no markup change. PixiJS
+8.22.0 on the same browsers stayed blank and threw its "is not available" error.
+
+On Chrome 156 with the feature turned on, three of the four 8.23.0 pages rendered. The nested
+WebGPU page threw "Only immediate children of the <canvas> element can be passed to
+drawElementImageToTexture", the Chrome 156 limit that PixiJS's release notes describe.
+
+**Three of the four engines now have a stable release that drew an HTML texture on Chrome 157 in
+our test: Babylon.js (since 9.33.0), PlayCanvas (since 2.24.0, with the new markup) and PixiJS
+(8.23.0).** PlayCanvas 2.24.1 and Babylon.js 9.36.0, both released November 12, still contain the
+new names; we read their builds but did not run them. three.js 0.187.0 is still the latest three.js
+release, and pull request [#34732](https://github.com/mrdoob/three.js/pull/34732) is still open.
+
+The records, screenshots and scores are in
+[`reproduce/results/pixijs-8.23.0/`](reproduce/results/pixijs-8.23.0/); the pages are the ones in
+[`reproduce/pages-pixijs-dev/`](reproduce/pages-pixijs-dev/). The November 10 update and the rest
+of this note follow unchanged.
+
 ## Update, 10 November 2026
 
 **PlayCanvas 2.24.0, released November 9, fixes this, but only on pages that also change their

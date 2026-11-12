@@ -41,6 +41,11 @@ Everything behind the note's tables, as it ran on October 23.
   accepts a device scale factor; at its default of 1 it does what `run.mjs` here does, and its
   records carry an extra `dpr` field. The same run also covered a scale factor of 2 and a
   four-colour version of each page; those cells agreed with these and are not included.
+- `results/pixijs-8.23.0/`: the November 12 run of PixiJS 8.23.0, the first release with the
+  fix, on the pages in `pages-pixijs-dev/`, unchanged, with `PX` from `pages/` and `PXGPU`
+  (8.22.0) as controls. The arm `C157S` is Chrome for Testing 157.0.8103.38. As in the November
+  10 run, the runner accepted a device scale factor, here left at 1, and the records carry a
+  `dpr` field.
 - `census/`: `census_summary.json` (counts by class), `old-names-only.json` (the 143
   repositories and their matched files), `head_recheck.jsonl` (the named repositories' matched
   files re-read at their default branch on October 23). The counts come from the text of the
@@ -100,6 +105,12 @@ then `node /work/src/run.mjs /bin-cft/157.0.8103.38/chrome-linux64/chrome C157S 
 `python3 score.py results/playcanvas-2.24.0 > results/playcanvas-2.24.0/score.json` prints its table from our
 records and regenerates our `score.json` byte for byte. The table has no column for the 157.0.8103.38 arm
 (`C157S`); its cells are in `score.json`.
+For the November 12 PixiJS run, set up `pages/` as for the October 30 PixiJS run, unpack
+`pixi.js-8.23.0` as `assets/pixi.js-pr12341/package/`, and run
+`ARMS="C156 C156OT C157 C158" sh /work/src/run_all.sh 2 PX PXGPU PR PRGPU PRN PRGPUN`,
+then `node /work/src/run.mjs /bin-cft/157.0.8103.38/chrome-linux64/chrome C157S /work/pages /assets /out 2 PX PXGPU PR PRGPU PRN PRGPUN`.
+`python3 score.py results/pixijs-8.23.0 > results/pixijs-8.23.0/score.json` prints its table from our
+records and regenerates our `score.json` byte for byte; the `C157S` cells are in `score.json`.
 After the run we changed only comments and descriptions: the source and license notices at the
 top of the adapted pages, the first line of `probe.js`, `run.mjs`, `run_all.sh` and `score.py`,
 and the census list's file name and `note` text.
