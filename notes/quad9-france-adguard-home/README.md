@@ -1,5 +1,15 @@
 # Quad9 leaves France on November 24: a default AdGuard Home install stops resolving (tested October 22)
 
+**Update, November 12, 2026:** On November 10 AdGuard
+[changed the default upstream and bootstrap servers from Quad9 to Cloudflare DNS](https://github.com/AdguardTeam/AdGuardHome/commit/3cac53a48e9fd573c09e3088207c192e8f75b5cf)
+in its development source and closed [#8686](https://github.com/AdguardTeam/AdGuardHome/issues/8686),
+a request to do so. No release had the change on November 12 (the latest were v0.107.80
+and v1.0.0-b.2). In that source the new defaults are used only when no servers are set, so an
+install that already has the wizard's Quad9 settings keeps them after it updates. AdGuard's
+changelog entry for the change recommends that people in France who have not changed their
+upstream and bootstrap (and possibly fallback) addresses do so. We read this in the source and did not test the
+development build. The check and fix below still apply.
+
 On October 22 Quad9 [announced](https://quad9.net/news/blog/au-revoir-france/) that it will
 "withdraw Quad9 services from France as of Tuesday, November 24." AdGuard Home's install wizard
 sets Quad9 as its only DNS server. If you run AdGuard Home in France and never changed its DNS
@@ -38,8 +48,8 @@ official Docker image at `/opt/adguardhome/conf/AdGuardHome.yaml`:
 grep -A6 -E '^  (upstream_dns|bootstrap_dns|fallback_dns):' AdGuardHome.yaml
 ```
 
-This is what the wizard of v0.107.79 writes (the source of v0.107.80 and of the development
-branch has the same defaults):
+This is what the wizard of v0.107.79 writes (the source of v0.107.80 has the same defaults; the
+development source changed them on November 10, see the update at the top):
 
 ```yaml
   upstream_dns:
@@ -143,6 +153,11 @@ IP, le certificat du fournisseur doit couvrir cette adresse. Si vous modifiez le
 arrêtez AdGuard Home avant de le modifier, puis démarrez-le. Dans l'interface web, enregistrez
 les paramètres puis redémarrez une fois et testez une résolution. Nous n'avons pas testé les
 listes mixtes, les exceptions par client ou domaine, ni les configurations `upstream_dns_file`.
+
+Mise à jour du 12 novembre 2026 : le 10 novembre, AdGuard a remplacé Quad9 par Cloudflare DNS
+dans les valeurs par défaut de sa version de développement, qui n'était pas encore publiée le
+12 novembre. D'après le code source, une installation qui a déjà les réglages Quad9 de
+l'assistant les garde après une mise à jour : vérifiez-les et changez-les avant le 24 novembre.
 
 ## Reproduce
 
