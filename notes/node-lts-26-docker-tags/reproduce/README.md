@@ -32,6 +32,11 @@ Docker Hub and the generator rerun at docker-node's newer commit.
 `read-20261105.md` has the commands and output for the November 5 read of the tag list,
 docker-node's merges and workflow trigger, and Docker Hub.
 
+## Live read, November 12
+
+`read-20261112.md` has the commands and output for the November 12 read of the tag list,
+the new generator rule, Docker Hub and Node's security-release flags.
+
 ## Check line
 
 `sh check-controls.sh` writes the 13 test files to a temporary folder and runs the note's

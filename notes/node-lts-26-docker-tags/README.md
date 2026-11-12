@@ -1,4 +1,4 @@
-# `node:lts` became Node 26 on October 28, and `node:latest` may stop updating after the next image change
+# `node:lts` became Node 26 on October 28; `node:latest` kept updating, `node:lts-krypton` did not
 
 On October 28, Node.js 26 entered long-term support, and the official Docker `node:lts`
 tags moved from Node 24 to Node 26. Node 26 images ship without Yarn and without Corepack.
@@ -9,10 +9,12 @@ say Corepack "is no longer distributed as of Node.js 25.0.0".
 
 We checked two things:
 
-1. **From October 29, the script that generates the official `node` tag list no longer
-   lists `latest`.** We ran it with the clock set to each date. Unless the maintainers
-   change it first, `FROM node` and `node:latest` would stop getting rebuilt once the list
-   is next generated. As of November 5 that has not happened; see the November 5 read below.
+1. **From October 29, the script that generated the official `node` tag list no longer
+   listed `latest`.** We ran it with the clock set to each date. docker-node replaced the
+   script on November 10, before the old script ran again, and the list generated on
+   November 11 still has `latest`; see the November 12 read below. One tag did drop out:
+   `node:lts-krypton` has not been rebuilt since October 28 and missed Node's November 11
+   security release. If you use it, change it to `node:24`.
 2. **Static rules flagged 44 of 243 active sampled repositories for potential build or
    runtime failure after the move: 43 with build-time patterns and one with only a runtime
    Yarn command.** The most common pattern is Corepack, not Yarn.
@@ -67,7 +69,7 @@ For pnpm, the build error lines, and installs checked in small projects with a c
 lockfile, see our guide:
 https://cybernative.ai/guides/corepack-yarn-pnpm-not-found-node-26-docker/
 
-## `latest` drops out of the generated tag list on October 29
+## The old generator dropped `latest` from October 29
 
 The official `node` images are built from a tag list that docker-node generates with
 [`stackbrew.js`](https://github.com/nodejs/docker-node/blob/84410eeaede25daf49826da8265fbf548cc604fe/stackbrew.js).
@@ -98,7 +100,8 @@ Until now there was always a newer major waiting for LTS. Under Node's new relea
 Node 27 starts as an alpha on October 28 and is not in docker-node's `versions.json`. After
 Node 26 reaches LTS, no version qualifies, so no image is tagged `latest`.
 
-What this means for `latest` on Docker Hub is our inference; it has not happened yet. Each merged
+What this would mean for `latest` on Docker Hub was our inference, and it did not happen (see
+the November 12 read). Each merged
 docker-node change to the images regenerates the list and opens a pull request to
 docker-library/official-images, which that project's maintainers review before it takes
 effect. Docker's
@@ -165,6 +168,32 @@ November 11. `node:lts-krypton` is no longer listed, so it will miss that securi
 it is added back to the supported list before then; use `node:24`. We will read the live tags
 again on November 12 and add a dated line here.
 The commands and their output are in [`reproduce/read-20261105.md`](reproduce/read-20261105.md).
+
+**November 12, 2026 read.** `node:latest` did not stop updating. On November 10 docker-node
+merged [pull request 2678](https://github.com/nodejs/docker-node/pull/2678), which adds Node 27
+alpha images and replaces `stackbrew.js` with `stackbrew.mjs`. The new script gives the
+"current" tags to the first version that is not an alpha and whose release has started
+([`stackbrew.mjs`, lines 50-54](https://github.com/nodejs/docker-node/blob/5a9b021cb0933ea46b8f07c341312ed61f1a1a01/stackbrew.mjs#L50-L54)):
+
+```js
+let isCurrent = foundCurrent
+  ? false
+  : !isAlpha && (isNaN(currentStart) || now >= currentStart);
+```
+
+So Node 26 keeps them after reaching LTS. The next list,
+[merged into official-images on November 11](https://github.com/docker-library/official-images/blob/d70e50e97426a7d3e9b6248c6dec8938b41bc9c3/library/node)
+with Node's security release (26.13.1, 24.22.3 and 22.23.5), still has `latest`, `current`,
+`slim`, `alpine` and the other 14 tags our run of the old script dropped, all on Node 26. It
+also adds six `27.0.0-alpha.0.0.0` tags. On Docker Hub, `node:latest`, `node:lts` and
+`node:26` are one image with Node 26.13.1, and `node:24` has Node 24.22.3. You do not need to
+pin `node:26` for this reason any more.
+
+`node:lts-krypton` is the one tag that stayed out of the list. It is still the October 28
+build with Node 24.22.1, so it did not get the November 11 security fixes. If you use it,
+change it to `node:24`. The commands and their output are in
+[`reproduce/read-20261112.md`](reproduce/read-20261112.md). This is our last read of the tag
+list for this note.
 
 ## Corepack is the most common flag
 
@@ -244,9 +273,10 @@ package-list tests with their raw output.
 
 ## Limits
 
-- For `latest`, the generator result is still what the script prints, not yet what Docker
-  Hub does. The maintainers can change the script or `versions.json` before the list is next
-  generated.
+- The `latest` result is what `stackbrew.js` printed at `84410eea` and `14b1d124`. docker-node
+  replaced that script on November 10, before it ran again, so its result never reached
+  Docker Hub. The Docker Hub effect of a dropped tag was seen for one tag only,
+  `node:lts-krypton`.
 - Code search sees default branches of public repositories only, and our search phrase misses
   `FROM --platform=…` and registry-prefixed forms. We cannot tell whether a Dockerfile is
   still built.
@@ -270,6 +300,10 @@ package-list tests with their raw output.
   seen reported" from the introduction and link the earlier nodejs/Release issue. The search
   line now also matches GitHub Actions `container:` entries, and the note links to our guide
   with tested pnpm lines. No count changed.
+- November 12, 2026: added the November 12 read. docker-node replaced its tag generator on
+  November 10, and the November 11 list still has `latest`, so the title and the first point
+  now say that `node:latest` kept updating and `node:lts-krypton` did not. The November 5
+  advice to pin `node:26` before November 11 is no longer needed. No count changed.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. We will publish dated corrections here.
