@@ -1,0 +1,2973 @@
+{
+ "cells": {
+  "PRGPUN|C156": "BLANK_LOUD",
+  "PRGPUN|C156OT": "BLANK_LOUD",
+  "PRGPUN|C157": "RENDERS",
+  "PRGPUN|C157S": "RENDERS",
+  "PRGPUN|C158": "RENDERS",
+  "PRGPU|C156": "BLANK_LOUD",
+  "PRGPU|C156OT": "RENDERS",
+  "PRGPU|C157": "RENDERS",
+  "PRGPU|C157S": "RENDERS",
+  "PRGPU|C158": "RENDERS",
+  "PRN|C156": "BLANK_LOUD",
+  "PRN|C156OT": "RENDERS",
+  "PRN|C157": "RENDERS",
+  "PRN|C157S": "RENDERS",
+  "PRN|C158": "RENDERS",
+  "PR|C156": "BLANK_LOUD",
+  "PR|C156OT": "RENDERS",
+  "PR|C157": "RENDERS",
+  "PR|C157S": "RENDERS",
+  "PR|C158": "RENDERS",
+  "PXGPU|C156": "BLANK_LOUD",
+  "PXGPU|C156OT": "BLANK_SILENT",
+  "PXGPU|C157": "BLANK_LOUD",
+  "PXGPU|C157S": "BLANK_LOUD",
+  "PXGPU|C158": "BLANK_LOUD",
+  "PX|C156": "BLANK_LOUD",
+  "PX|C156OT": "RENDERS",
+  "PX|C157": "BLANK_LOUD",
+  "PX|C157S": "BLANK_LOUD",
+  "PX|C158": "BLANK_LOUD"
+ },
+ "rows": [
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementSubImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementSubImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.drawElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.drawElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": false,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementSubImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": true,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementSubImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": true,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.drawElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": true,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.drawElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": false,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": false,
+    "canvas_requestPaint": false,
+    "canvas_updateElementGeometry": false,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": false,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": false,
+    "nested": true,
+    "paints": 0,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": false,
+   "n_mag": 1,
+   "n_mag_by_shot": [
+    1,
+    1
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": false,
+   "n_mag": 1,
+   "n_mag_by_shot": [
+    1,
+    1
+   ],
+   "outcome": "BLANK_SILENT",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "TypeError: Failed to execute 'drawElementImageToTexture' on 'GPUQueue': Only immediate children of the <canvas> element can be passed to drawElementImageToTexture()."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C156OT",
+   "browser": "Chrome/156.0.8078.47",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "TypeError: Failed to execute 'drawElementImageToTexture' on 'GPUQueue': Only immediate children of the <canvas> element can be passed to drawElementImageToTexture()."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": true,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": true,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource.",
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157",
+   "browser": "Chrome/157.0.8103.15",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource.",
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource.",
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C157S",
+   "browser": "Chrome/157.0.8103.38",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/157.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] WebGLRenderingContext.texElementImage2D is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PX",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource.",
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource.",
+    "Error: [HTMLSource] GPUQueue.copyElementImageToTexture is not available. Enable the browser HTML-in-Canvas API before using HTMLSource."
+   ],
+   "log": [
+    {
+     "level": "warning",
+     "source": "rendering",
+     "text": "WebGPU canvas configured with a different format than is preferred by this device (\"rgba8unorm\"). This requires an extra copy, which may impact performance."
+    }
+   ],
+   "loud": true,
+   "n_mag": 0,
+   "n_mag_by_shot": [
+    0,
+    0
+   ],
+   "outcome": "BLANK_LOUD",
+   "page": "PXGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.22.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PR",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPU",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": false,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgl",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 1
+  },
+  {
+   "area": 120000,
+   "arm": "C158",
+   "browser": "Chrome/158.0.8119.0",
+   "console": [],
+   "dir": "pixijs-8.23.0",
+   "exceptions": [],
+   "log": [],
+   "loud": false,
+   "n_mag": 19346,
+   "n_mag_by_shot": [
+    19346,
+    19346
+   ],
+   "outcome": "RENDERS",
+   "page": "PRGPUN",
+   "probe": {
+    "c2d_drawElementImage": true,
+    "canvas_attrs": [
+     "id=c",
+     "width=400",
+     "height=300",
+     "style=width: 400px; height: 300px; display: block; touch-action: none;",
+     "content=drawable",
+     "layoutsubtree="
+    ],
+    "canvas_content_reflect": true,
+    "canvas_requestPaint": true,
+    "canvas_updateElementGeometry": true,
+    "el_attrs": [
+     "drawable",
+     "style"
+    ],
+    "errors": [],
+    "gl_texElementImage2D": false,
+    "gl_texElementSubImage2D": true,
+    "gpu_adapter": true,
+    "gpuqueue_copyElementImageToTexture": false,
+    "gpuqueue_drawElementImageToTexture": true,
+    "nested": true,
+    "paints": 1,
+    "px_HTMLSource": "function",
+    "px_ready": true,
+    "px_version": "8.23.0",
+    "renderer": "webgpu",
+    "ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/158.0.0.0 Safari/537.36"
+   },
+   "rep": 2
+  }
+ ]
+}
