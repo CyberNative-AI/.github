@@ -8,21 +8,18 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 [Explore the work](https://cybernative.ai/) · [About](https://cybernative.ai/about/) · [Contact](https://cybernative.ai/contact/)
 
-**New:** blocked by an open issue in an open-source project? [Upstream fix, paid on merge](https://cybernative.ai/services/upstream-fix/?ref=gh-org): $500 or $1,000, quoted before work; no merge in 45 days, no charge.
+Blocked by an open issue in an open-source project? [Upstream fix, paid on merge](https://cybernative.ai/services/upstream-fix/?ref=gh-org): $500 or $1,000, quoted before work; no merge in 45 days, no charge.
 
 Our fixes so far: 196 pull requests merged by maintainers of 50 open-source repositories (as of 8 November 2026) — [see them on GitHub](https://github.com/search?q=author%3ACyberNativeAI+is%3Apr+is%3Amerged&type=pullrequests).
 
 ## Selected work
 
-- [Breakage Calendar](https://cybernative.ai/breakage-calendar/?ref=gh-org) — Dated infrastructure changes that will break running systems: who is affected, how to check, and our tested fix where we have one. Subscribe in a calendar app or feed reader; no account needed.
+- [dated-break-check](https://github.com/CyberNative-AI/dated-break-check) — A GitHub Action that warns in your build before a dated upstream change (an image tag that moves, an API or model that shuts down, a retired runner) hits your repository.
+- [breakage-calendar-mcp](https://github.com/CyberNative-AI/breakage-calendar-mcp) — An MCP server for coding agents: which dated upstream breaks hit this repository or dependency list, and the tested fix. No key, no account.
+- [what-breaks-next](https://github.com/CyberNative-AI/what-breaks-next) — Each dated break published as a GitHub Release before its date, with a check and a tested fix. Watch → Custom → Releases to follow it.
 - [agent-mail-gate](https://github.com/CyberNative-AI/agent-mail-gate) — A mail gateway for AI agents: screens inbound mail before any model reads it, sends only the exact bytes the owner approved, and stops follow-ups to anyone who replies, opts out or bounces.
-- [Failure Lab](https://cybernative.ai/labs/failure-lab/#ariane) — Run a 25-minute incident-review session with your team in the browser, then compare its calls with the sourced record. [Offline kit and sources](https://github.com/CyberNative-AI/.github/tree/main/tools/failure-lab).
-- [BFCL quantization pilot](https://cybernative.ai/labs/qwen36-27b-bfcl-quantization/) — Selected tool-call cases, published scores and the commands behind them.
-- [ComfyUI workflow preflight](https://cybernative-ai.github.io/comfy-qwen-preflight/) — Check a saved Qwen-Image-2.1 workflow for supported file-slot and prompt-wiring mistakes.
-- [dst-check](https://github.com/CyberNative-AI/.github/tree/main/tools/dst-check) — Check a confirmed schedule expression, timezone and installed scheduler version around a clock change.
-- [tzscan](https://github.com/CyberNative-AI/.github/tree/main/tools/tzscan) — List the copies of time-zone data it recognises in a container image and whether each is wrong for Canada's 1 November change, without running the image.
-- [GGUF repeat-run study](https://cybernative.ai/labs/gguf-repro-harness/) — A two-run record separates repeatable results from unstable timing.
-- [Breach Notice Index](https://cybernative.ai/products/breach-clock/) — Search dated California filings for protection offers and the original notice.
+- [sync-witness](https://github.com/CyberNative-AI/sync-witness) — An Obsidian plugin that notices when a sync tool silently removes notes or rolls them back, tells you once, and restores the exact bytes.
+- [upgrade-xray](https://github.com/CyberNative-AI/upgrade-xray) — See what an npm or PyPI dependency update really changes, computed from the published files without installing them.
 
 [More work](https://cybernative.ai/projects/) · [Archive](https://cybernative.ai/archive/)
 
