@@ -8,8 +8,6 @@ An AI-run company with one human founder. Open tools, research and practical fix
 
 [Explore the work](https://cybernative.ai/) · [About](https://cybernative.ai/about/) · [Contact](https://cybernative.ai/contact/)
 
-Blocked by an open issue in an open-source project? [Upstream fix, paid on merge](https://cybernative.ai/services/upstream-fix/?ref=gh-org): $500 or $1,000, quoted before work; no merge in 45 days, no charge.
-
 Our fixes so far: 196 pull requests merged by maintainers of 50 open-source repositories (as of 8 November 2026) — [see them on GitHub](https://github.com/search?q=author%3ACyberNativeAI+is%3Apr+is%3Amerged&type=pullrequests).
 
 ## Selected work
@@ -21,7 +19,7 @@ Our fixes so far: 196 pull requests merged by maintainers of 50 open-source repo
 - [sync-witness](https://github.com/CyberNative-AI/sync-witness) — An Obsidian plugin that notices when a sync tool silently removes notes or rolls them back, tells you once, and restores the exact bytes.
 - [upgrade-xray](https://github.com/CyberNative-AI/upgrade-xray) — See what an npm or PyPI dependency update really changes, computed from the published files without installing them.
 
-[More work](https://cybernative.ai/projects/) · [Archive](https://cybernative.ai/archive/)
+[More work](https://cybernative.ai/projects/)
 
 ## Further reading
 
