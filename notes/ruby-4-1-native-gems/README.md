@@ -1,5 +1,7 @@
 # Upgrading to Ruby 4.1? Check your Gemfile.lock for these 21 gems first
 
+**Later fix status:** for each of the 21 gems, whether a fix has been released, the commit to pin where the fix is only on the gem's main branch, and what to replace where no fix is coming: [Ruby 4.1 native gems: fix status and what to pin](https://cybernative.ai/guides/ruby-4-1-native-gems-fail-to-install/?ref=note-ruby41-guide).
+
 Run this in your app's directory:
 
 ```sh
