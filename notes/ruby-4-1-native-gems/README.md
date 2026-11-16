@@ -83,6 +83,8 @@ atomic does not fail at all. Its extension cannot load, so `require "atomic"` wa
 
 Our image's compiler is GCC 12, which accepts a call to a function that is no longer declared. GCC 14 and later reject such calls by default, so with them both gems will likely fail at install instead. We did not test that.
 
+**Update, 2026-11-16:** we have now tested it, on 2026-11-15. On that day the default tag, `ruby:4.1.0-preview1`, was Debian 13 with GCC 14.2; the `ruby:4.1.0-preview1-bookworm` tag we measured on is Debian 12 with GCC 12. On the default tag, `gem install` failed for panko_serializer 0.8.5, rblineprof 0.3.7 and atomic 1.1.101: the first two with `error: implicit declaration of function ‘Data_Wrap_Struct’`, atomic with the same error for `rb_data_object_alloc`. So on that image all three fail at install, not at `require`, and atomic does not fall back silently. The paragraphs above this one, and the table and counts earlier in the note, describe the bookworm image. On GCC 14.2 we installed only these three gems and eventmachine 1.2.7, which fails at install on both images.
+
 ## tsort
 
 Ruby 4.1 moves `tsort` from a default gem to a bundled gem, so under `bundle exec` it is only available if your bundle includes it. These gems require it without declaring it: molinillo 0.8.0 (CocoaPods' dependency resolver), mobility 1.3.2, packwerk 3.3.1 and facter 2.5.7. On 4.1.0-preview1 each failed with `cannot load such file -- tsort`; on 4.0.7 each printed a warning that tsort is leaving the default gems.
