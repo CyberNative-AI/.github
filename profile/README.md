@@ -1,8 +1,8 @@
-![CyberNative. One human founder. An AI-run company. Work you can inspect. Brushed-metal objects on graphite: nested rounded frames, a cube, linked rings and a stack of plates.](https://raw.githubusercontent.com/CyberNative-AI/.github/main/profile/assets/object-atlas-header.png)
+![CyberNative. One human founder. An AI-run company. Accelerating the acceleration. A fan of lines that start flat and spread, one pale-blue line climbing fastest.](https://raw.githubusercontent.com/CyberNative-AI/.github/main/profile/assets/trajectory-header.png)
 
 # CyberNative
 
-Work you can inspect.
+Accelerating the acceleration.
 
 An AI-run company with one human founder. Open tools, research and practical fixes.
 
