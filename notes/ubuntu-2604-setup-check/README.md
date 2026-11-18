@@ -1,4 +1,4 @@
-# `ubuntu-latest` becomes Ubuntu 26.04: about 1 in 5 sampled Python and Ruby repos have a job that fails at setup
+# `ubuntu-latest` becomes Ubuntu 26.04: an October 12 snapshot predicted setup failures in about 1 in 5 sampled Python and Ruby repos
 
 GitHub moves the `ubuntu-latest` label from Ubuntu 24.04 to 26.04 between October 19 and November 19, 2026 ([actions/runner-images#14748](https://github.com/actions/runner-images/issues/14748)). `actions/setup-python` and `ruby/setup-ruby` download a build made for the runner's exact Ubuntu version, and far fewer builds exist for 26.04. A job that asks for a missing version fails at its setup step:
 
@@ -7,13 +7,15 @@ The version '3.9' with architecture 'x64' was not found for ubuntu 26.04.
 Unavailable version 3.4.4 for ruby on ubuntu-26.04
 ```
 
-We checked 548 active public Python and Ruby repositories that set up Python or Ruby on `ubuntu-latest`. **122 (22%) have at least one job predicted to fail at setup on 26.04**: 79 of 224 Ruby repositories (35%) and 43 of 324 Python repositories (13%). In 120 of the 122, the failing job has no `continue-on-error`. We are not naming repositories; the checker below runs on your own.
+On October 12 we checked 548 active public Python and Ruby repositories that set up Python or Ruby on `ubuntu-latest`. **122 (22%) had at least one job predicted to fail at setup on 26.04**: 79 of 224 Ruby repositories (35%) and 43 of 324 Python repositories (13%). In 120 of the 122, the failing job has no `continue-on-error`. We are not naming repositories; the checker below runs on your own.
 
 *Updated October 13, 2026:* the checker now resolves fallbacks such as `runs-on: ${{ matrix.os || 'ubuntu-latest' }}`, and `include` entries expand as GitHub documents: an entry no longer merges into a job that an earlier entry added, which had collapsed include-only matrices into one job. On the same October 12 sample and data, the count rose from 117 of 547 (21%) to 122 of 548. No repository lost a predicted failure. If you ran the checker before, download it again.
 
 *Updated October 15, 2026:* to run your own tests on `ubuntu-26.04` beside a 24.04 baseline, not only read the files, use [Future CI](https://github.com/CyberNative-AI/future-ci): a reusable GitHub Actions workflow that includes this checker and writes one dated report of what breaks and when. MIT-licensed, like this checker.
 
 *Updated November 18, 2026:* the checker no longer has the October 12 list of the hosted images' cached Python and Ruby versions built in. `--refresh` now reads the image cache lists from the [runner-images](https://github.com/actions/runner-images) READMEs and saves them in `data/` beside the manifests, and the built-in table, now the November 11 images, is used only when `data/` has no saved copy. A version request such as `'3.12'` can resolve to a newer patch release than before: on our test repository the October 12 file reported `26.04->3.12.14` and this one reports `26.04->3.12.16`. We have not re-run the sample of 548 repositories with this file. If you ran the checker before, download it again and run it once with `--refresh`.
+
+*Correction, November 18, 2026:* this page said we had no tested route for Ruby before 3.2 on 26.04, which read as if those versions could not run there. Starting October 31, ruby-builder added 26.04 builds of the last patch release of each Ruby series from 2.3 to 3.1 (see the fixes below). The October 12 table and counts on this page were not re-scored.
 
 ## What installs on 26.04
 
@@ -81,7 +83,8 @@ The first run downloads the python-versions manifest and setup-ruby's version li
   runs-on: ${{ matrix.os }}
   ```
 - **Request a minor version** (`'3.12'`, `'3.4'`), or move an exact pin, including the one in `.ruby-version` or `.python-version`, to a release in the table above.
-- **Python 3.8 or 3.9 on 26.04 itself:** uv's portable builds. With uv 0.13.0, `uv python install 3.9` and `uv venv --python 3.9` worked in a bare `ubuntu:26.04` container for 3.8.20 and 3.9.25; pytest and numpy from wheels passed on each. We have no tested route for Ruby before 3.2 on 26.04.
+- **Python 3.8 or 3.9 on 26.04 itself:** uv's portable builds. With uv 0.13.0, `uv python install 3.9` and `uv venv --python 3.9` worked in a bare `ubuntu:26.04` container for 3.8.20 and 3.9.25; pytest and numpy from wheels passed on each.
+- **Ruby 2.3 to 3.1:** ruby-builder now has 26.04 builds of the last patch release of each series (2.3.8, 2.4.10, 2.5.9, 2.6.10, 2.7.8, 3.0.7, 3.1.7), so a minor-version request such as `'3.1'` has a build to download. We have not run one on a 26.04 runner. Older patches such as 3.1.6, and Ruby 2.2 and older, have no 26.04 build.
 
 If a 26.04 break sits inside an open-source dependency, and keeping that job on `ubuntu-24.04` is not an option for you, we can take the fix upstream: [Upstream fix, paid on merge](https://cybernative.ai/services/upstream-fix/?ref=u2604). A compatibility fix is $500, quoted before work and invoiced only after the maintainer merges. Send the public issue link; we never need access to your systems or code.
 
