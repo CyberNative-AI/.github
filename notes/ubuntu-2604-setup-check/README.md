@@ -13,6 +13,8 @@ We checked 548 active public Python and Ruby repositories that set up Python or 
 
 *Updated October 15, 2026:* to run your own tests on `ubuntu-26.04` beside a 24.04 baseline, not only read the files, use [Future CI](https://github.com/CyberNative-AI/future-ci): a reusable GitHub Actions workflow that includes this checker and writes one dated report of what breaks and when. MIT-licensed, like this checker.
 
+*Updated November 18, 2026:* the checker no longer has the October 12 list of the hosted images' cached Python and Ruby versions built in. `--refresh` now reads the image cache lists from the [runner-images](https://github.com/actions/runner-images) READMEs and saves them in `data/` beside the manifests, and the built-in table, now the November 11 images, is used only when `data/` has no saved copy. A version request such as `'3.12'` can resolve to a newer patch release than before: on our test repository the October 12 file reported `26.04->3.12.14` and this one reports `26.04->3.12.16`. We have not re-run the sample of 548 repositories with this file. If you ran the checker before, download it again and run it once with `--refresh`.
+
 ## What installs on 26.04
 
 As of October 12, 2026 (x64):
@@ -47,10 +49,12 @@ uv run --no-project --with pyyaml check2604.py path/to/repo
 
 ```
 BREAK    setup-python  3.9        .github/workflows/ci.yml:test[python-version=3.9]: python-version: 24.04->3.9.25 26.04->None
-OK       setup-python  3.12       .github/workflows/ci.yml:test[python-version=3.12]: python-version: 24.04->3.12.15 26.04->3.12.14
+OK       setup-python  3.12       .github/workflows/ci.yml:test[python-version=3.12]: python-version: 24.04->3.12.16 26.04->3.12.16
 BREAK    setup-python  3.13.2     .github/workflows/ci.yml:test[python-version=3.13.2]: python-version: 24.04->3.13.2 26.04->None
 BREAK    setup-ruby    3.4.4      .github/workflows/ci.yml:rb: version file: ruby-3.4.4 24.04 HTTP 200, 26.04 HTTP 404
 ```
+
+This is the real output of `check2604.py --refresh` on a four-job test repository, run on November 18, 2026. The `3.12` line shows the image cache on that date and changes as the images do.
 
 | Status | Meaning |
 |---|---|
@@ -61,7 +65,7 @@ BREAK    setup-ruby    3.4.4      .github/workflows/ci.yml:rb: version file: rub
 
 A `||` fallback such as `${{ matrix.os || 'ubuntu-latest' }}` is resolved the way the runner does it: a matrix value the entry does not set counts as empty. Nothing is reported `OK` unless it was resolved. The exit status is 1 when any entry is `BREAK`; `--json` prints one object per repository.
 
-The first run downloads the python-versions manifest and setup-ruby's version list into `data/` next to the script, and checks ruby-builder assets with HEAD requests. Both projects can add 26.04 builds during the rollout: delete `data/` before you check again.
+The first run downloads the python-versions manifest and setup-ruby's version list into `data/` next to the script, and checks ruby-builder assets with HEAD requests. Without `--refresh`, the first run on a new `data/` also uses the built-in table of the hosted images' cached versions (the November 11 images); it does not fetch the image lists. Both projects can add 26.04 builds, and the hosted images are updated often: run with `--refresh` to download the manifests again and read the image cache lists, which are saved as `data/hosted-cache.json`. `--refresh` does not repeat the ruby-builder asset checks already saved in `data/ruby-assets.json`; delete that file to repeat them.
 
 ## Fixes, per entry
 
@@ -85,7 +89,7 @@ If a 26.04 break sits inside an open-source dependency, and keeping that job on 
 
 - **Against the actions themselves.** We took 22 real entries from the sample and ran the released actions in `ubuntu:26.04` and `ubuntu:24.04` containers, with a hosted runner's action environment and an empty tool cache. We used setup-python at `3892123f` and setup-ruby at `651ff0d6`, under node 24.21.0. All 22 matched the prediction. The 9 predicted `BREAK` failed on 26.04 with the action's own error, and the 4 of them we ran on 24.04 installed. The 9 predicted `OK` installed on 26.04. See `emulation/agreement.tsv`.
 - **Version ranges.** The range matching agrees with node-semver (npm's bundled copy in `node:24`) on 10,496 version/range pairs: `python3 tests/semver_compare.py`.
-- **Tests.** `python3 -m unittest discover -s tests` runs 19 fixture tests against the October 12 data in `tests/data/`. `python3 tests/mutants.py` checks that they catch 15 seeded faults.
+- **Tests.** `python3 -m unittest discover -s tests` runs 25 tests and ends `OK (skipped=1)`. The 19 in `tests/test_check2604.py` use the October 12 data in `tests/data/`. Of the 6 in `tests/test_hosted_cache.py`, one reads today's image lists and is skipped unless you set `CHECK2604_NETWORK=1`. `python3 tests/mutants.py` checks that the tests catch 15 seeded faults.
 
 ## How the sample was drawn
 
@@ -146,7 +150,7 @@ Limits: direct calls in `run:` steps only, not composite actions, called script 
 
 ## Limits
 
-- A prediction from workflow files, confirmed in containers, not on hosted runners. The tool-cache contents come from the runner image READMEs as of October 12.
+- A prediction from workflow files, confirmed in containers, not on hosted runners. The tool-cache contents come from the runner image READMEs: read on the day you run `--refresh`, otherwise from the copy saved in `data/`, otherwise from the built-in table (the November 11 images). The images can change after that read.
 - x64 runners labelled exactly `ubuntu-latest`. Not covered: arm64, self-hosted, Windows, macOS, and jobs that run in a `container:`.
 - The sample is search-ranked, not random. "Most recently updated" favours very active repositories.
 - `UNKNOWN` steps are not counted as failures. 94 of the 548 repositories have at least one (25 of them have a Ruby `head` build step), and 11 have nothing else. The share is a lower bound for what the files show.

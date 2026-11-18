@@ -2,8 +2,7 @@
 import os, shutil, subprocess, sys, tempfile
 HERE = os.path.dirname(os.path.abspath(__file__)); TOOL = os.path.dirname(HERE)
 MUTANTS = {
-    "cache-2604-equals-2404": ('"26.04": {"python": ["3.10.21", "3.11.16", "3.12.14", "3.13.15", "3.14.7"]',
-                               '"26.04": {"python": ["3.10.22", "3.11.17", "3.12.15", "3.13.16", "3.14.8"]'),
+    "cache-2604-equals-2404": ('hits = [v for v in data.cache[osv]["python"]', 'hits = [v for v in data.cache["24.04"]["python"]'),
     "ignore-platform-version": ('f.get("platform_version") == osv', 'True'),
     "no-exclude": ('combos = [c for c in combos if not any(', 'combos = [c for c in combos if True or not any('),
     "unknown-expr-defaults": ('    if not m:\n        raise Unknown(f"expression ${{{{ {e} }}}}")', '    if not m:\n        return "3.12"'),

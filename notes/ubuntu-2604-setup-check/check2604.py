@@ -14,7 +14,8 @@ resolves it, against the hosted 24.04 and 26.04 images, and classified:
 Nothing is reported OK unless it was resolved.
 
 usage: check2604.py [--data DIR] [--refresh] [--json] REPO_DIR [REPO_DIR ...]
-Needs PyYAML. Data files (manifest, ruby versions, asset probe cache) live in --data.
+Needs PyYAML. Data files (manifest, ruby versions, asset probe cache, hosted image cache) live
+in --data; --refresh downloads the manifests and re-reads the image cache lists.
 """
 import argparse, json, os, re, sys, urllib.error, urllib.request
 
@@ -25,17 +26,20 @@ except ImportError:  # Python < 3.11: pyproject/Pipfile/mise inputs become UNKNO
 import yaml
 
 # Hosted image tool caches (actions/runner-images Ubuntu2404-Readme.md / Ubuntu2604-Readme.md,
-# "Cached Tools", read 2026-10-12).
+# "Cached Tools"). The images change every week or two, so the lists are data: --data/hosted-cache.json,
+# written by --refresh, dated with the build lists beside it. This table is used only when a data
+# directory has no hosted-cache.json (read 2026-11-18: images 20261111.370.1 and 20261111.196.1).
 CACHE = {
-    "24.04": {"python": ["3.10.22", "3.11.17", "3.12.15", "3.13.16", "3.14.8"],
-              "ruby": ["3.2.11", "3.3.12", "3.4.11", "4.0.7"]},
-    "26.04": {"python": ["3.10.21", "3.11.16", "3.12.14", "3.13.15", "3.14.7"],
-              "ruby": ["3.2.11", "3.3.12", "3.4.11", "4.0.7"]},
+    "24.04": {"python": ["3.11.18", "3.12.16", "3.13.18", "3.14.10", "3.15.2"],
+              "ruby": ["3.2.11", "3.3.13", "3.4.12", "4.0.9"]},
+    "26.04": {"python": ["3.11.18", "3.12.16", "3.13.18", "3.14.10", "3.15.2"],
+              "ruby": ["3.2.11", "3.3.13", "3.4.12", "4.0.9"]},
 }
 OSES = ("24.04", "26.04")
 PY_MANIFEST_URL = "https://raw.githubusercontent.com/actions/python-versions/main/versions-manifest.json"
 RUBY_VERSIONS_URL = "https://raw.githubusercontent.com/ruby/setup-ruby/master/ruby-builder-versions.json"
 RUBY_ASSET_URL = "https://github.com/ruby/ruby-builder/releases/download/{e}-{v}/{e}-{v}-ubuntu-{os}-x64.tar.gz"
+IMAGE_README_URL = "https://raw.githubusercontent.com/actions/runner-images/main/images/ubuntu/Ubuntu{n}-Readme.md"
 
 # ---------------------------------------------------------------- node-semver subset
 # satisfies(version, range) with node-semver's default options (no includePrerelease).
@@ -195,6 +199,28 @@ class Data:
         if os.path.exists(self.probe_path):
             with open(self.probe_path) as f:
                 self.probes = json.load(f)
+        self.cache = self._cache(refresh)
+
+    def _cache(self, refresh):
+        """The hosted images' cached Python and Ruby builds, CACHE's shape: read from the runner-images
+        READMEs on refresh (and saved), else hosted-cache.json in this directory, else the CACHE table."""
+        p = os.path.join(self.dir, "hosted-cache.json")
+        if refresh:
+            cache = {}
+            for osv in OSES:
+                with urllib.request.urlopen(IMAGE_README_URL.format(n=osv.replace(".", "")), timeout=60) as r:
+                    cache[osv] = cached_lists(r.read().decode("utf-8"))
+            with open(p, "w", encoding="utf-8") as f:
+                json.dump(cache, f, indent=1, sort_keys=True)
+        elif not os.path.exists(p):
+            return CACHE
+        with open(p, encoding="utf-8") as f:
+            cache = json.load(f)
+        for osv in OSES:
+            for tool in ("python", "ruby"):
+                if not all(_VER.match(v) for v in cache[osv][tool]):
+                    raise ValueError(f"{p}: {osv} {tool} list is not exact versions")
+        return cache
 
     def _get(self, name, url, refresh):
         p = os.path.join(self.dir, name)
@@ -219,6 +245,19 @@ class Data:
             with open(self.probe_path, "w") as f:
                 json.dump(self.probes, f, indent=0, sort_keys=True)
         return self.probes[key]
+
+
+def cached_lists(md):
+    """{"python": [...], "ruby": [...]} from a runner-images README's "Cached Tools" lists."""
+    out = {}
+    for tool in ("Python", "Ruby"):
+        m = re.search(rf"^#### {tool}\n((?:- .+\n)+)", md, re.M)
+        if not m:
+            raise ValueError(f"runner-images README has no cached {tool} list")
+        out[tool.lower()] = [line[2:].strip() for line in m.group(1).splitlines()]
+        if not all(_VER.match(v) for v in out[tool.lower()]):
+            raise ValueError(f"runner-images README: cached {tool} list is not exact versions")
+    return out
 
 
 # ---------------------------------------------------------------- resolution
@@ -252,7 +291,7 @@ def resolve_python(data, spec, osv, arch="x64", allow_pre=False, freethreaded=Fa
     except ValueError:
         raise Unknown(f"unsupported version syntax {spec!r}")
     if a == "x64":  # hosted cache holds x64 non-freethreaded builds
-        hits = [v for v in CACHE[osv]["python"] if satisfies(v, rng)]
+        hits = [v for v in data.cache[osv]["python"] if satisfies(v, rng)]
         if hits:
             return max(hits, key=parse_ver)
     for rel in data.py_manifest:  # manifest is newest-first; first match wins
@@ -293,7 +332,7 @@ def resolve_ruby(data, spec, osv):
         if not found:
             return engine, None, None  # "Unknown version" error on every OS
         ver = found
-    if engine == "ruby" and ver in CACHE[osv]["ruby"]:
+    if engine == "ruby" and ver in data.cache[osv]["ruby"]:
         return engine, ver, 200
     return engine, ver, data.ruby_asset(engine, ver, osv)
 
@@ -677,7 +716,7 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     ap.add_argument("repos", nargs="+")
     ap.add_argument("--data", default=os.path.join(os.path.dirname(os.path.abspath(__file__)), "data"))
-    ap.add_argument("--refresh", action="store_true", help="re-download manifests")
+    ap.add_argument("--refresh", action="store_true", help="re-download manifests and re-read the image cache lists")
     ap.add_argument("--json", action="store_true", help="one JSON object per repo")
     a = ap.parse_args(argv)
     data = Data(a.data, a.refresh)
