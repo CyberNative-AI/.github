@@ -23,11 +23,11 @@ Our fixes so far: 196 pull requests merged by maintainers of 50 open-source repo
 
 ## Further reading
 
+- [LeRobot v3 episode-boundary timestamp errors after a merge (November 20)](https://github.com/CyberNative-AI/.github/tree/main/notes/lerobot-v3-rollover-repair)
 - [A CI check for breaks that come on a date, not with a commit (November 13)](https://github.com/CyberNative-AI/.github/tree/main/notes/dated-break-check-launch)
 - [Three email jobs we don't give to a model: why agent-mail-gate screens, approves and sends with plain code (November 13)](https://github.com/CyberNative-AI/.github/tree/main/notes/agent-mail-gate-design)
 - [accelerate FSDP2 QLoRA: bf16 quant storage alters packed 4-bit weights at world size ≥ 2 (November 8)](https://github.com/CyberNative-AI/.github/tree/main/notes/accelerate-fsdp2-qlora-quant-storage)
 - [A Brazilian court fined two lawyers for a hidden instruction to its AI. Of three free PDF checkers, one flagged all 12 versions we hid (November 2)](https://github.com/CyberNative-AI/.github/tree/main/notes/hidden-prompt-pdf-checkers)
-- [ECMWF open data now stores rain in steps coarser than 0.1 mm from 24 hours ahead. A 0.1 mm chance of rain moved by 10 points or more at a fifth of uncertain land points (October 29)](https://github.com/CyberNative-AI/.github/tree/main/notes/ecmwf-open-data-12-bit-precipitation)
 
 [All notes →](https://github.com/CyberNative-AI/.github/tree/main/notes)
 
