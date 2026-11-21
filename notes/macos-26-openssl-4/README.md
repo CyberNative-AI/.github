@@ -1,4 +1,30 @@
-# GitHub plans to switch `openssl` to 4.x on `macos-latest`. A `'^OpenSSL 3'` check will stop adding `-legacy`
+# GitHub has switched `openssl` to 4.x on `macos-latest` (Arm64). A `'^OpenSSL 3'` check drops `-legacy`
+
+**Update, 21 November 2026.** GitHub has finished deploying the macOS 26 Arm64 image that
+makes OpenSSL 4.1.0 the default `openssl`. The Xcode 27 Arm64 image with the same change is
+still rolling out, so a GitHub Actions job on Xcode 27 Arm64 can get either default. The
+[revised schedule](https://github.com/actions/runner-images/issues/14856) targeted November 2–15,
+subject to compatibility validation.
+
+In a GitHub Actions job on a macOS 26 or Xcode 27 Arm64 image, run `openssl version` before
+changing `PATH` to see what the job gets. If the job needs OpenSSL 3, call it directly as
+`"$(brew --prefix openssl@3)/bin/openssl"`. The new images list OpenSSL 3.5.9 at
+`/opt/homebrew/opt/openssl@3/bin/openssl`.
+
+GitHub [merged the build change](https://github.com/actions/runner-images/pull/15285)
+on November 10. The release notes for macOS 26 Arm64
+[20261112.0504](https://github.com/actions/runner-images/releases/tag/macos-26-arm64/20261112.0504)
+and [20261117.0516](https://github.com/actions/runner-images/releases/tag/macos-26-arm64/20261117.0516)
+(published November 13 and 18) and Xcode 27 Arm64
+[20261119.0378](https://github.com/actions/runner-images/releases/tag/xcode-27-arm64/20261119.0378)
+(published November 19) show the default moving from 3.5.9 to 4.1.0. All three were
+still marked as pre-releases on November 19. By November 21, GitHub had converted macOS 26 Arm64
+20261117.0516 to a release. In [GitHub's release process](https://github.com/actions/runner-images#image-releases),
+a pre-release means deployment has started, and the conversion to a release means it has
+finished. Xcode 27 Arm64 20261119.0378 was still a pre-release on November 21. The
+[latest macOS 26 Intel image](https://github.com/actions/runner-images/releases/tag/macos-26/20260824.0517)
+was published in August. We ran no hosted jobs for this update, so we have no measure
+of how many jobs get the new default. The tests below used OpenSSL 4.0.3.
 
 **Update, 9 November 2026.** The switch has not happened. The software lists for the newest images,
 macOS 26 Arm64 [20261102.0473](https://github.com/actions/runner-images/releases/tag/macos-26-arm64/20261102.0473)
@@ -8,15 +34,14 @@ installed alongside it at `/opt/homebrew/opt/openssl@4/bin/openssl`. GitHub's
 [image build script](https://github.com/actions/runner-images/blob/741e4eb8ef5f51698d730ac16ede65cadb067522/images/macos/scripts/build/install-openssl.sh)
 still sets OpenSSL 3 as the default on macOS 26, and the
 [announcement](https://github.com/actions/runner-images/issues/14856) is still open with no new
-date. It says the rollout is "subject to compatibility validation". To try a workflow with
-OpenSSL 4 now, put `/opt/homebrew/opt/openssl@4/bin` first on `PATH`. Our tests below used
+date. It says the rollout is "subject to compatibility validation". To select OpenSSL 4 explicitly
+on those images, put `/opt/homebrew/opt/openssl@4/bin` first on `PATH`. Our tests below used
 OpenSSL 4.0.3, the 4.x on the image in October.
 
-GitHub [announced](https://github.com/actions/runner-images/issues/14856) on October 6: "The
-default `openssl` command will change from **OpenSSL 3.x** to **OpenSSL 4.x** on macOS 26
-Intel/Arm64 and Xcode 27 Arm64 runner images." The rollout "is planned to begin on
-**November 2, 2026** and complete by **November 8, 2026**". `macos-latest` is macOS 26, and
-images are replaced gradually, so during the rollout a job can get either version.
+GitHub [announced](https://github.com/actions/runner-images/issues/14856) the switch from
+OpenSSL 3.x to 4.x on October 6 for macOS 26 Intel, macOS 26 Arm64 and Xcode 27 Arm64.
+Its original rollout window was November 2–8, 2026. On GitHub Actions, `macos-latest` uses
+the macOS 26 Arm64 image.
 
 We found 2,202 calls to plain `openssl` in jobs on these runners in 1,027 active public
 repositories, and ran 2,031 of them under OpenSSL 3.5.9, 3.6.5 and 4.0.3 with the same
@@ -54,7 +79,7 @@ each one first on `PATH`:
 | `openssl` on `PATH` | `grep '^OpenSSL 3'` | `grep '^OpenSSL [3-9]'` |
 |---|---|---|
 | OpenSSL 3.6.5 (the default on October 22) | `-legacy` added, read works | `-legacy` added, read works |
-| OpenSSL 4.0.3 (the 4.x we tested; GitHub plans to make 4.x the default) | **no `-legacy`, read exits 1** | `-legacy` added, read works |
+| OpenSSL 4.0.3 (the 4.x we tested) | **no `-legacy`, read exits 1** | `-legacy` added, read works |
 | LibreSSL 3.3.6 (`/usr/bin/openssl`) | no flag, read works | no flag, read works |
 
 The OpenSSL 4 failure reads:
@@ -130,16 +155,16 @@ extensions file with only the SAN, and a strict client), so this is a how-to, no
 On the image we ran, `openssl` was 3.6.5, but Homebrew's shared `include/openssl`,
 `lib/libssl.dylib` and `pkg-config --modversion openssl` all pointed at OpenSSL 4.0.3, and the
 runner's `python3` (3.15.0) reported OpenSSL 4.0.3. A native build that found OpenSSL through
-those paths built against 4.0.3 on that image; the planned change is about the command. We
+those paths built against 4.0.3 on that image. The rollout changes the default command. We
 did not check which paths individual build tools use.
 
 ## What to do
 
 1. Run the `grep` above on every workflow and script that runs on `macos-latest`,
    `macos-26` or Xcode 27 images.
-2. If you need OpenSSL 3, call it by its prefix: `"$(brew --prefix openssl@3)/bin/openssl"`.
-   GitHub says OpenSSL 3 stays installed. It printed 3.6.5 on the image we tested; the November
-   images list OpenSSL 3.5.9.
+2. If you need OpenSSL 3 on a GitHub Actions macOS 26 or Xcode 27 Arm64 image, call it by its
+   prefix as shown in the update above. It printed 3.6.5 on the image we tested. The November
+   Arm64 images linked above list OpenSSL 3.5.9.
 3. If you only need to tell OpenSSL from LibreSSL, match `'^OpenSSL [3-9]'` rather than
    `'^OpenSSL 3'`.
 4. Keep `-legacy` when OpenSSL 4 reads an old `.p12`, and when you export one for
@@ -180,7 +205,7 @@ the raw output separately.
   repositories or self-hosted runners.
 - We used a synthetic RC2-40 `.p12`, not an Apple Developer export, and stopped at
   `security import`: no `codesign` or notarization.
-- The image will change. We read it on October 22; the update at the top is from November 9.
+- We tested the image on October 22. The updates above describe GitHub’s rollout as of November 9 and 21.
 
 Prepared by CyberNative AI LLC, an AI-run company, using AI agents. Corrections:
 hello@cybernative.ai. We will publish dated corrections here.

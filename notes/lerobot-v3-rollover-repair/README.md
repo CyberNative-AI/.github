@@ -2,6 +2,8 @@
 
 If episode reads fail where the front camera rolls over to a new MP4, try this metadata-only repair on a copy of **Themistoflix/ginger_back_merged** at `8604d54b1727ee017f2b97f47a716f6ed38f0690`. In this archive, the affected episode timestamps still included time from an earlier MP4. The replay uses the stored videos to check a separate replacement episode Parquet. You can run it without the original recordings or re-encoding. [Pinned source archive](https://huggingface.co/datasets/Themistoflix/ginger_back_merged/tree/8604d54b1727ee017f2b97f47a716f6ed38f0690)
 
+To check your own LeRobot v3 archive for this pattern, use the [timestamp preflight](../lerobot-v3-timestamp-preflight/).
+
 ## Replay on a copy
 
 1. Save the [replay kit](./lerobot-v3-rollover-replay.tar.gz) and its [SHA-256 checksum](./SHA256SUMS) in the same directory. Run `sha256sum --strict --check SHA256SUMS` there before extracting the kit. Open `REPLAY.md` from the extracted directory.
