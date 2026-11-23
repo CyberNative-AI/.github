@@ -1,5 +1,5 @@
 """Fixture tests for check2604.py: python3 -m unittest discover -s tests (from the tool dir)."""
-import os, sys, tempfile, textwrap, unittest
+import json, os, subprocess, sys, tempfile, textwrap, unittest
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.dirname(HERE))
@@ -20,7 +20,11 @@ def run(workflow, files=None, full=False):
             with open(os.path.join(d, name), "w") as f:
                 f.write(body)
         res = c.check_repo(DATA, d)
-        return res if full else [(st, spec, where) for st, _a, spec, where, _s in res]
+        direct = []
+        for st, _action, spec, where, _soft, via in res:
+            assert via == "", "legacy fixtures contain no local action calls"
+            direct.append((st, spec, where))
+        return res if full else direct
 
 
 def statuses(res):
@@ -146,11 +150,13 @@ class Python(unittest.TestCase):
               b:
                 runs-on: ubuntu-latest
                 steps:
+                  - uses: actions/checkout@v5
                   - uses: actions/setup-python@v5
                     with: {python-version-file: pyproject.toml}
               c:
                 runs-on: ubuntu-latest
                 steps:
+                  - uses: actions/checkout@v5
                   - uses: actions/setup-python@v5
                     with: {python-version-file: missing.txt}
             """, {".python-version": "3.11.9\n", "pyproject.toml": '[project]\nname="x"\nrequires-python=">=3.9,<3.13"\n'})
@@ -218,6 +224,7 @@ class Python(unittest.TestCase):
                   t:
                     runs-on: ubuntu-latest
                     steps:
+                      - uses: actions/checkout@v5
                       - uses: actions/setup-python@v5
                         with: {python-version-file: .python-version}
                 """, {".python-version": "->" + f.name})
@@ -349,6 +356,7 @@ class Ruby(unittest.TestCase):
               t:
                 runs-on: ubuntu-latest
                 steps:
+                  - uses: actions/checkout@v5
                   - uses: ruby/setup-ruby@v1
                     with: {bundler-cache: true}
             """, {".ruby-version": "ruby-3.3.0\n"})
@@ -360,6 +368,7 @@ class Ruby(unittest.TestCase):
               t:
                 runs-on: ubuntu-latest
                 steps:
+                  - uses: actions/checkout@v5
                   - uses: ruby/setup-ruby@v1
                     with: {ruby-version: .ruby-version}
                   - uses: ruby/setup-ruby@v1
@@ -376,6 +385,89 @@ class Ruby(unittest.TestCase):
                   - uses: ruby/setup-ruby@v1
             """)
         self.assertEqual([st for st, _, _ in r], ["UNKNOWN"])
+
+
+class LocalCompositeCLI(unittest.TestCase):
+    CHECKOUT = "          - uses: actions/checkout@v5\n"
+    SETUP = """\
+          - uses: actions/setup-python@v5
+            with: {python-version: '3.8'}
+"""
+    CALL = "          - uses: ./.github/actions/setup\n"
+    ACTION = """\
+        name: Set up Python
+        runs:
+          using: composite
+          steps:
+            - uses: actions/setup-python@v5
+              with: {python-version: '3.8'}
+        """
+    ACTION_FILE = ".github/actions/setup/action.yml"
+
+    def cli(self, steps, files=None):
+        with tempfile.TemporaryDirectory() as d:
+            workflows = os.path.join(d, ".github", "workflows")
+            os.makedirs(workflows)
+            with open(os.path.join(workflows, "ci.yml"), "w") as f:
+                f.write(textwrap.dedent("""\
+                    on: push
+                    jobs:
+                      test:
+                        runs-on: ubuntu-latest
+                        steps:
+                    """))
+                f.write(textwrap.indent(textwrap.dedent(steps), "      "))
+            for name, body in (files or {}).items():
+                path = os.path.join(d, name)
+                os.makedirs(os.path.dirname(path), exist_ok=True)
+                with open(path, "w") as f:
+                    f.write(textwrap.dedent(body))
+            result = subprocess.run(
+                [sys.executable, os.path.join(HERE, "..", "check2604.py"),
+                 "--json", "--data", os.path.join(HERE, "data"), d],
+                capture_output=True, text=True)
+            self.assertIn(result.returncode, (0, 1), result.stderr)
+            return result.returncode, json.loads(result.stdout)["findings"]
+
+    def test_local_setup_matches_inline_setup(self):
+        inline_status, inline = self.cli(self.CHECKOUT + self.SETUP)
+        self.assertEqual(inline_status, 1)
+        self.assertEqual([(r["status"], r["action"], r["spec"]) for r in inline],
+                         [("BREAK", "setup-python", "3.8")])
+        local_status, local = self.cli(self.CHECKOUT + self.CALL, {self.ACTION_FILE: self.ACTION})
+        self.assertEqual([(r["status"], r["action"], r["spec"]) for r in local],
+                         [(r["status"], r["action"], r["spec"]) for r in inline])
+        self.assertEqual(local_status, inline_status)
+        self.assertEqual(local[0]["via"], "./.github/actions/setup")
+
+    def test_local_action_after_run_is_unknown(self):
+        steps = self.CHECKOUT + "          - run: echo prepare\n" + self.CALL
+        status, rows = self.cli(steps, {self.ACTION_FILE: self.ACTION})
+        self.assertEqual([r["status"] for r in rows], ["UNKNOWN"])
+        self.assertIn("may be changed by an earlier step (a run step)", rows[0]["where"])
+        self.assertEqual(status, 0)
+
+    def test_missing_local_action_is_unknown(self):
+        status, rows = self.cli(self.CHECKOUT + self.CALL)
+        self.assertEqual([r["status"] for r in rows], ["UNKNOWN"])
+        self.assertIn("local action ./.github/actions/setup not in checkout", rows[0]["where"])
+        self.assertEqual(status, 0)
+
+    def test_nested_local_action_is_followed(self):
+        status, rows = self.cli(self.CHECKOUT + "          - uses: ./a\n", {
+            "a/action.yml": """\
+                name: Call another action
+                runs:
+                  using: composite
+                  steps:
+                    - uses: ./b
+                """,
+            "b/action.yaml": self.ACTION,
+        })
+        self.assertEqual([(r["status"], r["action"], r["spec"]) for r in rows],
+                         [("BREAK", "setup-python", "3.8")])
+        self.assertEqual(rows[0]["via"], "./a > ./b")
+        self.assertEqual(status, 1)
 
 
 if __name__ == "__main__":

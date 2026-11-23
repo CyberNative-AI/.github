@@ -17,6 +17,8 @@ On October 12 we checked 548 active public Python and Ruby repositories that set
 
 *Correction, November 18, 2026:* this page said we had no tested route for Ruby before 3.2 on 26.04, which read as if those versions could not run there. Starting October 31, ruby-builder added 26.04 builds of the last patch release of each Ruby series from 2.3 to 3.1 (see the fixes below). The October 12 table and counts on this page were not re-scored.
 
+*Updated November 23, 2026:* the checker now follows local actions. Until today it did not look inside an action called with `uses: ./path`, so a setup step there was never checked: a repository whose only setup-python step sat in `.github/actions/setup` got no output and exit status 0. It now reads that action's `action.yml` or `action.yaml`, follows the local actions it calls, and also checks jobs on the `ubuntu-26.04` label. It also tracks what the job's checkout put in the workspace. A version file or local action read after a step that may have changed it, such as a `run:` step, is now `UNKNOWN`; the earlier file read the committed copy and could report `OK`. On repositories with many local actions, expect many `UNKNOWN` lines, each naming the step the checker could not rule out. We have not re-run the sample of 548 repositories with this file. If you ran the checker before, download it again. [Future CI](https://github.com/CyberNative-AI/future-ci) still includes the version from before November 18.
+
 ## What installs on 26.04
 
 As of October 12, 2026 (x64):
@@ -41,7 +43,9 @@ The failing steps in the sample (after matrix expansion), by cause:
 
 ## Check your repository
 
-The checker reads `.github/workflows/*.yml` and the version files the actions read (`.python-version`, `pyproject.toml`, `.tool-versions`, `Pipfile`, `.ruby-version`, `mise.toml`). It expands each job's matrix and resolves every setup step the way the action does, for both the 24.04 and the 26.04 image. It runs nothing from your repository and needs no token.
+The checker reads `.github/workflows/*.yml` and `*.yaml`, the version files the actions read (`.python-version`, `pyproject.toml`, `.tool-versions`, `Pipfile`, `.ruby-version`, `mise.toml`), and the `action.yml` or `action.yaml` of each local action a workflow calls with `uses: ./path`, including the local actions those call, up to eight levels deep. It passes each local action the inputs its caller gives and the defaults the action declares, where it can resolve them. It expands each job's matrix and resolves every setup step the way the action does, for both the 24.04 and the 26.04 image. It runs nothing from your repository and needs no token.
+
+A hosted job starts with an empty workspace, so the checker reads your files only after a step checks out this repository at the triggering commit into the workspace root, and only when it can tell that the step runs. A checkout of another ref such as `${{ github.ref }}`, a checkout into a subdirectory, or a checkout under a condition it cannot resolve leaves later reads `UNKNOWN`. So does an earlier step that may change the files a later step reads: a `run:` step, setup-python with `cache:` set, or setup-ruby with `bundler-cache: true`. The checker reads `.gitmodules` to find submodules; a checkout without `submodules:` leaves files inside them `UNKNOWN`.
 
 ```sh
 curl -fsSLO https://raw.githubusercontent.com/CyberNative-AI/.github/main/notes/ubuntu-2604-setup-check/check2604.py
@@ -58,14 +62,21 @@ BREAK    setup-ruby    3.4.4      .github/workflows/ci.yml:rb: version file: rub
 
 This is the real output of `check2604.py --refresh` on a four-job test repository, run on November 18, 2026. The `3.12` line shows the image cache on that date and changes as the images do.
 
+A setup step inside a local action ends with the chain of actions it was reached through, and a local action call the checker could not resolve says why. From a test repository on November 23, 2026:
+
+```
+BREAK    setup-python  3.8        .github/workflows/ci.yml:composite: python-version: 24.04->3.8.18 26.04->None (in ./.github/actions/setup)
+UNKNOWN  ./.github/actions/setup -          .github/workflows/ci.yml:after-run: local action ./.github/actions/setup may be changed by an earlier step (a run step)
+```
+
 | Status | Meaning |
 |---|---|
 | `BREAK` | installs on 24.04 today; no build on 26.04 |
 | `OK` | installs on 26.04 |
 | `ALREADY` | fails on 24.04 too, for example an unquoted `3.10`, which YAML reads as 3.1 |
-| `UNKNOWN` | cannot be resolved from the files: expressions from inputs, `needs` or `vars`, generated matrices, `head` builds |
+| `UNKNOWN` | cannot be resolved from the files: expressions from inputs, `needs` or `vars`, generated matrices, `head` builds, a local action or version file that is missing, unreadable or may have been changed by an earlier step, local actions nested more than eight deep |
 
-A `||` fallback such as `${{ matrix.os || 'ubuntu-latest' }}` is resolved the way the runner does it: a matrix value the entry does not set counts as empty. Nothing is reported `OK` unless it was resolved. The exit status is 1 when any entry is `BREAK`; `--json` prints one object per repository.
+A `||` fallback such as `${{ matrix.os || 'ubuntu-latest' }}` is resolved the way the runner does it: a matrix value the entry does not set counts as empty. Nothing is reported `OK` unless it was resolved. The exit status is 1 when any entry is `BREAK`; `--json` prints one object per repository, and each finding's `via` field holds its chain of local actions, empty for a step in the workflow itself.
 
 The first run downloads the python-versions manifest and setup-ruby's version list into `data/` next to the script, and checks ruby-builder assets with HEAD requests. Without `--refresh`, the first run on a new `data/` also uses the built-in table of the hosted images' cached versions (the November 11 images); it does not fetch the image lists. Both projects can add 26.04 builds, and the hosted images are updated often: run with `--refresh` to download the manifests again and read the image cache lists, which are saved as `data/hosted-cache.json`. `--refresh` does not repeat the ruby-builder asset checks already saved in `data/ruby-assets.json`; delete that file to repeat them.
 
@@ -92,7 +103,7 @@ If a 26.04 break sits inside an open-source dependency, and keeping that job on 
 
 - **Against the actions themselves.** We took 22 real entries from the sample and ran the released actions in `ubuntu:26.04` and `ubuntu:24.04` containers, with a hosted runner's action environment and an empty tool cache. We used setup-python at `3892123f` and setup-ruby at `651ff0d6`, under node 24.21.0. All 22 matched the prediction. The 9 predicted `BREAK` failed on 26.04 with the action's own error, and the 4 of them we ran on 24.04 installed. The 9 predicted `OK` installed on 26.04. See `emulation/agreement.tsv`.
 - **Version ranges.** The range matching agrees with node-semver (npm's bundled copy in `node:24`) on 10,496 version/range pairs: `python3 tests/semver_compare.py`.
-- **Tests.** `python3 -m unittest discover -s tests` runs 25 tests and ends `OK (skipped=1)`. The 19 in `tests/test_check2604.py` use the October 12 data in `tests/data/`. Of the 6 in `tests/test_hosted_cache.py`, one reads today's image lists and is skipped unless you set `CHECK2604_NETWORK=1`. `python3 tests/mutants.py` checks that the tests catch 15 seeded faults.
+- **Tests.** `python3 -m unittest discover -s tests` runs 29 tests and ends `OK (skipped=1)`. The 23 in `tests/test_check2604.py` use the October 12 data in `tests/data/`. Of the 6 in `tests/test_hosted_cache.py`, one reads today's image lists and is skipped unless you set `CHECK2604_NETWORK=1`. `python3 tests/mutants.py` first runs the unchanged tests, then checks that they catch 19 seeded faults, 4 of them in following local actions.
 
 ## How the sample was drawn
 
@@ -114,6 +125,8 @@ grep -v '^#' sample/repos.tsv | cut -f2 | xargs -P 10 -n 1 sample/clone.sh repos
 python3 check2604.py --json repos/*/ > sample/results.jsonl
 python3 sample/summarize.py
 ```
+
+Since November 23, `sample/clone.sh` also keeps every `action.yml` and `action.yaml`, and the checker counts setup steps inside local actions and jobs on `ubuntu-26.04`. The October 12 sample had neither, so a fresh run does not compare one to one with the table above. Clone into a new directory: the script skips a repository it has already cloned. The sparse clone leaves out `.gitmodules` and submodules, so the checker cannot tell which paths are submodules and can report `OK` for a version file that a full checkout leaves `UNKNOWN`. Where setup depends on a submodule, run the checker on a full checkout with its submodules.
 
 `emulation/sp.sh` and `emulation/rr.sh` rerun the container check. They need Docker, a node 24 binary (`NODE=...`) and a checkout of the action at the commit above. Create `emulation/logs/` and `emulation/stubs/` first.
 
@@ -153,8 +166,8 @@ Limits: direct calls in `run:` steps only, not composite actions, called script 
 
 ## Limits
 
-- A prediction from workflow files, confirmed in containers, not on hosted runners. The tool-cache contents come from the runner image READMEs: read on the day you run `--refresh`, otherwise from the copy saved in `data/`, otherwise from the built-in table (the November 11 images). The images can change after that read.
-- x64 runners labelled exactly `ubuntu-latest`. Not covered: arm64, self-hosted, Windows, macOS, and jobs that run in a `container:`.
+- A prediction from workflow files, local action files and version files, not from a run. The container check above covered direct setup steps in the October 12 sample, not steps inside local actions, and no check ran on hosted runners. The tool-cache contents come from the runner image READMEs: read on the day you run `--refresh`, otherwise from the copy saved in `data/`, otherwise from the built-in table (the November 11 images). The images can change after that read.
+- x64 jobs whose `runs-on` resolves to `ubuntu-latest` or `ubuntu-26.04` (in any letter case), alone or as the only label in a list. Not covered: arm64, self-hosted, `ubuntu-24.04` and other pinned labels, Windows, macOS, and jobs that run in a `container:`. The October 12 sample counted `ubuntu-latest` jobs only.
 - The sample is search-ranked, not random. "Most recently updated" favours very active repositories.
 - `UNKNOWN` steps are not counted as failures. 94 of the 548 repositories have at least one (25 of them have a Ruby `head` build step), and 11 have nothing else. The share is a lower bound for what the files show.
 - A break in a workflow that runs only on release or manual dispatch counts.
