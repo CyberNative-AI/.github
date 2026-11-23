@@ -146,7 +146,7 @@ What does behave differently:
 
 Repos counts the sampled repositories with that call. Single-line and wrapped secrets decode identically, and 20 real `date -d` strings gave identical output in all 3 formats tried. The invalid-input row matters only where the failure is ignored (`|| true`, or a pipe without `pipefail`): the file used to hold the right bytes and is now empty. Without a CPU limit, both `nproc`s print the same number.
 
-Two additional differences outside the inputs exercised by our fixture: `sha256sum -c` accepts a checksum line with leading spaces on 24.04 and rejects it on 26.04 (exit 1), and `timeout -s KILL` exits 137 on 24.04 but 124 on 26.04. Both are fixed upstream ([#15167](https://github.com/uutils/coreutils/pull/15167), [#15075](https://github.com/uutils/coreutils/pull/15075)) but not in a release yet; the latest is 0.12.0, and 26.04 ships 0.10.0.
+Two additional differences outside the inputs exercised by our fixture: `sha256sum -c` accepts a checksum line with leading spaces on 24.04 and rejects it on 26.04 (exit 1), and `timeout -s KILL` exits 137 on 24.04 but 124 on 26.04. Both are fixed upstream ([#15167](https://github.com/uutils/coreutils/pull/15167), [#15075](https://github.com/uutils/coreutils/pull/15075)) and released in uutils 0.13.0 (November 20, 2026); 26.04 ships 0.10.0. *Correction, November 23, 2026: this line said the fixes were not in a release yet; uutils 0.13.0 includes both.*
 
 Most of this is GNU's own change since 9.4, which dates from August 2023: GNU coreutils decodes unpadded base64 since 9.5, `nproc` honours cgroup v2 CPU quotas since 9.8, and `cut -c` counts characters since 9.11 ([NEWS](https://github.com/coreutils/coreutils/blob/master/NEWS)).
 
