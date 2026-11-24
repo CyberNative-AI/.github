@@ -16,8 +16,12 @@ Tesseract were level on Odia. Indra was about 2 to 7.5 times faster per page.
 
 **If you OCR printed books in a non-Latin script on a CPU: on Thai, Arabic, Persian and Hebrew
 scans, Indra 1.1.2 was clearly more accurate in our run. On most Indic scripts the two were
-level, so speed can decide. For upright Odia scans, either use Tesseract with `ori`, or stop
-Indra from turning pages (two lines of Python, below) and check that the output is in Odia.
+level, so speed can decide. For upright Odia scans on Indra 1.1.2, use Tesseract with `ori`
+or stop Indra from turning pages (see below), and check that the output is in Odia. On Indra
+1.2.0, try the default settings on a few pages and check their orientation and text. An Indra
+maintainer reported a fix in 1.2.0 for the example page in the issue, which stayed upright
+and read as Odia. We measured the October corpus on Indra 1.1.2.
+[Maintainer confirmation, 24 November 2026](https://github.com/datalab-to/indra/issues/32#issuecomment-7140166161).
 Whatever you pick, check a few of your own pages: these are mostly older book scans, and the
 right engine can differ for yours.**
 
