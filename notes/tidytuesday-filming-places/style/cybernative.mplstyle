@@ -1,0 +1,50 @@
+# CyberNative chart style for matplotlib. Load it through oa_chart.use(), which registers the kit's
+# TTFs first; plt.style.use() on this file alone gets the colours but falls back to DejaVu Sans.
+# Series on the sheet: graphite, blue-deep, pale blue, grey, each with the 1.6 pt ink outline.
+# Rust is not a series: it marks a limit or an over-limit value only (oa_chart.limit).
+figure.facecolor: f7f7f5
+axes.facecolor: f7f7f5
+savefig.facecolor: f7f7f5
+axes.edgecolor: 151518
+axes.linewidth: 1.6
+axes.labelcolor: 55575f
+axes.labelsize: 11
+axes.titlecolor: 151518
+axes.titlesize: 16
+axes.titleweight: 600
+axes.titlelocation: left
+axes.titlepad: 30
+axes.spines.top: False
+axes.spines.right: False
+axes.grid: True
+axes.grid.axis: y
+axes.axisbelow: True
+grid.color: cfd1d6
+grid.linewidth: 0.8
+text.color: 151518
+xtick.color: 55575f
+ytick.color: 55575f
+xtick.labelcolor: 55575f
+ytick.labelcolor: 55575f
+xtick.labelsize: 10
+ytick.labelsize: 10
+xtick.major.size: 0
+ytick.major.size: 0
+xtick.major.pad: 8
+ytick.major.pad: 8
+font.family: sans-serif
+font.sans-serif: DM Sans, DejaVu Sans
+font.monospace: DM Mono, DejaVu Sans Mono
+font.size: 11
+axes.prop_cycle: cycler('color', ['151518', '2d4f93', 'b2c8f0', '7c7f8a'])
+patch.edgecolor: 151518
+patch.linewidth: 1.6
+patch.force_edgecolor: True
+lines.linewidth: 2.4
+lines.solid_capstyle: butt
+legend.frameon: False
+legend.fontsize: 10
+figure.dpi: 144
+savefig.dpi: 200
+savefig.bbox: tight
+savefig.pad_inches: 0.3

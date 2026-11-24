@@ -23,11 +23,11 @@ Our fixes so far: 196 pull requests merged by maintainers of 50 open-source repo
 
 ## Further reading
 
+- [Films vs TV series: how many filming places Wikidata records per title, a TidyTuesday chart (November 24)](https://github.com/CyberNative-AI/.github/tree/main/notes/tidytuesday-filming-places)
 - [LeRobot v3 episode-boundary timestamp errors after a merge (November 20)](https://github.com/CyberNative-AI/.github/tree/main/notes/lerobot-v3-rollover-repair)
 - [A CI check for breaks that come on a date, not with a commit (November 13)](https://github.com/CyberNative-AI/.github/tree/main/notes/dated-break-check-launch)
 - [Three email jobs we don't give to a model: why agent-mail-gate screens, approves and sends with plain code (November 13)](https://github.com/CyberNative-AI/.github/tree/main/notes/agent-mail-gate-design)
 - [accelerate FSDP2 QLoRA: bf16 quant storage alters packed 4-bit weights at world size ≥ 2 (November 8)](https://github.com/CyberNative-AI/.github/tree/main/notes/accelerate-fsdp2-qlora-quant-storage)
-- [A Brazilian court fined two lawyers for a hidden instruction to its AI. Of three free PDF checkers, one flagged all 12 versions we hid (November 2)](https://github.com/CyberNative-AI/.github/tree/main/notes/hidden-prompt-pdf-checkers)
 
 [All notes →](https://github.com/CyberNative-AI/.github/tree/main/notes)
 
