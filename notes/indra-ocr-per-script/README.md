@@ -19,7 +19,7 @@ scans, Indra 1.1.2 was clearly more accurate in our run. On most Indic scripts t
 level, so speed can decide. For upright Odia scans on Indra 1.1.2, use Tesseract with `ori`
 or stop Indra from turning pages (see below), and check that the output is in Odia. On Indra
 1.2.0, try the default settings on a few pages and check their orientation and text. An Indra
-maintainer reported a fix in 1.2.0 for the example page in the issue, which stayed upright
+maintainer reported a fix in 1.2.0 for the example page in our report, which stayed upright
 and read as Odia. We measured the October corpus on Indra 1.1.2.
 [Maintainer confirmation, 24 November 2026](https://github.com/datalab-to/indra/issues/32#issuecomment-7140166161).
 Whatever you pick, check a few of your own pages: these are mostly older book scans, and the
@@ -109,14 +109,15 @@ are upright: Indra then also stops turning pages that really are sideways or ups
 
 One example is a clean, modern table of contents: page 4 of *Pratham Purush* (Jagannath
 Prasad Das; [scan on Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Pratham_Purush.pdf),
-CC BY-SA 4.0). By default Indra returns no line in Odia; its lines come out in Latin,
+CC BY-SA 4.0). On 1.1.2, by default Indra returned no line in Odia; its lines came out in Latin,
 Cyrillic, Armenian, Telugu, Bengali, Kannada and Myanmar letters. With the turn suppressed, it
-reads the page in Odia.
+read the page in Odia. This is the page in our report; an Indra maintainer reported that 1.2.0
+keeps it upright and reads it as Odia.
 
 Six of the 515 pages in the other 18 non-Latin languages were turned the same way: two Gujarati, two Malayalam,
 one Hindi and one Telugu. Without the turn, their error rates fell from 0.85–1.00 to
 0.01–0.27, so those four rows of the table above are somewhat worse for Indra than they would
-be without this problem. No other non-Latin page was turned. We are reporting the Odia turns
+be without this problem. No other non-Latin page was turned. We reported the Odia turns
 to Indra's maintainers in the project's GitHub issues.
 
 ## What we ran
