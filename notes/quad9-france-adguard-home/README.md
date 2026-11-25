@@ -1,5 +1,20 @@
 # Quad9 leaves France on November 24: a default AdGuard Home install stops resolving (tested October 22)
 
+**Update, November 25, 2026:** Quad9's November 24 post says it would refuse every query from
+users in France from 09:00 Paris time that day. If your traffic goes through France and AdGuard
+Home still uses Quad9 as an upstream, bootstrap or fallback server, open Settings → DNS
+(Settings → DNS settings in the older interface) and replace those addresses. Updating does not
+do it for you: AdGuard Home v1.0.0, released on November 19, uses Cloudflare DNS for upstream
+and bootstrap on new installs but keeps saved Quad9 settings. On November 25 a user in France
+reported a UDP reply from 9.9.9.9 with `REFUSED` and EDE 18 (Prohibited), "Service unavailable
+due to French legal constraints"; we have not observed that reply ourselves. In both of our
+October simulations of `REFUSED`, AdGuard Home v0.107.79 with the wizard defaults returned
+`SERVFAIL` for all 20 lookups after a cold start; on the running server all 10 cached names
+still resolved and all 10 new lookups failed, 9 of them passing `REFUSED` on to clients.
+[AdGuard release notes](https://github.com/AdguardTeam/AdGuardHome/releases/tag/v1.0.0) ·
+[Quad9's November 24 post](https://quad9.net/news/blog/quad9-service-deactivation-in-france/) ·
+[User's DNS trace](https://github.com/pivpn/pivpn/issues/1956)
+
 **Update, November 12, 2026:** On November 10 AdGuard
 [changed the default upstream and bootstrap servers from Quad9 to Cloudflare DNS](https://github.com/AdguardTeam/AdGuardHome/commit/3cac53a48e9fd573c09e3088207c192e8f75b5cf)
 in its development source and closed [#8686](https://github.com/AdguardTeam/AdGuardHome/issues/8686),
@@ -119,9 +134,10 @@ got `REFUSED` from Quad9 passed `REFUSED` on to clients for 9 of 10 new names, i
 
 ## What we did not test
 
-- **How Quad9 will withdraw.** Quad9's post does not say. Dropped packets, refused connections,
-  `REFUSED` answers and HTTP 451 are our guesses at the range; a partial exit could behave
-  differently. We have no vantage point in France.
+- **How Quad9 will withdraw.** Quad9's October 22 post did not say; its November 24 post says it
+  would refuse every query from users in France (see the November 25 update). Dropped packets,
+  refused connections, `REFUSED` answers and HTTP 451 were our guesses at the range; a partial
+  exit could behave differently. We have no vantage point in France.
 - **IPv6.** Our test network had no IPv6, so the two IPv6 bootstrap addresses failed in every
   case, including the baseline.
 - **Builds that embed AdGuard Home**, such as router firmware, NAS packages or the Home Assistant
@@ -153,6 +169,23 @@ IP, le certificat du fournisseur doit couvrir cette adresse. Si vous modifiez le
 arrêtez AdGuard Home avant de le modifier, puis démarrez-le. Dans l'interface web, enregistrez
 les paramètres puis redémarrez une fois et testez une résolution. Nous n'avons pas testé les
 listes mixtes, les exceptions par client ou domaine, ni les configurations `upstream_dns_file`.
+
+Mise à jour du 25 novembre 2026 : selon son annonce du 24 novembre, Quad9 devait refuser toutes
+les requêtes des utilisateurs en France à partir de 9 h (heure de Paris) ce jour-là. Si vos
+requêtes passent par la France et qu'AdGuard Home utilise encore Quad9 comme serveur upstream,
+d'amorçage ou de repli, ouvrez Paramètres → DNS (Paramètres → Paramètres DNS dans l'ancienne
+interface) et remplacez ces adresses. La mise à jour ne le fait pas pour vous : AdGuard Home
+v1.0.0, publié le 19 novembre, utilise Cloudflare DNS pour l'upstream et l'amorçage des
+nouvelles installations, mais conserve les réglages Quad9 déjà enregistrés. Le 25 novembre, un
+utilisateur en France a signalé une réponse UDP de `9.9.9.9` avec le code `REFUSED` et l'erreur
+EDE 18 (Prohibited), « Service unavailable due to French legal constraints » ; nous ne l'avons
+pas observée nous-mêmes. Lors de nos deux simulations de `REFUSED` en octobre, AdGuard Home
+v0.107.79 avec les réglages de l'assistant a répondu `SERVFAIL` aux 20 requêtes après un
+démarrage à froid ; sur le serveur déjà en marche, les 10 noms en cache ont encore été résolus
+et les 10 nouvelles requêtes ont échoué, dont 9 en transmettant `REFUSED` aux clients. [Notes de
+version d'AdGuard](https://github.com/AdguardTeam/AdGuardHome/releases/tag/v1.0.0) · [Annonce de
+Quad9 du 24 novembre](https://quad9.net/fr/news/blog/quad9-service-deactivation-in-france/) ·
+[Relevé DNS de l'utilisateur](https://github.com/pivpn/pivpn/issues/1956)
 
 Mise à jour du 12 novembre 2026 : le 10 novembre, AdGuard a remplacé Quad9 par Cloudflare DNS
 dans les valeurs par défaut de sa version de développement, qui n'était pas encore publiée le
