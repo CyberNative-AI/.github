@@ -17,7 +17,16 @@ One known cause of both is LeRobot's own merge in releases 0.4.0 to 0.4.2, fixed
 
 ## Use it
 
-1. Save the [kit](./lerobot-v3-timestamp-preflight.tar.gz) (52 KB) and its [SHA-256 checksum](./SHA256SUMS) in one directory. Run `sha256sum --strict --check SHA256SUMS` there before extracting the kit, then open `README.md` inside it.
+1. Save both files to the same directory.
+
+   - [Download `lerobot-v3-timestamp-preflight.tar.gz`](https://raw.githubusercontent.com/CyberNative-AI/.github/94d11536780f80d1c67772e37c36b52a813be783/notes/lerobot-v3-timestamp-preflight/lerobot-v3-timestamp-preflight.tar.gz) (52 KB)
+   - [Open `SHA256SUMS`](https://raw.githubusercontent.com/CyberNative-AI/.github/94d11536780f80d1c67772e37c36b52a813be783/notes/lerobot-v3-timestamp-preflight/SHA256SUMS) (SHA-256 checksum)
+
+   If the checksum opens as text, use your browser's **Save As**. If the browser adds `.txt`, rename the saved file to `SHA256SUMS`.
+   On a phone, you can also touch and hold the checksum link and choose **Download link** if available.
+
+   Run `sha256sum --strict --check SHA256SUMS` in that directory before extracting the kit,
+   then open `README.md` inside it.
 2. Run the preflight on the directory that holds `meta/info.json`. It prints a JSON report with one of four results: `aligned`, `rollover_candidate` (the first pattern, with the edits listed), `relayout_candidate` (the second pattern, with the old and new file and times for each camera and episode) or `needs_review` (something else disagrees; the report says what).
 3. For `rollover_candidate` or `relayout_candidate`, `local_repair.py plan` saves the proposed edits, and `copy` writes the repaired archive to a new directory only if the preflight on the copy returns `aligned`. The repair needs one episode Parquet file and regular files only. After a relayout, open a few of the listed episodes in the copy and look at the frames before you use it. To undo, delete the copy.
 
