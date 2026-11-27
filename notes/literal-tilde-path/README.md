@@ -77,6 +77,8 @@ export PATH="~/d:$PATH"      # SC2088
 
 ShellCheck 0.10.0, 0.11.0 and master build v0.11.0-120-g98deabe gave the same result in our October 12, 2026 tests. On the 21 literal PATH lines we found across our samples, ShellCheck 0.10.0 flagged the 11 where the tilde starts the quoted value. It missed the other 10, all with the tilde after a colon in an `export` argument. We reported this upstream: https://github.com/koalaman/shellcheck/issues/3559.
 
+**Update, November 27, 2026:** ShellCheck's maintainer merged [a change by ump45nose](https://github.com/koalaman/shellcheck/pull/3563) that extends SC2147 to `PATH=…` arguments of `export`, `declare`, `typeset` and `local`, and closed [our report](https://github.com/koalaman/shellcheck/issues/3559) as completed. The change is on ShellCheck's master branch. The latest tagged release, v0.11.0, predates it. We have not re-run our tests against a build that includes it. The October 12 results above are unchanged.
+
 ## What this does not show
 
 - That these lines run on real machines. A line can sit inside a condition or in a file that is never loaded, or a later line can reset PATH. One of the 6 is in a backup copy of a zsh startup file that is probably not loaded; without it, the count is 5 of 288.
